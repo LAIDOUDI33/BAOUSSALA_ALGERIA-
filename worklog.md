@@ -74,4 +74,28 @@ Stage Summary:
 - Dashboard now has 14 tabs total (8 original + 6 sector)
 - All sector data embedded locally (no external calls)
 - Each sector has 4 KPIs + 2-4 professional charts
-- Arabic RTL support maintained for all new content
+- Arabic RTL support maintained for all new content---
+Task ID: 1
+Agent: Main Agent
+Task: Add more KPIs to manufacturing, hydrocarbons, and agriculture sectoral dashboards
+
+Work Log:
+- Read and analyzed all 3 sectoral dashboard tabs (hydrocarbons, agriculture, manufacturing) in page.tsx
+- Read algeria-data.ts sectoral datasets to identify available but unused data fields
+- Read dictionaries.ts to map all existing and needed translation keys (FR/AR/EN)
+- Added 3 new fields to manufacturingData: manufEmployK, manufExportsBn, capacityUtilPct
+- Added 22 new translation keys to Dictionary interface
+- Added EN/FR/AR translations for all 22 new keys
+- Expanded Hydrocarbons tab: 4→8 KPIs, 4→6 charts (added Oil&Gas Production, Reserves Pie)
+- Expanded Agriculture tab: 4→8 KPIs, 4→6 charts (added Olive&Date Production, Agri Exports)
+- Expanded Manufacturing tab: 4→8 KPIs, 2→4 charts (added Building Mat+Paper, Employment+Capacity)
+- Build and lint pass with zero errors
+
+Stage Summary:
+- All 3 sectoral dashboards now have 8 KPIs each (doubled from 4)
+- Hydrocarbons: +Oil Price, Hydro Exports, Oil Reserves, Gas Reserves KPIs; +Oil&Gas Production dual-axis chart, +Reserves Pie chart
+- Agriculture: +Veg Prod, Fruit Prod, Milk Prod, Irrigated Land KPIs; +Olive&Date Production chart, +Agricultural Exports chart
+- Manufacturing: +Metallurgy, Building Mat, Electrical, Paper KPIs; +Building Mat&Paper indices chart, +Employment&Capacity Utilization composed chart
+- Total new translation keys: 22 × 3 languages = 66 translated strings
+- Build: compiled successfully, 0 errors, 0 lint warnings
+

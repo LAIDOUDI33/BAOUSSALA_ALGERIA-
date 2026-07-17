@@ -218,6 +218,10 @@ export interface Dictionary {
   kpiOilProd: string;
   kpiGasProd: string;
   kpiHydroGdpShare: string;
+  kpiOilPrice: string;
+  kpiHydroExports: string;
+  kpiReservesOil: string;
+  kpiReservesGas: string;
   chartHydroRevenue: string;
   chartHydroRevenueSub: string;
   chartHydroExports: string;
@@ -238,6 +242,10 @@ export interface Dictionary {
   chartHydroVsNonHydroSub: string;
   chartHydroExportLabel: string;
   chartNonHydroExportLabel: string;
+  chartReservesPie: string;
+  chartReservesPieSub: string;
+  chartOilReservesLabel: string;
+  chartGasReservesLabel: string;
 
   // ─── SECTOR: AGRICULTURE ─────────────
   tabAgriculture: string;
@@ -245,6 +253,10 @@ export interface Dictionary {
   kpiSelfSuffic: string;
   kpiAgriExports: string;
   kpiAgriEmploy: string;
+  kpiVegProd: string;
+  kpiFruitProd: string;
+  kpiMilkProd: string;
+  kpiIrrigatedLand: string;
   chartCerealProd: string;
   chartCerealProdSub: string;
   chartSelfSuffic: string;
@@ -266,6 +278,10 @@ export interface Dictionary {
   chartMeatLabel: string;
   chartIrrigatedLabel: string;
   chartTotalLandLabel: string;
+  chartOliveDateProd: string;
+  chartOliveDateProdSub: string;
+  chartOliveLabel: string;
+  chartDateLabel: string;
 
   // ─── SECTOR: MANUFACTURING ────────────
   tabManufacturing: string;
@@ -273,6 +289,10 @@ export interface Dictionary {
   kpiPharma: string;
   kpiTextiles: string;
   kpiChemicals: string;
+  kpiMetallurgy: string;
+  kpiBuildingMat: string;
+  kpiElectrical: string;
+  kpiPaper: string;
   chartManufSubsectors: string;
   chartManufSubsectorsSub: string;
   chartManufRadar: string;
@@ -285,6 +305,13 @@ export interface Dictionary {
   chartBuildingMatLabel: string;
   chartPharmaLabel: string;
   chartPaperLabel: string;
+  chartManufBuildingPaper: string;
+  chartManufBuildingPaperSub: string;
+  chartManufEmployCapacity: string;
+  chartManufEmployCapacitySub: string;
+  chartCapacityLabel: string;
+  chartEmployLabel: string;
+  chartManufExportLabel: string;
 
   // ─── SECTOR: BTP ─────────────────────
   tabBTP: string;
@@ -550,6 +577,7 @@ const en: Dictionary = {
   // ─── SECTOR: HYDROCARBONS ────────────
   tabHydro: "Hydrocarbons",
   kpiHydroRevenue: "Hydro Revenue", kpiOilProd: "Oil Production", kpiGasProd: "Gas Production", kpiHydroGdpShare: "Hydro % GDP",
+  kpiOilPrice: "Oil Price", kpiHydroExports: "Hydro Exports", kpiReservesOil: "Oil Reserves", kpiReservesGas: "Gas Reserves",
   chartHydroRevenue: "Hydrocarbon Revenue & Exports (2000\u20132024)", chartHydroRevenueSub: "Billion USD \u2014 Revenue and export earnings",
   chartHydroExports: "Hydrocarbon Export Trend (2000\u20132024)", chartHydroExportsSub: "Billion USD",
   chartOilPrice: "Crude Oil Price (2000\u20132024)", chartOilPriceSub: "USD per barrel (Brent)",
@@ -559,10 +587,13 @@ const en: Dictionary = {
   chartOilPriceLabel: "Oil Price $/bbl", chartOilProdLabel: "Oil (Mbpd)", chartGasProdLabel: "Gas (Bcm)",
   chartHydroVsNonHydro: "Hydrocarbon vs Non-Hydrocarbon Exports", chartHydroVsNonHydroSub: "Billion USD (2000\u20132024)",
   chartHydroExportLabel: "Hydrocarbons", chartNonHydroExportLabel: "Non-Hydrocarbons",
+  chartReservesPie: "Proven Reserves (2024)", chartReservesPieSub: "Oil and natural gas reserves",
+  chartOilReservesLabel: "Oil (Bn bbl)", chartGasReservesLabel: "Gas (Tcm)",
 
   // ─── SECTOR: AGRICULTURE ─────────────
   tabAgriculture: "Agriculture",
   kpiCerealProd: "Cereal Prod.", kpiSelfSuffic: "Self-Sufficiency", kpiAgriExports: "Agri. Exports", kpiAgriEmploy: "Agri. Employment",
+  kpiVegProd: "Veg. Production", kpiFruitProd: "Fruit Production", kpiMilkProd: "Milk Production", kpiIrrigatedLand: "Irrigated Land",
   chartCerealProd: "Cereal Production (2010\u20132024)", chartCerealProdSub: "Million tonnes",
   chartSelfSuffic: "Cereal Self-Sufficiency Rate", chartSelfSufficSub: "% of national consumption",
   chartAgriExports: "Agricultural Exports (2010\u20132024)", chartAgriExportsSub: "Billion USD",
@@ -572,15 +603,21 @@ const en: Dictionary = {
   chartCerealLabel: "Cereals", chartSelfSufficLabel: "Self-Sufficiency %", chartAgriExportsLabel: "Agri. Exports",
   chartVegLabel: "Vegetables", chartFruitLabel: "Fruits", chartMilkLabel: "Milk", chartMeatLabel: "Meat",
   chartIrrigatedLabel: "Irrigated", chartTotalLandLabel: "Total Land",
+  chartOliveDateProd: "Olive & Date Production", chartOliveDateProdSub: "Million tonnes (2010\u20132024)",
+  chartOliveLabel: "Olive", chartDateLabel: "Dates",
 
   // ─── SECTOR: MANUFACTURING ────────────
   tabManufacturing: "Manufacturing",
   kpiFoodIndustry: "Food Industry", kpiPharma: "Pharma", kpiTextiles: "Textiles", kpiChemicals: "Chemicals",
+  kpiMetallurgy: "Metallurgy", kpiBuildingMat: "Building Mat.", kpiElectrical: "Electrical", kpiPaper: "Paper",
   chartManufSubsectors: "Manufacturing Sub-Sector Indices (2010\u20132024)", chartManufSubsectorsSub: "Base 100 = 2019",
   chartManufRadar: "Manufacturing Radar (2024)", chartManufRadarSub: "Index by sub-sector",
   chartFoodLabel: "Food Industry", chartTextileLabel: "Textiles", chartChemicalLabel: "Chemicals",
   chartMetallurgyLabel: "Metallurgy", chartElectricLabel: "Electrical", chartBuildingMatLabel: "Building Materials",
   chartPharmaLabel: "Pharma", chartPaperLabel: "Paper",
+  chartManufBuildingPaper: "Building Materials & Paper Indices", chartManufBuildingPaperSub: "Base 100 = 2019",
+  chartManufEmployCapacity: "Employment & Capacity Utilization", chartManufEmployCapacitySub: "Thousands of employees and %",
+  chartCapacityLabel: "Capacity Util. %", chartEmployLabel: "Employment (K)", chartManufExportLabel: "Manuf. Exports (bn $)",
 
   // ─── SECTOR: BTP ─────────────────────
   tabBTP: "BTP",
@@ -814,6 +851,7 @@ const fr: Dictionary = {
   // ─── SECTOR: HYDROCARBONS ────────────
   tabHydro: "Hydrocarbures",
   kpiHydroRevenue: "Rev. Hydrocarbures", kpiOilProd: "Production P\u00e9trole", kpiGasProd: "Production Gaz", kpiHydroGdpShare: "Hydro % PIB",
+  kpiOilPrice: "Prix P\u00e9trole", kpiHydroExports: "Export. Hydrocarbures", kpiReservesOil: "R\u00e9serves P\u00e9trole", kpiReservesGas: "R\u00e9serves Gaz",
   chartHydroRevenue: "Revenus et Exportations Hydrocarbures (2000\u20132024)", chartHydroRevenueSub: "Milliards USD",
   chartHydroExports: "Exportations d\u2019Hydrocarbures (2000\u20132024)", chartHydroExportsSub: "Milliards USD",
   chartOilPrice: "Prix du P\u00e9trole Brut (2000\u20132024)", chartOilPriceSub: "USD par baril (Brent)",
@@ -823,10 +861,13 @@ const fr: Dictionary = {
   chartOilPriceLabel: "Prix $/bbl", chartOilProdLabel: "P\u00e9trole (Mb/j)", chartGasProdLabel: "Gaz (Mds m\u00b3)",
   chartHydroVsNonHydro: "Hydrocarbures vs Non-Hydrocarbures", chartHydroVsNonHydroSub: "Milliards USD (2000\u20132024)",
   chartHydroExportLabel: "Hydrocarbures", chartNonHydroExportLabel: "Non-Hydrocarbures",
+  chartReservesPie: "R\u00e9serves Prouv\u00e9es (2024)", chartReservesPieSub: "R\u00e9serves de p\u00e9trole et gaz naturel",
+  chartOilReservesLabel: "P\u00e9trole (Mds bbl)", chartGasReservesLabel: "Gaz (Tcm)",
 
   // ─── SECTOR: AGRICULTURE ─────────────
   tabAgriculture: "Agriculture",
   kpiCerealProd: "Prod. C\u00e9r\u00e9ales", kpiSelfSuffic: "Autosuffisance", kpiAgriExports: "Export. Agri.", kpiAgriEmploy: "Emploi Agri.",
+  kpiVegProd: "Prod. L\u00e9gumes", kpiFruitProd: "Prod. Fruits", kpiMilkProd: "Prod. Lait", kpiIrrigatedLand: "Terres Irrigu\u00e9es",
   chartCerealProd: "Production C\u00e9r\u00e9ali\u00e8re (2010\u20132024)", chartCerealProdSub: "Millions de tonnes",
   chartSelfSuffic: "Taux d\u2019Autosuffisance C\u00e9r\u00e9ali\u00e8re", chartSelfSufficSub: "% de la consommation nationale",
   chartAgriExports: "Exportations Agricoles (2010\u20132024)", chartAgriExportsSub: "Milliards USD",
@@ -836,15 +877,21 @@ const fr: Dictionary = {
   chartCerealLabel: "C\u00e9r\u00e9ales", chartSelfSufficLabel: "Autosuffisance %", chartAgriExportsLabel: "Export. Agri.",
   chartVegLabel: "L\u00e9gumes", chartFruitLabel: "Fruits", chartMilkLabel: "Lait", chartMeatLabel: "Viande",
   chartIrrigatedLabel: "Irrigu\u00e9es", chartTotalLandLabel: "Total",
+  chartOliveDateProd: "Production d'Olives & Dattes", chartOliveDateProdSub: "Millions de tonnes (2010\u20132024)",
+  chartOliveLabel: "Olives", chartDateLabel: "Dattes",
 
   // ─── SECTOR: MANUFACTURING ────────────
   tabManufacturing: "Industrie",
   kpiFoodIndustry: "Ind. Alimentaire", kpiPharma: "Pharma", kpiTextiles: "Textiles", kpiChemicals: "Chimie",
+  kpiMetallurgy: "Sid\u00e9rurgie", kpiBuildingMat: "Mat. Construction", kpiElectrical: "\u00c9lectrique", kpiPaper: "Papier",
   chartManufSubsectors: "Indices des Sous-Secteurs Industriels (2010\u20132024)", chartManufSubsectorsSub: "Base 100 = 2019",
   chartManufRadar: "Radar Industriel (2024)", chartManufRadarSub: "Indice par sous-secteur",
   chartFoodLabel: "Ind. Alimentaire", chartTextileLabel: "Textiles", chartChemicalLabel: "Chimie",
   chartMetallurgyLabel: "Sid\u00e9rurgie", chartElectricLabel: "\u00c9lectrique", chartBuildingMatLabel: "Mat. Construction",
   chartPharmaLabel: "Pharma", chartPaperLabel: "Papier",
+  chartManufBuildingPaper: "Indices Mat. Construction & Papier", chartManufBuildingPaperSub: "Base 100 = 2019",
+  chartManufEmployCapacity: "Emploi & Taux d'Utilisation", chartManufEmployCapacitySub: "Milliers d'employ\u00e9s et %",
+  chartCapacityLabel: "Taux Util. %", chartEmployLabel: "Emploi (K)", chartManufExportLabel: "Export. Ind. (Mds $)",
 
   // ─── SECTOR: BTP ─────────────────────
   tabBTP: "BTP",
@@ -1078,6 +1125,7 @@ const ar: Dictionary = {
   // ─── SECTOR: HYDROCARBONS ────────────
   tabHydro: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a",
   kpiHydroRevenue: "\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a", kpiOilProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0646\u0641\u0637", kpiGasProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u063a\u0627\u0632", kpiHydroGdpShare: "\u0645\u062d\u0631\u0648\u0642\u0627\u062a % \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c",
+  kpiOilPrice: "\u0633\u0639\u0631 \u0627\u0644\u0646\u0641\u0637", kpiHydroExports: "\u0635\u0627\u062f\u0631\u0627\u062a \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a", kpiReservesOil: "\u0627\u062d\u062a\u064a\u0627\u0637\u064a \u0627\u0644\u0646\u0641\u0637", kpiReservesGas: "\u0627\u062d\u062a\u064a\u0627\u0637\u064a \u0627\u0644\u063a\u0627\u0632",
   chartHydroRevenue: "\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u0635\u0627\u062f\u0631\u0627\u062a \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a (2000\u20132024)", chartHydroRevenueSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
   chartHydroExports: "\u0635\u0627\u062f\u0631\u0627\u062a \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a (2000\u20132024)", chartHydroExportsSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
   chartOilPrice: "\u0633\u0639\u0631 \u0627\u0644\u0646\u0641\u0637 \u0627\u0644\u062e\u0627\u0645 (2000\u20132024)", chartOilPriceSub: "\u062f\u0648\u0644\u0627\u0631 \u0644\u0644\u0628\u0631\u0645\u064a\u0644",
@@ -1087,10 +1135,13 @@ const ar: Dictionary = {
   chartOilPriceLabel: "\u0633\u0639\u0631 \u0627\u0644\u0646\u0641\u0637 $/\u0628\u0631\u0645\u064a\u0644", chartOilProdLabel: "\u0627\u0644\u0646\u0641\u0637 (\u0645\u0628/\u064a\u0648\u0645)", chartGasProdLabel: "\u0627\u0644\u063a\u0627\u0632 (\u0645\u0644\u064a\u0627\u0631 \u0645\u0643\u0639\u0628)",
   chartHydroVsNonHydro: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a \u0645\u0642\u0627\u0628\u0644 \u063a\u064a\u0631 \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a", chartHydroVsNonHydroSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631 (2000\u20132024)",
   chartHydroExportLabel: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a", chartNonHydroExportLabel: "\u063a\u064a\u0631 \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a",
+  chartReservesPie: "\u0627\u0644\u0627\u062d\u062a\u064a\u0627\u0637\u064a \u0627\u0644\u0645\u062b\u0628\u062a\u0629 (2024)", chartReservesPieSub: "\u0627\u062d\u062a\u064a\u0627\u0637\u064a \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632 \u0627\u0644\u0637\u0628\u064a\u0639\u064a",
+  chartOilReservesLabel: "\u0646\u0641\u0637 (\u0645\u0644\u064a\u0627\u0631 \u0628\u0631\u0645\u064a\u0644)", chartGasReservesLabel: "\u063a\u0627\u0632 (\u062a\u0631\u064a\u0644\u064a\u0648\u0646 \u0645\u062a\u0631 \u0645\u0643\u0639\u0628)",
 
   // ─── SECTOR: AGRICULTURE ─────────────
   tabAgriculture: "\u0627\u0644\u0641\u0644\u0627\u062d\u0629",
   kpiCerealProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062d\u0628\u0648\u0628", kpiSelfSuffic: "\u0627\u0644\u0627\u062a\u062d\u0627\u0630 \u0627\u0644\u0630\u0627\u062a\u064a", kpiAgriExports: "\u0635\u0627\u062f\u0631\u0627\u062a \u0632\u0631\u0627\u0639\u064a\u0629", kpiAgriEmploy: "\u062a\u0634\u063a\u064a\u0644 \u0632\u0631\u0627\u0639\u064a",
+  kpiVegProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062e\u0636\u0631\u0648\u0627\u062a", kpiFruitProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0641\u0648\u0627\u0643\u0647", kpiMilkProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062d\u0644\u064a\u0628", kpiIrrigatedLand: "\u0627\u0644\u0623\u0631\u0627\u0636\u064a \u0627\u0644\u0645\u0631\u0648\u064a\u0629",
   chartCerealProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062d\u0628\u0648\u0628 (2010\u20132024)", chartCerealProdSub: "\u0645\u0644\u0627\u064a\u064a\u0646 \u0623\u0637\u0646\u0627\u0646",
   chartSelfSuffic: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0627\u062a\u062d\u0627\u0630 \u0627\u0644\u0630\u0627\u062a\u064a \u0645\u0646 \u0627\u0644\u062d\u0628\u0648\u0628", chartSelfSufficSub: "% \u0645\u0646 \u0627\u0644\u0627\u0633\u062a\u0647\u0644\u0627\u0643 \u0627\u0644\u0648\u0637\u0646\u064a",
   chartAgriExports: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a \u0627\u0644\u0632\u0631\u0627\u0639\u064a\u0629 (2010\u20132024)", chartAgriExportsSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
@@ -1100,15 +1151,21 @@ const ar: Dictionary = {
   chartCerealLabel: "\u0627\u0644\u062d\u0628\u0648\u0628", chartSelfSufficLabel: "\u0627\u0644\u0627\u062a\u062d\u0627\u0630 %", chartAgriExportsLabel: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a",
   chartVegLabel: "\u0627\u0644\u062e\u0636\u0627\u0631", chartFruitLabel: "\u0627\u0644\u0641\u0648\u0627\u0643\u0647", chartMilkLabel: "\u0627\u0644\u062d\u0644\u064a\u0628", chartMeatLabel: "\u0627\u0644\u0644\u062d\u0645",
   chartIrrigatedLabel: "\u0645\u0633\u062a\u0635\u0644\u0629", chartTotalLandLabel: "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a",
+  chartOliveDateProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0632\u064a\u062a\u0648\u0646 \u0648\u0627\u0644\u062a\u0645\u0648\u0631", chartOliveDateProdSub: "\u0645\u0644\u0627\u064a\u064a\u0646 \u0623\u0637\u0646\u0627\u0646 (2010\u20132024)",
+  chartOliveLabel: "\u0627\u0644\u0632\u064a\u062a\u0648\u0646", chartDateLabel: "\u0627\u0644\u062a\u0645\u0648\u0631",
 
   // ─── SECTOR: MANUFACTURING ────────────
   tabManufacturing: "\u0627\u0644\u0635\u0646\u0627\u0639\u0629",
   kpiFoodIndustry: "\u0635\u0646\u0627\u0639\u0629 \u063a\u0630\u0627\u0626\u064a\u0629", kpiPharma: "\u0627\u0644\u0623\u062f\u0648\u064a\u0629", kpiTextiles: "\u0627\u0644\u0646\u0633\u064a\u062c", kpiChemicals: "\u0627\u0644\u0643\u064a\u0645\u064a\u0627\u0621",
+  kpiMetallurgy: "\u0627\u0644\u0635\u0646\u0627\u0639\u0627\u062a \u0627\u0644\u0645\u0639\u062f\u0646\u064a\u0629", kpiBuildingMat: "\u0645\u0648\u0627\u062f \u0627\u0644\u0628\u0646\u0627\u0621", kpiElectrical: "\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629", kpiPaper: "\u0627\u0644\u0648\u0631\u0642",
   chartManufSubsectors: "\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0635\u0646\u0627\u0639\u0627\u062a \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629 (2010\u20132024)", chartManufSubsectorsSub: "\u0627\u0644\u0623\u0633\u0627\u0633 100 = 2019",
   chartManufRadar: "\u0631\u0627\u062f\u0627\u0631 \u0627\u0644\u0635\u0646\u0627\u0639\u0629 (2024)", chartManufRadarSub: "\u0627\u0644\u0645\u0624\u0634\u0631 \u062d\u0633\u0628 \u0627\u0644\u0642\u0637\u0627\u0639",
   chartFoodLabel: "\u0635\u0646\u0627\u0639\u0629 \u063a\u0630\u0627\u0626\u064a\u0629", chartTextileLabel: "\u0627\u0644\u0646\u0633\u064a\u062c", chartChemicalLabel: "\u0627\u0644\u0643\u064a\u0645\u064a\u0627\u0621",
   chartMetallurgyLabel: "\u0627\u0644\u062d\u062f\u064a\u062f", chartElectricLabel: "\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621", chartBuildingMatLabel: "\u0645\u0648\u0627\u062f \u0627\u0644\u0628\u0646\u0627\u0621",
   chartPharmaLabel: "\u0627\u0644\u0623\u062f\u0648\u064a\u0629", chartPaperLabel: "\u0627\u0644\u0648\u0631\u0642",
+  chartManufBuildingPaper: "\u0645\u0624\u0634\u0631\u0627\u062a \u0645\u0648\u0627\u062f \u0627\u0644\u0628\u0646\u0627\u0621 \u0648\u0627\u0644\u0648\u0631\u0642", chartManufBuildingPaperSub: "\u0627\u0644\u0623\u0633\u0627\u0633 100 = 2019",
+  chartManufEmployCapacity: "\u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u0648\u0645\u0639\u062f\u0644 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0637\u0627\u0642\u0629", chartManufEmployCapacitySub: "\u0622\u0644\u0627\u0641 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0648\u0646\u0633\u0628\u0629 %",
+  chartCapacityLabel: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645 %", chartEmployLabel: "\u0627\u0644\u062a\u0634\u063a\u064a\u0644 (\u0623\u0644\u0641)", chartManufExportLabel: "\u0635\u0627\u062f\u0631\u0627\u062a \u0635\u0646\u0627\u0639\u064a\u0629 (\u0645\u0644\u064a\u0627\u0631 $)",
 
   // ─── SECTOR: BTP ─────────────────────
   tabBTP: "\u0627\u0644\u0628\u0646\u0627\u0621 \u0648\u0627\u0644\u0623\u0634\u063a\u0627\u0644",

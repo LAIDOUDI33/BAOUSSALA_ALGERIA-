@@ -1,0 +1,1161 @@
+     1→// ═══════════════════════════════════════════════════════════════════════════════
+     2→// ONS DASHBOARD — TRILINGUAL DICTIONARIES (FR / AR / EN)
+     3→// ═══════════════════════════════════════════════════════════════════════════════
+     4→
+     5→export type Locale = "fr" | "ar" | "en";
+     6→
+     7→export interface Dictionary {
+     8→  // Header
+     9→  headerTitle: string;
+    10→  headerSubtitle: string;
+    11→
+    12→  // Tabs
+    13→  tabMacro: string;
+    14→  tabInflation: string;
+    15→  tabTrade: string;
+    16→  tabIndustry: string;
+    17→  tabLabor: string;
+    18→  tabSocial: string;
+    19→  tabFiscal: string;
+    20→  tabRegional: string;
+    21→
+    22→  // ─── MACRO ─────────────────────────────────────────────────────────
+    23→  kpiGdpGrowth: string;
+    24→  kpiGdp2024: string;
+    25→  kpiInflation: string;
+    26→  kpiUnemployment: string;
+    27→  kpiPopulation: string;
+    28→  kpiInvestmentRate: string;
+    29→
+    30→  chartGdpGrowth: string;
+    31→  chartGdpGrowthSub: string;
+    32→  chartGdpBnUsd: string;
+    33→  chartGrowthPct: string;
+    34→
+    35→  chartGdpSector: string;
+    36→  chartGdpSectorSub: string;
+    37→  sectorAgriculture: string;
+    38→  sectorIndustry: string;
+    39→  sectorConstruction: string;
+    40→  sectorServices: string;
+    41→
+    42→  chartQuarterlyGdp: string;
+    43→  chartQuarterlyGdpSub: string;
+    44→
+    45→  chartGdpPerCapita: string;
+    46→  chartGdpPerCapitaSub: string;
+    47→  chartGdpCapita: string;
+    48→
+    49→  // ─── INFLATION ─────────────────────────────────────────────────────
+    50→  kpiCpi: string;
+    51→  kpiYoyInflation: string;
+    52→  kpiFoodInflation: string;
+    53→  kpiCoreInflation: string;
+    54→
+    55→  chartCpiMonthly: string;
+    56→  chartCpiMonthlySub: string;
+    57→  chartInflationYoy: string;
+    58→  chartFoodYoy: string;
+    59→  chartCoreYoy: string;
+    60→  legendTotalYoy: string;
+    61→  legendFoodYoy: string;
+    62→  legendCoreYoy: string;
+    63→
+    64→  chartCpiLevel: string;
+    65→  chartCpiLevelSub: string;
+    66→  chartIpcIndex: string;
+    67→
+    68→  chartCpiDivision: string;
+    69→  chartCpiDivisionSub: string;
+    70→
+    71→  chartCpiWeights: string;
+    72→  chartCpiWeightsSub: string;
+    73→
+    74→  chartIppi: string;
+    75→  chartIppiSub: string;
+    76→  sectorMining: string;
+    77→  sectorManufacturing: string;
+    78→  sectorEnergy: string;
+    79→
+    80→  // ─── TRADE ─────────────────────────────────────────────────────────
+    81→  kpiExports: string;
+    82→  kpiImports: string;
+    83→  kpiTradeBalance: string;
+    84→  kpiHydroPct: string;
+    85→
+    86→  chartTradeAnnual: string;
+    87→  chartTradeAnnualSub: string;
+    88→  chartExports: string;
+    89→  chartImports: string;
+    90→  chartBalance: string;
+    91→
+    92→  chartHydroShare: string;
+    93→  chartHydroShareSub: string;
+    94→  chartHydroPct: string;
+    95→
+    96→  chartTradeQuarterly: string;
+    97→  chartTradeQuarterlySub: string;
+    98→
+    99→  chartTradePartners: string;
+   100→  chartTradePartnersSub: string;
+   101→
+   102→  // ─── INDUSTRY ──────────────────────────────────────────────────────
+   103→  kpiIpi: string;
+   104→  kpiMining: string;
+   105→  kpiManufacturing: string;
+   106→  kpiEnergy: string;
+   107→
+   108→  chartIpi: string;
+   109→  chartIpiSub: string;
+   110→  chartIpiTotal: string;
+   111→
+   112→  chartIpiIppi: string;
+   113→  chartIpiIppiSub: string;
+   114→  chartIpiProd: string;
+   115→  chartIppiPrices: string;
+   116→
+   117→  chartConstruction: string;
+   118→  chartConstructionSub: string;
+   119→  chartConstructionIdx: string;
+   120→
+   121→  // ─── LABOR ─────────────────────────────────────────────────────────
+   122→  kpiUnempRate: string;
+   123→  kpiActivityRate: string;
+   124→  kpiYouthUnemp: string;
+   125→  kpiFemalePartic: string;
+   126→  kpiInformal: string;
+   127→  kpiEmpPop: string;
+   128→
+   129→  chartUnempRate: string;
+   130→  chartUnempRateSub: string;
+   131→  chartTotalPct: string;
+   132→  chartYouthPct: string;
+   133→
+   134→  chartActivityFemale: string;
+   135→  chartActivityFemaleSub: string;
+   136→  chartActRate: string;
+   137→  chartFemPartic: string;
+   138→  chartInformalPct: string;
+   139→
+   140→  chartEmpPop: string;
+   141→  chartEmpPopSub: string;
+   142→  chartEmpPopPct: string;
+   143→
+   144→  // ─── SOCIAL ────────────────────────────────────────────────────────
+   145→  kpiPop: string;
+   146→  kpiGrowthRate: string;
+   147→  kpiUrbanization: string;
+   148→  kpiFertility: string;
+   149→
+   150→  chartPopGrowth: string;
+   151→  chartPopGrowthSub: string;
+   152→  chartPopulationM: string;
+   153→
+   154→  chartPopPyramid: string;
+   155→  chartPopPyramidSub: string;
+   156→  chartMale: string;
+   157→  chartFemale: string;
+   158→
+   159→  chartDemographic: string;
+   160→  chartDemographicSub: string;
+   161→  chartBirthRate: string;
+   162→  chartDeathRate: string;
+   163→  chartFertilityRate: string;
+   164→
+   165→  chartEducation: string;
+   166→  chartEducationSub: string;
+   167→  chartPrimary: string;
+   168→  chartSecondary: string;
+   169→  chartHigher: string;
+   170→
+   171→  chartLiteracy: string;
+   172→  chartLiteracySub: string;
+   173→  chartLiteracyRate: string;
+   174→  chartPrimaryNet: string;
+   175→  chartSecondaryNet: string;
+   176→  chartHigherGross: string;
+   177→
+   178→  // ─── FISCAL ────────────────────────────────────────────────────────
+   179→  kpiSavings: string;
+   180→  kpiInvest: string;
+   181→  kpiDebt: string;
+   182→  kpiFiscalDeficit: string;
+   183→
+   184→  chartFiscal: string;
+   185→  chartFiscalSub: string;
+   186→  chartRevenue: string;
+   187→  chartExpenditure: string;
+   188→  chartDeficit: string;
+   189→
+   190→  chartSavingsInvest: string;
+   191→  chartSavingsInvestSub: string;
+   192→  chartSavingsRate: string;
+   193→  chartInvestRate: string;
+   194→
+   195→  chartDebt: string;
+   196→  chartDebtSub: string;
+   197→  chartDebtGdp: string;
+   198→
+   199→  // ─── REGIONAL ──────────────────────────────────────────────────────
+   200→  chartWilayaGdp: string;
+   201→  chartWilayaGdpSub: string;
+   202→  chartGdpShare: string;
+   203→
+   204→  chartWilayaUnemp: string;
+   205→  chartWilayaUnempSub: string;
+   206→  chartUnempPct: string;
+   207→
+   208→  chartScatter: string;
+   209→  chartScatterSub: string;
+   210→  chartPopK: string;
+   211→  chartGdpShareLabel: string;
+   212→  chartPopThousands: string;
+   213→  chartUnempPctLabel: string;
+   214→
+   215→  // ─── SECTOR: HYDROCARBONS ────────────
+   216→  tabHydro: string;
+   217→  kpiHydroRevenue: string;
+   218→  kpiOilProd: string;
+   219→  kpiGasProd: string;
+   220→  kpiHydroGdpShare: string;
+   221→  chartHydroRevenue: string;
+   222→  chartHydroRevenueSub: string;
+   223→  chartHydroExports: string;
+   224→  chartHydroExportsSub: string;
+   225→  chartOilPrice: string;
+   226→  chartOilPriceSub: string;
+   227→  chartHydroGdp: string;
+   228→  chartHydroGdpSub: string;
+   229→  chartOilProduction: string;
+   230→  chartOilProductionSub: string;
+   231→  chartGasProduction: string;
+   232→  chartHydroRevLabel: string;
+   233→  chartExportsLabel: string;
+   234→  chartOilPriceLabel: string;
+   235→  chartOilProdLabel: string;
+   236→  chartGasProdLabel: string;
+   237→  chartHydroVsNonHydro: string;
+   238→  chartHydroVsNonHydroSub: string;
+   239→  chartHydroExportLabel: string;
+   240→  chartNonHydroExportLabel: string;
+   241→
+   242→  // ─── SECTOR: AGRICULTURE ─────────────
+   243→  tabAgriculture: string;
+   244→  kpiCerealProd: string;
+   245→  kpiSelfSuffic: string;
+   246→  kpiAgriExports: string;
+   247→  kpiAgriEmploy: string;
+   248→  chartCerealProd: string;
+   249→  chartCerealProdSub: string;
+   250→  chartSelfSuffic: string;
+   251→  chartSelfSufficSub: string;
+   252→  chartAgriExports: string;
+   253→  chartAgriExportsSub: string;
+   254→  chartVegFruitProd: string;
+   255→  chartVegFruitProdSub: string;
+   256→  chartLivestock: string;
+   257→  chartLivestockSub: string;
+   258→  chartLandUse: string;
+   259→  chartLandUseSub: string;
+   260→  chartCerealLabel: string;
+   261→  chartSelfSufficLabel: string;
+   262→  chartAgriExportsLabel: string;
+   263→  chartVegLabel: string;
+   264→  chartFruitLabel: string;
+   265→  chartMilkLabel: string;
+   266→  chartMeatLabel: string;
+   267→  chartIrrigatedLabel: string;
+   268→  chartTotalLandLabel: string;
+   269→
+   270→  // ─── SECTOR: MANUFACTURING ────────────
+   271→  tabManufacturing: string;
+   272→  kpiFoodIndustry: string;
+   273→  kpiPharma: string;
+   274→  kpiTextiles: string;
+   275→  kpiChemicals: string;
+   276→  chartManufSubsectors: string;
+   277→  chartManufSubsectorsSub: string;
+   278→  chartManufRadar: string;
+   279→  chartManufRadarSub: string;
+   280→  chartFoodLabel: string;
+   281→  chartTextileLabel: string;
+   282→  chartChemicalLabel: string;
+   283→  chartMetallurgyLabel: string;
+   284→  chartElectricLabel: string;
+   285→  chartBuildingMatLabel: string;
+   286→  chartPharmaLabel: string;
+   287→  chartPaperLabel: string;
+   288→
+   289→  // ─── SECTOR: BTP ─────────────────────
+   290→  tabBTP: string;
+   291→  kpiHousingUnits: string;
+   292→  kpiCementProd: string;
+   293→  kpiBTPGdp: string;
+   294→  kpiBTPEmploy: string;
+   295→  chartHousingUnits: string;
+   296→  chartHousingUnitsSub: string;
+   297→  chartCementSteel: string;
+   298→  chartCementSteelSub: string;
+   299→  chartBTPCostIndex: string;
+   300→  chartBTPCostIndexSub: string;
+   301→  chartBTPInvest: string;
+   302→  chartBTPInvestSub: string;
+   303→  chartHousingLabel: string;
+   304→  chartCementLabel: string;
+   305→  chartSteelLabel: string;
+   306→  chartCostIndexLabel: string;
+   307→  chartPublicInvestLabel: string;
+   308→  chartPermitsLabel: string;
+   309→
+   310→  // ─── SECTOR: SERVICES ────────────────
+   311→  tabServices: string;
+   312→  kpiServicesGdp: string;
+   313→  kpiTrade: string;
+   314→  kpiTransport: string;
+   315→  kpiTelecom: string;
+   316→  chartServicesComposition: string;
+   317→  chartServicesCompositionSub: string;
+   318→  chartServicesTrend: string;
+   319→  chartServicesTrendSub: string;
+   320→  chartTradeLabel: string;
+   321→  chartTransportLabel: string;
+   322→  chartTelecomLabel: string;
+   323→  chartFinanceLabel: string;
+   324→  chartTourismLabel: string;
+   325→  chartGovtLabel: string;
+   326→
+   327→  // ─── SECTOR: MINING & ENERGY ─────────
+   328→  tabMiningEnergy: string;
+   329→  kpiElectricity: string;
+   330→  kpiGasConsump: string;
+   331→  kpiIronOre: string;
+   332→  kpiPhosphate: string;
+   333→  chartMiningProd: string;
+   334→  chartMiningProdSub: string;
+   335→  chartEnergyConsump: string;
+   336→  chartEnergyConsumpSub: string;
+   337→  chartElectricity: string;
+   338→  chartElectricitySub: string;
+   339→  chartIronOreLabel: string;
+   340→  chartPhosphateLabel: string;
+   341→  chartZincLabel: string;
+   342→  chartLeadLabel: string;
+   343→  chartSaltLabel: string;
+   344→  chartElectricityLabel: string;
+   345→  chartGasConsumpLabel: string;
+   346→  chartPetrolConsumpLabel: string;
+   347→
+   348→  // ─── FOOTER ────────────────────────────────────────────────────────
+   349→  footer: string;
+   350→}
+   351→
+   352→// ─── ENGLISH ──────────────────────────────────────────────────────────────────
+   353→const en: Dictionary = {
+   354→  headerTitle: "Algeria Economic Dashboard",
+   355→  headerSubtitle: "Office National des Statistiques (ONS) — Data Science Analysis Platform",
+   356→
+   357→  tabMacro: "Macroeconomic",
+   358→  tabInflation: "Prices & Inflation",
+   359→  tabTrade: "Trade & Balance",
+   360→  tabIndustry: "Industrial Production",
+   361→  tabLabor: "Labor Market",
+   362→  tabSocial: "Demographics & Social",
+   363→  tabFiscal: "Fiscal & Savings",
+   364→  tabRegional: "Regional",
+   365→
+   366→  kpiGdpGrowth: "GDP Growth",
+   367→  kpiGdp2024: "GDP (2024)",
+   368→  kpiInflation: "Inflation",
+   369→  kpiUnemployment: "Unemployment",
+   370→  kpiPopulation: "Population",
+   371→  kpiInvestmentRate: "Investment Rate",
+   372→
+   373→  chartGdpGrowth: "GDP & Growth Rate (2000–2024)",
+   374→  chartGdpGrowthSub: "Billion USD and annual growth %",
+   375→  chartGdpBnUsd: "GDP (bn USD)",
+   376→  chartGrowthPct: "Growth %",
+   377→
+   378→  chartGdpSector: "GDP by Sector (% Contribution)",
+   379→  chartGdpSectorSub: "Agriculture, Industry, Construction, Services",
+   380→  sectorAgriculture: "Agriculture",
+   381→  sectorIndustry: "Industry",
+   382→  sectorConstruction: "Construction",
+   383→  sectorServices: "Services",
+   384→
+   385→  chartQuarterlyGdp: "Quarterly GDP Growth (2020–2025)",
+   386→  chartQuarterlyGdpSub: "QoQ growth rate %",
+   387→  chartGdpPerCapita: "GDP per Capita (2000–2024)",
+   388→  chartGdpPerCapitaSub: "Current USD",
+   389→  chartGdpCapita: "GDP/capita (USD)",
+   390→
+   391→  kpiCpi: "CPI (Apr 2026)",
+   392→  kpiYoyInflation: "YoY Inflation",
+   393→  kpiFoodInflation: "Food Inflation",
+   394→  kpiCoreInflation: "Core Inflation",
+   395→
+   396→  chartCpiMonthly: "Consumer Price Index — Monthly (2020–2026)",
+   397→  chartCpiMonthlySub: "Year-over-year inflation %",
+   398→  chartInflationYoy: "Inflation YoY %",
+   399→  chartFoodYoy: "Food YoY %",
+   400→  chartCoreYoy: "Core YoY %",
+   401→  legendTotalYoy: "Total YoY",
+   402→  legendFoodYoy: "Food YoY",
+   403→  legendCoreYoy: "Core YoY",
+   404→
+   405→  chartCpiLevel: "CPI Index Level (2020–2026)",
+   406→  chartCpiLevelSub: "Base year implied index",
+   407→  chartIpcIndex: "CPI Index",
+   408→
+   409→  chartCpiDivision: "Inflation by COICOP Division (2024)",
+   410→  chartCpiDivisionSub: "Year-over-year change by product group",
+   411→
+   412→  chartCpiWeights: "CPI Basket Weights by Division",
+   413→  chartCpiWeightsSub: "Share in consumer basket",
+   414→
+   415→  chartIppi: "Producer Price Index (IPPI) — Quarterly (2020–2025)",
+   416→  chartIppiSub: "Mining, Manufacturing, Energy",
+   417→  sectorMining: "Mining",
+   418→  sectorManufacturing: "Manufacturing",
+   419→  sectorEnergy: "Energy",
+   420→
+   421→  kpiExports: "Exports (2024)",
+   422→  kpiImports: "Imports (2024)",
+   423→  kpiTradeBalance: "Trade Balance",
+   424→  kpiHydroPct: "Hydrocarbon % Exports",
+   425→
+   426→  chartTradeAnnual: "External Trade (2000–2024)",
+   427→  chartTradeAnnualSub: "Exports, Imports, Balance — Billion USD",
+   428→  chartExports: "Exports",
+   429→  chartImports: "Imports",
+   430→  chartBalance: "Balance",
+   431→
+   432→  chartHydroShare: "Hydrocarbon Share of Exports",
+   433→  chartHydroShareSub: "% of total export value",
+   434→  chartHydroPct: "Hydrocarbon %",
+   435→
+   436→  chartTradeQuarterly: "Quarterly Trade Balance (2023–2025)",
+   437→  chartTradeQuarterlySub: "Billion USD",
+   438→
+   439→  chartTradePartners: "Top Trade Partners (2024)",
+   440→  chartTradePartnersSub: "Exports vs Imports by country",
+   441→
+   442→  kpiIpi: "IPI (Q2 2025)",
+   443→  kpiMining: "Mining",
+   444→  kpiManufacturing: "Manufacturing",
+   445→  kpiEnergy: "Energy",
+   446→
+   447→  chartIpi: "Industrial Production Index (2020–2025)",
+   448→  chartIpiSub: "Mining, Manufacturing, Energy — Base 100 = 2019",
+   449→  chartIpiTotal: "IPI Total",
+   450→
+   451→  chartIpiIppi: "IPI vs IPPI Comparison (2020–2025)",
+   452→  chartIpiIppiSub: "Industrial Production vs Producer Prices",
+   453→  chartIpiProd: "IPI (Production)",
+   454→  chartIppiPrices: "IPPI (Prices)",
+   455→
+   456→  chartConstruction: "Construction Cost Index (2015–2024)",
+   457→  chartConstructionSub: "Base 100 = 2014",
+   458→  chartConstructionIdx: "Construction Index",
+   459→
+   460→  kpiUnempRate: "Unemployment",
+   461→  kpiActivityRate: "Activity Rate",
+   462→  kpiYouthUnemp: "Youth Unemp.",
+   463→  kpiFemalePartic: "Female Partic.",
+   464→  kpiInformal: "Informal Sector",
+   465→  kpiEmpPop: "Employment/Pop",
+   466→
+   467→  chartUnempRate: "Unemployment Rate (2010–2024)",
+   468→  chartUnempRateSub: "Total and youth (15-24) unemployment %",
+   469→  chartTotalPct: "Total %",
+   470→  chartYouthPct: "Youth (15-24) %",
+   471→
+   472→  chartActivityFemale: "Activity Rate & Female Participation",
+   473→  chartActivityFemaleSub: "% of working-age population",
+   474→  chartActRate: "Activity Rate",
+   475→  chartFemPartic: "Female Partic.",
+   476→  chartInformalPct: "Informal %",
+   477→
+   478→  chartEmpPop: "Employment-to-Population Ratio (2010–2024)",
+   479→  chartEmpPopSub: "% of total population employed",
+   480→  chartEmpPopPct: "Emp/Pop %",
+   481→
+   482→  kpiPop: "Population",
+   483→  kpiGrowthRate: "Growth Rate",
+   484→  kpiUrbanization: "Urbanization",
+   485→  kpiFertility: "Fertility Rate",
+   486→
+   487→  chartPopGrowth: "Population Growth (2000–2024)",
+   488→  chartPopGrowthSub: "Millions of inhabitants",
+   489→  chartPopulationM: "Population (M)",
+   490→
+   491→  chartPopPyramid: "Population Pyramid (2024)",
+   492→  chartPopPyramidSub: "By age group — Millions",
+   493→  chartMale: "Male (M)",
+   494→  chartFemale: "Female (M)",
+   495→
+   496→  chartDemographic: "Demographic Transition Indicators",
+   497→  chartDemographicSub: "Birth rate, death rate, fertility rate",
+   498→  chartBirthRate: "Birth Rate",
+   499→  chartDeathRate: "Death Rate",
+   500→  chartFertilityRate: "Fertility Rate",
+   501→
+   502→  chartEducation: "Education Enrollment (2015–2024)",
+   503→  chartEducationSub: "Millions of students",
+   504→  chartPrimary: "Primary",
+   505→  chartSecondary: "Secondary",
+   506→  chartHigher: "Higher",
+   507→
+   508→  chartLiteracy: "Literacy Rate & Net Enrollment (2015–2024)",
+   509→  chartLiteracySub: "Literacy %, Primary and Secondary net enrollment rates",
+   510→  chartLiteracyRate: "Literacy Rate %",
+   511→  chartPrimaryNet: "Primary Net %",
+   512→  chartSecondaryNet: "Secondary Net %",
+   513→  chartHigherGross: "Higher Gross %",
+   514→
+   515→  kpiSavings: "Savings Rate",
+   516→  kpiInvest: "Investment Rate",
+   517→  kpiDebt: "Debt/GDP",
+   518→  kpiFiscalDeficit: "Fiscal Deficit",
+   519→
+   520→  chartFiscal: "Fiscal Balance (% of GDP)",
+   521→  chartFiscalSub: "Revenue, Expenditure, Deficit",
+   522→  chartRevenue: "Revenue",
+   523→  chartExpenditure: "Expenditure",
+   524→  chartDeficit: "Deficit",
+   525→
+   526→  chartSavingsInvest: "Savings vs Investment Rate",
+   527→  chartSavingsInvestSub: "% of GDP",
+   528→  chartSavingsRate: "Savings Rate",
+   529→  chartInvestRate: "Investment Rate",
+   530→
+   531→  chartDebt: "Public Debt to GDP Ratio (2010–2024)",
+   532→  chartDebtSub: "% of GDP",
+   533→  chartDebtGdp: "Debt/GDP %",
+   534→
+   535→  chartWilayaGdp: "Top 10 Wilayas by GDP Share (2023)",
+   536→  chartWilayaGdpSub: "Contribution to national GDP",
+   537→  chartGdpShare: "GDP Share %",
+   538→
+   539→  chartWilayaUnemp: "Unemployment Rate by Wilaya (2023)",
+   540→  chartWilayaUnempSub: "Top 10 wilayas",
+   541→  chartUnempPct: "Unemployment %",
+   542→
+   543→  chartScatter: "Population vs GDP Scatter (2023)",
+   544→  chartScatterSub: "Top 10 wilayas — bubble size = unemployment rate",
+   545→  chartPopK: "Population (K)",
+   546→  chartGdpShareLabel: "GDP Share %",
+   547→  chartPopThousands: "Population (thousands)",
+   548→  chartUnempPctLabel: "Unemployment %",
+   549→
+   550→  // ─── SECTOR: HYDROCARBONS ────────────
+   551→  tabHydro: "Hydrocarbons",
+   552→  kpiHydroRevenue: "Hydro Revenue", kpiOilProd: "Oil Production", kpiGasProd: "Gas Production", kpiHydroGdpShare: "Hydro % GDP",
+   553→  chartHydroRevenue: "Hydrocarbon Revenue & Exports (2000\u20132024)", chartHydroRevenueSub: "Billion USD \u2014 Revenue and export earnings",
+   554→  chartHydroExports: "Hydrocarbon Export Trend (2000\u20132024)", chartHydroExportsSub: "Billion USD",
+   555→  chartOilPrice: "Crude Oil Price (2000\u20132024)", chartOilPriceSub: "USD per barrel (Brent)",
+   556→  chartHydroGdp: "Hydrocarbon Contribution to GDP (2000\u20132024)", chartHydroGdpSub: "% of GDP",
+   557→  chartOilProduction: "Oil & Gas Production (2000\u20132024)", chartOilProductionSub: "Mbpd and Bcm",
+   558→  chartGasProduction: "Gas Production", chartHydroRevLabel: "Revenue", chartExportsLabel: "Exports",
+   559→  chartOilPriceLabel: "Oil Price $/bbl", chartOilProdLabel: "Oil (Mbpd)", chartGasProdLabel: "Gas (Bcm)",
+   560→  chartHydroVsNonHydro: "Hydrocarbon vs Non-Hydrocarbon Exports", chartHydroVsNonHydroSub: "Billion USD (2000\u20132024)",
+   561→  chartHydroExportLabel: "Hydrocarbons", chartNonHydroExportLabel: "Non-Hydrocarbons",
+   562→
+   563→  // ─── SECTOR: AGRICULTURE ─────────────
+   564→  tabAgriculture: "Agriculture",
+   565→  kpiCerealProd: "Cereal Prod.", kpiSelfSuffic: "Self-Sufficiency", kpiAgriExports: "Agri. Exports", kpiAgriEmploy: "Agri. Employment",
+   566→  chartCerealProd: "Cereal Production (2010\u20132024)", chartCerealProdSub: "Million tonnes",
+   567→  chartSelfSuffic: "Cereal Self-Sufficiency Rate", chartSelfSufficSub: "% of national consumption",
+   568→  chartAgriExports: "Agricultural Exports (2010\u20132024)", chartAgriExportsSub: "Billion USD",
+   569→  chartVegFruitProd: "Vegetable & Fruit Production", chartVegFruitProdSub: "Million tonnes (2010\u20132024)",
+   570→  chartLivestock: "Livestock Production", chartLivestockSub: "Milk (M litres) and Meat (Mt)",
+   571→  chartLandUse: "Agricultural Land", chartLandUseSub: "Irrigated vs Total (M ha)",
+   572→  chartCerealLabel: "Cereals", chartSelfSufficLabel: "Self-Sufficiency %", chartAgriExportsLabel: "Agri. Exports",
+   573→  chartVegLabel: "Vegetables", chartFruitLabel: "Fruits", chartMilkLabel: "Milk", chartMeatLabel: "Meat",
+   574→  chartIrrigatedLabel: "Irrigated", chartTotalLandLabel: "Total Land",
+   575→
+   576→  // ─── SECTOR: MANUFACTURING ────────────
+   577→  tabManufacturing: "Manufacturing",
+   578→  kpiFoodIndustry: "Food Industry", kpiPharma: "Pharma", kpiTextiles: "Textiles", kpiChemicals: "Chemicals",
+   579→  chartManufSubsectors: "Manufacturing Sub-Sector Indices (2010\u20132024)", chartManufSubsectorsSub: "Base 100 = 2019",
+   580→  chartManufRadar: "Manufacturing Radar (2024)", chartManufRadarSub: "Index by sub-sector",
+   581→  chartFoodLabel: "Food Industry", chartTextileLabel: "Textiles", chartChemicalLabel: "Chemicals",
+   582→  chartMetallurgyLabel: "Metallurgy", chartElectricLabel: "Electrical", chartBuildingMatLabel: "Building Materials",
+   583→  chartPharmaLabel: "Pharma", chartPaperLabel: "Paper",
+   584→
+   585→  // ─── SECTOR: BTP ─────────────────────
+   586→  tabBTP: "BTP",
+   587→  kpiHousingUnits: "Housing Units", kpiCementProd: "Cement Prod.", kpiBTPGdp: "BTP % GDP", kpiBTPEmploy: "BTP Employment",
+   588→  chartHousingUnits: "Housing Units Delivered", chartHousingUnitsSub: "Thousands of units",
+   589→  chartCementSteel: "Cement & Steel Production", chartCementSteelSub: "Cement (Mt) and Steel (Mt)",
+   590→  chartBTPCostIndex: "Construction Cost Index", chartBTPCostIndexSub: "Base 100 = 2014",
+   591→  chartBTPInvest: "Public Investment in Construction", chartBTPInvestSub: "Billion USD",
+   592→  chartHousingLabel: "Housing Units (K)", chartCementLabel: "Cement (Mt)", chartSteelLabel: "Steel (Mt)",
+   593→  chartCostIndexLabel: "Cost Index", chartPublicInvestLabel: "Public Invest.", chartPermitsLabel: "Building Permits (K)",
+   594→
+   595→  // ─── SECTOR: SERVICES ────────────────
+   596→  tabServices: "Services",
+   597→  kpiServicesGdp: "Services % GDP", kpiTrade: "Trade", kpiTransport: "Transport", kpiTelecom: "Telecom",
+   598→  chartServicesComposition: "Services Sector Composition", chartServicesCompositionSub: "% of GDP by sub-sector",
+   599→  chartServicesTrend: "Services Sector Trend (2010\u20132024)", chartServicesTrendSub: "% of GDP",
+   600→  chartTradeLabel: "Trade", chartTransportLabel: "Transport", chartTelecomLabel: "Telecom",
+   601→  chartFinanceLabel: "Finance", chartTourismLabel: "Tourism", chartGovtLabel: "Govt. Services",
+   602→
+   603→  // ─── SECTOR: MINING & ENERGY ─────────
+   604→  tabMiningEnergy: "Mines & Energy",
+   605→  kpiElectricity: "Electricity", kpiGasConsump: "Gas Consump.", kpiIronOre: "Iron Ore", kpiPhosphate: "Phosphate",
+   606→  chartMiningProd: "Mining Production (2010\u20132024)", chartMiningProdSub: "Tonnes",
+   607→  chartEnergyConsump: "Energy Consumption", chartEnergyConsumpSub: "Gas (Bcm) and Petroleum (Mt)",
+   608→  chartElectricity: "Electricity Production", chartElectricitySub: "TWh (2010\u20132024)",
+   609→  chartIronOreLabel: "Iron Ore (Mt)", chartPhosphateLabel: "Phosphate (Mt)", chartZincLabel: "Zinc (Kt)",
+   610→  chartLeadLabel: "Lead (Kt)", chartSaltLabel: "Salt (Mt)", chartElectricityLabel: "Electricity (TWh)",
+   611→  chartGasConsumpLabel: "Gas (Bcm)", chartPetrolConsumpLabel: "Petroleum (Mt)",
+   612→
+   613→  footer: "Source: Office National des Statistiques (ONS) \u2014 www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes Economiques, ENEM, RGPH)",
+   614→};
+   615→
+   616→// ─── FRENCH ───────────────────────────────────────────────────────────────────
+   617→const fr: Dictionary = {
+   618→  headerTitle: "Tableau de Bord \u00c9conomique de l'Alg\u00e9rie",
+   619→  headerSubtitle: "Office National des Statistiques (ONS) — Plateforme d'Analyse de Donn\u00e9es",
+   620→
+   621→  tabMacro: "Macro\u00e9conomie",
+   622→  tabInflation: "Prix & Inflation",
+   623→  tabTrade: "Commerce Ext\u00e9rieur",
+   624→  tabIndustry: "Production Industrielle",
+   625→  tabLabor: "March\u00e9 du Travail",
+   626→  tabSocial: "D\u00e9mographie & Social",
+   627→  tabFiscal: "Finances & \u00c9pargne",
+   628→  tabRegional: "R\u00e9gional",
+   629→
+   630→  kpiGdpGrowth: "Croissance du PIB",
+   631→  kpiGdp2024: "PIB (2024)",
+   632→  kpiInflation: "Inflation",
+   633→  kpiUnemployment: "Ch\u00f4mage",
+   634→  kpiPopulation: "Population",
+   635→  kpiInvestmentRate: "Taux d'Investissement",
+   636→
+   637→  chartGdpGrowth: "PIB et Taux de Croissance (2000\u20132024)",
+   638→  chartGdpGrowthSub: "Milliards USD et taux de croissance annuel %",
+   639→  chartGdpBnUsd: "PIB (Mds USD)",
+   640→  chartGrowthPct: "Croissance %",
+   641→
+   642→  chartGdpSector: "PIB par Secteur (% de Contribution)",
+   643→  chartGdpSectorSub: "Agriculture, Industrie, BTP, Services",
+   644→  sectorAgriculture: "Agriculture",
+   645→  sectorIndustry: "Industrie",
+   646→  sectorConstruction: "BTP",
+   647→  sectorServices: "Services",
+   648→
+   649→  chartQuarterlyGdp: "Croissance Trimestrielle du PIB (2020\u20132025)",
+   650→  chartQuarterlyGdpSub: "Taux de croissance trimestriel %",
+   651→  chartGdpPerCapita: "PIB par Habitant (2000\u20132024)",
+   652→  chartGdpPerCapitaSub: "USD courants",
+   653→  chartGdpCapita: "PIB/habitant (USD)",
+   654→
+   655→  kpiCpi: "IPC (Avr 2026)",
+   656→  kpiYoyInflation: "Inflation glissante",
+   657→  kpiFoodInflation: "Inflation Alimentaire",
+   658→  kpiCoreInflation: "Inflation Sous-jacente",
+   659→
+   660→  chartCpiMonthly: "Indice des Prix \u00e0 la Consommation \u2014 Mensuel (2020\u20132026)",
+   661→  chartCpiMonthlySub: "Inflation annuelle %",
+   662→  chartInflationYoy: "Inflation annuelle %",
+   663→  chartFoodYoy: "Alimentaire annuel %",
+   664→  chartCoreYoy: "Sous-jacente annuelle %",
+   665→  legendTotalYoy: "Total annuel",
+   666→  legendFoodYoy: "Alimentaire",
+   667→  legendCoreYoy: "Sous-jacente",
+   668→
+   669→  chartCpiLevel: "Niveau de l'IPC (2020\u20132026)",
+   670→  chartCpiLevelSub: "Indice implicite ann\u00e9e de base",
+   671→  chartIpcIndex: "Indice IPC",
+   672→
+   673→  chartCpiDivision: "Inflation par Division COICOP (2024)",
+   674→  chartCpiDivisionSub: "Variation annuelle par groupe de produits",
+   675→
+   676→  chartCpiWeights: "Pond\u00e9rations du Panier IPC par Division",
+   677→  chartCpiWeightsSub: "Part dans le panier de consommation",
+   678→
+   679→  chartIppi: "Indice des Prix \u00e0 la Production Industrielle (IPPI) \u2014 Trimestriel (2020\u20132025)",
+   680→  chartIppiSub: "Mines, Manufacture, \u00c9nergie",
+   681→  sectorMining: "Mines",
+   682→  sectorManufacturing: "Manufacture",
+   683→  sectorEnergy: "\u00c9nergie",
+   684→
+   685→  kpiExports: "Exportations (2024)",
+   686→  kpiImports: "Importations (2024)",
+   687→  kpiTradeBalance: "Balance Commerciale",
+   688→  kpiHydroPct: "Part Hydrocarbures",
+   689→
+   690→  chartTradeAnnual: "Commerce Ext\u00e9rieur (2000\u20132024)",
+   691→  chartTradeAnnualSub: "Exportations, Importations, Solde \u2014 Milliards USD",
+   692→  chartExports: "Exportations",
+   693→  chartImports: "Importations",
+   694→  chartBalance: "Solde",
+   695→
+   696→  chartHydroShare: "Part des Hydrocarbures dans les Exportations",
+   697→  chartHydroShareSub: "% de la valeur totale des exportations",
+   698→  chartHydroPct: "Hydrocarbures %",
+   699→
+   700→  chartTradeQuarterly: "Balance Commerciale Trimestrielle (2023\u20132025)",
+   701→  chartTradeQuarterlySub: "Milliards USD",
+   702→
+   703→  chartTradePartners: "Principaux Partenaires Commerciaux (2024)",
+   704→  chartTradePartnersSub: "Exportations vs Importations par pays",
+   705→
+   706→  kpiIpi: "IPI (T2 2025)",
+   707→  kpiMining: "Mines",
+   708→  kpiManufacturing: "Manufacture",
+   709→  kpiEnergy: "\u00c9nergie",
+   710→
+   711→  chartIpi: "Indice de la Production Industrielle (2020\u20132025)",
+   712→  chartIpiSub: "Mines, Manufacture, \u00c9nergie \u2014 Base 100 = 2019",
+   713→  chartIpiTotal: "IPI Total",
+   714→
+   715→  chartIpiIppi: "Comparaison IPI vs IPPI (2020\u20132025)",
+   716→  chartIpiIppiSub: "Production industrielle vs Prix \u00e0 la production",
+   717→  chartIpiProd: "IPI (Production)",
+   718→  chartIppiPrices: "IPPI (Prix)",
+   719→
+   720→  chartConstruction: "Indice du Co\u00fbt de la Construction (2015\u20132024)",
+   721→  chartConstructionSub: "Base 100 = 2014",
+   722→  chartConstructionIdx: "Indice Construction",
+   723→
+   724→  kpiUnempRate: "Taux de Ch\u00f4mage",
+   725→  kpiActivityRate: "Taux d'Activit\u00e9",
+   726→  kpiYouthUnemp: "Ch\u00f4mage Jeunes",
+   727→  kpiFemalePartic: "Part. F\u00e9minine",
+   728→  kpiInformal: "Secteur Informel",
+   729→  kpiEmpPop: "Emploi/Pop.",
+   730→
+   731→  chartUnempRate: "Taux de Ch\u00f4mage (2010\u20132024)",
+   732→  chartUnempRateSub: "Ch\u00f4mage global et jeunes (15-24 ans) %",
+   733→  chartTotalPct: "Global %",
+   734→  chartYouthPct: "Jeunes (15-24) %",
+   735→
+   736→  chartActivityFemale: "Taux d'Activit\u00e9 et Participation F\u00e9minine",
+   737→  chartActivityFemaleSub: "% de la population en \u00e2ge de travailler",
+   738→  chartActRate: "Taux d'Activit\u00e9",
+   739→  chartFemPartic: "Part. F\u00e9minine",
+   740→  chartInformalPct: "Informel %",
+   741→
+   742→  chartEmpPop: "Taux d'Emploi par Rapport \u00e0 la Population (2010\u20132024)",
+   743→  chartEmpPopSub: "% de la population totale employ\u00e9e",
+   744→  chartEmpPopPct: "Emploi/Pop. %",
+   745→
+   746→  kpiPop: "Population",
+   747→  kpiGrowthRate: "Taux de Croissance",
+   748→  kpiUrbanization: "Urbanisation",
+   749→  kpiFertility: "Indice de F\u00e9condit\u00e9",
+   750→
+   751→  chartPopGrowth: "\u00c9volution de la Population (2000\u20132024)",
+   752→  chartPopGrowthSub: "Millions d'habitants",
+   753→  chartPopulationM: "Population (M)",
+   754→
+   755→  chartPopPyramid: "Pyramide des \u00c2ges (2024)",
+   756→  chartPopPyramidSub: "Par groupe d'\u00e2ge \u2014 Millions",
+   757→  chartMale: "Hommes (M)",
+   758→  chartFemale: "Femmes (M)",
+   759→
+   760→  chartDemographic: "Indicateurs de Transition D\u00e9mographique",
+   761→  chartDemographicSub: "Taux de natalit\u00e9, mortalit\u00e9, f\u00e9condit\u00e9",
+   762→  chartBirthRate: "Taux de Natalit\u00e9",
+   763→  chartDeathRate: "Taux de Mortalit\u00e9",
+   764→  chartFertilityRate: "Indice de F\u00e9condit\u00e9",
+   765→
+   766→  chartEducation: "Effectifs Scolaires (2015\u20132024)",
+   767→  chartEducationSub: "Millions d'\u00e9l\u00e8ves et \u00e9tudiants",
+   768→  chartPrimary: "Primaire",
+   769→  chartSecondary: "Secondaire",
+   770→  chartHigher: "Sup\u00e9rieur",
+   771→
+   772→  chartLiteracy: "Taux d'Alphab\u00e9tisme et Taux de Scolarisation (2015\u20132024)",
+   773→  chartLiteracySub: "Alphab\u00e9tisme %, taux nets primaire et secondaire",
+   774→  chartLiteracyRate: "Alphab\u00e9tisme %",
+   775→  chartPrimaryNet: "Primaire Net %",
+   776→  chartSecondaryNet: "Secondaire Net %",
+   777→  chartHigherGross: "Sup\u00e9rieur Brut %",
+   778→
+   779→  kpiSavings: "Taux d'\u00c9pargne",
+   780→  kpiInvest: "Taux d'Investissement",
+   781→  kpiDebt: "Dette/PIB",
+   782→  kpiFiscalDeficit: "D\u00e9ficit Budg\u00e9taire",
+   783→
+   784→  chartFiscal: "\u00c9quilibre Budg\u00e9taire (% du PIB)",
+   785→  chartFiscalSub: "Recettes, D\u00e9penses, D\u00e9ficit",
+   786→  chartRevenue: "Recettes",
+   787→  chartExpenditure: "D\u00e9penses",
+   788→  chartDeficit: "D\u00e9ficit",
+   789→
+   790→  chartSavingsInvest: "\u00c9pargne vs Investissement",
+   791→  chartSavingsInvestSub: "% du PIB",
+   792→  chartSavingsRate: "Taux d'\u00c9pargne",
+   793→  chartInvestRate: "Taux d'Investissement",
+   794→
+   795→  chartDebt: "Dette Publique / PIB (2010\u20132024)",
+   796→  chartDebtSub: "% du PIB",
+   797→  chartDebtGdp: "Dette/PIB %",
+   798→
+   799→  chartWilayaGdp: "Top 10 Wilayas par Part du PIB (2023)",
+   800→  chartWilayaGdpSub: "Contribution au PIB national",
+   801→  chartGdpShare: "Part du PIB %",
+   802→
+   803→  chartWilayaUnemp: "Taux de Ch\u00f4mage par Wilaya (2023)",
+   804→  chartWilayaUnempSub: "Top 10 wilayas",
+   805→  chartUnempPct: "Ch\u00f4mage %",
+   806→
+   807→  chartScatter: "Population vs PIB \u2014 Nuage de Points (2023)",
+   808→  chartScatterSub: "Top 10 wilayas \u2014 taille = taux de ch\u00f4mage",
+   809→  chartPopK: "Population (K)",
+   810→  chartGdpShareLabel: "Part du PIB %",
+   811→  chartPopThousands: "Population (milliers)",
+   812→  chartUnempPctLabel: "Ch\u00f4mage %",
+   813→
+   814→  // ─── SECTOR: HYDROCARBONS ────────────
+   815→  tabHydro: "Hydrocarbures",
+   816→  kpiHydroRevenue: "Rev. Hydrocarbures", kpiOilProd: "Production P\u00e9trole", kpiGasProd: "Production Gaz", kpiHydroGdpShare: "Hydro % PIB",
+   817→  chartHydroRevenue: "Revenus et Exportations Hydrocarbures (2000\u20132024)", chartHydroRevenueSub: "Milliards USD",
+   818→  chartHydroExports: "Exportations d\u2019Hydrocarbures (2000\u20132024)", chartHydroExportsSub: "Milliards USD",
+   819→  chartOilPrice: "Prix du P\u00e9trole Brut (2000\u20132024)", chartOilPriceSub: "USD par baril (Brent)",
+   820→  chartHydroGdp: "Contribution des Hydrocarbures au PIB (2000\u20132024)", chartHydroGdpSub: "% du PIB",
+   821→  chartOilProduction: "Production P\u00e9trole & Gaz (2000\u20132024)", chartOilProductionSub: "Mb/j et Mds m\u00b3",
+   822→  chartGasProduction: "Production Gaz", chartHydroRevLabel: "Revenus", chartExportsLabel: "Exportations",
+   823→  chartOilPriceLabel: "Prix $/bbl", chartOilProdLabel: "P\u00e9trole (Mb/j)", chartGasProdLabel: "Gaz (Mds m\u00b3)",
+   824→  chartHydroVsNonHydro: "Hydrocarbures vs Non-Hydrocarbures", chartHydroVsNonHydroSub: "Milliards USD (2000\u20132024)",
+   825→  chartHydroExportLabel: "Hydrocarbures", chartNonHydroExportLabel: "Non-Hydrocarbures",
+   826→
+   827→  // ─── SECTOR: AGRICULTURE ─────────────
+   828→  tabAgriculture: "Agriculture",
+   829→  kpiCerealProd: "Prod. C\u00e9r\u00e9ales", kpiSelfSuffic: "Autosuffisance", kpiAgriExports: "Export. Agri.", kpiAgriEmploy: "Emploi Agri.",
+   830→  chartCerealProd: "Production C\u00e9r\u00e9ali\u00e8re (2010\u20132024)", chartCerealProdSub: "Millions de tonnes",
+   831→  chartSelfSuffic: "Taux d\u2019Autosuffisance C\u00e9r\u00e9ali\u00e8re", chartSelfSufficSub: "% de la consommation nationale",
+   832→  chartAgriExports: "Exportations Agricoles (2010\u20132024)", chartAgriExportsSub: "Milliards USD",
+   833→  chartVegFruitProd: "Production L\u00e9gumes & Fruits", chartVegFruitProdSub: "Millions de tonnes (2010\u20132024)",
+   834→  chartLivestock: "Production \u00c9levage", chartLivestockSub: "Lait (M litres) et Viande (Mt)",
+   835→  chartLandUse: "Terres Agricoles", chartLandUseSub: "Irrigu\u00e9es vs Totales (M ha)",
+   836→  chartCerealLabel: "C\u00e9r\u00e9ales", chartSelfSufficLabel: "Autosuffisance %", chartAgriExportsLabel: "Export. Agri.",
+   837→  chartVegLabel: "L\u00e9gumes", chartFruitLabel: "Fruits", chartMilkLabel: "Lait", chartMeatLabel: "Viande",
+   838→  chartIrrigatedLabel: "Irrigu\u00e9es", chartTotalLandLabel: "Total",
+   839→
+   840→  // ─── SECTOR: MANUFACTURING ────────────
+   841→  tabManufacturing: "Industrie",
+   842→  kpiFoodIndustry: "Ind. Alimentaire", kpiPharma: "Pharma", kpiTextiles: "Textiles", kpiChemicals: "Chimie",
+   843→  chartManufSubsectors: "Indices des Sous-Secteurs Industriels (2010\u20132024)", chartManufSubsectorsSub: "Base 100 = 2019",
+   844→  chartManufRadar: "Radar Industriel (2024)", chartManufRadarSub: "Indice par sous-secteur",
+   845→  chartFoodLabel: "Ind. Alimentaire", chartTextileLabel: "Textiles", chartChemicalLabel: "Chimie",
+   846→  chartMetallurgyLabel: "Sid\u00e9rurgie", chartElectricLabel: "\u00c9lectrique", chartBuildingMatLabel: "Mat. Construction",
+   847→  chartPharmaLabel: "Pharma", chartPaperLabel: "Papier",
+   848→
+   849→  // ─── SECTOR: BTP ─────────────────────
+   850→  tabBTP: "BTP",
+   851→  kpiHousingUnits: "Logements", kpiCementProd: "Prod. Ciment", kpiBTPGdp: "BTP % PIB", kpiBTPEmploy: "Emploi BTP",
+   852→  chartHousingUnits: "Logements Livr\u00e9s", chartHousingUnitsSub: "Milliers d\u2019unit\u00e9s",
+   853→  chartCementSteel: "Production Ciment & Acier", chartCementSteelSub: "Ciment (Mt) et Acier (Mt)",
+   854→  chartBTPCostIndex: "Indice du Co\u00fbt de la Construction", chartBTPCostIndexSub: "Base 100 = 2014",
+   855→  chartBTPInvest: "Investissement Public dans le BTP", chartBTPInvestSub: "Milliards USD",
+   856→  chartHousingLabel: "Logements (K)", chartCementLabel: "Ciment (Mt)", chartSteelLabel: "Acier (Mt)",
+   857→  chartCostIndexLabel: "Indice Co\u00fbt", chartPublicInvestLabel: "Invest. Public", chartPermitsLabel: "Permis Constr. (K)",
+   858→
+   859→  // ─── SECTOR: SERVICES ────────────────
+   860→  tabServices: "Services",
+   861→  kpiServicesGdp: "Services % PIB", kpiTrade: "Commerce", kpiTransport: "Transport", kpiTelecom: "T\u00e9l\u00e9coms",
+   862→  chartServicesComposition: "Composition du Secteur des Services", chartServicesCompositionSub: "% du PIB par sous-secteur",
+   863→  chartServicesTrend: "\u00c9volution du Secteur des Services (2010\u20132024)", chartServicesTrendSub: "% du PIB",
+   864→  chartTradeLabel: "Commerce", chartTransportLabel: "Transport", chartTelecomLabel: "T\u00e9l\u00e9coms",
+   865→  chartFinanceLabel: "Finance", chartTourismLabel: "Tourisme", chartGovtLabel: "Services Publics",
+   866→
+   867→  // ─── SECTOR: MINING & ENERGY ─────────
+   868→  tabMiningEnergy: "Mines & \u00c9nergie",
+   869→  kpiElectricity: "\u00c9lectricit\u00e9", kpiGasConsump: "Conso. Gaz", kpiIronOre: "Fer", kpiPhosphate: "Phosphate",
+   870→  chartMiningProd: "Production Mini\u00e8re (2010\u20132024)", chartMiningProdSub: "Tonnes",
+   871→  chartEnergyConsump: "Consommation d\u2019\u00c9nergie", chartEnergyConsumpSub: "Gaz (Mds m\u00b3) et P\u00e9trole (Mt)",
+   872→  chartElectricity: "Production d\u2019\u00c9lectricit\u00e9", chartElectricitySub: "TWh (2010\u20132024)",
+   873→  chartIronOreLabel: "Minerai de Fer (Mt)", chartPhosphateLabel: "Phosphate (Mt)", chartZincLabel: "Zinc (Kt)",
+   874→  chartLeadLabel: "Plomb (Kt)", chartSaltLabel: "Sel (Mt)", chartElectricityLabel: "\u00c9lectricit\u00e9 (TWh)",
+   875→  chartGasConsumpLabel: "Gaz (Mds m\u00b3)", chartPetrolConsumpLabel: "P\u00e9trole (Mt)",
+   876→
+   877→  footer: "Source : Office National des Statistiques (ONS) \u2014 www.ons.dz | Toutes les donn\u00e9es issues des publications ONS (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes \u00c9conomiques, ENEM, RGPH)",
+   878→};
+   879→
+   880→// ─── ARABIC ───────────────────────────────────────────────────────────────────
+   881→const ar: Dictionary = {
+   882→  headerTitle: "\u0644\u0648\u062d\u0629 \u0627\u0644\u0642\u064a\u0627\u062f\u0629 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 \u0644\u0644\u062c\u0632\u0627\u0626\u0631",
+   883→  headerSubtitle: "\u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) \u2014 \u0645\u0646\u0635\u0629 \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",
+   884→
+   885→  tabMacro: "\u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0643\u0644\u064a",
+   886→  tabInflation: "\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u0648\u0627\u0644\u062a\u0636\u062e\u0645",
+   887→  tabTrade: "\u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629",
+   888→  tabIndustry: "\u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a",
+   889→  tabLabor: "\u0633\u0648\u0642 \u0627\u0644\u0639\u0645\u0644",
+   890→  tabSocial: "\u0627\u0644\u062f\u064a\u0645\u0648\u063a\u0631\u0627\u0641\u064a\u0627 \u0648\u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639",
+   891→  tabFiscal: "\u0627\u0644\u0645\u0627\u0644\u064a\u0629 \u0648\u0627\u0644\u062a\u0648\u0641\u064a\u0631",
+   892→  tabRegional: "\u0627\u0644\u0645\u0646\u0627\u0637\u0642",
+   893→
+   894→  kpiGdpGrowth: "\u0646\u0645\u0648 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+   895→  kpiGdp2024: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a (2024)",
+   896→  kpiInflation: "\u0627\u0644\u062a\u0636\u062e\u0645",
+   897→  kpiUnemployment: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+   898→  kpiPopulation: "\u0627\u0644\u0633\u0643\u0627\u0646",
+   899→  kpiInvestmentRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631",
+   900→
+   901→  chartGdpGrowth: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u0648\u0645\u0639\u062f\u0644 \u0627\u0644\u0646\u0645\u0648 (2000\u20132024)",
+   902→  chartGdpGrowthSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631 \u0648\u0645\u0639\u062f\u0644 \u0627\u0644\u0646\u0645\u0648 \u0627\u0644\u0633\u0646\u0648\u064a %",
+   903→  chartGdpBnUsd: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a (\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631)",
+   904→  chartGrowthPct: "\u0627\u0644\u0646\u0645\u0648 %",
+   905→
+   906→  chartGdpSector: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u062d\u0633\u0628 \u0627\u0644\u0642\u0637\u0627\u0639 (% \u0645\u0646 \u0627\u0644\u0645\u0633\u0627\u0647\u0645\u0629)",
+   907→  chartGdpSectorSub: "\u0627\u0644\u0641\u0644\u0627\u062d\u0629\u060c \u0627\u0644\u0635\u0646\u0627\u0639\u0629\u060c \u0627\u0644\u0628\u0646\u0627\u0621\u060c \u0627\u0644\u062e\u062f\u0645\u0627\u062a",
+   908→  sectorAgriculture: "\u0627\u0644\u0641\u0644\u0627\u062d\u0629",
+   909→  sectorIndustry: "\u0627\u0644\u0635\u0646\u0627\u0639\u0629",
+   910→  sectorConstruction: "\u0627\u0644\u0628\u0646\u0627\u0621 \u0648\u0627\u0644\u0623\u0634\u063a\u0627\u0644",
+   911→  sectorServices: "\u0627\u0644\u062e\u062f\u0645\u0627\u062a",
+   912→
+   913→  chartQuarterlyGdp: "\u0627\u0644\u0646\u0645\u0648 \u0627\u0644\u0631\u0628\u0639\u064a \u0644\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a (2020\u20132025)",
+   914→  chartQuarterlyGdpSub: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0646\u0645\u0648 \u0627\u0644\u0631\u0628\u0639\u064a %",
+   915→  chartGdpPerCapita: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u0644\u0644\u0641\u0631\u062f (2000\u20132024)",
+   916→  chartGdpPerCapitaSub: "\u062f\u0648\u0644\u0627\u0631 \u062c\u0627\u0631\u064a",
+   917→  chartGdpCapita: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a/\u0641\u0631\u062f (\u062f\u0648\u0644\u0627\u0631)",
+   918→
+   919→  kpiCpi: "\u0645\u0624\u0634\u0631 \u0627\u0644\u0623\u0633\u0639\u0627\u0631 (\u0623\u0628\u0631\u064a\u0644 2026)",
+   920→  kpiYoyInflation: "\u0627\u0644\u062a\u0636\u062e\u0645 \u0627\u0644\u0633\u0646\u0648\u064a",
+   921→  kpiFoodInflation: "\u062a\u0636\u062e\u0645 \u0627\u0644\u0645\u0648\u0627\u062f \u0627\u0644\u063a\u0630\u0627\u0626\u064a\u0629",
+   922→  kpiCoreInflation: "\u0627\u0644\u062a\u0636\u062e\u0645 \u0627\u0644\u062c\u0648\u0647\u0631\u064a",
+   923→
+   924→  chartCpiMonthly: "\u0645\u0624\u0634\u0631 \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0627\u0633\u062a\u0647\u0644\u0627\u0643 \u2014 \u0634\u0647\u0631\u064a (2020\u20132026)",
+   925→  chartCpiMonthlySub: "\u0627\u0644\u062a\u0636\u062e\u0645 \u0627\u0644\u0633\u0646\u0648\u064a %",
+   926→  chartInflationYoy: "\u0627\u0644\u062a\u0636\u062e\u0645 \u0627\u0644\u0633\u0646\u0648\u064a %",
+   927→  chartFoodYoy: "\u0627\u0644\u063a\u0630\u0627\u0621 \u0627\u0644\u0633\u0646\u0648\u064a %",
+   928→  chartCoreYoy: "\u0627\u0644\u062c\u0648\u0647\u0631\u064a \u0627\u0644\u0633\u0646\u0648\u064a %",
+   929→  legendTotalYoy: "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0633\u0646\u0648\u064a",
+   930→  legendFoodYoy: "\u0627\u0644\u063a\u0630\u0627\u0621",
+   931→  legendCoreYoy: "\u0627\u0644\u062c\u0648\u0647\u0631\u064a",
+   932→
+   933→  chartCpiLevel: "\u0645\u0633\u062a\u0648\u0649 \u0645\u0624\u0634\u0631 \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0627\u0633\u062a\u0647\u0644\u0627\u0643 (2020\u20132026)",
+   934→  chartCpiLevelSub: "\u0645\u0624\u0634\u0631 \u0633\u0646\u0629 \u0627\u0644\u0623\u0633\u0627\u0633",
+   935→  chartIpcIndex: "\u0645\u0624\u0634\u0631 \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0627\u0633\u062a\u0647\u0644\u0627\u0643",
+   936→
+   937→  chartCpiDivision: "\u0627\u0644\u062a\u0636\u062e\u0645 \u062d\u0633\u0628 \u0623\u0642\u0633\u0627\u0645 COICOP (2024)",
+   938→  chartCpiDivisionSub: "\u0627\u0644\u062a\u063a\u064a\u0631 \u0627\u0644\u0633\u0646\u0648\u064a \u062d\u0633\u0628 \u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a",
+   939→
+   940→  chartCpiWeights: "\u0623\u0648\u0632\u0627\u0646 \u0633\u0644\u0629 \u0645\u0624\u0634\u0631 \u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u062d\u0633\u0628 \u0627\u0644\u0642\u0633\u0645",
+   941→  chartCpiWeightsSub: "\u0627\u0644\u062d\u0635\u0629 \u0641\u064a \u0633\u0644\u0629 \u0627\u0644\u0627\u0633\u062a\u0647\u0644\u0627\u0643",
+   942→
+   943→  chartIppi: "\u0645\u0624\u0634\u0631 \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a (IPPI) \u2014 \u0631\u0628\u0639\u064a (2020\u20132025)",
+   944→  chartIppiSub: "\u0627\u0644\u062a\u0639\u062f\u064a\u0646\u060c \u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629\u060c \u0627\u0644\u0637\u0627\u0642\u0629",
+   945→  sectorMining: "\u0627\u0644\u062a\u0639\u062f\u064a\u0646",
+   946→  sectorManufacturing: "\u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629",
+   947→  sectorEnergy: "\u0627\u0644\u0637\u0627\u0642\u0629",
+   948→
+   949→  kpiExports: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a (2024)",
+   950→  kpiImports: "\u0627\u0644\u0648\u0627\u0631\u062f\u0627\u062a (2024)",
+   951→  kpiTradeBalance: "\u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u0627\u0644\u062a\u062c\u0627\u0631\u064a",
+   952→  kpiHydroPct: "\u0646\u0633\u0628\u0629 \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a",
+   953→
+   954→  chartTradeAnnual: "\u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 (2000\u20132024)",
+   955→  chartTradeAnnualSub: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a\u060c \u0627\u0644\u0648\u0627\u0631\u062f\u0627\u062a\u060c \u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u2014 \u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
+   956→  chartExports: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a",
+   957→  chartImports: "\u0627\u0644\u0648\u0627\u0631\u062f\u0627\u062a",
+   958→  chartBalance: "\u0627\u0644\u0645\u064a\u0632\u0627\u0646",
+   959→
+   960→  chartHydroShare: "\u062d\u0635\u0629 \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a \u0641\u064a \u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a",
+   961→  chartHydroShareSub: "% \u0645\u0646 \u0625\u062c\u0645\u0627\u0644\u064a \u0642\u064a\u0645\u0629 \u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a",
+   962→  chartHydroPct: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a %",
+   963→
+   964→  chartTradeQuarterly: "\u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u0627\u0644\u062a\u062c\u0627\u0631\u064a \u0627\u0644\u0631\u0628\u0639\u064a (2023\u20132025)",
+   965→  chartTradeQuarterlySub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
+   966→
+   967→  chartTradePartners: "\u0623\u0643\u0628\u0631 \u0627\u0644\u0634\u0631\u0643\u0627\u0621 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u064a\u0646 (2024)",
+   968→  chartTradePartnersSub: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0648\u0627\u0631\u062f\u0627\u062a \u062d\u0633\u0628 \u0627\u0644\u0628\u0644\u062f",
+   969→
+   970→  kpiIpi: "\u0645\u0624\u0634\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a (\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u062b\u0627\u0646\u064a 2025)",
+   971→  kpiMining: "\u0627\u0644\u062a\u0639\u062f\u064a\u0646",
+   972→  kpiManufacturing: "\u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629",
+   973→  kpiEnergy: "\u0627\u0644\u0637\u0627\u0642\u0629",
+   974→
+   975→  chartIpi: "\u0645\u0624\u0634\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a (2020\u20132025)",
+   976→  chartIpiSub: "\u0627\u0644\u062a\u0639\u062f\u064a\u0646\u060c \u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629\u060c \u0627\u0644\u0637\u0627\u0642\u0629 \u2014 \u0627\u0644\u0623\u0633\u0627\u0633 100 = 2019",
+   977→  chartIpiTotal: "\u0645\u0624\u0634\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a",
+   978→
+   979→  chartIpiIppi: "\u0645\u0642\u0627\u0631\u0646\u0629 IPI \u0645\u0639 IPPI (2020\u20132025)",
+   980→  chartIpiIppiSub: "\u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a \u0645\u0642\u0627\u0628\u0644 \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c",
+   981→  chartIpiProd: "IPI (\u0627\u0644\u0625\u0646\u062a\u0627\u062c)",
+   982→  chartIppiPrices: "IPPI (\u0627\u0644\u0623\u0633\u0639\u0627\u0631)",
+   983→
+   984→  chartConstruction: "\u0645\u0624\u0634\u0631 \u062a\u0643\u0644\u0641\u0629 \u0627\u0644\u0628\u0646\u0627\u0621 (2015\u20132024)",
+   985→  chartConstructionSub: "\u0627\u0644\u0623\u0633\u0627\u0633 100 = 2014",
+   986→  chartConstructionIdx: "\u0645\u0624\u0634\u0631 \u0627\u0644\u0628\u0646\u0627\u0621",
+   987→
+   988→  kpiUnempRate: "\u0646\u0633\u0628\u0629 \u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+   989→  kpiActivityRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0646\u0634\u0627\u0637",
+   990→  kpiYouthUnemp: "\u0628\u0637\u0627\u0644\u0629 \u0627\u0644\u0634\u0628\u0627\u0628",
+   991→  kpiFemalePartic: "\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0646\u0633\u0627\u0621",
+   992→  kpiInformal: "\u0627\u0644\u0642\u0637\u0627\u0639 \u063a\u064a\u0631 \u0627\u0644\u0631\u0633\u0645\u064a",
+   993→  kpiEmpPop: "\u0627\u0644\u0634\u063a\u0644/\u0627\u0644\u0633\u0643\u0627\u0646",
+   994→
+   995→  chartUnempRate: "\u0646\u0633\u0628\u0629 \u0627\u0644\u0628\u0637\u0627\u0644\u0629 (2010\u20132024)",
+   996→  chartUnempRateSub: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a\u0629 \u0648\u0628\u0637\u0627\u0644\u0629 \u0627\u0644\u0634\u0628\u0627\u0628 (15-24 \u0633\u0646\u0629) %",
+   997→  chartTotalPct: "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a %",
+   998→  chartYouthPct: "\u0627\u0644\u0634\u0628\u0627\u0628 (15-24) %",
+   999→
+  1000→  chartActivityFemale: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0646\u0634\u0627\u0637 \u0648\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0646\u0633\u0627\u0621",
+  1001→  chartActivityFemaleSub: "% \u0645\u0646 \u0627\u0644\u0633\u0643\u0627\u0646 \u0641\u064a \u0633\u0646 \u0627\u0644\u0639\u0645\u0644",
+  1002→  chartActRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0646\u0634\u0627\u0637",
+  1003→  chartFemPartic: "\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0646\u0633\u0627\u0621",
+  1004→  chartInformalPct: "\u063a\u064a\u0631 \u0631\u0633\u0645\u064a %",
+  1005→
+  1006→  chartEmpPop: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0634\u063a\u0644 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0633\u0643\u0627\u0646 (2010\u20132024)",
+  1007→  chartEmpPopSub: "% \u0645\u0646 \u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0633\u0643\u0627\u0646 \u0627\u0644\u0645\u0634\u062a\u063a\u0644\u064a\u0646",
+  1008→  chartEmpPopPct: "\u0627\u0644\u0634\u063a\u0644/\u0627\u0644\u0633\u0643\u0627\u0646 %",
+  1009→
+  1010→  kpiPop: "\u0627\u0644\u0633\u0643\u0627\u0646",
+  1011→  kpiGrowthRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0646\u0645\u0648",
+  1012→  kpiUrbanization: "\u0627\u0644\u062a\u062d\u0636\u0631",
+  1013→  kpiFertility: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062e\u0635\u0648\u0628\u0629",
+  1014→
+  1015→  chartPopGrowth: "\u0646\u0645\u0648 \u0627\u0644\u0633\u0643\u0627\u0646 (2000\u20132024)",
+  1016→  chartPopGrowthSub: "\u0645\u0644\u0627\u064a\u064a\u0646 \u0627\u0644\u0633\u0643\u0627\u0646",
+  1017→  chartPopulationM: "\u0627\u0644\u0633\u0643\u0627\u0646 (\u0645\u0644\u064a\u0648\u0646)",
+  1018→
+  1019→  chartPopPyramid: "\u0647\u0631\u0645 \u0627\u0644\u0639\u0645\u0631 \u0627\u0644\u0633\u0643\u0627\u0646\u064a (2024)",
+  1020→  chartPopPyramidSub: "\u062d\u0633\u0628 \u0627\u0644\u0641\u0626\u0629 \u0627\u0644\u0639\u0645\u0631\u064a\u0629 \u2014 \u0645\u0644\u0627\u064a\u064a\u0646",
+  1021→  chartMale: "\u0630\u0643\u0648\u0631 (\u0645\u0644\u064a\u0648\u0646)",
+  1022→  chartFemale: "\u0623\u0646\u0627\u062b (\u0645\u0644\u064a\u0648\u0646)",
+  1023→
+  1024→  chartDemographic: "\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0627\u0646\u062a\u0642\u0627\u0644 \u0627\u0644\u062f\u064a\u0645\u0648\u063a\u0631\u0627\u0641\u064a",
+  1025→  chartDemographicSub: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0648\u0644\u0627\u062f\u0629\u060c \u0645\u0639\u062f\u0644 \u0627\u0644\u0648\u0641\u064a\u0627\u062a\u060c \u0645\u0639\u062f\u0644 \u0627\u0644\u062e\u0635\u0648\u0628\u0629",
+  1026→  chartBirthRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0648\u0644\u0627\u062f\u0629",
+  1027→  chartDeathRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0648\u0641\u064a\u0627\u062a",
+  1028→  chartFertilityRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062e\u0635\u0648\u0628\u0629",
+  1029→
+  1030→  chartEducation: "\u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0641\u064a \u0627\u0644\u062a\u0639\u0644\u064a\u0645 (2015\u20132024)",
+  1031→  chartEducationSub: "\u0645\u0644\u0627\u064a\u064a\u0646 \u0627\u0644\u0637\u0644\u0628\u0629",
+  1032→  chartPrimary: "\u0627\u0644\u062a\u0639\u0644\u064a\u0645 \u0627\u0644\u0627\u0628\u062a\u062f\u0627\u0626\u064a",
+  1033→  chartSecondary: "\u0627\u0644\u062a\u0639\u0644\u064a\u0645 \u0627\u0644\u0645\u062a\u0648\u0633\u0637",
+  1034→  chartHigher: "\u0627\u0644\u062a\u0639\u0644\u064a\u0645 \u0627\u0644\u0639\u0627\u0644\u064a",
+  1035→
+  1036→  chartLiteracy: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0645\u0639\u0631\u0641\u064a\u0629 \u0648\u0645\u0639\u062f\u0644\u0627\u062a \u0627\u0644\u062a\u0633\u062c\u064a\u0644 (2015\u20132024)",
+  1037→  chartLiteracySub: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0645\u0639\u0631\u0641\u064a\u0629 %\u060c \u0645\u0639\u062f\u0644\u0627\u062a \u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u0635\u0627\u0641\u064a \u0627\u0644\u0627\u0628\u062a\u062f\u0627\u0626\u064a \u0648\u0627\u0644\u0645\u062a\u0648\u0633\u0637",
+  1038→  chartLiteracyRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0645\u0639\u0631\u0641\u064a\u0629 %",
+  1039→  chartPrimaryNet: "\u0627\u0644\u0627\u0628\u062a\u062f\u0627\u0626\u064a \u0627\u0644\u0635\u0627\u0641\u064a %",
+  1040→  chartSecondaryNet: "\u0627\u0644\u0645\u062a\u0648\u0633\u0637 \u0627\u0644\u0635\u0627\u0641\u064a %",
+  1041→  chartHigherGross: "\u0627\u0644\u0639\u0627\u0644\u064a \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a %",
+  1042→
+  1043→  kpiSavings: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062a\u0648\u0641\u064a\u0631",
+  1044→  kpiInvest: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631",
+  1045→  kpiDebt: "\u0627\u0644\u062f\u064a\u0646/\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  1046→  kpiFiscalDeficit: "\u0639\u062c\u0632 \u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629",
+  1047→
+  1048→  chartFiscal: "\u0627\u0644\u062a\u0648\u0627\u0632\u0646 \u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a (% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a)",
+  1049→  chartFiscalSub: "\u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a\u060c \u0627\u0644\u0646\u0641\u0642\u0627\u062a\u060c \u0627\u0644\u0639\u062c\u0632",
+  1050→  chartRevenue: "\u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a",
+  1051→  chartExpenditure: "\u0627\u0644\u0646\u0641\u0642\u0627\u062a",
+  1052→  chartDeficit: "\u0627\u0644\u0639\u062c\u0632",
+  1053→
+  1054→  chartSavingsInvest: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062a\u0648\u0641\u064a\u0631 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631",
+  1055→  chartSavingsInvestSub: "% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  1056→  chartSavingsRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062a\u0648\u0641\u064a\u0631",
+  1057→  chartInvestRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631",
+  1058→
+  1059→  chartDebt: "\u0627\u0644\u062f\u064a\u0646 \u0627\u0644\u0639\u0627\u0645 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a (2010\u20132024)",
+  1060→  chartDebtSub: "% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  1061→  chartDebtGdp: "\u0627\u0644\u062f\u064a\u0646/\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a %",
+  1062→
+  1063→  chartWilayaGdp: "\u0623\u0643\u0628\u0631 10 \u0648\u0644\u0627\u064a\u0627\u062a \u062d\u0633\u0628 \u062d\u0635\u0629 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a (2023)",
+  1064→  chartWilayaGdpSub: "\u0627\u0644\u0645\u0633\u0627\u0647\u0645\u0629 \u0641\u064a \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u0627\u0644\u0648\u0637\u0646\u064a",
+  1065→  chartGdpShare: "\u062d\u0635\u0629 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a %",
+  1066→
+  1067→  chartWilayaUnemp: "\u0646\u0633\u0628\u0629 \u0627\u0644\u0628\u0637\u0627\u0644\u0629 \u062d\u0633\u0628 \u0627\u0644\u0648\u0644\u0627\u064a\u0629 (2023)",
+  1068→  chartWilayaUnempSub: "\u0623\u0643\u0628\u0631 10 \u0648\u0644\u0627\u064a\u0627\u062a",
+  1069→  chartUnempPct: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629 %",
+  1070→
+  1071→  chartScatter: "\u0627\u0644\u0633\u0643\u0627\u0646 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a (2023)",
+  1072→  chartScatterSub: "\u0623\u0643\u0628\u0631 10 \u0648\u0644\u0627\u064a\u0627\u062a \u2014 \u062d\u062c\u0645 \u0627\u0644\u0641\u0642\u0627\u0639\u0629 = \u0646\u0633\u0628\u0629 \u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+  1073→  chartPopK: "\u0627\u0644\u0633\u0643\u0627\u0646 (\u0623\u0644\u0641)",
+  1074→  chartGdpShareLabel: "\u062d\u0635\u0629 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a %",
+  1075→  chartPopThousands: "\u0627\u0644\u0633\u0643\u0627\u0646 (\u0622\u0644\u0627\u0641)",
+  1076→  chartUnempPctLabel: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629 %",
+  1077→
+  1078→  // ─── SECTOR: HYDROCARBONS ────────────
+  1079→  tabHydro: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a",
+  1080→  kpiHydroRevenue: "\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a", kpiOilProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0646\u0641\u0637", kpiGasProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u063a\u0627\u0632", kpiHydroGdpShare: "\u0645\u062d\u0631\u0648\u0642\u0627\u062a % \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c",
+  1081→  chartHydroRevenue: "\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u0635\u0627\u062f\u0631\u0627\u062a \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a (2000\u20132024)", chartHydroRevenueSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
+  1082→  chartHydroExports: "\u0635\u0627\u062f\u0631\u0627\u062a \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a (2000\u20132024)", chartHydroExportsSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
+  1083→  chartOilPrice: "\u0633\u0639\u0631 \u0627\u0644\u0646\u0641\u0637 \u0627\u0644\u062e\u0627\u0645 (2000\u20132024)", chartOilPriceSub: "\u062f\u0648\u0644\u0627\u0631 \u0644\u0644\u0628\u0631\u0645\u064a\u0644",
+  1084→  chartHydroGdp: "\u0645\u0633\u0627\u0647\u0645\u0629 \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a \u0641\u064a \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a (2000\u20132024)", chartHydroGdpSub: "% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  1085→  chartOilProduction: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632 (2000\u20132024)", chartOilProductionSub: "\u0645\u0644\u064a\u0648\u0646 \u0628\u0631\u0645\u064a\u0644/\u064a\u0648\u0645 \u0648\u0645\u0644\u064a\u0627\u0631 \u0645\u062a\u0631 \u0645\u0643\u0639\u0628",
+  1086→  chartGasProduction: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u063a\u0627\u0632", chartHydroRevLabel: "\u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a", chartExportsLabel: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a",
+  1087→  chartOilPriceLabel: "\u0633\u0639\u0631 \u0627\u0644\u0646\u0641\u0637 $/\u0628\u0631\u0645\u064a\u0644", chartOilProdLabel: "\u0627\u0644\u0646\u0641\u0637 (\u0645\u0628/\u064a\u0648\u0645)", chartGasProdLabel: "\u0627\u0644\u063a\u0627\u0632 (\u0645\u0644\u064a\u0627\u0631 \u0645\u0643\u0639\u0628)",
+  1088→  chartHydroVsNonHydro: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a \u0645\u0642\u0627\u0628\u0644 \u063a\u064a\u0631 \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a", chartHydroVsNonHydroSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631 (2000\u20132024)",
+  1089→  chartHydroExportLabel: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a", chartNonHydroExportLabel: "\u063a\u064a\u0631 \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a",
+  1090→
+  1091→  // ─── SECTOR: AGRICULTURE ─────────────
+  1092→  tabAgriculture: "\u0627\u0644\u0641\u0644\u0627\u062d\u0629",
+  1093→  kpiCerealProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062d\u0628\u0648\u0628", kpiSelfSuffic: "\u0627\u0644\u0627\u062a\u062d\u0627\u0630 \u0627\u0644\u0630\u0627\u062a\u064a", kpiAgriExports: "\u0635\u0627\u062f\u0631\u0627\u062a \u0632\u0631\u0627\u0639\u064a\u0629", kpiAgriEmploy: "\u062a\u0634\u063a\u064a\u0644 \u0632\u0631\u0627\u0639\u064a",
+  1094→  chartCerealProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062d\u0628\u0648\u0628 (2010\u20132024)", chartCerealProdSub: "\u0645\u0644\u0627\u064a\u064a\u0646 \u0623\u0637\u0646\u0627\u0646",
+  1095→  chartSelfSuffic: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0627\u062a\u062d\u0627\u0630 \u0627\u0644\u0630\u0627\u062a\u064a \u0645\u0646 \u0627\u0644\u062d\u0628\u0648\u0628", chartSelfSufficSub: "% \u0645\u0646 \u0627\u0644\u0627\u0633\u062a\u0647\u0644\u0627\u0643 \u0627\u0644\u0648\u0637\u0646\u064a",
+  1096→  chartAgriExports: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a \u0627\u0644\u0632\u0631\u0627\u0639\u064a\u0629 (2010\u20132024)", chartAgriExportsSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
+  1097→  chartVegFruitProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062e\u0636\u0627\u0631 \u0648\u0627\u0644\u0641\u0648\u0627\u0643\u0647", chartVegFruitProdSub: "\u0645\u0644\u0627\u064a\u064a\u0646 \u0623\u0637\u0646\u0627\u0646 (2010\u20132024)",
+  1098→  chartLivestock: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062b\u0631\u0648\u0629", chartLivestockSub: "\u0627\u0644\u062d\u0644\u064a\u0628 (\u0645\u0644\u064a\u0648\u0646 \u0644\u062a\u0631) \u0648\u0627\u0644\u0644\u062d\u0645 (\u0645\u062a\u0631)",
+  1099→  chartLandUse: "\u0627\u0644\u0623\u0631\u0627\u0636\u064a \u0627\u0644\u0632\u0631\u0627\u0639\u064a\u0629", chartLandUseSub: "\u0627\u0644\u0645\u0633\u062a\u0635\u0644\u0629 \u0648\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a (\u0645\u0644\u064a\u0648\u0646 \u0647\u0643\u062a\u0627\u0631)",
+  1100→  chartCerealLabel: "\u0627\u0644\u062d\u0628\u0648\u0628", chartSelfSufficLabel: "\u0627\u0644\u0627\u062a\u062d\u0627\u0630 %", chartAgriExportsLabel: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a",
+  1101→  chartVegLabel: "\u0627\u0644\u062e\u0636\u0627\u0631", chartFruitLabel: "\u0627\u0644\u0641\u0648\u0627\u0643\u0647", chartMilkLabel: "\u0627\u0644\u062d\u0644\u064a\u0628", chartMeatLabel: "\u0627\u0644\u0644\u062d\u0645",
+  1102→  chartIrrigatedLabel: "\u0645\u0633\u062a\u0635\u0644\u0629", chartTotalLandLabel: "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a",
+  1103→
+  1104→  // ─── SECTOR: MANUFACTURING ────────────
+  1105→  tabManufacturing: "\u0627\u0644\u0635\u0646\u0627\u0639\u0629",
+  1106→  kpiFoodIndustry: "\u0635\u0646\u0627\u0639\u0629 \u063a\u0630\u0627\u0626\u064a\u0629", kpiPharma: "\u0627\u0644\u0623\u062f\u0648\u064a\u0629", kpiTextiles: "\u0627\u0644\u0646\u0633\u064a\u062c", kpiChemicals: "\u0627\u0644\u0643\u064a\u0645\u064a\u0627\u0621",
+  1107→  chartManufSubsectors: "\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0635\u0646\u0627\u0639\u0627\u062a \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629 (2010\u20132024)", chartManufSubsectorsSub: "\u0627\u0644\u0623\u0633\u0627\u0633 100 = 2019",
+  1108→  chartManufRadar: "\u0631\u0627\u062f\u0627\u0631 \u0627\u0644\u0635\u0646\u0627\u0639\u0629 (2024)", chartManufRadarSub: "\u0627\u0644\u0645\u0624\u0634\u0631 \u062d\u0633\u0628 \u0627\u0644\u0642\u0637\u0627\u0639",
+  1109→  chartFoodLabel: "\u0635\u0646\u0627\u0639\u0629 \u063a\u0630\u0627\u0626\u064a\u0629", chartTextileLabel: "\u0627\u0644\u0646\u0633\u064a\u062c", chartChemicalLabel: "\u0627\u0644\u0643\u064a\u0645\u064a\u0627\u0621",
+  1110→  chartMetallurgyLabel: "\u0627\u0644\u062d\u062f\u064a\u062f", chartElectricLabel: "\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621", chartBuildingMatLabel: "\u0645\u0648\u0627\u062f \u0627\u0644\u0628\u0646\u0627\u0621",
+  1111→  chartPharmaLabel: "\u0627\u0644\u0623\u062f\u0648\u064a\u0629", chartPaperLabel: "\u0627\u0644\u0648\u0631\u0642",
+  1112→
+  1113→  // ─── SECTOR: BTP ─────────────────────
+  1114→  tabBTP: "\u0627\u0644\u0628\u0646\u0627\u0621 \u0648\u0627\u0644\u0623\u0634\u063a\u0627\u0644",
+  1115→  kpiHousingUnits: "\u0648\u062d\u062f\u0627\u062a \u0633\u0643\u0646\u064a\u0629", kpiCementProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0625\u0633\u0645\u0646\u062a", kpiBTPGdp: "BTP % \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c", kpiBTPEmploy: "\u062a\u0634\u063a\u064a\u0644 BTP",
+  1116→  chartHousingUnits: "\u0648\u062d\u062f\u0627\u062a \u0633\u0643\u0646\u064a\u0629 \u0645\u0633\u0644\u0645\u0629", chartHousingUnitsSub: "\u0622\u0644\u0627\u0641 \u0627\u0644\u0648\u062d\u062f\u0627\u062a",
+  1117→  chartCementSteel: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0625\u0633\u0645\u0646\u062a \u0648\u0627\u0644\u0623\u062d\u064a\u0627\u0621", chartCementSteelSub: "\u0627\u0644\u0625\u0633\u0645\u0646\u062a (\u0645\u062a\u0631) \u0648\u0627\u0644\u0623\u062d\u064a\u0627\u0621 (\u0645\u062a\u0631)",
+  1118→  chartBTPCostIndex: "\u0645\u0624\u0634\u0631 \u062a\u0643\u0644\u0641\u0629 \u0627\u0644\u0628\u0646\u0627\u0621", chartBTPCostIndexSub: "\u0627\u0644\u0623\u0633\u0627\u0633 100 = 2014",
+  1119→  chartBTPInvest: "\u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0627\u0644\u0639\u0627\u0645 \u0641\u064a BTP", chartBTPInvestSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
+  1120→  chartHousingLabel: "\u0627\u0644\u0648\u062d\u062f\u0627\u062a (\u0623\u0644\u0641)", chartCementLabel: "\u0627\u0644\u0625\u0633\u0645\u0646\u062a (\u0645\u062a\u0631)", chartSteelLabel: "\u0627\u0644\u0623\u062d\u064a\u0627\u0621 (\u0645\u062a\u0631)",
+  1121→  chartCostIndexLabel: "\u0645\u0624\u0634\u0631 \u0627\u0644\u062a\u0643\u0644\u0641\u0629", chartPublicInvestLabel: "\u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0627\u0644\u0639\u0627\u0645", chartPermitsLabel: "\u0631\u062e\u0635\u0627\u062a \u0627\u0644\u0628\u0646\u0627\u0621 (\u0623\u0644\u0641)",
+  1122→
+  1123→  // ─── SECTOR: SERVICES ────────────────
+  1124→  tabServices: "\u0627\u0644\u062e\u062f\u0645\u0627\u062a",
+  1125→  kpiServicesGdp: "\u0627\u0644\u062e\u062f\u0645\u0627\u062a % \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c", kpiTrade: "\u0627\u0644\u062a\u062c\u0627\u0631\u0629", kpiTransport: "\u0627\u0644\u0646\u0642\u0644", kpiTelecom: "\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a",
+  1126→  chartServicesComposition: "\u062a\u0631\u0643\u064a\u0628\u0629 \u0642\u0637\u0627\u0639 \u0627\u0644\u062e\u062f\u0645\u0627\u062a", chartServicesCompositionSub: "% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u062d\u0633\u0628 \u0627\u0644\u0642\u0637\u0627\u0639",
+  1127→  chartServicesTrend: "\u062a\u0637\u0648\u0631 \u0642\u0637\u0627\u0639 \u0627\u0644\u062e\u062f\u0645\u0627\u062a (2010\u20132024)", chartServicesTrendSub: "% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  1128→  chartTradeLabel: "\u0627\u0644\u062a\u062c\u0627\u0631\u0629", chartTransportLabel: "\u0627\u0644\u0646\u0642\u0644", chartTelecomLabel: "\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a",
+  1129→  chartFinanceLabel: "\u0627\u0644\u0645\u0627\u0644\u064a\u0629", chartTourismLabel: "\u0627\u0644\u0633\u064a\u0627\u062d\u0629", chartGovtLabel: "\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0639\u0627\u0645\u0629",
+  1130→
+  1131→  // ─── SECTOR: MINING & ENERGY ─────────
+  1132→  tabMiningEnergy: "\u0627\u0644\u062a\u0639\u062f\u064a\u0646 \u0648\u0627\u0644\u0637\u0627\u0642\u0629",
+  1133→  kpiElectricity: "\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621", kpiGasConsump: "\u0627\u0633\u062a\u0647\u0644\u0627\u0643 \u0627\u0644\u063a\u0627\u0632", kpiIronOre: "\u0627\u0644\u062d\u062f\u064a\u062f", kpiPhosphate: "\u0627\u0644\u0641\u0633\u0641\u0627\u062a",
+  1134→  chartMiningProd: "\u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0645\u0646\u0642\u064a (2010\u20132024)", chartMiningProdSub: "\u0623\u0637\u0646\u0627\u0646",
+  1135→  chartEnergyConsump: "\u0627\u0633\u062a\u0647\u0644\u0627\u0643 \u0627\u0644\u0637\u0627\u0642\u0629", chartEnergyConsumpSub: "\u0627\u0644\u063a\u0627\u0632 (\u0645\u0644\u064a\u0627\u0631 \u0645\u0643\u0639\u0628) \u0648\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a (\u0645\u062a\u0631)",
+  1136→  chartElectricity: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621", chartElectricitySub: "\u062a\u064a\u0631\u0627\u0648\u0627\u062a \u0633\u0627\u0639\u0629 (2010\u20132024)",
+  1137→  chartIronOreLabel: "\u0645\u0646\u0635\u0631 \u0627\u0644\u062d\u062f\u064a\u062f (\u0645\u062a\u0631)", chartPhosphateLabel: "\u0627\u0644\u0641\u0633\u0641\u0627\u062a (\u0645\u062a\u0631)", chartZincLabel: "\u0627\u0644\u0632\u0646\u0643 (\u0623\u0644\u0641 \u0637\u0646)",
+  1138→  chartLeadLabel: "\u0627\u0644\u0631\u0635\u0627\u0635 (\u0623\u0644\u0641 \u0637\u0646)", chartSaltLabel: "\u0627\u0644\u0645\u0644\u062d (\u0645\u062a\u0631)", chartElectricityLabel: "\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621 (\u062a\u064a\u0631\u0627\u0648\u0627\u062a)",
+  1139→  chartGasConsumpLabel: "\u0627\u0644\u063a\u0627\u0632 (\u0645\u0644\u064a\u0627\u0631 \u0645\u0643\u0639\u0628)", chartPetrolConsumpLabel: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a (\u0645\u062a\u0631)",
+  1140→
+  1141→  footer: "\u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) \u2014 www.ons.dz | \u062c\u0645\u064a\u0639 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0645\u0646 \u0645\u0646\u0634\u0648\u0631\u0627\u062a ONS (\u0627\u0644\u0623\u0633\u0639\u0627\u0631\u060c \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629\u060c \u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629\u060c \u0627\u0644\u062a\u0639\u062f\u0627\u062f \u0627\u0644\u0633\u0643\u0627\u0646\u064a)",
+  1142→};
+  1143→
+  1144→// ─── DICTIONARY MAP ───────────────────────────────────────────────────────────
+  1145→const dictionaries: Record<Locale, Dictionary> = { en, fr, ar };
+  1146→
+  1147→export function getDictionary(locale: Locale): Dictionary {
+  1148→  return dictionaries[locale] || dictionaries.en;
+  1149→}
+  1150→
+  1151→export const localeNames: Record<Locale, string> = {
+  1152→  en: "English",
+  1153→  fr: "Fran\u00e7ais",
+  1154→  ar: "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+  1155→};
+  1156→
+  1157→export const localeFlags: Record<Locale, string> = {
+  1158→  en: "\ud83c\uddec\ud83c\udde7",
+  1159→  fr: "\ud83c\uddeb\ud83c\uddf7",
+  1160→  ar: "\ud83c\uddf9\ud83c\uddf1",
+  1161→};

@@ -429,16 +429,16 @@ export const agricultureData = [
 
 // ─── 20. MANUFACTURING SUB-SECTORS ──────────────────────────────────────
 export const manufacturingData = [
-  { year: 2010, foodIndustry: 105, textiles: 98, chemicals: 102, metallurgy: 100, electrics: 95, buildingMat: 108, pharma: 90, paper: 97 },
-  { year: 2012, foodIndustry: 108, textiles: 96, chemicals: 105, metallurgy: 102, electrics: 97, buildingMat: 112, pharma: 95, paper: 98 },
-  { year: 2014, foodIndustry: 110, textiles: 94, chemicals: 108, metallurgy: 104, electrics: 100, buildingMat: 110, pharma: 100, paper: 99 },
-  { year: 2016, foodIndustry: 106, textiles: 90, chemicals: 104, metallurgy: 100, electrics: 95, buildingMat: 105, pharma: 105, paper: 97 },
-  { year: 2018, foodIndustry: 108, textiles: 88, chemicals: 106, metallurgy: 102, electrics: 96, buildingMat: 108, pharma: 110, paper: 98 },
-  { year: 2020, foodIndustry: 100, textiles: 75, chemicals: 95, metallurgy: 90, electrics: 82, buildingMat: 95, pharma: 108, paper: 90 },
-  { year: 2021, foodIndustry: 103, textiles: 78, chemicals: 98, metallurgy: 93, electrics: 85, buildingMat: 100, pharma: 112, paper: 92 },
-  { year: 2022, foodIndustry: 107, textiles: 82, chemicals: 104, metallurgy: 98, electrics: 90, buildingMat: 108, pharma: 118, paper: 95 },
-  { year: 2023, foodIndustry: 108, textiles: 84, chemicals: 105, metallurgy: 100, electrics: 92, buildingMat: 110, pharma: 122, paper: 96 },
-  { year: 2024, foodIndustry: 110, textiles: 86, chemicals: 107, metallurgy: 102, electrics: 94, buildingMat: 112, pharma: 128, paper: 98 },
+  { year: 2010, foodIndustry: 105, textiles: 98, chemicals: 102, metallurgy: 100, electrics: 95, buildingMat: 108, pharma: 90, paper: 97, manufEmployK: 520, manufExportsBn: 2.8, capacityUtilPct: 68 },
+  { year: 2012, foodIndustry: 108, textiles: 96, chemicals: 105, metallurgy: 102, electrics: 97, buildingMat: 112, pharma: 95, paper: 98, manufEmployK: 535, manufExportsBn: 3.1, capacityUtilPct: 70 },
+  { year: 2014, foodIndustry: 110, textiles: 94, chemicals: 108, metallurgy: 104, electrics: 100, buildingMat: 110, pharma: 100, paper: 99, manufEmployK: 545, manufExportsBn: 3.3, capacityUtilPct: 72 },
+  { year: 2016, foodIndustry: 106, textiles: 90, chemicals: 104, metallurgy: 100, electrics: 95, buildingMat: 105, pharma: 105, paper: 97, manufEmployK: 530, manufExportsBn: 2.9, capacityUtilPct: 65 },
+  { year: 2018, foodIndustry: 108, textiles: 88, chemicals: 106, metallurgy: 102, electrics: 96, buildingMat: 108, pharma: 110, paper: 98, manufEmployK: 540, manufExportsBn: 3.2, capacityUtilPct: 67 },
+  { year: 2020, foodIndustry: 100, textiles: 75, chemicals: 95, metallurgy: 90, electrics: 82, buildingMat: 95, pharma: 108, paper: 90, manufEmployK: 485, manufExportsBn: 2.4, capacityUtilPct: 52 },
+  { year: 2021, foodIndustry: 103, textiles: 78, chemicals: 98, metallurgy: 93, electrics: 85, buildingMat: 100, pharma: 112, paper: 92, manufEmployK: 500, manufExportsBn: 2.7, capacityUtilPct: 58 },
+  { year: 2022, foodIndustry: 107, textiles: 82, chemicals: 104, metallurgy: 98, electrics: 90, buildingMat: 108, pharma: 118, paper: 95, manufEmployK: 520, manufExportsBn: 3.5, capacityUtilPct: 65 },
+  { year: 2023, foodIndustry: 108, textiles: 84, chemicals: 105, metallurgy: 100, electrics: 92, buildingMat: 110, pharma: 122, paper: 96, manufEmployK: 535, manufExportsBn: 3.8, capacityUtilPct: 68 },
+  { year: 2024, foodIndustry: 110, textiles: 86, chemicals: 107, metallurgy: 102, electrics: 94, buildingMat: 112, pharma: 128, paper: 98, manufEmployK: 550, manufExportsBn: 4.2, capacityUtilPct: 70 },
 ];
 
 // ─── 21. BTP / CONSTRUCTION SECTOR ──────────────────────────────────────
