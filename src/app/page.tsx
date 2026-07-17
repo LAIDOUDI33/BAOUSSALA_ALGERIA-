@@ -7,6 +7,9 @@ import {
   education, ippiQuarterly, wilayaData, constructionIndex, latestKPIs,
 } from "@/lib/algeria-data";
 
+import { useI18n } from "@/lib/i18n/context";
+import { LanguageSwitcher } from "@/components/language-switcher";
+
 import {
   Card, CardContent, CardDescription, CardHeader, CardTitle,
 } from "@/components/ui/card";
@@ -43,10 +46,7 @@ const COLORS = {
   orange: "#ea580c", orangeLight: "#ffedd5",
 };
 
-// ─── Reusable Chart Configs ────────────────────────────────────────────────
-const gdpChartConfig = { gdpBillionUsd: { label: "GDP (bn USD)", color: COLORS.emerald }, growthPct: { label: "Growth %", color: COLORS.blue } };
-const cpiChartConfig = { yoyPct: { label: "Inflation YoY %", color: COLORS.red }, foodYoy: { label: "Food YoY %", color: COLORS.amber }, coreYoy: { label: "Core YoY %", color: COLORS.blue } };
-const tradeChartConfig = { exportsBn: { label: "Exports", color: COLORS.emerald }, importsBn: { label: "Imports", color: COLORS.red }, balanceBn: { label: "Balance", color: COLORS.blue } };
+// ─── Reusable Chart Configs (will be built dynamically with t) ──────────────
 
 // ─── Helper ─────────────────────────────────────────────────────────────────
 function KpiCard({ title, value, unit, change, changeDir, icon: Icon, color }: {
@@ -77,18 +77,6 @@ function KpiCard({ title, value, unit, change, changeDir, icon: Icon, color }: {
   );
 }
 
-function SectionTitle({ icon: Icon, title, subtitle }: { icon: React.ElementType; title: string; subtitle?: string }) {
-  return (
-    <div className="flex items-center gap-2 mb-4">
-      <div className="p-2 rounded-lg bg-emerald-50 text-emerald-700"><Icon className="w-4 h-4" /></div>
-      <div>
-        <h2 className="text-base font-semibold">{title}</h2>
-        {subtitle && <p className="text-xs text-muted-foreground">{subtitle}</p>}
-      </div>
-    </div>
-  );
-}
-
 function ChartCard({ title, subtitle, children, className }: { title: string; subtitle?: string; children: React.ReactNode; className?: string }) {
   return (
     <Card className={`border-0 shadow-sm ${className || ""}`}>
@@ -105,19 +93,40 @@ function ChartCard({ title, subtitle, children, className }: { title: string; su
 // MAIN PAGE
 // ═════════════════════════════════════════════════════════════════════════════
 export default function AlgeriaDashboard() {
+  const { t, isRtl, locale } = useI18n();
+
+  // Arabic font style
+  const arabicFontStyle = locale === "ar"
+    ? { fontFamily: "'Noto Sans Arabic', 'Noto Sans SC', sans-serif" }
+    : {};
+
+  const tabItems = [
+    { val: "macro", label: t.tabMacro, icon: Activity },
+    { val: "inflation", label: t.tabInflation, icon: Scale },
+    { val: "trade", label: t.tabTrade, icon: Globe },
+    { val: "industry", label: t.tabIndustry, icon: Factory },
+    { val: "labor", label: t.tabLabor, icon: Users },
+    { val: "social", label: t.tabSocial, icon: Heart },
+    { val: "fiscal", label: t.tabFiscal, icon: DollarSign },
+    { val: "regional", label: t.tabRegional, icon: Building2 },
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col" style={arabicFontStyle}>
       {/* Header */}
       <header className="bg-gradient-to-r from-emerald-800 via-emerald-900 to-slate-900 text-white">
         <div className="max-w-[1400px] mx-auto px-4 py-5">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center"><BarChart3 className="w-6 h-6" /></div>
-            <div>
-              <h1 className="text-xl sm:text-2xl font-bold tracking-tight">Algeria Economic Dashboard</h1>
-              <p className="text-emerald-200/70 text-xs sm:text-sm">
-                Office National des Statistiques (ONS) — Data Science Analysis Platform
-              </p>
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center"><BarChart3 className="w-6 h-6" /></div>
+              <div>
+                <h1 className="text-xl sm:text-2xl font-bold tracking-tight">{t.headerTitle}</h1>
+                <p className="text-emerald-200/70 text-xs sm:text-sm">
+                  {t.headerSubtitle}
+                </p>
+              </div>
             </div>
+            <LanguageSwitcher />
           </div>
         </div>
       </header>
@@ -125,21 +134,12 @@ export default function AlgeriaDashboard() {
       <main className="flex-1 max-w-[1400px] mx-auto px-4 py-5 w-full">
         <Tabs defaultValue="macro" className="space-y-5">
           <TabsList className="flex flex-wrap h-auto gap-1 bg-transparent p-0">
-            {[
-              { val: "macro", label: "Macroeconomic", icon: Activity },
-              { val: "inflation", label: "Prices & Inflation", icon: Scale },
-              { val: "trade", label: "Trade & Balance", icon: Globe },
-              { val: "industry", label: "Industrial Production", icon: Factory },
-              { val: "labor", label: "Labor Market", icon: Users },
-              { val: "social", label: "Demographics & Social", icon: Heart },
-              { val: "fiscal", label: "Fiscal & Savings", icon: DollarSign },
-              { val: "regional", label: "Regional", icon: Building2 },
-            ].map((t) => (
-              <TabsTrigger key={t.val} value={t.val}
+            {tabItems.map((tab) => (
+              <TabsTrigger key={tab.val} value={tab.val}
                 className="data-[state=active]:bg-emerald-600 data-[state=active]:text-white rounded-lg px-3 py-2 text-xs sm:text-sm font-medium">
-                <t.icon className="w-3.5 h-3.5 mr-1.5" />
-                <span className="hidden sm:inline">{t.label}</span>
-                <span className="sm:hidden">{t.label.split(" ")[0]}</span>
+                <tab.icon className="w-3.5 h-3.5 me-1.5" />
+                <span className="hidden sm:inline">{tab.label}</span>
+                <span className="sm:hidden">{tab.label.split(" ")[0]}</span>
               </TabsTrigger>
             ))}
           </TabsList>
@@ -147,18 +147,17 @@ export default function AlgeriaDashboard() {
           {/* ═══ MACROECONOMIC ═══════════════════════════════════════════════ */}
           <TabsContent value="macro" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-              <KpiCard title="GDP Growth" value={latestKPIs.gdpGrowth} unit="%" change={0.2} changeDir="up" icon={TrendingUp} color={COLORS.emerald} />
-              <KpiCard title="GDP (2024)" value="205" unit="bn $" icon={DollarSign} color={COLORS.blue} />
-              <KpiCard title="Inflation" value={latestKPIs.inflation} unit="%" change={-1.0} changeDir="down" icon={Scale} color={COLORS.red} />
-              <KpiCard title="Unemployment" value={latestKPIs.unemployment} unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.amber} />
-              <KpiCard title="Population" value="46.8" unit="M" icon={Heart} color={COLORS.purple} />
-              <KpiCard title="Investment Rate" value={latestKPIs.investmentRate} unit="% GDP" icon={Factory} color={COLORS.cyan} />
+              <KpiCard title={t.kpiGdpGrowth} value={latestKPIs.gdpGrowth} unit="%" change={0.2} changeDir="up" icon={TrendingUp} color={COLORS.emerald} />
+              <KpiCard title={t.kpiGdp2024} value="205" unit="bn $" icon={DollarSign} color={COLORS.blue} />
+              <KpiCard title={t.kpiInflation} value={latestKPIs.inflation} unit="%" change={-1.0} changeDir="down" icon={Scale} color={COLORS.red} />
+              <KpiCard title={t.kpiUnemployment} value={latestKPIs.unemployment} unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.amber} />
+              <KpiCard title={t.kpiPopulation} value="46.8" unit="M" icon={Heart} color={COLORS.purple} />
+              <KpiCard title={t.kpiInvestmentRate} value={latestKPIs.investmentRate} unit="% GDP" icon={Factory} color={COLORS.cyan} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              {/* GDP & Growth */}
-              <ChartCard title="GDP & Growth Rate (2000–2024)" subtitle="Billion USD and annual growth %">
-                <ChartContainer config={gdpChartConfig} className="h-[320px] w-full">
+              <ChartCard title={t.chartGdpGrowth} subtitle={t.chartGdpGrowthSub}>
+                <ChartContainer config={{ gdpBillionUsd: { label: t.chartGdpBnUsd, color: COLORS.emerald }, growthPct: { label: t.chartGrowthPct, color: COLORS.blue } }} className="h-[320px] w-full">
                   <ComposedChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
@@ -166,19 +165,18 @@ export default function AlgeriaDashboard() {
                     <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[-5, 10]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Bar yAxisId="left" dataKey="gdpBillionUsd" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.8} name="GDP (bn USD)" />
-                    <Line yAxisId="right" type="monotone" dataKey="growthPct" stroke={COLORS.blue} strokeWidth={2} dot={{ r: 3 }} name="Growth %" />
+                    <Bar yAxisId="left" dataKey="gdpBillionUsd" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartGdpBnUsd} />
+                    <Line yAxisId="right" type="monotone" dataKey="growthPct" stroke={COLORS.blue} strokeWidth={2} dot={{ r: 3 }} name={t.chartGrowthPct} />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
 
-              {/* GDP by Sector Stacked Area */}
-              <ChartCard title="GDP by Sector (% Contribution)" subtitle="Agriculture, Industry, Construction, Services">
+              <ChartCard title={t.chartGdpSector} subtitle={t.chartGdpSectorSub}>
                 <ChartContainer config={{
-                  agriculture: { label: "Agriculture", color: COLORS.emerald },
-                  industry: { label: "Industry", color: COLORS.blue },
-                  construction: { label: "Construction", color: COLORS.amber },
-                  services: { label: "Services", color: COLORS.purple },
+                  agriculture: { label: t.sectorAgriculture, color: COLORS.emerald },
+                  industry: { label: t.sectorIndustry, color: COLORS.blue },
+                  construction: { label: t.sectorConstruction, color: COLORS.amber },
+                  services: { label: t.sectorServices, color: COLORS.purple },
                 }} className="h-[320px] w-full">
                   <AreaChart data={gdpBySector} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -186,25 +184,24 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 100]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Area type="monotone" stackId="1" dataKey="services" fill={COLORS.purple} stroke={COLORS.purple} fillOpacity={0.7} />
-                    <Area type="monotone" stackId="1" dataKey="construction" fill={COLORS.amber} stroke={COLORS.amber} fillOpacity={0.7} />
-                    <Area type="monotone" stackId="1" dataKey="industry" fill={COLORS.blue} stroke={COLORS.blue} fillOpacity={0.7} />
-                    <Area type="monotone" stackId="1" dataKey="agriculture" fill={COLORS.emerald} stroke={COLORS.emerald} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="services" fill={COLORS.purple} stroke={COLORS.purple} fillOpacity={0.7} name={t.sectorServices} />
+                    <Area type="monotone" stackId="1" dataKey="construction" fill={COLORS.amber} stroke={COLORS.amber} fillOpacity={0.7} name={t.sectorConstruction} />
+                    <Area type="monotone" stackId="1" dataKey="industry" fill={COLORS.blue} stroke={COLORS.blue} fillOpacity={0.7} name={t.sectorIndustry} />
+                    <Area type="monotone" stackId="1" dataKey="agriculture" fill={COLORS.emerald} stroke={COLORS.emerald} fillOpacity={0.7} name={t.sectorAgriculture} />
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              {/* Quarterly GDP Growth */}
-              <ChartCard title="Quarterly GDP Growth (2020–2025)" subtitle="QoQ growth rate %">
-                <ChartContainer config={{ growthPct: { label: "Growth %", color: COLORS.emerald } }} className="h-[280px] w-full">
+              <ChartCard title={t.chartQuarterlyGdp} subtitle={t.chartQuarterlyGdpSub}>
+                <ChartContainer config={{ growthPct: { label: t.chartGrowthPct, color: COLORS.emerald } }} className="h-[280px] w-full">
                   <BarChart data={gdpQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[-8, 6]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="growthPct" radius={[2, 2, 0, 0]}>
+                    <Bar dataKey="growthPct" radius={[2, 2, 0, 0]} name={t.chartGrowthPct}>
                       {gdpQuarterly.map((d, i) => (
                         <Cell key={i} fill={d.growthPct >= 0 ? COLORS.emerald : COLORS.red} />
                       ))}
@@ -213,15 +210,14 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
 
-              {/* GDP per Capita */}
-              <ChartCard title="GDP per Capita (2000–2024)" subtitle="Current USD">
-                <ChartContainer config={{ perCapitaUsd: { label: "GDP/capita (USD)", color: COLORS.blue } }} className="h-[280px] w-full">
+              <ChartCard title={t.chartGdpPerCapita} subtitle={t.chartGdpPerCapitaSub}>
+                <ChartContainer config={{ perCapitaUsd: { label: t.chartGdpCapita, color: COLORS.blue } }} className="h-[280px] w-full">
                   <AreaChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Area type="monotone" dataKey="perCapitaUsd" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.4} />
+                    <Area type="monotone" dataKey="perCapitaUsd" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.4} name={t.chartGdpCapita} />
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
@@ -231,46 +227,43 @@ export default function AlgeriaDashboard() {
           {/* ═══ PRICES & INFLATION ═══════════════════════════════════════════ */}
           <TabsContent value="inflation" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <KpiCard title="CPI (Apr 2026)" value="344.2" change={0.4} changeDir="up" icon={Scale} color={COLORS.red} />
-              <KpiCard title="YoY Inflation" value="3.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.emerald} />
-              <KpiCard title="Food Inflation" value="2.8" unit="%" change={-1.3} changeDir="down" icon={Package} color={COLORS.amber} />
-              <KpiCard title="Core Inflation" value="2.8" unit="%" change={-0.7} changeDir="down" icon={Activity} color={COLORS.blue} />
+              <KpiCard title={t.kpiCpi} value="344.2" change={0.4} changeDir="up" icon={Scale} color={COLORS.red} />
+              <KpiCard title={t.kpiYoyInflation} value="3.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.emerald} />
+              <KpiCard title={t.kpiFoodInflation} value="2.8" unit="%" change={-1.3} changeDir="down" icon={Package} color={COLORS.amber} />
+              <KpiCard title={t.kpiCoreInflation} value="2.8" unit="%" change={-0.7} changeDir="down" icon={Activity} color={COLORS.blue} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              {/* CPI Monthly Trend */}
-              <ChartCard title="Consumer Price Index — Monthly (2020–2026)" subtitle="Year-over-year inflation %">
-                <ChartContainer config={cpiChartConfig} className="h-[340px] w-full">
+              <ChartCard title={t.chartCpiMonthly} subtitle={t.chartCpiMonthlySub}>
+                <ChartContainer config={{ yoyPct: { label: t.chartInflationYoy, color: COLORS.red }, foodYoy: { label: t.chartFoodYoy, color: COLORS.amber }, coreYoy: { label: t.chartCoreYoy, color: COLORS.blue } }} className="h-[340px] w-full">
                   <LineChart data={cpiMonthly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="month" tick={{ fontSize: 9 }} tickLine={false} interval={5} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Line type="monotone" dataKey="yoyPct" stroke={COLORS.red} strokeWidth={2} dot={false} name="Total YoY" />
-                    <Line type="monotone" dataKey="foodYoy" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name="Food YoY" />
-                    <Line type="monotone" dataKey="coreYoy" stroke={COLORS.blue} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name="Core YoY" />
+                    <Line type="monotone" dataKey="yoyPct" stroke={COLORS.red} strokeWidth={2} dot={false} name={t.legendTotalYoy} />
+                    <Line type="monotone" dataKey="foodYoy" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.legendFoodYoy} />
+                    <Line type="monotone" dataKey="coreYoy" stroke={COLORS.blue} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.legendCoreYoy} />
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
 
-              {/* IPC Level */}
-              <ChartCard title="CPI Index Level (2020–2026)" subtitle="Base year implied index">
-                <ChartContainer config={{ ipc: { label: "IPC Index", color: COLORS.rose } }} className="h-[340px] w-full">
+              <ChartCard title={t.chartCpiLevel} subtitle={t.chartCpiLevelSub}>
+                <ChartContainer config={{ ipc: { label: t.chartIpcIndex, color: COLORS.rose } }} className="h-[340px] w-full">
                   <AreaChart data={cpiMonthly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="month" tick={{ fontSize: 9 }} tickLine={false} interval={5} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[200, 360]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Area type="monotone" dataKey="ipc" fill={COLORS.roseLight} stroke={COLORS.rose} strokeWidth={2} fillOpacity={0.5} />
+                    <Area type="monotone" dataKey="ipc" fill={COLORS.roseLight} stroke={COLORS.rose} strokeWidth={2} fillOpacity={0.5} name={t.chartIpcIndex} />
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              {/* CPI by Division Bar Chart */}
-              <ChartCard title="Inflation by COICOP Division (2024)" subtitle="Year-over-year change by product group">
+              <ChartCard title={t.chartCpiDivision} subtitle={t.chartCpiDivisionSub}>
                 <ChartContainer config={{ y2024: { label: "2024 YoY %", color: COLORS.blue } }} className="h-[340px] w-full">
                   <BarChart data={cpiByDivision} layout="vertical" margin={{ top: 5, right: 20, left: 100, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -286,8 +279,7 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
 
-              {/* CPI Weights Pie */}
-              <ChartCard title="CPI Basket Weights by Division" subtitle="Share in consumer basket">
+              <ChartCard title={t.chartCpiWeights} subtitle={t.chartCpiWeightsSub}>
                 <ChartContainer config={Object.fromEntries(
                   cpiByDivision.map((d, i) => [d.division, { label: d.division, color: Object.values(COLORS)[i % Object.values(COLORS).length] }])
                 )} className="h-[340px] w-full">
@@ -304,12 +296,11 @@ export default function AlgeriaDashboard() {
               </ChartCard>
             </div>
 
-            {/* PPI Chart */}
-            <ChartCard title="Producer Price Index (IPPI) — Quarterly (2020–2025)" subtitle="Mining, Manufacturing, Energy">
+            <ChartCard title={t.chartIppi} subtitle={t.chartIppiSub}>
               <ChartContainer config={{
-                mining: { label: "Mining", color: COLORS.amber },
-                manufacturing: { label: "Manufacturing", color: COLORS.blue },
-                energy: { label: "Energy", color: COLORS.red },
+                mining: { label: t.sectorMining, color: COLORS.amber },
+                manufacturing: { label: t.sectorManufacturing, color: COLORS.blue },
+                energy: { label: t.sectorEnergy, color: COLORS.red },
               }} className="h-[300px] w-full">
                 <LineChart data={ippiQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -317,9 +308,9 @@ export default function AlgeriaDashboard() {
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                   <ChartTooltip content={<ChartTooltipContent />} />
                   <Legend content={<ChartLegendContent />} />
-                  <Line type="monotone" dataKey="mining" stroke={COLORS.amber} strokeWidth={2} dot={false} />
-                  <Line type="monotone" dataKey="manufacturing" stroke={COLORS.blue} strokeWidth={2} dot={false} />
-                  <Line type="monotone" dataKey="energy" stroke={COLORS.red} strokeWidth={2} dot={false} />
+                  <Line type="monotone" dataKey="mining" stroke={COLORS.amber} strokeWidth={2} dot={false} name={t.sectorMining} />
+                  <Line type="monotone" dataKey="manufacturing" stroke={COLORS.blue} strokeWidth={2} dot={false} name={t.sectorManufacturing} />
+                  <Line type="monotone" dataKey="energy" stroke={COLORS.red} strokeWidth={2} dot={false} name={t.sectorEnergy} />
                 </LineChart>
               </ChartContainer>
             </ChartCard>
@@ -328,49 +319,46 @@ export default function AlgeriaDashboard() {
           {/* ═══ TRADE & EXTERNAL BALANCE ════════════════════════════════════ */}
           <TabsContent value="trade" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <KpiCard title="Exports (2024)" value="48.5" unit="bn $" change={7.8} changeDir="up" icon={Globe} color={COLORS.emerald} />
-              <KpiCard title="Imports (2024)" value="37.0" unit="bn $" change={6.3} changeDir="up" icon={Package} color={COLORS.red} />
-              <KpiCard title="Trade Balance" value="11.5" unit="bn $" change={1.3} changeDir="up" icon={DollarSign} color={COLORS.blue} />
-              <KpiCard title="Hydrocarbon % Exports" value="80.0" unit="%" icon={Factory} color={COLORS.amber} />
+              <KpiCard title={t.kpiExports} value="48.5" unit="bn $" change={7.8} changeDir="up" icon={Globe} color={COLORS.emerald} />
+              <KpiCard title={t.kpiImports} value="37.0" unit="bn $" change={6.3} changeDir="up" icon={Package} color={COLORS.red} />
+              <KpiCard title={t.kpiTradeBalance} value="11.5" unit="bn $" change={1.3} changeDir="up" icon={DollarSign} color={COLORS.blue} />
+              <KpiCard title={t.kpiHydroPct} value="80.0" unit="%" icon={Factory} color={COLORS.amber} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              {/* Annual Trade Flows */}
-              <ChartCard title="External Trade (2000–2024)" subtitle="Exports, Imports, Balance — Billion USD">
-                <ChartContainer config={tradeChartConfig} className="h-[340px] w-full">
+              <ChartCard title={t.chartTradeAnnual} subtitle={t.chartTradeAnnualSub}>
+                <ChartContainer config={{ exportsBn: { label: t.chartExports, color: COLORS.emerald }, importsBn: { label: t.chartImports, color: COLORS.red }, balanceBn: { label: t.chartBalance, color: COLORS.blue } }} className="h-[340px] w-full">
                   <ComposedChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Bar dataKey="exportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.85} />
-                    <Bar dataKey="importsBn" fill={COLORS.red} radius={[2, 2, 0, 0]} opacity={0.85} />
-                    <Line type="monotone" dataKey="balanceBn" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 2 }} />
+                    <Bar dataKey="exportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartExports} />
+                    <Bar dataKey="importsBn" fill={COLORS.red} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartImports} />
+                    <Line type="monotone" dataKey="balanceBn" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 2 }} name={t.chartBalance} />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
 
-              {/* Hydrocarbon Share */}
-              <ChartCard title="Hydrocarbon Share of Exports" subtitle="% of total export value">
-                <ChartContainer config={{ hydroPct: { label: "Hydrocarbon %", color: COLORS.amerald } }} className="h-[340px] w-full">
+              <ChartCard title={t.chartHydroShare} subtitle={t.chartHydroShareSub}>
+                <ChartContainer config={{ hydroPct: { label: t.chartHydroPct, color: COLORS.amber } }} className="h-[340px] w-full">
                   <AreaChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[60, 100]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Area type="monotone" dataKey="hydroPct" fill={COLORS.amberLight} stroke={COLORS.amber} strokeWidth={2} fillOpacity={0.5} />
+                    <Area type="monotone" dataKey="hydroPct" fill={COLORS.amberLight} stroke={COLORS.amber} strokeWidth={2} fillOpacity={0.5} name={t.chartHydroPct} />
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              {/* Quarterly Trade */}
-              <ChartCard title="Quarterly Trade Balance (2023–2025)" subtitle="Billion USD">
+              <ChartCard title={t.chartTradeQuarterly} subtitle={t.chartTradeQuarterlySub}>
                 <ChartContainer config={{
-                  exportsBn: { label: "Exports", color: COLORS.emerald },
-                  importsBn: { label: "Imports", color: COLORS.red },
+                  exportsBn: { label: t.chartExports, color: COLORS.emerald },
+                  importsBn: { label: t.chartImports, color: COLORS.red },
                 }} className="h-[280px] w-full">
                   <BarChart data={tradeQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -378,17 +366,16 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Bar dataKey="exportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} />
-                    <Bar dataKey="importsBn" fill={COLORS.red} radius={[2, 2, 0, 0]} />
+                    <Bar dataKey="exportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} name={t.chartExports} />
+                    <Bar dataKey="importsBn" fill={COLORS.red} radius={[2, 2, 0, 0]} name={t.chartImports} />
                   </BarChart>
                 </ChartContainer>
               </ChartCard>
 
-              {/* Top Partners */}
-              <ChartCard title="Top Trade Partners (2024)" subtitle="Exports vs Imports by country">
+              <ChartCard title={t.chartTradePartners} subtitle={t.chartTradePartnersSub}>
                 <ChartContainer config={{
-                  exports: { label: "Exports", color: COLORS.emerald },
-                  imports: { label: "Imports", color: COLORS.red },
+                  exports: { label: t.chartExports, color: COLORS.emerald },
+                  imports: { label: t.chartImports, color: COLORS.red },
                 }} className="h-[280px] w-full">
                   <BarChart data={tradeByPartner} layout="vertical" margin={{ top: 5, right: 10, left: 65, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -396,8 +383,8 @@ export default function AlgeriaDashboard() {
                     <YAxis dataKey="partner" type="category" tick={{ fontSize: 10 }} tickLine={false} width={60} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Bar dataKey="exports" fill={COLORS.emerald} radius={[0, 4, 4, 0]} />
-                    <Bar dataKey="imports" fill={COLORS.red} radius={[0, 4, 4, 0]} />
+                    <Bar dataKey="exports" fill={COLORS.emerald} radius={[0, 4, 4, 0]} name={t.chartExports} />
+                    <Bar dataKey="imports" fill={COLORS.red} radius={[0, 4, 4, 0]} name={t.chartImports} />
                   </BarChart>
                 </ChartContainer>
               </ChartCard>
@@ -407,19 +394,19 @@ export default function AlgeriaDashboard() {
           {/* ═══ INDUSTRIAL PRODUCTION ═════════════════════════════════════════ */}
           <TabsContent value="industry" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <KpiCard title="IPI (Q2 2025)" value="114.5" change={1.8} changeDir="up" icon={Factory} color={COLORS.emerald} />
-              <KpiCard title="Mining" value="108.0" change={1.4} changeDir="up" icon={Factory} color={COLORS.amber} />
-              <KpiCard title="Manufacturing" value="109.0" change={1.8} changeDir="up" icon={Building2} color={COLORS.blue} />
-              <KpiCard title="Energy" value="118.0" change={0.4} changeDir="up" icon={Activity} color={COLORS.cyan} />
+              <KpiCard title={t.kpiIpi} value="114.5" change={1.8} changeDir="up" icon={Factory} color={COLORS.emerald} />
+              <KpiCard title={t.kpiMining} value="108.0" change={1.4} changeDir="up" icon={Factory} color={COLORS.amber} />
+              <KpiCard title={t.kpiManufacturing} value="109.0" change={1.8} changeDir="up" icon={Building2} color={COLORS.blue} />
+              <KpiCard title={t.kpiEnergy} value="118.0" change={0.4} changeDir="up" icon={Activity} color={COLORS.cyan} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title="Industrial Production Index (2020–2025)" subtitle="Mining, Manufacturing, Energy — Base 100 = 2019">
+              <ChartCard title={t.chartIpi} subtitle={t.chartIpiSub}>
                 <ChartContainer config={{
-                  mining: { label: "Mining", color: COLORS.amber },
-                  manufacturing: { label: "Manufacturing", color: COLORS.blue },
-                  energy: { label: "Energy", color: COLORS.cyan },
-                  ipi: { label: "IPI Total", color: COLORS.emerald },
+                  mining: { label: t.sectorMining, color: COLORS.amber },
+                  manufacturing: { label: t.sectorManufacturing, color: COLORS.blue },
+                  energy: { label: t.sectorEnergy, color: COLORS.cyan },
+                  ipi: { label: t.chartIpiTotal, color: COLORS.emerald },
                 }} className="h-[340px] w-full">
                   <LineChart data={ipiQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -427,18 +414,18 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[75, 125]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Line type="monotone" dataKey="energy" stroke={COLORS.cyan} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
-                    <Line type="monotone" dataKey="mining" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
-                    <Line type="monotone" dataKey="manufacturing" stroke={COLORS.blue} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
-                    <Line type="monotone" dataKey="ipi" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 2 }} />
+                    <Line type="monotone" dataKey="energy" stroke={COLORS.cyan} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.sectorEnergy} />
+                    <Line type="monotone" dataKey="mining" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.sectorMining} />
+                    <Line type="monotone" dataKey="manufacturing" stroke={COLORS.blue} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.sectorManufacturing} />
+                    <Line type="monotone" dataKey="ipi" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 2 }} name={t.chartIpiTotal} />
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title="IPI vs IPPI Comparison (2020–2025)" subtitle="Industrial Production vs Producer Prices">
+              <ChartCard title={t.chartIpiIppi} subtitle={t.chartIpiIppiSub}>
                 <ChartContainer config={{
-                  ipi: { label: "IPI (Production)", color: COLORS.emerald },
-                  ippi: { label: "IPPI (Prices)", color: COLORS.red },
+                  ipi: { label: t.chartIpiProd, color: COLORS.emerald },
+                  ippi: { label: t.chartIppiPrices, color: COLORS.red },
                 }} className="h-[340px] w-full">
                   <LineChart data={ipiQuarterly.map((d, i) => ({
                     period: d.period, ipi: d.ipi, ippi: ippiQuarterly[i]?.ippi || 0
@@ -448,22 +435,21 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Line type="monotone" dataKey="ipi" stroke={COLORS.emerald} strokeWidth={2} dot={false} />
-                    <Line type="monotone" dataKey="ippi" stroke={COLORS.red} strokeWidth={2} dot={false} />
+                    <Line type="monotone" dataKey="ipi" stroke={COLORS.emerald} strokeWidth={2} dot={false} name={t.chartIpiProd} />
+                    <Line type="monotone" dataKey="ippi" stroke={COLORS.red} strokeWidth={2} dot={false} name={t.chartIppiPrices} />
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
             </div>
 
-            {/* Construction Index */}
-            <ChartCard title="Construction Cost Index (2015–2024)" subtitle="Base 100 = 2014">
-              <ChartContainer config={{ index: { label: "Construction Index", color: COLORS.amber } }} className="h-[250px] w-full">
+            <ChartCard title={t.chartConstruction} subtitle={t.chartConstructionSub}>
+              <ChartContainer config={{ index: { label: t.chartConstructionIdx, color: COLORS.amber } }} className="h-[250px] w-full">
                 <BarChart data={constructionIndex} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                   <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[100, 170]} />
                   <ChartTooltip content={<ChartTooltipContent />} />
-                  <Bar dataKey="index" fill={COLORS.amber} radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="index" fill={COLORS.amber} radius={[4, 4, 0, 0]} name={t.chartConstructionIdx} />
                 </BarChart>
               </ChartContainer>
             </ChartCard>
@@ -472,19 +458,19 @@ export default function AlgeriaDashboard() {
           {/* ═══ LABOR MARKET ═════════════════════════════════════════════════ */}
           <TabsContent value="labor" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-              <KpiCard title="Unemployment" value="10.8" unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.red} />
-              <KpiCard title="Activity Rate" value="44.0" unit="%" change={0.5} changeDir="up" icon={Activity} color={COLORS.emerald} />
-              <KpiCard title="Youth Unemp." value="22.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.amber} />
-              <KpiCard title="Female Partic." value="17.2" unit="%" change={0.4} changeDir="up" icon={Heart} color={COLORS.purple} />
-              <KpiCard title="Informal Sector" value="43.0" unit="%" change={-0.8} changeDir="down" icon={Building2} color={COLORS.slate} />
-              <KpiCard title="Employment/Pop" value="39.2" unit="%" change={0.6} changeDir="up" icon={TrendingUp} color={COLORS.blue} />
+              <KpiCard title={t.kpiUnempRate} value="10.8" unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.red} />
+              <KpiCard title={t.kpiActivityRate} value="44.0" unit="%" change={0.5} changeDir="up" icon={Activity} color={COLORS.emerald} />
+              <KpiCard title={t.kpiYouthUnemp} value="22.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.amber} />
+              <KpiCard title={t.kpiFemalePartic} value="17.2" unit="%" change={0.4} changeDir="up" icon={Heart} color={COLORS.purple} />
+              <KpiCard title={t.kpiInformal} value="43.0" unit="%" change={-0.8} changeDir="down" icon={Building2} color={COLORS.slate} />
+              <KpiCard title={t.kpiEmpPop} value="39.2" unit="%" change={0.6} changeDir="up" icon={TrendingUp} color={COLORS.blue} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title="Unemployment Rate (2010–2024)" subtitle="Total and youth (15-24) unemployment %">
+              <ChartCard title={t.chartUnempRate} subtitle={t.chartUnempRateSub}>
                 <ChartContainer config={{
-                  unemploymentPct: { label: "Total %", color: COLORS.red },
-                  youthUnemp: { label: "Youth (15-24) %", color: COLORS.amber },
+                  unemploymentPct: { label: t.chartTotalPct, color: COLORS.red },
+                  youthUnemp: { label: t.chartYouthPct, color: COLORS.amber },
                 }} className="h-[320px] w-full">
                   <LineChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -492,17 +478,17 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Line type="monotone" dataKey="youthUnemp" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
-                    <Line type="monotone" dataKey="unemploymentPct" stroke={COLORS.red} strokeWidth={2.5} dot={{ r: 3 }} />
+                    <Line type="monotone" dataKey="youthUnemp" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartYouthPct} />
+                    <Line type="monotone" dataKey="unemploymentPct" stroke={COLORS.red} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartTotalPct} />
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title="Activity Rate & Female Participation" subtitle="% of working-age population">
+              <ChartCard title={t.chartActivityFemale} subtitle={t.chartActivityFemaleSub}>
                 <ChartContainer config={{
-                  activityRate: { label: "Activity Rate", color: COLORS.emerald },
-                  femalePartic: { label: "Female Partic.", color: COLORS.purple },
-                  informalPct: { label: "Informal %", color: COLORS.slate },
+                  activityRate: { label: t.chartActRate, color: COLORS.emerald },
+                  femalePartic: { label: t.chartFemPartic, color: COLORS.purple },
+                  informalPct: { label: t.chartInformalPct, color: COLORS.slate },
                 }} className="h-[320px] w-full">
                   <LineChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -510,23 +496,22 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[10, 50]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Line type="monotone" dataKey="informalPct" stroke={COLORS.slate} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
-                    <Line type="monotone" dataKey="femalePartic" stroke={COLORS.purple} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
-                    <Line type="monotone" dataKey="activityRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} />
+                    <Line type="monotone" dataKey="informalPct" stroke={COLORS.slate} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartInformalPct} />
+                    <Line type="monotone" dataKey="femalePartic" stroke={COLORS.purple} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartFemPartic} />
+                    <Line type="monotone" dataKey="activityRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartActRate} />
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
             </div>
 
-            {/* Employment-to-Population Ratio */}
-            <ChartCard title="Employment-to-Population Ratio (2010–2024)" subtitle="% of total population employed">
-              <ChartContainer config={{ employmentPop: { label: "Emp/Pop %", color: COLORS.blue } }} className="h-[250px] w-full">
+            <ChartCard title={t.chartEmpPop} subtitle={t.chartEmpPopSub}>
+              <ChartContainer config={{ employmentPop: { label: t.chartEmpPopPct, color: COLORS.blue } }} className="h-[250px] w-full">
                 <BarChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                   <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[35, 42]} />
                   <ChartTooltip content={<ChartTooltipContent />} />
-                  <Bar dataKey="employmentPop" fill={COLORS.blue} radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="employmentPop" fill={COLORS.blue} radius={[4, 4, 0, 0]} name={t.chartEmpPopPct} />
                 </BarChart>
               </ChartContainer>
             </ChartCard>
@@ -535,47 +520,46 @@ export default function AlgeriaDashboard() {
           {/* ═══ DEMOGRAPHICS & SOCIAL ═══════════════════════════════════════ */}
           <TabsContent value="social" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <KpiCard title="Population" value="46.8" unit="M" icon={Users} color={COLORS.purple} />
-              <KpiCard title="Growth Rate" value="1.4" unit="%" icon={TrendingUp} color={COLORS.emerald} />
-              <KpiCard title="Urbanization" value="74.5" unit="%" icon={Building2} color={COLORS.blue} />
-              <KpiCard title="Fertility Rate" value="1.9" icon={Heart} color={COLORS.rose} />
+              <KpiCard title={t.kpiPop} value="46.8" unit="M" icon={Users} color={COLORS.purple} />
+              <KpiCard title={t.kpiGrowthRate} value="1.4" unit="%" icon={TrendingUp} color={COLORS.emerald} />
+              <KpiCard title={t.kpiUrbanization} value="74.5" unit="%" icon={Building2} color={COLORS.blue} />
+              <KpiCard title={t.kpiFertility} value="1.9" icon={Heart} color={COLORS.rose} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title="Population Growth (2000–2024)" subtitle="Millions of inhabitants">
-                <ChartContainer config={{ populationM: { label: "Population (M)", color: COLORS.purple } }} className="h-[300px] w-full">
+              <ChartCard title={t.chartPopGrowth} subtitle={t.chartPopGrowthSub}>
+                <ChartContainer config={{ populationM: { label: t.chartPopulationM, color: COLORS.purple } }} className="h-[300px] w-full">
                   <AreaChart data={demographics} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Area type="monotone" dataKey="populationM" fill={COLORS.purpleLight} stroke={COLORS.purple} strokeWidth={2} fillOpacity={0.4} />
+                    <Area type="monotone" dataKey="populationM" fill={COLORS.purpleLight} stroke={COLORS.purple} strokeWidth={2} fillOpacity={0.4} name={t.chartPopulationM} />
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title="Population Pyramid (2024)" subtitle="By age group — Millions">
-                <ChartContainer config={{ m: { label: "Male (M)", color: COLORS.blue }, f: { label: "Female (M)", color: COLORS.rose } }} className="h-[300px] w-full">
+              <ChartCard title={t.chartPopPyramid} subtitle={t.chartPopPyramidSub}>
+                <ChartContainer config={{ m: { label: t.chartMale, color: COLORS.blue }, f: { label: t.chartFemale, color: COLORS.rose } }} className="h-[300px] w-full">
                   <BarChart data={populationByAge} layout="vertical" margin={{ top: 5, right: 10, left: 40, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis dataKey="group" type="category" tick={{ fontSize: 10 }} tickLine={false} width={40} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Bar dataKey="f" fill={COLORS.rose} radius={[4, 0, 0, 4]} />
-                    <Bar dataKey="m" fill={COLORS.blue} radius={[0, 4, 4, 0]} />
+                    <Bar dataKey="f" fill={COLORS.rose} radius={[4, 0, 0, 4]} name={t.chartFemale} />
+                    <Bar dataKey="m" fill={COLORS.blue} radius={[0, 4, 4, 0]} name={t.chartMale} />
                   </BarChart>
                 </ChartContainer>
               </ChartCard>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              {/* Demographic Indicators */}
-              <ChartCard title="Demographic Transition Indicators" subtitle="Birth rate, death rate, fertility rate">
+              <ChartCard title={t.chartDemographic} subtitle={t.chartDemographicSub}>
                 <ChartContainer config={{
-                  birthRate: { label: "Birth Rate", color: COLORS.emerald },
-                  deathRate: { label: "Death Rate", color: COLORS.red },
-                  fertilityRate: { label: "Fertility Rate", color: COLORS.amber },
+                  birthRate: { label: t.chartBirthRate, color: COLORS.emerald },
+                  deathRate: { label: t.chartDeathRate, color: COLORS.red },
+                  fertilityRate: { label: t.chartFertilityRate, color: COLORS.amber },
                 }} className="h-[300px] w-full">
                   <LineChart data={demographics} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -583,19 +567,18 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Line type="monotone" dataKey="deathRate" stroke={COLORS.red} strokeWidth={1.5} dot={false} />
-                    <Line type="monotone" dataKey="fertilityRate" stroke={COLORS.amber} strokeWidth={2} dot={false} strokeDasharray="4 2" />
-                    <Line type="monotone" dataKey="birthRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} />
+                    <Line type="monotone" dataKey="deathRate" stroke={COLORS.red} strokeWidth={1.5} dot={false} name={t.chartDeathRate} />
+                    <Line type="monotone" dataKey="fertilityRate" stroke={COLORS.amber} strokeWidth={2} dot={false} strokeDasharray="4 2" name={t.chartFertilityRate} />
+                    <Line type="monotone" dataKey="birthRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartBirthRate} />
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
 
-              {/* Education */}
-              <ChartCard title="Education Enrollment (2015–2024)" subtitle="Millions of students">
+              <ChartCard title={t.chartEducation} subtitle={t.chartEducationSub}>
                 <ChartContainer config={{
-                  enrollmentPrimary: { label: "Primary", color: COLORS.emerald },
-                  enrollmentSecondary: { label: "Secondary", color: COLORS.blue },
-                  enrollmentHigher: { label: "Higher", color: COLORS.purple },
+                  enrollmentPrimary: { label: t.chartPrimary, color: COLORS.emerald },
+                  enrollmentSecondary: { label: t.chartSecondary, color: COLORS.blue },
+                  enrollmentHigher: { label: t.chartHigher, color: COLORS.purple },
                 }} className="h-[300px] w-full">
                   <AreaChart data={education} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -603,21 +586,20 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Area type="monotone" stackId="1" dataKey="enrollmentHigher" fill={COLORS.purple} stroke={COLORS.purple} fillOpacity={0.7} />
-                    <Area type="monotone" stackId="1" dataKey="enrollmentSecondary" fill={COLORS.blue} stroke={COLORS.blue} fillOpacity={0.7} />
-                    <Area type="monotone" stackId="1" dataKey="enrollmentPrimary" fill={COLORS.emerald} stroke={COLORS.emerald} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="enrollmentHigher" fill={COLORS.purple} stroke={COLORS.purple} fillOpacity={0.7} name={t.chartHigher} />
+                    <Area type="monotone" stackId="1" dataKey="enrollmentSecondary" fill={COLORS.blue} stroke={COLORS.blue} fillOpacity={0.7} name={t.chartSecondary} />
+                    <Area type="monotone" stackId="1" dataKey="enrollmentPrimary" fill={COLORS.emerald} stroke={COLORS.emerald} fillOpacity={0.7} name={t.chartPrimary} />
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
             </div>
 
-            {/* Literacy Rate */}
-            <ChartCard title="Literacy Rate & Net Enrollment (2015–2024)" subtitle="Literacy %, Primary and Secondary net enrollment rates">
+            <ChartCard title={t.chartLiteracy} subtitle={t.chartLiteracySub}>
               <ChartContainer config={{
-                literacyRate: { label: "Literacy Rate %", color: COLORS.emerald },
-                primaryNet: { label: "Primary Net %", color: COLORS.blue },
-                secondaryNet: { label: "Secondary Net %", color: COLORS.amber },
-                higherGross: { label: "Higher Gross %", color: COLORS.purple },
+                literacyRate: { label: t.chartLiteracyRate, color: COLORS.emerald },
+                primaryNet: { label: t.chartPrimaryNet, color: COLORS.blue },
+                secondaryNet: { label: t.chartSecondaryNet, color: COLORS.amber },
+                higherGross: { label: t.chartHigherGross, color: COLORS.purple },
               }} className="h-[280px] w-full">
                 <LineChart data={education} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -625,10 +607,10 @@ export default function AlgeriaDashboard() {
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[50, 100]} />
                   <ChartTooltip content={<ChartTooltipContent />} />
                   <Legend content={<ChartLegendContent />} />
-                  <Line type="monotone" dataKey="higherGross" stroke={COLORS.purple} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
-                  <Line type="monotone" dataKey="secondaryNet" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
-                  <Line type="monotone" dataKey="primaryNet" stroke={COLORS.blue} strokeWidth={2} dot={false} />
-                  <Line type="monotone" dataKey="literacyRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} />
+                  <Line type="monotone" dataKey="higherGross" stroke={COLORS.purple} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartHigherGross} />
+                  <Line type="monotone" dataKey="secondaryNet" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartSecondaryNet} />
+                  <Line type="monotone" dataKey="primaryNet" stroke={COLORS.blue} strokeWidth={2} dot={false} name={t.chartPrimaryNet} />
+                  <Line type="monotone" dataKey="literacyRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartLiteracyRate} />
                 </LineChart>
               </ChartContainer>
             </ChartCard>
@@ -637,18 +619,18 @@ export default function AlgeriaDashboard() {
           {/* ═══ FISCAL & SAVINGS ═════════════════════════════════════════════ */}
           <TabsContent value="fiscal" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <KpiCard title="Savings Rate" value="42.5" unit="% GDP" icon={DollarSign} color={COLORS.emerald} />
-              <KpiCard title="Investment Rate" value="40.0" unit="% GDP" icon={Factory} color={COLORS.blue} />
-              <KpiCard title="Debt/GDP" value="41.0" unit="%" change={-2.0} changeDir="down" icon={Scale} color={COLORS.amber} />
-              <KpiCard title="Fiscal Deficit" value="1.0" unit="% GDP" change={-1.0} changeDir="down" icon={Activity} color={COLORS.purple} />
+              <KpiCard title={t.kpiSavings} value="42.5" unit="% GDP" icon={DollarSign} color={COLORS.emerald} />
+              <KpiCard title={t.kpiInvest} value="40.0" unit="% GDP" icon={Factory} color={COLORS.blue} />
+              <KpiCard title={t.kpiDebt} value="41.0" unit="%" change={-2.0} changeDir="down" icon={Scale} color={COLORS.amber} />
+              <KpiCard title={t.kpiFiscalDeficit} value="1.0" unit="% GDP" change={-1.0} changeDir="down" icon={Activity} color={COLORS.purple} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title="Fiscal Balance (% of GDP)" subtitle="Revenue, Expenditure, Deficit">
+              <ChartCard title={t.chartFiscal} subtitle={t.chartFiscalSub}>
                 <ChartContainer config={{
-                  revenuePctGdp: { label: "Revenue", color: COLORS.emerald },
-                  expenditurePctGdp: { label: "Expenditure", color: COLORS.red },
-                  deficitPctGdp: { label: "Deficit", color: COLORS.amber },
+                  revenuePctGdp: { label: t.chartRevenue, color: COLORS.emerald },
+                  expenditurePctGdp: { label: t.chartExpenditure, color: COLORS.red },
+                  deficitPctGdp: { label: t.chartDeficit, color: COLORS.amber },
                 }} className="h-[340px] w-full">
                   <ComposedChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -656,17 +638,17 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Bar dataKey="revenuePctGdp" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.85} />
-                    <Bar dataKey="expenditurePctGdp" fill={COLORS.red} radius={[2, 2, 0, 0]} opacity={0.85} />
-                    <Line type="monotone" dataKey="deficitPctGdp" stroke={COLORS.amber} strokeWidth={2.5} dot={{ r: 3 }} />
+                    <Bar dataKey="revenuePctGdp" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartRevenue} />
+                    <Bar dataKey="expenditurePctGdp" fill={COLORS.red} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartExpenditure} />
+                    <Line type="monotone" dataKey="deficitPctGdp" stroke={COLORS.amber} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartDeficit} />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title="Savings vs Investment Rate" subtitle="% of GDP">
+              <ChartCard title={t.chartSavingsInvest} subtitle={t.chartSavingsInvestSub}>
                 <ChartContainer config={{
-                  savingsRate: { label: "Savings Rate", color: COLORS.emerald },
-                  investRate: { label: "Investment Rate", color: COLORS.blue },
+                  savingsRate: { label: t.chartSavingsRate, color: COLORS.emerald },
+                  investRate: { label: t.chartInvestRate, color: COLORS.blue },
                 }} className="h-[340px] w-full">
                   <AreaChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -674,21 +656,21 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[30, 55]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend content={<ChartLegendContent />} />
-                    <Area type="monotone" dataKey="investRate" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.4} />
-                    <Area type="monotone" dataKey="savingsRate" fill={COLORS.emeraldLight} stroke={COLORS.emerald} strokeWidth={2} fillOpacity={0.4} />
+                    <Area type="monotone" dataKey="investRate" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.4} name={t.chartInvestRate} />
+                    <Area type="monotone" dataKey="savingsRate" fill={COLORS.emeraldLight} stroke={COLORS.emerald} strokeWidth={2} fillOpacity={0.4} name={t.chartSavingsRate} />
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
             </div>
 
-            <ChartCard title="Public Debt to GDP Ratio (2010–2024)" subtitle="% of GDP">
-              <ChartContainer config={{ debtPctGdp: { label: "Debt/GDP %", color: COLORS.red } }} className="h-[280px] w-full">
+            <ChartCard title={t.chartDebt} subtitle={t.chartDebtSub}>
+              <ChartContainer config={{ debtPctGdp: { label: t.chartDebtGdp, color: COLORS.red } }} className="h-[280px] w-full">
                 <AreaChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                   <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 50]} />
                   <ChartTooltip content={<ChartTooltipContent />} />
-                  <Area type="monotone" dataKey="debtPctGdp" fill={COLORS.redLight} stroke={COLORS.red} strokeWidth={2} fillOpacity={0.5} />
+                  <Area type="monotone" dataKey="debtPctGdp" fill={COLORS.redLight} stroke={COLORS.red} strokeWidth={2} fillOpacity={0.5} name={t.chartDebtGdp} />
                 </AreaChart>
               </ChartContainer>
             </ChartCard>
@@ -697,14 +679,14 @@ export default function AlgeriaDashboard() {
           {/* ═══ REGIONAL ═════════════════════════════════════════════════════ */}
           <TabsContent value="regional" className="space-y-5">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title="Top 10 Wilayas by GDP Share (2023)" subtitle="Contribution to national GDP">
-                <ChartContainer config={{ gdpShare: { label: "GDP Share %", color: COLORS.emerald } }} className="h-[380px] w-full">
+              <ChartCard title={t.chartWilayaGdp} subtitle={t.chartWilayaGdpSub}>
+                <ChartContainer config={{ gdpShare: { label: t.chartGdpShare, color: COLORS.emerald } }} className="h-[380px] w-full">
                   <BarChart data={wilayaData} layout="vertical" margin={{ top: 5, right: 10, left: 80, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 11 }} tickLine={false} width={75} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="gdpShare" fill={COLORS.emerald} radius={[0, 4, 4, 0]}>
+                    <Bar dataKey="gdpShare" fill={COLORS.emerald} radius={[0, 4, 4, 0]} name={t.chartGdpShare}>
                       {wilayaData.map((_, i) => (
                         <Cell key={i} fill={[COLORS.emerald, COLORS.blue, COLORS.purple, COLORS.amber, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red][i]} />
                       ))}
@@ -713,14 +695,14 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title="Unemployment Rate by Wilaya (2023)" subtitle="Top 10 wilayas">
-                <ChartContainer config={{ unemployment: { label: "Unemployment %", color: COLORS.red } }} className="h-[380px] w-full">
+              <ChartCard title={t.chartWilayaUnemp} subtitle={t.chartWilayaUnempSub}>
+                <ChartContainer config={{ unemployment: { label: t.chartUnempPct, color: COLORS.red } }} className="h-[380px] w-full">
                   <BarChart data={wilayaData} layout="vertical" margin={{ top: 5, right: 10, left: 80, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[0, 18]} />
                     <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 11 }} tickLine={false} width={75} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="unemployment" radius={[0, 4, 4, 0]}>
+                    <Bar dataKey="unemployment" radius={[0, 4, 4, 0]} name={t.chartUnempPct}>
                       {wilayaData.map((d) => (
                         <Cell key={d.wilaya} fill={d.unemployment >= 13 ? COLORS.red : d.unemployment >= 11 ? COLORS.amber : COLORS.emerald} />
                       ))}
@@ -730,16 +712,16 @@ export default function AlgeriaDashboard() {
               </ChartCard>
             </div>
 
-            <ChartCard title="Population vs GDP Scatter (2023)" subtitle="Top 10 wilayas — bubble size = unemployment rate">
+            <ChartCard title={t.chartScatter} subtitle={t.chartScatterSub}>
               <ChartContainer config={{
-                x: { label: "Population (K)", color: COLORS.blue },
-                y: { label: "GDP Share %", color: COLORS.emerald },
+                x: { label: t.chartPopK, color: COLORS.blue },
+                y: { label: t.chartGdpShareLabel, color: COLORS.emerald },
               }} className="h-[350px] w-full">
                 <ScatterChart margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-                  <XAxis dataKey="populationK" name="Population (K)" tick={{ fontSize: 11 }} tickLine={false} label={{ value: "Population (thousands)", position: "bottom", fontSize: 11 }} />
-                  <YAxis dataKey="gdpShare" name="GDP Share %" tick={{ fontSize: 11 }} tickLine={false} label={{ value: "GDP Share %", angle: -90, position: "insideLeft", fontSize: 11 }} />
-                  <ZAxis dataKey="unemployment" range={[80, 400]} name="Unemployment %" />
+                  <XAxis dataKey="populationK" name={t.chartPopK} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartPopThousands, position: "bottom", fontSize: 11 }} />
+                  <YAxis dataKey="gdpShare" name={t.chartGdpShareLabel} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartGdpShareLabel, angle: isRtl ? 90 : -90, position: "insideLeft", fontSize: 11 }} />
+                  <ZAxis dataKey="unemployment" range={[80, 400]} name={t.chartUnempPctLabel} />
                   <ChartTooltip content={<ChartTooltipContent />} />
                   <Scatter data={wilayaData} fill={COLORS.emerald}>
                     {wilayaData.map((_, i) => (
@@ -755,7 +737,7 @@ export default function AlgeriaDashboard() {
         {/* Source footer */}
         <Separator className="my-6" />
         <footer className="text-center text-xs text-muted-foreground pb-4">
-          <p>Source: Office National des Statistiques (ONS) — www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Extérieur, Comptes Economiques, ENEM, RGPH)</p>
+          <p>{t.footer}</p>
         </footer>
       </main>
     </div>

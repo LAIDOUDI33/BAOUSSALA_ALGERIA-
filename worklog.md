@@ -28,3 +28,25 @@ Stage Summary:
 - 13 PDF documents cataloged with direct download links
 - On-demand scraping capability via Re-scrape button
 - All lint checks pass, no runtime errors
+
+---
+Task ID: 2
+Agent: Main Agent
+Task: Add trilingual support (French, Arabic, English) to all dashboards
+
+Work Log:
+- Created /src/lib/i18n/dictionaries.ts with 130+ translation keys per language (EN/FR/AR)
+- Created /src/lib/i18n/context.tsx with useSyncExternalStore-based locale state management
+- Created /src/components/language-switcher.tsx with flag + language name buttons
+- Updated /src/app/layout.tsx to wrap app in I18nProvider and load Noto Sans Arabic font
+- Updated /src/app/page.tsx to use t.* translations for all 8 dashboard tabs (~200 text strings)
+- Added RTL CSS support in globals.css for Arabic (chart axes, tooltips, legends)
+- Language selection persists in localStorage across sessions
+- Default language set to French (primary ONS language)
+
+Stage Summary:
+- All 8 dashboards now fully translated in 3 languages (FR/AR/EN)
+- Language switcher with flag icons in the header bar
+- Arabic has RTL layout with proper font (Noto Sans Arabic)
+- Build and lint pass successfully
+- App running on port 3000

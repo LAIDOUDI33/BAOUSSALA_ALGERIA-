@@ -120,3 +120,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* RTL support for Arabic */
+[dir="rtl"] .recharts-cartesian-axis-x text,
+[dir="rtl"] .recharts-cartesian-axis-y text {
+  font-family: 'Noto Sans Arabic', 'Noto Sans SC', sans-serif;
+}
+
+[dir="rtl"] .recharts-legend-item-text {
+  font-family: 'Noto Sans Arabic', 'Noto Sans SC', sans-serif;
+}
+
+[dir="rtl"] .recharts-tooltip-label,
+[dir="rtl"] .recharts-tooltip-item {
+  font-family: 'Noto Sans Arabic', 'Noto Sans SC', sans-serif;
+}
