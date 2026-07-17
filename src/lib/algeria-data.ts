@@ -382,6 +382,106 @@ export const constructionIndex = [
   { year: 2024, index: 160.5 },
 ];
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// SECTOR-SPECIFIC DATASETS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// ─── 18. HYDROCARBONS SECTOR ─────────────────────────────────────────────
+export const hydrocarbons = [
+  { year: 2000, oilProdMbpd: 1.42, gasProdBcm: 82, oilPrice: 28.5, hydroRevBn: 16.2, exportsBn: 17.5, gdpContribPct: 32.0, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2002, oilProdMbpd: 1.35, gasProdBcm: 85, oilPrice: 25.0, hydroRevBn: 15.8, exportsBn: 16.8, gdpContribPct: 33.5, reservesOilBn: 12.0, reservesGasTcm: 4.5 },
+  { year: 2004, oilProdMbpd: 1.50, gasProdBcm: 88, oilPrice: 38.3, hydroRevBn: 25.5, exportsBn: 29.5, gdpContribPct: 35.0, reservesOilBn: 11.8, reservesGasTcm: 4.5 },
+  { year: 2006, oilProdMbpd: 1.55, gasProdBcm: 90, oilPrice: 66.0, hydroRevBn: 42.0, exportsBn: 50.0, gdpContribPct: 36.5, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2008, oilProdMbpd: 1.38, gasProdBcm: 92, oilPrice: 97.0, hydroRevBn: 62.0, exportsBn: 72.0, gdpContribPct: 37.0, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2010, oilProdMbpd: 1.28, gasProdBcm: 93, oilPrice: 79.5, hydroRevBn: 43.0, exportsBn: 49.0, gdpContribPct: 33.0, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2012, oilProdMbpd: 1.22, gasProdBcm: 95, oilPrice: 109.0, hydroRevBn: 55.0, exportsBn: 63.0, gdpContribPct: 31.0, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2014, oilProdMbpd: 1.18, gasProdBcm: 96, oilPrice: 93.0, hydroRevBn: 48.0, exportsBn: 54.0, gdpContribPct: 28.5, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2015, oilProdMbpd: 1.12, gasProdBcm: 95, oilPrice: 49.0, hydroRevBn: 22.0, exportsBn: 26.0, gdpContribPct: 24.0, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2016, oilProdMbpd: 1.08, gasProdBcm: 94, oilPrice: 43.0, hydroRevBn: 16.5, exportsBn: 19.5, gdpContribPct: 22.0, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2017, oilProdMbpd: 1.05, gasProdBcm: 95, oilPrice: 52.0, hydroRevBn: 21.0, exportsBn: 26.0, gdpContribPct: 22.5, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2018, oilProdMbpd: 1.02, gasProdBcm: 96, oilPrice: 69.0, hydroRevBn: 28.0, exportsBn: 33.0, gdpContribPct: 23.5, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2019, oilProdMbpd: 1.00, gasProdBcm: 97, oilPrice: 63.0, hydroRevBn: 25.0, exportsBn: 30.0, gdpContribPct: 22.0, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2020, oilProdMbpd: 0.92, gasProdBcm: 92, oilPrice: 42.0, hydroRevBn: 17.0, exportsBn: 20.5, gdpContribPct: 19.5, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2021, oilProdMbpd: 0.98, gasProdBcm: 95, oilPrice: 68.0, hydroRevBn: 28.5, exportsBn: 34.0, gdpContribPct: 21.5, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2022, oilProdMbpd: 1.02, gasProdBcm: 100, oilPrice: 95.0, hydroRevBn: 43.0, exportsBn: 51.0, gdpContribPct: 24.5, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2023, oilProdMbpd: 1.00, gasProdBcm: 102, oilPrice: 78.0, hydroRevBn: 30.0, exportsBn: 36.0, gdpContribPct: 23.0, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+  { year: 2024, oilProdMbpd: 0.98, gasProdBcm: 105, oilPrice: 76.0, hydroRevBn: 33.0, exportsBn: 38.8, gdpContribPct: 23.5, reservesOilBn: 12.2, reservesGasTcm: 4.5 },
+];
+
+// ─── 19. AGRICULTURE SECTOR ─────────────────────────────────────────────
+export const agricultureData = [
+  { year: 2010, cerealProdMt: 4.5, vegProdMt: 8.2, fruitProdMt: 4.0, oliveProdMt: 0.35, dateProdMt: 0.82, milkProdMl: 2.2, meatProdMt: 1.35, agriExportsBn: 0.3, selfSufficCereals: 32, irrigatedLandMha: 1.2, totalLandMha: 8.5, agriEmployPct: 14.5 },
+  { year: 2011, cerealProdMt: 4.2, vegProdMt: 8.5, fruitProdMt: 4.2, oliveProdMt: 0.40, dateProdMt: 0.85, milkProdMl: 2.3, meatProdMt: 1.38, agriExportsBn: 0.35, selfSufficCereals: 30, irrigatedLandMha: 1.25, totalLandMha: 8.5, agriEmployPct: 14.2 },
+  { year: 2012, cerealProdMt: 5.1, vegProdMt: 8.8, fruitProdMt: 4.3, oliveProdMt: 0.45, dateProdMt: 0.88, milkProdMl: 2.4, meatProdMt: 1.42, agriExportsBn: 0.38, selfSufficCereals: 35, irrigatedLandMha: 1.3, totalLandMha: 8.6, agriEmployPct: 14.0 },
+  { year: 2013, cerealProdMt: 4.8, vegProdMt: 9.0, fruitProdMt: 4.5, oliveProdMt: 0.50, dateProdMt: 0.90, milkProdMl: 2.5, meatProdMt: 1.45, agriExportsBn: 0.40, selfSufficCereals: 33, irrigatedLandMha: 1.35, totalLandMha: 8.6, agriEmployPct: 13.8 },
+  { year: 2014, cerealProdMt: 3.9, vegProdMt: 9.2, fruitProdMt: 4.6, oliveProdMt: 0.55, dateProdMt: 0.92, milkProdMl: 2.6, meatProdMt: 1.48, agriExportsBn: 0.42, selfSufficCereals: 28, irrigatedLandMha: 1.4, totalLandMha: 8.7, agriEmployPct: 13.5 },
+  { year: 2015, cerealProdMt: 4.1, vegProdMt: 9.5, fruitProdMt: 4.8, oliveProdMt: 0.60, dateProdMt: 0.95, milkProdMl: 2.7, meatProdMt: 1.50, agriExportsBn: 0.45, selfSufficCereals: 29, irrigatedLandMha: 1.45, totalLandMha: 8.7, agriEmployPct: 13.2 },
+  { year: 2016, cerealProdMt: 3.5, vegProdMt: 9.8, fruitProdMt: 5.0, oliveProdMt: 0.65, dateProdMt: 0.98, milkProdMl: 2.8, meatProdMt: 1.52, agriExportsBn: 0.42, selfSufficCereals: 25, irrigatedLandMha: 1.5, totalLandMha: 8.8, agriEmployPct: 13.0 },
+  { year: 2017, cerealProdMt: 3.8, vegProdMt: 10.0, fruitProdMt: 5.2, oliveProdMt: 0.70, dateProdMt: 1.00, milkProdMl: 2.9, meatProdMt: 1.55, agriExportsBn: 0.48, selfSufficCereals: 27, irrigatedLandMha: 1.55, totalLandMha: 8.8, agriEmployPct: 12.8 },
+  { year: 2018, cerealProdMt: 5.5, vegProdMt: 10.2, fruitProdMt: 5.4, oliveProdMt: 0.80, dateProdMt: 1.02, milkProdMl: 3.0, meatProdMt: 1.58, agriExportsBn: 0.55, selfSufficCereals: 37, irrigatedLandMha: 1.6, totalLandMha: 8.9, agriEmployPct: 12.5 },
+  { year: 2019, cerealProdMt: 6.1, vegProdMt: 10.5, fruitProdMt: 5.5, oliveProdMt: 0.90, dateProdMt: 1.05, milkProdMl: 3.1, meatProdMt: 1.60, agriExportsBn: 0.60, selfSufficCereals: 42, irrigatedLandMha: 1.65, totalLandMha: 8.9, agriEmployPct: 12.2 },
+  { year: 2020, cerealProdMt: 5.2, vegProdMt: 10.8, fruitProdMt: 5.7, oliveProdMt: 0.85, dateProdMt: 1.08, milkProdMl: 3.2, meatProdMt: 1.62, agriExportsBn: 0.55, selfSufficCereals: 35, irrigatedLandMha: 1.7, totalLandMha: 9.0, agriEmployPct: 12.5 },
+  { year: 2021, cerealProdMt: 4.3, vegProdMt: 11.0, fruitProdMt: 5.8, oliveProdMt: 0.95, dateProdMt: 1.10, milkProdMl: 3.3, meatProdMt: 1.65, agriExportsBn: 0.62, selfSufficCereals: 30, irrigatedLandMha: 1.75, totalLandMha: 9.0, agriEmployPct: 12.3 },
+  { year: 2022, cerealProdMt: 4.6, vegProdMt: 11.2, fruitProdMt: 6.0, oliveProdMt: 1.00, dateProdMt: 1.12, milkProdMl: 3.5, meatProdMt: 1.68, agriExportsBn: 0.68, selfSufficCereals: 32, irrigatedLandMha: 1.8, totalLandMha: 9.0, agriEmployPct: 12.0 },
+  { year: 2023, cerealProdMt: 5.8, vegProdMt: 11.5, fruitProdMt: 6.2, oliveProdMt: 1.10, dateProdMt: 1.15, milkProdMl: 3.6, meatProdMt: 1.70, agriExportsBn: 0.75, selfSufficCereals: 38, irrigatedLandMha: 1.85, totalLandMha: 9.1, agriEmployPct: 11.8 },
+  { year: 2024, cerealProdMt: 5.0, vegProdMt: 11.8, fruitProdMt: 6.4, oliveProdMt: 1.20, dateProdMt: 1.18, milkProdMl: 3.8, meatProdMt: 1.72, agriExportsBn: 0.82, selfSufficCereals: 33, irrigatedLandMha: 1.9, totalLandMha: 9.1, agriEmployPct: 11.5 },
+];
+
+// ─── 20. MANUFACTURING SUB-SECTORS ──────────────────────────────────────
+export const manufacturingData = [
+  { year: 2010, foodIndustry: 105, textiles: 98, chemicals: 102, metallurgy: 100, electrics: 95, buildingMat: 108, pharma: 90, paper: 97 },
+  { year: 2012, foodIndustry: 108, textiles: 96, chemicals: 105, metallurgy: 102, electrics: 97, buildingMat: 112, pharma: 95, paper: 98 },
+  { year: 2014, foodIndustry: 110, textiles: 94, chemicals: 108, metallurgy: 104, electrics: 100, buildingMat: 110, pharma: 100, paper: 99 },
+  { year: 2016, foodIndustry: 106, textiles: 90, chemicals: 104, metallurgy: 100, electrics: 95, buildingMat: 105, pharma: 105, paper: 97 },
+  { year: 2018, foodIndustry: 108, textiles: 88, chemicals: 106, metallurgy: 102, electrics: 96, buildingMat: 108, pharma: 110, paper: 98 },
+  { year: 2020, foodIndustry: 100, textiles: 75, chemicals: 95, metallurgy: 90, electrics: 82, buildingMat: 95, pharma: 108, paper: 90 },
+  { year: 2021, foodIndustry: 103, textiles: 78, chemicals: 98, metallurgy: 93, electrics: 85, buildingMat: 100, pharma: 112, paper: 92 },
+  { year: 2022, foodIndustry: 107, textiles: 82, chemicals: 104, metallurgy: 98, electrics: 90, buildingMat: 108, pharma: 118, paper: 95 },
+  { year: 2023, foodIndustry: 108, textiles: 84, chemicals: 105, metallurgy: 100, electrics: 92, buildingMat: 110, pharma: 122, paper: 96 },
+  { year: 2024, foodIndustry: 110, textiles: 86, chemicals: 107, metallurgy: 102, electrics: 94, buildingMat: 112, pharma: 128, paper: 98 },
+];
+
+// ─── 21. BTP / CONSTRUCTION SECTOR ──────────────────────────────────────
+export const btpData = [
+  { year: 2010, housingUnitsK: 280, buildingPermitsK: 35, cementMt: 18.5, steelMt: 2.8, gdpContribPct: 7.1, costIndex: 108, publicInvestBn: 12.5, employmentK: 850 },
+  { year: 2012, housingUnitsK: 320, buildingPermitsK: 40, cementMt: 20.0, steelMt: 3.2, gdpContribPct: 8.5, costIndex: 112, publicInvestBn: 15.0, employmentK: 920 },
+  { year: 2014, housingUnitsK: 350, buildingPermitsK: 42, cementMt: 21.5, steelMt: 3.5, gdpContribPct: 10.1, costIndex: 118, publicInvestBn: 18.0, employmentK: 1050 },
+  { year: 2015, housingUnitsK: 360, buildingPermitsK: 38, cementMt: 20.0, steelMt: 3.2, gdpContribPct: 10.5, costIndex: 115, publicInvestBn: 16.0, employmentK: 1080 },
+  { year: 2016, housingUnitsK: 340, buildingPermitsK: 35, cementMt: 19.5, steelMt: 3.0, gdpContribPct: 10.8, costIndex: 118.5, publicInvestBn: 14.5, employmentK: 1100 },
+  { year: 2017, housingUnitsK: 330, buildingPermitsK: 33, cementMt: 20.0, steelMt: 3.1, gdpContribPct: 10.2, costIndex: 122, publicInvestBn: 14.0, employmentK: 1080 },
+  { year: 2018, housingUnitsK: 320, buildingPermitsK: 36, cementMt: 21.0, steelMt: 3.3, gdpContribPct: 10.0, costIndex: 126.5, publicInvestBn: 15.5, employmentK: 1060 },
+  { year: 2019, housingUnitsK: 310, buildingPermitsK: 34, cementMt: 20.5, steelMt: 3.2, gdpContribPct: 9.8, costIndex: 130, publicInvestBn: 15.0, employmentK: 1040 },
+  { year: 2020, housingUnitsK: 250, buildingPermitsK: 28, cementMt: 17.0, steelMt: 2.5, gdpContribPct: 9.2, costIndex: 132.5, publicInvestBn: 12.0, employmentK: 950 },
+  { year: 2021, housingUnitsK: 290, buildingPermitsK: 32, cementMt: 19.5, steelMt: 3.0, gdpContribPct: 9.5, costIndex: 138, publicInvestBn: 16.0, employmentK: 1000 },
+  { year: 2022, housingUnitsK: 320, buildingPermitsK: 38, cementMt: 22.0, steelMt: 3.5, gdpContribPct: 9.8, costIndex: 148.5, publicInvestBn: 20.0, employmentK: 1080 },
+  { year: 2023, housingUnitsK: 340, buildingPermitsK: 40, cementMt: 23.5, steelMt: 3.7, gdpContribPct: 10.0, costIndex: 155, publicInvestBn: 22.0, employmentK: 1120 },
+  { year: 2024, housingUnitsK: 350, buildingPermitsK: 42, cementMt: 24.5, steelMt: 3.9, gdpContribPct: 10.2, costIndex: 160.5, publicInvestBn: 24.0, employmentK: 1150 },
+];
+
+// ─── 22. SERVICES SECTOR ────────────────────────────────────────────────
+export const servicesData = [
+  { year: 2010, gdpContribPct: 48.2, trade: 12.5, transport: 6.8, telecom: 4.2, finance: 5.0, tourism: 2.8, govtServices: 17.0 },
+  { year: 2012, gdpContribPct: 47.0, trade: 12.2, transport: 7.0, telecom: 4.5, finance: 5.2, tourism: 3.0, govtServices: 15.1 },
+  { year: 2014, gdpContribPct: 47.4, trade: 12.0, transport: 7.2, telecom: 4.8, finance: 5.5, tourism: 3.2, govtServices: 14.7 },
+  { year: 2016, gdpContribPct: 49.0, trade: 12.5, transport: 7.5, telecom: 5.2, finance: 5.8, tourism: 2.5, govtServices: 15.5 },
+  { year: 2018, gdpContribPct: 50.7, trade: 12.8, transport: 7.8, telecom: 5.5, finance: 6.0, tourism: 2.8, govtServices: 15.8 },
+  { year: 2020, gdpContribPct: 53.8, trade: 11.5, transport: 6.5, telecom: 5.8, finance: 6.2, tourism: 1.5, govtServices: 22.3 },
+  { year: 2022, gdpContribPct: 51.5, trade: 12.5, transport: 7.2, telecom: 6.2, finance: 6.5, tourism: 2.2, govtServices: 16.9 },
+  { year: 2024, gdpContribPct: 51.3, trade: 12.8, transport: 7.5, telecom: 6.5, finance: 6.8, tourism: 2.5, govtServices: 15.2 },
+];
+
+// ─── 23. MINING & ENERGY ────────────────────────────────────────────────
+export const miningEnergy = [
+  { year: 2010, ironOreMt: 2.5, phosphateMt: 1.8, zincKt: 35, leadKt: 12, saltMt: 0.8, electricityTwh: 45, gasConsumptionBcm: 28, petrolConsumptionMt: 12.5 },
+  { year: 2012, ironOreMt: 2.8, phosphateMt: 2.0, zincKt: 38, leadKt: 14, saltMt: 0.9, electricityTwh: 50, gasConsumptionBcm: 30, petrolConsumptionMt: 13.0 },
+  { year: 2014, ironOreMt: 3.0, phosphateMt: 1.5, zincKt: 32, leadKt: 11, saltMt: 0.85, electricityTwh: 55, gasConsumptionBcm: 32, petrolConsumptionMt: 14.0 },
+  { year: 2016, ironOreMt: 2.5, phosphateMt: 1.2, zincKt: 28, leadKt: 10, saltMt: 0.8, electricityTwh: 58, gasConsumptionBcm: 34, petrolConsumptionMt: 14.5 },
+  { year: 2018, ironOreMt: 3.2, phosphateMt: 1.5, zincKt: 30, leadKt: 10, saltMt: 0.85, electricityTwh: 62, gasConsumptionBcm: 36, petrolConsumptionMt: 15.0 },
+  { year: 2020, ironOreMt: 2.8, phosphateMt: 1.0, zincKt: 22, leadKt: 8, saltMt: 0.75, electricityTwh: 60, gasConsumptionBcm: 35, petrolConsumptionMt: 12.0 },
+  { year: 2022, ironOreMt: 3.5, phosphateMt: 1.3, zincKt: 28, leadKt: 10, saltMt: 0.8, electricityTwh: 68, gasConsumptionBcm: 40, petrolConsumptionMt: 15.5 },
+  { year: 2024, ironOreMt: 3.8, phosphateMt: 1.5, zincKt: 32, leadKt: 11, saltMt: 0.85, electricityTwh: 72, gasConsumptionBcm: 42, petrolConsumptionMt: 16.0 },
+];
+
 // ─── HELPER: Latest values for KPI cards ────────────────────────────────────
 export const latestKPIs = {
   gdpGrowth: 3.0,
