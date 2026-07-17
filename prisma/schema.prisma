@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  content   String?
+  published Boolean  @default(false)
+  authorId  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String
+  nameAr      String
+  nameFr      String
+  description String
+  icon        String
+  color       String   @default("#10b981")
+  order       Int      @default(0)
+  items       DataItem[]
+  createdAt   DateTime @default(now())
+}
+
+model DataItem {
+  id          String   @id @default(cuid())
+  title       String
+  titleFr     String
+  description String
+  category    Category @relation(fields: [categoryId], references: [id])
+  categoryId  String
+  sourceUrl   String
+  pdfUrl      String?
+  period      String?
+  year        Int?
+  quarter     String?
+  dataType    String   @default("publication")
+  tags        String?
+  content     String?
+  isNew       Boolean  @default(false)
+  crawledAt   DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model CrawlLog {
+  id        String   @id @default(cuid())
+  url       String
+  status    String   @default("pending")
+  title     String?
+  content   String?
+  error     String?
+  itemsFound Int     @default(0)
+  crawledAt DateTime @default(now())
+}
