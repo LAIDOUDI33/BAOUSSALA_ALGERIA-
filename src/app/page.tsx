@@ -6,7 +6,7 @@ import {
   demographics, populationByAge, fiscalData, cpiByDivision,
   education, ippiQuarterly, wilayaData, constructionIndex, latestKPIs,
   hydrocarbons, agricultureData, manufacturingData, btpData,
-  servicesData, miningEnergy,
+  servicesData, miningEnergy, healthData,
 } from "@/lib/algeria-data";
 
 import { useI18n } from "@/lib/i18n/context";
@@ -32,6 +32,7 @@ import {
   DollarSign, Users, BarChart3, Globe, Percent, Activity,
   Factory, GraduationCap, Building2, Truck, Heart, Package,
   Scale, ChevronRight, Droplets, Sprout, Hammer, Wrench, Zap,
+  Stethoscope, Shield, Thermometer, Baby, Syringe, BedDouble,
 } from "lucide-react";
 
 // ─── Color palette ──────────────────────────────────────────────────────────
@@ -117,6 +118,7 @@ export default function AlgeriaDashboard() {
     { val: "btp", label: t.tabBTP, icon: Hammer },
     { val: "services", label: t.tabServices, icon: Wrench },
     { val: "mining", label: t.tabMiningEnergy, icon: Zap },
+    { val: "health", label: t.tabHealth, icon: Stethoscope },
   ];
 
   return (
@@ -755,6 +757,12 @@ export default function AlgeriaDashboard() {
               <KpiCard title={t.kpiReservesOil} value="12.2" unit="Bn bbl" icon={Droplets} color={COLORS.amber} />
               <KpiCard title={t.kpiReservesGas} value="4.5" unit="Tcm" icon={Zap} color={COLORS.blue} />
             </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiLNG} value="21.5" unit="Bcm" change={4.9} changeDir="up" icon={Droplets} color={COLORS.cyan} />
+              <KpiCard title={t.kpiRefining} value="550" unit="Kb/d" icon={Factory} color={COLORS.slate} />
+              <KpiCard title={t.kpiDomesticConsump} value="35" unit="%" icon={Activity} color={COLORS.rose} />
+              <KpiCard title={t.kpiRPRatioOil} value="34.1" unit="ans" icon={DollarSign} color={COLORS.amber} />
+            </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartHydroRevenue} subtitle={t.chartHydroRevenueSub}>
                 <ChartContainer config={{ hydroRevBn: { label: t.chartHydroRevLabel, color: COLORS.amber }, exportsBn: { label: t.chartExportsLabel, color: COLORS.emerald } }} className="h-[320px] w-full">
@@ -838,6 +846,30 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
             </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartLNGExports} subtitle={t.chartLNGExportsSub}>
+                <ChartContainer config={{ lngExportsBcm: { label: t.chartLNGLabel, color: COLORS.cyan } }} className="h-[280px] w-full">
+                  <AreaChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Area type="monotone" dataKey="lngExportsBcm" fill={COLORS.cyanLight} stroke={COLORS.cyan} strokeWidth={2.5} fillOpacity={0.4} name={t.chartLNGLabel} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+              <ChartCard title={t.chartRefining} subtitle={t.chartRefiningSub}>
+                <ChartContainer config={{ refiningKbpd: { label: t.chartRefiningLabel, color: COLORS.slate } }} className="h-[280px] w-full">
+                  <BarChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[400, 580]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="refiningKbpd" fill={COLORS.slate} radius={[4, 4, 0, 0]} name={t.chartRefiningLabel} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
           </TabsContent>
 
           {/* ═══ AGRICULTURE ═════════════════════════════════════════════ */}
@@ -853,6 +885,12 @@ export default function AlgeriaDashboard() {
               <KpiCard title={t.kpiFruitProd} value="6.4" unit="Mt" icon={Sprout} color={COLORS.rose} change={3.2} changeDir="up" />
               <KpiCard title={t.kpiMilkProd} value="3.8" unit="B litres" icon={Heart} color={COLORS.blue} change={5.6} changeDir="up" />
               <KpiCard title={t.kpiIrrigatedLand} value="1.9" unit="M ha" icon={Droplets} color={COLORS.cyan} change={2.7} changeDir="up" />
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiAgriGdp} value="9.8" unit="%" icon={Activity} color={COLORS.teal} change={-2.0} changeDir="down" />
+              <KpiCard title={t.kpiCerealImports} value="8.2" unit="Mt" icon={Globe} color={COLORS.red} />
+              <KpiCard title={t.kpiPoultryProd} value="1.75" unit="Mt" icon={Sprout} color={COLORS.amber} change={4.2} changeDir="up" />
+              <KpiCard title={t.kpiTractorFleet} value="160" unit="K" icon={Truck} color={COLORS.slate} change={3.2} changeDir="up" />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartCerealProd} subtitle={t.chartCerealProdSub}>
@@ -937,6 +975,32 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
             </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartPoultryProd} subtitle={t.chartPoultryProdSub}>
+                <ChartContainer config={{ poultryProdMt: { label: t.chartPoultryLabel, color: COLORS.amber } }} className="h-[280px] w-full">
+                  <AreaChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Area type="monotone" dataKey="poultryProdMt" fill={COLORS.amberLight} stroke={COLORS.amber} strokeWidth={2.5} fillOpacity={0.4} name={t.chartPoultryLabel} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+              <ChartCard title={t.chartCerealImports} subtitle={t.chartCerealImportsSub}>
+                <ChartContainer config={{ cerealImportsMt: { label: t.chartCerealImportLabel, color: COLORS.red }, cerealProdMt: { label: t.chartCerealLabel, color: COLORS.emerald } }} className="h-[280px] w-full">
+                  <ComposedChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="cerealImportsMt" fill={COLORS.redLight} stroke={COLORS.red} radius={[2, 2, 0, 0]} opacity={0.7} name={t.chartCerealImportLabel} />
+                    <Line type="monotone" dataKey="cerealProdMt" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartCerealLabel} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
           </TabsContent>
 
           {/* ═══ MANUFACTURING ══════════════════════════════════════════ */}
@@ -952,6 +1016,18 @@ export default function AlgeriaDashboard() {
               <KpiCard title={t.kpiBuildingMat} value="112" change={1.8} changeDir="up" icon={Building2} color={COLORS.orange} />
               <KpiCard title={t.kpiElectrical} value="94" icon={Zap} color={COLORS.cyan} />
               <KpiCard title={t.kpiPaper} value="98" icon={Package} color={COLORS.rose} />
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiManufEmploy} value="550" unit="K" icon={Users} color={COLORS.purple} change={2.8} changeDir="up" />
+              <KpiCard title={t.kpiManufExports} value="4.2" unit="bn $" icon={Globe} color={COLORS.emerald} change={10.5} changeDir="up" />
+              <KpiCard title={t.kpiCapacityUtil} value="70" unit="%" icon={Activity} color={COLORS.blue} change={2.9} changeDir="up" />
+              <KpiCard title={t.kpiManufGdp} value="6.2" unit="%" icon={Factory} color={COLORS.teal} change={7.0} changeDir="up" />
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiNumEnterprises} value="13.0" unit="K" icon={Building2} color={COLORS.slate} change={3.2} changeDir="up" />
+              <KpiCard title={t.kpiPrivateShare} value="58" unit="%" icon={DollarSign} color={COLORS.amber} change={3.6} changeDir="up" />
+              <KpiCard title={t.kpiManufFDI} value="2.0" unit="bn $" icon={Globe} color={COLORS.cyan} change={11.1} changeDir="up" />
+              <KpiCard title={t.kpiProductivity} value="106" icon={TrendingUp} color={COLORS.emerald} change={2.9} changeDir="up" />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartManufSubsectors} subtitle={t.chartManufSubsectorsSub}>
@@ -1033,6 +1109,36 @@ export default function AlgeriaDashboard() {
                     <Bar yAxisId="left" dataKey="manufExportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartManufExportLabel} />
                     <Line yAxisId="right" type="monotone" dataKey="capacityUtilPct" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartCapacityLabel} />
                     <Line yAxisId="left" type="monotone" dataKey="manufEmployK" stroke={COLORS.purple} strokeWidth={2} dot={{ r: 2 }} strokeDasharray="4 2" name={t.chartEmployLabel} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartManufGDP} subtitle={t.chartManufGDPSub}>
+                <ChartContainer config={{ gdpContribPct: { label: t.chartManufGDPLabel, color: COLORS.teal }, privateSharePct: { label: t.kpiPrivateShare, color: COLORS.amber } }} className="h-[280px] w-full">
+                  <ComposedChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} domain={[4, 7]} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[35, 65]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar yAxisId="left" dataKey="gdpContribPct" fill={COLORS.teal} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartManufGDPLabel} />
+                    <Line yAxisId="right" type="monotone" dataKey="privateSharePct" stroke={COLORS.amber} strokeWidth={2.5} dot={{ r: 3 }} name={t.kpiPrivateShare} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+              <ChartCard title={t.chartManufFDI} subtitle={t.chartManufFDISub}>
+                <ChartContainer config={{ fdiBn: { label: t.chartManufFDILabel, color: COLORS.cyan }, productivityIndex: { label: t.chartProductivityLabel, color: COLORS.emerald } }} className="h-[280px] w-full">
+                  <ComposedChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[85, 115]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar yAxisId="left" dataKey="fdiBn" fill={COLORS.cyan} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartManufFDILabel} />
+                    <Line yAxisId="right" type="monotone" dataKey="productivityIndex" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartProductivityLabel} />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
@@ -1198,6 +1304,118 @@ export default function AlgeriaDashboard() {
                 </LineChart>
               </ChartContainer>
             </ChartCard>
+          </TabsContent>
+
+          {/* ═══ HEALTH ═══════════════════════════════════════════════ */}
+          <TabsContent value="health" className="space-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiHospitalBeds} value="20.3" icon={BedDouble} color={COLORS.blue} change={2.5} changeDir="up" />
+              <KpiCard title={t.kpiPhysicians} value="25.5" icon={Stethoscope} color={COLORS.emerald} change={6.3} changeDir="up" />
+              <KpiCard title={t.kpiNurses} value="32.0" icon={Shield} color={COLORS.purple} change={4.9} changeDir="up" />
+              <KpiCard title={t.kpiHealthExpenditure} value="6.5" unit="%" icon={DollarSign} color={COLORS.amber} />
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiLifeExpectancy} value="77.5" unit="ans" icon={Heart} color={COLORS.rose} change={0.4} changeDir="up" />
+              <KpiCard title={t.kpiInfantMortality} value="15.2" icon={Baby} color={COLORS.red} change={-5.0} changeDir="down" />
+              <KpiCard title={t.kpiMaternalMortality} value="65" icon={Heart} color={COLORS.orange} change={-9.7} changeDir="down" />
+              <KpiCard title={t.kpiVaccination} value="94" unit="%" icon={Syringe} color={COLORS.teal} change={1.1} changeDir="up" />
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiNumHospitals} value="498" icon={Building2} color={COLORS.blue} change={2.7} changeDir="up" />
+              <KpiCard title={t.kpiHealthCenters} value="1850" icon={Activity} color={COLORS.emerald} change={3.9} changeDir="up" />
+              <KpiCard title={t.kpiPolyclinics} value="460" icon={Factory} color={COLORS.purple} change={4.5} changeDir="up" />
+              <KpiCard title={t.kpiPrimaryCareVisits} value="78" unit="M" icon={Users} color={COLORS.amber} change={5.4} changeDir="up" />
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartHealthInfrastructure} subtitle={t.chartHealthInfrastructureSub}>
+                <ChartContainer config={{
+                  numHospitals: { label: t.chartHospitalsLabel, color: COLORS.blue },
+                  numHealthCenters: { label: t.chartHealthCentersLabel, color: COLORS.emerald },
+                  numPolyclinics: { label: t.chartPolyclinicsLabel, color: COLORS.purple },
+                }} className="h-[320px] w-full">
+                  <BarChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="numHealthCenters" fill={COLORS.emerald} radius={[2, 2, 0, 0]} stackId="1" name={t.chartHealthCentersLabel} />
+                    <Bar dataKey="numPolyclinics" fill={COLORS.purple} radius={[0, 0, 0, 0]} stackId="1" name={t.chartPolyclinicsLabel} />
+                    <Bar dataKey="numHospitals" fill={COLORS.blue} radius={[2, 2, 0, 0]} name={t.chartHospitalsLabel} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+              <ChartCard title={t.chartPersonnelTrend} subtitle={t.chartPersonnelTrendSub}>
+                <ChartContainer config={{
+                  physicians10k: { label: t.chartPhysiciansLabel, color: COLORS.emerald },
+                  nurses10k: { label: t.chartNursesLabel, color: COLORS.purple },
+                  hospitalBeds10k: { label: t.chartHospitalsLabel, color: COLORS.blue },
+                }} className="h-[320px] w-full">
+                  <LineChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Line type="monotone" dataKey="hospitalBeds10k" stroke={COLORS.blue} strokeWidth={2} dot={{ r: 3 }} name={t.chartHospitalsLabel} />
+                    <Line type="monotone" dataKey="physicians10k" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartPhysiciansLabel} />
+                    <Line type="monotone" dataKey="nurses10k" stroke={COLORS.purple} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartNursesLabel} />
+                  </LineChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartMortalityTrend} subtitle={t.chartMortalityTrendSub}>
+                <ChartContainer config={{
+                  infantMortality: { label: t.chartInfantMortLabel, color: COLORS.red },
+                  maternalMortality95k: { label: t.chartMaternalMortLabel, color: COLORS.orange },
+                }} className="h-[300px] w-full">
+                  <ComposedChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[50, 150]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Area yAxisId="left" type="monotone" dataKey="infantMortality" fill={COLORS.redLight} stroke={COLORS.red} strokeWidth={2.5} fillOpacity={0.4} name={t.chartInfantMortLabel} />
+                    <Line yAxisId="right" type="monotone" dataKey="maternalMortality95k" stroke={COLORS.orange} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartMaternalMortLabel} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+              <ChartCard title={t.chartHealthExpenditureTrend} subtitle={t.chartHealthExpenditureTrendSub}>
+                <ChartContainer config={{
+                  healthExpenditurePct: { label: t.chartHealthExpLabel, color: COLORS.amber },
+                  lifeExpectancy: { label: t.chartLifeExpLabel, color: COLORS.rose },
+                }} className="h-[300px] w-full">
+                  <ComposedChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} domain={[4, 8]} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[74, 79]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar yAxisId="left" dataKey="healthExpenditurePct" fill={COLORS.amber} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartHealthExpLabel} />
+                    <Line yAxisId="right" type="monotone" dataKey="lifeExpectancy" stroke={COLORS.rose} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartLifeExpLabel} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartVaccinationTrend} subtitle={t.chartVaccinationTrendSub}>
+                <ChartContainer config={{ vaccinationRate: { label: t.chartVaccinationLabel, color: COLORS.teal }, primaryCareVisitsM: { label: t.chartPrimaryCareLabel, color: COLORS.amber } }} className="h-[280px] w-full">
+                  <ComposedChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} domain={[85, 100]} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Area yAxisId="left" type="monotone" dataKey="vaccinationRate" fill={COLORS.tealLight} stroke={COLORS.teal} strokeWidth={2.5} fillOpacity={0.4} name={t.chartVaccinationLabel} />
+                    <Line yAxisId="right" type="monotone" dataKey="primaryCareVisitsM" stroke={COLORS.amber} strokeWidth={2} dot={{ r: 2 }} strokeDasharray="4 2" name={t.chartPrimaryCareLabel} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
           </TabsContent>
         </Tabs>
 

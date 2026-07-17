@@ -372,6 +372,95 @@ export interface Dictionary {
   chartGasConsumpLabel: string;
   chartPetrolConsumpLabel: string;
 
+  // ─── ADDITIONAL SECTOR KPIs ────
+  // Hydrocarbons extra
+  kpiLNG: string;
+  kpiRefining: string;
+  kpiDomesticConsump: string;
+  kpiRPRatioOil: string;
+  kpiNewWells: string;
+  kpiExplorationInvest: string;
+  chartLNGExports: string;
+  chartLNGExportsSub: string;
+  chartRefining: string;
+  chartRefiningSub: string;
+  chartExplorationInvest: string;
+  chartExplorationInvestSub: string;
+  chartLNGLabel: string;
+  chartRefiningLabel: string;
+  chartExplorInvestLabel: string;
+
+  // Agriculture extra
+  kpiAgriGdp: string;
+  kpiCerealImports: string;
+  kpiPoultryProd: string;
+  kpiTractorFleet: string;
+  kpiFertilizer: string;
+  chartPoultryProd: string;
+  chartPoultryProdSub: string;
+  chartTractorFertilizer: string;
+  chartTractorFertilizerSub: string;
+  chartCerealImports: string;
+  chartCerealImportsSub: string;
+  chartPoultryLabel: string;
+  chartTractorLabel: string;
+  chartFertilizerLabel: string;
+  chartCerealImportLabel: string;
+  chartAgriGdpLabel: string;
+
+  // Manufacturing extra
+  kpiManufEmploy: string;
+  kpiManufExports: string;
+  kpiCapacityUtil: string;
+  kpiManufGdp: string;
+  kpiNumEnterprises: string;
+  kpiPrivateShare: string;
+  kpiManufFDI: string;
+  kpiProductivity: string;
+  chartManufGDP: string;
+  chartManufGDPSub: string;
+  chartManufFDI: string;
+  chartManufFDISub: string;
+  chartManufGDPLabel: string;
+  chartManufFDILabel: string;
+  chartProductivityLabel: string;
+
+  // ─── SECTOR: HEALTH ──────────────
+  tabHealth: string;
+  kpiHospitalBeds: string;
+  kpiPhysicians: string;
+  kpiNurses: string;
+  kpiHealthExpenditure: string;
+  kpiLifeExpectancy: string;
+  kpiInfantMortality: string;
+  kpiMaternalMortality: string;
+  kpiVaccination: string;
+  kpiNumHospitals: string;
+  kpiHealthCenters: string;
+  kpiPolyclinics: string;
+  kpiPrimaryCareVisits: string;
+  chartHealthInfrastructure: string;
+  chartHealthInfrastructureSub: string;
+  chartPersonnelTrend: string;
+  chartPersonnelTrendSub: string;
+  chartMortalityTrend: string;
+  chartMortalityTrendSub: string;
+  chartHealthExpenditureTrend: string;
+  chartHealthExpenditureTrendSub: string;
+  chartVaccinationTrend: string;
+  chartVaccinationTrendSub: string;
+  chartHospitalsLabel: string;
+  chartHealthCentersLabel: string;
+  chartPolyclinicsLabel: string;
+  chartPhysiciansLabel: string;
+  chartNursesLabel: string;
+  chartInfantMortLabel: string;
+  chartMaternalMortLabel: string;
+  chartLifeExpLabel: string;
+  chartHealthExpLabel: string;
+  chartVaccinationLabel: string;
+  chartPrimaryCareLabel: string;
+
   // ─── FOOTER ────────────────────────────────────────────────────────
   footer: string;
 }
@@ -647,6 +736,39 @@ const en: Dictionary = {
   chartLeadLabel: "Lead (Kt)", chartSaltLabel: "Salt (Mt)", chartElectricityLabel: "Electricity (TWh)",
   chartGasConsumpLabel: "Gas (Bcm)", chartPetrolConsumpLabel: "Petroleum (Mt)",
 
+  // Hydrocarbons extra
+  kpiLNG: "LNG Exports", kpiRefining: "Refining Cap.", kpiDomesticConsump: "Domestic Consump.", kpiRPRatioOil: "R/P Ratio Oil", kpiNewWells: "New Wells", kpiExplorationInvest: "Exploration Invest.",
+  chartLNGExports: "LNG Exports (2000\u20132024)", chartLNGExportsSub: "Billion cubic metres",
+  chartRefining: "Refining Capacity (2000\u20132024)", chartRefiningSub: "Thousand barrels/day",
+  chartExplorationInvest: "Exploration Investment (2000\u20132024)", chartExplorationInvestSub: "Billion USD",
+  chartLNGLabel: "LNG (Bcm)", chartRefiningLabel: "Refining (Kb/d)", chartExplorInvestLabel: "Exploration (bn $)",
+
+  // Agriculture extra
+  kpiAgriGdp: "Agri. % GDP", kpiCerealImports: "Cereal Imports", kpiPoultryProd: "Poultry Prod.", kpiTractorFleet: "Tractor Fleet", kpiFertilizer: "Fertilizer Consump.",
+  chartPoultryProd: "Poultry Production (2010\u20132024)", chartPoultryProdSub: "Million tonnes",
+  chartTractorFertilizer: "Tractor Fleet & Fertilizer Use", chartTractorFertilizerSub: "Thousands of tractors / Kt of fertilizer",
+  chartCerealImports: "Cereal Imports vs Production (2010\u20132024)", chartCerealImportsSub: "Million tonnes",
+  chartPoultryLabel: "Poultry", chartTractorLabel: "Tractors (K)", chartFertilizerLabel: "Fertilizer (Kt)", chartCerealImportLabel: "Cereal Imports", chartAgriGdpLabel: "Agri. % GDP",
+
+  // Manufacturing extra
+  kpiManufEmploy: "Manuf. Employment", kpiManufExports: "Manuf. Exports", kpiCapacityUtil: "Capacity Util.", kpiManufGdp: "Manuf. % GDP", kpiNumEnterprises: "Enterprises", kpiPrivateShare: "Private Share", kpiManufFDI: "FDI Industry", kpiProductivity: "Productivity Idx.",
+  chartManufGDP: "Manufacturing GDP Contribution (2010\u20132024)", chartManufGDPSub: "% of GDP",
+  chartManufFDI: "FDI in Manufacturing (2010\u20132024)", chartManufFDISub: "Billion USD",
+  chartManufGDPLabel: "Manuf. % GDP", chartManufFDILabel: "FDI (bn $)", chartProductivityLabel: "Productivity Idx.",
+
+  // Health sector
+  tabHealth: "Health",
+  kpiHospitalBeds: "Hospital Beds", kpiPhysicians: "Physicians", kpiNurses: "Nurses", kpiHealthExpenditure: "Health Expend.", kpiLifeExpectancy: "Life Expect.", kpiInfantMortality: "Infant Mortality", kpiMaternalMortality: "Maternal Mort.", kpiVaccination: "Vaccination", kpiNumHospitals: "Hospitals", kpiHealthCenters: "Health Centers", kpiPolyclinics: "Polyclinics", kpiPrimaryCareVisits: "Primary Care",
+  chartHealthInfrastructure: "Health Infrastructure (2010\u20132024)", chartHealthInfrastructureSub: "Number of facilities",
+  chartPersonnelTrend: "Health Personnel per 10,000 (2010\u20132024)", chartPersonnelTrendSub: "Per 10,000 inhabitants",
+  chartMortalityTrend: "Mortality Indicators (2010\u20132024)", chartMortalityTrendSub: "Infant (per 1,000) & Maternal (per 100,000)",
+  chartHealthExpenditureTrend: "Health Expenditure (2010\u20132024)", chartHealthExpenditureTrendSub: "% of GDP",
+  chartVaccinationTrend: "Vaccination Coverage (2010\u20132024)", chartVaccinationTrendSub: "% of children vaccinated",
+  chartHospitalsLabel: "Hospitals", chartHealthCentersLabel: "Health Centers", chartPolyclinicsLabel: "Polyclinics",
+  chartPhysiciansLabel: "Physicians", chartNursesLabel: "Nurses",
+  chartInfantMortLabel: "Infant Mortality", chartMaternalMortLabel: "Maternal Mortality", chartLifeExpLabel: "Life Expectancy",
+  chartHealthExpLabel: "Health Exp. % GDP", chartVaccinationLabel: "Vaccination %", chartPrimaryCareLabel: "Primary Care (M visits)",
+
   footer: "Source: Office National des Statistiques (ONS) \u2014 www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes Economiques, ENEM, RGPH)",
 };
 
@@ -921,6 +1043,39 @@ const fr: Dictionary = {
   chartLeadLabel: "Plomb (Kt)", chartSaltLabel: "Sel (Mt)", chartElectricityLabel: "\u00c9lectricit\u00e9 (TWh)",
   chartGasConsumpLabel: "Gaz (Mds m\u00b3)", chartPetrolConsumpLabel: "P\u00e9trole (Mt)",
 
+  // Hydrocarbures extra
+  kpiLNG: "Export. GNL", kpiRefining: "Cap. Raffinage", kpiDomesticConsump: "Conso. Domestique", kpiRPRatioOil: "R/P P\u00e9trole", kpiNewWells: "Nouveaux Puits", kpiExplorationInvest: "Invest. Exploration",
+  chartLNGExports: "Exportations GNL (2000\u20132024)", chartLNGExportsSub: "Milliards m\u00e8tres cubes",
+  chartRefining: "Capacit\u00e9 de Raffinage (2000\u20132024)", chartRefiningSub: "Milliers barils/jour",
+  chartExplorationInvest: "Investissement Exploration (2000\u20132024)", chartExplorationInvestSub: "Milliards USD",
+  chartLNGLabel: "GNL (Mm\u00b3)", chartRefiningLabel: "Raffinage (Kb/j)", chartExplorInvestLabel: "Exploration (Mds $)",
+
+  // Agriculture extra
+  kpiAgriGdp: "Agri. % PIB", kpiCerealImports: "Import. C\u00e9r\u00e9ales", kpiPoultryProd: "Prod. Volailles", kpiTractorFleet: "Parc Tracteurs", kpiFertilizer: "Conso. Engrais",
+  chartPoultryProd: "Production de Volailles (2010\u20132024)", chartPoultryProdSub: "Millions de tonnes",
+  chartTractorFertilizer: "Parc Tracteurs & Engrais", chartTractorFertilizerSub: "Milliers de tracteurs / Kt d\u2019engrais",
+  chartCerealImports: "Importations vs Production de C\u00e9r\u00e9ales (2010\u20132024)", chartCerealImportsSub: "Millions de tonnes",
+  chartPoultryLabel: "Volailles", chartTractorLabel: "Tracteurs (K)", chartFertilizerLabel: "Engrais (Kt)", chartCerealImportLabel: "Import. C\u00e9r\u00e9ales", chartAgriGdpLabel: "Agri. % PIB",
+
+  // Industrie extra
+  kpiManufEmploy: "Emploi Ind.", kpiManufExports: "Export. Ind.", kpiCapacityUtil: "Taux Util.", kpiManufGdp: "Ind. % PIB", kpiNumEnterprises: "Entreprises", kpiPrivateShare: "Part Priv\u00e9", kpiManufFDI: "IDE Industrie", kpiProductivity: "Productivit\u00e9",
+  chartManufGDP: "Contribution de l\u2019Industrie au PIB (2010\u20132024)", chartManufGDPSub: "% du PIB",
+  chartManufFDI: "IDE dans l\u2019Industrie (2010\u20132024)", chartManufFDISub: "Milliards USD",
+  chartManufGDPLabel: "Ind. % PIB", chartManufFDILabel: "IDE (Mds $)", chartProductivityLabel: "Productivit\u00e9",
+
+  // Sant\u00e9
+  tabHealth: "Sant\u00e9",
+  kpiHospitalBeds: "Lits H\u00f4pital", kpiPhysicians: "M\u00e9decins", kpiNurses: "Infirmiers", kpiHealthExpenditure: "D\u00e9p. Sant\u00e9", kpiLifeExpectancy: "Esp\u00e9r. Vie", kpiInfantMortality: "Mort. Infantile", kpiMaternalMortality: "Mort. Matern.", kpiVaccination: "Vaccination", kpiNumHospitals: "H\u00f4pitaux", kpiHealthCenters: "Centres Sant\u00e9", kpiPolyclinics: "Polycliniques", kpiPrimaryCareVisits: "Soins Prim.",
+  chartHealthInfrastructure: "Infrastructure Sanitaire (2010\u20132024)", chartHealthInfrastructureSub: "Nombre d\u2019\u00e9tablissements",
+  chartPersonnelTrend: "Personnel de Sant\u00e9 pour 10 000 (2010\u20132024)", chartPersonnelTrendSub: "Pour 10 000 habitants",
+  chartMortalityTrend: "Indicateurs de Mortalit\u00e9 (2010\u20132024)", chartMortalityTrendSub: "Infantile (1 000) & Maternelle (100 000)",
+  chartHealthExpenditureTrend: "D\u00e9penses de Sant\u00e9 (2010\u20132024)", chartHealthExpenditureTrendSub: "% du PIB",
+  chartVaccinationTrend: "Couverture Vaccinale (2010\u20132024)", chartVaccinationTrendSub: "% enfants vaccin\u00e9s",
+  chartHospitalsLabel: "H\u00f4pitaux", chartHealthCentersLabel: "Centres de Sant\u00e9", chartPolyclinicsLabel: "Polycliniques",
+  chartPhysiciansLabel: "M\u00e9decins", chartNursesLabel: "Infirmiers",
+  chartInfantMortLabel: "Mortalit\u00e9 Infantile", chartMaternalMortLabel: "Mortalit\u00e9 Maternelle", chartLifeExpLabel: "Esp\u00e9rance de Vie",
+  chartHealthExpLabel: "D\u00e9p. Sant\u00e9 % PIB", chartVaccinationLabel: "Vaccination %", chartPrimaryCareLabel: "Soins Primaires (M visites)",
+
   footer: "Source : Office National des Statistiques (ONS) \u2014 www.ons.dz | Toutes les donn\u00e9es issues des publications ONS (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes \u00c9conomiques, ENEM, RGPH)",
 };
 
@@ -1194,6 +1349,39 @@ const ar: Dictionary = {
   chartIronOreLabel: "\u0645\u0646\u0635\u0631 \u0627\u0644\u062d\u062f\u064a\u062f (\u0645\u062a\u0631)", chartPhosphateLabel: "\u0627\u0644\u0641\u0633\u0641\u0627\u062a (\u0645\u062a\u0631)", chartZincLabel: "\u0627\u0644\u0632\u0646\u0643 (\u0623\u0644\u0641 \u0637\u0646)",
   chartLeadLabel: "\u0627\u0644\u0631\u0635\u0627\u0635 (\u0623\u0644\u0641 \u0637\u0646)", chartSaltLabel: "\u0627\u0644\u0645\u0644\u062d (\u0645\u062a\u0631)", chartElectricityLabel: "\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621 (\u062a\u064a\u0631\u0627\u0648\u0627\u062a)",
   chartGasConsumpLabel: "\u0627\u0644\u063a\u0627\u0632 (\u0645\u0644\u064a\u0627\u0631 \u0645\u0643\u0639\u0628)", chartPetrolConsumpLabel: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a (\u0645\u062a\u0631)",
+
+  // \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a extra
+  kpiLNG: "\u0635\u0627\u062f\u0631\u0627\u062a GNL", kpiRefining: "\u0637\u0627\u0642\u0629 \u062a\u0643\u0631\u064a\u0631", kpiDomesticConsump: "\u0627\u0633\u062a\u0647\u0644\u0627\u0643 \u062f\u0627\u062e\u0644\u064a", kpiRPRatioOil: "\u0646\u0633\u0628\u0629 R/P \u0646\u0641\u0637", kpiNewWells: "\u0622\u0628\u0627\u0631 \u062c\u062f\u064a\u062f\u0629", kpiExplorationInvest: "\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0627\u0633\u062a\u0643\u0634\u0627\u0641",
+  chartLNGExports: "\u0635\u0627\u062f\u0631\u0627\u062a GNL (2000\u20132024)", chartLNGExportsSub: "\u0645\u0644\u064a\u0627\u0631 \u0645\u062a\u0631 \u0645\u0643\u0639\u0628",
+  chartRefining: "\u0637\u0627\u0642\u0629 \u0627\u0644\u062a\u0643\u0631\u064a\u0631 (2000\u20132024)", chartRefiningSub: "\u0623\u0644\u0641 \u0628\u0631\u0645\u064a\u0644/\u064a\u0648\u0645",
+  chartExplorationInvest: "\u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0641\u064a \u0627\u0644\u0627\u0633\u062a\u0643\u0634\u0627\u0641 (2000\u20132024)", chartExplorationInvestSub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
+  chartLNGLabel: "GNL (\u0645\u0644\u064a\u0627\u0631 \u0645\u0643\u0639\u0628)", chartRefiningLabel: "\u062a\u0643\u0631\u064a\u0631 (\u0623\u0644\u0641 \u0628/\u064a)", chartExplorInvestLabel: "\u0627\u0633\u062a\u0643\u0634\u0627\u0641 (\u0645\u0644\u064a\u0627\u0631 $)",
+
+  // \u0627\u0644\u0641\u0644\u0627\u062d\u0629 extra
+  kpiAgriGdp: "\u0632\u0631\u0627\u0639\u0629 % \u0646\u0627\u062a\u062c", kpiCerealImports: "\u0627\u0633\u062a\u064a\u0631\u0627\u062f \u062d\u0628\u0648\u0628", kpiPoultryProd: "\u0625\u0646\u062a\u0627\u062c \u062f\u0648\u0627\u062c\u0646", kpiTractorFleet: "\u0642\u0637\u064a\u0639\u0629 \u062c\u0631\u0627\u0631\u0627\u062a", kpiFertilizer: "\u0627\u0633\u062a\u0647\u0644\u0627\u0643 \u0623\u0633\u0645\u062f\u0629",
+  chartPoultryProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062f\u0648\u0627\u062c\u0646 (2010\u20132024)", chartPoultryProdSub: "\u0645\u0644\u0627\u064a\u064a\u0646 \u0623\u0637\u0646\u0627\u0646",
+  chartTractorFertilizer: "\u0642\u0637\u064a\u0639\u0629 \u0627\u0644\u062c\u0631\u0627\u0631\u0627\u062a \u0648\u0627\u0644\u0623\u0633\u0645\u062f\u0629", chartTractorFertilizerSub: "\u0622\u0644\u0627\u0641 \u062c\u0631\u0627\u0631\u0627\u062a / \u0623\u0644\u0641 \u0637\u0646 \u0623\u0633\u0645\u062f\u0629",
+  chartCerealImports: "\u0627\u0633\u062a\u064a\u0631\u0627\u062f \u0645\u0642\u0627\u0628\u0644 \u0625\u0646\u062a\u0627\u062c \u0627\u0644\u062d\u0628\u0648\u0628 (2010\u20132024)", chartCerealImportsSub: "\u0645\u0644\u0627\u064a\u064a\u0646 \u0623\u0637\u0646\u0627\u0646",
+  chartPoultryLabel: "\u0627\u0644\u062f\u0648\u0627\u062c\u0646", chartTractorLabel: "\u062c\u0631\u0627\u0631\u0627\u062a (\u0623\u0644\u0641)", chartFertilizerLabel: "\u0623\u0633\u0645\u062f\u0629 (\u0623\u0644\u0641 \u0637\u0646)", chartCerealImportLabel: "\u0627\u0633\u062a\u064a\u0631\u0627\u062f \u062d\u0628\u0648\u0628", chartAgriGdpLabel: "\u0632\u0631\u0627\u0639\u0629 % \u0646\u0627\u062a\u062c",
+
+  // \u0627\u0644\u0635\u0646\u0627\u0639\u0629 extra
+  kpiManufEmploy: "\u062a\u0634\u063a\u064a\u0644 \u0635\u0646\u0627\u0639\u064a", kpiManufExports: "\u0635\u0627\u062f\u0631\u0627\u062a \u0635\u0646\u0627\u0639\u064a\u0629", kpiCapacityUtil: "\u0645\u0639\u062f\u0644 \u0627\u0633\u062a\u062e\u062f\u0627\u0645", kpiManufGdp: "\u0635\u0646\u0627\u0639\u0629 % \u0646\u0627\u062a\u062c", kpiNumEnterprises: "\u0645\u0624\u0633\u0633\u0627\u062a", kpiPrivateShare: "\u062d\u0635\u0629 \u0627\u0644\u062e\u0627\u0635", kpiManufFDI: "\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0623\u062c\u0646\u0628\u064a", kpiProductivity: "\u0625\u0646\u062a\u0627\u062c\u064a\u0629",
+  chartManufGDP: "\u0645\u0633\u0627\u0647\u0645\u0629 \u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0641\u064a \u0627\u0644\u0646\u0627\u062a\u062c (2010\u20132024)", chartManufGDPSub: "% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  chartManufFDI: "\u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0627\u0644\u0623\u062c\u0646\u0628\u064a \u0641\u064a \u0627\u0644\u0635\u0646\u0627\u0639\u0629 (2010\u20132024)", chartManufFDISub: "\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
+  chartManufGDPLabel: "\u0635\u0646\u0627\u0639\u0629 % \u0646\u0627\u062a\u062c", chartManufFDILabel: "\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0623\u062c\u0646\u0628\u064a (\u0645\u0644\u064a\u0627\u0631 $)", chartProductivityLabel: "\u0645\u0624\u0634\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c\u064a\u0629",
+
+  // \u0627\u0644\u0635\u062d\u0629
+  tabHealth: "\u0627\u0644\u0635\u062d\u0629",
+  kpiHospitalBeds: "\u0623\u0633\u0631\u0629 \u0645\u0633\u062a\u0634\u0641\u064a\u0627\u062a", kpiPhysicians: "\u0623\u0637\u0628\u0627\u0621", kpiNurses: "\u0645\u0645\u0631\u0636\u0648\u0646", kpiHealthExpenditure: "\u0646\u0641\u0642\u0627\u062a \u0635\u062d\u064a\u0629", kpiLifeExpectancy: "\u0645\u062a\u0648\u0633\u0637 \u0627\u0644\u0639\u0645\u0631", kpiInfantMortality: "\u0648\u0641\u064a\u0627\u062a \u0631\u0636\u0639", kpiMaternalMortality: "\u0648\u0641\u064a\u0627\u062a \u0623\u0645\u0648\u0645\u0627\u062a", kpiVaccination: "\u062a\u0644\u0642\u064a\u062d", kpiNumHospitals: "\u0645\u0633\u062a\u0634\u0641\u064a\u0627\u062a", kpiHealthCenters: "\u0645\u0631\u0627\u0643\u0632 \u0635\u062d\u064a\u0629", kpiPolyclinics: "\u0645\u062a\u0639\u062f\u062f\u0627\u062a \u0627\u0644\u062a\u062e\u0635\u0635\u0627\u062a", kpiPrimaryCareVisits: "\u0639\u064a\u0627\u062f\u0627\u062a \u0623\u0648\u0644\u064a\u0629",
+  chartHealthInfrastructure: "\u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0627\u0644\u0635\u062d\u064a\u0629 (2010\u20132024)", chartHealthInfrastructureSub: "\u0639\u062f\u062f \u0627\u0644\u0645\u0646\u0634\u0622\u062a",
+  chartPersonnelTrend: "\u0627\u0644\u0643\u0648\u0627\u062f\u0631 \u0627\u0644\u0635\u062d\u064a\u0629 \u0644\u0643\u0644 10.000 (2010\u20132024)", chartPersonnelTrendSub: "\u0644\u0643\u0644 10.000 \u0633\u0627\u0643\u0646",
+  chartMortalityTrend: "\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0648\u0641\u064a\u0627\u062a (2010\u20132024)", chartMortalityTrendSub: "\u0631\u0636\u0639 (1.000) & \u0623\u0645\u0648\u0645\u0627\u062a (100.000)",
+  chartHealthExpenditureTrend: "\u0627\u0644\u0646\u0641\u0642\u0627\u062a \u0627\u0644\u0635\u062d\u064a\u0629 (2010\u20132024)", chartHealthExpenditureTrendSub: "% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  chartVaccinationTrend: "\u063a\u0637\u0627\u0621 \u0627\u0644\u062a\u0644\u0642\u064a\u062d (2010\u20132024)", chartVaccinationTrendSub: "% \u0645\u0646 \u0627\u0644\u0623\u0637\u0641\u0627\u0644 \u0627\u0644\u0645\u0644\u0642\u062d\u064a\u0646",
+  chartHospitalsLabel: "\u0645\u0633\u062a\u0634\u0641\u064a\u0627\u062a", chartHealthCentersLabel: "\u0645\u0631\u0627\u0643\u0632 \u0635\u062d\u064a\u0629", chartPolyclinicsLabel: "\u0645\u062a\u0639\u062f\u062f\u0627\u062a \u062a\u062e\u0635\u0635\u0627\u062a",
+  chartPhysiciansLabel: "\u0623\u0637\u0628\u0627\u0621", chartNursesLabel: "\u0645\u0645\u0631\u0636\u0648\u0646",
+  chartInfantMortLabel: "\u0648\u0641\u064a\u0627\u062a \u0627\u0644\u0631\u0636\u0639", chartMaternalMortLabel: "\u0648\u0641\u064a\u0627\u062a \u0627\u0644\u0623\u0645\u0648\u0645\u0627\u062a", chartLifeExpLabel: "\u0645\u062a\u0648\u0633\u0637 \u0627\u0644\u0639\u0645\u0631",
+  chartHealthExpLabel: "\u0646\u0641\u0642\u0627\u062a \u0635\u062d\u064a\u0629 % \u0646\u0627\u062a\u062c", chartVaccinationLabel: "\u062a\u0644\u0642\u064a\u062d %", chartPrimaryCareLabel: "\u0639\u064a\u0627\u062f\u0627\u062a \u0623\u0648\u0644\u064a\u0629 (\u0645\u0644\u064a\u0648\u0646)",
 
   footer: "\u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) \u2014 www.ons.dz | \u062c\u0645\u064a\u0639 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0645\u0646 \u0645\u0646\u0634\u0648\u0631\u0627\u062a ONS (\u0627\u0644\u0623\u0633\u0639\u0627\u0631\u060c \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629\u060c \u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629\u060c \u0627\u0644\u062a\u0639\u062f\u0627\u062f \u0627\u0644\u0633\u0643\u0627\u0646\u064a)",
 };

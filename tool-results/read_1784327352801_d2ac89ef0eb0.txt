@@ -1,0 +1,1212 @@
+     1→"use client";
+     2→
+     3→import {
+     4→  gdpAnnual, gdpBySector, gdpQuarterly, cpiMonthly, tradeAnnual,
+     5→  tradeQuarterly, tradeByPartner, ipiQuarterly, laborMarket,
+     6→  demographics, populationByAge, fiscalData, cpiByDivision,
+     7→  education, ippiQuarterly, wilayaData, constructionIndex, latestKPIs,
+     8→  hydrocarbons, agricultureData, manufacturingData, btpData,
+     9→  servicesData, miningEnergy,
+    10→} from "@/lib/algeria-data";
+    11→
+    12→import { useI18n } from "@/lib/i18n/context";
+    13→import { LanguageSwitcher } from "@/components/language-switcher";
+    14→
+    15→import {
+    16→  Card, CardContent, CardDescription, CardHeader, CardTitle,
+    17→} from "@/components/ui/card";
+    18→import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+    19→import { Badge } from "@/components/ui/badge";
+    20→import { Separator } from "@/components/ui/separator";
+    21→import {
+    22→  ChartContainer, ChartTooltip, ChartTooltipContent, ChartLegend, ChartLegendContent,
+    23→} from "@/components/ui/chart";
+    24→import {
+    25→  Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, ComposedChart,
+    26→  Line, LineChart, Pie, PieChart, RadarChart, PolarGrid, PolarAngleAxis,
+    27→  PolarRadiusAxis, Radar, XAxis, YAxis, Tooltip as RTooltip, Legend, ResponsiveContainer,
+    28→  ScatterChart, Scatter, ZAxis,
+    29→} from "recharts";
+    30→import {
+    31→  TrendingUp, TrendingDown, ArrowUpRight, ArrowDownRight,
+    32→  DollarSign, Users, BarChart3, Globe, Percent, Activity,
+    33→  Factory, GraduationCap, Building2, Truck, Heart, Package,
+    34→  Scale, ChevronRight, Droplets, Sprout, Hammer, Wrench, Zap,
+    35→} from "lucide-react";
+    36→
+    37→// ─── Color palette ──────────────────────────────────────────────────────────
+    38→const COLORS = {
+    39→  emerald: "#059669", emeraldLight: "#d1fae5",
+    40→  blue: "#2563eb", blueLight: "#dbeafe",
+    41→  red: "#dc2626", redLight: "#fee2e2",
+    42→  amber: "#d97706", amberLight: "#fef3c7",
+    43→  purple: "#7c3aed", purpleLight: "#ede9fe",
+    44→  cyan: "#0891b2", cyanLight: "#cffafe",
+    45→  rose: "#e11d48", roseLight: "#ffe4e6",
+    46→  slate: "#475569", slateLight: "#f1f5f9",
+    47→  teal: "#0d9488", tealLight: "#ccfbf1",
+    48→  orange: "#ea580c", orangeLight: "#ffedd5",
+    49→};
+    50→
+    51→// ─── Reusable Chart Configs (will be built dynamically with t) ──────────────
+    52→
+    53→// ─── Helper ─────────────────────────────────────────────────────────────────
+    54→function KpiCard({ title, value, unit, change, changeDir, icon: Icon, color }: {
+    55→  title: string; value: string | number; unit?: string;
+    56→  change?: number; changeDir?: "up" | "down"; icon: React.ElementType; color: string;
+    57→}) {
+    58→  return (
+    59→    <Card className="border-0 shadow-sm">
+    60→      <CardContent className="p-4">
+    61→        <div className="flex items-center justify-between mb-2">
+    62→          <span className="text-xs text-muted-foreground font-medium">{title}</span>
+    63→          <div className={`p-1.5 rounded-lg`} style={{ backgroundColor: color + "15" }}>
+    64→            <Icon className="w-3.5 h-3.5" style={{ color }} />
+    65→          </div>
+    66→        </div>
+    67→        <div className="flex items-end gap-1.5">
+    68→          <span className="text-2xl font-bold">{value}</span>
+    69→          {unit && <span className="text-sm text-muted-foreground mb-0.5">{unit}</span>}
+    70→        </div>
+    71→        {change !== undefined && changeDir && (
+    72→          <div className={`flex items-center gap-0.5 mt-1 text-xs font-medium ${changeDir === "up" ? "text-emerald-600" : "text-red-600"}`}>
+    73→            {changeDir === "up" ? <ArrowUpRight className="w-3 h-3" /> : <ArrowDownRight className="w-3 h-3" />}
+    74→            {change > 0 ? "+" : ""}{change}%
+    75→          </div>
+    76→        )}
+    77→      </CardContent>
+    78→    </Card>
+    79→  );
+    80→}
+    81→
+    82→function ChartCard({ title, subtitle, children, className }: { title: string; subtitle?: string; children: React.ReactNode; className?: string }) {
+    83→  return (
+    84→    <Card className={`border-0 shadow-sm ${className || ""}`}>
+    85→      <CardHeader className="pb-2 pt-4 px-4">
+    86→        <CardTitle className="text-sm font-semibold">{title}</CardTitle>
+    87→        {subtitle && <CardDescription className="text-xs">{subtitle}</CardDescription>}
+    88→      </CardHeader>
+    89→      <CardContent className="px-4 pb-4">{children}</CardContent>
+    90→    </Card>
+    91→  );
+    92→}
+    93→
+    94→// ═════════════════════════════════════════════════════════════════════════════
+    95→// MAIN PAGE
+    96→// ═════════════════════════════════════════════════════════════════════════════
+    97→export default function AlgeriaDashboard() {
+    98→  const { t, isRtl, locale } = useI18n();
+    99→
+   100→  // Arabic font style
+   101→  const arabicFontStyle = locale === "ar"
+   102→    ? { fontFamily: "'Noto Sans Arabic', 'Noto Sans SC', sans-serif" }
+   103→    : {};
+   104→
+   105→  const tabItems = [
+   106→    { val: "macro", label: t.tabMacro, icon: Activity },
+   107→    { val: "inflation", label: t.tabInflation, icon: Scale },
+   108→    { val: "trade", label: t.tabTrade, icon: Globe },
+   109→    { val: "industry", label: t.tabIndustry, icon: Factory },
+   110→    { val: "labor", label: t.tabLabor, icon: Users },
+   111→    { val: "social", label: t.tabSocial, icon: Heart },
+   112→    { val: "fiscal", label: t.tabFiscal, icon: DollarSign },
+   113→    { val: "regional", label: t.tabRegional, icon: Building2 },
+   114→    { val: "hydro", label: t.tabHydro, icon: Droplets },
+   115→    { val: "agriculture", label: t.tabAgriculture, icon: Sprout },
+   116→    { val: "manufacturing", label: t.tabManufacturing, icon: Factory },
+   117→    { val: "btp", label: t.tabBTP, icon: Hammer },
+   118→    { val: "services", label: t.tabServices, icon: Wrench },
+   119→    { val: "mining", label: t.tabMiningEnergy, icon: Zap },
+   120→  ];
+   121→
+   122→  return (
+   123→    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col" style={arabicFontStyle}>
+   124→      {/* Header */}
+   125→      <header className="bg-gradient-to-r from-emerald-800 via-emerald-900 to-slate-900 text-white">
+   126→        <div className="max-w-[1400px] mx-auto px-4 py-5">
+   127→          <div className="flex items-center justify-between gap-3">
+   128→            <div className="flex items-center gap-3">
+   129→              <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center"><BarChart3 className="w-6 h-6" /></div>
+   130→              <div>
+   131→                <h1 className="text-xl sm:text-2xl font-bold tracking-tight">{t.headerTitle}</h1>
+   132→                <p className="text-emerald-200/70 text-xs sm:text-sm">
+   133→                  {t.headerSubtitle}
+   134→                </p>
+   135→              </div>
+   136→            </div>
+   137→            <LanguageSwitcher />
+   138→          </div>
+   139→        </div>
+   140→      </header>
+   141→
+   142→      <main className="flex-1 max-w-[1400px] mx-auto px-4 py-5 w-full">
+   143→        <Tabs defaultValue="macro" className="space-y-5">
+   144→          <TabsList className="flex flex-wrap h-auto gap-1 bg-transparent p-0">
+   145→            {tabItems.map((tab) => (
+   146→              <TabsTrigger key={tab.val} value={tab.val}
+   147→                className="data-[state=active]:bg-emerald-600 data-[state=active]:text-white rounded-lg px-3 py-2 text-xs sm:text-sm font-medium">
+   148→                <tab.icon className="w-3.5 h-3.5 me-1.5" />
+   149→                <span className="hidden sm:inline">{tab.label}</span>
+   150→                <span className="sm:hidden">{tab.label.split(" ")[0]}</span>
+   151→              </TabsTrigger>
+   152→            ))}
+   153→          </TabsList>
+   154→
+   155→          {/* ═══ MACROECONOMIC ═══════════════════════════════════════════════ */}
+   156→          <TabsContent value="macro" className="space-y-5">
+   157→            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+   158→              <KpiCard title={t.kpiGdpGrowth} value={latestKPIs.gdpGrowth} unit="%" change={0.2} changeDir="up" icon={TrendingUp} color={COLORS.emerald} />
+   159→              <KpiCard title={t.kpiGdp2024} value="205" unit="bn $" icon={DollarSign} color={COLORS.blue} />
+   160→              <KpiCard title={t.kpiInflation} value={latestKPIs.inflation} unit="%" change={-1.0} changeDir="down" icon={Scale} color={COLORS.red} />
+   161→              <KpiCard title={t.kpiUnemployment} value={latestKPIs.unemployment} unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.amber} />
+   162→              <KpiCard title={t.kpiPopulation} value="46.8" unit="M" icon={Heart} color={COLORS.purple} />
+   163→              <KpiCard title={t.kpiInvestmentRate} value={latestKPIs.investmentRate} unit="% GDP" icon={Factory} color={COLORS.cyan} />
+   164→            </div>
+   165→
+   166→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   167→              <ChartCard title={t.chartGdpGrowth} subtitle={t.chartGdpGrowthSub}>
+   168→                <ChartContainer config={{ gdpBillionUsd: { label: t.chartGdpBnUsd, color: COLORS.emerald }, growthPct: { label: t.chartGrowthPct, color: COLORS.blue } }} className="h-[320px] w-full">
+   169→                  <ComposedChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   170→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   171→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   172→                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
+   173→                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[-5, 10]} />
+   174→                    <ChartTooltip content={<ChartTooltipContent />} />
+   175→                    <Legend content={<ChartLegendContent />} />
+   176→                    <Bar yAxisId="left" dataKey="gdpBillionUsd" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartGdpBnUsd} />
+   177→                    <Line yAxisId="right" type="monotone" dataKey="growthPct" stroke={COLORS.blue} strokeWidth={2} dot={{ r: 3 }} name={t.chartGrowthPct} />
+   178→                  </ComposedChart>
+   179→                </ChartContainer>
+   180→              </ChartCard>
+   181→
+   182→              <ChartCard title={t.chartGdpSector} subtitle={t.chartGdpSectorSub}>
+   183→                <ChartContainer config={{
+   184→                  agriculture: { label: t.sectorAgriculture, color: COLORS.emerald },
+   185→                  industry: { label: t.sectorIndustry, color: COLORS.blue },
+   186→                  construction: { label: t.sectorConstruction, color: COLORS.amber },
+   187→                  services: { label: t.sectorServices, color: COLORS.purple },
+   188→                }} className="h-[320px] w-full">
+   189→                  <AreaChart data={gdpBySector} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   190→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   191→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   192→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 100]} />
+   193→                    <ChartTooltip content={<ChartTooltipContent />} />
+   194→                    <Legend content={<ChartLegendContent />} />
+   195→                    <Area type="monotone" stackId="1" dataKey="services" fill={COLORS.purple} stroke={COLORS.purple} fillOpacity={0.7} name={t.sectorServices} />
+   196→                    <Area type="monotone" stackId="1" dataKey="construction" fill={COLORS.amber} stroke={COLORS.amber} fillOpacity={0.7} name={t.sectorConstruction} />
+   197→                    <Area type="monotone" stackId="1" dataKey="industry" fill={COLORS.blue} stroke={COLORS.blue} fillOpacity={0.7} name={t.sectorIndustry} />
+   198→                    <Area type="monotone" stackId="1" dataKey="agriculture" fill={COLORS.emerald} stroke={COLORS.emerald} fillOpacity={0.7} name={t.sectorAgriculture} />
+   199→                  </AreaChart>
+   200→                </ChartContainer>
+   201→              </ChartCard>
+   202→            </div>
+   203→
+   204→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   205→              <ChartCard title={t.chartQuarterlyGdp} subtitle={t.chartQuarterlyGdpSub}>
+   206→                <ChartContainer config={{ growthPct: { label: t.chartGrowthPct, color: COLORS.emerald } }} className="h-[280px] w-full">
+   207→                  <BarChart data={gdpQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   208→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   209→                    <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+   210→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[-8, 6]} />
+   211→                    <ChartTooltip content={<ChartTooltipContent />} />
+   212→                    <Bar dataKey="growthPct" radius={[2, 2, 0, 0]} name={t.chartGrowthPct}>
+   213→                      {gdpQuarterly.map((d, i) => (
+   214→                        <Cell key={i} fill={d.growthPct >= 0 ? COLORS.emerald : COLORS.red} />
+   215→                      ))}
+   216→                    </Bar>
+   217→                  </BarChart>
+   218→                </ChartContainer>
+   219→              </ChartCard>
+   220→
+   221→              <ChartCard title={t.chartGdpPerCapita} subtitle={t.chartGdpPerCapitaSub}>
+   222→                <ChartContainer config={{ perCapitaUsd: { label: t.chartGdpCapita, color: COLORS.blue } }} className="h-[280px] w-full">
+   223→                  <AreaChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   224→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   225→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   226→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   227→                    <ChartTooltip content={<ChartTooltipContent />} />
+   228→                    <Area type="monotone" dataKey="perCapitaUsd" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.4} name={t.chartGdpCapita} />
+   229→                  </AreaChart>
+   230→                </ChartContainer>
+   231→              </ChartCard>
+   232→            </div>
+   233→          </TabsContent>
+   234→
+   235→          {/* ═══ PRICES & INFLATION ═══════════════════════════════════════════ */}
+   236→          <TabsContent value="inflation" className="space-y-5">
+   237→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   238→              <KpiCard title={t.kpiCpi} value="344.2" change={0.4} changeDir="up" icon={Scale} color={COLORS.red} />
+   239→              <KpiCard title={t.kpiYoyInflation} value="3.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.emerald} />
+   240→              <KpiCard title={t.kpiFoodInflation} value="2.8" unit="%" change={-1.3} changeDir="down" icon={Package} color={COLORS.amber} />
+   241→              <KpiCard title={t.kpiCoreInflation} value="2.8" unit="%" change={-0.7} changeDir="down" icon={Activity} color={COLORS.blue} />
+   242→            </div>
+   243→
+   244→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   245→              <ChartCard title={t.chartCpiMonthly} subtitle={t.chartCpiMonthlySub}>
+   246→                <ChartContainer config={{ yoyPct: { label: t.chartInflationYoy, color: COLORS.red }, foodYoy: { label: t.chartFoodYoy, color: COLORS.amber }, coreYoy: { label: t.chartCoreYoy, color: COLORS.blue } }} className="h-[340px] w-full">
+   247→                  <LineChart data={cpiMonthly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   248→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   249→                    <XAxis dataKey="month" tick={{ fontSize: 9 }} tickLine={false} interval={5} />
+   250→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   251→                    <ChartTooltip content={<ChartTooltipContent />} />
+   252→                    <Legend content={<ChartLegendContent />} />
+   253→                    <Line type="monotone" dataKey="yoyPct" stroke={COLORS.red} strokeWidth={2} dot={false} name={t.legendTotalYoy} />
+   254→                    <Line type="monotone" dataKey="foodYoy" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.legendFoodYoy} />
+   255→                    <Line type="monotone" dataKey="coreYoy" stroke={COLORS.blue} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.legendCoreYoy} />
+   256→                  </LineChart>
+   257→                </ChartContainer>
+   258→              </ChartCard>
+   259→
+   260→              <ChartCard title={t.chartCpiLevel} subtitle={t.chartCpiLevelSub}>
+   261→                <ChartContainer config={{ ipc: { label: t.chartIpcIndex, color: COLORS.rose } }} className="h-[340px] w-full">
+   262→                  <AreaChart data={cpiMonthly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   263→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   264→                    <XAxis dataKey="month" tick={{ fontSize: 9 }} tickLine={false} interval={5} />
+   265→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[200, 360]} />
+   266→                    <ChartTooltip content={<ChartTooltipContent />} />
+   267→                    <Area type="monotone" dataKey="ipc" fill={COLORS.roseLight} stroke={COLORS.rose} strokeWidth={2} fillOpacity={0.5} name={t.chartIpcIndex} />
+   268→                  </AreaChart>
+   269→                </ChartContainer>
+   270→              </ChartCard>
+   271→            </div>
+   272→
+   273→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   274→              <ChartCard title={t.chartCpiDivision} subtitle={t.chartCpiDivisionSub}>
+   275→                <ChartContainer config={{ y2024: { label: "2024 YoY %", color: COLORS.blue } }} className="h-[340px] w-full">
+   276→                  <BarChart data={cpiByDivision} layout="vertical" margin={{ top: 5, right: 20, left: 100, bottom: 0 }}>
+   277→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   278→                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+   279→                    <YAxis dataKey="division" type="category" tick={{ fontSize: 10 }} tickLine={false} width={95} />
+   280→                    <ChartTooltip content={<ChartTooltipContent />} />
+   281→                    <Bar dataKey="y2024" fill={COLORS.blue} radius={[0, 4, 4, 0]}>
+   282→                      {cpiByDivision.map((d, i) => (
+   283→                        <Cell key={i} fill={d.y2024 >= 5 ? COLORS.red : d.y2024 >= 3.5 ? COLORS.amber : COLORS.emerald} />
+   284→                      ))}
+   285→                    </Bar>
+   286→                  </BarChart>
+   287→                </ChartContainer>
+   288→              </ChartCard>
+   289→
+   290→              <ChartCard title={t.chartCpiWeights} subtitle={t.chartCpiWeightsSub}>
+   291→                <ChartContainer config={Object.fromEntries(
+   292→                  cpiByDivision.map((d, i) => [d.division, { label: d.division, color: Object.values(COLORS)[i % Object.values(COLORS).length] }])
+   293→                )} className="h-[340px] w-full">
+   294→                  <PieChart>
+   295→                    <ChartTooltip content={<ChartTooltipContent />} />
+   296→                    <Pie data={cpiByDivision} dataKey="weight" nameKey="division" cx="50%" cy="50%" outerRadius={110} innerRadius={50} paddingAngle={1}>
+   297→                      {cpiByDivision.map((_, i) => (
+   298→                        <Cell key={i} fill={Object.values(COLORS)[i % Object.values(COLORS).length]} />
+   299→                      ))}
+   300→                    </Pie>
+   301→                    <Legend content={<ChartLegendContent nameKey="division" />} />
+   302→                  </PieChart>
+   303→                </ChartContainer>
+   304→              </ChartCard>
+   305→            </div>
+   306→
+   307→            <ChartCard title={t.chartIppi} subtitle={t.chartIppiSub}>
+   308→              <ChartContainer config={{
+   309→                mining: { label: t.sectorMining, color: COLORS.amber },
+   310→                manufacturing: { label: t.sectorManufacturing, color: COLORS.blue },
+   311→                energy: { label: t.sectorEnergy, color: COLORS.red },
+   312→              }} className="h-[300px] w-full">
+   313→                <LineChart data={ippiQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   314→                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   315→                  <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+   316→                  <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   317→                  <ChartTooltip content={<ChartTooltipContent />} />
+   318→                  <Legend content={<ChartLegendContent />} />
+   319→                  <Line type="monotone" dataKey="mining" stroke={COLORS.amber} strokeWidth={2} dot={false} name={t.sectorMining} />
+   320→                  <Line type="monotone" dataKey="manufacturing" stroke={COLORS.blue} strokeWidth={2} dot={false} name={t.sectorManufacturing} />
+   321→                  <Line type="monotone" dataKey="energy" stroke={COLORS.red} strokeWidth={2} dot={false} name={t.sectorEnergy} />
+   322→                </LineChart>
+   323→              </ChartContainer>
+   324→            </ChartCard>
+   325→          </TabsContent>
+   326→
+   327→          {/* ═══ TRADE & EXTERNAL BALANCE ════════════════════════════════════ */}
+   328→          <TabsContent value="trade" className="space-y-5">
+   329→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   330→              <KpiCard title={t.kpiExports} value="48.5" unit="bn $" change={7.8} changeDir="up" icon={Globe} color={COLORS.emerald} />
+   331→              <KpiCard title={t.kpiImports} value="37.0" unit="bn $" change={6.3} changeDir="up" icon={Package} color={COLORS.red} />
+   332→              <KpiCard title={t.kpiTradeBalance} value="11.5" unit="bn $" change={1.3} changeDir="up" icon={DollarSign} color={COLORS.blue} />
+   333→              <KpiCard title={t.kpiHydroPct} value="80.0" unit="%" icon={Factory} color={COLORS.amber} />
+   334→            </div>
+   335→
+   336→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   337→              <ChartCard title={t.chartTradeAnnual} subtitle={t.chartTradeAnnualSub}>
+   338→                <ChartContainer config={{ exportsBn: { label: t.chartExports, color: COLORS.emerald }, importsBn: { label: t.chartImports, color: COLORS.red }, balanceBn: { label: t.chartBalance, color: COLORS.blue } }} className="h-[340px] w-full">
+   339→                  <ComposedChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   340→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   341→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   342→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   343→                    <ChartTooltip content={<ChartTooltipContent />} />
+   344→                    <Legend content={<ChartLegendContent />} />
+   345→                    <Bar dataKey="exportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartExports} />
+   346→                    <Bar dataKey="importsBn" fill={COLORS.red} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartImports} />
+   347→                    <Line type="monotone" dataKey="balanceBn" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 2 }} name={t.chartBalance} />
+   348→                  </ComposedChart>
+   349→                </ChartContainer>
+   350→              </ChartCard>
+   351→
+   352→              <ChartCard title={t.chartHydroShare} subtitle={t.chartHydroShareSub}>
+   353→                <ChartContainer config={{ hydroPct: { label: t.chartHydroPct, color: COLORS.amber } }} className="h-[340px] w-full">
+   354→                  <AreaChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   355→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   356→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   357→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[60, 100]} />
+   358→                    <ChartTooltip content={<ChartTooltipContent />} />
+   359→                    <Area type="monotone" dataKey="hydroPct" fill={COLORS.amberLight} stroke={COLORS.amber} strokeWidth={2} fillOpacity={0.5} name={t.chartHydroPct} />
+   360→                  </AreaChart>
+   361→                </ChartContainer>
+   362→              </ChartCard>
+   363→            </div>
+   364→
+   365→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   366→              <ChartCard title={t.chartTradeQuarterly} subtitle={t.chartTradeQuarterlySub}>
+   367→                <ChartContainer config={{
+   368→                  exportsBn: { label: t.chartExports, color: COLORS.emerald },
+   369→                  importsBn: { label: t.chartImports, color: COLORS.red },
+   370→                }} className="h-[280px] w-full">
+   371→                  <BarChart data={tradeQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   372→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   373→                    <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+   374→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   375→                    <ChartTooltip content={<ChartTooltipContent />} />
+   376→                    <Legend content={<ChartLegendContent />} />
+   377→                    <Bar dataKey="exportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} name={t.chartExports} />
+   378→                    <Bar dataKey="importsBn" fill={COLORS.red} radius={[2, 2, 0, 0]} name={t.chartImports} />
+   379→                  </BarChart>
+   380→                </ChartContainer>
+   381→              </ChartCard>
+   382→
+   383→              <ChartCard title={t.chartTradePartners} subtitle={t.chartTradePartnersSub}>
+   384→                <ChartContainer config={{
+   385→                  exports: { label: t.chartExports, color: COLORS.emerald },
+   386→                  imports: { label: t.chartImports, color: COLORS.red },
+   387→                }} className="h-[280px] w-full">
+   388→                  <BarChart data={tradeByPartner} layout="vertical" margin={{ top: 5, right: 10, left: 65, bottom: 0 }}>
+   389→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   390→                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+   391→                    <YAxis dataKey="partner" type="category" tick={{ fontSize: 10 }} tickLine={false} width={60} />
+   392→                    <ChartTooltip content={<ChartTooltipContent />} />
+   393→                    <Legend content={<ChartLegendContent />} />
+   394→                    <Bar dataKey="exports" fill={COLORS.emerald} radius={[0, 4, 4, 0]} name={t.chartExports} />
+   395→                    <Bar dataKey="imports" fill={COLORS.red} radius={[0, 4, 4, 0]} name={t.chartImports} />
+   396→                  </BarChart>
+   397→                </ChartContainer>
+   398→              </ChartCard>
+   399→            </div>
+   400→          </TabsContent>
+   401→
+   402→          {/* ═══ INDUSTRIAL PRODUCTION ═════════════════════════════════════════ */}
+   403→          <TabsContent value="industry" className="space-y-5">
+   404→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   405→              <KpiCard title={t.kpiIpi} value="114.5" change={1.8} changeDir="up" icon={Factory} color={COLORS.emerald} />
+   406→              <KpiCard title={t.kpiMining} value="108.0" change={1.4} changeDir="up" icon={Factory} color={COLORS.amber} />
+   407→              <KpiCard title={t.kpiManufacturing} value="109.0" change={1.8} changeDir="up" icon={Building2} color={COLORS.blue} />
+   408→              <KpiCard title={t.kpiEnergy} value="118.0" change={0.4} changeDir="up" icon={Activity} color={COLORS.cyan} />
+   409→            </div>
+   410→
+   411→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   412→              <ChartCard title={t.chartIpi} subtitle={t.chartIpiSub}>
+   413→                <ChartContainer config={{
+   414→                  mining: { label: t.sectorMining, color: COLORS.amber },
+   415→                  manufacturing: { label: t.sectorManufacturing, color: COLORS.blue },
+   416→                  energy: { label: t.sectorEnergy, color: COLORS.cyan },
+   417→                  ipi: { label: t.chartIpiTotal, color: COLORS.emerald },
+   418→                }} className="h-[340px] w-full">
+   419→                  <LineChart data={ipiQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   420→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   421→                    <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+   422→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[75, 125]} />
+   423→                    <ChartTooltip content={<ChartTooltipContent />} />
+   424→                    <Legend content={<ChartLegendContent />} />
+   425→                    <Line type="monotone" dataKey="energy" stroke={COLORS.cyan} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.sectorEnergy} />
+   426→                    <Line type="monotone" dataKey="mining" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.sectorMining} />
+   427→                    <Line type="monotone" dataKey="manufacturing" stroke={COLORS.blue} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.sectorManufacturing} />
+   428→                    <Line type="monotone" dataKey="ipi" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 2 }} name={t.chartIpiTotal} />
+   429→                  </LineChart>
+   430→                </ChartContainer>
+   431→              </ChartCard>
+   432→
+   433→              <ChartCard title={t.chartIpiIppi} subtitle={t.chartIpiIppiSub}>
+   434→                <ChartContainer config={{
+   435→                  ipi: { label: t.chartIpiProd, color: COLORS.emerald },
+   436→                  ippi: { label: t.chartIppiPrices, color: COLORS.red },
+   437→                }} className="h-[340px] w-full">
+   438→                  <LineChart data={ipiQuarterly.map((d, i) => ({
+   439→                    period: d.period, ipi: d.ipi, ippi: ippiQuarterly[i]?.ippi || 0
+   440→                  }))} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   441→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   442→                    <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+   443→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   444→                    <ChartTooltip content={<ChartTooltipContent />} />
+   445→                    <Legend content={<ChartLegendContent />} />
+   446→                    <Line type="monotone" dataKey="ipi" stroke={COLORS.emerald} strokeWidth={2} dot={false} name={t.chartIpiProd} />
+   447→                    <Line type="monotone" dataKey="ippi" stroke={COLORS.red} strokeWidth={2} dot={false} name={t.chartIppiPrices} />
+   448→                  </LineChart>
+   449→                </ChartContainer>
+   450→              </ChartCard>
+   451→            </div>
+   452→
+   453→            <ChartCard title={t.chartConstruction} subtitle={t.chartConstructionSub}>
+   454→              <ChartContainer config={{ index: { label: t.chartConstructionIdx, color: COLORS.amber } }} className="h-[250px] w-full">
+   455→                <BarChart data={constructionIndex} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   456→                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   457→                  <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   458→                  <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[100, 170]} />
+   459→                  <ChartTooltip content={<ChartTooltipContent />} />
+   460→                  <Bar dataKey="index" fill={COLORS.amber} radius={[4, 4, 0, 0]} name={t.chartConstructionIdx} />
+   461→                </BarChart>
+   462→              </ChartContainer>
+   463→            </ChartCard>
+   464→          </TabsContent>
+   465→
+   466→          {/* ═══ LABOR MARKET ═════════════════════════════════════════════════ */}
+   467→          <TabsContent value="labor" className="space-y-5">
+   468→            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+   469→              <KpiCard title={t.kpiUnempRate} value="10.8" unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.red} />
+   470→              <KpiCard title={t.kpiActivityRate} value="44.0" unit="%" change={0.5} changeDir="up" icon={Activity} color={COLORS.emerald} />
+   471→              <KpiCard title={t.kpiYouthUnemp} value="22.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.amber} />
+   472→              <KpiCard title={t.kpiFemalePartic} value="17.2" unit="%" change={0.4} changeDir="up" icon={Heart} color={COLORS.purple} />
+   473→              <KpiCard title={t.kpiInformal} value="43.0" unit="%" change={-0.8} changeDir="down" icon={Building2} color={COLORS.slate} />
+   474→              <KpiCard title={t.kpiEmpPop} value="39.2" unit="%" change={0.6} changeDir="up" icon={TrendingUp} color={COLORS.blue} />
+   475→            </div>
+   476→
+   477→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   478→              <ChartCard title={t.chartUnempRate} subtitle={t.chartUnempRateSub}>
+   479→                <ChartContainer config={{
+   480→                  unemploymentPct: { label: t.chartTotalPct, color: COLORS.red },
+   481→                  youthUnemp: { label: t.chartYouthPct, color: COLORS.amber },
+   482→                }} className="h-[320px] w-full">
+   483→                  <LineChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   484→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   485→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   486→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   487→                    <ChartTooltip content={<ChartTooltipContent />} />
+   488→                    <Legend content={<ChartLegendContent />} />
+   489→                    <Line type="monotone" dataKey="youthUnemp" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartYouthPct} />
+   490→                    <Line type="monotone" dataKey="unemploymentPct" stroke={COLORS.red} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartTotalPct} />
+   491→                  </LineChart>
+   492→                </ChartContainer>
+   493→              </ChartCard>
+   494→
+   495→              <ChartCard title={t.chartActivityFemale} subtitle={t.chartActivityFemaleSub}>
+   496→                <ChartContainer config={{
+   497→                  activityRate: { label: t.chartActRate, color: COLORS.emerald },
+   498→                  femalePartic: { label: t.chartFemPartic, color: COLORS.purple },
+   499→                  informalPct: { label: t.chartInformalPct, color: COLORS.slate },
+   500→                }} className="h-[320px] w-full">
+   501→                  <LineChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   502→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   503→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   504→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[10, 50]} />
+   505→                    <ChartTooltip content={<ChartTooltipContent />} />
+   506→                    <Legend content={<ChartLegendContent />} />
+   507→                    <Line type="monotone" dataKey="informalPct" stroke={COLORS.slate} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartInformalPct} />
+   508→                    <Line type="monotone" dataKey="femalePartic" stroke={COLORS.purple} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartFemPartic} />
+   509→                    <Line type="monotone" dataKey="activityRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartActRate} />
+   510→                  </LineChart>
+   511→                </ChartContainer>
+   512→              </ChartCard>
+   513→            </div>
+   514→
+   515→            <ChartCard title={t.chartEmpPop} subtitle={t.chartEmpPopSub}>
+   516→              <ChartContainer config={{ employmentPop: { label: t.chartEmpPopPct, color: COLORS.blue } }} className="h-[250px] w-full">
+   517→                <BarChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   518→                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   519→                  <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   520→                  <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[35, 42]} />
+   521→                  <ChartTooltip content={<ChartTooltipContent />} />
+   522→                  <Bar dataKey="employmentPop" fill={COLORS.blue} radius={[4, 4, 0, 0]} name={t.chartEmpPopPct} />
+   523→                </BarChart>
+   524→              </ChartContainer>
+   525→            </ChartCard>
+   526→          </TabsContent>
+   527→
+   528→          {/* ═══ DEMOGRAPHICS & SOCIAL ═══════════════════════════════════════ */}
+   529→          <TabsContent value="social" className="space-y-5">
+   530→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   531→              <KpiCard title={t.kpiPop} value="46.8" unit="M" icon={Users} color={COLORS.purple} />
+   532→              <KpiCard title={t.kpiGrowthRate} value="1.4" unit="%" icon={TrendingUp} color={COLORS.emerald} />
+   533→              <KpiCard title={t.kpiUrbanization} value="74.5" unit="%" icon={Building2} color={COLORS.blue} />
+   534→              <KpiCard title={t.kpiFertility} value="1.9" icon={Heart} color={COLORS.rose} />
+   535→            </div>
+   536→
+   537→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   538→              <ChartCard title={t.chartPopGrowth} subtitle={t.chartPopGrowthSub}>
+   539→                <ChartContainer config={{ populationM: { label: t.chartPopulationM, color: COLORS.purple } }} className="h-[300px] w-full">
+   540→                  <AreaChart data={demographics} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   541→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   542→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   543→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   544→                    <ChartTooltip content={<ChartTooltipContent />} />
+   545→                    <Area type="monotone" dataKey="populationM" fill={COLORS.purpleLight} stroke={COLORS.purple} strokeWidth={2} fillOpacity={0.4} name={t.chartPopulationM} />
+   546→                  </AreaChart>
+   547→                </ChartContainer>
+   548→              </ChartCard>
+   549→
+   550→              <ChartCard title={t.chartPopPyramid} subtitle={t.chartPopPyramidSub}>
+   551→                <ChartContainer config={{ m: { label: t.chartMale, color: COLORS.blue }, f: { label: t.chartFemale, color: COLORS.rose } }} className="h-[300px] w-full">
+   552→                  <BarChart data={populationByAge} layout="vertical" margin={{ top: 5, right: 10, left: 40, bottom: 0 }}>
+   553→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   554→                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+   555→                    <YAxis dataKey="group" type="category" tick={{ fontSize: 10 }} tickLine={false} width={40} />
+   556→                    <ChartTooltip content={<ChartTooltipContent />} />
+   557→                    <Legend content={<ChartLegendContent />} />
+   558→                    <Bar dataKey="f" fill={COLORS.rose} radius={[4, 0, 0, 4]} name={t.chartFemale} />
+   559→                    <Bar dataKey="m" fill={COLORS.blue} radius={[0, 4, 4, 0]} name={t.chartMale} />
+   560→                  </BarChart>
+   561→                </ChartContainer>
+   562→              </ChartCard>
+   563→            </div>
+   564→
+   565→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   566→              <ChartCard title={t.chartDemographic} subtitle={t.chartDemographicSub}>
+   567→                <ChartContainer config={{
+   568→                  birthRate: { label: t.chartBirthRate, color: COLORS.emerald },
+   569→                  deathRate: { label: t.chartDeathRate, color: COLORS.red },
+   570→                  fertilityRate: { label: t.chartFertilityRate, color: COLORS.amber },
+   571→                }} className="h-[300px] w-full">
+   572→                  <LineChart data={demographics} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   573→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   574→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   575→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   576→                    <ChartTooltip content={<ChartTooltipContent />} />
+   577→                    <Legend content={<ChartLegendContent />} />
+   578→                    <Line type="monotone" dataKey="deathRate" stroke={COLORS.red} strokeWidth={1.5} dot={false} name={t.chartDeathRate} />
+   579→                    <Line type="monotone" dataKey="fertilityRate" stroke={COLORS.amber} strokeWidth={2} dot={false} strokeDasharray="4 2" name={t.chartFertilityRate} />
+   580→                    <Line type="monotone" dataKey="birthRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartBirthRate} />
+   581→                  </LineChart>
+   582→                </ChartContainer>
+   583→              </ChartCard>
+   584→
+   585→              <ChartCard title={t.chartEducation} subtitle={t.chartEducationSub}>
+   586→                <ChartContainer config={{
+   587→                  enrollmentPrimary: { label: t.chartPrimary, color: COLORS.emerald },
+   588→                  enrollmentSecondary: { label: t.chartSecondary, color: COLORS.blue },
+   589→                  enrollmentHigher: { label: t.chartHigher, color: COLORS.purple },
+   590→                }} className="h-[300px] w-full">
+   591→                  <AreaChart data={education} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   592→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   593→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   594→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   595→                    <ChartTooltip content={<ChartTooltipContent />} />
+   596→                    <Legend content={<ChartLegendContent />} />
+   597→                    <Area type="monotone" stackId="1" dataKey="enrollmentHigher" fill={COLORS.purple} stroke={COLORS.purple} fillOpacity={0.7} name={t.chartHigher} />
+   598→                    <Area type="monotone" stackId="1" dataKey="enrollmentSecondary" fill={COLORS.blue} stroke={COLORS.blue} fillOpacity={0.7} name={t.chartSecondary} />
+   599→                    <Area type="monotone" stackId="1" dataKey="enrollmentPrimary" fill={COLORS.emerald} stroke={COLORS.emerald} fillOpacity={0.7} name={t.chartPrimary} />
+   600→                  </AreaChart>
+   601→                </ChartContainer>
+   602→              </ChartCard>
+   603→            </div>
+   604→
+   605→            <ChartCard title={t.chartLiteracy} subtitle={t.chartLiteracySub}>
+   606→              <ChartContainer config={{
+   607→                literacyRate: { label: t.chartLiteracyRate, color: COLORS.emerald },
+   608→                primaryNet: { label: t.chartPrimaryNet, color: COLORS.blue },
+   609→                secondaryNet: { label: t.chartSecondaryNet, color: COLORS.amber },
+   610→                higherGross: { label: t.chartHigherGross, color: COLORS.purple },
+   611→              }} className="h-[280px] w-full">
+   612→                <LineChart data={education} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   613→                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   614→                  <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   615→                  <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[50, 100]} />
+   616→                  <ChartTooltip content={<ChartTooltipContent />} />
+   617→                  <Legend content={<ChartLegendContent />} />
+   618→                  <Line type="monotone" dataKey="higherGross" stroke={COLORS.purple} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartHigherGross} />
+   619→                  <Line type="monotone" dataKey="secondaryNet" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartSecondaryNet} />
+   620→                  <Line type="monotone" dataKey="primaryNet" stroke={COLORS.blue} strokeWidth={2} dot={false} name={t.chartPrimaryNet} />
+   621→                  <Line type="monotone" dataKey="literacyRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartLiteracyRate} />
+   622→                </LineChart>
+   623→              </ChartContainer>
+   624→            </ChartCard>
+   625→          </TabsContent>
+   626→
+   627→          {/* ═══ FISCAL & SAVINGS ═════════════════════════════════════════════ */}
+   628→          <TabsContent value="fiscal" className="space-y-5">
+   629→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   630→              <KpiCard title={t.kpiSavings} value="42.5" unit="% GDP" icon={DollarSign} color={COLORS.emerald} />
+   631→              <KpiCard title={t.kpiInvest} value="40.0" unit="% GDP" icon={Factory} color={COLORS.blue} />
+   632→              <KpiCard title={t.kpiDebt} value="41.0" unit="%" change={-2.0} changeDir="down" icon={Scale} color={COLORS.amber} />
+   633→              <KpiCard title={t.kpiFiscalDeficit} value="1.0" unit="% GDP" change={-1.0} changeDir="down" icon={Activity} color={COLORS.purple} />
+   634→            </div>
+   635→
+   636→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   637→              <ChartCard title={t.chartFiscal} subtitle={t.chartFiscalSub}>
+   638→                <ChartContainer config={{
+   639→                  revenuePctGdp: { label: t.chartRevenue, color: COLORS.emerald },
+   640→                  expenditurePctGdp: { label: t.chartExpenditure, color: COLORS.red },
+   641→                  deficitPctGdp: { label: t.chartDeficit, color: COLORS.amber },
+   642→                }} className="h-[340px] w-full">
+   643→                  <ComposedChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   644→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   645→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   646→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   647→                    <ChartTooltip content={<ChartTooltipContent />} />
+   648→                    <Legend content={<ChartLegendContent />} />
+   649→                    <Bar dataKey="revenuePctGdp" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartRevenue} />
+   650→                    <Bar dataKey="expenditurePctGdp" fill={COLORS.red} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartExpenditure} />
+   651→                    <Line type="monotone" dataKey="deficitPctGdp" stroke={COLORS.amber} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartDeficit} />
+   652→                  </ComposedChart>
+   653→                </ChartContainer>
+   654→              </ChartCard>
+   655→
+   656→              <ChartCard title={t.chartSavingsInvest} subtitle={t.chartSavingsInvestSub}>
+   657→                <ChartContainer config={{
+   658→                  savingsRate: { label: t.chartSavingsRate, color: COLORS.emerald },
+   659→                  investRate: { label: t.chartInvestRate, color: COLORS.blue },
+   660→                }} className="h-[340px] w-full">
+   661→                  <AreaChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   662→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   663→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   664→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[30, 55]} />
+   665→                    <ChartTooltip content={<ChartTooltipContent />} />
+   666→                    <Legend content={<ChartLegendContent />} />
+   667→                    <Area type="monotone" dataKey="investRate" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.4} name={t.chartInvestRate} />
+   668→                    <Area type="monotone" dataKey="savingsRate" fill={COLORS.emeraldLight} stroke={COLORS.emerald} strokeWidth={2} fillOpacity={0.4} name={t.chartSavingsRate} />
+   669→                  </AreaChart>
+   670→                </ChartContainer>
+   671→              </ChartCard>
+   672→            </div>
+   673→
+   674→            <ChartCard title={t.chartDebt} subtitle={t.chartDebtSub}>
+   675→              <ChartContainer config={{ debtPctGdp: { label: t.chartDebtGdp, color: COLORS.red } }} className="h-[280px] w-full">
+   676→                <AreaChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   677→                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   678→                  <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+   679→                  <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 50]} />
+   680→                  <ChartTooltip content={<ChartTooltipContent />} />
+   681→                  <Area type="monotone" dataKey="debtPctGdp" fill={COLORS.redLight} stroke={COLORS.red} strokeWidth={2} fillOpacity={0.5} name={t.chartDebtGdp} />
+   682→                </AreaChart>
+   683→              </ChartContainer>
+   684→            </ChartCard>
+   685→          </TabsContent>
+   686→
+   687→          {/* ═══ REGIONAL ═════════════════════════════════════════════════════ */}
+   688→          <TabsContent value="regional" className="space-y-5">
+   689→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   690→              <ChartCard title={t.chartWilayaGdp} subtitle={t.chartWilayaGdpSub}>
+   691→                <ChartContainer config={{ gdpShare: { label: t.chartGdpShare, color: COLORS.emerald } }} className="h-[380px] w-full">
+   692→                  <BarChart data={wilayaData} layout="vertical" margin={{ top: 5, right: 10, left: 80, bottom: 0 }}>
+   693→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   694→                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+   695→                    <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 11 }} tickLine={false} width={75} />
+   696→                    <ChartTooltip content={<ChartTooltipContent />} />
+   697→                    <Bar dataKey="gdpShare" fill={COLORS.emerald} radius={[0, 4, 4, 0]} name={t.chartGdpShare}>
+   698→                      {wilayaData.map((_, i) => (
+   699→                        <Cell key={i} fill={[COLORS.emerald, COLORS.blue, COLORS.purple, COLORS.amber, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red][i]} />
+   700→                      ))}
+   701→                    </Bar>
+   702→                  </BarChart>
+   703→                </ChartContainer>
+   704→              </ChartCard>
+   705→
+   706→              <ChartCard title={t.chartWilayaUnemp} subtitle={t.chartWilayaUnempSub}>
+   707→                <ChartContainer config={{ unemployment: { label: t.chartUnempPct, color: COLORS.red } }} className="h-[380px] w-full">
+   708→                  <BarChart data={wilayaData} layout="vertical" margin={{ top: 5, right: 10, left: 80, bottom: 0 }}>
+   709→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   710→                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[0, 18]} />
+   711→                    <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 11 }} tickLine={false} width={75} />
+   712→                    <ChartTooltip content={<ChartTooltipContent />} />
+   713→                    <Bar dataKey="unemployment" radius={[0, 4, 4, 0]} name={t.chartUnempPct}>
+   714→                      {wilayaData.map((d) => (
+   715→                        <Cell key={d.wilaya} fill={d.unemployment >= 13 ? COLORS.red : d.unemployment >= 11 ? COLORS.amber : COLORS.emerald} />
+   716→                      ))}
+   717→                    </Bar>
+   718→                  </BarChart>
+   719→                </ChartContainer>
+   720→              </ChartCard>
+   721→            </div>
+   722→
+   723→            <ChartCard title={t.chartScatter} subtitle={t.chartScatterSub}>
+   724→              <ChartContainer config={{
+   725→                x: { label: t.chartPopK, color: COLORS.blue },
+   726→                y: { label: t.chartGdpShareLabel, color: COLORS.emerald },
+   727→              }} className="h-[350px] w-full">
+   728→                <ScatterChart margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
+   729→                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   730→                  <XAxis dataKey="populationK" name={t.chartPopK} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartPopThousands, position: "bottom", fontSize: 11 }} />
+   731→                  <YAxis dataKey="gdpShare" name={t.chartGdpShareLabel} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartGdpShareLabel, angle: isRtl ? 90 : -90, position: "insideLeft", fontSize: 11 }} />
+   732→                  <ZAxis dataKey="unemployment" range={[80, 400]} name={t.chartUnempPctLabel} />
+   733→                  <ChartTooltip content={<ChartTooltipContent />} />
+   734→                  <Scatter data={wilayaData} fill={COLORS.emerald}>
+   735→                    {wilayaData.map((_, i) => (
+   736→                      <Cell key={i} fill={[COLORS.emerald, COLORS.blue, COLORS.purple, COLORS.amber, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red][i]} />
+   737→                    ))}
+   738→                  </Scatter>
+   739→                </ScatterChart>
+   740→              </ChartContainer>
+   741→            </ChartCard>
+   742→          </TabsContent>
+   743→
+   744→          {/* ═══ HYDROCARBONS ════════════════════════════════════════════ */}
+   745→          <TabsContent value="hydro" className="space-y-5">
+   746→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   747→              <KpiCard title={t.kpiHydroRevenue} value="33.0" unit="bn $" change={10.0} changeDir="up" icon={Droplets} color={COLORS.amber} />
+   748→              <KpiCard title={t.kpiOilProd} value="0.98" unit="Mb/j" icon={Droplets} color={COLORS.emerald} />
+   749→              <KpiCard title={t.kpiGasProd} value="105" unit="Bcm" icon={Droplets} color={COLORS.blue} />
+   750→              <KpiCard title={t.kpiHydroGdpShare} value="23.5" unit="%" icon={Activity} color={COLORS.red} />
+   751→            </div>
+   752→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   753→              <KpiCard title={t.kpiOilPrice} value="76.0" unit="$/bbl" change={-2.6} changeDir="down" icon={DollarSign} color={COLORS.red} />
+   754→              <KpiCard title={t.kpiHydroExports} value="38.8" unit="bn $" change={7.8} changeDir="up" icon={Globe} color={COLORS.emerald} />
+   755→              <KpiCard title={t.kpiReservesOil} value="12.2" unit="Bn bbl" icon={Droplets} color={COLORS.amber} />
+   756→              <KpiCard title={t.kpiReservesGas} value="4.5" unit="Tcm" icon={Zap} color={COLORS.blue} />
+   757→            </div>
+   758→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   759→              <ChartCard title={t.chartHydroRevenue} subtitle={t.chartHydroRevenueSub}>
+   760→                <ChartContainer config={{ hydroRevBn: { label: t.chartHydroRevLabel, color: COLORS.amber }, exportsBn: { label: t.chartExportsLabel, color: COLORS.emerald } }} className="h-[320px] w-full">
+   761→                  <ComposedChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   762→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   763→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   764→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   765→                    <ChartTooltip content={<ChartTooltipContent />} />
+   766→                    <Legend content={<ChartLegendContent />} />
+   767→                    <Bar dataKey="hydroRevBn" fill={COLORS.amber} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartHydroRevLabel} />
+   768→                    <Line type="monotone" dataKey="exportsBn" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 2 }} name={t.chartExportsLabel} />
+   769→                  </ComposedChart>
+   770→                </ChartContainer>
+   771→              </ChartCard>
+   772→              <ChartCard title={t.chartHydroVsNonHydro} subtitle={t.chartHydroVsNonHydroSub}>
+   773→                <ChartContainer config={{ hydroExports: { label: t.chartHydroExportLabel, color: COLORS.amber }, nonHydroExports: { label: t.chartNonHydroExportLabel, color: COLORS.blue } }} className="h-[320px] w-full">
+   774→                  <AreaChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   775→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   776→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   777→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   778→                    <ChartTooltip content={<ChartTooltipContent />} />
+   779→                    <Legend content={<ChartLegendContent />} />
+   780→                    <Area type="monotone" stackId="1" dataKey="nonHydroExports" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.5} name={t.chartNonHydroExportLabel} />
+   781→                    <Area type="monotone" stackId="1" dataKey="hydroExports" fill={COLORS.amberLight} stroke={COLORS.amber} strokeWidth={2} fillOpacity={0.5} name={t.chartHydroExportLabel} />
+   782→                  </AreaChart>
+   783→                </ChartContainer>
+   784→              </ChartCard>
+   785→            </div>
+   786→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   787→              <ChartCard title={t.chartOilPrice} subtitle={t.chartOilPriceSub}>
+   788→                <ChartContainer config={{ oilPrice: { label: t.chartOilPriceLabel, color: COLORS.red } }} className="h-[280px] w-full">
+   789→                  <AreaChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   790→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   791→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   792→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   793→                    <ChartTooltip content={<ChartTooltipContent />} />
+   794→                    <Area type="monotone" dataKey="oilPrice" fill={COLORS.redLight} stroke={COLORS.red} strokeWidth={2} fillOpacity={0.4} name={t.chartOilPriceLabel} />
+   795→                  </AreaChart>
+   796→                </ChartContainer>
+   797→              </ChartCard>
+   798→              <ChartCard title={t.chartHydroGdp} subtitle={t.chartHydroGdpSub}>
+   799→                <ChartContainer config={{ gdpContribPct: { label: t.kpiHydroGdpShare, color: COLORS.purple } }} className="h-[280px] w-full">
+   800→                  <AreaChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   801→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   802→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   803→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[15, 40]} />
+   804→                    <ChartTooltip content={<ChartTooltipContent />} />
+   805→                    <Area type="monotone" dataKey="gdpContribPct" fill={COLORS.purpleLight} stroke={COLORS.purple} strokeWidth={2} fillOpacity={0.4} name={t.kpiHydroGdpShare} />
+   806→                  </AreaChart>
+   807→                </ChartContainer>
+   808→              </ChartCard>
+   809→            </div>
+   810→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   811→              <ChartCard title={t.chartOilProduction} subtitle={t.chartOilProductionSub}>
+   812→                <ChartContainer config={{ oilProdMbpd: { label: t.chartOilProdLabel, color: COLORS.amber }, gasProdBcm: { label: t.chartGasProdLabel, color: COLORS.blue } }} className="h-[300px] w-full">
+   813→                  <ComposedChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   814→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   815→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   816→                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} domain={[0.8, 1.7]} />
+   817→                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[75, 110]} />
+   818→                    <ChartTooltip content={<ChartTooltipContent />} />
+   819→                    <Legend content={<ChartLegendContent />} />
+   820→                    <Bar yAxisId="left" dataKey="oilProdMbpd" fill={COLORS.amber} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartOilProdLabel} />
+   821→                    <Line yAxisId="right" type="monotone" dataKey="gasProdBcm" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartGasProdLabel} />
+   822→                  </ComposedChart>
+   823→                </ChartContainer>
+   824→              </ChartCard>
+   825→              <ChartCard title={t.chartReservesPie} subtitle={t.chartReservesPieSub}>
+   826→                <ChartContainer config={{ reservesOilBn: { label: t.chartOilReservesLabel, color: COLORS.amber }, reservesGasTcm: { label: t.chartGasReservesLabel, color: COLORS.blue } }} className="h-[300px] w-full">
+   827→                  <PieChart>
+   828→                    <ChartTooltip content={<ChartTooltipContent />} />
+   829→                    <Legend content={<ChartLegendContent />} />
+   830→                    <Pie data={[
+   831→                      { name: t.chartOilReservesLabel, value: hydrocarbons[hydrocarbons.length - 1].reservesOilBn },
+   832→                      { name: t.chartGasReservesLabel, value: hydrocarbons[hydrocarbons.length - 1].reservesGasTcm * 2.7 },
+   833→                    ]} cx="50%" cy="50%" innerRadius={60} outerRadius={100} dataKey="value" nameKey="name" paddingAngle={2}>
+   834→                      <Cell fill={COLORS.amber} />
+   835→                      <Cell fill={COLORS.blue} />
+   836→                    </Pie>
+   837→                  </PieChart>
+   838→                </ChartContainer>
+   839→              </ChartCard>
+   840→            </div>
+   841→          </TabsContent>
+   842→
+   843→          {/* ═══ AGRICULTURE ═════════════════════════════════════════════ */}
+   844→          <TabsContent value="agriculture" className="space-y-5">
+   845→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   846→              <KpiCard title={t.kpiCerealProd} value="5.0" unit="Mt" icon={Sprout} color={COLORS.emerald} />
+   847→              <KpiCard title={t.kpiSelfSuffic} value="33" unit="%" icon={Scale} color={COLORS.amber} />
+   848→              <KpiCard title={t.kpiAgriExports} value="0.82" unit="bn $" icon={Package} color={COLORS.blue} />
+   849→              <KpiCard title={t.kpiAgriEmploy} value="11.5" unit="%" icon={Users} color={COLORS.purple} />
+   850→            </div>
+   851→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   852→              <KpiCard title={t.kpiVegProd} value="11.8" unit="Mt" icon={Sprout} color={COLORS.emerald} change={2.6} changeDir="up" />
+   853→              <KpiCard title={t.kpiFruitProd} value="6.4" unit="Mt" icon={Sprout} color={COLORS.rose} change={3.2} changeDir="up" />
+   854→              <KpiCard title={t.kpiMilkProd} value="3.8" unit="B litres" icon={Heart} color={COLORS.blue} change={5.6} changeDir="up" />
+   855→              <KpiCard title={t.kpiIrrigatedLand} value="1.9" unit="M ha" icon={Droplets} color={COLORS.cyan} change={2.7} changeDir="up" />
+   856→            </div>
+   857→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   858→              <ChartCard title={t.chartCerealProd} subtitle={t.chartCerealProdSub}>
+   859→                <ChartContainer config={{ cerealProdMt: { label: t.chartCerealLabel, color: COLORS.emerald }, selfSufficCereals: { label: t.chartSelfSufficLabel, color: COLORS.amber } }} className="h-[320px] w-full">
+   860→                  <ComposedChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   861→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   862→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   863→                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
+   864→                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[20, 50]} />
+   865→                    <ChartTooltip content={<ChartTooltipContent />} />
+   866→                    <Legend content={<ChartLegendContent />} />
+   867→                    <Bar yAxisId="left" dataKey="cerealProdMt" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartCerealLabel} />
+   868→                    <Line yAxisId="right" type="monotone" dataKey="selfSufficCereals" stroke={COLORS.amber} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartSelfSufficLabel} />
+   869→                  </ComposedChart>
+   870→                </ChartContainer>
+   871→              </ChartCard>
+   872→              <ChartCard title={t.chartVegFruitProd} subtitle={t.chartVegFruitProdSub}>
+   873→                <ChartContainer config={{ vegProdMt: { label: t.chartVegLabel, color: COLORS.emerald }, fruitProdMt: { label: t.chartFruitLabel, color: COLORS.rose } }} className="h-[320px] w-full">
+   874→                  <AreaChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   875→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   876→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   877→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   878→                    <ChartTooltip content={<ChartTooltipContent />} />
+   879→                    <Legend content={<ChartLegendContent />} />
+   880→                    <Area type="monotone" stackId="1" dataKey="fruitProdMt" fill={COLORS.roseLight} stroke={COLORS.rose} strokeWidth={2} fillOpacity={0.5} name={t.chartFruitLabel} />
+   881→                    <Area type="monotone" stackId="1" dataKey="vegProdMt" fill={COLORS.emeraldLight} stroke={COLORS.emerald} strokeWidth={2} fillOpacity={0.5} name={t.chartVegLabel} />
+   882→                  </AreaChart>
+   883→                </ChartContainer>
+   884→              </ChartCard>
+   885→            </div>
+   886→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   887→              <ChartCard title={t.chartLivestock} subtitle={t.chartLivestockSub}>
+   888→                <ChartContainer config={{ milkProdMl: { label: t.chartMilkLabel, color: COLORS.blue }, meatProdMt: { label: t.chartMeatLabel, color: COLORS.red } }} className="h-[300px] w-full">
+   889→                  <LineChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   890→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   891→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   892→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   893→                    <ChartTooltip content={<ChartTooltipContent />} />
+   894→                    <Legend content={<ChartLegendContent />} />
+   895→                    <Line type="monotone" dataKey="milkProdMl" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartMilkLabel} />
+   896→                    <Line type="monotone" dataKey="meatProdMt" stroke={COLORS.red} strokeWidth={2} dot={{ r: 2 }} name={t.chartMeatLabel} />
+   897→                  </LineChart>
+   898→                </ChartContainer>
+   899→              </ChartCard>
+   900→              <ChartCard title={t.chartLandUse} subtitle={t.chartLandUseSub}>
+   901→                <ChartContainer config={{ irrigatedLandMha: { label: t.chartIrrigatedLabel, color: COLORS.cyan }, totalLandMha: { label: t.chartTotalLandLabel, color: COLORS.slate } }} className="h-[300px] w-full">
+   902→                  <AreaChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   903→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   904→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   905→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 10]} />
+   906→                    <ChartTooltip content={<ChartTooltipContent />} />
+   907→                    <Legend content={<ChartLegendContent />} />
+   908→                    <Area type="monotone" dataKey="totalLandMha" fill={COLORS.slateLight} stroke={COLORS.slate} strokeWidth={2} fillOpacity={0.3} name={t.chartTotalLandLabel} />
+   909→                    <Area type="monotone" dataKey="irrigatedLandMha" fill={COLORS.cyanLight} stroke={COLORS.cyan} strokeWidth={2} fillOpacity={0.6} name={t.chartIrrigatedLabel} />
+   910→                  </AreaChart>
+   911→                </ChartContainer>
+   912→              </ChartCard>
+   913→            </div>
+   914→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   915→              <ChartCard title={t.chartOliveDateProd} subtitle={t.chartOliveDateProdSub}>
+   916→                <ChartContainer config={{ oliveProdMt: { label: t.chartOliveLabel, color: COLORS.emerald }, dateProdMt: { label: t.chartDateLabel, color: COLORS.amber } }} className="h-[300px] w-full">
+   917→                  <LineChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   918→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   919→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   920→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   921→                    <ChartTooltip content={<ChartTooltipContent />} />
+   922→                    <Legend content={<ChartLegendContent />} />
+   923→                    <Line type="monotone" dataKey="oliveProdMt" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartOliveLabel} />
+   924→                    <Line type="monotone" dataKey="dateProdMt" stroke={COLORS.amber} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartDateLabel} />
+   925→                  </LineChart>
+   926→                </ChartContainer>
+   927→              </ChartCard>
+   928→              <ChartCard title={t.chartAgriExports} subtitle={t.chartAgriExportsSub}>
+   929→                <ChartContainer config={{ agriExportsBn: { label: t.chartAgriExportsLabel, color: COLORS.blue } }} className="h-[300px] w-full">
+   930→                  <AreaChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   931→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   932→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   933→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+   934→                    <ChartTooltip content={<ChartTooltipContent />} />
+   935→                    <Area type="monotone" dataKey="agriExportsBn" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2.5} fillOpacity={0.4} name={t.chartAgriExportsLabel} />
+   936→                  </AreaChart>
+   937→                </ChartContainer>
+   938→              </ChartCard>
+   939→            </div>
+   940→          </TabsContent>
+   941→
+   942→          {/* ═══ MANUFACTURING ══════════════════════════════════════════ */}
+   943→          <TabsContent value="manufacturing" className="space-y-5">
+   944→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   945→              <KpiCard title={t.kpiFoodIndustry} value="110" icon={Factory} color={COLORS.emerald} />
+   946→              <KpiCard title={t.kpiPharma} value="128" change={5.0} changeDir="up" icon={Heart} color={COLORS.purple} />
+   947→              <KpiCard title={t.kpiTextiles} value="86" icon={Factory} color={COLORS.amber} />
+   948→              <KpiCard title={t.kpiChemicals} value="107" icon={Factory} color={COLORS.blue} />
+   949→            </div>
+   950→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+   951→              <KpiCard title={t.kpiMetallurgy} value="102" icon={Hammer} color={COLORS.slate} />
+   952→              <KpiCard title={t.kpiBuildingMat} value="112" change={1.8} changeDir="up" icon={Building2} color={COLORS.orange} />
+   953→              <KpiCard title={t.kpiElectrical} value="94" icon={Zap} color={COLORS.cyan} />
+   954→              <KpiCard title={t.kpiPaper} value="98" icon={Package} color={COLORS.rose} />
+   955→            </div>
+   956→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+   957→              <ChartCard title={t.chartManufSubsectors} subtitle={t.chartManufSubsectorsSub}>
+   958→                <ChartContainer config={{
+   959→                  foodIndustry: { label: t.chartFoodLabel, color: COLORS.emerald },
+   960→                  textiles: { label: t.chartTextileLabel, color: COLORS.amber },
+   961→                  chemicals: { label: t.chartChemicalLabel, color: COLORS.blue },
+   962→                  metallurgy: { label: t.chartMetallurgyLabel, color: COLORS.slate },
+   963→                  electrics: { label: t.chartElectricLabel, color: COLORS.cyan },
+   964→                  pharma: { label: t.chartPharmaLabel, color: COLORS.purple },
+   965→                }} className="h-[380px] w-full">
+   966→                  <LineChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+   967→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+   968→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+   969→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[70, 135]} />
+   970→                    <ChartTooltip content={<ChartTooltipContent />} />
+   971→                    <Legend content={<ChartLegendContent />} />
+   972→                    <Line type="monotone" dataKey="textiles" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartTextileLabel} />
+   973→                    <Line type="monotone" dataKey="metallurgy" stroke={COLORS.slate} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartMetallurgyLabel} />
+   974→                    <Line type="monotone" dataKey="electrics" stroke={COLORS.cyan} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name={t.chartElectricLabel} />
+   975→                    <Line type="monotone" dataKey="chemicals" stroke={COLORS.blue} strokeWidth={2} dot={false} name={t.chartChemicalLabel} />
+   976→                    <Line type="monotone" dataKey="pharma" stroke={COLORS.purple} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartPharmaLabel} />
+   977→                    <Line type="monotone" dataKey="foodIndustry" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartFoodLabel} />
+   978→                  </LineChart>
+   979→                </ChartContainer>
+   980→              </ChartCard>
+   981→              <ChartCard title={t.chartManufRadar} subtitle={t.chartManufRadarSub}>
+   982→                <ChartContainer config={{
+   983→                  foodIndustry: { label: t.chartFoodLabel, color: COLORS.emerald },
+   984→                  textiles: { label: t.chartTextileLabel, color: COLORS.amber },
+   985→                  chemicals: { label: t.chartChemicalLabel, color: COLORS.blue },
+   986→                  metallurgy: { label: t.chartMetallurgyLabel, color: COLORS.slate },
+   987→                  electrics: { label: t.chartElectricLabel, color: COLORS.cyan },
+   988→                  buildingMat: { label: t.chartBuildingMatLabel, color: COLORS.orange },
+   989→                  pharma: { label: t.chartPharmaLabel, color: COLORS.purple },
+   990→                  paper: { label: t.chartPaperLabel, color: COLORS.rose },
+   991→                }} className="h-[380px] w-full">
+   992→                  <RadarChart cx="50%" cy="50%" outerRadius={120} data={[
+   993→                    { key: t.chartFoodLabel, value: manufacturingData[manufacturingData.length - 1].foodIndustry },
+   994→                    { key: t.chartTextileLabel, value: manufacturingData[manufacturingData.length - 1].textiles },
+   995→                    { key: t.chartChemicalLabel, value: manufacturingData[manufacturingData.length - 1].chemicals },
+   996→                    { key: t.chartMetallurgyLabel, value: manufacturingData[manufacturingData.length - 1].metallurgy },
+   997→                    { key: t.chartElectricLabel, value: manufacturingData[manufacturingData.length - 1].electrics },
+   998→                    { key: t.chartBuildingMatLabel, value: manufacturingData[manufacturingData.length - 1].buildingMat },
+   999→                    { key: t.chartPharmaLabel, value: manufacturingData[manufacturingData.length - 1].pharma },
+  1000→                    { key: t.chartPaperLabel, value: manufacturingData[manufacturingData.length - 1].paper },
+  1001→                  ]}>
+  1002→                    <PolarGrid stroke="#e2e8f0" />
+  1003→                    <PolarAngleAxis dataKey="key" tick={{ fontSize: 9 }} />
+  1004→                    <PolarRadiusAxis tick={{ fontSize: 9 }} domain={[70, 135]} />
+  1005→                    <Radar name="2024" stroke={COLORS.emerald} fill={COLORS.emeraldLight} fillOpacity={0.4} strokeWidth={2} />
+  1006→                  </RadarChart>
+  1007→                </ChartContainer>
+  1008→              </ChartCard>
+  1009→            </div>
+  1010→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+  1011→              <ChartCard title={t.chartManufBuildingPaper} subtitle={t.chartManufBuildingPaperSub}>
+  1012→                <ChartContainer config={{ buildingMat: { label: t.chartBuildingMatLabel, color: COLORS.orange }, paper: { label: t.chartPaperLabel, color: COLORS.rose } }} className="h-[300px] w-full">
+  1013→                  <LineChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1014→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1015→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1016→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[80, 120]} />
+  1017→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1018→                    <Legend content={<ChartLegendContent />} />
+  1019→                    <Line type="monotone" dataKey="buildingMat" stroke={COLORS.orange} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartBuildingMatLabel} />
+  1020→                    <Line type="monotone" dataKey="paper" stroke={COLORS.rose} strokeWidth={2} dot={{ r: 2 }} strokeDasharray="4 2" name={t.chartPaperLabel} />
+  1021→                  </LineChart>
+  1022→                </ChartContainer>
+  1023→              </ChartCard>
+  1024→              <ChartCard title={t.chartManufEmployCapacity} subtitle={t.chartManufEmployCapacitySub}>
+  1025→                <ChartContainer config={{ manufEmployK: { label: t.chartEmployLabel, color: COLORS.purple }, capacityUtilPct: { label: t.chartCapacityLabel, color: COLORS.blue }, manufExportsBn: { label: t.chartManufExportLabel, color: COLORS.emerald } }} className="h-[300px] w-full">
+  1026→                  <ComposedChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1027→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1028→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1029→                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
+  1030→                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[40, 80]} />
+  1031→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1032→                    <Legend content={<ChartLegendContent />} />
+  1033→                    <Bar yAxisId="left" dataKey="manufExportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartManufExportLabel} />
+  1034→                    <Line yAxisId="right" type="monotone" dataKey="capacityUtilPct" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartCapacityLabel} />
+  1035→                    <Line yAxisId="left" type="monotone" dataKey="manufEmployK" stroke={COLORS.purple} strokeWidth={2} dot={{ r: 2 }} strokeDasharray="4 2" name={t.chartEmployLabel} />
+  1036→                  </ComposedChart>
+  1037→                </ChartContainer>
+  1038→              </ChartCard>
+  1039→            </div>
+  1040→          </TabsContent>
+  1041→
+  1042→          {/* ═══ BTP ═════════════════════════════════════════════════════ */}
+  1043→          <TabsContent value="btp" className="space-y-5">
+  1044→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+  1045→              <KpiCard title={t.kpiHousingUnits} value="350" unit="K" change={2.9} changeDir="up" icon={Building2} color={COLORS.emerald} />
+  1046→              <KpiCard title={t.kpiCementProd} value="24.5" unit="Mt" change={4.3} changeDir="up" icon={Factory} color={COLORS.blue} />
+  1047→              <KpiCard title={t.kpiBTPGdp} value="10.2" unit="%" icon={Activity} color={COLORS.amber} />
+  1048→              <KpiCard title={t.kpiBTPEmploy} value="1150" unit="K" icon={Users} color={COLORS.purple} />
+  1049→            </div>
+  1050→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+  1051→              <ChartCard title={t.chartHousingUnits} subtitle={t.chartHousingUnitsSub}>
+  1052→                <ChartContainer config={{ housingUnitsK: { label: t.chartHousingLabel, color: COLORS.emerald }, buildingPermitsK: { label: t.chartPermitsLabel, color: COLORS.amber } }} className="h-[320px] w-full">
+  1053→                  <ComposedChart data={btpData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1054→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1055→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1056→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+  1057→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1058→                    <Legend content={<ChartLegendContent />} />
+  1059→                    <Bar dataKey="housingUnitsK" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.85} name={t.chartHousingLabel} />
+  1060→                    <Line type="monotone" dataKey="buildingPermitsK" stroke={COLORS.amber} strokeWidth={2} dot={{ r: 3 }} name={t.chartPermitsLabel} />
+  1061→                  </ComposedChart>
+  1062→                </ChartContainer>
+  1063→              </ChartCard>
+  1064→              <ChartCard title={t.chartCementSteel} subtitle={t.chartCementSteelSub}>
+  1065→                <ChartContainer config={{ cementMt: { label: t.chartCementLabel, color: COLORS.blue }, steelMt: { label: t.chartSteelLabel, color: COLORS.slate } }} className="h-[320px] w-full">
+  1066→                  <LineChart data={btpData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1067→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1068→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1069→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+  1070→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1071→                    <Legend content={<ChartLegendContent />} />
+  1072→                    <Line type="monotone" dataKey="cementMt" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartCementLabel} />
+  1073→                    <Line type="monotone" dataKey="steelMt" stroke={COLORS.slate} strokeWidth={2} dot={false} strokeDasharray="4 2" name={t.chartSteelLabel} />
+  1074→                  </LineChart>
+  1075→                </ChartContainer>
+  1076→              </ChartCard>
+  1077→            </div>
+  1078→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+  1079→              <ChartCard title={t.chartBTPCostIndex} subtitle={t.chartBTPCostIndexSub}>
+  1080→                <ChartContainer config={{ costIndex: { label: t.chartCostIndexLabel, color: COLORS.amber } }} className="h-[280px] w-full">
+  1081→                  <BarChart data={btpData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1082→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1083→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1084→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[100, 170]} />
+  1085→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1086→                    <Bar dataKey="costIndex" fill={COLORS.amber} radius={[4, 4, 0, 0]} name={t.chartCostIndexLabel} />
+  1087→                  </BarChart>
+  1088→                </ChartContainer>
+  1089→              </ChartCard>
+  1090→              <ChartCard title={t.chartBTPInvest} subtitle={t.chartBTPInvestSub}>
+  1091→                <ChartContainer config={{ publicInvestBn: { label: t.chartPublicInvestLabel, color: COLORS.purple } }} className="h-[280px] w-full">
+  1092→                  <AreaChart data={btpData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1093→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1094→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1095→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+  1096→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1097→                    <Area type="monotone" dataKey="publicInvestBn" fill={COLORS.purpleLight} stroke={COLORS.purple} strokeWidth={2} fillOpacity={0.4} name={t.chartPublicInvestLabel} />
+  1098→                  </AreaChart>
+  1099→                </ChartContainer>
+  1100→              </ChartCard>
+  1101→            </div>
+  1102→          </TabsContent>
+  1103→
+  1104→          {/* ═══ SERVICES ══════════════════════════════════════════════════ */}
+  1105→          <TabsContent value="services" className="space-y-5">
+  1106→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+  1107→              <KpiCard title={t.kpiServicesGdp} value="51.3" unit="%" icon={Activity} color={COLORS.purple} />
+  1108→              <KpiCard title={t.kpiTrade} value="12.8" unit="%" icon={Globe} color={COLORS.emerald} />
+  1109→              <KpiCard title={t.kpiTransport} value="7.5" unit="%" icon={Truck} color={COLORS.blue} />
+  1110→              <KpiCard title={t.kpiTelecom} value="6.5" unit="%" icon={Zap} color={COLORS.cyan} />
+  1111→            </div>
+  1112→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+  1113→              <ChartCard title={t.chartServicesTrend} subtitle={t.chartServicesTrendSub}>
+  1114→                <ChartContainer config={{ gdpContribPct: { label: t.kpiServicesGdp, color: COLORS.purple } }} className="h-[320px] w-full">
+  1115→                  <AreaChart data={servicesData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1116→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1117→                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+  1118→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[45, 55]} />
+  1119→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1120→                    <Area type="monotone" dataKey="gdpContribPct" fill={COLORS.purpleLight} stroke={COLORS.purple} strokeWidth={2.5} fillOpacity={0.4} name={t.kpiServicesGdp} />
+  1121→                  </AreaChart>
+  1122→                </ChartContainer>
+  1123→              </ChartCard>
+  1124→              <ChartCard title={t.chartServicesComposition} subtitle={t.chartServicesCompositionSub}>
+  1125→                <ChartContainer config={{
+  1126→                  trade: { label: t.chartTradeLabel, color: COLORS.emerald },
+  1127→                  transport: { label: t.chartTransportLabel, color: COLORS.blue },
+  1128→                  telecom: { label: t.chartTelecomLabel, color: COLORS.cyan },
+  1129→                  finance: { label: t.chartFinanceLabel, color: COLORS.amber },
+  1130→                  tourism: { label: t.chartTourismLabel, color: COLORS.rose },
+  1131→                  govtServices: { label: t.chartGovtLabel, color: COLORS.slate },
+  1132→                }} className="h-[320px] w-full">
+  1133→                  <BarChart data={servicesData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1134→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1135→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1136→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+  1137→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1138→                    <Legend content={<ChartLegendContent />} />
+  1139→                    <Bar dataKey="trade" fill={COLORS.emerald} radius={[2, 2, 0, 0]} stackId="1" name={t.chartTradeLabel} />
+  1140→                    <Bar dataKey="transport" fill={COLORS.blue} radius={[0, 0, 0, 0]} stackId="1" name={t.chartTransportLabel} />
+  1141→                    <Bar dataKey="telecom" fill={COLORS.cyan} radius={[0, 0, 0, 0]} stackId="1" name={t.chartTelecomLabel} />
+  1142→                    <Bar dataKey="finance" fill={COLORS.amber} radius={[0, 0, 0, 0]} stackId="1" name={t.chartFinanceLabel} />
+  1143→                    <Bar dataKey="tourism" fill={COLORS.rose} radius={[0, 0, 0, 0]} stackId="1" name={t.chartTourismLabel} />
+  1144→                    <Bar dataKey="govtServices" fill={COLORS.slate} radius={[2, 2, 0, 0]} stackId="1" name={t.chartGovtLabel} />
+  1145→                  </BarChart>
+  1146→                </ChartContainer>
+  1147→              </ChartCard>
+  1148→            </div>
+  1149→          </TabsContent>
+  1150→
+  1151→          {/* ═══ MINING & ENERGY ══════════════════════════════════════════ */}
+  1152→          <TabsContent value="mining" className="space-y-5">
+  1153→            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+  1154→              <KpiCard title={t.kpiElectricity} value="72" unit="TWh" icon={Zap} color={COLORS.cyan} />
+  1155→              <KpiCard title={t.kpiGasConsump} value="42" unit="Bcm" icon={Droplets} color={COLORS.blue} />
+  1156→              <KpiCard title={t.kpiIronOre} value="3.8" unit="Mt" icon={Factory} color={COLORS.amber} />
+  1157→              <KpiCard title={t.kpiPhosphate} value="1.5" unit="Mt" icon={Factory} color={COLORS.emerald} />
+  1158→            </div>
+  1159→            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+  1160→              <ChartCard title={t.chartMiningProd} subtitle={t.chartMiningProdSub}>
+  1161→                <ChartContainer config={{
+  1162→                  ironOreMt: { label: t.chartIronOreLabel, color: COLORS.amber },
+  1163→                  phosphateMt: { label: t.chartPhosphateLabel, color: COLORS.emerald },
+  1164→                }} className="h-[320px] w-full">
+  1165→                  <LineChart data={miningEnergy} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1166→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1167→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1168→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+  1169→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1170→                    <Legend content={<ChartLegendContent />} />
+  1171→                    <Line type="monotone" dataKey="ironOreMt" stroke={COLORS.amber} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartIronOreLabel} />
+  1172→                    <Line type="monotone" dataKey="phosphateMt" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartPhosphateLabel} />
+  1173→                  </LineChart>
+  1174→                </ChartContainer>
+  1175→              </ChartCard>
+  1176→              <ChartCard title={t.chartElectricity} subtitle={t.chartElectricitySub}>
+  1177→                <ChartContainer config={{ electricityTwh: { label: t.chartElectricityLabel, color: COLORS.cyan } }} className="h-[320px] w-full">
+  1178→                  <BarChart data={miningEnergy} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1179→                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1180→                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1181→                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[40, 80]} />
+  1182→                    <ChartTooltip content={<ChartTooltipContent />} />
+  1183→                    <Bar dataKey="electricityTwh" fill={COLORS.cyan} radius={[4, 4, 0, 0]} name={t.chartElectricityLabel} />
+  1184→                  </BarChart>
+  1185→                </ChartContainer>
+  1186→              </ChartCard>
+  1187→            </div>
+  1188→            <ChartCard title={t.chartEnergyConsump} subtitle={t.chartEnergyConsumpSub}>
+  1189→              <ChartContainer config={{ gasConsumptionBcm: { label: t.chartGasConsumpLabel, color: COLORS.blue }, petrolConsumptionMt: { label: t.chartPetrolConsumpLabel, color: COLORS.red } }} className="h-[280px] w-full">
+  1190→                <LineChart data={miningEnergy} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+  1191→                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+  1192→                  <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+  1193→                  <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+  1194→                  <ChartTooltip content={<ChartTooltipContent />} />
+  1195→                  <Legend content={<ChartLegendContent />} />
+  1196→                  <Line type="monotone" dataKey="gasConsumptionBcm" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 3 }} name={t.chartGasConsumpLabel} />
+  1197→                  <Line type="monotone" dataKey="petrolConsumptionMt" stroke={COLORS.red} strokeWidth={2} dot={false} strokeDasharray="4 2" name={t.chartPetrolConsumpLabel} />
+  1198→                </LineChart>
+  1199→              </ChartContainer>
+  1200→            </ChartCard>
+  1201→          </TabsContent>
+  1202→        </Tabs>
+  1203→
+  1204→        {/* Source footer */}
+  1205→        <Separator className="my-6" />
+  1206→        <footer className="text-center text-xs text-muted-foreground pb-4">
+  1207→          <p>{t.footer}</p>
+  1208→        </footer>
+  1209→      </main>
+  1210→    </div>
+  1211→  );
+  1212→}
