@@ -1,0 +1,444 @@
+- LayoutTable
+  - LayoutTableRow
+    - LayoutTableCell "الديوان الوطني للإحصائيات Office National des Statistiques"
+      - LayoutTable
+        - LayoutTableRow
+          - LayoutTableCell "الديوان الوطني للإحصائيات Office National des Statistiques"
+            - LayoutTable
+              - LayoutTableRow
+                - LayoutTableCell
+                  - image
+                - LayoutTableCell "الديوان الوطني للإحصائيات Office National des Statistiques"
+                  - generic
+                    - StaticText "الديوان الوطني للإحصائيات"
+                    - LineBreak "\n"
+                    - StaticText "Office National des Statistiques"
+          - LayoutTableCell
+            - LayoutTable
+              - LayoutTableRow
+                - LayoutTableCell
+                  - image
+  - LayoutTableRow
+    - LayoutTableCell "Accueil Présentation Statistiques Sociales Statistiques Economiques Répertoires Indices Publications Nomenclatures Contact"
+      - generic
+        - list
+          - listitem [level=1]
+            - link "Accueil" [ref=e1]
+          - listitem [level=1]
+            - link "Présentation" [ref=e2]
+          - listitem [level=1]
+            - link "Statistiques Sociales" [ref=e3]
+          - listitem [level=1]
+            - link "Statistiques Economiques" [ref=e4]
+          - listitem [level=1]
+            - link "Répertoires" [ref=e5]
+          - listitem [level=1]
+            - link "Indices" [ref=e6]
+          - listitem [level=1]
+            - link "Publications" [ref=e7]
+          - listitem [level=1]
+            - link "Nomenclatures" [ref=e8]
+          - listitem [level=1]
+            - link "Contact" [ref=e9]
+  - LayoutTableRow
+    - LayoutTableCell ""
+  - LayoutTableRow
+    - LayoutTableCell "Nouveautés 1. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2023 - (New) 2. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2022 - 3. Indice des prix à la Consommation - Avril 2026 - 4. Enquête sur la situation et les perspectives dans l’industrie au 2éme trimestre 2025 5. Les Comptes Nationaux Trimestriels au 2 éme trimestre 2025 - 6. Indices du commerce extérieur de marchandises 1er semestre 2025 - 7. Indice de la Production Industrielle au 2éme trimestre 2025 - 8. Indice des Prix à la Production Industrielle au 2éme trimestre 2025 9. Les Comptes Economiques de 2021 à 2024 - 10. Indices du commerce extérieur de marchandises 1 ertrimestre 2025 (Base 2019) 11. Indices du commerce extérieur de marchandises - Année 2024 - (Base 2019) 12. Les Tableaux des Ressources et des Emplois 2021 - 2023 (Base 2001) "
+      - LayoutTable
+        - LayoutTableRow
+          - LayoutTableCell "Nouveautés 1. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2023 - (New) 2. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2022 - 3. Indice des prix à la Consommation - Avril 2026 - 4. Enquête sur la situation et les perspectives dans l’industrie au 2éme trimestre 2025 5. Les Comptes Nationaux Trimestriels au 2 éme trimestre 2025 - 6. Indices du commerce extérieur de marchandises 1er semestre 2025 - 7. Indice de la Production Industrielle au 2éme trimestre 2025 - 8. Indice des Prix à la Production Industrielle au 2éme trimestre 2025 9. Les Comptes Economiques de 2021 à 2024 - 10. Indices du commerce extérieur de marchandises 1 ertrimestre 2025 (Base 2019) 11. Indices du commerce extérieur de marchandises - Année 2024 - (Base 2019) 12. Les Tableaux des Ressources et des Emplois 2021 - 2023 (Base 2001)  Actualités"
+            - LayoutTable
+              - LayoutTableRow
+                - LayoutTableCell "Nouveautés 1. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2023 - (New) 2. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2022 - 3. Indice des prix à la Consommation - Avril 2026 - 4. Enquête sur la situation et les perspectives dans l’industrie au 2éme trimestre 2025 5. Les Comptes Nationaux Trimestriels au 2 éme trimestre 2025 - 6. Indices du commerce extérieur de marchandises 1er semestre 2025 - 7. Indice de la Production Industrielle au 2éme trimestre 2025 - 8. Indice des Prix à la Production Industrielle au 2éme trimestre 2025 9. Les Comptes Economiques de 2021 à 2024 - 10. Indices du commerce extérieur de marchandises 1 ertrimestre 2025 (Base 2019) 11. Indices du commerce extérieur de marchandises - Année 2024 - (Base 2019) 12. Les Tableaux des Ressources et des Emplois 2021 - 2023 (Base 2001)  Actualités"
+                  - LayoutTable
+                    - LayoutTableRow
+                      - LayoutTableCell "Nouveautés 1. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2023 - (New) 2. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2022 - 3. Indice des prix à la Consommation - Avril 2026 - 4. Enquête sur la situation et les perspectives dans l’industrie au 2éme trimestre 2025 5. Les Comptes Nationaux Trimestriels au 2 éme trimestre 2025 - 6. Indices du commerce extérieur de marchandises 1er semestre 2025 - 7. Indice de la Production Industrielle au 2éme trimestre 2025 - 8. Indice des Prix à la Production Industrielle au 2éme trimestre 2025 9. Les Comptes Economiques de 2021 à 2024 - 10. Indices du commerce extérieur de marchandises 1 ertrimestre 2025 (Base 2019) 11. Indices du commerce extérieur de marchandises - Année 2024 - (Base 2019) 12. Les Tableaux des Ressources et des Emplois 2021 - 2023 (Base 2001)  Actualités"
+                        - LayoutTable
+                          - LayoutTableRow
+                            - LayoutTableCell "Nouveautés 1. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2023 - (New) 2. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2022 - 3. Indice des prix à la Consommation - Avril 2026 - 4. Enquête sur la situation et les perspectives dans l’industrie au 2éme trimestre 2025 5. Les Comptes Nationaux Trimestriels au 2 éme trimestre 2025 - 6. Indices du commerce extérieur de marchandises 1er semestre 2025 - 7. Indice de la Production Industrielle au 2éme trimestre 2025 - 8. Indice des Prix à la Production Industrielle au 2éme trimestre 2025 9. Les Comptes Economiques de 2021 à 2024 - 10. Indices du commerce extérieur de marchandises 1 ertrimestre 2025 (Base 2019) 11. Indices du commerce extérieur de marchandises - Année 2024 - (Base 2019) 12. Les Tableaux des Ressources et des Emplois 2021 - 2023 (Base 2001)  Actualités Le : 15/7/26 Consultation pour l’acquisition des climatiseurs"
+                              - LayoutTable
+                                - LayoutTableRow
+                                  - LayoutTableCell "Nouveautés 1. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2023 - (New) 2. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2022 - 3. Indice des prix à la Consommation - Avril 2026 - 4. Enquête sur la situation et les perspectives dans l’industrie au 2éme trimestre 2025 5. Les Comptes Nationaux Trimestriels au 2 éme trimestre 2025 - 6. Indices du commerce extérieur de marchandises 1er semestre 2025 - 7. Indice de la Production Industrielle au 2éme trimestre 2025 - 8. Indice des Prix à la Production Industrielle au 2éme trimestre 2025 9. Les Comptes Economiques de 2021 à 2024 - 10. Indices du commerce extérieur de marchandises 1 ertrimestre 2025 (Base 2019) 11. Indices du commerce extérieur de marchandises - Année 2024 - (Base 2019) 12. Les Tableaux des Ressources et des Emplois 2021 - 2023 (Base 2001)  Actualités Le : 15/7/26 Consultation pour l’acquisition des climatiseurs L’Office National des Statistiques lance une consultation relative à l’acquisition des climatiseurs de marque(...)"
+                                    - LayoutTable
+                                      - LayoutTableRow
+                                        - LayoutTableCell
+                                      - LayoutTableRow
+                                        - LayoutTableCell "Nouveautés 1. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2023 - (New) 2. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2022 - 3. Indice des prix à la Consommation - Avril 2026 - 4. Enquête sur la situation et les perspectives dans l’industrie au 2éme trimestre 2025 5. Les Comptes Nationaux Trimestriels au 2 éme trimestre 2025 - 6. Indices du commerce extérieur de marchandises 1er semestre 2025 - 7. Indice de la Production Industrielle au 2éme trimestre 2025 - 8. Indice des Prix à la Production Industrielle au 2éme trimestre 2025 9. Les Comptes Economiques de 2021 à 2024 - 10. Indices du commerce extérieur de marchandises 1 ertrimestre 2025 (Base 2019) 11. Indices du commerce extérieur de marchandises - Année 2024 - (Base 2019) 12. Les Tableaux des Ressources et des Emplois 2021 - 2023 (Base 2001)"
+                                          - heading "Nouveautés" [level=3, ref=e10]
+                                          - generic
+                                            - link "1. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2023 - " [ref=e12]
+                                            - emphasis
+                                              - StaticText "(New)"
+                                          - link "2. Les répertoires des agents économique et sociaux - Personnes Physiques au 31/12/2022 -" [ref=e13]
+                                          - link "3. Indice des prix à la Consommation - Avril 2026 -" [ref=e14]
+                                          - link "4. Enquête sur la situation et les perspectives dans l’industrie au 2éme trimestre 2025" [ref=e15]
+                                            - StaticText "4. Enquête sur la situation et les perspectives dans l’industrie au 2"
+                                            - superscript
+                                              - StaticText "éme"
+                                            - StaticText " trimestre 2025"
+                                          - link "5. Les Comptes Nationaux Trimestriels au 2 éme trimestre 2025 -" [ref=e16]
+                                            - StaticText "5. Les Comptes Nationaux Trimestriels au 2 "
+                                            - superscript
+                                              - StaticText "éme"
+                                            - StaticText " trimestre 2025 -"
+                                          - link "6. Indices du commerce extérieur de marchandises 1er semestre 2025 -" [ref=e17]
+                                            - StaticText "6. Indices du commerce extérieur de marchandises 1"
+                                            - superscript
+                                              - StaticText "er"
+                                            - StaticText " semestre 2025 -"
+                                          - link "7. Indice de la Production Industrielle au 2éme trimestre 2025 -" [ref=e18]
+                                            - StaticText "7. Indice de la Production Industrielle au 2"
+                                            - superscript
+                                              - StaticText "éme"
+                                            - StaticText " trimestre 2025 -"
+                                          - link "8. Indice des Prix à la Production Industrielle au 2éme trimestre 2025" [ref=e19]
+                                            - StaticText "8. Indice des Prix à la Production Industrielle au 2"
+                                            - superscript
+                                              - StaticText "éme"
+                                            - StaticText " trimestre 2025"
+                                          - link "9. Les Comptes Economiques de 2021 à 2024 -" [ref=e20]
+                                          - link "10. Indices du commerce extérieur de marchandises 1 ertrimestre 2025 (Base 2019)" [ref=e21]
+                                            - StaticText "10. Indices du commerce extérieur de marchandises 1 "
+                                            - superscript
+                                              - StaticText "er"
+                                            - StaticText "trimestre 2025 (Base 2019)"
+                                          - link "11. Indices du commerce extérieur de marchandises - Année 2024 - (Base 2019)" [ref=e22]
+                                          - link "12. Les Tableaux des Ressources et des Emplois 2021 - 2023 (Base 2001)" [ref=e23]
+                                      - LayoutTableRow
+                                        - LayoutTableCell ""
+                                      - LayoutTableRow
+                                        - LayoutTableCell "Actualités Le : 15/7/26 Consultation pour l’acquisition des climatiseurs L’Office National des Statistiques lance une consultation relative à l’acquisition des climatiseurs de marque(...) Lire la suite.. Le : 14/7/26 Consultation pour l’acquisition des équipements de sécurité L’Office National des Statistiques lance une consultation relative à l’acquisition des équipements de sécurité(...) Lire la suite.. Le : 6/7/26 Consultation pour l’achat d’habillement L’Office National des Statistiques lance une consultation relative à l’achat habillement Lire la suite.. Le : 1/7/26 Consultation pour l’achat de produits d’entretien L’Office National des Statistiques lance une consultation relative à l’achat de produits d’entretien Lire la suite.. Le : 28/6/26"
+                                          - LayoutTable
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Actualités"
+                                                - heading "Actualités" [level=3, ref=e24]
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Le : 15/7/26 Consultation pour l’acquisition des climatiseurs L’Office National des Statistiques lance une consultation relative à l’acquisition des climatiseurs de marque(...) Lire la suite.. Le : 14/7/26 Consultation pour l’acquisition des équipements de sécurité L’Office National des Statistiques lance une consultation relative à l’acquisition des équipements de sécurité(...) Lire la suite.. Le : 6/7/26 Consultation pour l’achat d’habillement L’Office National des Statistiques lance une consultation relative à l’achat habillement Lire la suite.. Le : 1/7/26 Consultation pour l’achat de produits d’entretien L’Office National des Statistiques lance une consultation relative à l’achat de produits d’entretien Lire la suite.. Le : 28/6/26 L’Office National des Statistiques lance une consultation pour l’acquisition de pneumatiques L’Office National des Statistiques lance une consultation relative à l’acquisition de pneumatiques."
+                                                - LayoutTable
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Le : 15/7/26 Consultation pour l’acquisition des climatiseurs L’Office National des Statistiques lance une consultation relative à l’acquisition des climatiseurs de marque(...) Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 15/7/26 Consultation pour l’acquisition des climatiseurs"
+                                                            - StaticText "Le : 15/7/26"
+                                                            - heading "Consultation pour l’acquisition des climatiseurs" [level=3, ref=e53]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation relative à l’acquisition des climatiseurs de marque(...)"
+                                                            - StaticText "L’Office National des Statistiques lance une consultation relative à l’acquisition des climatiseurs de marque(...)"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e34]
+                                                      - LineBreak "\n"
+                                                    - LayoutTableCell "Le : 14/7/26 Consultation pour l’acquisition des équipements de sécurité L’Office National des Statistiques lance une consultation relative à l’acquisition des équipements de sécurité(...) Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 14/7/26 Consultation pour l’acquisition des équipements de sécurité"
+                                                            - StaticText "Le : 14/7/26"
+                                                            - heading "Consultation pour l’acquisition des équipements de sécurité" [level=3, ref=e54]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation relative à l’acquisition des équipements de sécurité(...)"
+                                                            - StaticText "L’Office National des Statistiques lance une consultation relative à l’acquisition des équipements de sécurité(...)"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e35]
+                                                      - LineBreak "\n"
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Le : 6/7/26 Consultation pour l’achat d’habillement L’Office National des Statistiques lance une consultation relative à l’achat habillement Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 6/7/26 Consultation pour l’achat d’habillement"
+                                                            - StaticText "Le : 6/7/26"
+                                                            - heading "Consultation pour l’achat d’habillement" [level=3, ref=e55]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation relative à l’achat habillement"
+                                                            - StaticText "L’Office National des Statistiques lance une consultation relative à l’achat habillement"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e36]
+                                                      - LineBreak "\n"
+                                                    - LayoutTableCell "Le : 1/7/26 Consultation pour l’achat de produits d’entretien L’Office National des Statistiques lance une consultation relative à l’achat de produits d’entretien Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 1/7/26 Consultation pour l’achat de produits d’entretien"
+                                                            - StaticText "Le : 1/7/26"
+                                                            - heading "Consultation pour l’achat de produits d’entretien" [level=3, ref=e56]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation relative à l’achat de produits d’entretien"
+                                                            - StaticText "L’Office National des Statistiques lance une consultation relative à l’achat de produits d’entretien"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e37]
+                                                      - LineBreak "\n"
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Le : 28/6/26 L’Office National des Statistiques lance une consultation pour l’acquisition de pneumatiques L’Office National des Statistiques lance une consultation relative à l’acquisition de pneumatiques. Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 28/6/26 L’Office National des Statistiques lance une consultation pour l’acquisition de pneumatiques"
+                                                            - StaticText "Le : 28/6/26"
+                                                            - heading "L’Office National des Statistiques lance une consultation pour l’acquisition de pneumatiques" [level=3, ref=e57]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation relative à l’acquisition de pneumatiques."
+                                                            - StaticText "L’Office National des Statistiques lance une consultation relative à l’acquisition de pneumatiques."
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e38]
+                                                      - LineBreak "\n"
+                                                    - LayoutTableCell "Le : 24/6/26 Consultation relative au renouvellement des licences L’Office National des Statistiques lance une consultation relative au renouvellement des licences(...) Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 24/6/26 Consultation relative au renouvellement des licences"
+                                                            - StaticText "Le : 24/6/26"
+                                                            - heading "Consultation relative au renouvellement des licences" [level=3, ref=e58]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation relative au renouvellement des licences(...)"
+                                                            - StaticText "L’Office National des Statistiques lance une consultation relative au renouvellement des licences(...)"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e39]
+                                                      - LineBreak "\n"
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Le : 11/6/26 L’Indice Brut des Prix à la Consommation de la ville d’Alger, enregistre une hausse de 0,4% en Avril 2026 par rapport au mois précédent. L’Indice Brut des Prix à la Consommation de la ville d’Alger, enregistre une hausse de 0,4% en avril 2026 par rapport(...) Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 11/6/26 L’Indice Brut des Prix à la Consommation de la ville d’Alger, enregistre une hausse de 0,4% en Avril 2026 par rapport au mois précédent."
+                                                            - StaticText "Le : 11/6/26"
+                                                            - heading "L’Indice Brut des Prix à la Consommation de la ville d’Alger, enregistre une hausse de 0,4% en Avril 2026 par rapport au mois précédent." [level=3, ref=e59]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Indice Brut des Prix à la Consommation de la ville d’Alger, enregistre une hausse de 0,4% en avril 2026 par rapport(...)"
+                                                            - StaticText "L’Indice Brut des Prix à la Consommation de la ville d’Alger, enregistre une hausse de 0,4% en avril 2026 par rapport(...)"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e40]
+                                                      - LineBreak "\n"
+                                                    - LayoutTableCell "Le : 9/6/26 Consultation pour la fourniture de climatiseurs L’Office National des Statistiques lance une consultation pour la fourniture de climatiseurs Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 9/6/26 Consultation pour la fourniture de climatiseurs"
+                                                            - StaticText "Le : 9/6/26"
+                                                            - heading "Consultation pour la fourniture de climatiseurs" [level=3, ref=e60]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation pour la fourniture de climatiseurs"
+                                                            - StaticText "L’Office National des Statistiques lance une consultation pour la fourniture de climatiseurs"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e41]
+                                                      - LineBreak "\n"
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Le : 2/6/26 Consultation relative à l’achat de papeterie L’Office National des Statistiques lance une consultation relative à l’achat de papeterie. Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 2/6/26 Consultation relative à l’achat de papeterie"
+                                                            - StaticText "Le : 2/6/26"
+                                                            - heading "Consultation relative à l’achat de papeterie" [level=3, ref=e61]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation relative à l’achat de papeterie."
+                                                            - StaticText "L’Office National des Statistiques lance une consultation relative à l’achat de papeterie."
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e42]
+                                                      - LineBreak "\n"
+                                                    - LayoutTableCell "Le : 2/6/26 Consultation relative à l’achat des fournitures de bureau L’Office National des Statistiques lance une consultation relative à l’achat des fournitures de(...) Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 2/6/26 Consultation relative à l’achat des fournitures de bureau"
+                                                            - StaticText "Le : 2/6/26"
+                                                            - heading "Consultation relative à l’achat des fournitures de bureau" [level=3, ref=e62]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation relative à l’achat des fournitures de(...)"
+                                                            - StaticText "L’Office National des Statistiques lance une consultation relative à l’achat des fournitures de(...)"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e43]
+                                                      - LineBreak "\n"
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Le : 2/6/26 Consultation pour l’achat des produits d’entretien. L’Office National des Statistiques lance une consultation relative a l’achat des produits d’entretien. Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 2/6/26 Consultation pour l’achat des produits d’entretien."
+                                                            - StaticText "Le : 2/6/26"
+                                                            - heading "Consultation pour l’achat des produits d’entretien." [level=3, ref=e63]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "L’Office National des Statistiques lance une consultation relative a l’achat des produits d’entretien."
+                                                            - StaticText "L’Office National des Statistiques lance une consultation relative a l’achat des produits d’entretien."
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e44]
+                                                      - LineBreak "\n"
+                                                    - LayoutTableCell "Le : 9/3/25 Communiqué Résultats préliminaires relatifs à l’enquête Activité, Emploi et Chômage Octobre 2024. Le taux de chômage en Algérie pour(...) Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 9/3/25 Communiqué"
+                                                            - StaticText "Le : 9/3/25"
+                                                            - heading "Communiqué" [level=3, ref=e64]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Résultats préliminaires relatifs à l’enquête Activité, Emploi et Chômage Octobre 2024. Le taux de chômage en Algérie pour(...)"
+                                                            - StaticText "Résultats préliminaires relatifs à l’enquête Activité, Emploi et Chômage Octobre 2024. Le taux de chômage en Algérie pour(...)"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e45]
+                                                      - LineBreak "\n"
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Le : 13/12/23 Les Comptes Economiques Base 2001 Cette publication est consacrée à la présentation de la série des comptes économiques en volume et en valeurs courantes(...) Lire la suite.. "
+                                                      - LayoutTable
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Le : 13/12/23 Les Comptes Economiques Base 2001"
+                                                            - StaticText "Le : 13/12/23"
+                                                            - heading "Les Comptes Economiques Base 2001" [level=3, ref=e65]
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell "Cette publication est consacrée à la présentation de la série des comptes économiques en volume et en valeurs courantes(...)"
+                                                            - StaticText "Cette publication est consacrée à la présentation de la série des comptes économiques en volume et en valeurs courantes(...)"
+                                                        - LayoutTableRow
+                                                          - LayoutTableCell
+                                                      - link "Lire la suite.." [ref=e46]
+                                                      - LineBreak "\n"
+                                                  - LayoutTableRow
+                                                  - LayoutTableRow
+                                                  - LayoutTableRow
+                                                  - LayoutTableRow
+                                                  - LayoutTableRow
+                                                  - LayoutTableRow
+                                    - paragraph
+                                    - LayoutTable
+                                      - LayoutTableRow
+                                        - LayoutTableCell "Actualités en archive"
+                                          - link "Actualités en archive" [ref=e11]
+                                    - paragraph
+                                  - LayoutTableCell "Date de dernière mise à jour : mercredi 15 juillet 2026  المنشورات المنشورات باللغة العربية Publications in English Publications in English Calendrier des Publications Calendrier des Publications Année 2025 NIS Le Numéro d'Identification Statistique Recensement Economique 2011"
+                                    - LayoutTable
+                                      - LayoutTableRow
+                                        - LayoutTableCell "Date de dernière mise à jour : mercredi 15 juillet 2026"
+                                          - generic
+                                            - StaticText "Date de dernière mise à jour :"
+                                            - LineBreak "\n"
+                                            - StaticText "mercredi 15 juillet 2026"
+                                      - LayoutTableRow
+                                        - LayoutTableCell ""
+                                      - LayoutTableRow
+                                        - LayoutTableCell "المنشورات المنشورات باللغة العربية Publications in English Publications in English Calendrier des Publications Calendrier des Publications Année 2025 NIS Le Numéro d'Identification Statistique Recensement Economique 2011 Premier Recensement Economique de l'Algérie RGPH 2008"
+                                          - LayoutTable
+                                            - LayoutTableRow
+                                              - LayoutTableCell
+                                                - form
+                                                  - generic
+                                                    - LabelText
+                                                      - StaticText "Rechercher:"
+                                                    - textbox "Rechercher:" [ref=e32]
+                                                    - button ">>" [ref=e33]
+                                            - LayoutTableRow
+                                              - LayoutTableCell
+                                            - LayoutTableRow
+                                              - LayoutTableCell "المنشورات"
+                                                - StaticText "المنشورات"
+                                            - LayoutTableRow
+                                              - LayoutTableCell "المنشورات باللغة العربية"
+                                                - LayoutTable
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "المنشورات باللغة العربية"
+                                                      - link "المنشورات باللغة العربية" [ref=e47]
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Publications in English"
+                                                - StaticText "Publications in English"
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Publications in English"
+                                                - LayoutTable
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Publications in English"
+                                                      - link "Publications in English" [ref=e48]
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Calendrier des Publications"
+                                                - StaticText "Calendrier des Publications"
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Calendrier des Publications Année 2025"
+                                                - LayoutTable
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Calendrier des Publications Année 2025"
+                                                      - link "Calendrier des Publications Année 2025" [ref=e49]
+                                            - LayoutTableRow
+                                              - LayoutTableCell "NIS"
+                                                - StaticText "NIS"
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Le Numéro d'Identification Statistique"
+                                                - LayoutTable
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Le Numéro d'Identification Statistique"
+                                                      - link "Le Numéro d'Identification Statistique" [ref=e50]
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Recensement Economique 2011"
+                                                - StaticText "Recensement Economique 2011"
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Premier Recensement Economique de l'Algérie"
+                                                - LayoutTable
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Premier Recensement Economique de l'Algérie"
+                                                      - link "Premier Recensement Economique de l'Algérie" [ref=e51]
+                                            - LayoutTableRow
+                                              - LayoutTableCell "RGPH 2008"
+                                                - StaticText "RGPH 2008"
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Résultats de l'Exploitation Exhaustive"
+                                                - LayoutTable
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell
+                                                  - LayoutTableRow
+                                                    - LayoutTableCell "Résultats de l'Exploitation Exhaustive"
+                                                      - link "Résultats de l'Exploitation Exhaustive" [ref=e52]
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Indices"
+                                                - StaticText "Indices"
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Prix à la consommation Prix à la Production Industrielle Production Industrielle Indices des valeurs unitaires"
+                                                - link "Prix à la consommation" [ref=e26]
+                                                - link "Prix à la Production Industrielle" [ref=e27]
+                                                - link "Production Industrielle" [ref=e28]
+                                                - link "Indices des valeurs unitaires" [ref=e29]
+                                      - LayoutTableRow
+                                        - LayoutTableCell "Rétrospective Rétrospective"
+                                          - LayoutTable
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Rétrospective"
+                                                - StaticText "Rétrospective"
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Rétrospective"
+                                                - link "Rétrospective" [ref=e30]
+                                      - LayoutTableRow
+                                        - LayoutTableCell "Autres liens Liens utiles"
+                                          - LayoutTable
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Autres liens"
+                                                - StaticText "Autres liens"
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Liens utiles"
+                                                - link "Liens utiles" [ref=e31]
+                                      - LayoutTableRow
+                                        - LayoutTableCell
+                                      - LayoutTableRow
+                                        - LayoutTableCell "Messagerie"
+                                          - StaticText "Messagerie"
+                                      - LayoutTableRow
+                                        - LayoutTableCell "Accéder à votre messagerie"
+                                          - LayoutTable
+                                            - LayoutTableRow
+                                              - LayoutTableCell
+                                            - LayoutTableRow
+                                              - LayoutTableCell "Accéder à votre messagerie"
+                                                - link "Accéder à votre messagerie" [ref=e25]
+                                      - LayoutTableRow
+                                        - LayoutTableCell
+                          - LayoutTableRow
+                            - LayoutTableCell ""
+                          - LayoutTableRow
+                            - LayoutTableCell "Nombre de visiteurs :5839687 visiteurs au total"
+                              - generic
+                                - strong
+                                  - StaticText "Nombre de visiteurs :"
+                                - StaticText "5839687 visiteurs au total"
