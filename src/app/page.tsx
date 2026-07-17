@@ -1,969 +1,763 @@
 "use client";
 
-import { useEffect, useState, useMemo, useCallback } from "react";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
+  gdpAnnual, gdpBySector, gdpQuarterly, cpiMonthly, tradeAnnual,
+  tradeQuarterly, tradeByPartner, ipiQuarterly, laborMarket,
+  demographics, populationByAge, fiscalData, cpiByDivision,
+  education, ippiQuarterly, wilayaData, constructionIndex, latestKPIs,
+} from "@/lib/algeria-data";
+
+import {
+  Card, CardContent, CardDescription, CardHeader, CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Skeleton } from "@/components/ui/skeleton";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Progress } from "@/components/ui/progress";
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+  ChartContainer, ChartTooltip, ChartTooltipContent, ChartLegend, ChartLegendContent,
+} from "@/components/ui/chart";
 import {
-  Search,
-  FileText,
-  Download,
-  ExternalLink,
-  RefreshCw,
-  Database,
-  BarChart3,
-  TrendingUp,
-  Users,
-  BookOpen,
-  Home,
-  List,
-  Info,
-  Sparkles,
-  Globe,
-  ChevronRight,
-  Calendar,
-  Tag,
-  Filter,
-  LayoutGrid,
-  Layers,
-  Activity,
-  ArrowUpRight,
-  Newspaper,
-  Building2,
-  ShoppingBag,
-  Factory,
-  GraduationCap,
-  Truck,
-  Heart,
-  MapPin,
+  Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, ComposedChart,
+  Line, LineChart, Pie, PieChart, RadarChart, PolarGrid, PolarAngleAxis,
+  PolarRadiusAxis, Radar, XAxis, YAxis, Tooltip as RTooltip, Legend, ResponsiveContainer,
+  ScatterChart, Scatter, ZAxis,
+} from "recharts";
+import {
+  TrendingUp, TrendingDown, ArrowUpRight, ArrowDownRight,
+  DollarSign, Users, BarChart3, Globe, Percent, Activity,
+  Factory, GraduationCap, Building2, Truck, Heart, Package,
+  Scale, ChevronRight,
 } from "lucide-react";
 
-// ─── Types ───────────────────────────────────────────────────────────────────
-
-interface Category {
-  id: string;
-  name: string;
-  nameAr: string;
-  nameFr: string;
-  description: string;
-  icon: string;
-  color: string;
-  order: number;
-}
-
-interface DataItem {
-  id: string;
-  title: string;
-  titleFr: string;
-  description: string;
-  categoryId: string;
-  sourceUrl: string;
-  pdfUrl: string | null;
-  period: string | null;
-  year: number | null;
-  quarter: string | null;
-  dataType: string;
-  tags: string | null;
-  content: string | null;
-  isNew: boolean;
-  crawledAt: string;
-  category: Category;
-}
-
-// ─── Icon Mapping ────────────────────────────────────────────────────────────
-
-const iconMap: Record<string, React.ElementType> = {
-  Home,
-  Users,
-  TrendingUp,
-  BookOpen,
-  BarChart3,
-  FileText,
-  List,
-  Info,
-  Database,
-  Globe,
-  Activity,
-  Newspaper,
-  Building2,
-  ShoppingBag,
-  Factory,
-  GraduationCap,
-  Truck,
-  Heart,
-  MapPin,
+// ─── Color palette ──────────────────────────────────────────────────────────
+const COLORS = {
+  emerald: "#059669", emeraldLight: "#d1fae5",
+  blue: "#2563eb", blueLight: "#dbeafe",
+  red: "#dc2626", redLight: "#fee2e2",
+  amber: "#d97706", amberLight: "#fef3c7",
+  purple: "#7c3aed", purpleLight: "#ede9fe",
+  cyan: "#0891b2", cyanLight: "#cffafe",
+  rose: "#e11d48", roseLight: "#ffe4e6",
+  slate: "#475569", slateLight: "#f1f5f9",
+  teal: "#0d9488", tealLight: "#ccfbf1",
+  orange: "#ea580c", orangeLight: "#ffedd5",
 };
 
-// ─── Economic Analysis Data (for charts) ────────────────────────────────────
+// ─── Reusable Chart Configs ────────────────────────────────────────────────
+const gdpChartConfig = { gdpBillionUsd: { label: "GDP (bn USD)", color: COLORS.emerald }, growthPct: { label: "Growth %", color: COLORS.blue } };
+const cpiChartConfig = { yoyPct: { label: "Inflation YoY %", color: COLORS.red }, foodYoy: { label: "Food YoY %", color: COLORS.amber }, coreYoy: { label: "Core YoY %", color: COLORS.blue } };
+const tradeChartConfig = { exportsBn: { label: "Exports", color: COLORS.emerald }, importsBn: { label: "Imports", color: COLORS.red }, balanceBn: { label: "Balance", color: COLORS.blue } };
 
-const economicIndicators = [
-  {
-    name: "GDP Growth Rate",
-    nameFr: "Taux de croissance du PIB",
-    values: [
-      { year: 2019, value: 1.1 },
-      { year: 2020, value: -3.2 },
-      { year: 2021, value: 3.4 },
-      { year: 2022, value: 3.1 },
-      { year: 2023, value: 2.8 },
-      { year: 2024, value: 3.0 },
-    ],
-    unit: "%",
-    trend: "up",
-  },
-  {
-    name: "Inflation Rate (CPI)",
-    nameFr: "Taux d'inflation (IPC)",
-    values: [
-      { year: 2019, value: 2.0 },
-      { year: 2020, value: 2.4 },
-      { year: 2021, value: 7.2 },
-      { year: 2022, value: 9.3 },
-      { year: 2023, value: 7.3 },
-      { year: 2024, value: 6.8 },
-    ],
-    unit: "%",
-    trend: "down",
-  },
-  {
-    name: "Unemployment Rate",
-    nameFr: "Taux de chômage",
-    values: [
-      { year: 2019, value: 11.4 },
-      { year: 2020, value: 12.5 },
-      { year: 2021, value: 12.6 },
-      { year: 2022, value: 11.9 },
-      { year: 2023, value: 11.3 },
-      { year: 2024, value: 10.8 },
-    ],
-    unit: "%",
-    trend: "down",
-  },
-  {
-    name: "Trade Balance (bn USD)",
-    nameFr: "Balance commerciale (Mds USD)",
-    values: [
-      { year: 2019, value: -5.2 },
-      { year: 2020, value: -7.6 },
-      { year: 2021, value: 5.9 },
-      { year: 2022, value: 20.4 },
-      { year: 2023, value: 10.2 },
-      { year: 2024, value: 11.5 },
-    ],
-    unit: "bn $",
-    trend: "up",
-  },
-];
-
-// ─── Component ───────────────────────────────────────────────────────────────
-
-export default function ONSDashboard() {
-  const queryClient = useQueryClient();
-  const [activeCategory, setActiveCategory] = useState<string>("all");
-  const [searchQuery, setSearchQuery] = useState<string>("");
-  const [typeFilter, setTypeFilter] = useState<string>("all");
-  const [selectedItem, setSelectedItem] = useState<DataItem | null>(null);
-  const [isSeeding, setIsSeeding] = useState(false);
-  const [showNewOnly, setShowNewOnly] = useState(false);
-
-  // Seed database on mount and fetch data
-  const { data: seedStatus } = useQuery({
-    queryKey: ["seed-status"],
-    queryFn: async () => {
-      const check = await fetch("/api/seed");
-      const status = await check.json();
-      if (!status.seeded) {
-        setIsSeeding(true);
-        await fetch("/api/seed", { method: "POST" });
-        setIsSeeding(false);
-        queryClient.invalidateQueries({ queryKey: ["seed-status"] });
-      }
-      return status;
-    },
-  });
-
-  // Fetch data
-  const { data, isLoading, error, refetch } = useQuery<{
-    items: DataItem[];
-    categories: Category[];
-  }>({
-    queryKey: ["ons-data"],
-    queryFn: async () => {
-      const params = new URLSearchParams();
-      if (activeCategory !== "all") params.set("category", activeCategory);
-      if (searchQuery) params.set("search", searchQuery);
-      if (typeFilter !== "all") params.set("type", typeFilter);
-      if (showNewOnly) params.set("new", "true");
-      const res = await fetch(`/api/data?${params}`);
-      if (!res.ok) throw new Error("Failed to fetch");
-      return res.json();
-    },
-    enabled: !!seedStatus?.seeded,
-  });
-
-  const categories = data?.categories || [];
-  const items = data?.items || [];
-
-  // Stats
-  const stats = useMemo(() => {
-    const totalPdfs = items.filter((i) => i.pdfUrl).length;
-    const newItems = items.filter((i) => i.isNew).length;
-    const uniqueYears = new Set(items.map((i) => i.year).filter(Boolean));
-    const uniqueTypes = new Set(items.map((i) => i.dataType));
-    return {
-      total: items.length,
-      pdfs: totalPdfs,
-      newItems,
-      years: uniqueYears.size,
-      categories: categories.length,
-      types: uniqueTypes.size,
-    };
-  }, [items, categories]);
-
-  // Filtered items for current view
-  const filteredItems = useMemo(() => items, [items]);
-
-  const handleRescrape = async () => {
-    try {
-      const res = await fetch("/api/scrape", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({}),
-      });
-      const result = await res.json();
-      if (result.success) {
-        queryClient.invalidateQueries({ queryKey: ["ons-data"] });
-      }
-    } catch (err) {
-      console.error("Rescrape failed:", err);
-    }
-  };
-
-  const typeLabels: Record<string, string> = {
-    all: "All Types",
-    index: "Indices",
-    national_accounts: "National Accounts",
-    directory: "Directories",
-    survey: "Surveys",
-    trade: "Trade",
-    publication: "Publications",
-    calendar: "Calendar",
-    section: "Sections",
-  };
-
+// ─── Helper ─────────────────────────────────────────────────────────────────
+function KpiCard({ title, value, unit, change, changeDir, icon: Icon, color }: {
+  title: string; value: string | number; unit?: string;
+  change?: number; changeDir?: "up" | "down"; icon: React.ElementType; color: string;
+}) {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-      {/* ── Header ──────────────────────────────────────────── */}
-      <header className="bg-gradient-to-r from-emerald-700 via-emerald-800 to-emerald-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+    <Card className="border-0 shadow-sm">
+      <CardContent className="p-4">
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-xs text-muted-foreground font-medium">{title}</span>
+          <div className={`p-1.5 rounded-lg`} style={{ backgroundColor: color + "15" }}>
+            <Icon className="w-3.5 h-3.5" style={{ color }} />
+          </div>
+        </div>
+        <div className="flex items-end gap-1.5">
+          <span className="text-2xl font-bold">{value}</span>
+          {unit && <span className="text-sm text-muted-foreground mb-0.5">{unit}</span>}
+        </div>
+        {change !== undefined && changeDir && (
+          <div className={`flex items-center gap-0.5 mt-1 text-xs font-medium ${changeDir === "up" ? "text-emerald-600" : "text-red-600"}`}>
+            {changeDir === "up" ? <ArrowUpRight className="w-3 h-3" /> : <ArrowDownRight className="w-3 h-3" />}
+            {change > 0 ? "+" : ""}{change}%
+          </div>
+        )}
+      </CardContent>
+    </Card>
+  );
+}
+
+function SectionTitle({ icon: Icon, title, subtitle }: { icon: React.ElementType; title: string; subtitle?: string }) {
+  return (
+    <div className="flex items-center gap-2 mb-4">
+      <div className="p-2 rounded-lg bg-emerald-50 text-emerald-700"><Icon className="w-4 h-4" /></div>
+      <div>
+        <h2 className="text-base font-semibold">{title}</h2>
+        {subtitle && <p className="text-xs text-muted-foreground">{subtitle}</p>}
+      </div>
+    </div>
+  );
+}
+
+function ChartCard({ title, subtitle, children, className }: { title: string; subtitle?: string; children: React.ReactNode; className?: string }) {
+  return (
+    <Card className={`border-0 shadow-sm ${className || ""}`}>
+      <CardHeader className="pb-2 pt-4 px-4">
+        <CardTitle className="text-sm font-semibold">{title}</CardTitle>
+        {subtitle && <CardDescription className="text-xs">{subtitle}</CardDescription>}
+      </CardHeader>
+      <CardContent className="px-4 pb-4">{children}</CardContent>
+    </Card>
+  );
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// MAIN PAGE
+// ═════════════════════════════════════════════════════════════════════════════
+export default function AlgeriaDashboard() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col">
+      {/* Header */}
+      <header className="bg-gradient-to-r from-emerald-800 via-emerald-900 to-slate-900 text-white">
+        <div className="max-w-[1400px] mx-auto px-4 py-5">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center"><BarChart3 className="w-6 h-6" /></div>
             <div>
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center">
-                  <Globe className="w-7 h-7" />
-                </div>
-                <div>
-                  <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
-                    ONS Data Explorer
-                  </h1>
-                  <p className="text-emerald-200 text-sm sm:text-base">
-                    Office National des Statistiques — Algeria
-                  </p>
-                </div>
-              </div>
-              <p className="text-emerald-100/70 text-xs sm:text-sm max-w-xl mt-2">
-                Comprehensive extraction and classification of Algerian economic
-                statistics from the National Statistics Office website for
-                post-analysis.
+              <h1 className="text-xl sm:text-2xl font-bold tracking-tight">Algeria Economic Dashboard</h1>
+              <p className="text-emerald-200/70 text-xs sm:text-sm">
+                Office National des Statistiques (ONS) — Data Science Analysis Platform
               </p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Button
-                variant="outline"
-                size="sm"
-                className="bg-white/10 border-white/20 text-white hover:bg-white/20"
-                onClick={() => refetch()}
-                disabled={isLoading}
-              >
-                <RefreshCw className={`w-4 h-4 mr-1.5 ${isLoading ? "animate-spin" : ""}`} />
-                Refresh
-              </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                className="bg-white/10 border-white/20 text-white hover:bg-white/20"
-                onClick={handleRescrape}
-              >
-                <Sparkles className="w-4 h-4 mr-1.5" />
-                Re-scrape
-              </Button>
             </div>
           </div>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
-        {/* ── Stats Bar ─────────────────────────────────────── */}
-        {isLoading || isSeeding ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <Skeleton key={i} className="h-24 rounded-xl" />
-            ))}
-          </div>
-        ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-            {[
-              {
-                label: "Data Points",
-                value: stats.total,
-                icon: Database,
-                color: "text-emerald-600",
-                bg: "bg-emerald-50",
-              },
-              {
-                label: "PDF Documents",
-                value: stats.pdfs,
-                icon: FileText,
-                color: "text-red-600",
-                bg: "bg-red-50",
-              },
-              {
-                label: "New Releases",
-                value: stats.newItems,
-                icon: Sparkles,
-                color: "text-amber-600",
-                bg: "bg-amber-50",
-              },
-              {
-                label: "Categories",
-                value: stats.categories,
-                icon: Layers,
-                color: "text-purple-600",
-                bg: "bg-purple-50",
-              },
-              {
-                label: "Years Covered",
-                value: stats.years,
-                icon: Calendar,
-                color: "text-blue-600",
-                bg: "bg-blue-50",
-              },
-              {
-                label: "Data Types",
-                value: stats.types,
-                icon: Filter,
-                color: "text-cyan-600",
-                bg: "bg-cyan-50",
-              },
-            ].map((stat) => (
-              <Card key={stat.label} className="border-0 shadow-sm">
-                <CardContent className="p-4">
-                  <div className="flex items-center gap-2 mb-1">
-                    <div className={`p-1.5 rounded-lg ${stat.bg}`}>
-                      <stat.icon className={`w-3.5 h-3.5 ${stat.color}`} />
-                    </div>
-                    <span className="text-xs text-muted-foreground font-medium">
-                      {stat.label}
-                    </span>
-                  </div>
-                  <p className="text-2xl font-bold">{stat.value}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        )}
-
-        {/* ── Filters ───────────────────────────────────────── */}
-        <Card className="border-0 shadow-sm">
-          <CardContent className="p-4">
-            <div className="flex flex-col sm:flex-row gap-3">
-              <div className="relative flex-1">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                <Input
-                  placeholder="Search data, indicators, publications..."
-                  className="pl-9"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-              </div>
-              <div className="flex gap-2">
-                <Select value={typeFilter} onValueChange={setTypeFilter}>
-                  <SelectTrigger className="w-[160px]">
-                    <Filter className="w-4 h-4 mr-1.5" />
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {Object.entries(typeLabels).map(([key, label]) => (
-                      <SelectItem key={key} value={key}>
-                        {label}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-                <Button
-                  variant={showNewOnly ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setShowNewOnly(!showNewOnly)}
-                  className="shrink-0"
-                >
-                  <Sparkles className="w-4 h-4 mr-1.5" />
-                  New Only
-                </Button>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* ── Main Tabs ─────────────────────────────────────── */}
-        <Tabs value={activeCategory} onValueChange={setActiveCategory}>
+      <main className="flex-1 max-w-[1400px] mx-auto px-4 py-5 w-full">
+        <Tabs defaultValue="macro" className="space-y-5">
           <TabsList className="flex flex-wrap h-auto gap-1 bg-transparent p-0">
-            <TabsTrigger
-              value="all"
-              className="data-[state=active]:bg-emerald-600 data-[state=active]:text-white rounded-lg px-4 py-2 text-sm font-medium"
-            >
-              <LayoutGrid className="w-4 h-4 mr-1.5" />
-              All Data
-            </TabsTrigger>
-            {categories.map((cat) => {
-              const IconComp = iconMap[cat.icon] || Database;
-              return (
-                <TabsTrigger
-                  key={cat.id}
-                  value={cat.id}
-                  className="data-[state=active]:text-white rounded-lg px-4 py-2 text-sm font-medium transition-colors"
-                  style={
-                    activeCategory === cat.id
-                      ? { backgroundColor: cat.color }
-                      : {}
-                  }
-                >
-                  <IconComp className="w-4 h-4 mr-1.5" />
-                  <span className="hidden sm:inline">{cat.name}</span>
-                  <span className="sm:hidden">{cat.name.split(" ")[0]}</span>
-                </TabsTrigger>
-              );
-            })}
+            {[
+              { val: "macro", label: "Macroeconomic", icon: Activity },
+              { val: "inflation", label: "Prices & Inflation", icon: Scale },
+              { val: "trade", label: "Trade & Balance", icon: Globe },
+              { val: "industry", label: "Industrial Production", icon: Factory },
+              { val: "labor", label: "Labor Market", icon: Users },
+              { val: "social", label: "Demographics & Social", icon: Heart },
+              { val: "fiscal", label: "Fiscal & Savings", icon: DollarSign },
+              { val: "regional", label: "Regional", icon: Building2 },
+            ].map((t) => (
+              <TabsTrigger key={t.val} value={t.val}
+                className="data-[state=active]:bg-emerald-600 data-[state=active]:text-white rounded-lg px-3 py-2 text-xs sm:text-sm font-medium">
+                <t.icon className="w-3.5 h-3.5 mr-1.5" />
+                <span className="hidden sm:inline">{t.label}</span>
+                <span className="sm:hidden">{t.label.split(" ")[0]}</span>
+              </TabsTrigger>
+            ))}
           </TabsList>
 
-          {/* ── "All Data" Tab ──────────────────────────────── */}
-          <TabsContent value="all" className="mt-6 space-y-6">
-            {/* Economic Indicators Overview */}
-            <div>
-              <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                <Activity className="w-5 h-5 text-emerald-600" />
-                Key Economic Indicators — Algeria
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {economicIndicators.map((indicator) => (
-                  <Card key={indicator.name} className="border-0 shadow-sm">
-                    <CardHeader className="pb-2">
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-sm font-semibold">
-                          {indicator.name}
-                        </CardTitle>
-                        <div
-                          className={`flex items-center text-xs font-medium px-2 py-0.5 rounded-full ${
-                            indicator.trend === "up"
-                              ? "text-emerald-700 bg-emerald-50"
-                              : "text-red-700 bg-red-50"
-                          }`}
-                        >
-                          {indicator.trend === "up" ? (
-                            <ArrowUpRight className="w-3 h-3 mr-0.5" />
-                          ) : (
-                            <TrendingUp className="w-3 h-3 mr-0.5 rotate-180" />
-                          )}
-                          {indicator.values[indicator.values.length - 1].value}
-                          {indicator.unit}
-                        </div>
-                      </div>
-                      <CardDescription className="text-xs">
-                        {indicator.nameFr}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="pt-0">
-                      <div className="flex items-end gap-1 h-24">
-                        {indicator.values.map((v, i) => {
-                          const max = Math.max(
-                            ...indicator.values.map((x) => Math.abs(x.value))
-                          );
-                          const height =
-                            (Math.abs(v.value) / max) * 100;
-                          const isLatest = i === indicator.values.length - 1;
-                          const isPositive = v.value >= 0;
-                          return (
-                            <div
-                              key={v.year}
-                              className="flex-1 flex flex-col items-center gap-1"
-                            >
-                              <span className="text-[10px] text-muted-foreground font-medium">
-                                {v.value > 0 ? "+" : ""}
-                                {v.value}
-                              </span>
-                              <div className="w-full relative">
-                                <div
-                                  className={`w-full rounded-sm transition-all duration-500 ${
-                                    isLatest
-                                      ? isPositive
-                                        ? "bg-emerald-500"
-                                        : "bg-red-400"
-                                      : isPositive
-                                      ? "bg-emerald-200"
-                                      : "bg-red-200"
-                                  }`}
-                                  style={{ height: `${height * 0.8}px` }}
-                                />
-                              </div>
-                              <span className="text-[10px] text-muted-foreground">
-                                {String(v.year).slice(2)}
-                              </span>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+          {/* ═══ MACROECONOMIC ═══════════════════════════════════════════════ */}
+          <TabsContent value="macro" className="space-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              <KpiCard title="GDP Growth" value={latestKPIs.gdpGrowth} unit="%" change={0.2} changeDir="up" icon={TrendingUp} color={COLORS.emerald} />
+              <KpiCard title="GDP (2024)" value="205" unit="bn $" icon={DollarSign} color={COLORS.blue} />
+              <KpiCard title="Inflation" value={latestKPIs.inflation} unit="%" change={-1.0} changeDir="down" icon={Scale} color={COLORS.red} />
+              <KpiCard title="Unemployment" value={latestKPIs.unemployment} unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.amber} />
+              <KpiCard title="Population" value="46.8" unit="M" icon={Heart} color={COLORS.purple} />
+              <KpiCard title="Investment Rate" value={latestKPIs.investmentRate} unit="% GDP" icon={Factory} color={COLORS.cyan} />
             </div>
 
-            <Separator />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              {/* GDP & Growth */}
+              <ChartCard title="GDP & Growth Rate (2000–2024)" subtitle="Billion USD and annual growth %">
+                <ChartContainer config={gdpChartConfig} className="h-[320px] w-full">
+                  <ComposedChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} tickLine={false} domain={[-5, 10]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar yAxisId="left" dataKey="gdpBillionUsd" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.8} name="GDP (bn USD)" />
+                    <Line yAxisId="right" type="monotone" dataKey="growthPct" stroke={COLORS.blue} strokeWidth={2} dot={{ r: 3 }} name="Growth %" />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
 
-            {/* All Items Grid */}
-            <div>
-              <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                <Database className="w-5 h-5 text-emerald-600" />
-                All Extracted Data
-                <Badge variant="secondary" className="ml-2">
-                  {filteredItems.length} items
-                </Badge>
-              </h2>
-              <DataItemsGrid
-                items={filteredItems}
-                onSelect={setSelectedItem}
-                loading={isLoading}
-              />
+              {/* GDP by Sector Stacked Area */}
+              <ChartCard title="GDP by Sector (% Contribution)" subtitle="Agriculture, Industry, Construction, Services">
+                <ChartContainer config={{
+                  agriculture: { label: "Agriculture", color: COLORS.emerald },
+                  industry: { label: "Industry", color: COLORS.blue },
+                  construction: { label: "Construction", color: COLORS.amber },
+                  services: { label: "Services", color: COLORS.purple },
+                }} className="h-[320px] w-full">
+                  <AreaChart data={gdpBySector} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 100]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Area type="monotone" stackId="1" dataKey="services" fill={COLORS.purple} stroke={COLORS.purple} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="construction" fill={COLORS.amber} stroke={COLORS.amber} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="industry" fill={COLORS.blue} stroke={COLORS.blue} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="agriculture" fill={COLORS.emerald} stroke={COLORS.emerald} fillOpacity={0.7} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              {/* Quarterly GDP Growth */}
+              <ChartCard title="Quarterly GDP Growth (2020–2025)" subtitle="QoQ growth rate %">
+                <ChartContainer config={{ growthPct: { label: "Growth %", color: COLORS.emerald } }} className="h-[280px] w-full">
+                  <BarChart data={gdpQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[-8, 6]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="growthPct" radius={[2, 2, 0, 0]}>
+                      {gdpQuarterly.map((d, i) => (
+                        <Cell key={i} fill={d.growthPct >= 0 ? COLORS.emerald : COLORS.red} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              {/* GDP per Capita */}
+              <ChartCard title="GDP per Capita (2000–2024)" subtitle="Current USD">
+                <ChartContainer config={{ perCapitaUsd: { label: "GDP/capita (USD)", color: COLORS.blue } }} className="h-[280px] w-full">
+                  <AreaChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Area type="monotone" dataKey="perCapitaUsd" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.4} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
             </div>
           </TabsContent>
 
-          {/* ── Category Tabs ───────────────────────────────── */}
-          {categories.map((cat) => {
-            const catItems = filteredItems.filter(
-              (item) => item.categoryId === cat.id
-            );
-            const IconComp = iconMap[cat.icon] || Database;
-            return (
-              <TabsContent key={cat.id} value={cat.id} className="mt-6">
-                <Card className="border-0 shadow-sm mb-6">
-                  <CardHeader>
-                    <div className="flex items-center gap-3">
-                      <div
-                        className="p-3 rounded-xl text-white"
-                        style={{ backgroundColor: cat.color }}
-                      >
-                        <IconComp className="w-6 h-6" />
-                      </div>
-                      <div>
-                        <CardTitle className="text-xl">{cat.name}</CardTitle>
-                        <CardDescription className="flex items-center gap-2">
-                          <span>{cat.nameFr}</span>
-                          <span className="text-xs">|</span>
-                          <span>{cat.nameAr}</span>
-                        </CardDescription>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {cat.description}
-                    </p>
-                  </CardContent>
-                </Card>
+          {/* ═══ PRICES & INFLATION ═══════════════════════════════════════════ */}
+          <TabsContent value="inflation" className="space-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title="CPI (Apr 2026)" value="344.2" change={0.4} changeDir="up" icon={Scale} color={COLORS.red} />
+              <KpiCard title="YoY Inflation" value="3.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.emerald} />
+              <KpiCard title="Food Inflation" value="2.8" unit="%" change={-1.3} changeDir="down" icon={Package} color={COLORS.amber} />
+              <KpiCard title="Core Inflation" value="2.8" unit="%" change={-0.7} changeDir="down" icon={Activity} color={COLORS.blue} />
+            </div>
 
-                <DataItemsGrid
-                  items={catItems}
-                  onSelect={setSelectedItem}
-                  loading={isLoading}
-                />
-              </TabsContent>
-            );
-          })}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              {/* CPI Monthly Trend */}
+              <ChartCard title="Consumer Price Index — Monthly (2020–2026)" subtitle="Year-over-year inflation %">
+                <ChartContainer config={cpiChartConfig} className="h-[340px] w-full">
+                  <LineChart data={cpiMonthly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="month" tick={{ fontSize: 9 }} tickLine={false} interval={5} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Line type="monotone" dataKey="yoyPct" stroke={COLORS.red} strokeWidth={2} dot={false} name="Total YoY" />
+                    <Line type="monotone" dataKey="foodYoy" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name="Food YoY" />
+                    <Line type="monotone" dataKey="coreYoy" stroke={COLORS.blue} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name="Core YoY" />
+                  </LineChart>
+                </ChartContainer>
+              </ChartCard>
+
+              {/* IPC Level */}
+              <ChartCard title="CPI Index Level (2020–2026)" subtitle="Base year implied index">
+                <ChartContainer config={{ ipc: { label: "IPC Index", color: COLORS.rose } }} className="h-[340px] w-full">
+                  <AreaChart data={cpiMonthly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="month" tick={{ fontSize: 9 }} tickLine={false} interval={5} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[200, 360]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Area type="monotone" dataKey="ipc" fill={COLORS.roseLight} stroke={COLORS.rose} strokeWidth={2} fillOpacity={0.5} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              {/* CPI by Division Bar Chart */}
+              <ChartCard title="Inflation by COICOP Division (2024)" subtitle="Year-over-year change by product group">
+                <ChartContainer config={{ y2024: { label: "2024 YoY %", color: COLORS.blue } }} className="h-[340px] w-full">
+                  <BarChart data={cpiByDivision} layout="vertical" margin={{ top: 5, right: 20, left: 100, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="division" type="category" tick={{ fontSize: 10 }} tickLine={false} width={95} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="y2024" fill={COLORS.blue} radius={[0, 4, 4, 0]}>
+                      {cpiByDivision.map((d, i) => (
+                        <Cell key={i} fill={d.y2024 >= 5 ? COLORS.red : d.y2024 >= 3.5 ? COLORS.amber : COLORS.emerald} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              {/* CPI Weights Pie */}
+              <ChartCard title="CPI Basket Weights by Division" subtitle="Share in consumer basket">
+                <ChartContainer config={Object.fromEntries(
+                  cpiByDivision.map((d, i) => [d.division, { label: d.division, color: Object.values(COLORS)[i % Object.values(COLORS).length] }])
+                )} className="h-[340px] w-full">
+                  <PieChart>
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Pie data={cpiByDivision} dataKey="weight" nameKey="division" cx="50%" cy="50%" outerRadius={110} innerRadius={50} paddingAngle={1}>
+                      {cpiByDivision.map((_, i) => (
+                        <Cell key={i} fill={Object.values(COLORS)[i % Object.values(COLORS).length]} />
+                      ))}
+                    </Pie>
+                    <Legend content={<ChartLegendContent nameKey="division" />} />
+                  </PieChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* PPI Chart */}
+            <ChartCard title="Producer Price Index (IPPI) — Quarterly (2020–2025)" subtitle="Mining, Manufacturing, Energy">
+              <ChartContainer config={{
+                mining: { label: "Mining", color: COLORS.amber },
+                manufacturing: { label: "Manufacturing", color: COLORS.blue },
+                energy: { label: "Energy", color: COLORS.red },
+              }} className="h-[300px] w-full">
+                <LineChart data={ippiQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                  <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+                  <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Legend content={<ChartLegendContent />} />
+                  <Line type="monotone" dataKey="mining" stroke={COLORS.amber} strokeWidth={2} dot={false} />
+                  <Line type="monotone" dataKey="manufacturing" stroke={COLORS.blue} strokeWidth={2} dot={false} />
+                  <Line type="monotone" dataKey="energy" stroke={COLORS.red} strokeWidth={2} dot={false} />
+                </LineChart>
+              </ChartContainer>
+            </ChartCard>
+          </TabsContent>
+
+          {/* ═══ TRADE & EXTERNAL BALANCE ════════════════════════════════════ */}
+          <TabsContent value="trade" className="space-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title="Exports (2024)" value="48.5" unit="bn $" change={7.8} changeDir="up" icon={Globe} color={COLORS.emerald} />
+              <KpiCard title="Imports (2024)" value="37.0" unit="bn $" change={6.3} changeDir="up" icon={Package} color={COLORS.red} />
+              <KpiCard title="Trade Balance" value="11.5" unit="bn $" change={1.3} changeDir="up" icon={DollarSign} color={COLORS.blue} />
+              <KpiCard title="Hydrocarbon % Exports" value="80.0" unit="%" icon={Factory} color={COLORS.amber} />
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              {/* Annual Trade Flows */}
+              <ChartCard title="External Trade (2000–2024)" subtitle="Exports, Imports, Balance — Billion USD">
+                <ChartContainer config={tradeChartConfig} className="h-[340px] w-full">
+                  <ComposedChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="exportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.85} />
+                    <Bar dataKey="importsBn" fill={COLORS.red} radius={[2, 2, 0, 0]} opacity={0.85} />
+                    <Line type="monotone" dataKey="balanceBn" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 2 }} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+
+              {/* Hydrocarbon Share */}
+              <ChartCard title="Hydrocarbon Share of Exports" subtitle="% of total export value">
+                <ChartContainer config={{ hydroPct: { label: "Hydrocarbon %", color: COLORS.amerald } }} className="h-[340px] w-full">
+                  <AreaChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[60, 100]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Area type="monotone" dataKey="hydroPct" fill={COLORS.amberLight} stroke={COLORS.amber} strokeWidth={2} fillOpacity={0.5} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              {/* Quarterly Trade */}
+              <ChartCard title="Quarterly Trade Balance (2023–2025)" subtitle="Billion USD">
+                <ChartContainer config={{
+                  exportsBn: { label: "Exports", color: COLORS.emerald },
+                  importsBn: { label: "Imports", color: COLORS.red },
+                }} className="h-[280px] w-full">
+                  <BarChart data={tradeQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="exportsBn" fill={COLORS.emerald} radius={[2, 2, 0, 0]} />
+                    <Bar dataKey="importsBn" fill={COLORS.red} radius={[2, 2, 0, 0]} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              {/* Top Partners */}
+              <ChartCard title="Top Trade Partners (2024)" subtitle="Exports vs Imports by country">
+                <ChartContainer config={{
+                  exports: { label: "Exports", color: COLORS.emerald },
+                  imports: { label: "Imports", color: COLORS.red },
+                }} className="h-[280px] w-full">
+                  <BarChart data={tradeByPartner} layout="vertical" margin={{ top: 5, right: 10, left: 65, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="partner" type="category" tick={{ fontSize: 10 }} tickLine={false} width={60} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="exports" fill={COLORS.emerald} radius={[0, 4, 4, 0]} />
+                    <Bar dataKey="imports" fill={COLORS.red} radius={[0, 4, 4, 0]} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+          </TabsContent>
+
+          {/* ═══ INDUSTRIAL PRODUCTION ═════════════════════════════════════════ */}
+          <TabsContent value="industry" className="space-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title="IPI (Q2 2025)" value="114.5" change={1.8} changeDir="up" icon={Factory} color={COLORS.emerald} />
+              <KpiCard title="Mining" value="108.0" change={1.4} changeDir="up" icon={Factory} color={COLORS.amber} />
+              <KpiCard title="Manufacturing" value="109.0" change={1.8} changeDir="up" icon={Building2} color={COLORS.blue} />
+              <KpiCard title="Energy" value="118.0" change={0.4} changeDir="up" icon={Activity} color={COLORS.cyan} />
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title="Industrial Production Index (2020–2025)" subtitle="Mining, Manufacturing, Energy — Base 100 = 2019">
+                <ChartContainer config={{
+                  mining: { label: "Mining", color: COLORS.amber },
+                  manufacturing: { label: "Manufacturing", color: COLORS.blue },
+                  energy: { label: "Energy", color: COLORS.cyan },
+                  ipi: { label: "IPI Total", color: COLORS.emerald },
+                }} className="h-[340px] w-full">
+                  <LineChart data={ipiQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[75, 125]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Line type="monotone" dataKey="energy" stroke={COLORS.cyan} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
+                    <Line type="monotone" dataKey="mining" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
+                    <Line type="monotone" dataKey="manufacturing" stroke={COLORS.blue} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
+                    <Line type="monotone" dataKey="ipi" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 2 }} />
+                  </LineChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title="IPI vs IPPI Comparison (2020–2025)" subtitle="Industrial Production vs Producer Prices">
+                <ChartContainer config={{
+                  ipi: { label: "IPI (Production)", color: COLORS.emerald },
+                  ippi: { label: "IPPI (Prices)", color: COLORS.red },
+                }} className="h-[340px] w-full">
+                  <LineChart data={ipiQuarterly.map((d, i) => ({
+                    period: d.period, ipi: d.ipi, ippi: ippiQuarterly[i]?.ippi || 0
+                  }))} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Line type="monotone" dataKey="ipi" stroke={COLORS.emerald} strokeWidth={2} dot={false} />
+                    <Line type="monotone" dataKey="ippi" stroke={COLORS.red} strokeWidth={2} dot={false} />
+                  </LineChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* Construction Index */}
+            <ChartCard title="Construction Cost Index (2015–2024)" subtitle="Base 100 = 2014">
+              <ChartContainer config={{ index: { label: "Construction Index", color: COLORS.amber } }} className="h-[250px] w-full">
+                <BarChart data={constructionIndex} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                  <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                  <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[100, 170]} />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Bar dataKey="index" fill={COLORS.amber} radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ChartContainer>
+            </ChartCard>
+          </TabsContent>
+
+          {/* ═══ LABOR MARKET ═════════════════════════════════════════════════ */}
+          <TabsContent value="labor" className="space-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              <KpiCard title="Unemployment" value="10.8" unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.red} />
+              <KpiCard title="Activity Rate" value="44.0" unit="%" change={0.5} changeDir="up" icon={Activity} color={COLORS.emerald} />
+              <KpiCard title="Youth Unemp." value="22.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.amber} />
+              <KpiCard title="Female Partic." value="17.2" unit="%" change={0.4} changeDir="up" icon={Heart} color={COLORS.purple} />
+              <KpiCard title="Informal Sector" value="43.0" unit="%" change={-0.8} changeDir="down" icon={Building2} color={COLORS.slate} />
+              <KpiCard title="Employment/Pop" value="39.2" unit="%" change={0.6} changeDir="up" icon={TrendingUp} color={COLORS.blue} />
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title="Unemployment Rate (2010–2024)" subtitle="Total and youth (15-24) unemployment %">
+                <ChartContainer config={{
+                  unemploymentPct: { label: "Total %", color: COLORS.red },
+                  youthUnemp: { label: "Youth (15-24) %", color: COLORS.amber },
+                }} className="h-[320px] w-full">
+                  <LineChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Line type="monotone" dataKey="youthUnemp" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
+                    <Line type="monotone" dataKey="unemploymentPct" stroke={COLORS.red} strokeWidth={2.5} dot={{ r: 3 }} />
+                  </LineChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title="Activity Rate & Female Participation" subtitle="% of working-age population">
+                <ChartContainer config={{
+                  activityRate: { label: "Activity Rate", color: COLORS.emerald },
+                  femalePartic: { label: "Female Partic.", color: COLORS.purple },
+                  informalPct: { label: "Informal %", color: COLORS.slate },
+                }} className="h-[320px] w-full">
+                  <LineChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[10, 50]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Line type="monotone" dataKey="informalPct" stroke={COLORS.slate} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
+                    <Line type="monotone" dataKey="femalePartic" stroke={COLORS.purple} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
+                    <Line type="monotone" dataKey="activityRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} />
+                  </LineChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* Employment-to-Population Ratio */}
+            <ChartCard title="Employment-to-Population Ratio (2010–2024)" subtitle="% of total population employed">
+              <ChartContainer config={{ employmentPop: { label: "Emp/Pop %", color: COLORS.blue } }} className="h-[250px] w-full">
+                <BarChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                  <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                  <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[35, 42]} />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Bar dataKey="employmentPop" fill={COLORS.blue} radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ChartContainer>
+            </ChartCard>
+          </TabsContent>
+
+          {/* ═══ DEMOGRAPHICS & SOCIAL ═══════════════════════════════════════ */}
+          <TabsContent value="social" className="space-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title="Population" value="46.8" unit="M" icon={Users} color={COLORS.purple} />
+              <KpiCard title="Growth Rate" value="1.4" unit="%" icon={TrendingUp} color={COLORS.emerald} />
+              <KpiCard title="Urbanization" value="74.5" unit="%" icon={Building2} color={COLORS.blue} />
+              <KpiCard title="Fertility Rate" value="1.9" icon={Heart} color={COLORS.rose} />
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title="Population Growth (2000–2024)" subtitle="Millions of inhabitants">
+                <ChartContainer config={{ populationM: { label: "Population (M)", color: COLORS.purple } }} className="h-[300px] w-full">
+                  <AreaChart data={demographics} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Area type="monotone" dataKey="populationM" fill={COLORS.purpleLight} stroke={COLORS.purple} strokeWidth={2} fillOpacity={0.4} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title="Population Pyramid (2024)" subtitle="By age group — Millions">
+                <ChartContainer config={{ m: { label: "Male (M)", color: COLORS.blue }, f: { label: "Female (M)", color: COLORS.rose } }} className="h-[300px] w-full">
+                  <BarChart data={populationByAge} layout="vertical" margin={{ top: 5, right: 10, left: 40, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="group" type="category" tick={{ fontSize: 10 }} tickLine={false} width={40} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="f" fill={COLORS.rose} radius={[4, 0, 0, 4]} />
+                    <Bar dataKey="m" fill={COLORS.blue} radius={[0, 4, 4, 0]} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              {/* Demographic Indicators */}
+              <ChartCard title="Demographic Transition Indicators" subtitle="Birth rate, death rate, fertility rate">
+                <ChartContainer config={{
+                  birthRate: { label: "Birth Rate", color: COLORS.emerald },
+                  deathRate: { label: "Death Rate", color: COLORS.red },
+                  fertilityRate: { label: "Fertility Rate", color: COLORS.amber },
+                }} className="h-[300px] w-full">
+                  <LineChart data={demographics} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Line type="monotone" dataKey="deathRate" stroke={COLORS.red} strokeWidth={1.5} dot={false} />
+                    <Line type="monotone" dataKey="fertilityRate" stroke={COLORS.amber} strokeWidth={2} dot={false} strokeDasharray="4 2" />
+                    <Line type="monotone" dataKey="birthRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} />
+                  </LineChart>
+                </ChartContainer>
+              </ChartCard>
+
+              {/* Education */}
+              <ChartCard title="Education Enrollment (2015–2024)" subtitle="Millions of students">
+                <ChartContainer config={{
+                  enrollmentPrimary: { label: "Primary", color: COLORS.emerald },
+                  enrollmentSecondary: { label: "Secondary", color: COLORS.blue },
+                  enrollmentHigher: { label: "Higher", color: COLORS.purple },
+                }} className="h-[300px] w-full">
+                  <AreaChart data={education} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Area type="monotone" stackId="1" dataKey="enrollmentHigher" fill={COLORS.purple} stroke={COLORS.purple} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="enrollmentSecondary" fill={COLORS.blue} stroke={COLORS.blue} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="enrollmentPrimary" fill={COLORS.emerald} stroke={COLORS.emerald} fillOpacity={0.7} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* Literacy Rate */}
+            <ChartCard title="Literacy Rate & Net Enrollment (2015–2024)" subtitle="Literacy %, Primary and Secondary net enrollment rates">
+              <ChartContainer config={{
+                literacyRate: { label: "Literacy Rate %", color: COLORS.emerald },
+                primaryNet: { label: "Primary Net %", color: COLORS.blue },
+                secondaryNet: { label: "Secondary Net %", color: COLORS.amber },
+                higherGross: { label: "Higher Gross %", color: COLORS.purple },
+              }} className="h-[280px] w-full">
+                <LineChart data={education} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                  <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                  <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[50, 100]} />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Legend content={<ChartLegendContent />} />
+                  <Line type="monotone" dataKey="higherGross" stroke={COLORS.purple} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
+                  <Line type="monotone" dataKey="secondaryNet" stroke={COLORS.amber} strokeWidth={1.5} dot={false} strokeDasharray="4 2" />
+                  <Line type="monotone" dataKey="primaryNet" stroke={COLORS.blue} strokeWidth={2} dot={false} />
+                  <Line type="monotone" dataKey="literacyRate" stroke={COLORS.emerald} strokeWidth={2.5} dot={{ r: 3 }} />
+                </LineChart>
+              </ChartContainer>
+            </ChartCard>
+          </TabsContent>
+
+          {/* ═══ FISCAL & SAVINGS ═════════════════════════════════════════════ */}
+          <TabsContent value="fiscal" className="space-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title="Savings Rate" value="42.5" unit="% GDP" icon={DollarSign} color={COLORS.emerald} />
+              <KpiCard title="Investment Rate" value="40.0" unit="% GDP" icon={Factory} color={COLORS.blue} />
+              <KpiCard title="Debt/GDP" value="41.0" unit="%" change={-2.0} changeDir="down" icon={Scale} color={COLORS.amber} />
+              <KpiCard title="Fiscal Deficit" value="1.0" unit="% GDP" change={-1.0} changeDir="down" icon={Activity} color={COLORS.purple} />
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title="Fiscal Balance (% of GDP)" subtitle="Revenue, Expenditure, Deficit">
+                <ChartContainer config={{
+                  revenuePctGdp: { label: "Revenue", color: COLORS.emerald },
+                  expenditurePctGdp: { label: "Expenditure", color: COLORS.red },
+                  deficitPctGdp: { label: "Deficit", color: COLORS.amber },
+                }} className="h-[340px] w-full">
+                  <ComposedChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="revenuePctGdp" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.85} />
+                    <Bar dataKey="expenditurePctGdp" fill={COLORS.red} radius={[2, 2, 0, 0]} opacity={0.85} />
+                    <Line type="monotone" dataKey="deficitPctGdp" stroke={COLORS.amber} strokeWidth={2.5} dot={{ r: 3 }} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title="Savings vs Investment Rate" subtitle="% of GDP">
+                <ChartContainer config={{
+                  savingsRate: { label: "Savings Rate", color: COLORS.emerald },
+                  investRate: { label: "Investment Rate", color: COLORS.blue },
+                }} className="h-[340px] w-full">
+                  <AreaChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[30, 55]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Area type="monotone" dataKey="investRate" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.4} />
+                    <Area type="monotone" dataKey="savingsRate" fill={COLORS.emeraldLight} stroke={COLORS.emerald} strokeWidth={2} fillOpacity={0.4} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            <ChartCard title="Public Debt to GDP Ratio (2010–2024)" subtitle="% of GDP">
+              <ChartContainer config={{ debtPctGdp: { label: "Debt/GDP %", color: COLORS.red } }} className="h-[280px] w-full">
+                <AreaChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                  <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                  <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 50]} />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Area type="monotone" dataKey="debtPctGdp" fill={COLORS.redLight} stroke={COLORS.red} strokeWidth={2} fillOpacity={0.5} />
+                </AreaChart>
+              </ChartContainer>
+            </ChartCard>
+          </TabsContent>
+
+          {/* ═══ REGIONAL ═════════════════════════════════════════════════════ */}
+          <TabsContent value="regional" className="space-y-5">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title="Top 10 Wilayas by GDP Share (2023)" subtitle="Contribution to national GDP">
+                <ChartContainer config={{ gdpShare: { label: "GDP Share %", color: COLORS.emerald } }} className="h-[380px] w-full">
+                  <BarChart data={wilayaData} layout="vertical" margin={{ top: 5, right: 10, left: 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 11 }} tickLine={false} width={75} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="gdpShare" fill={COLORS.emerald} radius={[0, 4, 4, 0]}>
+                      {wilayaData.map((_, i) => (
+                        <Cell key={i} fill={[COLORS.emerald, COLORS.blue, COLORS.purple, COLORS.amber, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red][i]} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title="Unemployment Rate by Wilaya (2023)" subtitle="Top 10 wilayas">
+                <ChartContainer config={{ unemployment: { label: "Unemployment %", color: COLORS.red } }} className="h-[380px] w-full">
+                  <BarChart data={wilayaData} layout="vertical" margin={{ top: 5, right: 10, left: 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[0, 18]} />
+                    <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 11 }} tickLine={false} width={75} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="unemployment" radius={[0, 4, 4, 0]}>
+                      {wilayaData.map((d) => (
+                        <Cell key={d.wilaya} fill={d.unemployment >= 13 ? COLORS.red : d.unemployment >= 11 ? COLORS.amber : COLORS.emerald} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            <ChartCard title="Population vs GDP Scatter (2023)" subtitle="Top 10 wilayas — bubble size = unemployment rate">
+              <ChartContainer config={{
+                x: { label: "Population (K)", color: COLORS.blue },
+                y: { label: "GDP Share %", color: COLORS.emerald },
+              }} className="h-[350px] w-full">
+                <ScatterChart margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                  <XAxis dataKey="populationK" name="Population (K)" tick={{ fontSize: 11 }} tickLine={false} label={{ value: "Population (thousands)", position: "bottom", fontSize: 11 }} />
+                  <YAxis dataKey="gdpShare" name="GDP Share %" tick={{ fontSize: 11 }} tickLine={false} label={{ value: "GDP Share %", angle: -90, position: "insideLeft", fontSize: 11 }} />
+                  <ZAxis dataKey="unemployment" range={[80, 400]} name="Unemployment %" />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Scatter data={wilayaData} fill={COLORS.emerald}>
+                    {wilayaData.map((_, i) => (
+                      <Cell key={i} fill={[COLORS.emerald, COLORS.blue, COLORS.purple, COLORS.amber, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red][i]} />
+                    ))}
+                  </Scatter>
+                </ScatterChart>
+              </ChartContainer>
+            </ChartCard>
+          </TabsContent>
         </Tabs>
 
-        {/* ── Economic Analysis Section ─────────────────────── */}
-        <Separator />
-        <div>
-          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <TrendingUp className="w-5 h-5 text-emerald-600" />
-            Economic Analysis Framework
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              {
-                title: "Macroeconomic Stability",
-                titleFr: "Stabilité macroéconomique",
-                desc: "Track GDP growth, inflation, fiscal balance, and monetary indicators to assess Algeria's overall economic health and policy effectiveness.",
-                sources: 4,
-                icon: Activity,
-                color: "emerald",
-              },
-              {
-                title: "Trade & External Balance",
-                titleFr: "Commerce et balance extérieure",
-                desc: "Analyze export/import volumes, hydrocarbon dependency ratio, trade diversification efforts, and terms of trade evolution.",
-                sources: 3,
-                icon: ShoppingBag,
-                color: "blue",
-              },
-              {
-                title: "Industrial Production",
-                titleFr: "Production industrielle",
-                desc: "Monitor industrial output indices, manufacturing capacity utilization, and sectoral production trends across Algeria.",
-                sources: 2,
-                icon: Factory,
-                color: "amber",
-              },
-              {
-                title: "Labor Market",
-                titleFr: "Marché du travail",
-                desc: "Examine employment rates, unemployment trends by demographic, informal sector size, and workforce participation across wilayas.",
-                sources: 3,
-                icon: Users,
-                color: "purple",
-              },
-              {
-                title: "Price Dynamics",
-                titleFr: "Dynamique des prix",
-                desc: "Track consumer and producer price indices, food vs core inflation divergence, and purchasing power evolution.",
-                sources: 3,
-                icon: BarChart3,
-                color: "red",
-              },
-              {
-                title: "Social Indicators",
-                titleFr: "Indicateurs sociaux",
-                desc: "Review household surveys, education enrollment, demographic trends, and living conditions across Algerian regions.",
-                sources: 5,
-                icon: Heart,
-                color: "cyan",
-              },
-            ].map((analysis) => (
-              <Card
-                key={analysis.title}
-                className="border-0 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
-              >
-                <CardHeader className="pb-2">
-                  <div className="flex items-start justify-between">
-                    <div
-                      className={`p-2 rounded-lg bg-${analysis.color}-50 text-${analysis.color}-600`}
-                    >
-                      <analysis.icon className="w-5 h-5" />
-                    </div>
-                    <Badge variant="outline" className="text-xs">
-                      {analysis.sources} sources
-                    </Badge>
-                  </div>
-                  <CardTitle className="text-base mt-2">
-                    {analysis.title}
-                  </CardTitle>
-                  <CardDescription className="text-xs font-medium">
-                    {analysis.titleFr}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {analysis.desc}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* ── Source Site Info ──────────────────────────────── */}
-        <Card className="border-0 shadow-sm bg-gradient-to-r from-slate-800 to-slate-900 text-white">
-          <CardContent className="p-6">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <div>
-                <h3 className="text-lg font-semibold flex items-center gap-2">
-                  <Globe className="w-5 h-5 text-emerald-400" />
-                  Data Source
-                </h3>
-                <p className="text-slate-300 text-sm mt-1">
-                  All data extracted from{" "}
-                  <a
-                    href="https://www.ons.dz/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-emerald-400 underline underline-offset-2 hover:text-emerald-300"
-                  >
-                    www.ons.dz
-                  </a>{" "}
-                  — Office National des Statistiques (Algeria&apos;s National
-                  Statistics Office)
-                </p>
-              </div>
-              <div className="flex items-center gap-2">
-                <Badge
-                  variant="outline"
-                  className="border-slate-600 text-slate-300"
-                >
-                  <Database className="w-3 h-3 mr-1" />
-                  SPIP CMS
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="border-slate-600 text-slate-300"
-                >
-                  <FileText className="w-3 h-3 mr-1" />
-                  PDF-based
-                </Badge>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        {/* Source footer */}
+        <Separator className="my-6" />
+        <footer className="text-center text-xs text-muted-foreground pb-4">
+          <p>Source: Office National des Statistiques (ONS) — www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Extérieur, Comptes Economiques, ENEM, RGPH)</p>
+        </footer>
       </main>
-
-      {/* ── Footer ─────────────────────────────────────────── */}
-      <footer className="mt-auto border-t bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 text-center text-xs text-muted-foreground">
-          ONS Data Explorer — Algerian Economic Statistics Analysis Platform
-        </div>
-      </footer>
-
-      {/* ── Detail Dialog ──────────────────────────────────── */}
-      <Dialog
-        open={!!selectedItem}
-        onOpenChange={() => setSelectedItem(null)}
-      >
-        <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
-          {selectedItem && (
-            <>
-              <DialogHeader>
-                <div className="flex items-center gap-2 mb-2">
-                  <Badge
-                    style={{ backgroundColor: selectedItem.category.color }}
-                    className="text-white text-xs"
-                  >
-                    {selectedItem.category.name}
-                  </Badge>
-                  {selectedItem.isNew && (
-                    <Badge className="bg-amber-500 text-white text-xs">
-                      <Sparkles className="w-3 h-3 mr-1" />
-                      New
-                    </Badge>
-                  )}
-                  <Badge variant="outline" className="text-xs">
-                    {selectedItem.dataType.replace(/_/g, " ")}
-                  </Badge>
-                </div>
-                <DialogTitle className="text-xl leading-tight">
-                  {selectedItem.title}
-                </DialogTitle>
-                <DialogDescription className="text-sm">
-                  {selectedItem.titleFr}
-                </DialogDescription>
-              </DialogHeader>
-              <div className="space-y-4 mt-4">
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                  {selectedItem.period && (
-                    <div className="p-3 bg-slate-50 rounded-lg">
-                      <p className="text-xs text-muted-foreground">
-                        Period
-                      </p>
-                      <p className="text-sm font-semibold flex items-center gap-1.5">
-                        <Calendar className="w-3.5 h-3.5" />
-                        {selectedItem.period}
-                      </p>
-                    </div>
-                  )}
-                  {selectedItem.year && (
-                    <div className="p-3 bg-slate-50 rounded-lg">
-                      <p className="text-xs text-muted-foreground">Year</p>
-                      <p className="text-sm font-semibold">
-                        {selectedItem.year}
-                      </p>
-                    </div>
-                  )}
-                  {selectedItem.quarter && (
-                    <div className="p-3 bg-slate-50 rounded-lg">
-                      <p className="text-xs text-muted-foreground">
-                        Quarter
-                      </p>
-                      <p className="text-sm font-semibold">
-                        {selectedItem.quarter}
-                      </p>
-                    </div>
-                  )}
-                </div>
-
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {selectedItem.description}
-                </p>
-
-                {selectedItem.tags && (
-                  <div className="flex flex-wrap gap-1.5">
-                    {selectedItem.tags.split(",").map((tag) => (
-                      <Badge key={tag} variant="secondary" className="text-xs">
-                        <Tag className="w-3 h-3 mr-1" />
-                        {tag.trim()}
-                      </Badge>
-                    ))}
-                  </div>
-                )}
-
-                <Separator />
-
-                <div className="flex flex-col sm:flex-row gap-2">
-                  {selectedItem.pdfUrl && (
-                    <Button asChild className="bg-emerald-600 hover:bg-emerald-700">
-                      <a
-                        href={selectedItem.pdfUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Download className="w-4 h-4 mr-2" />
-                        Download PDF
-                      </a>
-                    </Button>
-                  )}
-                  <Button variant="outline" asChild>
-                    <a
-                      href={selectedItem.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View on ONS Website
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
-    </div>
-  );
-}
-
-// ─── Data Items Grid Component ──────────────────────────────────────────────
-
-function DataItemsGrid({
-  items,
-  onSelect,
-  loading,
-}: {
-  items: DataItem[];
-  onSelect: (item: DataItem) => void;
-  loading: boolean;
-}) {
-  if (loading) {
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <Skeleton key={i} className="h-48 rounded-xl" />
-        ))}
-      </div>
-    );
-  }
-
-  if (items.length === 0) {
-    return (
-      <Card className="border-0 shadow-sm">
-        <CardContent className="p-12 text-center">
-          <Database className="w-12 h-12 text-muted-foreground/30 mx-auto mb-3" />
-          <p className="text-muted-foreground text-sm">
-            No data found. Try adjusting your filters or search query.
-          </p>
-        </CardContent>
-      </Card>
-    );
-  }
-
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {items.map((item) => {
-        const IconComp = iconMap[item.category.icon] || Database;
-        return (
-          <Card
-            key={item.id}
-            className="border-0 shadow-sm hover:shadow-md transition-all cursor-pointer group"
-            onClick={() => onSelect(item)}
-          >
-            <CardHeader className="pb-2">
-              <div className="flex items-start justify-between">
-                <div
-                  className="p-2 rounded-lg text-white shrink-0"
-                  style={{ backgroundColor: item.category.color }}
-                >
-                  <IconComp className="w-4 h-4" />
-                </div>
-                <div className="flex items-center gap-1.5">
-                  {item.isNew && (
-                    <span className="px-1.5 py-0.5 bg-amber-100 text-amber-700 text-[10px] font-semibold rounded-full">
-                      NEW
-                    </span>
-                  )}
-                  {item.pdfUrl && (
-                    <FileText className="w-3.5 h-3.5 text-red-400" />
-                  )}
-                </div>
-              </div>
-              <CardTitle className="text-sm leading-snug mt-2 group-hover:text-emerald-700 transition-colors">
-                {item.title}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-xs text-muted-foreground line-clamp-2 mb-3">
-                {item.description}
-              </p>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-1.5">
-                  {item.period && (
-                    <span className="text-[10px] text-muted-foreground bg-slate-100 px-1.5 py-0.5 rounded">
-                      {item.period}
-                    </span>
-                  )}
-                  {item.dataType && (
-                    <span className="text-[10px] text-muted-foreground bg-slate-100 px-1.5 py-0.5 rounded capitalize">
-                      {item.dataType.replace(/_/g, " ")}
-                    </span>
-                  )}
-                </div>
-                <ChevronRight className="w-4 h-4 text-muted-foreground/50 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" />
-              </div>
-            </CardContent>
-          </Card>
-        );
-      })}
     </div>
   );
 }
