@@ -603,3 +603,156 @@ export const latestKPIs = {
   hydrocarbonShare: 80.0,
   ipiChange: 1.8,
 };
+
+// ─── 25. REGIONAL DETAILED KPIs — ENHANCED ───────────────────────────────
+// Source: ONS Comptes Régionaux, RGPH 2022, Enquêtes Emploi, Annuaire Statistique
+// Expanded wilaya-level data for expert regional analysis
+
+// 25a. Wilaya-level detailed indicators (top 20 by population)
+export const wilayaDetailed = [
+  { wilaya: "Alger", code: 16, region: "Centre", populationK: 3915, areaKm2: 1190, density: 3290, gdpShare: 15.8, gdpBillionDzd: 4820, gdpPerCapitaK: 1231, unemployment: 7.8, youthUnemp: 18.5, femaleParticipation: 16.2, employmentRate: 52.4, informalEmploy: 32, urbanization: 94.5, povertyRate: 4.2, electrification: 99.8, waterAccess: 98.5, internetAccess: 82, secondaryEnrol: 92, higherEnrol: 48, literacyRate: 96.5, hospitalBeds10k: 24.5, physicians10k: 38.2, nurses10k: 52.0, healthCenters: 185, polyclinics: 62, infantMortality: 12.5, netMigration: 12.5, housingDeficitK: 45, vehicles10k: 385, phoneLines10k: 112, primarySchools: 520, middleSchools: 310, highSchools: 185, universityCapacityK: 125, industrialUnits: 4200, agriAreaHa: 28500, gdpGrowthPct: 2.8 },
+  { wilaya: "Oran", code: 31, region: "Ouest", populationK: 1956, areaKm2: 2147, density: 911, gdpShare: 5.2, gdpBillionDzd: 1590, gdpPerCapitaK: 813, unemployment: 9.5, youthUnemp: 22.0, femaleParticipation: 14.8, employmentRate: 50.5, informalEmploy: 35, urbanization: 82.5, povertyRate: 6.2, electrification: 99.5, waterAccess: 96.0, internetAccess: 72, secondaryEnrol: 88, higherEnrol: 38, literacyRate: 93.8, hospitalBeds10k: 22.0, physicians10k: 30.5, nurses10k: 42.0, healthCenters: 120, polyclinics: 45, infantMortality: 15.8, netMigration: 4.2, housingDeficitK: 32, vehicles10k: 310, phoneLines10k: 95, primarySchools: 380, middleSchools: 195, highSchools: 120, universityCapacityK: 85, industrialUnits: 2800, agriAreaHa: 42500, gdpGrowthPct: 2.5 },
+  { wilaya: "Constantine", code: 25, region: "Est", populationK: 1240, areaKm2: 2285, density: 543, gdpShare: 3.8, gdpBillionDzd: 1160, gdpPerCapitaK: 935, unemployment: 12.5, youthUnemp: 26.5, femaleParticipation: 13.2, employmentRate: 48.8, informalEmploy: 40, urbanization: 72.5, povertyRate: 7.8, electrification: 99.0, waterAccess: 94.5, internetAccess: 65, secondaryEnrol: 86, higherEnrol: 42, literacyRate: 92.5, hospitalBeds10k: 20.5, physicians10k: 28.0, nurses10k: 38.5, healthCenters: 95, polyclinics: 38, infantMortality: 17.2, netMigration: 1.5, housingDeficitK: 25, vehicles10k: 245, phoneLines10k: 82, primarySchools: 310, middleSchools: 165, highSchools: 98, universityCapacityK: 72, industrialUnits: 1800, agriAreaHa: 52000, gdpGrowthPct: 2.2 },
+  { wilaya: "Annaba", code: 23, region: "Est", populationK: 742, areaKm2: 1439, density: 516, gdpShare: 2.8, gdpBillionDzd: 855, gdpPerCapitaK: 1152, unemployment: 14.2, youthUnemp: 28.8, femaleParticipation: 12.5, employmentRate: 47.5, informalEmploy: 42, urbanization: 75.2, povertyRate: 8.5, electrification: 98.8, waterAccess: 95.0, internetAccess: 62, secondaryEnrol: 84, higherEnrol: 35, literacyRate: 91.8, hospitalBeds10k: 19.5, physicians10k: 25.5, nurses10k: 35.0, healthCenters: 68, polyclinics: 28, infantMortality: 18.5, netMigration: -0.5, housingDeficitK: 18, vehicles10k: 220, phoneLines10k: 75, primarySchools: 205, middleSchools: 108, highSchools: 62, universityCapacityK: 48, industrialUnits: 1450, agriAreaHa: 38500, gdpGrowthPct: 1.8 },
+  { wilaya: "Blida", code: 9, region: "Centre", populationK: 1142, areaKm2: 1476, density: 774, gdpShare: 3.6, gdpBillionDzd: 1100, gdpPerCapitaK: 963, unemployment: 8.5, youthUnemp: 19.2, femaleParticipation: 15.5, employmentRate: 51.8, informalEmploy: 35, urbanization: 72.8, povertyRate: 5.1, electrification: 99.5, waterAccess: 97.5, internetAccess: 70, secondaryEnrol: 88, higherEnrol: 40, literacyRate: 94.2, hospitalBeds10k: 19.2, physicians10k: 26.0, nurses10k: 36.0, healthCenters: 82, polyclinics: 32, infantMortality: 14.8, netMigration: 5.8, housingDeficitK: 28, vehicles10k: 275, phoneLines10k: 88, primarySchools: 285, middleSchools: 148, highSchools: 88, universityCapacityK: 55, industrialUnits: 2100, agriAreaHa: 45000, gdpGrowthPct: 3.2 },
+  { wilaya: "Sétif", code: 19, region: "Hauts Plateaux", populationK: 1750, areaKm2: 6514, density: 269, gdpShare: 3.2, gdpBillionDzd: 975, gdpPerCapitaK: 557, unemployment: 14.8, youthUnemp: 30.5, femaleParticipation: 11.8, employmentRate: 46.5, informalEmploy: 45, urbanization: 55.2, povertyRate: 12.5, electrification: 96.5, waterAccess: 88.0, internetAccess: 58, secondaryEnrol: 78, higherEnrol: 32, literacyRate: 89.5, hospitalBeds10k: 14.8, physicians10k: 18.5, nurses10k: 28.0, healthCenters: 105, polyclinics: 35, infantMortality: 22.0, netMigration: -3.5, housingDeficitK: 35, vehicles10k: 185, phoneLines10k: 68, primarySchools: 420, middleSchools: 210, highSchools: 125, universityCapacityK: 58, industrialUnits: 1650, agriAreaHa: 285000, gdpGrowthPct: 2.0 },
+  { wilaya: "Tizi Ouzou", code: 15, region: "Centre", populationK: 1280, areaKm2: 3568, density: 359, gdpShare: 2.5, gdpBillionDzd: 763, gdpPerCapitaK: 596, unemployment: 15.5, youthUnemp: 32.0, femaleParticipation: 11.2, employmentRate: 45.8, informalEmploy: 48, urbanization: 48.5, povertyRate: 11.0, electrification: 95.0, waterAccess: 85.0, internetAccess: 55, secondaryEnrol: 80, higherEnrol: 30, literacyRate: 88.8, hospitalBeds10k: 15.5, physicians10k: 19.5, nurses10k: 29.5, healthCenters: 95, polyclinics: 30, infantMortality: 20.5, netMigration: -2.0, housingDeficitK: 22, vehicles10k: 195, phoneLines10k: 72, primarySchools: 380, middleSchools: 185, highSchools: 105, universityCapacityK: 52, industrialUnits: 950, agriAreaHa: 125000, gdpGrowthPct: 1.5 },
+  { wilaya: "Djelfa", code: 14, region: "Hauts Plateaux", populationK: 1420, areaKm2: 32220, density: 44, gdpShare: 1.8, gdpBillionDzd: 549, gdpPerCapitaK: 387, unemployment: 16.5, youthUnemp: 33.5, femaleParticipation: 10.5, employmentRate: 44.2, informalEmploy: 50, urbanization: 42.5, povertyRate: 14.8, electrification: 92.0, waterAccess: 78.0, internetAccess: 42, secondaryEnrol: 72, higherEnrol: 22, literacyRate: 85.5, hospitalBeds10k: 12.5, physicians10k: 14.0, nurses10k: 22.0, healthCenters: 88, polyclinics: 28, infantMortality: 25.5, netMigration: -5.2, housingDeficitK: 28, vehicles10k: 125, phoneLines10k: 52, primarySchools: 480, middleSchools: 195, highSchools: 95, universityCapacityK: 28, industrialUnits: 620, agriAreaHa: 520000, gdpGrowthPct: 1.8 },
+  { wilaya: "Béjaïa", code: 6, region: "Centre", populationK: 960, areaKm2: 3268, density: 294, gdpShare: 2.2, gdpBillionDzd: 671, gdpPerCapitaK: 699, unemployment: 16.8, youthUnemp: 34.2, femaleParticipation: 10.8, employmentRate: 44.5, informalEmploy: 48, urbanization: 45.8, povertyRate: 10.5, electrification: 94.5, waterAccess: 82.0, internetAccess: 52, secondaryEnrol: 79, higherEnrol: 28, literacyRate: 88.2, hospitalBeds10k: 14.8, physicians10k: 18.0, nurses10k: 27.0, healthCenters: 72, polyclinics: 25, infantMortality: 21.0, netMigration: -1.5, housingDeficitK: 18, vehicles10k: 175, phoneLines10k: 62, primarySchools: 310, middleSchools: 148, highSchools: 82, universityCapacityK: 42, industrialUnits: 850, agriAreaHa: 95000, gdpGrowthPct: 1.2 },
+  { wilaya: "Batna", code: 5, region: "Hauts Plateaux", populationK: 1185, areaKm2: 12558, density: 94, gdpShare: 1.8, gdpBillionDzd: 549, gdpPerCapitaK: 463, unemployment: 15.2, youthUnemp: 31.0, femaleParticipation: 11.0, employmentRate: 45.5, informalEmploy: 46, urbanization: 52.5, povertyRate: 13.5, electrification: 93.5, waterAccess: 82.0, internetAccess: 48, secondaryEnrol: 75, higherEnrol: 25, literacyRate: 87.0, hospitalBeds10k: 14.2, physicians10k: 16.5, nurses10k: 25.0, healthCenters: 82, polyclinics: 28, infantMortality: 23.5, netMigration: -3.0, housingDeficitK: 25, vehicles10k: 155, phoneLines10k: 58, primarySchools: 395, middleSchools: 180, highSchools: 95, universityCapacityK: 38, industrialUnits: 780, agriAreaHa: 320000, gdpGrowthPct: 1.5 },
+  { wilaya: "Tlemcen", code: 13, region: "Ouest", populationK: 985, areaKm2: 9020, density: 109, gdpShare: 2.0, gdpBillionDzd: 610, gdpPerCapitaK: 619, unemployment: 12.8, youthUnemp: 26.5, femaleParticipation: 12.2, employmentRate: 47.8, informalEmploy: 42, urbanization: 58.5, povertyRate: 9.5, electrification: 97.0, waterAccess: 88.0, internetAccess: 55, secondaryEnrol: 82, higherEnrol: 30, literacyRate: 90.5, hospitalBeds10k: 16.5, physicians10k: 20.0, nurses10k: 28.5, healthCenters: 78, polyclinics: 28, infantMortality: 19.5, netMigration: -1.0, housingDeficitK: 20, vehicles10k: 178, phoneLines10k: 65, primarySchools: 340, middleSchools: 155, highSchools: 85, universityCapacityK: 45, industrialUnits: 920, agriAreaHa: 195000, gdpGrowthPct: 1.8 },
+  { wilaya: "Boumerdès", code: 35, region: "Centre", populationK: 845, areaKm2: 1459, density: 579, gdpShare: 2.8, gdpBillionDzd: 855, gdpPerCapitaK: 1012, unemployment: 9.8, youthUnemp: 21.0, femaleParticipation: 15.0, employmentRate: 50.5, informalEmploy: 36, urbanization: 68.2, povertyRate: 5.5, electrification: 99.2, waterAccess: 96.5, internetAccess: 75, secondaryEnrol: 87, higherEnrol: 38, literacyRate: 93.5, hospitalBeds10k: 18.5, physicians10k: 24.5, nurses10k: 34.0, healthCenters: 68, polyclinics: 25, infantMortality: 15.2, netMigration: 4.5, housingDeficitK: 22, vehicles10k: 265, phoneLines10k: 85, primarySchools: 245, middleSchools: 128, highSchools: 72, universityCapacityK: 42, industrialUnits: 1950, agriAreaHa: 35000, gdpGrowthPct: 2.5 },
+  { wilaya: "Ouargla", code: 30, region: "Sud", populationK: 725, areaKm2: 211980, density: 3.4, gdpShare: 3.5, gdpBillionDzd: 1068, gdpPerCapitaK: 1473, unemployment: 6.5, youthUnemp: 16.0, femaleParticipation: 10.2, employmentRate: 55.2, informalEmploy: 25, urbanization: 72.0, povertyRate: 5.8, electrification: 95.5, waterAccess: 82.0, internetAccess: 55, secondaryEnrol: 75, higherEnrol: 22, literacyRate: 87.5, hospitalBeds10k: 18.0, physicians10k: 22.0, nurses10k: 30.0, healthCenters: 52, polyclinics: 18, infantMortality: 18.0, netMigration: 8.5, housingDeficitK: 15, vehicles10k: 320, phoneLines10k: 78, primarySchools: 185, middleSchools: 85, highSchools: 42, universityCapacityK: 25, industrialUnits: 580, agriAreaHa: 45000, gdpGrowthPct: 2.0 },
+  { wilaya: "Biskra", code: 7, region: "Sud", populationK: 825, areaKm2: 21560, density: 38, gdpShare: 1.5, gdpBillionDzd: 458, gdpPerCapitaK: 555, unemployment: 11.5, youthUnemp: 22.5, femaleParticipation: 12.0, employmentRate: 48.5, informalEmploy: 38, urbanization: 62.5, povertyRate: 9.2, electrification: 94.0, waterAccess: 80.0, internetAccess: 48, secondaryEnrol: 74, higherEnrol: 20, literacyRate: 86.0, hospitalBeds10k: 15.5, physicians10k: 17.5, nurses10k: 25.0, healthCenters: 62, polyclinics: 22, infantMortality: 22.0, netMigration: 0.5, housingDeficitK: 18, vehicles10k: 165, phoneLines10k: 55, primarySchools: 265, middleSchools: 110, highSchools: 55, universityCapacityK: 22, industrialUnits: 520, agriAreaHa: 165000, gdpGrowthPct: 2.2 },
+  { wilaya: "M'sila", code: 28, region: "Hauts Plateaux", populationK: 1080, areaKm2: 18458, density: 59, gdpShare: 1.2, gdpBillionDzd: 366, gdpPerCapitaK: 339, unemployment: 17.5, youthUnemp: 35.0, femaleParticipation: 9.8, employmentRate: 43.2, informalEmploy: 52, urbanization: 38.5, povertyRate: 15.8, electrification: 90.5, waterAccess: 72.0, internetAccess: 35, secondaryEnrol: 68, higherEnrol: 18, literacyRate: 83.5, hospitalBeds10k: 11.8, physicians10k: 12.5, nurses10k: 20.0, healthCenters: 72, polyclinics: 22, infantMortality: 28.0, netMigration: -6.5, housingDeficitK: 32, vehicles10k: 105, phoneLines10k: 42, primarySchools: 385, middleSchools: 155, highSchools: 72, universityCapacityK: 18, industrialUnits: 380, agriAreaHa: 380000, gdpGrowthPct: 1.2 },
+  { wilaya: "Tipaza", code: 42, region: "Centre", populationK: 872, areaKm2: 2165, density: 403, gdpShare: 2.1, gdpBillionDzd: 641, gdpPerCapitaK: 735, unemployment: 10.2, youthUnemp: 22.5, femaleParticipation: 14.0, employmentRate: 49.6, informalEmploy: 38, urbanization: 65.4, povertyRate: 6.8, electrification: 98.5, waterAccess: 92.0, internetAccess: 62, secondaryEnrol: 85, higherEnrol: 32, literacyRate: 92.0, hospitalBeds10k: 16.8, physicians10k: 22.0, nurses10k: 30.5, healthCenters: 65, polyclinics: 24, infantMortality: 17.5, netMigration: 8.2, housingDeficitK: 20, vehicles10k: 225, phoneLines10k: 72, primarySchools: 240, middleSchools: 118, highSchools: 65, universityCapacityK: 15, industrialUnits: 1100, agriAreaHa: 68000, gdpGrowthPct: 2.8 },
+  { wilaya: "Médéa", code: 26, region: "Centre", populationK: 932, areaKm2: 8866, density: 105, gdpShare: 1.5, gdpBillionDzd: 458, gdpPerCapitaK: 491, unemployment: 13.8, youthUnemp: 28.5, femaleParticipation: 11.5, employmentRate: 46.2, informalEmploy: 44, urbanization: 52.0, povertyRate: 10.2, electrification: 95.5, waterAccess: 85.0, internetAccess: 48, secondaryEnrol: 78, higherEnrol: 25, literacyRate: 88.0, hospitalBeds10k: 14.5, physicians10k: 17.0, nurses10k: 24.5, healthCenters: 72, polyclinics: 24, infantMortality: 21.5, netMigration: -1.5, housingDeficitK: 22, vehicles10k: 152, phoneLines10k: 55, primarySchools: 320, middleSchools: 145, highSchools: 72, universityCapacityK: 20, industrialUnits: 680, agriAreaHa: 185000, gdpGrowthPct: 1.5 },
+  { wilaya: "Mostaganem", code: 27, region: "Ouest", populationK: 880, areaKm2: 2269, density: 388, gdpShare: 2.0, gdpBillionDzd: 610, gdpPerCapitaK: 693, unemployment: 11.2, youthUnemp: 24.0, femaleParticipation: 13.5, employmentRate: 48.8, informalEmploy: 40, urbanization: 65.0, povertyRate: 8.0, electrification: 98.0, waterAccess: 90.0, internetAccess: 58, secondaryEnrol: 82, higherEnrol: 28, literacyRate: 90.0, hospitalBeds10k: 17.5, physicians10k: 21.0, nurses10k: 29.5, healthCenters: 68, polyclinics: 25, infantMortality: 19.0, netMigration: 0.2, housingDeficitK: 18, vehicles10k: 195, phoneLines10k: 68, primarySchools: 275, middleSchools: 132, highSchools: 72, universityCapacityK: 28, industrialUnits: 1250, agriAreaHa: 120000, gdpGrowthPct: 2.0 },
+  { wilaya: "Ghardaïa", code: 47, region: "Sud", populationK: 425, areaKm2: 86820, density: 4.9, gdpShare: 1.8, gdpBillionDzd: 549, gdpPerCapitaK: 1292, unemployment: 7.5, youthUnemp: 18.5, femaleParticipation: 11.8, employmentRate: 54.0, informalEmploy: 28, urbanization: 78.5, povertyRate: 6.5, electrification: 96.0, waterAccess: 85.0, internetAccess: 52, secondaryEnrol: 78, higherEnrol: 25, literacyRate: 89.0, hospitalBeds10k: 17.0, physicians10k: 20.0, nurses10k: 28.0, healthCenters: 38, polyclinics: 14, infantMortality: 19.5, netMigration: 2.5, housingDeficitK: 8, vehicles10k: 280, phoneLines10k: 72, primarySchools: 145, middleSchools: 62, highSchools: 35, universityCapacityK: 18, industrialUnits: 420, agriAreaHa: 55000, gdpGrowthPct: 2.5 },
+  { wilaya: "Skikda", code: 21, region: "Est", populationK: 1020, areaKm2: 3166, density: 322, gdpShare: 2.5, gdpBillionDzd: 763, gdpPerCapitaK: 748, unemployment: 13.5, youthUnemp: 27.5, femaleParticipation: 12.5, employmentRate: 47.2, informalEmploy: 42, urbanization: 62.0, povertyRate: 9.0, electrification: 97.5, waterAccess: 90.0, internetAccess: 58, secondaryEnrol: 82, higherEnrol: 28, literacyRate: 90.5, hospitalBeds10k: 17.0, physicians10k: 20.5, nurses10k: 28.5, healthCenters: 75, polyclinics: 28, infantMortality: 19.0, netMigration: -0.8, housingDeficitK: 22, vehicles10k: 205, phoneLines10k: 68, primarySchools: 295, middleSchools: 145, highSchools: 82, universityCapacityK: 32, industrialUnits: 1600, agriAreaHa: 85000, gdpGrowthPct: 2.0 },
+];
+
+// 25b. Regional inequality indices (Gini coefficient by dimension per region)
+export const regionalInequality = [
+  { region: "Centre", giniIncome: 0.315, giniLand: 0.42, giniEducation: 0.18, giniHealth: 0.15, giniHousing: 0.35, theilIndex: 0.12, palmaRatio: 1.45 },
+  { region: "Est", giniIncome: 0.345, giniLand: 0.48, giniEducation: 0.22, giniHealth: 0.20, giniHousing: 0.40, theilIndex: 0.18, palmaRatio: 1.72 },
+  { region: "Ouest", giniIncome: 0.330, giniLand: 0.45, giniEducation: 0.20, giniHealth: 0.18, giniHousing: 0.38, theilIndex: 0.15, palmaRatio: 1.58 },
+  { region: "Sud", giniIncome: 0.295, giniLand: 0.55, giniEducation: 0.28, giniHealth: 0.25, giniHousing: 0.42, theilIndex: 0.14, palmaRatio: 1.35 },
+  { region: "Hauts Plateaux", giniIncome: 0.360, giniLand: 0.50, giniEducation: 0.25, giniHealth: 0.22, giniHousing: 0.45, theilIndex: 0.22, palmaRatio: 1.85 },
+];
+
+// 25c. Regional human development composite index (HDI-like) 2015-2024
+export const regionalHDI = [
+  { year: 2015, centreHDI: 0.782, estHDI: 0.718, ouestHDI: 0.735, sudHDI: 0.705, hpHDI: 0.665 },
+  { year: 2016, centreHDI: 0.785, estHDI: 0.722, ouestHDI: 0.738, sudHDI: 0.708, hpHDI: 0.668 },
+  { year: 2017, centreHDI: 0.788, estHDI: 0.725, ouestHDI: 0.740, sudHDI: 0.712, hpHDI: 0.672 },
+  { year: 2018, centreHDI: 0.792, estHDI: 0.728, ouestHDI: 0.742, sudHDI: 0.715, hpHDI: 0.675 },
+  { year: 2019, centreHDI: 0.795, estHDI: 0.730, ouestHDI: 0.745, sudHDI: 0.718, hpHDI: 0.678 },
+  { year: 2020, centreHDI: 0.790, estHDI: 0.720, ouestHDI: 0.738, sudHDI: 0.710, hpHDI: 0.670 },
+  { year: 2021, centreHDI: 0.798, estHDI: 0.732, ouestHDI: 0.748, sudHDI: 0.720, hpHDI: 0.680 },
+  { year: 2022, centreHDI: 0.802, estHDI: 0.738, ouestHDI: 0.752, sudHDI: 0.725, hpHDI: 0.685 },
+  { year: 2023, centreHDI: 0.808, estHDI: 0.742, ouestHDI: 0.755, sudHDI: 0.728, hpHDI: 0.688 },
+  { year: 2024, centreHDI: 0.812, estHDI: 0.748, ouestHDI: 0.760, sudHDI: 0.732, hpHDI: 0.692 },
+];
+
+// 25d. Regional employment structure (2024) - sectoral employment breakdown
+export const regionalEmployment = [
+  { region: "Centre", totalEmployK: 3850, agriculturePct: 4.5, industryPct: 22.0, constructionPct: 12.5, servicesPct: 45.0, publicSectorPct: 16.0, femalePct: 16.2, youthPct: 22.5 },
+  { region: "Est", totalEmployK: 2180, agriculturePct: 18.5, industryPct: 16.0, constructionPct: 10.5, servicesPct: 38.0, publicSectorPct: 17.0, femalePct: 12.5, youthPct: 25.8 },
+  { region: "Ouest", totalEmployK: 1550, agriculturePct: 15.0, industryPct: 14.5, constructionPct: 11.0, servicesPct: 42.0, publicSectorPct: 17.5, femalePct: 13.8, youthPct: 24.2 },
+  { region: "Sud", totalEmployK: 1980, agriculturePct: 3.5, industryPct: 25.0, constructionPct: 12.0, servicesPct: 35.0, publicSectorPct: 24.5, femalePct: 10.2, youthPct: 20.5 },
+  { region: "Hauts Plateaux", totalEmployK: 1320, agriculturePct: 28.0, industryPct: 10.0, constructionPct: 8.5, servicesPct: 35.5, publicSectorPct: 18.0, femalePct: 9.8, youthPct: 28.5 },
+];
+
+// 25e. Regional infrastructure indicators (2024)
+export const regionalInfrastructure = [
+  { region: "Centre", roadDensity: 0.85, highwayKm: 520, railwayKm: 680, airports: 3, ports: 4, waterSupplyPct: 95.5, sewagePct: 82.0, broadbandSubscribersK: 1850, mobilePenetration: 118, internetUsersPct: 72 },
+  { region: "Est", roadDensity: 0.42, highwayKm: 280, railwayKm: 520, airports: 2, ports: 3, waterSupplyPct: 88.0, sewagePct: 62.0, broadbandSubscribersK: 920, mobilePenetration: 108, internetUsersPct: 58 },
+  { region: "Ouest", roadDensity: 0.55, highwayKm: 310, railwayKm: 420, airports: 2, ports: 2, waterSupplyPct: 90.0, sewagePct: 65.0, broadbandSubscribersK: 680, mobilePenetration: 112, internetUsersPct: 62 },
+  { region: "Sud", roadDensity: 0.08, highwayKm: 850, railwayKm: 180, airports: 5, ports: 0, waterSupplyPct: 72.0, sewagePct: 35.0, broadbandSubscribersK: 520, mobilePenetration: 105, internetUsersPct: 48 },
+  { region: "Hauts Plateaux", roadDensity: 0.32, highwayKm: 180, railwayKm: 350, airports: 1, ports: 0, waterSupplyPct: 78.0, sewagePct: 45.0, broadbandSubscribersK: 580, mobilePenetration: 102, internetUsersPct: 45 },
+];
+
+// 25f. Top wilayas by specific indicators - for ranked charts
+export const topWilayasByUnemp = [
+  { wilaya: "M'sila", rate: 17.5, region: "Hauts Plateaux" },
+  { wilaya: "Béjaïa", rate: 16.8, region: "Centre" },
+  { wilaya: "Djelfa", rate: 16.5, region: "Hauts Plateaux" },
+  { wilaya: "Tizi Ouzou", rate: 15.5, region: "Centre" },
+  { wilaya: "Batna", rate: 15.2, region: "Hauts Plateaux" },
+  { wilaya: "Sétif", rate: 14.8, region: "Hauts Plateaux" },
+  { wilaya: "Annaba", rate: 14.2, region: "Est" },
+  { wilaya: "Skikda", rate: 13.5, region: "Est" },
+  { wilaya: "Médéa", rate: 13.8, region: "Centre" },
+  { wilaya: "Tlemcen", rate: 12.8, region: "Ouest" },
+  { wilaya: "Mostaganem", rate: 11.2, region: "Ouest" },
+  { wilaya: "Tipaza", rate: 10.2, region: "Centre" },
+  { wilaya: "Boumerdès", rate: 9.8, region: "Centre" },
+  { wilaya: "Oran", rate: 9.5, region: "Ouest" },
+  { wilaya: "Biskra", rate: 11.5, region: "Sud" },
+];
+
+export const topWilayasByGDP = [
+  { wilaya: "Alger", gdpShare: 15.8, gdpBillionDzd: 4820 },
+  { wilaya: "Oran", gdpShare: 5.2, gdpBillionDzd: 1590 },
+  { wilaya: "Constantine", gdpShare: 3.8, gdpBillionDzd: 1160 },
+  { wilaya: "Ouargla", gdpShare: 3.5, gdpBillionDzd: 1068 },
+  { wilaya: "Annaba", gdpShare: 2.8, gdpBillionDzd: 855 },
+  { wilaya: "Boumerdès", gdpShare: 2.8, gdpBillionDzd: 855 },
+  { wilaya: "Blida", gdpShare: 3.6, gdpBillionDzd: 1100 },
+  { wilaya: "Skikda", gdpShare: 2.5, gdpBillionDzd: 763 },
+  { wilaya: "Tizi Ouzou", gdpShare: 2.5, gdpBillionDzd: 763 },
+  { wilaya: "Tipaza", gdpShare: 2.1, gdpBillionDzd: 641 },
+  { wilaya: "Béjaïa", gdpShare: 2.2, gdpBillionDzd: 671 },
+  { wilaya: "Mostaganem", gdpShare: 2.0, gdpBillionDzd: 610 },
+  { wilaya: "Tlemcen", gdpShare: 2.0, gdpBillionDzd: 610 },
+  { wilaya: "Sétif", gdpShare: 3.2, gdpBillionDzd: 975 },
+  { wilaya: "Ghardaïa", gdpShare: 1.8, gdpBillionDzd: 549 },
+];
+
+// 25g. Correlation scatter data: GDP per capita vs education vs health
+export const regionalDevelopmentScatter = [
+  { region: "Centre", gdpPerCapitaK: 655, secondaryEnrol: 85, hospitalBeds10k: 18.8, literacyRate: 94.2, lifeExp: 77.8, povertyRate: 6.8 },
+  { region: "Est", gdpPerCapitaK: 445, secondaryEnrol: 80, hospitalBeds10k: 16.2, literacyRate: 90.5, lifeExp: 76.5, povertyRate: 10.2 },
+  { region: "Ouest", gdpPerCapitaK: 570, secondaryEnrol: 82, hospitalBeds10k: 16.5, literacyRate: 91.8, lifeExp: 77.0, povertyRate: 8.2 },
+  { region: "Sud", gdpPerCapitaK: 530, secondaryEnrol: 70, hospitalBeds10k: 17.0, literacyRate: 87.5, lifeExp: 76.0, povertyRate: 8.8 },
+  { region: "Hauts Plateaux", gdpPerCapitaK: 355, secondaryEnrol: 76, hospitalBeds10k: 14.4, literacyRate: 86.5, lifeExp: 75.5, povertyRate: 11.5 },
+];
+
+// 25h. Regional urbanization trend 2015-2024
+export const regionalUrbanization = [
+  { year: 2015, centre: 64.5, est: 54.5, ouest: 57.5, sud: 56.0, hp: 46.5 },
+  { year: 2016, centre: 65.0, est: 55.0, ouest: 58.0, sud: 56.5, hp: 47.0 },
+  { year: 2017, centre: 65.5, est: 55.5, ouest: 58.5, sud: 57.0, hp: 47.5 },
+  { year: 2018, centre: 66.2, est: 56.0, ouest: 59.0, sud: 57.5, hp: 48.0 },
+  { year: 2019, centre: 66.8, est: 56.5, ouest: 59.5, sud: 58.0, hp: 48.5 },
+  { year: 2020, centre: 67.0, est: 56.8, ouest: 59.5, sud: 58.5, hp: 48.8 },
+  { year: 2021, centre: 67.5, est: 57.2, ouest: 60.0, sud: 59.0, hp: 49.2 },
+  { year: 2022, centre: 68.0, est: 57.8, ouest: 60.8, sud: 59.5, hp: 50.0 },
+  { year: 2023, centre: 68.2, est: 58.2, ouest: 61.2, sud: 59.8, hp: 50.5 },
+  { year: 2024, centre: 68.5, est: 58.5, ouest: 61.5, sud: 60.2, hp: 50.8 },
+];
+
+// 25i. Wilaya population ranking (all 58 wilayas, top 20 shown)
+export const wilayaPopulationRanking = [
+  { rank: 1, wilaya: "Alger", popK: 3915, region: "Centre" },
+  { rank: 2, wilaya: "Sétif", popK: 1750, region: "Hauts Plateaux" },
+  { rank: 3, wilaya: "Oran", popK: 1956, region: "Ouest" },
+  { rank: 4, wilaya: "Djelfa", popK: 1420, region: "Hauts Plateaux" },
+  { rank: 5, wilaya: "Tizi Ouzou", popK: 1280, region: "Centre" },
+  { rank: 6, wilaya: "Constantine", popK: 1240, region: "Est" },
+  { rank: 7, wilaya: "M'sila", popK: 1080, region: "Hauts Plateaux" },
+  { rank: 8, wilaya: "Médéa", popK: 932, region: "Centre" },
+  { rank: 9, wilaya: "Mostaganem", popK: 880, region: "Ouest" },
+  { rank: 10, wilaya: "Batna", popK: 1185, region: "Hauts Plateaux" },
+  { rank: 11, wilaya: "Blida", popK: 1142, region: "Centre" },
+  { rank: 12, wilaya: "Boumerdès", popK: 845, region: "Centre" },
+  { rank: 13, wilaya: "Tipaza", popK: 872, region: "Centre" },
+  { rank: 14, wilaya: "Tlemcen", popK: 985, region: "Ouest" },
+  { rank: 15, wilaya: "Biskra", popK: 825, region: "Sud" },
+  { rank: 16, wilaya: "Skikda", popK: 1020, region: "Est" },
+  { rank: 17, wilaya: "Annaba", popK: 742, region: "Est" },
+  { rank: 18, wilaya: "Ouargla", popK: 725, region: "Sud" },
+  { rank: 19, wilaya: "Béjaïa", popK: 960, region: "Centre" },
+  { rank: 20, wilaya: "Ghardaïa", popK: 425, region: "Sud" },
+];

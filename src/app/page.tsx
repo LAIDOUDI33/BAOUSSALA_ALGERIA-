@@ -7,6 +7,8 @@ import {
   education, ippiQuarterly, wilayaData, constructionIndex, latestKPIs,
   hydrocarbons, agricultureData, manufacturingData, btpData,
   servicesData, miningEnergy, healthData, regionAggregates, regionalTimeSeries, regionalSectorComposition,
+  wilayaDetailed, regionalInequality, regionalHDI, regionalEmployment, regionalInfrastructure,
+  topWilayasByUnemp, topWilayasByGDP, regionalDevelopmentScatter, regionalUrbanization, wilayaPopulationRanking,
 } from "@/lib/algeria-data";
 
 import { useI18n } from "@/lib/i18n/context";
@@ -34,6 +36,7 @@ import {
   Scale, ChevronRight, Droplets, Sprout, Hammer, Wrench, Zap,
   Stethoscope, Shield, Thermometer, Baby, Syringe, BedDouble,
   MapPin, ArrowRightLeft, Landmark, Wheat, Briefcase,
+  Wifi, Car, Pipette, TreePine, BookOpen, UserCheck, Home, Route,
 } from "lucide-react";
 
 // ─── Color palette ──────────────────────────────────────────────────────────
@@ -689,24 +692,47 @@ export default function AlgeriaDashboard() {
 
           {/* ═══ REGIONAL ═════════════════════════════════════════════════════ */}
           <TabsContent value="regional" className="space-y-5">
-            {/* ── KPI CARDS ──────────────────────────────────────────────────── */}
+            {/* ── KPI CARDS ROW 1: Core Demographics ──────────────────────── */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiRegTotalPop} value="46.8" unit="M" icon={Users} color={COLORS.blue} />
-              <KpiCard title={t.kpiRegTotalWilayas} value="58" unit="wilayas" icon={MapPin} color={COLORS.emerald} />
-              <KpiCard title={t.kpiRegNationalGdp} value="267" unit="bn $" icon={Globe} color={COLORS.amber} />
-              <KpiCard title={t.kpiRegAvgUnemp} value="9.7" unit="%" change={-1.0} changeDir="down" icon={Activity} color={COLORS.red} />
+              <KpiCard title={t.kpiRegTotalWilayas} value="58" unit="" icon={MapPin} color={COLORS.emerald} />
+              <KpiCard title={t.kpiRegNationalGdp} value="205" unit="bn $" icon={Globe} color={COLORS.amber} />
+              <KpiCard title={t.kpiRegAvgUnemp} value="11.9" unit="%" change={-1.5} changeDir="down" icon={Activity} color={COLORS.red} />
             </div>
+            {/* ── KPI CARDS ROW 2: Social Indicators ──────────────────────── */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <KpiCard title={t.kpiRegYouthUnemp} value="24.8" unit="%" icon={Users} color={COLORS.rose} />
+              <KpiCard title={t.kpiRegYouthUnemp} value="26.2" unit="%" icon={Users} color={COLORS.rose} />
               <KpiCard title={t.kpiRegUrbanization} value="73.5" unit="%" icon={Building2} color={COLORS.purple} />
-              <KpiCard title={t.kpiRegPoverty} value="8.2" unit="%" change={-0.5} changeDir="down" icon={Scale} color={COLORS.amber} />
-              <KpiCard title={t.kpiRegElectrification} value="99.2" unit="%" icon={Zap} color={COLORS.teal} />
+              <KpiCard title={t.kpiRegPoverty} value="9.5" unit="%" change={-0.8} changeDir="down" icon={Scale} color={COLORS.amber} />
+              <KpiCard title={t.kpiRegElectrification} value="97.6" unit="%" icon={Zap} color={COLORS.teal} />
             </div>
+            {/* ── KPI CARDS ROW 3: Development ────────────────────────────── */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <KpiCard title={t.kpiRegInformal} value="38.5" unit="%" icon={Briefcase} color={COLORS.slate} />
-              <KpiCard title={t.kpiRegSecondary} value="81.2" unit="%" icon={GraduationCap} color={COLORS.blue} />
+              <KpiCard title={t.kpiRegInformal} value="41.2" unit="%" icon={Briefcase} color={COLORS.slate} />
+              <KpiCard title={t.kpiRegSecondary} value="79.8" unit="%" icon={GraduationCap} color={COLORS.blue} />
               <KpiCard title={t.kpiRegNetMigration} value="-0.4" unit="‰" icon={ArrowRightLeft} color={COLORS.orange} />
-              <KpiCard title={t.kpiRegHospitalBeds} value="20.3" unit="" icon={Heart} color={COLORS.red} />
+              <KpiCard title={t.kpiRegHospitalBeds} value="17.4" unit="" icon={Heart} color={COLORS.red} />
+            </div>
+            {/* ── KPI CARDS ROW 4: Enhanced KPIs ──────────────────────────── */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiRegDensity} value="19.7" unit="hab/km²" icon={Users} color={COLORS.cyan} />
+              <KpiCard title={t.kpiRegEmployment} value="48.8" unit="%" icon={UserCheck} color={COLORS.emerald} />
+              <KpiCard title={t.kpiRegFemalePartic} value="13.5" unit="%" icon={Users} color={COLORS.purple} />
+              <KpiCard title={t.kpiRegInternet} value="60.8" unit="%" icon={Wifi} color={COLORS.blue} />
+            </div>
+            {/* ── KPI CARDS ROW 5: More Enhanced KPIs ─────────────────────── */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiRegLiteracy} value="89.8" unit="%" icon={BookOpen} color={COLORS.teal} />
+              <KpiCard title={t.kpiRegInfantMort} value="17.8" unit="‰" icon={Baby} color={COLORS.red} />
+              <KpiCard title={t.kpiRegWaterAccess} value="88.0" unit="%" icon={Droplets} color={COLORS.cyan} />
+              <KpiCard title={t.kpiRegHDI} value="0.749" unit="" icon={TrendingUp} color={COLORS.emerald} />
+            </div>
+            {/* ── KPI CARDS ROW 6: Infrastructure ──────────────────────────── */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiRegRoadDensity} value="0.44" unit="km/km²" icon={Route} color={COLORS.slate} />
+              <KpiCard title={t.kpiRegMobilePenetration} value="109" unit="%" icon={Wifi} color={COLORS.blue} />
+              <KpiCard title={t.kpiRegBroadband} value="4550" unit="K" icon={Wifi} color={COLORS.purple} />
+              <KpiCard title={t.kpiRegVehicles} value="220" unit="/10K" icon={Car} color={COLORS.amber} />
             </div>
 
             {/* ── ROW 1: GDP Share + Unemployment Trend ──────────────────────── */}
@@ -850,7 +876,56 @@ export default function AlgeriaDashboard() {
               </ChartCard>
             </div>
 
-            {/* ── ROW 4: GDP Per Capita + Electrification + Migration ────── */}
+            {/* ── ROW 4: HDI Trend + Employment Structure ──────────────────── */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartRegionHDI} subtitle={t.chartRegionHDISub}>
+                <ChartContainer config={{
+                  centreHDI: { label: t.chartCentreHDI, color: COLORS.blue },
+                  estHDI: { label: t.chartEstHDI, color: COLORS.emerald },
+                  ouestHDI: { label: t.chartOuestHDI, color: COLORS.amber },
+                  sudHDI: { label: t.chartSudHDI, color: COLORS.red },
+                  hpHDI: { label: t.chartHPHDI, color: COLORS.purple },
+                }} className="h-[340px] w-full">
+                  <LineChart data={regionalHDI} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0.64, 0.84]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Line type="monotone" dataKey="centreHDI" stroke={COLORS.blue} strokeWidth={2.5} dot={{ r: 3 }} />
+                    <Line type="monotone" dataKey="ouestHDI" stroke={COLORS.amber} strokeWidth={2} dot={{ r: 2 }} />
+                    <Line type="monotone" dataKey="estHDI" stroke={COLORS.emerald} strokeWidth={2} dot={{ r: 2 }} />
+                    <Line type="monotone" dataKey="sudHDI" stroke={COLORS.red} strokeWidth={2} dot={{ r: 2 }} />
+                    <Line type="monotone" dataKey="hpHDI" stroke={COLORS.purple} strokeWidth={2} dot={{ r: 2 }} strokeDasharray="5 3" />
+                  </LineChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionEmployStruct} subtitle={t.chartRegionEmployStructSub}>
+                <ChartContainer config={{
+                  agriculturePct: { label: t.chartRegionAgriEmp, color: COLORS.emerald },
+                  industryPct: { label: t.chartRegionIndEmp, color: COLORS.blue },
+                  constructionPct: { label: t.chartRegionConstrEmp, color: COLORS.amber },
+                  servicesPct: { label: t.chartRegionServEmp, color: COLORS.purple },
+                  publicSectorPct: { label: t.chartRegionPublicEmp, color: COLORS.red },
+                }} className="h-[340px] w-full">
+                  <BarChart data={regionalEmployment} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="region" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="agriculturePct" stackId="a" fill={COLORS.emerald} />
+                    <Bar dataKey="industryPct" stackId="a" fill={COLORS.blue} />
+                    <Bar dataKey="constructionPct" stackId="a" fill={COLORS.amber} />
+                    <Bar dataKey="servicesPct" stackId="a" fill={COLORS.purple} />
+                    <Bar dataKey="publicSectorPct" stackId="a" fill={COLORS.red} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* ── ROW 5: Per Capita GDP + Electrification + Migration ────── */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
               <ChartCard title={t.chartRegionPerCapita} subtitle={t.chartRegionPerCapitaSub}>
                 <ChartContainer config={{ gdpPerCapitaK: { label: t.chartRegionPerCapita, color: COLORS.emerald } }} className="h-[300px] w-full">
@@ -897,18 +972,18 @@ export default function AlgeriaDashboard() {
               </ChartCard>
             </div>
 
-            {/* ── ROW 5: Top Wilayas Scatter + Top 10 GDP ────────────────────── */}
+            {/* ── ROW 6: Top Wilayas GDP + Population Scatter ──────────────────── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartWilayaGdp} subtitle={t.chartWilayaGdpSub}>
                 <ChartContainer config={{ gdpShare: { label: t.chartGdpShare, color: COLORS.emerald } }} className="h-[380px] w-full">
-                  <BarChart data={wilayaData.slice(0, 15)} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 120 : 100, bottom: 0 }}>
+                  <BarChart data={topWilayasByGDP} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 120 : 100, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 10 }} tickLine={false} width={isRtl ? 120 : 100} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Bar dataKey="gdpShare" fill={COLORS.emerald} radius={[0, 4, 4, 0]} name={t.chartGdpShare}>
-                      {wilayaData.slice(0, 15).map((_, i) => (
-                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.purple, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red, COLORS.blueLight, COLORS.emeraldLight, COLORS.amberLight, COLORS.purpleLight, COLORS.cyanLight][i]} />
+                      {topWilayasByGDP.map((_, i) => (
+                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.purple, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red, COLORS.blueLight, COLORS.emeraldLight, COLORS.amberLight, COLORS.purpleLight, COLORS.cyanLight][i % 15]} />
                       ))}
                     </Bar>
                   </BarChart>
@@ -926,9 +1001,9 @@ export default function AlgeriaDashboard() {
                     <YAxis dataKey="gdpShare" name={t.chartGdpShareLabel} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartGdpShareLabel, angle: isRtl ? 90 : -90, position: "insideLeft", fontSize: 11 }} />
                     <ZAxis dataKey="unemployment" range={[80, 400]} name={t.chartUnempPctLabel} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Scatter data={wilayaData.slice(0, 15)} fill={COLORS.emerald}>
-                      {wilayaData.slice(0, 15).map((_, i) => (
-                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.purple, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red, COLORS.blueLight, COLORS.emeraldLight, COLORS.amberLight, COLORS.purpleLight, COLORS.cyanLight][i]} />
+                    <Scatter data={wilayaDetailed} fill={COLORS.emerald}>
+                      {wilayaDetailed.map((d, i) => (
+                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.purple, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red, COLORS.blueLight, COLORS.emeraldLight, COLORS.amberLight, COLORS.purpleLight, COLORS.cyanLight, COLORS.roseLight, COLORS.tealLight, COLORS.orangeLight, COLORS.slateLight, COLORS.redLight][i % 20]} />
                       ))}
                     </Scatter>
                   </ScatterChart>
@@ -936,7 +1011,130 @@ export default function AlgeriaDashboard() {
               </ChartCard>
             </div>
 
-            {/* ── ROW 6: Health + Education + Informal ──────────────────── */}
+            {/* ── ROW 7: Inequality (Gini) + Inequality Radar ────────────── */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartRegionInequality} subtitle={t.chartRegionInequalitySub}>
+                <ChartContainer config={{
+                  giniIncome: { label: t.chartGiniIncome, color: COLORS.red },
+                  giniEducation: { label: t.chartGiniEducation, color: COLORS.blue },
+                  giniHealth: { label: t.chartGiniHealth, color: COLORS.emerald },
+                  giniHousing: { label: t.chartGiniHousing, color: COLORS.amber },
+                }} className="h-[340px] w-full">
+                  <BarChart data={regionalInequality} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="region" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 0.6]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="giniIncome" fill={COLORS.red} radius={[2, 2, 0, 0]} />
+                    <Bar dataKey="giniEducation" fill={COLORS.blue} radius={[2, 2, 0, 0]} />
+                    <Bar dataKey="giniHealth" fill={COLORS.emerald} radius={[2, 2, 0, 0]} />
+                    <Bar dataKey="giniHousing" fill={COLORS.amber} radius={[2, 2, 0, 0]} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionPopulation} subtitle={t.chartRegionPopulationSub}>
+                <ChartContainer config={{
+                  populationK: { label: t.chartPopThousands, color: COLORS.blue },
+                }} className="h-[340px] w-full">
+                  <BarChart data={regionAggregates} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="region" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="populationK" radius={[4, 4, 0, 0]}>
+                      {regionAggregates.map((_, i) => (
+                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.red, COLORS.purple][i]} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* ── ROW 8: Urbanization Trend + Wilaya Population Ranking ────── */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartRegionUrbanTrend} subtitle={t.chartRegionUrbanTrendSub}>
+                <ChartContainer config={{
+                  centre: { label: t.labelCentre, color: COLORS.blue },
+                  est: { label: t.labelEst, color: COLORS.emerald },
+                  ouest: { label: t.labelOuest, color: COLORS.amber },
+                  sud: { label: t.labelSud, color: COLORS.red },
+                  hp: { label: t.labelHautsPlateaux, color: COLORS.purple },
+                }} className="h-[340px] w-full">
+                  <AreaChart data={regionalUrbanization} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[40, 75]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Area type="monotone" dataKey="centre" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.3} />
+                    <Area type="monotone" dataKey="ouest" fill={COLORS.amberLight} stroke={COLORS.amber} strokeWidth={2} fillOpacity={0.3} />
+                    <Area type="monotone" dataKey="est" fill={COLORS.emeraldLight} stroke={COLORS.emerald} strokeWidth={2} fillOpacity={0.3} />
+                    <Area type="monotone" dataKey="sud" fill={COLORS.redLight} stroke={COLORS.red} strokeWidth={2} fillOpacity={0.3} />
+                    <Area type="monotone" dataKey="hp" fill={COLORS.purpleLight} stroke={COLORS.purple} strokeWidth={2} fillOpacity={0.3} strokeDasharray="5 3" />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartWilayaPopRank} subtitle={t.chartWilayaPopRankSub}>
+                <ChartContainer config={{ popK: { label: t.chartPopThousands, color: COLORS.blue } }} className="h-[340px] w-full">
+                  <BarChart data={wilayaPopulationRanking} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 120 : 100, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 10 }} tickLine={false} width={isRtl ? 120 : 100} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="popK" radius={[0, 4, 4, 0]}>
+                      {wilayaPopulationRanking.map((d, i) => (
+                        <Cell key={i} fill={d.region === "Centre" ? COLORS.blue : d.region === "Hauts Plateaux" ? COLORS.purple : d.region === "Est" ? COLORS.emerald : d.region === "Ouest" ? COLORS.amber : COLORS.red} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* ── ROW 9: Wilaya Unemployment Ranking + Health/Education/Informal ── */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartWilayaUnempRank} subtitle={t.chartWilayaUnempRankSub}>
+                <ChartContainer config={{ rate: { label: t.chartUnempPct, color: COLORS.red } }} className="h-[380px] w-full">
+                  <BarChart data={topWilayasByUnemp} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 120 : 100, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[0, 38]} />
+                    <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 10 }} tickLine={false} width={isRtl ? 120 : 100} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="rate" radius={[0, 4, 4, 0]}>
+                      {topWilayasByUnemp.map((d) => (
+                        <Cell key={d.wilaya} fill={d.rate >= 16 ? COLORS.red : d.rate >= 13 ? COLORS.amber : COLORS.emerald} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionDevScatter} subtitle={t.chartRegionDevScatterSub}>
+                <ChartContainer config={{
+                  x: { label: t.chartRegionPerCapita, color: COLORS.blue },
+                  y: { label: t.chartSecondaryEnrol, color: COLORS.emerald },
+                }} className="h-[380px] w-full">
+                  <ScatterChart margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="gdpPerCapitaK" name={t.chartRegionPerCapita} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartRegionPerCapita, position: "bottom", fontSize: 10 }} />
+                    <YAxis dataKey="secondaryEnrol" name={t.chartSecondaryEnrol} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartSecondaryEnrol, angle: isRtl ? 90 : -90, position: "insideLeft", fontSize: 10 }} />
+                    <ZAxis dataKey="povertyRate" range={[100, 500]} name={t.chartPovertyRate} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Scatter data={regionalDevelopmentScatter} fill={COLORS.blue}>
+                      {regionalDevelopmentScatter.map((_, i) => (
+                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.red, COLORS.purple][i]} />
+                      ))}
+                    </Scatter>
+                  </ScatterChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* ── ROW 10: Health + Education + Informal ──────────────────── */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
               <ChartCard title={t.chartRegionHealth} subtitle={t.chartRegionHealthSub}>
                 <ChartContainer config={{ hospitalBeds10k: { label: t.kpiRegHospitalBeds, color: COLORS.red } }} className="h-[280px] w-full">
@@ -976,6 +1174,48 @@ export default function AlgeriaDashboard() {
                     <Bar dataKey="informalEmploy" radius={[0, 4, 4, 0]} fill={COLORS.slate} opacity={0.85}>
                       {regionAggregates.map((d) => (
                         <Cell key={d.region} fill={d.informalEmploy >= 40 ? COLORS.red : d.informalEmploy >= 35 ? COLORS.amber : COLORS.emerald} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* ── ROW 11: Infrastructure Dashboard ────────────────────────── */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartRegionInfra} subtitle={t.chartRegionInfraSub}>
+                <ChartContainer config={{
+                  roadDensity: { label: t.chartRoadDensity, color: COLORS.slate },
+                  waterSupplyPct: { label: t.chartWaterSupply, color: COLORS.cyan },
+                  sewagePct: { label: t.chartSewage, color: COLORS.blue },
+                  internetUsersPct: { label: t.chartInternetUsers, color: COLORS.purple },
+                  mobilePenetration: { label: t.chartMobilePen, color: COLORS.emerald },
+                }} className="h-[380px] w-full">
+                  <BarChart data={regionalInfrastructure} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="region" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="roadDensity" fill={COLORS.slate} radius={[2, 2, 0, 0]} />
+                    <Bar dataKey="waterSupplyPct" fill={COLORS.cyan} radius={[2, 2, 0, 0]} />
+                    <Bar dataKey="sewagePct" fill={COLORS.blue} radius={[2, 2, 0, 0]} />
+                    <Bar dataKey="internetUsersPct" fill={COLORS.purple} radius={[2, 2, 0, 0]} />
+                    <Bar dataKey="mobilePenetration" fill={COLORS.emerald} radius={[2, 2, 0, 0]} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionDensityBar} subtitle={t.chartRegionDensityBarSub}>
+                <ChartContainer config={{ density: { label: t.kpiRegDensity, color: COLORS.cyan } }} className="h-[380px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="density" radius={[0, 4, 4, 0]}>
+                      {regionAggregates.map((d, i) => (
+                        <Cell key={d.region} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.red, COLORS.purple][i]} />
                       ))}
                     </Bar>
                   </BarChart>

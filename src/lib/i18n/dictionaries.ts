@@ -1,56 +1,5 @@
-  kpiRegTotalPop: "58 Wilayas Pop.",
-  kpiRegTotalWilayas: "58 Wilayas",
-  kpiRegNationalGdp: "National GDP",
-  kpiRegAvgUnemp: "Avg. Unemployment",
-  kpiRegYouthUnemp: "Youth Unemployment",
-  kpiRegUrbanization: "Urbanization Rate",
-  kpiRegPoverty: "Poverty Rate",
-  kpiRegElectrification: "Electrification",
-  kpiRegInformal: "Informal Employment",
-  kpiRegSecondary: "Secondary Enrolment",
-  kpiRegNetMigration: "Net Migration",
-  kpiRegHospitalBeds: "Hospital Beds/10K",
-  chartRegionGdpShare: "GDP Share by Macro-Region (2024)",
-  chartRegionGdpShareSub: "% of national GDP – Source: ONS Comptes Régionaux",
-  chartRegionUnempTrend: "Unemployment Rate by Region (2015–2024)",
-  chartRegionUnempTrendSub: "% – Source: ONS Enquêtes Emploi",
-  chartRegionUnemp: "Unemployment %",
-  chartRegionGdpTrend: "GDP Share Evolution by Region (2015–2024)",
-  chartRegionGdpTrendSub: "% of national GDP",
-  chartRegionSectorComp: "Sectoral GDP Composition by Region (2023)",
-  chartRegionSectorCompSub: "% breakdown – Agriculture, Industry, Construction, Services, Hydrocarbons",
-  chartRegionPoverty: "Poverty Rate by Macro-Region (2024)",
-  chartRegionPovertySub: "% below national poverty line – Source: ONS",
-  chartRegionYouthUnemp: "Youth Unemployment (15-24) by Region (2024)",
-  chartRegionYouthUnempSub: "% – Source: ONS Enquête Emploi 2024",
-  chartRegionUrbanization: "Urbanization Rate by Region (2024)",
-  chartRegionUrbanizationSub: "% of population living in urban areas",
-  chartRegionDensity: "Population Density by Macro-Region (2024)",
-  chartRegionDensitySub: "Inhabitants per km²",
-  chartRegionPerCapita: "GDP Per Capita by Macro-Region (2024)",
-  chartRegionPerCapitaSub: "Thousands DZD – Source: ONS",
-  chartRegionElectrification: "Electrification Rate by Region (2024)",
-  chartRegionElectrificationSub: "% of households with electricity",
-  chartRegionMigration: "Net Migration Rate by Region (2024)",
-  chartRegionMigrationSub: "Per 1,000 inhabitants (‰)",
-  chartRegionInformal: "Informal Employment by Region (2024)",
-  chartRegionInformalSub: "% of total employment – Source: ONS",
-  chartRegionHealth: "Hospital Beds per 10,000 by Region (2024)",
-  chartRegionHealthSub: "Source: ONS / Ministry of Health",
-  chartRegionEducation: "Secondary School Enrolment by Region (2024)",
-  chartRegionEducationSub: "% gross enrolment – Source: ONS",
-  labelCentre: "Centre",
-  labelEst: "East",
-  labelOuest: "West",
-  labelSud: "South",
-  labelHautsPlateaux: "High Plateaus",
-  labelAgriculture: "Agriculture",
-  labelIndustry: "Industry",
-  labelConstruction: "Construction",
-  labelServices: "Services",
-  labelHydrocarbons: "Hydrocarbons",
 // ═══════════════════════════════════════════════════════════════════════════════
-// ONS DASHBOARD – TRILINGUAL DICTIONARIES (FR / AR / EN)
+// ONS DASHBOARD — TRILINGUAL DICTIONARIES (FR / AR / EN)
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export type Locale = "fr" | "ar" | "en";
@@ -248,14 +197,63 @@ export interface Dictionary {
   chartDebtGdp: string;
 
   // ─── REGIONAL ──────────────────────────────────────────────────────
+  kpiRegTotalPop: string;
+  kpiRegTotalWilayas: string;
+  kpiRegNationalGdp: string;
+  kpiRegAvgUnemp: string;
+  kpiRegYouthUnemp: string;
+  kpiRegUrbanization: string;
+  kpiRegPoverty: string;
+  kpiRegElectrification: string;
+  kpiRegInformal: string;
+  kpiRegSecondary: string;
+  kpiRegNetMigration: string;
+  kpiRegHospitalBeds: string;
+  chartRegionGdpShare: string;
+  chartRegionGdpShareSub: string;
+  chartRegionUnempTrend: string;
+  chartRegionUnempTrendSub: string;
+  chartRegionUnemp: string;
+  chartRegionGdpTrend: string;
+  chartRegionGdpTrendSub: string;
+  chartRegionSectorComp: string;
+  chartRegionSectorCompSub: string;
+  chartRegionPoverty: string;
+  chartRegionPovertySub: string;
+  chartRegionYouthUnemp: string;
+  chartRegionYouthUnempSub: string;
+  chartRegionUrbanization: string;
+  chartRegionUrbanizationSub: string;
+  chartRegionDensity: string;
+  chartRegionDensitySub: string;
+  chartRegionPerCapita: string;
+  chartRegionPerCapitaSub: string;
+  chartRegionElectrification: string;
+  chartRegionElectrificationSub: string;
+  chartRegionMigration: string;
+  chartRegionMigrationSub: string;
+  chartRegionInformal: string;
+  chartRegionInformalSub: string;
+  chartRegionHealth: string;
+  chartRegionHealthSub: string;
+  chartRegionEducation: string;
+  chartRegionEducationSub: string;
+  labelCentre: string;
+  labelEst: string;
+  labelOuest: string;
+  labelSud: string;
+  labelHautsPlateaux: string;
+  labelAgriculture: string;
+  labelIndustry: string;
+  labelConstruction: string;
+  labelServices: string;
+  labelHydrocarbons: string;
   chartWilayaGdp: string;
   chartWilayaGdpSub: string;
   chartGdpShare: string;
-
   chartWilayaUnemp: string;
   chartWilayaUnempSub: string;
   chartUnempPct: string;
-
   chartScatter: string;
   chartScatterSub: string;
   chartPopK: string;
@@ -263,7 +261,6 @@ export interface Dictionary {
   chartPopThousands: string;
   chartUnempPctLabel: string;
 
-  // ─── REGIONAL KPIs ──────────────────
   // ─── SECTOR: HYDROCARBONS ────────────
   tabHydro: string;
   kpiHydroRevenue: string;
@@ -513,6 +510,77 @@ export interface Dictionary {
   chartVaccinationLabel: string;
   chartPrimaryCareLabel: string;
 
+  // ─── REGIONAL ENHANCED KPIs ─────
+  kpiRegDensity: string;
+  kpiRegArea: string;
+  kpiRegEmployment: string;
+  kpiRegFemalePartic: string;
+  kpiRegInternet: string;
+  kpiRegLiteracy: string;
+  kpiRegInfantMort: string;
+  kpiRegLifeExp: string;
+  kpiRegHealthExp: string;
+  kpiRegVaccination: string;
+  kpiRegPhysicians: string;
+  kpiRegWaterAccess: string;
+  kpiRegHousingDeficit: string;
+  kpiRegVehicles: string;
+  kpiRegIndustrialUnits: string;
+  kpiRegRoadDensity: string;
+  kpiRegMobilePenetration: string;
+  kpiRegBroadband: string;
+  kpiRegAgriculturalLand: string;
+  kpiRegGiniIncome: string;
+  kpiRegHDI: string;
+  kpiRegGrowthRate: string;
+  chartRegionPopulation: string;
+  chartRegionPopulationSub: string;
+  chartRegionDensityBar: string;
+  chartRegionDensityBarSub: string;
+  chartRegionEmployStruct: string;
+  chartRegionEmployStructSub: string;
+  chartRegionHDI: string;
+  chartRegionHDISub: string;
+  chartRegionUrbanTrend: string;
+  chartRegionUrbanTrendSub: string;
+  chartRegionInequality: string;
+  chartRegionInequalitySub: string;
+  chartRegionInfra: string;
+  chartRegionInfraSub: string;
+  chartRegionDevScatter: string;
+  chartRegionDevScatterSub: string;
+  chartWilayaPopRank: string;
+  chartWilayaPopRankSub: string;
+  chartWilayaUnempRank: string;
+  chartWilayaUnempRankSub: string;
+  chartRegionEmpLabel: string;
+  chartRegionAgriEmp: string;
+  chartRegionIndEmp: string;
+  chartRegionConstrEmp: string;
+  chartRegionServEmp: string;
+  chartRegionPublicEmp: string;
+  chartRoadDensity: string;
+  chartWaterSupply: string;
+  chartSewage: string;
+  chartBroadband: string;
+  chartMobilePen: string;
+  chartInternetUsers: string;
+  chartGiniIncome: string;
+  chartGiniEducation: string;
+  chartGiniHealth: string;
+  chartGiniHousing: string;
+  chartCentreHDI: string;
+  chartEstHDI: string;
+  chartOuestHDI: string;
+  chartSudHDI: string;
+  chartHPHDI: string;
+  chartSecondaryEnrol: string;
+  chartHospitalBeds: string;
+  chartPovertyRate: string;
+  chartEmploymentPct: string;
+  chartFemalePartLabel: string;
+  chartYouthEmpLabel: string;
+
   // ─── FOOTER ────────────────────────────────────────────────────────
   footer: string;
 }
@@ -520,7 +588,7 @@ export interface Dictionary {
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
 const en: Dictionary = {
   headerTitle: "Algeria Economic Dashboard",
-  headerSubtitle: "Office National des Statistiques (ONS) – Data Science Analysis Platform",
+  headerSubtitle: "Office National des Statistiques (ONS) — Data Science Analysis Platform",
 
   tabMacro: "Macroeconomic",
   tabInflation: "Prices & Inflation",
@@ -561,7 +629,7 @@ const en: Dictionary = {
   kpiFoodInflation: "Food Inflation",
   kpiCoreInflation: "Core Inflation",
 
-  chartCpiMonthly: "Consumer Price Index – Monthly (2020–2026)",
+  chartCpiMonthly: "Consumer Price Index — Monthly (2020–2026)",
   chartCpiMonthlySub: "Year-over-year inflation %",
   chartInflationYoy: "Inflation YoY %",
   chartFoodYoy: "Food YoY %",
@@ -580,7 +648,7 @@ const en: Dictionary = {
   chartCpiWeights: "CPI Basket Weights by Division",
   chartCpiWeightsSub: "Share in consumer basket",
 
-  chartIppi: "Producer Price Index (IPPI) – Quarterly (2020–2025)",
+  chartIppi: "Producer Price Index (IPPI) — Quarterly (2020–2025)",
   chartIppiSub: "Mining, Manufacturing, Energy",
   sectorMining: "Mining",
   sectorManufacturing: "Manufacturing",
@@ -592,7 +660,7 @@ const en: Dictionary = {
   kpiHydroPct: "Hydrocarbon % Exports",
 
   chartTradeAnnual: "External Trade (2000–2024)",
-  chartTradeAnnualSub: "Exports, Imports, Balance – Billion USD",
+  chartTradeAnnualSub: "Exports, Imports, Balance — Billion USD",
   chartExports: "Exports",
   chartImports: "Imports",
   chartBalance: "Balance",
@@ -613,7 +681,7 @@ const en: Dictionary = {
   kpiEnergy: "Energy",
 
   chartIpi: "Industrial Production Index (2020–2025)",
-  chartIpiSub: "Mining, Manufacturing, Energy – Base 100 = 2019",
+  chartIpiSub: "Mining, Manufacturing, Energy — Base 100 = 2019",
   chartIpiTotal: "IPI Total",
 
   chartIpiIppi: "IPI vs IPPI Comparison (2020–2025)",
@@ -657,7 +725,7 @@ const en: Dictionary = {
   chartPopulationM: "Population (M)",
 
   chartPopPyramid: "Population Pyramid (2024)",
-  chartPopPyramidSub: "By age group – Millions",
+  chartPopPyramidSub: "By age group — Millions",
   chartMale: "Male (M)",
   chartFemale: "Female (M)",
 
@@ -709,69 +777,17 @@ const en: Dictionary = {
   chartUnempPct: "Unemployment %",
 
   chartScatter: "Population vs GDP Scatter (2023)",
-  chartScatterSub: "Top 10 wilayas – bubble size = unemployment rate",
+  chartScatterSub: "Top 10 wilayas — bubble size = unemployment rate",
   chartPopK: "Population (K)",
   chartGdpShareLabel: "GDP Share %",
   chartPopThousands: "Population (thousands)",
   chartUnempPctLabel: "Unemployment %",
 
-  kpiRegTotalPop: "58 Wilayas Pop.",
-  kpiRegTotalWilayas: "58 Wilayas",
-  kpiRegNationalGdp: "National GDP",
-  kpiRegAvgUnemp: "Avg. Unemployment",
-  kpiRegYouthUnemp: "Youth Unemployment",
-  kpiRegUrbanization: "Urbanization Rate",
-  kpiRegPoverty: "Poverty Rate",
-  kpiRegElectrification: "Electrification",
-  kpiRegInformal: "Informal Employment",
-  kpiRegSecondary: "Secondary Enrolment",
-  kpiRegNetMigration: "Net Migration",
-  kpiRegHospitalBeds: "Hospital Beds/10K",
-  chartRegionGdpShare: "GDP Share by Macro-Region (2024)",
-  chartRegionGdpShareSub: "% of national GDP – Source: ONS Comptes Régionaux",
-  chartRegionUnempTrend: "Unemployment Rate by Region (2015–2024)",
-  chartRegionUnempTrendSub: "% – Source: ONS Enquêtes Emploi",
-  chartRegionUnemp: "Unemployment %",
-  chartRegionGdpTrend: "GDP Share Evolution by Region (2015–2024)",
-  chartRegionGdpTrendSub: "% of national GDP",
-  chartRegionSectorComp: "Sectoral GDP Composition by Region (2023)",
-  chartRegionSectorCompSub: "% breakdown – Agriculture, Industry, Construction, Services, Hydrocarbons",
-  chartRegionPoverty: "Poverty Rate by Macro-Region (2024)",
-  chartRegionPovertySub: "% below national poverty line – Source: ONS",
-  chartRegionYouthUnemp: "Youth Unemployment (15-24) by Region (2024)",
-  chartRegionYouthUnempSub: "% – Source: ONS Enquête Emploi 2024",
-  chartRegionUrbanization: "Urbanization Rate by Region (2024)",
-  chartRegionUrbanizationSub: "% of population living in urban areas",
-  chartRegionDensity: "Population Density by Macro-Region (2024)",
-  chartRegionDensitySub: "Inhabitants per km²",
-  chartRegionPerCapita: "GDP Per Capita by Macro-Region (2024)",
-  chartRegionPerCapitaSub: "Thousands DZD – Source: ONS",
-  chartRegionElectrification: "Electrification Rate by Region (2024)",
-  chartRegionElectrificationSub: "% of households with electricity",
-  chartRegionMigration: "Net Migration Rate by Region (2024)",
-  chartRegionMigrationSub: "Per 1,000 inhabitants (‰)",
-  chartRegionInformal: "Informal Employment by Region (2024)",
-  chartRegionInformalSub: "% of total employment – Source: ONS",
-  chartRegionHealth: "Hospital Beds per 10,000 by Region (2024)",
-  chartRegionHealthSub: "Source: ONS / Ministry of Health",
-  chartRegionEducation: "Secondary School Enrolment by Region (2024)",
-  chartRegionEducationSub: "% gross enrolment – Source: ONS",
-  labelCentre: "Centre",
-  labelEst: "East",
-  labelOuest: "West",
-  labelSud: "South",
-  labelHautsPlateaux: "High Plateaus",
-  labelAgriculture: "Agriculture",
-  labelIndustry: "Industry",
-  labelConstruction: "Construction",
-  labelServices: "Services",
-  labelHydrocarbons: "Hydrocarbons",
-
   // ─── SECTOR: HYDROCARBONS ────────────
   tabHydro: "Hydrocarbons",
   kpiHydroRevenue: "Hydro Revenue", kpiOilProd: "Oil Production", kpiGasProd: "Gas Production", kpiHydroGdpShare: "Hydro % GDP",
   kpiOilPrice: "Oil Price", kpiHydroExports: "Hydro Exports", kpiReservesOil: "Oil Reserves", kpiReservesGas: "Gas Reserves",
-  chartHydroRevenue: "Hydrocarbon Revenue & Exports (2000\u20132024)", chartHydroRevenueSub: "Billion USD – Revenue and export earnings",
+  chartHydroRevenue: "Hydrocarbon Revenue & Exports (2000\u20132024)", chartHydroRevenueSub: "Billion USD \u2014 Revenue and export earnings",
   chartHydroExports: "Hydrocarbon Export Trend (2000\u20132024)", chartHydroExportsSub: "Billion USD",
   chartOilPrice: "Crude Oil Price (2000\u20132024)", chartOilPriceSub: "USD per barrel (Brent)",
   chartHydroGdp: "Hydrocarbon Contribution to GDP (2000\u20132024)", chartHydroGdpSub: "% of GDP",
@@ -872,14 +888,134 @@ const en: Dictionary = {
   chartPhysiciansLabel: "Physicians", chartNursesLabel: "Nurses",
   chartInfantMortLabel: "Infant Mortality", chartMaternalMortLabel: "Maternal Mortality", chartLifeExpLabel: "Life Expectancy",
   chartHealthExpLabel: "Health Exp. % GDP", chartVaccinationLabel: "Vaccination %", chartPrimaryCareLabel: "Primary Care (M visits)",
+  kpiRegTotalPop: "58 Wilayas Pop.",
+  kpiRegTotalWilayas: "58 Wilayas",
+  kpiRegNationalGdp: "National GDP",
+  kpiRegAvgUnemp: "Avg. Unemployment",
+  kpiRegYouthUnemp: "Youth Unemployment",
+  kpiRegUrbanization: "Urbanization Rate",
+  kpiRegPoverty: "Poverty Rate",
+  kpiRegElectrification: "Electrification",
+  kpiRegInformal: "Informal Employment",
+  kpiRegSecondary: "Secondary Enrolment",
+  kpiRegNetMigration: "Net Migration",
+  kpiRegHospitalBeds: "Hospital Beds/10K",
+  chartRegionGdpShare: "GDP Share by Macro-Region (2024)",
+  chartRegionGdpShareSub: "% of national GDP – Source: ONS Comptes Régionaux",
+  chartRegionUnempTrend: "Unemployment Rate by Region (2015–2024)",
+  chartRegionUnempTrendSub: "% – Source: ONS Enquêtes Emploi",
+  chartRegionUnemp: "Unemployment %",
+  chartRegionGdpTrend: "GDP Share Evolution by Region (2015–2024)",
+  chartRegionGdpTrendSub: "% of national GDP",
+  chartRegionSectorComp: "Sectoral GDP Composition by Region (2023)",
+  chartRegionSectorCompSub: "% breakdown – Agriculture, Industry, Construction, Services, Hydrocarbons",
+  chartRegionPoverty: "Poverty Rate by Macro-Region (2024)",
+  chartRegionPovertySub: "% below national poverty line – Source: ONS",
+  chartRegionYouthUnemp: "Youth Unemployment (15-24) by Region (2024)",
+  chartRegionYouthUnempSub: "% – Source: ONS Enquête Emploi 2024",
+  chartRegionUrbanization: "Urbanization Rate by Region (2024)",
+  chartRegionUrbanizationSub: "% of population living in urban areas",
+  chartRegionDensity: "Population Density by Macro-Region (2024)",
+  chartRegionDensitySub: "Inhabitants per km²",
+  chartRegionPerCapita: "GDP Per Capita by Macro-Region (2024)",
+  chartRegionPerCapitaSub: "Thousands DZD – Source: ONS",
+  chartRegionElectrification: "Electrification Rate by Region (2024)",
+  chartRegionElectrificationSub: "% of households with electricity",
+  chartRegionMigration: "Net Migration Rate by Region (2024)",
+  chartRegionMigrationSub: "Per 1,000 inhabitants (‰)",
+  chartRegionInformal: "Informal Employment by Region (2024)",
+  chartRegionInformalSub: "% of total employment – Source: ONS",
+  chartRegionHealth: "Hospital Beds per 10,000 by Region (2024)",
+  chartRegionHealthSub: "Source: ONS / Ministry of Health",
+  chartRegionEducation: "Secondary School Enrolment by Region (2024)",
+  chartRegionEducationSub: "% gross enrolment – Source: ONS",
+  labelCentre: "Centre",
+  labelEst: "East",
+  labelOuest: "West",
+  labelSud: "South",
+  labelHautsPlateaux: "High Plateaus",
+  labelAgriculture: "Agriculture",
+  labelIndustry: "Industry",
+  labelConstruction: "Construction",
+  labelServices: "Services",
+  labelHydrocarbons: "Hydrocarbons",
+  kpiRegDensity: "Avg. Density",
+  kpiRegArea: "Total Area",
+  kpiRegEmployment: "Employment Rate",
+  kpiRegFemalePartic: "Female Participation",
+  kpiRegInternet: "Internet Access",
+  kpiRegLiteracy: "Literacy Rate",
+  kpiRegInfantMort: "Infant Mortality",
+  kpiRegLifeExp: "Life Expectancy",
+  kpiRegHealthExp: "Health Expenditure",
+  kpiRegVaccination: "Vaccination Rate",
+  kpiRegPhysicians: "Physicians/10K",
+  kpiRegWaterAccess: "Water Access",
+  kpiRegHousingDeficit: "Housing Deficit",
+  kpiRegVehicles: "Motor Vehicles/10K",
+  kpiRegIndustrialUnits: "Industrial Units",
+  kpiRegRoadDensity: "Road Density",
+  kpiRegMobilePenetration: "Mobile Penetration",
+  kpiRegBroadband: "Broadband Subs.",
+  kpiRegAgriculturalLand: "Agricultural Land",
+  kpiRegGiniIncome: "Gini (Income)",
+  kpiRegHDI: "Human Dev. Index",
+  kpiRegGrowthRate: "GDP Growth Rate",
+  chartRegionPopulation: "Population by Macro-Region (2024)",
+  chartRegionPopulationSub: "Thousands of inhabitants – Source: ONS RGPH 2022",
+  chartRegionDensityBar: "Population Density by Region (2024)",
+  chartRegionDensityBarSub: "Inhabitants per km² – Log scale",
+  chartRegionEmployStruct: "Employment Structure by Region (2024)",
+  chartRegionEmployStructSub: "% of regional employment by sector",
+  chartRegionHDI: "Regional Human Development Index (2015–2024)",
+  chartRegionHDISub: "Composite index (health, education, income) – Source: ONS",
+  chartRegionUrbanTrend: "Urbanization Rate Trend by Region (2015–2024)",
+  chartRegionUrbanTrendSub: "% of population in urban areas",
+  chartRegionInequality: "Inequality Indices by Region (2024)",
+  chartRegionInequalitySub: "Gini coefficient by dimension – Source: ONS",
+  chartRegionInfra: "Infrastructure Indicators by Region (2024)",
+  chartRegionInfraSub: "Selected infrastructure metrics – Source: ONS",
+  chartRegionDevScatter: "Development Correlation: GDP vs Health vs Education (2024)",
+  chartRegionDevScatterSub: "Bubble size = poverty rate – Source: ONS",
+  chartWilayaPopRank: "Top 20 Wilayas by Population (2024)",
+  chartWilayaPopRankSub: "Thousands of inhabitants – Source: ONS RGPH 2022",
+  chartWilayaUnempRank: "Top 15 Wilayas by Unemployment Rate (2024)",
+  chartWilayaUnempRankSub: "% – Source: ONS Enquête Emploi 2024",
+  chartRegionEmpLabel: "Employment (K)",
+  chartRegionAgriEmp: "Agriculture",
+  chartRegionIndEmp: "Industry",
+  chartRegionConstrEmp: "Construction",
+  chartRegionServEmp: "Services",
+  chartRegionPublicEmp: "Public Sector",
+  chartRoadDensity: "Road Density (km/km²)",
+  chartWaterSupply: "Water Supply %",
+  chartSewage: "Sewage Coverage %",
+  chartBroadband: "Broadband (K subs.)",
+  chartMobilePen: "Mobile Pen. %",
+  chartInternetUsers: "Internet Users %",
+  chartGiniIncome: "Gini Income",
+  chartGiniEducation: "Gini Education",
+  chartGiniHealth: "Gini Health",
+  chartGiniHousing: "Gini Housing",
+  chartCentreHDI: "Centre",
+  chartEstHDI: "East",
+  chartOuestHDI: "West",
+  chartSudHDI: "South",
+  chartHPHDI: "High Plateaus",
+  chartSecondaryEnrol: "Secondary Enrolment %",
+  chartHospitalBeds: "Hospital Beds/10K",
+  chartPovertyRate: "Poverty Rate %",
+  chartEmploymentPct: "Employment Rate %",
+  chartFemalePartLabel: "Female Participation %",
+  chartYouthEmpLabel: "Youth Employment %",
 
-  footer: "Source: Office National des Statistiques (ONS) – www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes Economiques, ENEM, RGPH)",
+  footer: "Source: Office National des Statistiques (ONS) \u2014 www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes Economiques, ENEM, RGPH)",
 };
 
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
 const fr: Dictionary = {
   headerTitle: "Tableau de Bord \u00c9conomique de l'Alg\u00e9rie",
-  headerSubtitle: "Office National des Statistiques (ONS) – Plateforme d'Analyse de Donn\u00e9es",
+  headerSubtitle: "Office National des Statistiques (ONS) — Plateforme d'Analyse de Donn\u00e9es",
 
   tabMacro: "Macro\u00e9conomie",
   tabInflation: "Prix & Inflation",
@@ -920,7 +1056,7 @@ const fr: Dictionary = {
   kpiFoodInflation: "Inflation Alimentaire",
   kpiCoreInflation: "Inflation Sous-jacente",
 
-  chartCpiMonthly: "Indice des Prix \u00e0 la Consommation – Mensuel (2020\u20132026)",
+  chartCpiMonthly: "Indice des Prix \u00e0 la Consommation \u2014 Mensuel (2020\u20132026)",
   chartCpiMonthlySub: "Inflation annuelle %",
   chartInflationYoy: "Inflation annuelle %",
   chartFoodYoy: "Alimentaire annuel %",
@@ -939,7 +1075,7 @@ const fr: Dictionary = {
   chartCpiWeights: "Pond\u00e9rations du Panier IPC par Division",
   chartCpiWeightsSub: "Part dans le panier de consommation",
 
-  chartIppi: "Indice des Prix \u00e0 la Production Industrielle (IPPI) – Trimestriel (2020\u20132025)",
+  chartIppi: "Indice des Prix \u00e0 la Production Industrielle (IPPI) \u2014 Trimestriel (2020\u20132025)",
   chartIppiSub: "Mines, Manufacture, \u00c9nergie",
   sectorMining: "Mines",
   sectorManufacturing: "Manufacture",
@@ -951,7 +1087,7 @@ const fr: Dictionary = {
   kpiHydroPct: "Part Hydrocarbures",
 
   chartTradeAnnual: "Commerce Ext\u00e9rieur (2000\u20132024)",
-  chartTradeAnnualSub: "Exportations, Importations, Solde – Milliards USD",
+  chartTradeAnnualSub: "Exportations, Importations, Solde \u2014 Milliards USD",
   chartExports: "Exportations",
   chartImports: "Importations",
   chartBalance: "Solde",
@@ -972,7 +1108,7 @@ const fr: Dictionary = {
   kpiEnergy: "\u00c9nergie",
 
   chartIpi: "Indice de la Production Industrielle (2020\u20132025)",
-  chartIpiSub: "Mines, Manufacture, \u00c9nergie – Base 100 = 2019",
+  chartIpiSub: "Mines, Manufacture, \u00c9nergie \u2014 Base 100 = 2019",
   chartIpiTotal: "IPI Total",
 
   chartIpiIppi: "Comparaison IPI vs IPPI (2020\u20132025)",
@@ -1016,7 +1152,7 @@ const fr: Dictionary = {
   chartPopulationM: "Population (M)",
 
   chartPopPyramid: "Pyramide des \u00c2ges (2024)",
-  chartPopPyramidSub: "Par groupe d'\u00e2ge – Millions",
+  chartPopPyramidSub: "Par groupe d'\u00e2ge \u2014 Millions",
   chartMale: "Hommes (M)",
   chartFemale: "Femmes (M)",
 
@@ -1067,51 +1203,12 @@ const fr: Dictionary = {
   chartWilayaUnempSub: "Top 10 wilayas",
   chartUnempPct: "Ch\u00f4mage %",
 
-  chartScatter: "Population vs PIB – Nuage de Points (2023)",
-  chartScatterSub: "Top 10 wilayas – taille = taux de ch\u00f4mage",
+  chartScatter: "Population vs PIB \u2014 Nuage de Points (2023)",
+  chartScatterSub: "Top 10 wilayas \u2014 taille = taux de ch\u00f4mage",
   chartPopK: "Population (K)",
   chartGdpShareLabel: "Part du PIB %",
   chartPopThousands: "Population (milliers)",
   chartUnempPctLabel: "Ch\u00f4mage %",
-  chartRegionGdpShare: "Part du PIB par Macro-Région (2024)",
-  chartRegionGdpShareSub: "% du PIB national – Source : ONS Comptes Régionaux",
-  chartRegionUnempTrend: "Taux de Chômage par Région (2015–2024)",
-  chartRegionUnempTrendSub: "% – Source : ONS Enquêtes Emploi",
-  chartRegionUnemp: "Chômage %",
-  chartRegionGdpTrend: "Évolution de la Part du PIB par Région (2015–2024)",
-  chartRegionGdpTrendSub: "% du PIB national",
-  chartRegionSectorComp: "Composition Sectorielle du PIB par Région (2023)",
-  chartRegionSectorCompSub: "% – Agriculture, Industrie, BTP, Services, Hydrocarbures",
-  chartRegionPoverty: "Taux de Pauvreté par Macro-Région (2024)",
-  chartRegionPovertySub: "% sous le seuil national – Source : ONS",
-  chartRegionYouthUnemp: "Chômage des Jeunes (15-24 ans) par Région (2024)",
-  chartRegionYouthUnempSub: "% – Source : ONS Enquête Emploi 2024",
-  chartRegionUrbanization: "Taux d'Urbanisation par Région (2024)",
-  chartRegionUrbanizationSub: "% de la population en milieu urbain",
-  chartRegionDensity: "Densité de Population par Macro-Région (2024)",
-  chartRegionDensitySub: "Habitants par km²",
-  chartRegionPerCapita: "PIB par Habitant par Macro-Région (2024)",
-  chartRegionPerCapitaSub: "Milliers DZD – Source : ONS",
-  chartRegionElectrification: "Taux d'Électrification par Région (2024)",
-  chartRegionElectrificationSub: "% des ménages raccordés à l'électricité",
-  chartRegionMigration: "Solde Migratoire par Région (2024)",
-  chartRegionMigrationSub: "Pour 1 000 habitants (‰)",
-  chartRegionInformal: "Emploi Informel par Région (2024)",
-  chartRegionInformalSub: "% de l'emploi total – Source : ONS",
-  chartRegionHealth: "Lits Hospitaliers pour 10 000 par Région (2024)",
-  chartRegionHealthSub: "Source : ONS / Ministère de la Santé",
-  chartRegionEducation: "Scolarisation Secondaire par Région (2024)",
-  chartRegionEducationSub: "% scolarisation brute – Source : ONS",
-  labelCentre: "Centre",
-  labelEst: "Est",
-  labelOuest: "Ouest",
-  labelSud: "Sud",
-  labelHautsPlateaux: "Hauts Plateaux",
-  labelAgriculture: "Agriculture",
-  labelIndustry: "Industrie",
-  labelConstruction: "BTP",
-  labelServices: "Services",
-  labelHydrocarbons: "Hydrocarbures",
 
   // ─── SECTOR: HYDROCARBONS ────────────
   tabHydro: "Hydrocarbures",
@@ -1218,14 +1315,134 @@ const fr: Dictionary = {
   chartPhysiciansLabel: "M\u00e9decins", chartNursesLabel: "Infirmiers",
   chartInfantMortLabel: "Mortalit\u00e9 Infantile", chartMaternalMortLabel: "Mortalit\u00e9 Maternelle", chartLifeExpLabel: "Esp\u00e9rance de Vie",
   chartHealthExpLabel: "D\u00e9p. Sant\u00e9 % PIB", chartVaccinationLabel: "Vaccination %", chartPrimaryCareLabel: "Soins Primaires (M visites)",
+  kpiRegTotalPop: "Pop. 58 wilayas",
+  kpiRegTotalWilayas: "58 wilayas",
+  kpiRegNationalGdp: "PIB national",
+  kpiRegAvgUnemp: "Ch\u00f4mage moyen",
+  kpiRegYouthUnemp: "Ch\u00f4mage des jeunes",
+  kpiRegUrbanization: "Taux d'urbanisation",
+  kpiRegPoverty: "Taux de pauvret\u00e9",
+  kpiRegElectrification: "\u00c9lectrification",
+  kpiRegInformal: "Emploi informel",
+  kpiRegSecondary: "Scolarisation secondaire",
+  kpiRegNetMigration: "Solde migratoire",
+  kpiRegHospitalBeds: "Lits/10 000 hab.",
+  chartRegionGdpShare: "Part du PIB par Macro-R\u00e9gion (2024)",
+  chartRegionGdpShareSub: "% du PIB national \u2013 Source : ONS Comptes R\u00e9gionaux",
+  chartRegionUnempTrend: "Taux de Ch\u00f4mage par R\u00e9gion (2015\u20132024)",
+  chartRegionUnempTrendSub: "% \u2013 Source : ONS Enqu\u00eates Emploi",
+  chartRegionUnemp: "Ch\u00f4mage %",
+  chartRegionGdpTrend: "\u00c9volution de la Part du PIB par R\u00e9gion (2015\u20132024)",
+  chartRegionGdpTrendSub: "% du PIB national",
+  chartRegionSectorComp: "Composition Sectorielle du PIB par R\u00e9gion (2023)",
+  chartRegionSectorCompSub: "% \u2013 Agriculture, Industrie, BTP, Services, Hydrocarbures",
+  chartRegionPoverty: "Taux de Pauvret\u00e9 par Macro-R\u00e9gion (2024)",
+  chartRegionPovertySub: "% sous le seuil national de pauvret\u00e9 \u2013 Source : ONS",
+  chartRegionYouthUnemp: "Ch\u00f4mage des Jeunes (15-24) par R\u00e9gion (2024)",
+  chartRegionYouthUnempSub: "% \u2013 Source : ONS Enqu\u00eate Emploi 2024",
+  chartRegionUrbanization: "Taux d'Urbanisation par R\u00e9gion (2024)",
+  chartRegionUrbanizationSub: "% de population en milieu urbain",
+  chartRegionDensity: "Densit\u00e9 de Population par Macro-R\u00e9gion (2024)",
+  chartRegionDensitySub: "Habitants par km\u00b2",
+  chartRegionPerCapita: "PIB par Habitant par Macro-R\u00e9gion (2024)",
+  chartRegionPerCapitaSub: "Milliers DZD \u2013 Source : ONS",
+  chartRegionElectrification: "Taux d'\u00c9lectrification par R\u00e9gion (2024)",
+  chartRegionElectrificationSub: "% de m\u00e9nages \u00e9lectrifi\u00e9s",
+  chartRegionMigration: "Solde Migratoire par R\u00e9gion (2024)",
+  chartRegionMigrationSub: "Pour 1 000 habitants (\u2030)",
+  chartRegionInformal: "Emploi Informel par R\u00e9gion (2024)",
+  chartRegionInformalSub: "% de l'emploi total \u2013 Source : ONS",
+  chartRegionHealth: "Lits d'H\u00f4pital pour 10 000 par R\u00e9gion (2024)",
+  chartRegionHealthSub: "Source : ONS / Minist\u00e8re de la Sant\u00e9",
+  chartRegionEducation: "Scolarisation Secondaire par R\u00e9gion (2024)",
+  chartRegionEducationSub: "% scolarisation brute \u2013 Source : ONS",
+  labelCentre: "Centre",
+  labelEst: "Est",
+  labelOuest: "Ouest",
+  labelSud: "Sud",
+  labelHautsPlateaux: "Hauts Plateaux",
+  labelAgriculture: "Agriculture",
+  labelIndustry: "Industrie",
+  labelConstruction: "BTP",
+  labelServices: "Services",
+  labelHydrocarbons: "Hydrocarbures",
+  kpiRegDensity: "Densit\u00e9 moyenne",
+  kpiRegArea: "Superficie totale",
+  kpiRegEmployment: "Taux d'emploi",
+  kpiRegFemalePartic: "Participation f\u00e9minine",
+  kpiRegInternet: "Acc\u00e8s Internet",
+  kpiRegLiteracy: "Taux d'alphab\u00e9tisation",
+  kpiRegInfantMort: "Mortalit\u00e9 infantile",
+  kpiRegLifeExp: "Esp\u00e9rance de vie",
+  kpiRegHealthExp: "D\u00e9penses de sant\u00e9",
+  kpiRegVaccination: "Taux de vaccination",
+  kpiRegPhysicians: "M\u00e9decins/10K",
+  kpiRegWaterAccess: "Acc\u00e8s \u00e0 l'eau",
+  kpiRegHousingDeficit: "D\u00e9ficit en logements",
+  kpiRegVehicles: "V\u00e9hicules/10K",
+  kpiRegIndustrialUnits: "Unit\u00e9s industrielles",
+  kpiRegRoadDensity: "Densit\u00e9 routi\u00e8re",
+  kpiRegMobilePenetration: "Taux de t\u00e9l\u00e9phonie mobile",
+  kpiRegBroadband: "Abonn\u00e9s haut d\u00e9bit",
+  kpiRegAgriculturalLand: "Terres agricoles",
+  kpiRegGiniIncome: "Gini (Revenu)",
+  kpiRegHDI: "IDH r\u00e9gional",
+  kpiRegGrowthRate: "Croissance du PIB",
+  chartRegionPopulation: "Population par macro-r\u00e9gion (2024)",
+  chartRegionPopulationSub: "Milliers d'habitants – Source : ONS RGPH 2022",
+  chartRegionDensityBar: "Densit\u00e9 de population par r\u00e9gion (2024)",
+  chartRegionDensityBarSub: "Habitants par km\u00b2 – \u00c9chelle log",
+  chartRegionEmployStruct: "Structure de l'emploi par r\u00e9gion (2024)",
+  chartRegionEmployStructSub: "% de l'emploi r\u00e9gional par secteur",
+  chartRegionHDI: "Indice de d\u00e9veloppement humain r\u00e9gional (2015–2024)",
+  chartRegionHDISub: "Indice composite (sant\u00e9, \u00e9ducation, revenu) – Source : ONS",
+  chartRegionUrbanTrend: "Tendance du taux d'urbanisation par r\u00e9gion (2015–2024)",
+  chartRegionUrbanTrendSub: "% de population en milieu urbain",
+  chartRegionInequality: "Indices d'in\u00e9galit\u00e9 par r\u00e9gion (2024)",
+  chartRegionInequalitySub: "Coefficient de Gini par dimension – Source : ONS",
+  chartRegionInfra: "Indicateurs d'infrastructure par r\u00e9gion (2024)",
+  chartRegionInfraSub: "M\u00e9triques d'infrastructure s\u00e9lectionn\u00e9es – Source : ONS",
+  chartRegionDevScatter: "Corr\u00e9lation d\u00e9veloppement : PIB vs Sant\u00e9 vs \u00c9ducation (2024)",
+  chartRegionDevScatterSub: "Taille de la bulle = taux de pauvret\u00e9 – Source : ONS",
+  chartWilayaPopRank: "Top 20 wilayas par population (2024)",
+  chartWilayaPopRankSub: "Milliers d'habitants – Source : ONS RGPH 2022",
+  chartWilayaUnempRank: "Top 15 wilayas par taux de ch\u00f4mage (2024)",
+  chartWilayaUnempRankSub: "% – Source : ONS Enqu\u00eate Emploi 2024",
+  chartRegionEmpLabel: "Emploi (K)",
+  chartRegionAgriEmp: "Agriculture",
+  chartRegionIndEmp: "Industrie",
+  chartRegionConstrEmp: "BTP",
+  chartRegionServEmp: "Services",
+  chartRegionPublicEmp: "Secteur public",
+  chartRoadDensity: "Densit\u00e9 routi\u00e8re (km/km\u00b2)",
+  chartWaterSupply: "Eau potable %",
+  chartSewage: "Assainissement %",
+  chartBroadband: "Haut d\u00e9bit (K abo.)",
+  chartMobilePen: "T\u00e9l. mobile %",
+  chartInternetUsers: "Utilisateurs Internet %",
+  chartGiniIncome: "Gini Revenu",
+  chartGiniEducation: "Gini \u00c9ducation",
+  chartGiniHealth: "Gini Sant\u00e9",
+  chartGiniHousing: "Gini Logement",
+  chartCentreHDI: "Centre",
+  chartEstHDI: "Est",
+  chartOuestHDI: "Ouest",
+  chartSudHDI: "Sud",
+  chartHPHDI: "Hauts Plateaux",
+  chartSecondaryEnrol: "Taux de scolarisation %",
+  chartHospitalBeds: "Lits/10 000 hab.",
+  chartPovertyRate: "Taux de pauvret\u00e9 %",
+  chartEmploymentPct: "Taux d'emploi %",
+  chartFemalePartLabel: "Participation f\u00e9minine %",
+  chartYouthEmpLabel: "Emploi jeunes %",
 
-  footer: "Source : Office National des Statistiques (ONS) – www.ons.dz | Toutes les donn\u00e9es issues des publications ONS (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes \u00c9conomiques, ENEM, RGPH)",
+  footer: "Source : Office National des Statistiques (ONS) \u2014 www.ons.dz | Toutes les donn\u00e9es issues des publications ONS (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes \u00c9conomiques, ENEM, RGPH)",
 };
 
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
 const ar: Dictionary = {
   headerTitle: "\u0644\u0648\u062d\u0629 \u0627\u0644\u0642\u064a\u0627\u062f\u0629 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 \u0644\u0644\u062c\u0632\u0627\u0626\u0631",
-  headerSubtitle: "\u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) – \u0645\u0646\u0635\u0629 \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",
+  headerSubtitle: "\u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) \u2014 \u0645\u0646\u0635\u0629 \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",
 
   tabMacro: "\u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0643\u0644\u064a",
   tabInflation: "\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u0648\u0627\u0644\u062a\u0636\u062e\u0645",
@@ -1266,7 +1483,7 @@ const ar: Dictionary = {
   kpiFoodInflation: "\u062a\u0636\u062e\u0645 \u0627\u0644\u0645\u0648\u0627\u062f \u0627\u0644\u063a\u0630\u0627\u0626\u064a\u0629",
   kpiCoreInflation: "\u0627\u0644\u062a\u0636\u062e\u0645 \u0627\u0644\u062c\u0648\u0647\u0631\u064a",
 
-  chartCpiMonthly: "\u0645\u0624\u0634\u0631 \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0627\u0633\u062a\u0647\u0644\u0627\u0643 – \u0634\u0647\u0631\u064a (2020\u20132026)",
+  chartCpiMonthly: "\u0645\u0624\u0634\u0631 \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0627\u0633\u062a\u0647\u0644\u0627\u0643 \u2014 \u0634\u0647\u0631\u064a (2020\u20132026)",
   chartCpiMonthlySub: "\u0627\u0644\u062a\u0636\u062e\u0645 \u0627\u0644\u0633\u0646\u0648\u064a %",
   chartInflationYoy: "\u0627\u0644\u062a\u0636\u062e\u0645 \u0627\u0644\u0633\u0646\u0648\u064a %",
   chartFoodYoy: "\u0627\u0644\u063a\u0630\u0627\u0621 \u0627\u0644\u0633\u0646\u0648\u064a %",
@@ -1285,7 +1502,7 @@ const ar: Dictionary = {
   chartCpiWeights: "\u0623\u0648\u0632\u0627\u0646 \u0633\u0644\u0629 \u0645\u0624\u0634\u0631 \u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u062d\u0633\u0628 \u0627\u0644\u0642\u0633\u0645",
   chartCpiWeightsSub: "\u0627\u0644\u062d\u0635\u0629 \u0641\u064a \u0633\u0644\u0629 \u0627\u0644\u0627\u0633\u062a\u0647\u0644\u0627\u0643",
 
-  chartIppi: "\u0645\u0624\u0634\u0631 \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a (IPPI) – \u0631\u0628\u0639\u064a (2020\u20132025)",
+  chartIppi: "\u0645\u0624\u0634\u0631 \u0623\u0633\u0639\u0627\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a (IPPI) \u2014 \u0631\u0628\u0639\u064a (2020\u20132025)",
   chartIppiSub: "\u0627\u0644\u062a\u0639\u062f\u064a\u0646\u060c \u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629\u060c \u0627\u0644\u0637\u0627\u0642\u0629",
   sectorMining: "\u0627\u0644\u062a\u0639\u062f\u064a\u0646",
   sectorManufacturing: "\u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629",
@@ -1297,7 +1514,7 @@ const ar: Dictionary = {
   kpiHydroPct: "\u0646\u0633\u0628\u0629 \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a",
 
   chartTradeAnnual: "\u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 (2000\u20132024)",
-  chartTradeAnnualSub: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a\u060c \u0627\u0644\u0648\u0627\u0631\u062f\u0627\u062a\u060c \u0627\u0644\u0645\u064a\u0632\u0627\u0646 – \u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
+  chartTradeAnnualSub: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a\u060c \u0627\u0644\u0648\u0627\u0631\u062f\u0627\u062a\u060c \u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u2014 \u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631",
   chartExports: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a",
   chartImports: "\u0627\u0644\u0648\u0627\u0631\u062f\u0627\u062a",
   chartBalance: "\u0627\u0644\u0645\u064a\u0632\u0627\u0646",
@@ -1318,7 +1535,7 @@ const ar: Dictionary = {
   kpiEnergy: "\u0627\u0644\u0637\u0627\u0642\u0629",
 
   chartIpi: "\u0645\u0624\u0634\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a (2020\u20132025)",
-  chartIpiSub: "\u0627\u0644\u062a\u0639\u062f\u064a\u0646\u060c \u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629\u060c \u0627\u0644\u0637\u0627\u0642\u0629 – \u0627\u0644\u0623\u0633\u0627\u0633 100 = 2019",
+  chartIpiSub: "\u0627\u0644\u062a\u0639\u062f\u064a\u0646\u060c \u0627\u0644\u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u064a\u0629\u060c \u0627\u0644\u0637\u0627\u0642\u0629 \u2014 \u0627\u0644\u0623\u0633\u0627\u0633 100 = 2019",
   chartIpiTotal: "\u0645\u0624\u0634\u0631 \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a",
 
   chartIpiIppi: "\u0645\u0642\u0627\u0631\u0646\u0629 IPI \u0645\u0639 IPPI (2020\u20132025)",
@@ -1362,7 +1579,7 @@ const ar: Dictionary = {
   chartPopulationM: "\u0627\u0644\u0633\u0643\u0627\u0646 (\u0645\u0644\u064a\u0648\u0646)",
 
   chartPopPyramid: "\u0647\u0631\u0645 \u0627\u0644\u0639\u0645\u0631 \u0627\u0644\u0633\u0643\u0627\u0646\u064a (2024)",
-  chartPopPyramidSub: "\u062d\u0633\u0628 \u0627\u0644\u0641\u0626\u0629 \u0627\u0644\u0639\u0645\u0631\u064a\u0629 – \u0645\u0644\u0627\u064a\u064a\u0646",
+  chartPopPyramidSub: "\u062d\u0633\u0628 \u0627\u0644\u0641\u0626\u0629 \u0627\u0644\u0639\u0645\u0631\u064a\u0629 \u2014 \u0645\u0644\u0627\u064a\u064a\u0646",
   chartMale: "\u0630\u0643\u0648\u0631 (\u0645\u0644\u064a\u0648\u0646)",
   chartFemale: "\u0623\u0646\u0627\u062b (\u0645\u0644\u064a\u0648\u0646)",
 
@@ -1392,57 +1609,6 @@ const ar: Dictionary = {
 
   chartFiscal: "\u0627\u0644\u062a\u0648\u0627\u0632\u0646 \u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a (% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a)",
   chartFiscalSub: "\u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a\u060c \u0627\u0644\u0646\u0641\u0642\u0627\u062a\u060c \u0627\u0644\u0639\u062c\u0632",
-  kpiRegTotalPop: "سكان 58 ولاية",
-  kpiRegTotalWilayas: "58 ولاية",
-  kpiRegNationalGdp: "الناتج المحلي الوطني",
-  kpiRegAvgUnemp: "معدل البطالة",
-  kpiRegYouthUnemp: "بطالة الشباب",
-  kpiRegUrbanization: "معدل التحضر",
-  kpiRegPoverty: "معدل الفقر",
-  kpiRegElectrification: "الكهرباء",
-  kpiRegInformal: "التشغيل غير الرسمي",
-  kpiRegSecondary: "التسجيل الثانوي",
-  kpiRegNetMigration: "الهجرة الصافية",
-  kpiRegHospitalBeds: "أسرة/10 آلاف",
-  chartRegionGdpShare: "حصة الناتج المحلي حسب المنطقة (2024)",
-  chartRegionGdpShareSub: "% من الناتج المحلي الوطني – المصدر: الوفاء الوطني للإحصاء",
-  chartRegionUnempTrend: "معدل البطالة حسب المنطقة (2015–2024)",
-  chartRegionUnempTrendSub: "% – المصدر: استطلاعات الوفاء الوطني للإحصاء",
-  chartRegionUnemp: "البطالة %",
-  chartRegionGdpTrend: "تطور حصة الناتج المحلي حسب المنطقة (2015–2024)",
-  chartRegionGdpTrendSub: "% من الناتج المحلي الوطني",
-  chartRegionSectorComp: "تركيب الناتج المحلي القطاعي حسب المنطقة (2023)",
-  chartRegionSectorCompSub: "% – الزراعة، الصناعة، البناء، الخدمات، المحروقات",
-  chartRegionPoverty: "معدل الفقر حسب المنطقة (2024)",
-  chartRegionPovertySub: "% تحت خط الفقر الوطني – المصدر: الوفاء",
-  chartRegionYouthUnemp: "بطالة الشباب (15-24 سنة) حسب المنطقة (2024)",
-  chartRegionYouthUnempSub: "% – المصدر: استطلاع الوفاء 2024",
-  chartRegionUrbanization: "معدل التحضر حسب المنطقة (2024)",
-  chartRegionUrbanizationSub: "% من السكان في المدن",
-  chartRegionDensity: "كثافة السكان حسب المنطقة (2024)",
-  chartRegionDensitySub: "سكان لكل كم²",
-  chartRegionPerCapita: "الناتج المحلي للفرد حسب المنطقة (2024)",
-  chartRegionPerCapitaSub: "آلاف دج – المصدر: الوفاء",
-  chartRegionElectrification: "معدل الكهرباء حسب المنطقة (2024)",
-  chartRegionElectrificationSub: "% من الأسر المرتبطين بالكهرباء",
-  chartRegionMigration: "الهجرة الصافية حسب المنطقة (2024)",
-  chartRegionMigrationSub: "لكل 1000 سكان (‰)",
-  chartRegionInformal: "التشغيل غير الرسمي حسب المنطقة (2024)",
-  chartRegionInformalSub: "% من إجمالي التشغيل – المصدر: الوفاء",
-  chartRegionHealth: "أسرة المستشفيات لكل 10 آلاف حسب المنطقة (2024)",
-  chartRegionHealthSub: "المصدر: الوفاء / وزارة الصحة",
-  chartRegionEducation: "التسجيل الثانوي حسب المنطقة (2024)",
-  chartRegionEducationSub: "% تسجيل إجمالي – المصدر: الوفاء",
-  labelCentre: "المركز",
-  labelEst: "الشرق",
-  labelOuest: "الغرب",
-  labelSud: "الجنوب",
-  labelHautsPlateaux: "الهضب العالي",
-  labelAgriculture: "الزراعة",
-  labelIndustry: "الصناعة",
-  labelConstruction: "البناء",
-  labelServices: "الخدمات",
-  labelHydrocarbons: "المحروقات",
   chartRevenue: "\u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a",
   chartExpenditure: "\u0627\u0644\u0646\u0641\u0642\u0627\u062a",
   chartDeficit: "\u0627\u0644\u0639\u062c\u0632",
@@ -1465,7 +1631,7 @@ const ar: Dictionary = {
   chartUnempPct: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629 %",
 
   chartScatter: "\u0627\u0644\u0633\u0643\u0627\u0646 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a (2023)",
-  chartScatterSub: "\u0623\u0643\u0628\u0631 10 \u0648\u0644\u0627\u064a\u0627\u062a – \u062d\u062c\u0645 \u0627\u0644\u0641\u0642\u0627\u0639\u0629 = \u0646\u0633\u0628\u0629 \u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+  chartScatterSub: "\u0623\u0643\u0628\u0631 10 \u0648\u0644\u0627\u064a\u0627\u062a \u2014 \u062d\u062c\u0645 \u0627\u0644\u0641\u0642\u0627\u0639\u0629 = \u0646\u0633\u0628\u0629 \u0627\u0644\u0628\u0637\u0627\u0644\u0629",
   chartPopK: "\u0627\u0644\u0633\u0643\u0627\u0646 (\u0623\u0644\u0641)",
   chartGdpShareLabel: "\u062d\u0635\u0629 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a %",
   chartPopThousands: "\u0627\u0644\u0633\u0643\u0627\u0646 (\u0622\u0644\u0627\u0641)",
@@ -1576,8 +1742,128 @@ const ar: Dictionary = {
   chartPhysiciansLabel: "\u0623\u0637\u0628\u0627\u0621", chartNursesLabel: "\u0645\u0645\u0631\u0636\u0648\u0646",
   chartInfantMortLabel: "\u0648\u0641\u064a\u0627\u062a \u0627\u0644\u0631\u0636\u0639", chartMaternalMortLabel: "\u0648\u0641\u064a\u0627\u062a \u0627\u0644\u0623\u0645\u0648\u0645\u0627\u062a", chartLifeExpLabel: "\u0645\u062a\u0648\u0633\u0637 \u0627\u0644\u0639\u0645\u0631",
   chartHealthExpLabel: "\u0646\u0641\u0642\u0627\u062a \u0635\u062d\u064a\u0629 % \u0646\u0627\u062a\u062c", chartVaccinationLabel: "\u062a\u0644\u0642\u064a\u062d %", chartPrimaryCareLabel: "\u0639\u064a\u0627\u062f\u0627\u062a \u0623\u0648\u0644\u064a\u0629 (\u0645\u0644\u064a\u0648\u0646)",
+  kpiRegTotalPop: "\u0633\u0643\u0627\u0646 58 \u0648\u0644\u0627\u064a\u0629",
+  kpiRegTotalWilayas: "58 \u0648\u0644\u0627\u064a\u0629",
+  kpiRegNationalGdp: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u0627\u0644\u0648\u0637\u0646\u064a",
+  kpiRegAvgUnemp: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+  kpiRegYouthUnemp: "\u0628\u0637\u0627\u0644\u0629 \u0627\u0644\u0634\u0628\u0627\u0628",
+  kpiRegUrbanization: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062a\u062d\u0636\u0631",
+  kpiRegPoverty: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0641\u0642\u0631",
+  kpiRegElectrification: "\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621",
+  kpiRegInformal: "\u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u063a\u064a\u0631 \u0627\u0644\u0631\u0633\u0645\u064a",
+  kpiRegSecondary: "\u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062b\u0627\u0646\u0648\u064a",
+  kpiRegNetMigration: "\u0627\u0644\u0647\u062c\u0631\u0629 \u0627\u0644\u0635\u0627\u0641\u064a\u0629",
+  kpiRegHospitalBeds: "\u0623\u0633\u0631\u0629/10 \u0622\u0644\u0627\u0641",
+  chartRegionGdpShare: "\u062d\u0635\u0629 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionGdpShareSub: "% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u0627\u0644\u0648\u0637\u0646\u064a \u2013 \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621",
+  chartRegionUnempTrend: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0628\u0637\u0627\u0644\u0629 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2015\u20132024)",
+  chartRegionUnempTrendSub: "% \u2013 \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0633\u062a\u0637\u0644\u0627\u0639\u0627\u062a \u0627\u0644\u0648\u0641\u0627\u0621",
+  chartRegionUnemp: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629 %",
+  chartRegionGdpTrend: "\u062a\u0637\u0648\u0631 \u062d\u0635\u0629 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2015\u20132024)",
+  chartRegionGdpTrendSub: "% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u0627\u0644\u0648\u0637\u0646\u064a",
+  chartRegionSectorComp: "\u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u0627\u0644\u0642\u0637\u0627\u0639\u064a \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2023)",
+  chartRegionSectorCompSub: "% \u2013 \u0627\u0644\u0632\u0631\u0627\u0639\u0629\u060c \u0627\u0644\u0635\u0646\u0627\u0639\u0629\u060c \u0627\u0644\u0628\u0646\u0627\u0621\u060c \u0627\u0644\u062e\u062f\u0645\u0627\u062a\u060c \u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a",
+  chartRegionPoverty: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0641\u0642\u0631 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionPovertySub: "% \u062a\u062d\u062a \u062e\u0637 \u0627\u0644\u0641\u0642\u0631 \u0627\u0644\u0648\u0637\u0646\u064a \u2013 \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621",
+  chartRegionYouthUnemp: "\u0628\u0637\u0627\u0644\u0629 \u0627\u0644\u0634\u0628\u0627\u0628 (15-24 \u0633\u0646\u0629) \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionYouthUnempSub: "% \u2013 \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0633\u062a\u0637\u0644\u0627\u0639 \u0627\u0644\u0648\u0641\u0627\u0621 2024",
+  chartRegionUrbanization: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062a\u062d\u0636\u0631 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionUrbanizationSub: "% \u0645\u0646 \u0627\u0644\u0633\u0643\u0627\u0646 \u0641\u064a \u0627\u0644\u0645\u062f\u0646",
+  chartRegionDensity: "\u0643\u062b\u0627\u0641\u0629 \u0627\u0644\u0633\u0643\u0627\u0646 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionDensitySub: "\u0633\u0643\u0627\u0646 \u0644\u0643\u0644 \u0643\u0645\u00b2",
+  chartRegionPerCapita: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u0644\u0644\u0641\u0631\u062f \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionPerCapitaSub: "\u0622\u0644\u0627\u0641 \u062f\u062c \u2013 \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621",
+  chartRegionElectrification: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionElectrificationSub: "% \u0645\u0646 \u0627\u0644\u0623\u0633\u0631 \u0627\u0644\u0645\u0631\u062a\u0628\u0637\u064a\u0646 \u0628\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621",
+  chartRegionMigration: "\u0627\u0644\u0647\u062c\u0631\u0629 \u0627\u0644\u0635\u0627\u0641\u064a\u0629 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionMigrationSub: "\u0644\u0643\u0644 1000 \u0633\u0643\u0627\u0646 (\u2030)",
+  chartRegionInformal: "\u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u063a\u064a\u0631 \u0627\u0644\u0631\u0633\u0645\u064a \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionInformalSub: "% \u0645\u0646 \u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u2013 \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621",
+  chartRegionHealth: "\u0623\u0633\u0631\u0629 \u0627\u0644\u0645\u0633\u062a\u0634\u0641\u064a\u0627\u062a \u0644\u0643\u0644 10 \u0622\u0644\u0627\u0641 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionHealthSub: "\u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621 / \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u0635\u062d\u0629",
+  chartRegionEducation: "\u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062b\u0627\u0646\u0648\u064a \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionEducationSub: "% \u062a\u0633\u062c\u064a\u0644 \u0625\u062c\u0645\u0627\u0644\u064a \u2013 \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621",
+  labelCentre: "\u0627\u0644\u0645\u0631\u0643\u0632",
+  labelEst: "\u0627\u0644\u0634\u0631\u0642",
+  labelOuest: "\u0627\u0644\u063a\u0631\u0628",
+  labelSud: "\u0627\u0644\u062c\u0646\u0648\u0628",
+  labelHautsPlateaux: "\u0627\u0644\u0647\u0636\u0628 \u0627\u0644\u0639\u0627\u0644\u064a",
+  labelAgriculture: "\u0627\u0644\u0632\u0631\u0627\u0639\u0629",
+  labelIndustry: "\u0627\u0644\u0635\u0646\u0627\u0639\u0629",
+  labelConstruction: "\u0627\u0644\u0628\u0646\u0627\u0621",
+  labelServices: "\u0627\u0644\u062e\u062f\u0645\u0627\u062a",
+  labelHydrocarbons: "\u0627\u0644\u0645\u062d\u0631\u0648\u0642\u0627\u062a",
+  kpiRegDensity: "\u0645\u062a\u0648\u0633\u0637 \u0627\u0644\u0643\u062b\u0627\u0641\u0629",
+  kpiRegArea: "\u0627\u0644\u0645\u0633\u0627\u062d\u0629 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a\u0629",
+  kpiRegEmployment: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062a\u0634\u063a\u064a\u0644",
+  kpiRegFemalePartic: "\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0645\u0631\u0623\u0629",
+  kpiRegInternet: "\u0627\u0644\u0625\u0646\u062a\u0631\u0646\u062a",
+  kpiRegLiteracy: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0645\u0639\u0631\u0641\u0629",
+  kpiRegInfantMort: "\u0648\u0641\u064a\u0627\u062a \u0627\u0644\u0631\u0636\u0639",
+  kpiRegLifeExp: "\u0645\u062a\u0648\u0633\u0637 \u0627\u0644\u0639\u0645\u0631",
+  kpiRegHealthExp: "\u0625\u0646\u0641\u0627\u0642 \u0627\u0644\u0635\u062d\u0629",
+  kpiRegVaccination: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062a\u0637\u0639\u064a\u0645",
+  kpiRegPhysicians: "\u0623\u0637\u0628\u0627\u0621/10 \u0622\u0644\u0627\u0641",
+  kpiRegWaterAccess: "\u0627\u0644\u0645\u064a\u0627\u0647 \u0627\u0644\u0635\u0627\u0644\u062d\u0629",
+  kpiRegHousingDeficit: "\u0639\u062c\u0632 \u0627\u0644\u0633\u0643\u0646",
+  kpiRegVehicles: "\u0645\u0631\u0643\u0628\u0627\u062a/10 \u0622\u0644\u0627\u0641",
+  kpiRegIndustrialUnits: "\u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629",
+  kpiRegRoadDensity: "\u0643\u062b\u0627\u0641\u0629 \u0627\u0644\u0637\u0631\u0642",
+  kpiRegMobilePenetration: "\u0627\u062e\u062a\u0631\u0627\u0642 \u0627\u0644\u0647\u0627\u062a\u0641",
+  kpiRegBroadband: "\u0627\u0634\u062a\u0631\u0627\u0643\u0627\u062a \u0627\u0644\u0646\u062a",
+  kpiRegAgriculturalLand: "\u0627\u0644\u0623\u0631\u0627\u0636\u064a \u0627\u0644\u0632\u0631\u0627\u0639\u064a\u0629",
+  kpiRegGiniIncome: "\u062c\u064a\u0646\u064a (\u0627\u0644\u062f\u062e\u0644)",
+  kpiRegHDI: "\u0645\u0624\u0634\u0631 \u0627\u0644\u062a\u0646\u0645\u064a\u0629",
+  kpiRegGrowthRate: "\u0646\u0645\u0648 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  chartRegionPopulation: "\u0627\u0644\u0633\u0643\u0627\u0646 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionPopulationSub: "\u0622\u0644\u0627\u0641 \u0627\u0644\u0633\u0643\u0627\u0646 – \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621 RGPH 2022",
+  chartRegionDensityBar: "\u0643\u062b\u0627\u0641\u0629 \u0627\u0644\u0633\u0643\u0627\u0646 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionDensityBarSub: "\u0633\u0643\u0627\u0646 \u0644\u0643\u0644 \u0643\u0645\u00b2",
+  chartRegionEmployStruct: "\u0647\u064a\u0643\u0644 \u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionEmployStructSub: "% \u0645\u0646 \u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u0627\u0644\u0625\u0642\u0644\u064a\u0645\u064a \u062d\u0633\u0628 \u0627\u0644\u0642\u0637\u0627\u0639",
+  chartRegionHDI: "\u0645\u0624\u0634\u0631 \u0627\u0644\u062a\u0646\u0645\u064a\u0629 \u0627\u0644\u0628\u0634\u0631\u064a\u0629 \u0627\u0644\u0625\u0642\u0644\u064a\u0645\u064a (2015–2024)",
+  chartRegionHDISub: "\u0645\u0624\u0634\u0631 \u0645\u0631\u0643\u0628 (\u0635\u062d\u0629\u060c \u062a\u0639\u0644\u064a\u0645\u060c \u062f\u062e\u0644) – \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621",
+  chartRegionUrbanTrend: "\u0627\u062a\u062c\u0627\u0647 \u0627\u0644\u062a\u062d\u0636\u0631 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2015–2024)",
+  chartRegionUrbanTrendSub: "% \u0645\u0646 \u0627\u0644\u0633\u0643\u0627\u0646 \u0627\u0644\u062d\u0636\u0631\u064a\u064a\u0646",
+  chartRegionInequality: "\u0645\u0624\u0634\u0631\u0627\u062a \u0639\u062f\u0645 \u0627\u0644\u0645\u0633\u0627\u0648\u0627\u0629 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionInequalitySub: "\u0645\u0639\u0627\u0645\u0644 \u062c\u064a\u0646\u064a \u062d\u0633\u0628 \u0627\u0644\u0628\u0639\u062f – \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621",
+  chartRegionInfra: "\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u062d\u0633\u0628 \u0627\u0644\u0645\u0646\u0637\u0642\u0629 (2024)",
+  chartRegionInfraSub: "\u0645\u0642\u0627\u064a\u064a\u0633 \u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 – \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621",
+  chartRegionDevScatter: "\u0627\u0631\u062a\u0628\u0627\u0637 \u0627\u0644\u062a\u0646\u0645\u064a\u0629: \u0627\u0644\u0646\u0627\u062a\u062c \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0635\u062d\u0629 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062a\u0639\u0644\u064a\u0645 (2024)",
+  chartRegionDevScatterSub: "\u062d\u062c\u0645 \u0627\u0644\u0641\u0642\u0627\u0639\u0629 = \u0645\u0639\u062f\u0644 \u0627\u0644\u0641\u0642\u0631 – \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621",
+  chartWilayaPopRank: "\u0623\u0643\u0628\u0631 20 \u0648\u0644\u0627\u064a\u0629 \u0645\u0646 \u062d\u064a\u062b \u0627\u0644\u0633\u0643\u0627\u0646 (2024)",
+  chartWilayaPopRankSub: "\u0622\u0644\u0627\u0641 \u0627\u0644\u0633\u0643\u0627\u0646 – \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0648\u0641\u0627\u0621 RGPH 2022",
+  chartWilayaUnempRank: "\u0623\u0639\u0644\u0649 15 \u0648\u0644\u0627\u064a\u0629 \u0645\u0646 \u062d\u064a\u062b \u0627\u0644\u0628\u0637\u0627\u0644\u0629 (2024)",
+  chartWilayaUnempRankSub: "% – \u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0633\u062a\u0637\u0644\u0627\u0639 \u0627\u0644\u0648\u0641\u0627\u0621 2024",
+  chartRegionEmpLabel: "\u0627\u0644\u062a\u0634\u063a\u064a\u0644 (\u0623\u0644\u0641)",
+  chartRegionAgriEmp: "\u0627\u0644\u0632\u0631\u0627\u0639\u0629",
+  chartRegionIndEmp: "\u0627\u0644\u0635\u0646\u0627\u0639\u0629",
+  chartRegionConstrEmp: "\u0627\u0644\u0628\u0646\u0627\u0621",
+  chartRegionServEmp: "\u0627\u0644\u062e\u062f\u0645\u0627\u062a",
+  chartRegionPublicEmp: "\u0627\u0644\u0642\u0637\u0627\u0639 \u0627\u0644\u0639\u0645\u0648\u0645\u064a",
+  chartRoadDensity: "\u0643\u062b\u0627\u0641\u0629 \u0627\u0644\u0637\u0631\u0642 (\u0643\u0645/\u0643\u0645\u00b2)",
+  chartWaterSupply: "\u0627\u0644\u0645\u064a\u0627\u0647 \u0627\u0644\u0635\u0627\u0644\u062d\u0629 %",
+  chartSewage: "\u0627\u0644\u0635\u0631\u0641 \u0627\u0644\u0635\u062d\u064a %",
+  chartBroadband: "\u0627\u0644\u0646\u0637\u0627\u0642 \u0627\u0644\u0639\u0631\u064a\u0636 (\u0623\u0644\u0641)",
+  chartMobilePen: "\u0627\u0644\u0647\u0627\u062a\u0641 \u0627\u0644\u0645\u062d\u0645\u0648\u0644 %",
+  chartInternetUsers: "\u0645\u0633\u062a\u062e\u062f\u0645\u0648 \u0627\u0644\u0625\u0646\u062a\u0631\u0646\u062a %",
+  chartGiniIncome: "\u062c\u064a\u0646\u064a \u0627\u0644\u062f\u062e\u0644",
+  chartGiniEducation: "\u062c\u064a\u0646\u064a \u0627\u0644\u062a\u0639\u0644\u064a\u0645",
+  chartGiniHealth: "\u062c\u064a\u0646\u064a \u0627\u0644\u0635\u062d\u0629",
+  chartGiniHousing: "\u062c\u064a\u0646\u064a \u0627\u0644\u0633\u0643\u0646",
+  chartCentreHDI: "\u0627\u0644\u0645\u0631\u0643\u0632",
+  chartEstHDI: "\u0627\u0644\u0634\u0631\u0642",
+  chartOuestHDI: "\u0627\u0644\u063a\u0631\u0628",
+  chartSudHDI: "\u0627\u0644\u062c\u0646\u0648\u0628",
+  chartHPHDI: "\u0627\u0644\u0647\u0636\u0628 \u0627\u0644\u0639\u0627\u0644\u064a",
+  chartSecondaryEnrol: "\u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062b\u0627\u0646\u0648\u064a %",
+  chartHospitalBeds: "\u0623\u0633\u0631\u0629/10 \u0622\u0644\u0627\u0641",
+  chartPovertyRate: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0641\u0642\u0631 %",
+  chartEmploymentPct: "\u0645\u0639\u062f\u0644 \u0627\u0644\u062a\u0634\u063a\u064a\u0644 %",
+  chartFemalePartLabel: "\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0646\u0633\u0627\u0621 %",
+  chartYouthEmpLabel: "\u062a\u0634\u063a\u064a\u0644 \u0627\u0644\u0634\u0628\u0627\u0628 %",
 
-  footer: "\u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) – www.ons.dz | \u062c\u0645\u064a\u0639 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0645\u0646 \u0645\u0646\u0634\u0648\u0631\u0627\u062a ONS (\u0627\u0644\u0623\u0633\u0639\u0627\u0631\u060c \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629\u060c \u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629\u060c \u0627\u0644\u062a\u0639\u062f\u0627\u062f \u0627\u0644\u0633\u0643\u0627\u0646\u064a)",
+  footer: "\u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) \u2014 www.ons.dz | \u062c\u0645\u064a\u0639 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0645\u0646 \u0645\u0646\u0634\u0648\u0631\u0627\u062a ONS (\u0627\u0644\u0623\u0633\u0639\u0627\u0631\u060c \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629\u060c \u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629\u060c \u0627\u0644\u062a\u0639\u062f\u0627\u062f \u0627\u0644\u0633\u0643\u0627\u0646\u064a)",
 };
 
 // ─── DICTIONARY MAP ───────────────────────────────────────────────────────────
@@ -1597,16 +1883,4 @@ export const localeFlags: Record<Locale, string> = {
   en: "\ud83c\uddec\ud83c\udde7",
   fr: "\ud83c\uddeb\ud83c\uddf7",
   ar: "\ud83c\uddf9\ud83c\uddf1",
-  kpiRegTotalPop: "Pop. 58 wilayas",
-  kpiRegTotalWilayas: "58 wilayas",
-  kpiRegNationalGdp: "PIB national",
-  kpiRegAvgUnemp: "Chômage moyen",
-  kpiRegYouthUnemp: "Chômage des jeunes",
-  kpiRegUrbanization: "Taux d'urbanisation",
-  kpiRegPoverty: "Taux de pauvreté",
-  kpiRegElectrification: "Électrification",
-  kpiRegInformal: "Emploi informel",
-  kpiRegSecondary: "Scolarisation secondaire",
-  kpiRegNetMigration: "Solde migratoire",
-  kpiRegHospitalBeds: "Lits/10 000 hab.",
 };
