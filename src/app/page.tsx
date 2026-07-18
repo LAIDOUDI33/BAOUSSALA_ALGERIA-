@@ -6,7 +6,7 @@ import {
   demographics, populationByAge, fiscalData, cpiByDivision,
   education, ippiQuarterly, wilayaData, constructionIndex, latestKPIs,
   hydrocarbons, agricultureData, manufacturingData, btpData,
-  servicesData, miningEnergy, healthData,
+  servicesData, miningEnergy, healthData, regionAggregates, regionalTimeSeries, regionalSectorComposition,
 } from "@/lib/algeria-data";
 
 import { useI18n } from "@/lib/i18n/context";
@@ -33,6 +33,7 @@ import {
   Factory, GraduationCap, Building2, Truck, Heart, Package,
   Scale, ChevronRight, Droplets, Sprout, Hammer, Wrench, Zap,
   Stethoscope, Shield, Thermometer, Baby, Syringe, BedDouble,
+  MapPin, ArrowRightLeft, Landmark, Wheat, Briefcase,
 } from "lucide-react";
 
 // ─── Color palette ──────────────────────────────────────────────────────────
@@ -688,33 +689,207 @@ export default function AlgeriaDashboard() {
 
           {/* ═══ REGIONAL ═════════════════════════════════════════════════════ */}
           <TabsContent value="regional" className="space-y-5">
+            {/* ── KPI CARDS ──────────────────────────────────────────────────── */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiRegTotalPop} value="46.8" unit="M" icon={Users} color={COLORS.blue} />
+              <KpiCard title={t.kpiRegTotalWilayas} value="58" unit="wilayas" icon={MapPin} color={COLORS.emerald} />
+              <KpiCard title={t.kpiRegNationalGdp} value="267" unit="bn $" icon={Globe} color={COLORS.amber} />
+              <KpiCard title={t.kpiRegAvgUnemp} value="9.7" unit="%" change={-1.0} changeDir="down" icon={Activity} color={COLORS.red} />
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiRegYouthUnemp} value="24.8" unit="%" icon={Users} color={COLORS.rose} />
+              <KpiCard title={t.kpiRegUrbanization} value="73.5" unit="%" icon={Building2} color={COLORS.purple} />
+              <KpiCard title={t.kpiRegPoverty} value="8.2" unit="%" change={-0.5} changeDir="down" icon={Scale} color={COLORS.amber} />
+              <KpiCard title={t.kpiRegElectrification} value="99.2" unit="%" icon={Zap} color={COLORS.teal} />
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <KpiCard title={t.kpiRegInformal} value="38.5" unit="%" icon={Briefcase} color={COLORS.slate} />
+              <KpiCard title={t.kpiRegSecondary} value="81.2" unit="%" icon={GraduationCap} color={COLORS.blue} />
+              <KpiCard title={t.kpiRegNetMigration} value="-0.4" unit="‰" icon={ArrowRightLeft} color={COLORS.orange} />
+              <KpiCard title={t.kpiRegHospitalBeds} value="20.3" unit="" icon={Heart} color={COLORS.red} />
+            </div>
+
+            {/* ── ROW 1: GDP Share + Unemployment Trend ──────────────────────── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWilayaGdp} subtitle={t.chartWilayaGdpSub}>
-                <ChartContainer config={{ gdpShare: { label: t.chartGdpShare, color: COLORS.emerald } }} className="h-[380px] w-full">
-                  <BarChart data={wilayaData} layout="vertical" margin={{ top: 5, right: 10, left: 80, bottom: 0 }}>
+              <ChartCard title={t.chartRegionGdpShare} subtitle={t.chartRegionGdpShareSub}>
+                <ChartContainer config={{
+                  Centre: { label: t.labelCentre, color: COLORS.blue },
+                  Est: { label: t.labelEst, color: COLORS.emerald },
+                  Ouest: { label: t.labelOuest, color: COLORS.amber },
+                  Sud: { label: t.labelSud, color: COLORS.red },
+                  ["Hauts Plateaux"]: { label: t.labelHautsPlateaux, color: COLORS.purple },
+                }} className="h-[340px] w-full">
+                  <BarChart data={regionAggregates} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
-                    <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 11 }} tickLine={false} width={75} />
+                    <XAxis dataKey="region" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 45]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="gdpShare" fill={COLORS.emerald} radius={[0, 4, 4, 0]} name={t.chartGdpShare}>
-                      {wilayaData.map((_, i) => (
-                        <Cell key={i} fill={[COLORS.emerald, COLORS.blue, COLORS.purple, COLORS.amber, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red][i]} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="gdpShare" radius={[4, 4, 0, 0]}>
+                      {regionAggregates.map((_, i) => (
+                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.red, COLORS.purple][i]} />
                       ))}
                     </Bar>
                   </BarChart>
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title={t.chartWilayaUnemp} subtitle={t.chartWilayaUnempSub}>
-                <ChartContainer config={{ unemployment: { label: t.chartUnempPct, color: COLORS.red } }} className="h-[380px] w-full">
-                  <BarChart data={wilayaData} layout="vertical" margin={{ top: 5, right: 10, left: 80, bottom: 0 }}>
+              <ChartCard title={t.chartRegionUnempTrend} subtitle={t.chartRegionUnempTrendSub}>
+                <ChartContainer config={{
+                  centreUnemp: { label: t.labelCentre, color: COLORS.blue },
+                  estUnemp: { label: t.labelEst, color: COLORS.emerald },
+                  ouestUnemp: { label: t.labelOuest, color: COLORS.amber },
+                  sudUnemp: { label: t.labelSud, color: COLORS.red },
+                  hpUnemp: { label: t.labelHautsPlateaux, color: COLORS.purple },
+                }} className="h-[340px] w-full">
+                  <LineChart data={regionalTimeSeries} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[0, 18]} />
-                    <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 11 }} tickLine={false} width={75} />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 20]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="unemployment" radius={[0, 4, 4, 0]} name={t.chartUnempPct}>
-                      {wilayaData.map((d) => (
-                        <Cell key={d.wilaya} fill={d.unemployment >= 13 ? COLORS.red : d.unemployment >= 11 ? COLORS.amber : COLORS.emerald} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Line type="monotone" dataKey="centreUnemp" stroke={COLORS.blue} strokeWidth={2} dot={{ r: 2 }} />
+                    <Line type="monotone" dataKey="estUnemp" stroke={COLORS.emerald} strokeWidth={2} dot={{ r: 2 }} />
+                    <Line type="monotone" dataKey="ouestUnemp" stroke={COLORS.amber} strokeWidth={2} dot={{ r: 2 }} />
+                    <Line type="monotone" dataKey="sudUnemp" stroke={COLORS.red} strokeWidth={2} dot={{ r: 2 }} />
+                    <Line type="monotone" dataKey="hpUnemp" stroke={COLORS.purple} strokeWidth={2} dot={{ r: 2 }} />
+                  </LineChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* ── ROW 2: GDP Trend + Sectoral Composition ──────────────────── */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartRegionGdpTrend} subtitle={t.chartRegionGdpTrendSub}>
+                <ChartContainer config={{
+                  centreGdpPct: { label: t.labelCentre, color: COLORS.blue },
+                  estGdpPct: { label: t.labelEst, color: COLORS.emerald },
+                  ouestGdpPct: { label: t.labelOuest, color: COLORS.amber },
+                  sudGdpPct: { label: t.labelSud, color: COLORS.red },
+                  hpGdpPct: { label: t.labelHautsPlateaux, color: COLORS.purple },
+                }} className="h-[340px] w-full">
+                  <AreaChart data={regionalTimeSeries} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 45]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Area type="monotone" stackId="1" dataKey="hpGdpPct" fill={COLORS.purpleLight} stroke={COLORS.purple} strokeWidth={1.5} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="sudGdpPct" fill={COLORS.redLight} stroke={COLORS.red} strokeWidth={1.5} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="ouestGdpPct" fill={COLORS.amberLight} stroke={COLORS.amber} strokeWidth={1.5} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="estGdpPct" fill={COLORS.emeraldLight} stroke={COLORS.emerald} strokeWidth={1.5} fillOpacity={0.7} />
+                    <Area type="monotone" stackId="1" dataKey="centreGdpPct" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={1.5} fillOpacity={0.7} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionSectorComp} subtitle={t.chartRegionSectorCompSub}>
+                <ChartContainer config={{
+                  agriculture: { label: t.labelAgriculture, color: COLORS.emerald },
+                  industry: { label: t.labelIndustry, color: COLORS.blue },
+                  construction: { label: t.labelConstruction, color: COLORS.amber },
+                  services: { label: t.labelServices, color: COLORS.purple },
+                  hydrocarbons: { label: t.labelHydrocarbons, color: COLORS.red },
+                }} className="h-[340px] w-full">
+                  <BarChart data={regionalSectorComposition} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="region" tick={{ fontSize: 10 }} tickLine={false} />
+                    <YAxis tick={{ fontSize: 11 }} tickLine={false} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend content={<ChartLegendContent />} />
+                    <Bar dataKey="agriculture" stackId="a" fill={COLORS.emerald} />
+                    <Bar dataKey="industry" stackId="a" fill={COLORS.blue} />
+                    <Bar dataKey="construction" stackId="a" fill={COLORS.amber} />
+                    <Bar dataKey="services" stackId="a" fill={COLORS.purple} />
+                    <Bar dataKey="hydrocarbons" stackId="a" fill={COLORS.red} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* ── ROW 3: Poverty + Youth Unemployment + Urbanization ────── */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+              <ChartCard title={t.chartRegionPoverty} subtitle={t.chartRegionPovertySub}>
+                <ChartContainer config={{ povertyRate: { label: t.kpiRegPoverty, color: COLORS.amber } }} className="h-[300px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[0, 16]} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="povertyRate" radius={[0, 4, 4, 0]}>
+                      {regionAggregates.map((d) => (
+                        <Cell key={d.region} fill={d.povertyRate >= 10 ? COLORS.red : d.povertyRate >= 8 ? COLORS.amber : COLORS.emerald} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionYouthUnemp} subtitle={t.chartRegionYouthUnempSub}>
+                <ChartContainer config={{ youthUnemp: { label: t.kpiRegYouthUnemp, color: COLORS.rose } }} className="h-[300px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[0, 35]} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="youthUnemp" radius={[0, 4, 4, 0]} fill={COLORS.rose} opacity={0.85} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionUrbanization} subtitle={t.chartRegionUrbanizationSub}>
+                <ChartContainer config={{ urbanization: { label: t.kpiRegUrbanization, color: COLORS.purple } }} className="h-[300px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[0, 100]} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="urbanization" radius={[0, 4, 4, 0]} fill={COLORS.purple} opacity={0.85} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* ── ROW 4: GDP Per Capita + Electrification + Migration ────── */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+              <ChartCard title={t.chartRegionPerCapita} subtitle={t.chartRegionPerCapitaSub}>
+                <ChartContainer config={{ gdpPerCapitaK: { label: t.chartRegionPerCapita, color: COLORS.emerald } }} className="h-[300px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="gdpPerCapitaK" radius={[0, 4, 4, 0]} fill={COLORS.emerald} opacity={0.85}>
+                      {regionAggregates.map((_, i) => (
+                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.red, COLORS.purple][i]} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionElectrification} subtitle={t.chartRegionElectrificationSub}>
+                <ChartContainer config={{ electrification: { label: t.kpiRegElectrification, color: COLORS.teal } }} className="h-[300px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[80, 100]} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="electrification" radius={[0, 4, 4, 0]} fill={COLORS.teal} opacity={0.85} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionMigration} subtitle={t.chartRegionMigrationSub}>
+                <ChartContainer config={{ netMigration: { label: t.kpiRegNetMigration, color: COLORS.orange } }} className="h-[300px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="netMigration" radius={[0, 4, 4, 0]}>
+                      {regionAggregates.map((d) => (
+                        <Cell key={d.region} fill={d.netMigration >= 0 ? COLORS.emerald : COLORS.red} />
                       ))}
                     </Bar>
                   </BarChart>
@@ -722,25 +897,91 @@ export default function AlgeriaDashboard() {
               </ChartCard>
             </div>
 
-            <ChartCard title={t.chartScatter} subtitle={t.chartScatterSub}>
-              <ChartContainer config={{
-                x: { label: t.chartPopK, color: COLORS.blue },
-                y: { label: t.chartGdpShareLabel, color: COLORS.emerald },
-              }} className="h-[350px] w-full">
-                <ScatterChart margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-                  <XAxis dataKey="populationK" name={t.chartPopK} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartPopThousands, position: "bottom", fontSize: 11 }} />
-                  <YAxis dataKey="gdpShare" name={t.chartGdpShareLabel} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartGdpShareLabel, angle: isRtl ? 90 : -90, position: "insideLeft", fontSize: 11 }} />
-                  <ZAxis dataKey="unemployment" range={[80, 400]} name={t.chartUnempPctLabel} />
-                  <ChartTooltip content={<ChartTooltipContent />} />
-                  <Scatter data={wilayaData} fill={COLORS.emerald}>
-                    {wilayaData.map((_, i) => (
-                      <Cell key={i} fill={[COLORS.emerald, COLORS.blue, COLORS.purple, COLORS.amber, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red][i]} />
-                    ))}
-                  </Scatter>
-                </ScatterChart>
-              </ChartContainer>
-            </ChartCard>
+            {/* ── ROW 5: Top Wilayas Scatter + Top 10 GDP ────────────────────── */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <ChartCard title={t.chartWilayaGdp} subtitle={t.chartWilayaGdpSub}>
+                <ChartContainer config={{ gdpShare: { label: t.chartGdpShare, color: COLORS.emerald } }} className="h-[380px] w-full">
+                  <BarChart data={wilayaData.slice(0, 15)} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 120 : 100, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="wilaya" type="category" tick={{ fontSize: 10 }} tickLine={false} width={isRtl ? 120 : 100} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="gdpShare" fill={COLORS.emerald} radius={[0, 4, 4, 0]} name={t.chartGdpShare}>
+                      {wilayaData.slice(0, 15).map((_, i) => (
+                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.purple, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red, COLORS.blueLight, COLORS.emeraldLight, COLORS.amberLight, COLORS.purpleLight, COLORS.cyanLight][i]} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartScatter} subtitle={t.chartScatterSub}>
+                <ChartContainer config={{
+                  x: { label: t.chartPopK, color: COLORS.blue },
+                  y: { label: t.chartGdpShareLabel, color: COLORS.emerald },
+                }} className="h-[380px] w-full">
+                  <ScatterChart margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis dataKey="populationK" name={t.chartPopK} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartPopThousands, position: "bottom", fontSize: 11 }} />
+                    <YAxis dataKey="gdpShare" name={t.chartGdpShareLabel} tick={{ fontSize: 11 }} tickLine={false} label={{ value: t.chartGdpShareLabel, angle: isRtl ? 90 : -90, position: "insideLeft", fontSize: 11 }} />
+                    <ZAxis dataKey="unemployment" range={[80, 400]} name={t.chartUnempPctLabel} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Scatter data={wilayaData.slice(0, 15)} fill={COLORS.emerald}>
+                      {wilayaData.slice(0, 15).map((_, i) => (
+                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.purple, COLORS.cyan, COLORS.rose, COLORS.teal, COLORS.orange, COLORS.slate, COLORS.red, COLORS.blueLight, COLORS.emeraldLight, COLORS.amberLight, COLORS.purpleLight, COLORS.cyanLight][i]} />
+                      ))}
+                    </Scatter>
+                  </ScatterChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* ── ROW 6: Health + Education + Informal ──────────────────── */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+              <ChartCard title={t.chartRegionHealth} subtitle={t.chartRegionHealthSub}>
+                <ChartContainer config={{ hospitalBeds10k: { label: t.kpiRegHospitalBeds, color: COLORS.red } }} className="h-[280px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="hospitalBeds10k" radius={[0, 4, 4, 0]} fill={COLORS.red} opacity={0.85}>
+                      {regionAggregates.map((_, i) => (
+                        <Cell key={i} fill={[COLORS.blue, COLORS.emerald, COLORS.amber, COLORS.red, COLORS.purple][i]} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionEducation} subtitle={t.chartRegionEducationSub}>
+                <ChartContainer config={{ secondaryEnrol: { label: t.kpiRegSecondary, color: COLORS.blue } }} className="h-[280px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[60, 100]} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="secondaryEnrol" radius={[0, 4, 4, 0]} fill={COLORS.blue} opacity={0.85} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartRegionInformal} subtitle={t.chartRegionInformalSub}>
+                <ChartContainer config={{ informalEmploy: { label: t.kpiRegInformal, color: COLORS.slate } }} className="h-[280px] w-full">
+                  <BarChart data={regionAggregates} layout="vertical" margin={{ top: 5, right: 10, left: isRtl ? 100 : 80, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} domain={[0, 55]} />
+                    <YAxis dataKey="region" type="category" tick={{ fontSize: 11 }} tickLine={false} width={isRtl ? 100 : 80} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="informalEmploy" radius={[0, 4, 4, 0]} fill={COLORS.slate} opacity={0.85}>
+                      {regionAggregates.map((d) => (
+                        <Cell key={d.region} fill={d.informalEmploy >= 40 ? COLORS.red : d.informalEmploy >= 35 ? COLORS.amber : COLORS.emerald} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
           </TabsContent>
 
           {/* ═══ HYDROCARBONS ════════════════════════════════════════════ */}

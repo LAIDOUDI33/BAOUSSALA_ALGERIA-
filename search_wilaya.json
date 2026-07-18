@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=DZ",
+    "name": "GDP per capita (current US$) - Algeria - World Bank Open Data",
+    "snippet": "GDP per capita (current US$) - Algeria from The World Bank: Data. Country official statistics, 2023 58,499.0 Grenada Missing: wilaya population employment RGPH",
+    "host_name": "data.worldbank.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.imf.org/external/datamapper/profile/DZA",
+    "name": "Algeria - IMF DataMapper",
+    "snippet": "Real GDP growth. Annual percent change. 3.8 ; GDP, current prices. Billions of U.S. dollars. 317.17 ; GDP per capita, current prices. U.S. dollars per capita. Missing: wilaya employment RGPH",
+    "host_name": "www.imf.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.macrotrends.net/datasets/global-metrics/countries/dza/algeria/gdp-per-capita",
+    "name": "Algeria GDP Per Capita | Historical Data | Chart | 1960-2025",
+    "snippet": "Algeria GDP per capita for 2023 was $5,370, a 8.27% increase from 2022. Algeria GDP per capita for 2022 was $4,960, a 19.22% increase from 2021. Missing: wilaya employment RGPH",
+    "host_name": "www.macrotrends.net",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://data.unescwa.org/country/dza/data/economic?section=macroeconomy",
+    "name": "Economic Indicators - Algeria - Arab Development Portal",
+    "snippet": "It has a gross domestic product (GDP) of around $317.17 Billion (e) Population - 2024 $5,749 GDP per capita - GDP per capita $5,749",
+    "host_name": "data.unescwa.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://gfmag.com/country/algeria-gdp-country-report",
+    "name": "Algeria GDP and Economic Data - Global Finance Magazine",
+    "snippet": "Total Population, 46.6 million. Median Age, 28.5. Adult Per Capita Income (PPP), 19,776.93. Total GDP (2023), 266.8 billion. Algeria GDP & Economic Overview ... Missing: wilaya employment RGPH",
+    "host_name": "gfmag.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://acetforafrica.org/ati/country-profiles/algeria",
+    "name": "Algeria - African Center for Economic Transformation - ACET",
+    "snippet": "CAPITAL CITY. Algiers. POPULATION (2022). 45.6 million. POPULATION GROWTH (2022). 1.6 %. GDP GROWTH (2022). 4.1 %. GDP PER CAPITA (2022). US $5,260. Source: ...",
+    "host_name": "acetforafrica.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.economy.com/algeria/indicators",
+    "name": "Algeria | Economic Indicators | Moody's Analytics - Economy.com",
+    "snippet": "GDP - per capita (PPP):. $15,100 (2017 est.) $15,200 (2016 est.) $15,000 (2015 est.) note: data are in 2017 dollars. country comparison to the world: 110. Missing: 2023 RGPH",
+    "host_name": "www.economy.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.worldeconomics.com/GrossDomesticProduct/Current-GDP/Algeria.aspx",
+    "name": "Algeria GDP (Nominal) 2025 - World Economics",
+    "snippet": "GDP per Capita (Current / Nominal), $5,567, 2025 ; GDP per Capita (Constant / Real), $4,837, 2025 ; GDP per Capita Growth Rate, 1.7%, 2025 ; Population Size, 46.77 ... Missing: wilaya RGPH",
+    "host_name": "www.worldeconomics.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.destatis.de/EN/Themes/Countries-Regions/International-Statistics/Country/Africa/DZ.html",
+    "name": "International statistics Basic indicators: Algeria",
+    "snippet": "Value. Land area, km2, 2023, 2,381,740. GDP, current prices, bn US$, 2024, 269.1. GDP per capita, current prices, US$, 2024, 5,772. GDP (annual change), ...",
+    "host_name": "www.destatis.de",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.focus-economics.com/countries/algeria",
+    "name": "Algeria Economy: GDP, Inflation, CPI & Interest Rates - FocusEconomics",
+    "snippet": "Nominal GDP of USD 240 billion in 2023. GDP per capita of USD 5,214 compared to the global average of USD 10,589. Average real GDP growth of 2.2 ... Missing: wilaya employment RGPH",
+    "host_name": "www.focus-economics.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
