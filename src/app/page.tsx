@@ -156,7 +156,7 @@ export default function AlgeriaDashboard() {
                 className="data-[state=active]:bg-emerald-600 data-[state=active]:text-white rounded-lg px-3 py-2 text-xs sm:text-sm font-medium">
                 <tab.icon className="w-3.5 h-3.5 me-1.5" />
                 <span className="hidden sm:inline">{tab.label}</span>
-                <span className="sm:hidden">{tab.label.split(" ")[0]}</span>
+                <span className="sm:hidden">{(tab.label || "").split(" ")[0]}</span>
               </TabsTrigger>
             ))}
           </TabsList>

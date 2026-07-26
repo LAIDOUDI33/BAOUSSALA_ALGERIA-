@@ -584,6 +584,93 @@ export interface Dictionary {
 
   // ─── FOOTER ────────────────────────────────────────────────────────
   footer: string;
+
+  // ─── SDG TAB ─────────────────────────────────────────────────────────
+  kpiSdgOnTrack: string;
+  kpiSdgModerate: string;
+  kpiSdgInsufficient: string;
+  kpiSdgAchieved: string;
+  chartSdgProgress: string;
+  chartSdgProgressSub: string;
+  chartSdgRadar: string;
+  chartSdgRadarSub: string;
+  chartSdgTimeline: string;
+  chartSdgTimelineSub: string;
+  chartSdgEnergyMix: string;
+  chartSdgEnergyMixSub: string;
+  chartSdgHousing: string;
+  chartSdgHousingSub: string;
+  chartSdgDesalination: string;
+  chartSdgDesalinationSub: string;
+  chartSdgWaterReuse: string;
+  chartSdgWaterReuseSub: string;
+  chartSdgTelecoms: string;
+  chartSdgTelecomsSub: string;
+  chartSdgInnovation: string;
+  chartSdgInnovationSub: string;
+  chartSdgFood: string;
+  chartSdgFoodSub: string;
+  chartSdgEducation: string;
+  chartSdgEducationSub: string;
+  chartSdgInequality: string;
+  chartSdgInequalitySub: string;
+  chartSdgOceans: string;
+  chartSdgOceansSub: string;
+  labelRef2015: string;
+  labelRecent: string;
+  labelTarget2030: string;
+  labelProgress: string;
+  labelOnTrack: string;
+  labelModerate: string;
+  labelInsufficient: string;
+  labelAchieved: string;
+  labelStatus: string;
+  labelHigh: string;
+  labelMedium: string;
+  labelSdg: string;
+  labelName: string;
+  labelValue: string;
+  labelTarget: string;
+  labelGazNatural: string;
+  labelSolarPV: string;
+  labelHydro: string;
+  labelWind: string;
+  labelOtherEnr: string;
+  labelFuelOil: string;
+  labelYear: string;
+  labelUnits: string;
+  labelPrimary: string;
+  labelSecondary: string;
+  labelHigher: string;
+  labelLiteracy: string;
+  labelFemaleHigher: string;
+  labelPreprimary: string;
+  labelMobile: string;
+  labelInetMobile: string;
+  labelInetPop: string;
+  labelCoverage4G: string;
+  labelInetFix: string;
+  labelRdPib: string;
+  labelStartups: string;
+  labelIncubators: string;
+  labelUniversities: string;
+  labelCapacity: string;
+  labelStations: string;
+  labelVolume: string;
+  labelMarineProtected: string;
+  labelFisheries: string;
+  labelMonitoring: string;
+  labelCoastalPlans: string;
+  labelWheat: string;
+  labelMilk: string;
+  labelMilkCov: string;
+  labelAquaculture: string;
+  labelUndernourish: string;
+  labelGini: string;
+  labelSocialCov: string;
+  labelQuintileShare: string;
+  labelRemittanceCost: string;
+  labelSdgSource: string;
 }
 
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
@@ -1103,6 +1190,148 @@ const en: Dictionary = {
   labelSdgSource: "Source: VNR 2026 – Rapport National Volontaire, Comité intersectoriel ODD, ONS",
 
   footer: "Source: Office National des Statistiques (ONS) \u2014 www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes Economiques, ENEM, RGPH)",
+  kpiOilProd: "Oil Production",
+  kpiGasProd: "Gas Production",
+  kpiHydroGdpShare: "Hydrocarbon GDP %",
+  kpiHydroExports: "Hydrocarbon Exports",
+  kpiReservesOil: "Oil Reserves",
+  kpiReservesGas: "Gas Reserves",
+  chartHydroRevenueSub: "Revenue trends 2015-2024",
+  chartHydroExportsSub: "Hydrocarbon vs non-hydrocarbon exports",
+  chartOilPriceSub: "Brent price and Algerian Saharan Blend",
+  chartHydroGdpSub: "Hydrocarbon sector GDP contribution",
+  chartOilProductionSub: "Annual oil & gas production volumes",
+  chartHydroRevLabel: "Revenue",
+  chartExportsLabel: "Exports",
+  chartOilProdLabel: "Oil",
+  chartGasProdLabel: "Gas",
+  chartHydroVsNonHydroSub: "Hydrocarbon share of total exports",
+  chartNonHydroExportLabel: "Non-hydro",
+  chartReservesPieSub: "Proven reserves breakdown",
+  chartGasReservesLabel: "Natural Gas",
+  kpiRefining: "Refining Capacity",
+  kpiDomesticConsump: "Domestic Consumption",
+  kpiRPRatioOil: "R/P Ratio (Oil)",
+  kpiNewWells: "New Wells Drilled",
+  kpiExplorationInvest: "Exploration Investment",
+  chartLNGExportsSub: "LNG export volumes",
+  chartRefiningSub: "Refining capacity utilization",
+  chartExplorationInvestSub: "Exploration & production investment",
+  chartRefiningLabel: "Refining",
+  chartExplorInvestLabel: "Exploration Invest.",
+  kpiSelfSuffic: "Self-Sufficiency Rate",
+  kpiAgriExports: "Agri. Exports",
+  kpiAgriEmploy: "Agri. Employment",
+  kpiFruitProd: "Fruit Production",
+  kpiMilkProd: "Milk Production",
+  kpiIrrigatedLand: "Irrigated Land",
+  chartCerealProdSub: "Cereal production trends",
+  chartSelfSufficSub: "Self-sufficiency rate by product",
+  chartAgriExportsSub: "Agricultural export value",
+  chartVegFruitProdSub: "Vegetable & fruit production",
+  chartLivestockSub: "Livestock numbers",
+  chartLandUseSub: "Agricultural land use distribution",
+  chartSelfSufficLabel: "Self-suffic.",
+  chartAgriExportsLabel: "Agri. exports",
+  chartFruitLabel: "Fruit",
+  chartMilkLabel: "Milk",
+  chartMeatLabel: "Meat",
+  chartTotalLandLabel: "Total",
+  chartOliveDateProdSub: "Olive oil & date production",
+  chartDateLabel: "Dates",
+  kpiCerealImports: "Cereal Imports",
+  kpiPoultryProd: "Poultry Production",
+  kpiTractorFleet: "Tractor Fleet",
+  kpiFertilizer: "Fertilizer Use",
+  chartPoultryProdSub: "Poultry & egg production",
+  chartTractorFertilizerSub: "Agricultural equipment & inputs",
+  chartCerealImportsSub: "Cereal import dependency",
+  chartTractorLabel: "Tractors",
+  chartFertilizerLabel: "Fertilizer",
+  chartCerealImportLabel: "Cereal imports",
+  chartAgriGdpLabel: "Agri. GDP",
+  kpiPharma: "Pharmaceuticals",
+  kpiTextiles: "Textiles",
+  kpiChemicals: "Chemicals",
+  kpiBuildingMat: "Building Materials",
+  kpiElectrical: "Electrical Eqpt.",
+  kpiPaper: "Paper & Cardboard",
+  chartManufSubsectorsSub: "Manufacturing output by subsector",
+  chartManufRadarSub: "Sector competitiveness radar",
+  chartTextileLabel: "Textiles",
+  chartChemicalLabel: "Chemicals",
+  chartElectricLabel: "Electrical",
+  chartBuildingMatLabel: "Building Mat.",
+  chartPaperLabel: "Paper",
+  chartManufBuildingPaperSub: "Building materials & paper industry",
+  chartManufEmployCapacitySub: "Employment & capacity utilization",
+  chartEmployLabel: "Employment",
+  chartManufExportLabel: "Exports",
+  kpiManufExports: "Manufacturing Exports",
+  kpiCapacityUtil: "Capacity Utilization",
+  kpiManufGdp: "Manufacturing GDP",
+  kpiNumEnterprises: "Enterprises",
+  kpiPrivateShare: "Private Sector %",
+  kpiManufFDI: "Manufacturing FDI",
+  kpiProductivity: "Labor Productivity",
+  chartManufGDPSub: "Manufacturing sector GDP trend",
+  chartManufFDISub: "FDI inflows to manufacturing",
+  chartManufFDILabel: "FDI",
+  chartProductivityLabel: "Productivity",
+  kpiCementProd: "Cement Production",
+  kpiBTPGdp: "BTP GDP Share",
+  kpiBTPEmploy: "BTP Employment",
+  chartHousingUnitsSub: "Housing units delivered",
+  chartCementSteelSub: "Cement & steel production",
+  chartBTPCostIndexSub: "Construction cost index",
+  chartBTPInvestSub: "Public investment in construction",
+  chartCementLabel: "Cement",
+  chartSteelLabel: "Steel",
+  chartPublicInvestLabel: "Public Invest.",
+  chartPermitsLabel: "Permits",
+  kpiTrade: "Trade Share",
+  kpiTransport: "Transport Share",
+  kpiTelecom: "Telecom Share",
+  chartServicesCompositionSub: "Services sector composition",
+  chartServicesTrendSub: "Services GDP trend",
+  chartTransportLabel: "Transport",
+  chartTelecomLabel: "Telecom",
+  chartTourismLabel: "Tourism",
+  chartGovtLabel: "Government",
+  kpiGasConsump: "Gas Consumption",
+  kpiIronOre: "Iron Ore Production",
+  kpiPhosphate: "Phosphate Production",
+  chartMiningProdSub: "Mining production volumes",
+  chartEnergyConsumpSub: "Energy consumption by source",
+  chartElectricitySub: "Electricity generation mix",
+  chartPhosphateLabel: "Phosphate",
+  chartZincLabel: "Zinc",
+  chartSaltLabel: "Salt",
+  chartElectricityLabel: "Electricity",
+  chartPetrolConsumpLabel: "Petrol. Consump.",
+  kpiPhysicians: "Physicians / 10k",
+  kpiNurses: "Nurses / 10k",
+  kpiHealthExpenditure: "Health Expenditure",
+  kpiLifeExpectancy: "Life Expectancy",
+  kpiInfantMortality: "Infant Mortality",
+  kpiMaternalMortality: "Maternal Mortality",
+  kpiVaccination: "Vaccination Rate",
+  kpiNumHospitals: "Hospitals",
+  kpiHealthCenters: "Health Centers",
+  kpiPolyclinics: "Polyclinics",
+  kpiPrimaryCareVisits: "Primary Care Visits",
+  chartHealthInfrastructureSub: "Health infrastructure by wilaya",
+  chartPersonnelTrendSub: "Healthcare personnel trends",
+  chartMortalityTrendSub: "Mortality rate trends",
+  chartHealthExpenditureTrendSub: "Health expenditure evolution",
+  chartVaccinationTrendSub: "Vaccination coverage trends",
+  chartHealthCentersLabel: "Health Centers",
+  chartPolyclinicsLabel: "Polyclinics",
+  chartNursesLabel: "Nurses",
+  chartMaternalMortLabel: "Mat. Mortality",
+  chartLifeExpLabel: "Life Expect.",
+  chartVaccinationLabel: "Vaccination",
+  chartPrimaryCareLabel: "Primary Care",
 };
 
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
@@ -1622,6 +1851,148 @@ const fr: Dictionary = {
   labelSdgSource: "Source : VNR 2026 – Rapport National Volontaire, Comité intersectoriel ODD, ONS",
 
   footer: "Source : Office National des Statistiques (ONS) \u2014 www.ons.dz | Toutes les donn\u00e9es issues des publications ONS (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes \u00c9conomiques, ENEM, RGPH)",
+  kpiOilProd: "Production de Pétrole",
+  kpiGasProd: "Production de Gaz",
+  kpiHydroGdpShare: "Part Hydrocarbures PIB",
+  kpiHydroExports: "Exportations Hydrocarbures",
+  kpiReservesOil: "Réserves de Pétrole",
+  kpiReservesGas: "Réserves de Gaz",
+  chartHydroRevenueSub: "Tendances des revenus 2015-2024",
+  chartHydroExportsSub: "Exportations hydrocarbures vs non-hydrocarbures",
+  chartOilPriceSub: "Prix Brent et Saharan Blend algérien",
+  chartHydroGdpSub: "Contribution du secteur hydrocarbures au PIB",
+  chartOilProductionSub: "Volumes annuels de production pétrolière et gazière",
+  chartHydroRevLabel: "Revenus",
+  chartExportsLabel: "Exportations",
+  chartOilProdLabel: "Pétrole",
+  chartGasProdLabel: "Gaz",
+  chartHydroVsNonHydroSub: "Part des hydrocarbures dans les exportations totales",
+  chartNonHydroExportLabel: "Non-hydro",
+  chartReservesPieSub: "Répartition des réserves prouvées",
+  chartGasReservesLabel: "Gaz Naturel",
+  kpiRefining: "Capacité de Raffinage",
+  kpiDomesticConsump: "Consommation Domestique",
+  kpiRPRatioOil: "Ratio R/P (Pétrole)",
+  kpiNewWells: "Nouveaux Puits Forés",
+  kpiExplorationInvest: "Investissement Exploration",
+  chartLNGExportsSub: "Volumes d’exportation GNL",
+  chartRefiningSub: "Taux d’utilisation de la capacité de raffinage",
+  chartExplorationInvestSub: "Investissement exploration & production",
+  chartRefiningLabel: "Raffinage",
+  chartExplorInvestLabel: "Invest. Explor.",
+  kpiSelfSuffic: "Taux d’Autosuffisance",
+  kpiAgriExports: "Exportations Agri.",
+  kpiAgriEmploy: "Emploi Agricole",
+  kpiFruitProd: "Production Fruitière",
+  kpiMilkProd: "Production Laitière",
+  kpiIrrigatedLand: "Terres Irriguées",
+  chartCerealProdSub: "Tendances de la production céréalière",
+  chartSelfSufficSub: "Taux d’autosuffisance par produit",
+  chartAgriExportsSub: "Valeur des exportations agricoles",
+  chartVegFruitProdSub: "Production de légumes et fruits",
+  chartLivestockSub: "Effectifs d’élevage",
+  chartLandUseSub: "Répartition des terres agricoles",
+  chartSelfSufficLabel: "Autosuffic.",
+  chartAgriExportsLabel: "Export. agri.",
+  chartFruitLabel: "Fruits",
+  chartMilkLabel: "Lait",
+  chartMeatLabel: "Viande",
+  chartTotalLandLabel: "Total",
+  chartOliveDateProdSub: "Production d’huile d’olive et de dattes",
+  chartDateLabel: "Dattes",
+  kpiCerealImports: "Importations Céréales",
+  kpiPoultryProd: "Production Avicole",
+  kpiTractorFleet: "Parc de Tracteurs",
+  kpiFertilizer: "Consommation Engrais",
+  chartPoultryProdSub: "Production avicole et œufs",
+  chartTractorFertilizerSub: "Équipement et intrants agricoles",
+  chartCerealImportsSub: "Dépendance aux importations céréalières",
+  chartTractorLabel: "Tracteurs",
+  chartFertilizerLabel: "Engrais",
+  chartCerealImportLabel: "Import. céréales",
+  chartAgriGdpLabel: "PIB agri.",
+  kpiPharma: "Pharmaceutique",
+  kpiTextiles: "Textiles",
+  kpiChemicals: "Chimie",
+  kpiBuildingMat: "Matériaux de Construction",
+  kpiElectrical: "Équipement Électrique",
+  kpiPaper: "Papier & Carton",
+  chartManufSubsectorsSub: "Production manufacturière par sous-secteur",
+  chartManufRadarSub: "Radar de compétitivité sectorielle",
+  chartTextileLabel: "Textiles",
+  chartChemicalLabel: "Chimie",
+  chartElectricLabel: "Électrique",
+  chartBuildingMatLabel: "Mat. Constr.",
+  chartPaperLabel: "Papier",
+  chartManufBuildingPaperSub: "Industrie des matériaux de construction et papier",
+  chartManufEmployCapacitySub: "Emploi et taux d’utilisation des capacités",
+  chartEmployLabel: "Emploi",
+  chartManufExportLabel: "Exportations",
+  kpiManufExports: "Exportations Manufacturières",
+  kpiCapacityUtil: "Taux d’Utilisation",
+  kpiManufGdp: "PIB Manufacturier",
+  kpiNumEnterprises: "Entreprises",
+  kpiPrivateShare: "Part Privé %",
+  kpiManufFDI: "IDE Manufacturier",
+  kpiProductivity: "Productivité du Travail",
+  chartManufGDPSub: "Tendance du PIB manufacturier",
+  chartManufFDISub: "Flux d’IDE vers l’industrie",
+  chartManufFDILabel: "IDE",
+  chartProductivityLabel: "Productivité",
+  kpiCementProd: "Production de Ciment",
+  kpiBTPGdp: "Part BTP du PIB",
+  kpiBTPEmploy: "Emploi BTP",
+  chartHousingUnitsSub: "Logements livrés",
+  chartCementSteelSub: "Production de ciment et acier",
+  chartBTPCostIndexSub: "Indice des coûts de construction",
+  chartBTPInvestSub: "Investissement public dans le BTP",
+  chartCementLabel: "Ciment",
+  chartSteelLabel: "Acier",
+  chartPublicInvestLabel: "Invest. Public",
+  chartPermitsLabel: "Permis",
+  kpiTrade: "Part Commerce",
+  kpiTransport: "Part Transport",
+  kpiTelecom: "Part Télécoms",
+  chartServicesCompositionSub: "Composition du secteur des services",
+  chartServicesTrendSub: "Tendance du PIB des services",
+  chartTransportLabel: "Transport",
+  chartTelecomLabel: "Télécoms",
+  chartTourismLabel: "Tourisme",
+  chartGovtLabel: "Gouvernement",
+  kpiGasConsump: "Consommation de Gaz",
+  kpiIronOre: "Production de Minerai de Fer",
+  kpiPhosphate: "Production de Phosphate",
+  chartMiningProdSub: "Volumes de production minière",
+  chartEnergyConsumpSub: "Consommation d’énergie par source",
+  chartElectricitySub: "Mix de production d’électricité",
+  chartPhosphateLabel: "Phosphate",
+  chartZincLabel: "Zinc",
+  chartSaltLabel: "Sel",
+  chartElectricityLabel: "Électricité",
+  chartPetrolConsumpLabel: "Consom. Pétrole",
+  kpiPhysicians: "Médecins / 10k",
+  kpiNurses: "Infirmiers / 10k",
+  kpiHealthExpenditure: "Dépenses de Santé",
+  kpiLifeExpectancy: "Espérance de Vie",
+  kpiInfantMortality: "Mortalité Infantile",
+  kpiMaternalMortality: "Mortalité Maternelle",
+  kpiVaccination: "Taux de Vaccination",
+  kpiNumHospitals: "Hôpitaux",
+  kpiHealthCenters: "Centres de Santé",
+  kpiPolyclinics: "Polycliniques",
+  kpiPrimaryCareVisits: "Visites Soins Primaires",
+  chartHealthInfrastructureSub: "Infrastructure sanitaire par wilaya",
+  chartPersonnelTrendSub: "Tendances du personnel de santé",
+  chartMortalityTrendSub: "Tendances des taux de mortalité",
+  chartHealthExpenditureTrendSub: "Évolution des dépenses de santé",
+  chartVaccinationTrendSub: "Tendances de la couverture vaccinale",
+  chartHealthCentersLabel: "Centres de Santé",
+  chartPolyclinicsLabel: "Polycliniques",
+  chartNursesLabel: "Infirmiers",
+  chartMaternalMortLabel: "Mort. Matern.",
+  chartLifeExpLabel: "Espérance",
+  chartVaccinationLabel: "Vaccination",
+  chartPrimaryCareLabel: "Soins Primaires",
 };
 
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
@@ -2049,6 +2420,149 @@ const ar: Dictionary = {
   chartYouthEmpLabel: "\u062a\u0634\u063a\u064a\u0644 \u0627\u0644\u0634\u0628\u0627\u0628 %",
 
   footer: "\u0627\u0644\u0645\u0635\u062f\u0631: \u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) \u2014 www.ons.dz | \u062c\u0645\u064a\u0639 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0645\u0646 \u0645\u0646\u0634\u0648\u0631\u0627\u062a ONS (\u0627\u0644\u0623\u0633\u0639\u0627\u0631\u060c \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0648\u0637\u0646\u064a\u0629\u060c \u0627\u0644\u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629\u060c \u0627\u0644\u062d\u0633\u0627\u0628\u0627\u062a \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629\u060c \u0627\u0644\u062a\u0639\u062f\u0627\u062f \u0627\u0644\u0633\u0643\u0627\u0646\u064a)",
+  tabSdg: "أهداف التنمية المستدامة",
+  kpiOilProd: "إنتاج النفط",
+  kpiGasProd: "إنتاج الغاز",
+  kpiHydroGdpShare: "مساهمة المحروقات في الناتج المحلي",
+  kpiHydroExports: "صادرات المحروقات",
+  kpiReservesOil: "احتياطيات النفط",
+  kpiReservesGas: "احتياطيات الغاز",
+  chartHydroRevenueSub: "اتجاهات الإيرادات 2015-2024",
+  chartHydroExportsSub: "صادرات المحروقات مقابل غير المحروقات",
+  chartOilPriceSub: "أسعار برنت وساهاران بلند الجزائري",
+  chartHydroGdpSub: "مساهمة قطاع المحروقات في الناتج المحلي",
+  chartOilProductionSub: "حجم الإنتاج السنوي للنفط والغاز",
+  chartHydroRevLabel: "الإيرادات",
+  chartExportsLabel: "الصادرات",
+  chartOilProdLabel: "النفط",
+  chartGasProdLabel: "الغاز",
+  chartHydroVsNonHydroSub: "حصة المحروقات في إجمالي الصادرات",
+  chartNonHydroExportLabel: "غير محروقات",
+  chartReservesPieSub: "توزيع الاحتياطيات المثبوتة",
+  chartGasReservesLabel: "الغاز الطبيعي",
+  kpiRefining: "سعة التهرئة",
+  kpiDomesticConsump: "الاستهلاك الداخلي",
+  kpiRPRatioOil: "نسبة R/P (النفط)",
+  kpiNewWells: "آبار جديدة",
+  kpiExplorationInvest: "استثمار الاستكشاف",
+  chartLNGExportsSub: "حجم صادرات الغاز المسال",
+  chartRefiningSub: "معدل استخدام طاقة التهرئة",
+  chartExplorationInvestSub: "استثمار الاستكشاف والإنتاج",
+  chartRefiningLabel: "التهرئة",
+  chartExplorInvestLabel: "استثمار الاستكشاف",
+  kpiSelfSuffic: "معدل الابتذار الذاتي",
+  kpiAgriExports: "صادرات زراعية",
+  kpiAgriEmploy: "التشغيل الزراعي",
+  kpiFruitProd: "إنتاج الفواكه",
+  kpiMilkProd: "إنتاج الحليب",
+  kpiIrrigatedLand: "الأراضي المستسقاة",
+  chartCerealProdSub: "اتجاهات إنتاج الحبوب",
+  chartSelfSufficSub: "معدل الابتذار الذاتي حسب المنتج",
+  chartAgriExportsSub: "قيمة الصادرات الزراعية",
+  chartVegFruitProdSub: "إنتاج الخضروات والفواكه",
+  chartLivestockSub: "أعداد المواشي",
+  chartLandUseSub: "توزيع استخدام الأراضي الزراعية",
+  chartSelfSufficLabel: "ابتذار ذاتي",
+  chartAgriExportsLabel: "صادرات زراعية",
+  chartFruitLabel: "فواكه",
+  chartMilkLabel: "حليب",
+  chartMeatLabel: "لحم",
+  chartTotalLandLabel: "الإجمالي",
+  chartOliveDateProdSub: "إنتاج زيت الزيتون والتمور",
+  chartDateLabel: "تمور",
+  kpiCerealImports: "واردات الحبوب",
+  kpiPoultryProd: "إنتاج الدواجن",
+  kpiTractorFleet: "أسطول الجرار",
+  kpiFertilizer: "استخدام الأسمدة",
+  chartPoultryProdSub: "إنتاج الدواجن والبيض",
+  chartTractorFertilizerSub: "المعدات والمدخلات الزراعية",
+  chartCerealImportsSub: "الاعتماد على واردات الحبوب",
+  chartTractorLabel: "جرارات",
+  chartFertilizerLabel: "أسمدة",
+  chartCerealImportLabel: "واردات حبوب",
+  chartAgriGdpLabel: "ناتج زراعي",
+  kpiPharma: "الأدوية",
+  kpiTextiles: "النسيج",
+  kpiChemicals: "الكيمياء",
+  kpiBuildingMat: "مواد البناء",
+  kpiElectrical: "المعدات الكهربائية",
+  kpiPaper: "الورق والكرتون",
+  chartManufSubsectorsSub: "الإنتاج الصناعي حسب القطاع الفرعي",
+  chartManufRadarSub: "رادار تنافسية القطاعات",
+  chartTextileLabel: "النسيج",
+  chartChemicalLabel: "الكيمياء",
+  chartElectricLabel: "كهربائي",
+  chartBuildingMatLabel: "مواد بناء",
+  chartPaperLabel: "ورق",
+  chartManufBuildingPaperSub: "صناعة مواد البناء والورق",
+  chartManufEmployCapacitySub: "التشغيل ومعدل استخدام الطاقة الإنتاجية",
+  chartEmployLabel: "تشغيل",
+  chartManufExportLabel: "صادرات",
+  kpiManufExports: "صادرات صناعية",
+  kpiCapacityUtil: "معدل استخدام الطاقة",
+  kpiManufGdp: "ناتج صناعي",
+  kpiNumEnterprises: "المؤسسات",
+  kpiPrivateShare: "حصة القطاع الخاص",
+  kpiManufFDI: "استثمار أجنبي صناعي",
+  kpiProductivity: "إنتاجية العمل",
+  chartManufGDPSub: "اتجاه الناتج المحلي الصناعي",
+  chartManufFDISub: "تدفقات الاستثمار الأجنبي للصناعة",
+  chartManufFDILabel: "استثمار أجنبي",
+  chartProductivityLabel: "إنتاجية",
+  kpiCementProd: "إنتاج الإسمنت",
+  kpiBTPGdp: "حصة البناء والأشغال من الناتج",
+  kpiBTPEmploy: "تشغيل البناء والأشغال",
+  chartHousingUnitsSub: "وحدات السكن المسلمة",
+  chartCementSteelSub: "إنتاج الإسمنت والفولاذ",
+  chartBTPCostIndexSub: "مؤشر تكاليف البناء",
+  chartBTPInvestSub: "الاستثمار العام في البناء",
+  chartCementLabel: "إسمنت",
+  chartSteelLabel: "فولاذ",
+  chartPublicInvestLabel: "استثمار عام",
+  chartPermitsLabel: "رخصة",
+  kpiTrade: "حصة التجارة",
+  kpiTransport: "حصة النقل",
+  kpiTelecom: "حصة الاتصالات",
+  chartServicesCompositionSub: "تركيب قطاع الخدمات",
+  chartServicesTrendSub: "اتجاه ناتج الخدمات",
+  chartTransportLabel: "النقل",
+  chartTelecomLabel: "الاتصالات",
+  chartTourismLabel: "السياحة",
+  chartGovtLabel: "الحكومة",
+  kpiGasConsump: "استهلاك الغاز",
+  kpiIronOre: "إنتاج خام الحديد",
+  kpiPhosphate: "إنتاج الفسفات",
+  chartMiningProdSub: "حجم الإنتاج المناقي",
+  chartEnergyConsumpSub: "استهلاك الطاقة حسب المصدر",
+  chartElectricitySub: "ميزان إنتاج الكهرباء",
+  chartPhosphateLabel: "فسفات",
+  chartZincLabel: "زنك",
+  chartSaltLabel: "ملح",
+  chartElectricityLabel: "كهرباء",
+  chartPetrolConsumpLabel: "استهلاك النفط",
+  kpiPhysicians: "أطباء / 10 آلاف",
+  kpiNurses: "ممرضون / 10 آلاف",
+  kpiHealthExpenditure: "النفقات الصحية",
+  kpiLifeExpectancy: "متوسط العمر",
+  kpiInfantMortality: "وفيات الرضع",
+  kpiMaternalMortality: "وفيات الأمومات",
+  kpiVaccination: "معدل التلقيح",
+  kpiNumHospitals: "المستشفيات",
+  kpiHealthCenters: "مراكز الصحة",
+  kpiPolyclinics: "المتعدديات",
+  kpiPrimaryCareVisits: "زيارات الرعاية الأولية",
+  chartHealthInfrastructureSub: "البنية التحتية الصحية حسب الولاية",
+  chartPersonnelTrendSub: "اتجاهات الكوادر الطبي",
+  chartMortalityTrendSub: "اتجاهات معدلات الوفيات",
+  chartHealthExpenditureTrendSub: "تطور النفقات الصحية",
+  chartVaccinationTrendSub: "اتجاهات تغطية التلقيح",
+  chartHealthCentersLabel: "مراكز الصحة",
+  chartPolyclinicsLabel: "المتعدديات",
+  chartNursesLabel: "ممرضون",
+  chartMaternalMortLabel: "وفيات أمومات",
+  chartLifeExpLabel: "متوسط عمر",
+  chartVaccinationLabel: "تلقيح",
+  chartPrimaryCareLabel: "رعاية أولية",
 };
 
 // ─── DICTIONARY MAP ───────────────────────────────────────────────────────────
