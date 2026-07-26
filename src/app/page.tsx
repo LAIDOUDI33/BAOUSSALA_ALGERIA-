@@ -9,6 +9,9 @@ import {
   servicesData, miningEnergy, healthData, regionAggregates, regionalTimeSeries, regionalSectorComposition,
   wilayaDetailed, regionalInequality, regionalHDI, regionalEmployment, regionalInfrastructure,
   topWilayasByUnemp, topWilayasByGDP, regionalDevelopmentScatter, regionalUrbanization, wilayaPopulationRanking,
+  sdgOverview, sdgIndicators, sdgDeepDive, sdgEnergyMix, sdgHousingPrograms,
+  sdgDesalination, sdgWaterReuse, sdgTelecoms, sdgInnovation, vnr2026Targets,
+  sdgFoodSecurity, sdgEducation, sdgInequality, sdgOceans,
 } from "@/lib/algeria-data";
 
 import { useI18n } from "@/lib/i18n/context";
@@ -37,6 +40,7 @@ import {
   Stethoscope, Shield, Thermometer, Baby, Syringe, BedDouble,
   MapPin, ArrowRightLeft, Landmark, Wheat, Briefcase,
   Wifi, Car, Pipette, TreePine, BookOpen, UserCheck, Home, Route,
+  Target, CheckCircle2, CircleDot, Flame, Sun, Battery, Sunrise, Factory as FactoryIcon,
 } from "lucide-react";
 
 // ─── Color palette ──────────────────────────────────────────────────────────
@@ -96,9 +100,7 @@ function ChartCard({ title, subtitle, children, className }: { title: string; su
   );
 }
 
-// ═════════════════════════════════════════════════════════════════════════════
 // MAIN PAGE
-// ═════════════════════════════════════════════════════════════════════════════
 export default function AlgeriaDashboard() {
   const { t, isRtl, locale } = useI18n();
 
@@ -123,6 +125,7 @@ export default function AlgeriaDashboard() {
     { val: "services", label: t.tabServices, icon: Wrench },
     { val: "mining", label: t.tabMiningEnergy, icon: Zap },
     { val: "health", label: t.tabHealth, icon: Stethoscope },
+    { val: "sdg", label: t.tabSdg, icon: Target },
   ];
 
   return (
@@ -158,7 +161,6 @@ export default function AlgeriaDashboard() {
             ))}
           </TabsList>
 
-          {/* ═══ MACROECONOMIC ═══════════════════════════════════════════════ */}
           <TabsContent value="macro" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
               <KpiCard title={t.kpiGdpGrowth} value={latestKPIs.gdpGrowth} unit="%" change={0.2} changeDir="up" icon={TrendingUp} color={COLORS.emerald} />
@@ -238,7 +240,6 @@ export default function AlgeriaDashboard() {
             </div>
           </TabsContent>
 
-          {/* ═══ PRICES & INFLATION ═══════════════════════════════════════════ */}
           <TabsContent value="inflation" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiCpi} value="344.2" change={0.4} changeDir="up" icon={Scale} color={COLORS.red} />
@@ -330,7 +331,6 @@ export default function AlgeriaDashboard() {
             </ChartCard>
           </TabsContent>
 
-          {/* ═══ TRADE & EXTERNAL BALANCE ════════════════════════════════════ */}
           <TabsContent value="trade" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiExports} value="48.5" unit="bn $" change={7.8} changeDir="up" icon={Globe} color={COLORS.emerald} />
@@ -405,7 +405,6 @@ export default function AlgeriaDashboard() {
             </div>
           </TabsContent>
 
-          {/* ═══ INDUSTRIAL PRODUCTION ═════════════════════════════════════════ */}
           <TabsContent value="industry" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiIpi} value="114.5" change={1.8} changeDir="up" icon={Factory} color={COLORS.emerald} />
@@ -469,7 +468,6 @@ export default function AlgeriaDashboard() {
             </ChartCard>
           </TabsContent>
 
-          {/* ═══ LABOR MARKET ═════════════════════════════════════════════════ */}
           <TabsContent value="labor" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
               <KpiCard title={t.kpiUnempRate} value="10.8" unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.red} />
@@ -531,7 +529,6 @@ export default function AlgeriaDashboard() {
             </ChartCard>
           </TabsContent>
 
-          {/* ═══ DEMOGRAPHICS & SOCIAL ═══════════════════════════════════════ */}
           <TabsContent value="social" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiPop} value="46.8" unit="M" icon={Users} color={COLORS.purple} />
@@ -630,7 +627,6 @@ export default function AlgeriaDashboard() {
             </ChartCard>
           </TabsContent>
 
-          {/* ═══ FISCAL & SAVINGS ═════════════════════════════════════════════ */}
           <TabsContent value="fiscal" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiSavings} value="42.5" unit="% GDP" icon={DollarSign} color={COLORS.emerald} />
@@ -690,7 +686,6 @@ export default function AlgeriaDashboard() {
             </ChartCard>
           </TabsContent>
 
-          {/* ═══ REGIONAL ═════════════════════════════════════════════════════ */}
           <TabsContent value="regional" className="space-y-5">
             {/* ── KPI CARDS ROW 1: Core Demographics ──────────────────────── */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -1224,7 +1219,6 @@ export default function AlgeriaDashboard() {
             </div>
           </TabsContent>
 
-          {/* ═══ HYDROCARBONS ════════════════════════════════════════════ */}
           <TabsContent value="hydro" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiHydroRevenue} value="33.0" unit="bn $" change={10.0} changeDir="up" icon={Droplets} color={COLORS.amber} />
@@ -1353,7 +1347,6 @@ export default function AlgeriaDashboard() {
             </div>
           </TabsContent>
 
-          {/* ═══ AGRICULTURE ═════════════════════════════════════════════ */}
           <TabsContent value="agriculture" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiCerealProd} value="5.0" unit="Mt" icon={Sprout} color={COLORS.emerald} />
@@ -1484,7 +1477,6 @@ export default function AlgeriaDashboard() {
             </div>
           </TabsContent>
 
-          {/* ═══ MANUFACTURING ══════════════════════════════════════════ */}
           <TabsContent value="manufacturing" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiFoodIndustry} value="110" icon={Factory} color={COLORS.emerald} />
@@ -1626,7 +1618,6 @@ export default function AlgeriaDashboard() {
             </div>
           </TabsContent>
 
-          {/* ═══ BTP ═════════════════════════════════════════════════════ */}
           <TabsContent value="btp" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiHousingUnits} value="350" unit="K" change={2.9} changeDir="up" icon={Building2} color={COLORS.emerald} />
@@ -1688,7 +1679,6 @@ export default function AlgeriaDashboard() {
             </div>
           </TabsContent>
 
-          {/* ═══ SERVICES ══════════════════════════════════════════════════ */}
           <TabsContent value="services" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiServicesGdp} value="51.3" unit="%" icon={Activity} color={COLORS.purple} />
@@ -1735,7 +1725,6 @@ export default function AlgeriaDashboard() {
             </div>
           </TabsContent>
 
-          {/* ═══ MINING & ENERGY ══════════════════════════════════════════ */}
           <TabsContent value="mining" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiElectricity} value="72" unit="TWh" icon={Zap} color={COLORS.cyan} />
@@ -1787,7 +1776,6 @@ export default function AlgeriaDashboard() {
             </ChartCard>
           </TabsContent>
 
-          {/* ═══ HEALTH ═══════════════════════════════════════════════ */}
           <TabsContent value="health" className="space-y-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <KpiCard title={t.kpiHospitalBeds} value="20.3" icon={BedDouble} color={COLORS.blue} change={2.5} changeDir="up" />
@@ -1897,6 +1885,216 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
             </div>
+          </TabsContent>
+
+          {/* SDGs / VNR 2026 TAB */}
+          <TabsContent value="sdg" className="space-y-5">
+            {/* KPI row: counts by status */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <KpiCard title={t.kpiSdgOnTrack} value={String(sdgOverview.filter(s => s.status === "on_track").length)} unit="/ 17" icon={CheckCircle2} color={COLORS.emerald} />
+              <KpiCard title={t.kpiSdgModerate} value={String(sdgOverview.filter(s => s.status === "moderate").length)} unit="/ 17" icon={CircleDot} color={COLORS.amber} />
+              <KpiCard title={t.kpiSdgInsufficient} value={String(sdgOverview.filter(s => s.status === "insufficient").length)} unit="/ 17" icon={ArrowDownRight} color={COLORS.red} />
+              <KpiCard title={t.kpiSdgAchieved} value={String(sdgOverview.filter(s => s.achieved).length)} unit="/ 17" icon={CheckCircle2} color={COLORS.blue} />
+            </div>
+
+            {/* Chart 1: SDG Progress Overview — horizontal bars */}
+            <ChartCard title={t.chartSdgProgress} subtitle={t.chartSdgProgressSub}>
+              <ChartContainer config={{ progress: { label: t.labelProgress, color: "#059669" } }} className="h-[520px] w-full">
+                <BarChart data={sdgOverview.map(s => ({ name: `${s.sdg}`, fullName: s.name, progress: s.progress, fill: s.achieved ? COLORS.emerald : s.status === "on_track" ? "#3b82f6" : s.status === "moderate" ? COLORS.amber : COLORS.red }))} layout="vertical" margin={{ left: isRtl ? 10 : -15, right: 10 }}>
+                  <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+                  <YAxis dataKey="name" type="category" width={25} tick={{ fontSize: 12, fill: "#64748b" }} />
+                  <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 11 }} />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Bar dataKey="progress" radius={[0, 6, 6, 0]}>
+                    {sdgOverview.map((_, i) => (
+                      <Cell key={i} fill={sdgOverview[i].achieved ? COLORS.emerald : sdgOverview[i].status === "on_track" ? "#3b82f6" : sdgOverview[i].status === "moderate" ? COLORS.amber : COLORS.red} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ChartContainer>
+            </ChartCard>
+
+            {/* Chart 2: SDG Radar — deep dive goals */}
+            <ChartCard title={t.chartSdgRadar} subtitle={t.chartSdgRadarSub}>
+              <ChartContainer config={{ value: { label: t.labelProgress, color: "#7c3aed" } }} className="h-[400px] w-full">
+                <RadarChart data={sdgDeepDive.map(d => ({ name: `ODD ${d.sdg} – ${d.title}`, progress: Math.round(d.kpis.filter(k => k.status === "achieved").length / d.kpis.length * 100) }))}>
+                  <PolarGrid stroke="#e2e8f0" />
+                  <PolarAngleAxis dataKey="name" tick={{ fontSize: 10, fill: "#475569" }} />
+                  <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
+                  <Radar name={t.labelProgress} dataKey="progress" stroke="#7c3aed" fill="#ede9fe" fillOpacity={0.6} strokeWidth={2} />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                </RadarChart>
+              </ChartContainer>
+            </ChartCard>
+
+            {/* Charts row: Energy Mix + Housing */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <ChartCard title={t.chartSdgEnergyMix} subtitle={t.chartSdgEnergyMixSub}>
+                <ChartContainer config={{ share: { label: "%", color: "#f59e0b" } }} className="h-[320px] w-full">
+                  <PieChart>
+                    <Pie data={sdgEnergyMix.map(e => ({ name: e.source === "gaz" ? t.labelGazNatural : e.source === "solaire" ? t.labelSolarPV : e.source === "hydraulique" ? t.labelHydro : e.source === "eolien" ? t.labelWind : e.source === "autresEnr" ? t.labelOtherEnr : t.labelFuelOil, value: e.share }))} cx="50%" cy="50%" outerRadius={100} dataKey="value" label={({ name, value }) => `${name} ${value}%`} labelLine={true}>
+                      {sdgEnergyMix.map((e, i) => <Cell key={i} fill={e.color} />)}
+                    </Pie>
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                  </PieChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartSdgHousing} subtitle={t.chartSdgHousingSub}>
+                <ChartContainer config={{ built: { label: t.labelUnits, color: "#ea580c" } }} className="h-[320px] w-full">
+                  <BarChart data={sdgHousingPrograms.map(h => ({ name: h.period, [t.labelUnits]: Math.round(h.built / 1000) }))}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                    <YAxis tick={{ fontSize: 11 }} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey={t.labelUnits} fill={COLORS.orange} radius={[6, 6, 0, 0]} />
+                  </BarChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* Charts row: Desalination + Water Reuse */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <ChartCard title={t.chartSdgDesalination} subtitle={t.chartSdgDesalinationSub}>
+                <ChartContainer config={{ capacity: { label: t.labelCapacity, color: "#0891b2" }, stations: { label: t.labelStations, color: "#2563eb" } }} className="h-[300px] w-full">
+                  <ComposedChart data={sdgDesalination}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar yAxisId="left" dataKey="stations" fill="#93c5fd" radius={[4, 4, 0, 0]} />
+                    <Line yAxisId="right" type="monotone" dataKey="capacity" stroke={COLORS.cyan} strokeWidth={2} dot={{ fill: COLORS.cyan, r: 4 }} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartSdgWaterReuse} subtitle={t.chartSdgWaterReuseSub}>
+                <ChartContainer config={{ volume: { label: t.labelVolume, color: "#0d9488" } }} className="h-[300px] w-full">
+                  <AreaChart data={sdgWaterReuse}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} />
+                    <YAxis tick={{ fontSize: 11 }} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Area type="monotone" dataKey="volume" stroke={COLORS.teal} fill={COLORS.tealLight} strokeWidth={2} />
+                  </AreaChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* Charts row: Digital Transformation + Innovation */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <ChartCard title={t.chartSdgTelecoms} subtitle={t.chartSdgTelecomsSub}>
+                <ChartContainer config={{ inetMobilePct: { label: t.labelInetPop, color: "#7c3aed" }, coverage4G: { label: t.labelCoverage4G, color: "#dc2626" }, inetPop: { label: t.labelInetPop, color: "#2563eb" } }} className="h-[320px] w-full">
+                  <ComposedChart data={sdgTelecoms.filter(d => d.coverage4G > 0)}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} />
+                    <YAxis tick={{ fontSize: 11 }} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar dataKey="coverage4G" fill="#bfdbfe" radius={[4, 4, 0, 0]} />
+                    <Line type="monotone" dataKey="inetMobilePct" stroke={COLORS.purple} strokeWidth={2} dot={{ fill: COLORS.purple, r: 4 }} />
+                    <Line type="monotone" dataKey="inetPop" stroke={COLORS.blue} strokeWidth={2} dot={{ fill: COLORS.blue, r: 4 }} strokeDasharray="5 5" />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartSdgInnovation} subtitle={t.chartSdgInnovationSub}>
+                <ChartContainer config={{ startups: { label: t.labelStartups, color: "#ea580c" }, incubators: { label: t.labelIncubators, color: "#0891b2" } }} className="h-[320px] w-full">
+                  <ComposedChart data={sdgInnovation}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar yAxisId="left" dataKey="startups" fill="#fed7aa" radius={[4, 4, 0, 0]} />
+                    <Line yAxisId="right" type="monotone" dataKey="incubators" stroke={COLORS.cyan} strokeWidth={2} dot={{ fill: COLORS.cyan, r: 4 }} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* Charts row: Food Security + Education */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <ChartCard title={t.chartSdgFood} subtitle={t.chartSdgFoodSub}>
+                <ChartContainer config={{ wheatKg: { label: t.labelWheat, color: "#d97706" }, milkCoverage: { label: t.labelMilkCov, color: "#2563eb" }, aquaculture: { label: t.labelAquaculture, color: "#0d9488" } }} className="h-[320px] w-full">
+                  <ComposedChart data={sdgFoodSecurity}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Line yAxisId="left" type="monotone" dataKey="wheatKg" stroke={COLORS.amber} strokeWidth={2} dot={{ fill: COLORS.amber, r: 4 }} />
+                    <Line yAxisId="right" type="monotone" dataKey="milkCoverage" stroke={COLORS.blue} strokeWidth={2} dot={{ fill: COLORS.blue, r: 4 }} />
+                    <Line yAxisId="left" type="monotone" dataKey="aquaculture" stroke={COLORS.teal} strokeWidth={2} dot={{ fill: COLORS.teal, r: 4 }} strokeDasharray="5 5" />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartSdgEducation} subtitle={t.chartSdgEducationSub}>
+                <ChartContainer config={{ primary: { label: t.labelPrimary, color: "#059669" }, secondary: { label: t.labelSecondary, color: "#2563eb" }, literacy: { label: t.labelLiteracy, color: "#d97706" } }} className="h-[320px] w-full">
+                  <ComposedChart data={sdgEducation}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} />
+                    <YAxis tick={{ fontSize: 11 }} domain={[30, 105]} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Line type="monotone" dataKey="primary" stroke={COLORS.emerald} strokeWidth={2} dot={{ fill: COLORS.emerald, r: 4 }} />
+                    <Line type="monotone" dataKey="secondary" stroke={COLORS.blue} strokeWidth={2} dot={{ fill: COLORS.blue, r: 4 }} />
+                    <Line type="monotone" dataKey="literacy" stroke={COLORS.amber} strokeWidth={2} dot={{ fill: COLORS.amber, r: 4 }} strokeDasharray="5 5" />
+                    <Line type="monotone" dataKey="femaleHigher" stroke={COLORS.rose} strokeWidth={2} dot={{ fill: COLORS.rose, r: 3 }} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* Charts row: Inequality + Oceans */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <ChartCard title={t.chartSdgInequality} subtitle={t.chartSdgInequalitySub}>
+                <ChartContainer config={{ socialCoverage: { label: t.labelSocialCov, color: "#059669" }, gini: { label: t.labelGini, color: "#dc2626" }, remittanceCost: { label: t.labelRemittanceCost, color: "#d97706" } }} className="h-[300px] w-full">
+                  <ComposedChart data={sdgInequality}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="left" domain={[0, 100]} tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="right" orientation="right" domain={[0, 10]} tick={{ fontSize: 11 }} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Area yAxisId="left" type="monotone" dataKey="socialCoverage" stroke={COLORS.emerald} fill={COLORS.emeraldLight} strokeWidth={2} />
+                    <Line yAxisId="right" type="monotone" dataKey="gini" stroke={COLORS.red} strokeWidth={2} dot={{ fill: COLORS.red, r: 4 }} />
+                    <Line yAxisId="right" type="monotone" dataKey="remittanceCost" stroke={COLORS.amber} strokeWidth={2} dot={{ fill: COLORS.amber, r: 4 }} strokeDasharray="5 5" />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+
+              <ChartCard title={t.chartSdgOceans} subtitle={t.chartSdgOceansSub}>
+                <ChartContainer config={{ marineProtected: { label: t.labelMarineProtected, color: "#0a97d9" }, aquaculture: { label: t.labelAquaculture, color: "#0d9488" }, fisheries: { label: t.labelFisheries, color: "#2563eb" } }} className="h-[300px] w-full">
+                  <ComposedChart data={sdgOceans}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar yAxisId="left" dataKey="fisheries" fill="#bfdbfe" radius={[4, 4, 0, 0]} />
+                    <Line yAxisId="right" type="monotone" dataKey="marineProtected" stroke={COLORS.cyan} strokeWidth={2} dot={{ fill: COLORS.cyan, r: 4 }} />
+                    <Line yAxisId="right" type="monotone" dataKey="aquaculture" stroke={COLORS.teal} strokeWidth={2} dot={{ fill: COLORS.teal, r: 4 }} />
+                  </ComposedChart>
+                </ChartContainer>
+              </ChartCard>
+            </div>
+
+            {/* Vision 2030 Roadmap */}
+            <ChartCard title={t.chartSdgTimeline} subtitle={t.chartSdgTimelineSub}>
+              <div className="space-y-3">
+                {vnr2026Targets.map((tg, i) => (
+                  <div key={i} className={`flex items-center gap-3 p-3 rounded-lg ${tg.priority === "high" ? "bg-emerald-50 border border-emerald-200" : "bg-amber-50 border border-amber-200"}`}>
+                    <div className={`w-2 h-2 rounded-full flex-shrink-0 ${tg.priority === "high" ? "bg-emerald-500" : "bg-amber-500"}`} />
+                    <div className="flex-1 min-w-0">
+                      <div className="font-semibold text-sm text-foreground">{tg.target}</div>
+                      <div className="text-xs text-muted-foreground">{tg.desc}</div>
+                    </div>
+                    <Badge variant={tg.priority === "high" ? "default" : "secondary"} className={`text-xs ${tg.priority === "high" ? "bg-emerald-600 hover:bg-emerald-700" : ""}`}>{tg.priority === "high" ? t.labelHigh : t.labelMedium}</Badge>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground mt-3">{t.labelSdgSource}</p>
+            </ChartCard>
           </TabsContent>
         </Tabs>
 

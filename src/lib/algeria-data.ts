@@ -756,3 +756,322 @@ export const wilayaPopulationRanking = [
   { rank: 19, wilaya: "Béjaïa", popK: 960, region: "Centre" },
   { rank: 20, wilaya: "Ghardaïa", popK: 425, region: "Sud" },
 ];
+// ═══════════════════════════════════════════════════════════════════
+// SECTION 26: ODD / SDGs — VNR 2026 Data
+// Source: Rapport National Volontaire 2026 — Agenda 2030
+// ═══════════════════════════════════════════════════════════════════
+
+export const sdgOverview = [
+  { sdg: 1, name: "Pauvreté", color: "#E5243B", achieved: true, progress: 95, status: "on_track" },
+  { sdg: 2, name: "Faim", color: "#DDA63A", achieved: false, progress: 65, status: "moderate" },
+  { sdg: 3, name: "Santé", color: "#4C9F38", achieved: false, progress: 82, status: "on_track" },
+  { sdg: 4, name: "Éducation", color: "#C5192D", achieved: false, progress: 88, status: "on_track" },
+  { sdg: 5, name: "Égalité sexes", color: "#FF3A21", achieved: false, progress: 60, status: "moderate" },
+  { sdg: 6, name: "Eau", color: "#26BDE2", achieved: false, progress: 90, status: "on_track" },
+  { sdg: 7, name: "Énergie", color: "#FCC30B", achieved: false, progress: 45, status: "insufficient" },
+  { sdg: 8, name: "Croissance", color: "#A21942", achieved: false, progress: 62, status: "moderate" },
+  { sdg: 9, name: "Industrie", color: "#FD6925", achieved: false, progress: 55, status: "moderate" },
+  { sdg: 10, name: "Inégalités", color: "#DD1367", achieved: false, progress: 78, status: "on_track" },
+  { sdg: 11, name: "Villes", color: "#FD9D24", achieved: false, progress: 72, status: "on_track" },
+  { sdg: 12, name: "Consommation", color: "#BF8B2E", achieved: false, progress: 40, status: "insufficient" },
+  { sdg: 13, name: "Climat", color: "#3F7E44", achieved: false, progress: 38, status: "insufficient" },
+  { sdg: 14, name: "Océans", color: "#0A97D9", achieved: false, progress: 50, status: "moderate" },
+  { sdg: 15, name: "Écosystèmes", color: "#56C02B", achieved: false, progress: 48, status: "moderate" },
+  { sdg: 16, name: "Paix", color: "#00689D", achieved: false, progress: 70, status: "on_track" },
+  { sdg: 17, name: "Partenariats", color: "#19486A", achieved: false, progress: 55, status: "moderate" },
+];
+
+export const sdgIndicators = [
+  { sdg: 1, indicator: "Taux extrême pauvreté (%)", ref2015: "< 0,5", recent: "< 0,5 (2024)", target2030: "0", progressPct: 99, achieved: true },
+  { sdg: 1, indicator: "Taux pauvreté national (%)", ref2015: "5,5", recent: "4,67 (2024)", target2030: "< 3", progressPct: 75, achieved: false },
+  { sdg: 1, indicator: "Couverture sécurité sociale (%)", ref2015: "55,2", recent: "67 (2024)", target2030: "≥ 80", progressPct: 62, achieved: false },
+  { sdg: 2, indicator: "Disponibilité blé (kg/hab/an)", ref2015: "227", recent: "265 (2024)", target2030: "≥ 280", progressPct: 82, achieved: false },
+  { sdg: 2, indicator: "Production aquacole (tonnes)", ref2015: "1 327", recent: "6 935 (2024)", target2030: "≥ 30 000", progressPct: 20, achieved: false },
+  { sdg: 3, indicator: "Espérance de vie (ans)", ref2015: "77,1", recent: "79,6 (2023)", target2030: "≥ 80", progressPct: 90, achieved: false },
+  { sdg: 3, indicator: "Mortalité maternelle (/100k)", ref2015: "60,5", recent: "48,5 (2019)", target2030: "< 15", progressPct: 40, achieved: false },
+  { sdg: 3, indicator: "Mortalité infantile (‰)", ref2015: "25,7", recent: "19,7 (2024)", target2030: "< 15", progressPct: 63, achieved: false },
+  { sdg: 3, indicator: "Vaccination DTC3 (%)", ref2015: "94", recent: "96 (2024)", target2030: "≥ 95", progressPct: 100, achieved: true },
+  { sdg: 3, indicator: "Incidence tuberculose (/100k)", ref2015: "57,4", recent: "39,9 (2024)", target2030: "< 30", progressPct: 58, achieved: false },
+  { sdg: 4, indicator: "Scolarisation primaire (%)", ref2015: "97,1", recent: "100 (2024)", target2030: "100", progressPct: 100, achieved: true },
+  { sdg: 4, indicator: "Scolarisation secondaire (%)", ref2015: "63", recent: "75,3 (2024)", target2030: "≥ 92", progressPct: 57, achieved: false },
+  { sdg: 4, indicator: "Étudiants supérieur (M)", ref2015: "1,4", recent: "1,7 (2024)", target2030: "≥ 2,0", progressPct: 60, achieved: false },
+  { sdg: 4, indicator: "Filles supérieur (%)", ref2015: "60", recent: "65,7 (2024)", target2030: "≥ 50", progressPct: 100, achieved: true },
+  { sdg: 4, indicator: "Alphabétisation adultes (%)", ref2015: "80,2", recent: "85,1 (2024)", target2030: "≥ 95", progressPct: 49, achieved: false },
+  { sdg: 6, indicator: "Raccordement eau potable (%)", ref2015: "78", recent: "98 (2024)", target2030: "100", progressPct: 91, achieved: false },
+  { sdg: 6, indicator: "Assainissement (%)", ref2015: "86", recent: "93 (2024)", target2030: "≥ 95", progressPct: 71, achieved: false },
+  { sdg: 7, indicator: "Électrification (%)", ref2015: "~ 99", recent: "99,9 (2025)", target2030: "100", progressPct: 99, achieved: false },
+  { sdg: 7, indicator: "Part EnR (%)", ref2015: "0,8", recent: "3 (2024)", target2030: "10", progressPct: 24, achieved: false },
+  { sdg: 7, indicator: "Puissance EnR installée (MW)", ref2015: "~ 400", recent: "700 (2025)", target2030: "≥ 3000", progressPct: 12, achieved: false },
+  { sdg: 8, indicator: "Croissance PIB (%)", ref2015: "3,7", recent: "3,7 (2024)", target2030: "≥ 4,0", progressPct: 85, achieved: false },
+  { sdg: 8, indicator: "Chômage global (%)", ref2015: "11,2", recent: "9,7 (2024)", target2030: "< 8", progressPct: 52, achieved: false },
+  { sdg: 8, indicator: "Chômage jeunes (%)", ref2015: "25", recent: "30,8 (2024)", target2030: "< 20", progressPct: 0, achieved: false },
+  { sdg: 8, indicator: "Femmes emploi (%)", ref2015: "16,5", recent: "17,8 (2024)", target2030: "≥ 25", progressPct: 24, achieved: false },
+  { sdg: 8, indicator: "DAB/100k adultes", ref2015: "5", recent: "16 (2025)", target2030: "≥ 30", progressPct: 44, achieved: false },
+  { sdg: 9, indicator: "Part industrie manufact. (% PIB)", ref2015: "7,1", recent: "10,0 (2024)", target2030: "≥ 12", progressPct: 70, achieved: false },
+  { sdg: 9, indicator: "Dépenses R&D (% PIB)", ref2015: "0,5", recent: "0,7 (2024)", target2030: "1,5", progressPct: 20, achieved: false },
+  { sdg: 9, indicator: "Couverture 4G (% territoire)", ref2015: "", recent: "98 (2025)", target2030: "100", progressPct: 92, achieved: false },
+  { sdg: 9, indicator: "Pénétration internet mobile (%)", ref2015: "41", recent: "110,6 (2025)", target2030: "≥ 120", progressPct: 82, achieved: false },
+  { sdg: 10, indicator: "Indice de Gini", ref2015: "0,275", recent: "0,28 (2024)", target2030: "≤ 0,30", progressPct: 100, achieved: true },
+  { sdg: 10, indicator: "Couverture protection sociale (%)", ref2015: "55,2", recent: "67 (2024)", target2030: "≥ 80", progressPct: 62, achieved: false },
+  { sdg: 11, indicator: "Logements distribués (2020-2024)", ref2015: "", recent: "1 700 479", target2030: "≥ 2 000 000", progressPct: 85, achieved: false },
+  { sdg: 11, indicator: "Taux occupation logement", ref2015: "4,8", recent: "4,1 (2024)", target2030: "≤ 4,0", progressPct: 88, achieved: false },
+  { sdg: 11, indicator: "Réseau ferroviaire (km)", ref2015: "3 800", recent: "5 738 (fév. 2026)", target2030: "≥ 7 000", progressPct: 65, achieved: false },
+  { sdg: 12, indicator: "Élimination DEEE (%)", ref2015: "", recent: "35 (2024)", target2030: "≥ 50", progressPct: 70, achieved: false },
+  { sdg: 13, indicator: "Émissions GES (MtCO2eq)", ref2015: "155", recent: "175 (2023)", target2030: "Réduction", progressPct: 20, achieved: false },
+  { sdg: 13, indicator: "Capacité dessalement (Mm³/j)", ref2015: "", recent: "3,75 (2025)", target2030: "5,0", progressPct: 75, achieved: false },
+  { sdg: 14, indicator: "Aires marines protégées (%)", ref2015: "", recent: "15,15 (2024)", target2030: "≥ 50", progressPct: 30, achieved: false },
+  { sdg: 15, indicator: "Surface forestière (M ha)", ref2015: "4,7", recent: "4,8 (2024)", target2030: "≥ 5,0", progressPct: 33, achieved: false },
+  { sdg: 16, indicator: "Taux de criminalité (/100k)", ref2015: "3,3", recent: "2,6 (2024)", target2030: "< 2,5", progressPct: 70, achieved: false },
+  { sdg: 16, indicator: "Taux obtention justice (%)", ref2015: "", recent: "67 (2024)", target2030: "≥ 75", progressPct: 68, achieved: false },
+  { sdg: 17, indicator: "Service dette/exports B&S (%)", ref2015: "13,3", recent: "6,8 (2024)", target2030: "≤ 1,0", progressPct: 50, achieved: false },
+  { sdg: 17, indicator: "IDE entrants/RNB (%)", ref2015: "1,02", recent: "0,58 (2024)", target2030: "≥ 2,0", progressPct: 35, achieved: false },
+];
+
+export const sdgDeepDive = [
+  {
+    sdg: 1, title: "Pauvreté", subtitle: "ODD 1",
+    kpis: [
+      { key: "extremePoverty", label: "Extrême pauvreté", value: "< 0,5 %", target: "0 %", status: "achieved", icon: "CheckCircle" },
+      { key: "nationalPoverty", label: "Pauvreté nationale", value: "4,67 %", target: "< 3 %", status: "progress", icon: "TrendingDown" },
+      { key: "socialCoverage", label: "Couverture sociale", value: "67 %", target: "≥ 80 %", status: "progress", icon: "Shield" },
+      { key: "afBeneficiaries", label: "Bénéficiaires AFS", value: "1,2 M", target: "Extension", status: "progress", icon: "Users" },
+      { key: "giniIndex", label: "Indice de Gini", value: "0,28", target: "≤ 0,30", status: "achieved", icon: "Scale" },
+      { key: "housingUnits", label: "Logements distribués", value: "1 700 479", target: "2020-2024", status: "progress", icon: "Home" },
+    ],
+    timeSeries: [
+      { year: 2015, socialCoverage: 55.2, afsBeneficiaries: 850924, extremePoverty: 0.5, nationalPoverty: 5.5, gini: 0.275 },
+      { year: 2018, socialCoverage: 59.0, afsBeneficiaries: 980000, extremePoverty: 0.5, nationalPoverty: 5.0, gini: 0.28 },
+      { year: 2020, socialCoverage: 61.5, afsBeneficiaries: 1050000, extremePoverty: 0.5, nationalPoverty: 4.8, gini: 0.28 },
+      { year: 2022, socialCoverage: 64.0, afsBeneficiaries: 1120000, extremePoverty: 0.5, nationalPoverty: 4.7, gini: 0.28 },
+      { year: 2024, socialCoverage: 67.0, afsBeneficiaries: 1200000, extremePoverty: 0.5, nationalPoverty: 4.67, gini: 0.28 },
+    ],
+  },
+  {
+    sdg: 3, title: "Santé", subtitle: "ODD 3",
+    kpis: [
+      { key: "lifeExpectancy", label: "Espérance de vie", value: "79,6 ans", target: "≥ 80", status: "progress", icon: "Heart" },
+      { key: "maternalMortality", label: "Mortalité maternelle", value: "48,5 /100k", target: "< 15", status: "progress", icon: "Baby" },
+      { key: "infantMortality", label: "Mortalité infantile", value: "19,7 ‰", target: "< 15 ‰", status: "progress", icon: "Activity" },
+      { key: "vaccination", label: "Vaccination DTC3", value: "96 %", target: "≥ 95 %", status: "achieved", icon: "Syringe" },
+      { key: "tbIncidence", label: "Tuberculose", value: "39,9 /100k", target: "< 30", status: "progress", icon: "Thermometer" },
+      { key: "csuIndex", label: "Couverture sanitaire", value: "82", target: "≥ 90", status: "progress", icon: "Hospital" },
+    ],
+    timeSeries: [
+      { year: 2015, lifeExp: 77.1, lifeExpF: 78.9, lifeExpM: 75.3, mmr: 60.5, imr: 25.7, nmr: 16.2, u5mr: 28.2, tb: 57.4, dtc3: 94, csu: 72 },
+      { year: 2018, lifeExp: 78.0, lifeExpF: 79.5, lifeExpM: 76.2, mmr: 55.0, imr: 23.0, nmr: 15.0, u5mr: 25.0, tb: 50.1, dtc3: 95, csu: 76 },
+      { year: 2020, lifeExp: 78.4, lifeExpF: 79.8, lifeExpM: 76.8, mmr: 52.0, imr: 22.0, nmr: 14.5, u5mr: 24.0, tb: 46.0, dtc3: 95, csu: 78 },
+      { year: 2023, lifeExp: 79.6, lifeExpF: 81.4, lifeExpM: 77.8, mmr: 48.5, imr: 19.7, nmr: 13.8, u5mr: 22.6, tb: 42.0, dtc3: 96, csu: 82 },
+      { year: 2024, lifeExp: 79.8, lifeExpF: 81.6, lifeExpM: 78.0, mmr: 46.0, imr: 19.0, nmr: 13.0, u5mr: 22.0, tb: 39.9, dtc3: 96, csu: 84 },
+    ],
+  },
+  {
+    sdg: 6, title: "Eau", subtitle: "ODD 6",
+    kpis: [
+      { key: "waterAccess", label: "Eau potable", value: "98 %", target: "100 %", status: "progress", icon: "Droplets" },
+      { key: "sewage", label: "Assainissement", value: "93 %", target: "≥ 95 %", status: "progress", icon: "Waves" },
+      { key: "desalination", label: "Dessalement", value: "3,75 Mm³/j", target: "5,0 Mm³/j", status: "progress", icon: "Factory" },
+      { key: "waterReuse", label: "Réutilisation EU", value: "111 Mm³/an", target: "300 Mm³/an", status: "progress", icon: "Recycle" },
+      { key: "transferSystems", label: "Systèmes transfert", value: "37", target: "Expansion", status: "progress", icon: "GitBranch" },
+      { key: "gireScore", label: "Score GIRE", value: "64", target: "≥ 75", status: "progress", icon: "Gauge" },
+    ],
+    timeSeries: [
+      { year: 2015, waterAccess: 78, sewage: 86, desalCapacity: 1.2, waterReuseMm3: 10 },
+      { year: 2018, waterAccess: 85, sewage: 88, desalCapacity: 1.8, waterReuseMm3: 15 },
+      { year: 2020, waterAccess: 92, sewage: 90, desalCapacity: 2.11, waterReuseMm3: 20 },
+      { year: 2022, waterAccess: 95, sewage: 92, desalCapacity: 2.70, waterReuseMm3: 45 },
+      { year: 2024, waterAccess: 98, sewage: 93, desalCapacity: 3.40, waterReuseMm3: 85 },
+      { year: 2025, waterAccess: 98, sewage: 93, desalCapacity: 3.75, waterReuseMm3: 111 },
+    ],
+  },
+  {
+    sdg: 7, title: "Énergie", subtitle: "ODD 7",
+    kpis: [
+      { key: "electrification", label: "Électrification", value: "99,9 %", target: "100 %", status: "achieved", icon: "Zap" },
+      { key: "enrShare", label: "Part EnR", value: "3 %", target: "10 % (2030)", status: "insufficient", icon: "Sun" },
+      { key: "enrCapacity", label: "Puissance EnR", value: "700 MW", target: "≥ 3000 MW", status: "insufficient", icon: "Battery" },
+      { key: "solarPV", label: "Solaire PV", value: "386 MW", target: "15 000 MW (2035)", status: "insufficient", icon: "Sunrise" },
+      { key: "energyDemand", label: "Demande électrique", value: "74 664 GWh", target: "Maîtrise", status: "progress", icon: "TrendingUp" },
+      { key: "gasAccess", label: "Accès gaz naturel", value: "> 95 %", target: "Universal", status: "achieved", icon: "Flame" },
+    ],
+    timeSeries: [
+      { year: 2015, production: 69, demand: 50152, enrShare: 0.8, enrCapacity: 400 },
+      { year: 2018, production: 75, demand: 58000, enrShare: 1.2, enrCapacity: 450 },
+      { year: 2020, production: 73, demand: 62000, enrShare: 1.5, enrCapacity: 480 },
+      { year: 2022, production: 84, demand: 67000, enrShare: 2.1, enrCapacity: 550 },
+      { year: 2024, production: 85, demand: 74664, enrShare: 3.0, enrCapacity: 525 },
+      { year: 2025, production: 86, demand: 77000, enrShare: 3.5, enrCapacity: 700 },
+    ],
+  },
+  {
+    sdg: 8, title: "Croissance & Emploi", subtitle: "ODD 8",
+    kpis: [
+      { key: "gdpGrowth", label: "Croissance PIB", value: "3,7 %", target: "≥ 4,0 %", status: "progress", icon: "TrendingUp" },
+      { key: "unemployment", label: "Chômage global", value: "9,7 %", target: "< 8 %", status: "progress", icon: "Users" },
+      { key: "youthUnemp", label: "Chômage jeunes", value: "30,8 %", target: "< 20 %", status: "insufficient", icon: "UserX" },
+      { key: "femaleEmployment", label: "Femmes emploi", value: "17,8 %", target: "≥ 25 %", status: "insufficient", icon: "UserCheck" },
+      { key: "avgSalary", label: "Salaire net moyen", value: "43 500 DA", target: "↑", status: "progress", icon: "Banknote" },
+      { key: "financialInclusion", label: "DAB/100k adultes", value: "16", target: "≥ 30", status: "progress", icon: "CreditCard" },
+    ],
+    timeSeries: [
+      { year: 2015, gdpGrowth: 3.7, unemployment: 11.2, youthUnemp: 25.0, femaleEmp: 16.5, avgSalary: 39242, dab100k: 5, tourismVA: 1.2 },
+      { year: 2017, gdpGrowth: 1.4, unemployment: 11.5, youthUnemp: 26.0, femaleEmp: 16.5, avgSalary: 40200, dab100k: 7, tourismVA: 1.3 },
+      { year: 2019, gdpGrowth: 0.8, unemployment: 10.5, youthUnemp: 28.0, femaleEmp: 16.8, avgSalary: 41000, dab100k: 10, tourismVA: 1.4 },
+      { year: 2020, gdpGrowth: -5.1, unemployment: 12.5, youthUnemp: 33.0, femaleEmp: 15.5, avgSalary: 41950, dab100k: 11, tourismVA: 0.9 },
+      { year: 2021, gdpGrowth: 3.4, unemployment: 12.0, youthUnemp: 32.0, femaleEmp: 16.0, avgSalary: 42500, dab100k: 12, tourismVA: 1.0 },
+      { year: 2022, gdpGrowth: 3.2, unemployment: 11.5, youthUnemp: 31.5, femaleEmp: 16.5, avgSalary: 43500, dab100k: 13, tourismVA: 1.3 },
+      { year: 2023, gdpGrowth: 4.1, unemployment: 10.0, youthUnemp: 30.5, femaleEmp: 17.0, avgSalary: 44000, dab100k: 14, tourismVA: 1.5 },
+      { year: 2024, gdpGrowth: 3.7, unemployment: 9.7, youthUnemp: 30.8, femaleEmp: 17.8, avgSalary: 44500, dab100k: 16, tourismVA: 1.6 },
+    ],
+  },
+  {
+    sdg: 9, title: "Industrie & Innovation", subtitle: "ODD 9",
+    kpis: [
+      { key: "mfgShare", label: "Industrie manufact.", value: "10,0 %", target: "≥ 12 %", status: "progress", icon: "Factory" },
+      { key: "mfgPerCapita", label: "VA manufact./hab.", value: "Indice 141", target: "≥ 170", status: "progress", icon: "BarChart3" },
+      { key: "rdSpending", label: "Dépenses R&D", value: "0,7 % PIB", target: "1,5 % PIB", status: "insufficient", icon: "FlaskConical" },
+      { key: "startups", label: "Start-ups", value: "1 800", target: "↑", status: "progress", icon: "Rocket" },
+      { key: "mobileSubs", label: "Abonnés mobile", value: "54,9 M", target: "↑", status: "progress", icon: "Smartphone" },
+      { key: "internetMobile", label: "Internet mobile", value: "52 M", target: "↑", status: "progress", icon: "Wifi" },
+    ],
+    timeSeries: [
+      { year: 2015, mfgPib: 7.1, mfgPerCap: 100, rdPct: 0.5, mobileM: 43.0, inetMobileM: 16.7, inetMobilePct: 41, coverage4G: 0, internetPop: 38.2 },
+      { year: 2018, mfgPib: 6.9, mfgPerCap: 97, rdPct: 0.55, mobileM: 46.5, inetMobileM: 25.0, inetMobilePct: 60, coverage4G: 45, internetPop: 49.0 },
+      { year: 2020, mfgPib: 7.5, mfgPerCap: 108, rdPct: 0.6, mobileM: 48.0, inetMobileM: 35.0, inetMobilePct: 80, coverage4G: 70, internetPop: 60.0 },
+      { year: 2022, mfgPib: 8.5, mfgPerCap: 125, rdPct: 0.65, mobileM: 51.5, inetMobileM: 42.3, inetMobilePct: 94, coverage4G: 84, internetPop: 72.1 },
+      { year: 2024, mfgPib: 10.0, mfgPerCap: 141, rdPct: 0.7, mobileM: 54.5, inetMobileM: 49.0, inetMobilePct: 105, coverage4G: 96, internetPop: 76.0 },
+      { year: 2025, mfgPib: 10.0, mfgPerCap: 141, rdPct: 0.7, mobileM: 54.9, inetMobileM: 52.0, inetMobilePct: 110.6, coverage4G: 98, internetPop: 79.5 },
+    ],
+  },
+  {
+    sdg: 11, title: "Villes Durables", subtitle: "ODD 11",
+    kpis: [
+      { key: "housingDist", label: "Logements distribués", value: "1 700 479", target: "2020-2024", status: "progress", icon: "Home" },
+      { key: "tol", label: "Taux occupation log.", value: "4,1", target: "≤ 4,0", status: "progress", icon: "Users" },
+      { key: "railway", label: "Réseau ferroviaire", value: "5 738 km", target: "≥ 7 000 km", status: "progress", icon: "TrainFront" },
+      { key: "metroTram", label: "Métro + tramways", value: "8 lignes", target: "11 lignes (2030)", status: "progress", icon: "TramFront" },
+      { key: "chi", label: "CHI achevées", value: "846", target: "1 367 lancées", status: "progress", icon: "Building" },
+      { key: "urbanization", label: "Urbanisation", value: "73,5 %", target: "↑ maîtrisée", status: "progress", icon: "Landmark" },
+    ],
+    timeSeries: [
+      { year: 2000, tol: 5.6, railKm: 3800, housingBuilt: 550000, metroTram: 3 },
+      { year: 2005, tol: 5.2, railKm: 3900, housingBuilt: 980000, metroTram: 3 },
+      { year: 2010, tol: 4.9, railKm: 3950, housingBuilt: 1230000, metroTram: 3 },
+      { year: 2015, tol: 4.8, railKm: 3800, housingBuilt: 1520418, metroTram: 3 },
+      { year: 2019, tol: 4.6, railKm: 3982, housingBuilt: 1520418, metroTram: 4 },
+      { year: 2022, tol: 4.4, railKm: 4200, housingBuilt: 1848881, metroTram: 6 },
+      { year: 2024, tol: 4.1, railKm: 5500, housingBuilt: 1848881, metroTram: 8 },
+      { year: 2026, tol: 4.1, railKm: 5738, housingBuilt: 1848881, metroTram: 8 },
+    ],
+  },
+  {
+    sdg: 17, title: "Partenariats", subtitle: "ODD 17",
+    kpis: [
+      { key: "debtService", label: "Service dette/exports", value: "6,8 %", target: "≤ 1,0 %", status: "progress", icon: "DollarSign" },
+      { key: "publicRevenue", label: "Recettes publiques", value: "26,05 % PIB", target: "≥ 30 % PIB", status: "progress", icon: "Landmark" },
+      { key: "ide", label: "IDE/RNB", value: "0,58 %", target: "≥ 2,0 %", status: "insufficient", icon: "Globe" },
+      { key: "internetPenetration", label: "Internet population", value: "79,5 %", target: "≥ 90 %", status: "progress", icon: "Wifi" },
+      { key: "unPartners", label: "Partenaires ONU", value: "15 agences", target: "↑", status: "progress", icon: "Handshake" },
+      { key: "customsDuty", label: "Droits douane moyens", value: "5,9 %", target: "↓ régional", status: "progress", icon: "Receipt" },
+    ],
+    timeSeries: [
+      { year: 2015, revenuePct: 33, debtService: 13.3, idePct: 1.02, internetPop: 38.2, inetFixM: 19, customsPct: 7.7, apdM: 135, partners: 11 },
+      { year: 2018, revenuePct: 30, debtService: 10.5, idePct: 0.85, internetPop: 49.0, inetFixM: 25, customsPct: 7.0, apdM: 120, partners: 12 },
+      { year: 2020, revenuePct: 26.21, debtService: 9.8, idePct: 0.77, internetPop: 60.0, inetFixM: 32, customsPct: 7.1, apdM: 110, partners: 13 },
+      { year: 2022, revenuePct: 28.76, debtService: 8.2, idePct: 0.68, internetPop: 72.1, inetFixM: 39, customsPct: 6.5, apdM: 100, partners: 14 },
+      { year: 2024, revenuePct: 26.05, debtService: 6.8, idePct: 0.58, internetPop: 76.0, inetFixM: 47, customsPct: 5.9, apdM: 95, partners: 15 },
+      { year: 2025, revenuePct: 27.0, debtService: 6.0, idePct: 0.6, internetPop: 79.5, inetFixM: 52, customsPct: 5.5, apdM: 90, partners: 15 },
+    ],
+  },
+];
+
+export const sdgEnergyMix = [
+  { source: "gaz", share: 96, color: "#64748b" },
+  { source: "solaire", share: 2.5, color: "#f59e0b" },
+  { source: "hydraulique", share: 0.4, color: "#3b82f6" },
+  { source: "eolien", share: 0.1, color: "#06b6d4" },
+  { source: "autresEnr", share: 0.3, color: "#22c55e" },
+  { source: "fioul", share: 0.7, color: "#ef4444" },
+];
+
+export const sdgHousingPrograms = [
+  { period: "2000-2004", built: 550000, label: "Pré-modernisation" },
+  { period: "2005-2009", built: 980000, label: "Plan quinquennal" },
+  { period: "2010-2014", built: 1230000, label: "Accélération AADL" },
+  { period: "2015-2019", built: 1520418, label: "Programmes massifs" },
+  { period: "2020-2024", built: 1848881, label: "Programme historique" },
+];
+
+export const sdgDesalination = [
+  { year: 2020, stations: 11, capacity: 2.11, pctNorth: 30 },
+  { year: 2022, stations: 13, capacity: 2.70, pctNorth: 40 },
+  { year: 2024, stations: 17, capacity: 3.40, pctNorth: 55 },
+  { year: 2025, stations: 19, capacity: 3.75, pctNorth: 60 },
+  { year: 2030, stations: 25, capacity: 5.00, pctNorth: 75 },
+];
+
+export const sdgWaterReuse = [
+  { year: 2019, volume: 20, usage: "Irrigation, espaces verts" },
+  { year: 2021, volume: 45, usage: "Extension irrigation" },
+  { year: 2023, volume: 85, usage: "Industrie ajoutée" },
+  { year: 2024, volume: 111, usage: "Mix irrigation/industrie/EV" },
+  { year: 2030, volume: 300, usage: "Économie circulaire de l'eau" },
+];
+
+export const sdgTelecoms = [
+  { year: 2015, mobile: 43.0, inetMobile: 16.7, inetMobilePct: 41, coverage4G: 0, inetFix: 19, inetPop: 38.2 },
+  { year: 2018, mobile: 47.2, inetMobile: 29.1, inetMobilePct: 68, coverage4G: 45, inetFix: 28, inetPop: 49.0 },
+  { year: 2020, mobile: 49.5, inetMobile: 38.0, inetMobilePct: 85, coverage4G: 70, inetFix: 35, inetPop: 60.0 },
+  { year: 2022, mobile: 51.5, inetMobile: 42.3, inetMobilePct: 94, coverage4G: 84, inetFix: 39, inetPop: 72.1 },
+  { year: 2024, mobile: 54.5, inetMobile: 49.0, inetMobilePct: 105, coverage4G: 96, inetFix: 47, inetPop: 76.0 },
+  { year: 2025, mobile: 54.9, inetMobile: 52.0, inetMobilePct: 110.6, coverage4G: 98, inetFix: 52, inetPop: 79.5 },
+];
+
+export const sdgInnovation = [
+  { year: 2015, rdPct: 0.5, startups: 0, incubators: 20, universities: 100 },
+  { year: 2020, rdPct: 0.6, startups: 300, incubators: 50, universities: 108 },
+  { year: 2024, rdPct: 0.7, startups: 1800, incubators: 90, universities: 113 },
+  { year: 2030, rdPct: 1.5, startups: 5000, incubators: 200, universities: 120 },
+];
+
+export const vnr2026Targets = [
+  { target: "Transition énergétique", desc: "15 000 MW EnR à 2035", priority: "high" },
+  { target: "Sécurisation hydrique", desc: "5 Mm³/jour dessalement à 2030", priority: "high" },
+  { target: "Diversification éco.", desc: "Industrie manufact. 12 % PIB à 2030", priority: "high" },
+  { target: "Inclusion jeunes/femmes", desc: "Doublement activité féminine (cible 25 %)", priority: "high" },
+  { target: "Modernisation num.", desc: "E-gouvernance généralisée", priority: "medium" },
+  { target: "Réduction chômage jeunes", desc: "Cible < 20 % à 2030", priority: "high" },
+  { target: "Économie circulaire", desc: "300 Mm³/an réutilisation EU", priority: "medium" },
+  { target: "Souveraineté sanitaire", desc: "Production pharmaceutique nationale", priority: "medium" },
+  { target: "Souveraineté alimentaire", desc: "30 000 t aquacole à 2030", priority: "medium" },
+  { target: "Intégration africaine", desc: "ZLECAf, TAH 2, réseau ferroviaire", priority: "medium" },
+];
+
+export const sdgFoodSecurity = [
+  { year: 2015, wheatKg: 227, milkL: 167, milkCoverage: 55, aquaculture: 1327, undernourishment: 5.0 },
+  { year: 2018, wheatKg: 240, milkL: 155, milkCoverage: 62, aquaculture: 3000, undernourishment: 4.5 },
+  { year: 2020, wheatKg: 245, milkL: 148, milkCoverage: 65, aquaculture: 4000, undernourishment: 4.0 },
+  { year: 2022, wheatKg: 255, milkL: 135, milkCoverage: 68, aquaculture: 5500, undernourishment: 3.5 },
+  { year: 2024, wheatKg: 265, milkL: 127, milkCoverage: 71, aquaculture: 6935, undernourishment: 3.0 },
+];
+
+export const sdgEducation = [
+  { year: 2015, primary: 97.1, secondary: 63.0, higher: 1.4, femaleHigher: 60.0, literacy: 80.2, preprimary: 48.0 },
+  { year: 2018, primary: 98.5, secondary: 67.0, higher: 1.5, femaleHigher: 62.0, literacy: 82.0, preprimary: 55.0 },
+  { year: 2020, primary: 99.0, secondary: 69.0, higher: 1.5, femaleHigher: 63.0, literacy: 83.0, preprimary: 52.0 },
+  { year: 2022, primary: 99.5, secondary: 72.0, higher: 1.6, femaleHigher: 64.5, literacy: 84.0, preprimary: 58.0 },
+  { year: 2024, primary: 100.0, secondary: 75.3, higher: 1.7, femaleHigher: 65.7, literacy: 85.1, preprimary: 63.3 },
+];
+
+export const sdgInequality = [
+  { year: 2015, gini: 0.275, socialCoverage: 55.2, quintileShare: 8.1, remittanceCost: 8.1 },
+  { year: 2018, gini: 0.28, socialCoverage: 59.0, quintileShare: 8.2, remittanceCost: 7.5 },
+  { year: 2020, gini: 0.28, socialCoverage: 61.5, quintileShare: 8.3, remittanceCost: 7.0 },
+  { year: 2022, gini: 0.28, socialCoverage: 64.0, quintileShare: 8.3, remittanceCost: 6.5 },
+  { year: 2024, gini: 0.28, socialCoverage: 67.0, quintileShare: 8.4, remittanceCost: 5.9 },
+];
+
+export const sdgOceans = [
+  { year: 2015, marineProtected: 5, aquaculture: 1327, fisheries: 95000, monitoringStations: 30, coastalPlans: 5 },
+  { year: 2020, marineProtected: 10, aquaculture: 4000, fisheries: 98000, monitoringStations: 40, coastalPlans: 8 },
+  { year: 2024, marineProtected: 15.15, aquaculture: 6935, fisheries: 105000, monitoringStations: 50, coastalPlans: 12 },
+];
