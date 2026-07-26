@@ -52,3 +52,18 @@ prompt
 server.log
 # Skills directory
 /skills/
+
+# Audit & tool artifacts
+tool-results/
+scripts/ons_data/
+scripts/*.json
+
+# Large data files (extracted from ONS, not needed in repo)
+ons_*.json
+wiki_*.json
+search_*.json
+upload/
+
+# Database
+*.db
+*.db-journal
