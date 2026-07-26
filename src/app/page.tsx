@@ -1900,11 +1900,11 @@ export default function AlgeriaDashboard() {
             {/* Chart 1: SDG Progress Overview — horizontal bars */}
             <ChartCard title={t.chartSdgProgress} subtitle={t.chartSdgProgressSub}>
               <ChartContainer config={{ progress: { label: t.labelProgress, color: "#059669" } }} className="h-[520px] w-full">
-                <BarChart data={sdgOverview.map(s => ({ name: `${s.sdg}`, fullName: s.name, progress: s.progress, fill: s.achieved ? COLORS.emerald : s.status === "on_track" ? "#3b82f6" : s.status === "moderate" ? COLORS.amber : COLORS.red }))} layout="vertical" margin={{ left: isRtl ? 10 : -15, right: 10 }}>
+                <BarChart data={sdgOverview.map(s => ({ name: `${s.sdg}`, fullName: s.name, progress: s.progress, fill: s.achieved ? COLORS.emerald : s.status === "on_track" ? "#3b82f6" : s.status === "moderate" ? COLORS.amber : COLORS.red }))} layout="vertical" margin={{ left: 10, right: 40 }}>
                   <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-                  <YAxis dataKey="name" type="category" width={25} tick={{ fontSize: 12, fill: "#64748b" }} />
+                  <YAxis dataKey="name" type="category" width={30} tick={{ fontSize: 12, fill: "#475569" }} />
                   <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 11 }} />
-                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <ChartTooltip content={<ChartTooltipContent />} formatter={(value: number, name: string, props: { payload: { fullName: string } }) => [`${value} %`, props.payload.fullName || `ODD ${props.payload.name}`]} />
                   <Bar dataKey="progress" radius={[0, 6, 6, 0]}>
                     {sdgOverview.map((_, i) => (
                       <Cell key={i} fill={sdgOverview[i].achieved ? COLORS.emerald : sdgOverview[i].status === "on_track" ? "#3b82f6" : sdgOverview[i].status === "moderate" ? COLORS.amber : COLORS.red} />
@@ -1917,12 +1917,12 @@ export default function AlgeriaDashboard() {
             {/* Chart 2: SDG Radar — deep dive goals */}
             <ChartCard title={t.chartSdgRadar} subtitle={t.chartSdgRadarSub}>
               <ChartContainer config={{ value: { label: t.labelProgress, color: "#7c3aed" } }} className="h-[400px] w-full">
-                <RadarChart data={sdgDeepDive.map(d => ({ name: `ODD ${d.sdg} – ${d.title}`, progress: Math.round(d.kpis.filter(k => k.status === "achieved").length / d.kpis.length * 100) }))}>
+                <RadarChart cx="50%" cy="50%" outerRadius="70%" data={sdgDeepDive.map(d => ({ name: `${d.sdg}`, progress: Math.round(d.kpis.filter(k => k.status === "achieved").length / d.kpis.length * 100) }))}>
                   <PolarGrid stroke="#e2e8f0" />
-                  <PolarAngleAxis dataKey="name" tick={{ fontSize: 10, fill: "#475569" }} />
-                  <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
-                  <Radar name={t.labelProgress} dataKey="progress" stroke="#7c3aed" fill="#ede9fe" fillOpacity={0.6} strokeWidth={2} />
-                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <PolarAngleAxis dataKey="name" tick={{ fontSize: 13, fill: "#334155", fontWeight: 600 }} />
+                  <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 9 }} tickCount={5} />
+                  <Radar name={t.labelProgress} dataKey="progress" stroke="#7c3aed" fill="#ede9fe" fillOpacity={0.5} strokeWidth={2} dot={{ r: 4, fill: "#7c3aed" }} />
+                  <ChartTooltip content={<ChartTooltipContent />} formatter={(value: number) => [`${value} %`, t.labelProgress]} />
                 </RadarChart>
               </ChartContainer>
             </ChartCard>
@@ -1932,7 +1932,7 @@ export default function AlgeriaDashboard() {
               <ChartCard title={t.chartSdgEnergyMix} subtitle={t.chartSdgEnergyMixSub}>
                 <ChartContainer config={{ share: { label: "%", color: "#f59e0b" } }} className="h-[320px] w-full">
                   <PieChart>
-                    <Pie data={sdgEnergyMix.map(e => ({ name: e.source === "gaz" ? t.labelGazNatural : e.source === "solaire" ? t.labelSolarPV : e.source === "hydraulique" ? t.labelHydro : e.source === "eolien" ? t.labelWind : e.source === "autresEnr" ? t.labelOtherEnr : t.labelFuelOil, value: e.share }))} cx="50%" cy="50%" outerRadius={100} dataKey="value" label={({ name, value }) => `${name} ${value}%`} labelLine={true}>
+                    <Pie data={sdgEnergyMix.map(e => ({ name: e.source === "gaz" ? t.labelGazNatural : e.source === "solaire" ? t.labelSolarPV : e.source === "hydraulique" ? t.labelHydro : e.source === "eolien" ? t.labelWind : e.source === "autresEnr" ? t.labelOtherEnr : t.labelFuelOil, value: e.share }))} cx="50%" cy="50%" outerRadius={80} innerRadius={50} dataKey="value" label={({ name, value }) => `${name} ${value}%`} labelLine={true}>
                       {sdgEnergyMix.map((e, i) => <Cell key={i} fill={e.color} />)}
                     </Pie>
                     <ChartTooltip content={<ChartTooltipContent />} />
@@ -2004,10 +2004,11 @@ export default function AlgeriaDashboard() {
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
-                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="right" orientation="right" domain={[0, 250]} tick={{ fontSize: 11 }} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Bar yAxisId="left" dataKey="startups" fill="#fed7aa" radius={[4, 4, 0, 0]} />
                     <Line yAxisId="right" type="monotone" dataKey="incubators" stroke={COLORS.cyan} strokeWidth={2} dot={{ fill: COLORS.cyan, r: 4 }} />
+                    <Line yAxisId="right" type="monotone" dataKey="universities" stroke={COLORS.purple} strokeWidth={2} dot={{ fill: COLORS.purple, r: 4 }} strokeDasharray="5 5" />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
@@ -2025,13 +2026,13 @@ export default function AlgeriaDashboard() {
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Line yAxisId="left" type="monotone" dataKey="wheatKg" stroke={COLORS.amber} strokeWidth={2} dot={{ fill: COLORS.amber, r: 4 }} />
                     <Line yAxisId="right" type="monotone" dataKey="milkCoverage" stroke={COLORS.blue} strokeWidth={2} dot={{ fill: COLORS.blue, r: 4 }} />
-                    <Line yAxisId="left" type="monotone" dataKey="aquaculture" stroke={COLORS.teal} strokeWidth={2} dot={{ fill: COLORS.teal, r: 4 }} strokeDasharray="5 5" />
+                    <Line yAxisId="right" type="monotone" dataKey="undernourishment" stroke={COLORS.red} strokeWidth={2} dot={{ fill: COLORS.red, r: 4 }} strokeDasharray="5 5" />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
 
               <ChartCard title={t.chartSdgEducation} subtitle={t.chartSdgEducationSub}>
-                <ChartContainer config={{ primary: { label: t.labelPrimary, color: "#059669" }, secondary: { label: t.labelSecondary, color: "#2563eb" }, literacy: { label: t.labelLiteracy, color: "#d97706" } }} className="h-[320px] w-full">
+                <ChartContainer config={{ primary: { label: t.labelPrimary, color: "#059669" }, secondary: { label: t.labelSecondary, color: "#2563eb" }, literacy: { label: t.labelLiteracy, color: "#d97706" }, preprimary: { label: t.labelPreprimary, color: "#7c3aed" } }} className="h-[320px] w-full">
                   <ComposedChart data={sdgEducation}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
@@ -2040,7 +2041,7 @@ export default function AlgeriaDashboard() {
                     <Line type="monotone" dataKey="primary" stroke={COLORS.emerald} strokeWidth={2} dot={{ fill: COLORS.emerald, r: 4 }} />
                     <Line type="monotone" dataKey="secondary" stroke={COLORS.blue} strokeWidth={2} dot={{ fill: COLORS.blue, r: 4 }} />
                     <Line type="monotone" dataKey="literacy" stroke={COLORS.amber} strokeWidth={2} dot={{ fill: COLORS.amber, r: 4 }} strokeDasharray="5 5" />
-                    <Line type="monotone" dataKey="femaleHigher" stroke={COLORS.rose} strokeWidth={2} dot={{ fill: COLORS.rose, r: 3 }} />
+                    <Line type="monotone" dataKey="preprimary" stroke={COLORS.purple} strokeWidth={2} dot={{ fill: COLORS.purple, r: 3 }} strokeDasharray="3 3" />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
@@ -2049,31 +2050,31 @@ export default function AlgeriaDashboard() {
             {/* Charts row: Inequality + Oceans */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <ChartCard title={t.chartSdgInequality} subtitle={t.chartSdgInequalitySub}>
-                <ChartContainer config={{ socialCoverage: { label: t.labelSocialCov, color: "#059669" }, gini: { label: t.labelGini, color: "#dc2626" }, remittanceCost: { label: t.labelRemittanceCost, color: "#d97706" } }} className="h-[300px] w-full">
+                <ChartContainer config={{ socialCoverage: { label: t.labelSocialCov, color: "#059669" }, quintileShare: { label: "Part quintile sup.", color: "#dc2626" }, remittanceCost: { label: t.labelRemittanceCost, color: "#d97706" } }} className="h-[300px] w-full">
                   <ComposedChart data={sdgInequality}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
-                    <YAxis yAxisId="left" domain={[0, 100]} tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="left" domain={[50, 75]} tick={{ fontSize: 11 }} />
                     <YAxis yAxisId="right" orientation="right" domain={[0, 10]} tick={{ fontSize: 11 }} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Area yAxisId="left" type="monotone" dataKey="socialCoverage" stroke={COLORS.emerald} fill={COLORS.emeraldLight} strokeWidth={2} />
-                    <Line yAxisId="right" type="monotone" dataKey="gini" stroke={COLORS.red} strokeWidth={2} dot={{ fill: COLORS.red, r: 4 }} />
+                    <Line yAxisId="right" type="monotone" dataKey="quintileShare" stroke={COLORS.red} strokeWidth={2} dot={{ fill: COLORS.red, r: 4 }} />
                     <Line yAxisId="right" type="monotone" dataKey="remittanceCost" stroke={COLORS.amber} strokeWidth={2} dot={{ fill: COLORS.amber, r: 4 }} strokeDasharray="5 5" />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
 
               <ChartCard title={t.chartSdgOceans} subtitle={t.chartSdgOceansSub}>
-                <ChartContainer config={{ marineProtected: { label: t.labelMarineProtected, color: "#0a97d9" }, aquaculture: { label: t.labelAquaculture, color: "#0d9488" }, fisheries: { label: t.labelFisheries, color: "#2563eb" } }} className="h-[300px] w-full">
+                <ChartContainer config={{ marineProtected: { label: t.labelMarineProtected, color: "#0a97d9" }, aquaculture: { label: t.labelAquaculture, color: "#0d9488" }, coastalPlans: { label: t.labelCoastalPlans, color: "#2563eb" } }} className="h-[300px] w-full">
                   <ComposedChart data={sdgOceans}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
-                    <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
-                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="left" domain={[0, 20]} tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="right" orientation="right" domain={[0, 8000]} tick={{ fontSize: 11 }} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar yAxisId="left" dataKey="fisheries" fill="#bfdbfe" radius={[4, 4, 0, 0]} />
-                    <Line yAxisId="right" type="monotone" dataKey="marineProtected" stroke={COLORS.cyan} strokeWidth={2} dot={{ fill: COLORS.cyan, r: 4 }} />
-                    <Line yAxisId="right" type="monotone" dataKey="aquaculture" stroke={COLORS.teal} strokeWidth={2} dot={{ fill: COLORS.teal, r: 4 }} />
+                    <Bar yAxisId="right" dataKey="aquaculture" fill="#ccfbf1" radius={[4, 4, 0, 0]} />
+                    <Line yAxisId="left" type="monotone" dataKey="marineProtected" stroke={COLORS.cyan} strokeWidth={2} dot={{ fill: COLORS.cyan, r: 5 }} />
+                    <Line yAxisId="right" type="monotone" dataKey="coastalPlans" stroke={COLORS.blue} strokeWidth={2} dot={{ fill: COLORS.blue, r: 4 }} strokeDasharray="5 5" />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
