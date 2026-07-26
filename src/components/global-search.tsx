@@ -34,13 +34,20 @@ function buildSearchIndex(t: Record<string, string>): SearchItem[] {
   const tabMap = [
     { tab: "macro", keys: ["tabMacro", "chartGdpGrowth", "chartGdpSector", "chartQuarterlyGdp", "chartGdpPerCapita", "kpiGdpGrowth", "kpiGdp2024", "kpiInflation", "kpiUnemployment", "kpiPopulation", "kpiInvestmentRate"], cat: "Macroeconomic" },
     { tab: "inflation", keys: ["tabInflation", "chartCpiMonthly", "chartCpiLevel", "chartCpiByDivision", "kpiCpi", "kpiYoyInflation", "kpiFoodInflation", "kpiCoreInflation"], cat: "Prices & Inflation" },
-    { tab: "trade", keys: ["tabTrade", "chartTradeBalance", "chartTradeByPartner", "chartTradeQuarterly"], cat: "Trade & Balance" },
-    { tab: "industry", keys: ["tabIndustry", "chartIpiQuarterly", "chartIppiQuarterly"], cat: "Industrial Production" },
-    { tab: "labor", keys: ["tabLabor", "kpiUnemployment", "chartLaborMarket"], cat: "Labor Market" },
-    { tab: "social", keys: ["tabSocial", "chartDemographics", "chartPopulationByAge", "chartEducation"], cat: "Demographics & Social" },
+    { tab: "trade", keys: ["tabTrade", "chartTradeBalance", "chartTradeByPartner", "chartTradeQuarterly", "kpiExports", "kpiImports", "kpiTradeBalance", "kpiHydroPct"], cat: "Trade & Balance" },
+    { tab: "industry", keys: ["tabIndustry", "chartIpiQuarterly", "chartIppiQuarterly", "kpiIpi", "kpiMining", "kpiManufacturing", "kpiEnergy"], cat: "Industrial Production" },
+    { tab: "labor", keys: ["tabLabor", "kpiUnempRate", "kpiActivityRate", "kpiYouthUnemp", "kpiFemalePartic", "kpiInformal", "kpiEmpPop", "chartUnempRate", "chartActivityFemale", "chartEmpPop"], cat: "Labor Market" },
+    { tab: "social", keys: ["tabSocial", "chartDemographics", "chartPopulationByAge", "chartEducation", "kpiPop", "kpiGrowthRate", "kpiUrbanization", "kpiFertility"], cat: "Demographics & Social" },
     { tab: "fiscal", keys: ["tabFiscal", "chartFiscalData"], cat: "Fiscal & Savings" },
-    { tab: "regional", keys: ["tabRegional", "chartWilayaGdp", "chartRegionalInequality"], cat: "Regional" },
-    { tab: "sdg", keys: ["tabSdg", "chartSdgProgress", "chartSdgRadar", "chartSdgEnergyMix", "chartSdgHousing", "chartSdgDesalination", "chartSdgWaterReuse", "chartSdgTelecoms", "chartSdgInnovation", "chartSdgFood", "chartSdgEducation", "chartSdgInequality", "chartSdgOceans"], cat: "ODD / SDGs" },
+    { tab: "regional", keys: ["tabRegional", "chartWilayaGdp", "chartRegionalInequality", "chartRegionUrbanTrend", "chartWilayaUnempRank", "chartRegionDevScatter", "chartRegionHealth", "chartRegionEducation", "chartRegionInfra"], cat: "Regional" },
+    { tab: "hydro", keys: ["tabHydro", "kpiHydroRevenue", "kpiHydroGdpShare", "kpiHydroExports", "chartHydroRevenue", "chartHydroVsNonHydro", "chartHydroGdp"], cat: "Hydrocarbons" },
+    { tab: "agriculture", keys: ["tabAgriculture", "kpiAgriExports", "kpiAgriEmploy", "kpiAgriGdp", "chartAgriExports"], cat: "Agriculture" },
+    { tab: "manufacturing", keys: ["tabManufacturing", "kpiManufEmploy", "kpiManufExports", "kpiManufGdp", "kpiManufFDI", "chartManufSubsectors", "chartManufRadar", "chartManufBuildingPaper", "chartManufEmployCapacity", "chartManufGDP", "chartManufFDI"], cat: "Manufacturing" },
+    { tab: "btp", keys: ["tabBTP"], cat: "BTP & Construction" },
+    { tab: "services", keys: ["tabServices", "kpiServicesGdp", "chartServicesTrend", "chartServicesComposition"], cat: "Services" },
+    { tab: "mining", keys: ["tabMiningEnergy", "chartMiningProd"], cat: "Mining & Energy" },
+    { tab: "health", keys: ["tabHealth", "kpiHealthExpenditure", "kpiHealthCenters", "chartHealthInfrastructure", "chartHealthExpenditureTrend"], cat: "Health" },
+    { tab: "sdg", keys: ["tabSdg", "kpiSdgOnTrack", "kpiSdgModerate", "kpiSdgInsufficient", "kpiSdgAchieved", "chartSdgProgress", "chartSdgRadar", "chartSdgEnergyMix", "chartSdgHousing", "chartSdgDesalination", "chartSdgWaterReuse", "chartSdgTelecoms", "chartSdgInnovation", "chartSdgFood", "chartSdgEducation", "chartSdgInequality", "chartSdgOceans", "chartSdgTimeline"], cat: "ODD / SDGs" },
   ];
 
   for (const tm of tabMap) {
@@ -156,13 +163,13 @@ export function HeaderControls({ onTabSelect }: { onTabSelect: (tab: string) => 
                 </Button>
               )}
             </div>
-            <Command.List className="max-h-[350px] overflow-y-auto">
+            <Command.List className="max-h-[450px] overflow-y-auto">
               <Command.Empty className="py-6 text-center text-sm text-muted-foreground">
                 {t.labelSearchNoResults}
               </Command.Empty>
               {filtered.length > 0 && (
                 <Command.Group heading="">
-                  {filtered.slice(0, 20).map((item) => (
+                  {filtered.slice(0, 50).map((item) => (
                     <Command.Item
                       key={item.id}
                       value={item.id}
