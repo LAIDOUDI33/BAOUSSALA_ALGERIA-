@@ -67,21 +67,21 @@ function KpiCard({ title, value, unit, change, changeDir, icon: Icon, color }: {
   change?: number; changeDir?: "up" | "down"; icon: React.ElementType; color: string;
 }) {
   return (
-    <Card className="border-0 shadow-sm">
-      <CardContent className="p-4">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-xs text-muted-foreground font-medium">{title}</span>
-          <div className={`p-1.5 rounded-lg`} style={{ backgroundColor: color + "15" }}>
-            <Icon className="w-3.5 h-3.5" style={{ color }} />
+    <Card className="border-0 shadow-sm min-h-[110px]">
+      <CardContent className="p-4 sm:p-5 flex flex-col justify-between h-full">
+        <div className="flex items-center justify-between mb-3">
+          <span className="text-[13px] sm:text-sm text-foreground/70 font-semibold leading-tight">{title}</span>
+          <div className="p-2 rounded-xl flex-shrink-0" style={{ backgroundColor: color + "18" }}>
+            <Icon className="w-4 h-4" style={{ color }} />
           </div>
         </div>
-        <div className="flex items-end gap-1.5">
-          <span className="text-2xl font-bold">{value}</span>
-          {unit && <span className="text-sm text-muted-foreground mb-0.5">{unit}</span>}
+        <div className="flex items-baseline gap-1">
+          <span className="text-[28px] sm:text-3xl font-extrabold tracking-tight leading-none">{value}</span>
+          {unit && <span className="text-sm sm:text-base text-muted-foreground font-medium">{unit}</span>}
         </div>
         {change !== undefined && changeDir && (
-          <div className={`flex items-center gap-0.5 mt-1 text-xs font-medium ${changeDir === "up" ? "text-emerald-600" : "text-red-600"}`}>
-            {changeDir === "up" ? <ArrowUpRight className="w-3 h-3" /> : <ArrowDownRight className="w-3 h-3" />}
+          <div className={`flex items-center gap-1 mt-2 text-xs sm:text-sm font-semibold ${changeDir === "up" ? "text-emerald-600 dark:text-emerald-400" : "text-red-600 dark:text-red-400"}`}>
+            {changeDir === "up" ? <ArrowUpRight className="w-3.5 h-3.5" /> : <ArrowDownRight className="w-3.5 h-3.5" />}
             {change > 0 ? "+" : ""}{change}%
           </div>
         )}
@@ -169,7 +169,7 @@ export default function AlgeriaDashboard() {
           </TabsList>
 
           <TabsContent value="macro" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
               <KpiCard title={t.kpiGdpGrowth} value={latestKPIs.gdpGrowth} unit="%" change={0.2} changeDir="up" icon={TrendingUp} color={COLORS.emerald} />
               <KpiCard title={t.kpiGdp2024} value="205" unit="bn $" icon={DollarSign} color={COLORS.blue} />
               <KpiCard title={t.kpiInflation} value={latestKPIs.inflation} unit="%" change={-1.0} changeDir="down" icon={Scale} color={COLORS.red} />
@@ -248,7 +248,7 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="inflation" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiCpi} value="344.2" change={0.4} changeDir="up" icon={Scale} color={COLORS.red} />
               <KpiCard title={t.kpiYoyInflation} value="3.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.emerald} />
               <KpiCard title={t.kpiFoodInflation} value="2.8" unit="%" change={-1.3} changeDir="down" icon={Package} color={COLORS.amber} />
@@ -339,7 +339,7 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="trade" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiExports} value="48.5" unit="bn $" change={7.8} changeDir="up" icon={Globe} color={COLORS.emerald} />
               <KpiCard title={t.kpiImports} value="37.0" unit="bn $" change={6.3} changeDir="up" icon={Package} color={COLORS.red} />
               <KpiCard title={t.kpiTradeBalance} value="11.5" unit="bn $" change={1.3} changeDir="up" icon={DollarSign} color={COLORS.blue} />
@@ -413,7 +413,7 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="industry" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiIpi} value="114.5" change={1.8} changeDir="up" icon={Factory} color={COLORS.emerald} />
               <KpiCard title={t.kpiMining} value="108.0" change={1.4} changeDir="up" icon={Factory} color={COLORS.amber} />
               <KpiCard title={t.kpiManufacturing} value="109.0" change={1.8} changeDir="up" icon={Building2} color={COLORS.blue} />
@@ -476,7 +476,7 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="labor" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
               <KpiCard title={t.kpiUnempRate} value="10.8" unit="%" change={-0.5} changeDir="down" icon={Users} color={COLORS.red} />
               <KpiCard title={t.kpiActivityRate} value="44.0" unit="%" change={0.5} changeDir="up" icon={Activity} color={COLORS.emerald} />
               <KpiCard title={t.kpiYouthUnemp} value="22.0" unit="%" change={-1.0} changeDir="down" icon={TrendingDown} color={COLORS.amber} />
@@ -537,7 +537,7 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="social" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiPop} value="46.8" unit="M" icon={Users} color={COLORS.purple} />
               <KpiCard title={t.kpiGrowthRate} value="1.4" unit="%" icon={TrendingUp} color={COLORS.emerald} />
               <KpiCard title={t.kpiUrbanization} value="74.5" unit="%" icon={Building2} color={COLORS.blue} />
@@ -635,7 +635,7 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="fiscal" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiSavings} value="42.5" unit="% GDP" icon={DollarSign} color={COLORS.emerald} />
               <KpiCard title={t.kpiInvest} value="40.0" unit="% GDP" icon={Factory} color={COLORS.blue} />
               <KpiCard title={t.kpiDebt} value="41.0" unit="%" change={-2.0} changeDir="down" icon={Scale} color={COLORS.amber} />
@@ -695,42 +695,42 @@ export default function AlgeriaDashboard() {
 
           <TabsContent value="regional" className="space-y-5">
             {/* ── KPI CARDS ROW 1: Core Demographics ──────────────────────── */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiRegTotalPop} value="46.8" unit="M" icon={Users} color={COLORS.blue} />
               <KpiCard title={t.kpiRegTotalWilayas} value="58" unit="" icon={MapPin} color={COLORS.emerald} />
               <KpiCard title={t.kpiRegNationalGdp} value="205" unit="bn $" icon={Globe} color={COLORS.amber} />
               <KpiCard title={t.kpiRegAvgUnemp} value="11.9" unit="%" change={-1.5} changeDir="down" icon={Activity} color={COLORS.red} />
             </div>
             {/* ── KPI CARDS ROW 2: Social Indicators ──────────────────────── */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiRegYouthUnemp} value="26.2" unit="%" icon={Users} color={COLORS.rose} />
               <KpiCard title={t.kpiRegUrbanization} value="73.5" unit="%" icon={Building2} color={COLORS.purple} />
               <KpiCard title={t.kpiRegPoverty} value="9.5" unit="%" change={-0.8} changeDir="down" icon={Scale} color={COLORS.amber} />
               <KpiCard title={t.kpiRegElectrification} value="97.6" unit="%" icon={Zap} color={COLORS.teal} />
             </div>
             {/* ── KPI CARDS ROW 3: Development ────────────────────────────── */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiRegInformal} value="41.2" unit="%" icon={Briefcase} color={COLORS.slate} />
               <KpiCard title={t.kpiRegSecondary} value="79.8" unit="%" icon={GraduationCap} color={COLORS.blue} />
               <KpiCard title={t.kpiRegNetMigration} value="-0.4" unit="‰" icon={ArrowRightLeft} color={COLORS.orange} />
               <KpiCard title={t.kpiRegHospitalBeds} value="17.4" unit="" icon={Heart} color={COLORS.red} />
             </div>
             {/* ── KPI CARDS ROW 4: Enhanced KPIs ──────────────────────────── */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiRegDensity} value="19.7" unit="hab/km²" icon={Users} color={COLORS.cyan} />
               <KpiCard title={t.kpiRegEmployment} value="48.8" unit="%" icon={UserCheck} color={COLORS.emerald} />
               <KpiCard title={t.kpiRegFemalePartic} value="13.5" unit="%" icon={Users} color={COLORS.purple} />
               <KpiCard title={t.kpiRegInternet} value="60.8" unit="%" icon={Wifi} color={COLORS.blue} />
             </div>
             {/* ── KPI CARDS ROW 5: More Enhanced KPIs ─────────────────────── */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiRegLiteracy} value="89.8" unit="%" icon={BookOpen} color={COLORS.teal} />
               <KpiCard title={t.kpiRegInfantMort} value="17.8" unit="‰" icon={Baby} color={COLORS.red} />
               <KpiCard title={t.kpiRegWaterAccess} value="88.0" unit="%" icon={Droplets} color={COLORS.cyan} />
               <KpiCard title={t.kpiRegHDI} value="0.749" unit="" icon={TrendingUp} color={COLORS.emerald} />
             </div>
             {/* ── KPI CARDS ROW 6: Infrastructure ──────────────────────────── */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiRegRoadDensity} value="0.44" unit="km/km²" icon={Route} color={COLORS.slate} />
               <KpiCard title={t.kpiRegMobilePenetration} value="109" unit="%" icon={Wifi} color={COLORS.blue} />
               <KpiCard title={t.kpiRegBroadband} value="4550" unit="K" icon={Wifi} color={COLORS.purple} />
@@ -1227,19 +1227,19 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="hydro" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiHydroRevenue} value="33.0" unit="bn $" change={10.0} changeDir="up" icon={Droplets} color={COLORS.amber} />
               <KpiCard title={t.kpiOilProd} value="0.98" unit="Mb/j" icon={Droplets} color={COLORS.emerald} />
               <KpiCard title={t.kpiGasProd} value="105" unit="Bcm" icon={Droplets} color={COLORS.blue} />
               <KpiCard title={t.kpiHydroGdpShare} value="23.5" unit="%" icon={Activity} color={COLORS.red} />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiOilPrice} value="76.0" unit="$/bbl" change={-2.6} changeDir="down" icon={DollarSign} color={COLORS.red} />
               <KpiCard title={t.kpiHydroExports} value="38.8" unit="bn $" change={7.8} changeDir="up" icon={Globe} color={COLORS.emerald} />
               <KpiCard title={t.kpiReservesOil} value="12.2" unit="Bn bbl" icon={Droplets} color={COLORS.amber} />
               <KpiCard title={t.kpiReservesGas} value="4.5" unit="Tcm" icon={Zap} color={COLORS.blue} />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiLNG} value="21.5" unit="Bcm" change={4.9} changeDir="up" icon={Droplets} color={COLORS.cyan} />
               <KpiCard title={t.kpiRefining} value="550" unit="Kb/d" icon={Factory} color={COLORS.slate} />
               <KpiCard title={t.kpiDomesticConsump} value="35" unit="%" icon={Activity} color={COLORS.rose} />
@@ -1355,19 +1355,19 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="agriculture" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiCerealProd} value="5.0" unit="Mt" icon={Sprout} color={COLORS.emerald} />
               <KpiCard title={t.kpiSelfSuffic} value="33" unit="%" icon={Scale} color={COLORS.amber} />
               <KpiCard title={t.kpiAgriExports} value="0.82" unit="bn $" icon={Package} color={COLORS.blue} />
               <KpiCard title={t.kpiAgriEmploy} value="11.5" unit="%" icon={Users} color={COLORS.purple} />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiVegProd} value="11.8" unit="Mt" icon={Sprout} color={COLORS.emerald} change={2.6} changeDir="up" />
               <KpiCard title={t.kpiFruitProd} value="6.4" unit="Mt" icon={Sprout} color={COLORS.rose} change={3.2} changeDir="up" />
               <KpiCard title={t.kpiMilkProd} value="3.8" unit="B litres" icon={Heart} color={COLORS.blue} change={5.6} changeDir="up" />
               <KpiCard title={t.kpiIrrigatedLand} value="1.9" unit="M ha" icon={Droplets} color={COLORS.cyan} change={2.7} changeDir="up" />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiAgriGdp} value="9.8" unit="%" icon={Activity} color={COLORS.teal} change={-2.0} changeDir="down" />
               <KpiCard title={t.kpiCerealImports} value="8.2" unit="Mt" icon={Globe} color={COLORS.red} />
               <KpiCard title={t.kpiPoultryProd} value="1.75" unit="Mt" icon={Sprout} color={COLORS.amber} change={4.2} changeDir="up" />
@@ -1485,25 +1485,25 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="manufacturing" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiFoodIndustry} value="110" icon={Factory} color={COLORS.emerald} />
               <KpiCard title={t.kpiPharma} value="128" change={5.0} changeDir="up" icon={Heart} color={COLORS.purple} />
               <KpiCard title={t.kpiTextiles} value="86" icon={Factory} color={COLORS.amber} />
               <KpiCard title={t.kpiChemicals} value="107" icon={Factory} color={COLORS.blue} />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiMetallurgy} value="102" icon={Hammer} color={COLORS.slate} />
               <KpiCard title={t.kpiBuildingMat} value="112" change={1.8} changeDir="up" icon={Building2} color={COLORS.orange} />
               <KpiCard title={t.kpiElectrical} value="94" icon={Zap} color={COLORS.cyan} />
               <KpiCard title={t.kpiPaper} value="98" icon={Package} color={COLORS.rose} />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiManufEmploy} value="550" unit="K" icon={Users} color={COLORS.purple} change={2.8} changeDir="up" />
               <KpiCard title={t.kpiManufExports} value="4.2" unit="bn $" icon={Globe} color={COLORS.emerald} change={10.5} changeDir="up" />
               <KpiCard title={t.kpiCapacityUtil} value="70" unit="%" icon={Activity} color={COLORS.blue} change={2.9} changeDir="up" />
               <KpiCard title={t.kpiManufGdp} value="6.2" unit="%" icon={Factory} color={COLORS.teal} change={7.0} changeDir="up" />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiNumEnterprises} value="13.0" unit="K" icon={Building2} color={COLORS.slate} change={3.2} changeDir="up" />
               <KpiCard title={t.kpiPrivateShare} value="58" unit="%" icon={DollarSign} color={COLORS.amber} change={3.6} changeDir="up" />
               <KpiCard title={t.kpiManufFDI} value="2.0" unit="bn $" icon={Globe} color={COLORS.cyan} change={11.1} changeDir="up" />
@@ -1626,7 +1626,7 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="btp" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiHousingUnits} value="350" unit="K" change={2.9} changeDir="up" icon={Building2} color={COLORS.emerald} />
               <KpiCard title={t.kpiCementProd} value="24.5" unit="Mt" change={4.3} changeDir="up" icon={Factory} color={COLORS.blue} />
               <KpiCard title={t.kpiBTPGdp} value="10.2" unit="%" icon={Activity} color={COLORS.amber} />
@@ -1687,7 +1687,7 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="services" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiServicesGdp} value="51.3" unit="%" icon={Activity} color={COLORS.purple} />
               <KpiCard title={t.kpiTrade} value="12.8" unit="%" icon={Globe} color={COLORS.emerald} />
               <KpiCard title={t.kpiTransport} value="7.5" unit="%" icon={Truck} color={COLORS.blue} />
@@ -1733,7 +1733,7 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="mining" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiElectricity} value="72" unit="TWh" icon={Zap} color={COLORS.cyan} />
               <KpiCard title={t.kpiGasConsump} value="42" unit="Bcm" icon={Droplets} color={COLORS.blue} />
               <KpiCard title={t.kpiIronOre} value="3.8" unit="Mt" icon={Factory} color={COLORS.amber} />
@@ -1784,19 +1784,19 @@ export default function AlgeriaDashboard() {
           </TabsContent>
 
           <TabsContent value="health" className="space-y-5">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiHospitalBeds} value="20.3" icon={BedDouble} color={COLORS.blue} change={2.5} changeDir="up" />
               <KpiCard title={t.kpiPhysicians} value="25.5" icon={Stethoscope} color={COLORS.emerald} change={6.3} changeDir="up" />
               <KpiCard title={t.kpiNurses} value="32.0" icon={Shield} color={COLORS.purple} change={4.9} changeDir="up" />
               <KpiCard title={t.kpiHealthExpenditure} value="6.5" unit="%" icon={DollarSign} color={COLORS.amber} />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiLifeExpectancy} value="77.5" unit="ans" icon={Heart} color={COLORS.rose} change={0.4} changeDir="up" />
               <KpiCard title={t.kpiInfantMortality} value="15.2" icon={Baby} color={COLORS.red} change={-5.0} changeDir="down" />
               <KpiCard title={t.kpiMaternalMortality} value="65" icon={Heart} color={COLORS.orange} change={-9.7} changeDir="down" />
               <KpiCard title={t.kpiVaccination} value="94" unit="%" icon={Syringe} color={COLORS.teal} change={1.1} changeDir="up" />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <KpiCard title={t.kpiNumHospitals} value="498" icon={Building2} color={COLORS.blue} change={2.7} changeDir="up" />
               <KpiCard title={t.kpiHealthCenters} value="1850" icon={Activity} color={COLORS.emerald} change={3.9} changeDir="up" />
               <KpiCard title={t.kpiPolyclinics} value="460" icon={Factory} color={COLORS.purple} change={4.5} changeDir="up" />
