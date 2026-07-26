@@ -135,3 +135,14 @@
 [dir="rtl"] .recharts-tooltip-item {
   font-family: 'Noto Sans Arabic', 'Noto Sans SC', sans-serif;
 }
+
+/* Dark mode chart grid lines */
+.dark .recharts-cartesian-grid-horizontal line,
+.dark .recharts-cartesian-grid-vertical line {
+  stroke: rgba(255, 255, 255, 0.08);
+}
+
+/* Dark mode recharts axis ticks */
+.dark .recharts-cartesian-axis-tick-value {
+  fill: #94a3b8;
+}

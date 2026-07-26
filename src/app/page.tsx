@@ -16,6 +16,7 @@ import {
 
 import { useI18n } from "@/lib/i18n/context";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { HeaderControls } from "@/components/global-search";
 
 import {
   Card, CardContent, CardDescription, CardHeader, CardTitle,
@@ -32,6 +33,7 @@ import {
   PolarRadiusAxis, Radar, XAxis, YAxis, Tooltip as RTooltip, Legend, ResponsiveContainer,
   ScatterChart, Scatter, ZAxis,
 } from "recharts";
+import { useState, useCallback } from "react";
 import {
   TrendingUp, TrendingDown, ArrowUpRight, ArrowDownRight,
   DollarSign, Users, BarChart3, Globe, Percent, Activity,
@@ -103,6 +105,8 @@ function ChartCard({ title, subtitle, children, className }: { title: string; su
 // MAIN PAGE
 export default function AlgeriaDashboard() {
   const { t, isRtl, locale } = useI18n();
+  const [activeTab, setActiveTab] = useState("macro");
+  const handleTabSelect = useCallback((tab: string) => setActiveTab(tab), []);
 
   // Arabic font style
   const arabicFontStyle = locale === "ar"
@@ -129,7 +133,7 @@ export default function AlgeriaDashboard() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col" style={arabicFontStyle}>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 flex flex-col" style={arabicFontStyle}>
       {/* Header */}
       <header className="bg-gradient-to-r from-emerald-800 via-emerald-900 to-slate-900 text-white">
         <div className="max-w-[1400px] mx-auto px-4 py-5">
@@ -143,13 +147,16 @@ export default function AlgeriaDashboard() {
                 </p>
               </div>
             </div>
-            <LanguageSwitcher />
+            <div className="flex items-center gap-2">
+              <HeaderControls onTabSelect={handleTabSelect} />
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       </header>
 
       <main className="flex-1 max-w-[1400px] mx-auto px-4 py-5 w-full">
-        <Tabs defaultValue="macro" className="space-y-5">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-5">
           <TabsList className="flex flex-wrap h-auto gap-1 bg-transparent p-0">
             {tabItems.map((tab) => (
               <TabsTrigger key={tab.val} value={tab.val}

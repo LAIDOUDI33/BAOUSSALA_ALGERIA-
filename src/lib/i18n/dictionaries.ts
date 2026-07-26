@@ -671,6 +671,17 @@ export interface Dictionary {
   labelQuintileShare: string;
   labelRemittanceCost: string;
   labelSdgSource: string;
+
+  // ─── UI CONTROLS ─────────────────────────────────────────────────
+  labelSearch: string;
+  labelSearchPlaceholder: string;
+  labelSearchNoResults: string;
+  labelTheme: string;
+  labelThemeLight: string;
+  labelThemeDark: string;
+  labelExport: string;
+  labelExportPng: string;
+  labelExportCsv: string;
 }
 
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
@@ -1188,6 +1199,16 @@ const en: Dictionary = {
   labelQuintileShare: "Bottom Quintile %",
   labelRemittanceCost: "Remittance Cost %",
   labelSdgSource: "Source: VNR 2026 – Rapport National Volontaire, Comité intersectoriel ODD, ONS",
+
+  labelSearch: "Search",
+  labelSearchPlaceholder: "Search indicators, charts, SDGs...",
+  labelSearchNoResults: "No results found.",
+  labelTheme: "Theme",
+  labelThemeLight: "Light",
+  labelThemeDark: "Dark",
+  labelExport: "Export",
+  labelExportPng: "Export PNG",
+  labelExportCsv: "Export CSV",
 
   footer: "Source: Office National des Statistiques (ONS) \u2014 www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes Economiques, ENEM, RGPH)",
   kpiOilProd: "Oil Production",
@@ -1849,6 +1870,16 @@ const fr: Dictionary = {
   labelQuintileShare: "Quintile inf. %",
   labelRemittanceCost: "Coût envois de fonds %",
   labelSdgSource: "Source : VNR 2026 – Rapport National Volontaire, Comité intersectoriel ODD, ONS",
+
+  labelSearch: "Rechercher",
+  labelSearchPlaceholder: "Rechercher indicateurs, graphiques, ODD...",
+  labelSearchNoResults: "Aucun résultat trouvé.",
+  labelTheme: "Thème",
+  labelThemeLight: "Clair",
+  labelThemeDark: "Sombre",
+  labelExport: "Exporter",
+  labelExportPng: "Exporter PNG",
+  labelExportCsv: "Exporter CSV",
 
   footer: "Source : Office National des Statistiques (ONS) \u2014 www.ons.dz | Toutes les donn\u00e9es issues des publications ONS (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes \u00c9conomiques, ENEM, RGPH)",
   kpiOilProd: "Production de Pétrole",
@@ -2650,6 +2681,16 @@ const ar: Dictionary = {
   labelQuintileShare: "حصة الخمسي",
   labelRemittanceCost: "تكلفة الحوالة",
   labelSdgSource: "المصدر: ONS ومراجع الأهداف",
+
+  labelSearch: "بحث",
+  labelSearchPlaceholder: "البحث عن مؤشرات، رسوم بيانية، أهداف...",
+  labelSearchNoResults: "لم يتم العثور على نتائج.",
+  labelTheme: "المظهر",
+  labelThemeLight: "فاتح",
+  labelThemeDark: "داكن",
+  labelExport: "تصدير",
+  labelExportPng: "تصدير PNG",
+  labelExportCsv: "تصدير CSV",
 };
 
 // ─── DICTIONARY MAP ───────────────────────────────────────────────────────────
