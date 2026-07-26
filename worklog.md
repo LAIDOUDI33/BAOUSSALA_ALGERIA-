@@ -106,3 +106,31 @@ Stage Summary:
 - Covers: poverty, health, water, energy, growth/employment, industry/innovation, cities, inequality, food, education, oceans, partnerships
 - Data sourced from VNR 2026 with 2015 baseline, 2024 recent values, and 2030 targets
 - All charts use Recharts with trilingual support (FR/AR/EN)
+
+---
+Task ID: 3
+Agent: Main Agent
+Task: HIGH PRIORITY — Immediate Fixes (KPI Readability, Search Coverage, SDG Charts)
+
+Work Log:
+- Enhanced KpiCard component: larger values (34px), uppercase bold titles, pill-shaped change badges with dark mode support, better icon sizing (w-5 h-5), increased min-height to 130px, white/dark-slate card backgrounds with subtle borders
+- Enhanced ChartCard component: bold titles with explicit dark mode text colors, subtle borders, white/dark-slate backgrounds
+- Fixed Global Search: expanded index from 9 tabs to all 16 tabs (added Hydrocarbons, Agriculture, Manufacturing, BTP, Services, Mining, Health, plus enriched Regional, Trade, Industry, Labor, Social with all their KPI/chart keys)
+- Increased search results limit from 20 to 50 and list height from 350px to 450px
+- Audited and fixed 9 SDG/ODD chart issues:
+  - SDG Progress bars: added proper margins, removed hardcoded light-mode fill color
+  - SDG Radar: removed hardcoded fill="#334155" on PolarAngleAxis ticks
+  - Housing chart: replaced dynamic i18n dataKey with static "units" key to prevent Recharts breakage
+  - Desalination bars: replaced invisible light-blue #93c5fd with solid blue + opacity
+  - Water Reuse area: added missing fillOpacity={0.4}
+  - Telecoms 4G bars: replaced invisible #bfdbfe with solid blue + opacity
+  - Innovation startup bars: replaced invisible #fed7aa with solid orange + opacity
+  - Oceans aquaculture bars: replaced invisible #ccfbf1 with solid teal + opacity
+  - Vision 2030 Roadmap: added dark mode variants for bg and border colors
+- Production build verified: compiled successfully with 0 errors
+
+Stage Summary:
+- All 90+ KPI cards now fully readable in both light and dark modes
+- Global search indexes 150+ indicators across all 16 tabs (was 9 tabs, ~60 indicators)
+- All 11 SDG charts render correctly with proper contrast and no invisible bars
+- 2 files modified: page.tsx, global-search.tsx
