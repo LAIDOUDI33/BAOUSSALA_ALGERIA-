@@ -1551,7 +1551,7 @@ export default function AlgeriaDashboard() {
                     <PolarGrid stroke="#e2e8f0" />
                     <PolarAngleAxis dataKey="key" tick={{ fontSize: 9 }} />
                     <PolarRadiusAxis tick={{ fontSize: 9 }} domain={[70, 135]} />
-                    <Radar name="2024" stroke={COLORS.emerald} fill={COLORS.emeraldLight} fillOpacity={0.4} strokeWidth={2} />
+                    <Radar name="2024" dataKey="value" stroke={COLORS.emerald} fill={COLORS.emeraldLight} fillOpacity={0.4} strokeWidth={2} />
                   </RadarChart>
                 </ChartContainer>
               </ChartCard>
