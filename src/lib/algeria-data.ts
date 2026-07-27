@@ -30,7 +30,7 @@ export const gdpAnnual = [
   { year: 2021, gdpBillionDzd: 24100, gdpBillionUsd: 155.0, growthPct: 3.4, perCapitaUsd: 3790, gniBillionUsd: 150.8 },
   { year: 2022, gdpBillionDzd: 26800, gdpBillionUsd: 180.0, growthPct: 3.1, perCapitaUsd: 4370, gniBillionUsd: 175.0 },
   { year: 2023, gdpBillionDzd: 28700, gdpBillionUsd: 195.0, growthPct: 2.8, perCapitaUsd: 4700, gniBillionUsd: 189.5 },
-  { year: 2024, gdpBillionDzd: 30500, gdpBillionUsd: 205.0, growthPct: 3.0, perCapitaUsd: 4900, gniBillionUsd: 199.0 },
+  { year: 2024, gdpBillionDzd: 35789, gdpBillionUsd: 267.0, growthPct: 3.6, perCapitaUsd: 5760, gniBillionUsd: 259.0 },
 ];
 
 // ─── 2. GDP BY SECTOR (% of GDP, 2010–2024) ────────────────────────────────
@@ -72,10 +72,10 @@ export const gdpQuarterly = [
   { period: "Q4-23", year: 2023, quarter: 4, growthPct: 2.9 },
   { period: "Q1-24", year: 2024, quarter: 1, growthPct: 2.8 },
   { period: "Q2-24", year: 2024, quarter: 2, growthPct: 3.2 },
-  { period: "Q3-24", year: 2024, quarter: 3, growthPct: 3.0 },
-  { period: "Q4-24", year: 2024, quarter: 4, growthPct: 3.1 },
-  { period: "Q1-25", year: 2025, quarter: 1, growthPct: 3.0 },
-  { period: "Q2-25", year: 2025, quarter: 2, growthPct: 3.3 },
+  { period: "Q3-24", year: 2024, quarter: 3, growthPct: 3.2 },
+  { period: "Q4-24", year: 2024, quarter: 4, growthPct: 4.2 },
+  { period: "Q1-25", year: 2025, quarter: 1, growthPct: 4.5 },
+  { period: "Q2-25", year: 2025, quarter: 2, growthPct: 3.9 },
 ];
 
 // ─── 4. CONSUMER PRICE INDEX (IPC) — Monthly 2020–2026 ────────────────────
@@ -144,10 +144,19 @@ export const cpiMonthly = [
   { month: "Feb-25", year: 2025, m: 2, ipc: 333.0, momPct: 0.5, yoyPct: 3.6, foodYoy: 3.7, coreYoy: 3.2 },
   { month: "Mar-25", year: 2025, m: 3, ipc: 335.2, momPct: 0.7, yoyPct: 3.5, foodYoy: 3.5, coreYoy: 3.1 },
   { month: "Apr-25", year: 2025, m: 4, ipc: 337.0, momPct: 0.5, yoyPct: 3.4, foodYoy: 3.3, coreYoy: 3.0 },
-  { month: "Jan-26", year: 2026, m: 1, ipc: 339.5, momPct: 0.8, yoyPct: 3.2, foodYoy: 3.1, coreYoy: 2.9 },
-  { month: "Feb-26", year: 2026, m: 2, ipc: 341.0, momPct: 0.4, yoyPct: 3.0, foodYoy: 2.9, coreYoy: 2.8 },
-  { month: "Mar-26", year: 2026, m: 3, ipc: 342.8, momPct: 0.5, yoyPct: 3.1, foodYoy: 3.0, coreYoy: 2.9 },
-  { month: "Apr-26", year: 2026, m: 4, ipc: 344.2, momPct: 0.4, yoyPct: 3.0, foodYoy: 2.8, coreYoy: 2.8 },
+  { month: "May-25", year: 2025, m: 5, ipc: 337.7, momPct: 0.2, yoyPct: 2.7, foodYoy: 2.5, coreYoy: 2.8 },
+  { month: "Jun-25", year: 2025, m: 6, ipc: 338.4, momPct: 0.2, yoyPct: 1.8, foodYoy: 1.5, coreYoy: 2.0 },
+  { month: "Jul-25", year: 2025, m: 7, ipc: 339.1, momPct: 0.2, yoyPct: -0.4, foodYoy: -1.2, coreYoy: 0.3 },
+  { month: "Aug-25", year: 2025, m: 8, ipc: 339.7, momPct: 0.2, yoyPct: 0.3, foodYoy: -0.5, coreYoy: 1.0 },
+  { month: "Sep-25", year: 2025, m: 9, ipc: 340.5, momPct: 0.2, yoyPct: 0.8, foodYoy: 0.0, coreYoy: 1.5 },
+  { month: "Oct-25", year: 2025, m: 10, ipc: 341.2, momPct: 0.2, yoyPct: 1.2, foodYoy: 0.5, coreYoy: 1.8 },
+  { month: "Nov-25", year: 2025, m: 11, ipc: 341.9, momPct: 0.2, yoyPct: 1.5, foodYoy: 0.8, coreYoy: 2.0 },
+  { month: "Dec-25", year: 2025, m: 12, ipc: 342.8, momPct: 0.3, yoyPct: 1.8, foodYoy: 1.0, coreYoy: 2.3 },
+  { month: "Jan-26", year: 2026, m: 1, ipc: 343.8, momPct: 0.3, yoyPct: 1.8, foodYoy: 1.1, coreYoy: 2.3 },
+  { month: "Feb-26", year: 2026, m: 2, ipc: 345.2, momPct: 0.4, yoyPct: 1.8, foodYoy: 1.0, coreYoy: 2.4 },
+  { month: "Mar-26", year: 2026, m: 3, ipc: 346.9, momPct: 0.5, yoyPct: 1.9, foodYoy: 1.1, coreYoy: 2.5 },
+  { month: "Apr-26", year: 2026, m: 4, ipc: 348.3, momPct: 0.4, yoyPct: 1.9, foodYoy: 1.0, coreYoy: 2.5 },
+  { month: "May-26", year: 2026, m: 5, ipc: 349.3, momPct: 0.3, yoyPct: 1.8, foodYoy: 0.9, coreYoy: 2.4 },
 ];
 
 // ─── 5. EXTERNAL TRADE (Annual 2000–2024) ──────────────────────────────────
@@ -176,7 +185,7 @@ export const tradeAnnual = [
   { year: 2021, exportsBn: 42.5, importsBn: 36.6, balanceBn: 5.9, hydroExports: 34.0, nonHydroExports: 8.5, hydroPct: 80.0 },
   { year: 2022, exportsBn: 60.0, importsBn: 39.6, balanceBn: 20.4, hydroExports: 51.0, nonHydroExports: 9.0, hydroPct: 85.0 },
   { year: 2023, exportsBn: 45.0, importsBn: 34.8, balanceBn: 10.2, hydroExports: 36.0, nonHydroExports: 9.0, hydroPct: 80.0 },
-  { year: 2024, exportsBn: 48.5, importsBn: 37.0, balanceBn: 11.5, hydroExports: 38.8, nonHydroExports: 9.7, hydroPct: 80.0 },
+  { year: 2024, exportsBn: 49.7, importsBn: 47.8, balanceBn: 1.9, hydroExports: 46.1, nonHydroExports: 3.6, hydroPct: 92.8 },
 ];
 
 // ─── 6. TRADE QUARTERLY (2023 Q1 – 2025 Q1) ───────────────────────────────
@@ -224,12 +233,12 @@ export const ipiQuarterly = [
   { period: "Q2-23", year: 2023, quarter: 2, ipi: 110.0, mining: 104.5, manufacturing: 104.5, energy: 114.0 },
   { period: "Q3-23", year: 2023, quarter: 3, ipi: 109.0, mining: 103.0, manufacturing: 104.0, energy: 113.0 },
   { period: "Q4-23", year: 2023, quarter: 4, ipi: 110.5, mining: 104.5, manufacturing: 105.0, energy: 114.5 },
-  { period: "Q1-24", year: 2024, quarter: 1, ipi: 111.0, mining: 105.0, manufacturing: 105.5, energy: 115.0 },
-  { period: "Q2-24", year: 2024, quarter: 2, ipi: 112.5, mining: 106.5, manufacturing: 107.0, energy: 116.0 },
-  { period: "Q3-24", year: 2024, quarter: 3, ipi: 111.5, mining: 105.5, manufacturing: 106.0, energy: 115.5 },
-  { period: "Q4-24", year: 2024, quarter: 4, ipi: 113.0, mining: 107.0, manufacturing: 107.5, energy: 117.0 },
-  { period: "Q1-25", year: 2025, quarter: 1, ipi: 113.5, mining: 107.0, manufacturing: 108.0, energy: 117.5 },
-  { period: "Q2-25", year: 2025, quarter: 2, ipi: 114.5, mining: 108.0, manufacturing: 109.0, energy: 118.0 },
+  { period: "Q1-24", year: 2024, quarter: 1, ipi: 113.5, mining: 106.0, manufacturing: 107.0, energy: 117.5 },
+  { period: "Q2-24", year: 2024, quarter: 2, ipi: 115.0, mining: 107.5, manufacturing: 108.5, energy: 118.5 },
+  { period: "Q3-24", year: 2024, quarter: 3, ipi: 114.0, mining: 106.0, manufacturing: 107.5, energy: 117.0 },
+  { period: "Q4-24", year: 2024, quarter: 4, ipi: 115.8, mining: 108.0, manufacturing: 109.5, energy: 119.0 },
+  { period: "Q1-25", year: 2025, quarter: 1, ipi: 116.5, mining: 108.5, manufacturing: 110.0, energy: 119.5 },
+  { period: "Q2-25", year: 2025, quarter: 2, ipi: 117.2, mining: 109.0, manufacturing: 111.0, energy: 120.0 },
 ];
 
 // ─── 9. UNEMPLOYMENT & LABOR MARKET (Annual 2010–2024) ─────────────────────
@@ -248,7 +257,7 @@ export const laborMarket = [
   { year: 2021, unemploymentPct: 12.6, activityRate: 42.5, employmentPop: 37.1, youthUnemp: 25.5, femalePartic: 15.8, informalPct: 45.5 },
   { year: 2022, unemploymentPct: 11.9, activityRate: 43.0, employmentPop: 37.9, youthUnemp: 24.0, femalePartic: 16.2, informalPct: 44.5 },
   { year: 2023, unemploymentPct: 11.3, activityRate: 43.5, employmentPop: 38.6, youthUnemp: 23.0, femalePartic: 16.8, informalPct: 43.8 },
-  { year: 2024, unemploymentPct: 10.8, activityRate: 44.0, employmentPop: 39.2, youthUnemp: 22.0, femalePartic: 17.2, informalPct: 43.0 },
+  { year: 2024, unemploymentPct: 9.7, activityRate: 44.5, employmentPop: 40.2, youthUnemp: 19.5, femalePartic: 17.5, informalPct: 43.0 },
 ];
 
 // ─── 10. DEMOGRAPHICS (Annual 2000–2024) ───────────────────────────────────
@@ -265,7 +274,7 @@ export const demographics = [
   { year: 2018, populationM: 42.2, growthRate: 1.5, urbanPct: 71.0, birthRate: 17.5, deathRate: 4.3, fertilityRate: 2.1, density: 17.8 },
   { year: 2020, populationM: 43.9, growthRate: 1.6, urbanPct: 72.5, birthRate: 17.2, deathRate: 4.4, fertilityRate: 2.1, density: 18.5 },
   { year: 2022, populationM: 45.3, growthRate: 1.5, urbanPct: 73.5, birthRate: 16.8, deathRate: 4.3, fertilityRate: 2.0, density: 19.1 },
-  { year: 2024, populationM: 46.8, growthRate: 1.4, urbanPct: 74.5, birthRate: 16.2, deathRate: 4.2, fertilityRate: 1.9, density: 19.7 },
+  { year: 2024, populationM: 46.3, growthRate: 1.4, urbanPct: 74.5, birthRate: 16.2, deathRate: 4.2, fertilityRate: 1.9, density: 19.5 },
 ];
 
 // ─── 11. POPULATION BY AGE GROUP (2024) ────────────────────────────────────
@@ -592,16 +601,16 @@ export const healthData = [
 
 // ─── HELPER: Latest values for KPI cards ────────────────────────────────────
 export const latestKPIs = {
-  gdpGrowth: 3.0,
-  inflation: 3.0,
-  unemployment: 10.8,
-  tradeBalance: 11.5,
-  populationM: 46.8,
-  investmentRate: 40.0,
+  gdpGrowth: 3.6,
+  inflation: 1.8,
+  unemployment: 9.7,
+  tradeBalance: 1.9,
+  populationM: 46.3,
+  investmentRate: 42.2,
   debtToGdp: 41.0,
   savingsRate: 42.5,
-  hydrocarbonShare: 80.0,
-  ipiChange: 1.8,
+  hydrocarbonShare: 92.8,
+  ipiChange: 4.8,
 };
 
 // ─── 25. REGIONAL DETAILED KPIs — ENHANCED ───────────────────────────────
@@ -1092,7 +1101,7 @@ export const worldBankGdpGrowth = [
   { year: 2021, wb: 3.4, ons: 3.6 },
   { year: 2022, wb: 3.4, ons: 3.1 },
   { year: 2023, wb: 2.4, ons: 2.5 },
-  { year: 2024, wb: 2.9, ons: 3.1 },
+  { year: 2024, wb: 2.9, ons: 3.6 },
 ];
 
 export const worldBankGdpPerCapita = [
@@ -1105,7 +1114,7 @@ export const worldBankGdpPerCapita = [
   { year: 2021, wb: 3750, ons: 3600 },
   { year: 2022, wb: 4250, ons: 4100 },
   { year: 2023, wb: 4560, ons: 4400 },
-  { year: 2024, wb: 4780, ons: 4620 },
+  { year: 2024, wb: 4780, ons: 5760 },
 ];
 
 export const worldBankInflation = [
@@ -1131,7 +1140,7 @@ export const worldBankUnemployment = [
   { year: 2021, wb: 12.4, ons: 12.2 },
   { year: 2022, wb: 11.9, ons: 11.7 },
   { year: 2023, wb: 12.2, ons: 12.0 },
-  { year: 2024, wb: 12.0, ons: 11.8 },
+  { year: 2024, wb: 12.0, ons: 9.7 },
 ];
 
 export const worldBankPopulation = [
@@ -1144,7 +1153,7 @@ export const worldBankPopulation = [
   { year: 2021, wb: 44.0, ons: 43.9 },
   { year: 2022, wb: 44.7, ons: 44.6 },
   { year: 2023, wb: 45.4, ons: 45.3 },
-  { year: 2024, wb: 46.2, ons: 46.0 },
+  { year: 2024, wb: 46.2, ons: 46.3 },
 ];
 
 // ─── World Bank exclusive KPIs (no ONS equivalent) ───────────────────────
@@ -1293,15 +1302,15 @@ export const worldBankEducationSpend = [
 // ─── Deviation summary (for KPI cards) ──────────────────────────────────
 export const worldBankKPIs = {
   gdpGrowthWb: 2.9,
-  gdpGrowthOns: 3.1,
+  gdpGrowthOns: 3.6,
   gdpPerCapitaWb: 4780,
-  gdpPerCapitaOns: 4620,
+  gdpPerCapitaOns: 5760,
   inflationWb: 5.8,
-  inflationOns: 5.6,
+  inflationOns: 4.0,
   unemploymentWb: 12.0,
-  unemploymentOns: 11.8,
+  unemploymentOns: 9.7,
   populationWb: 46.2,
-  populationOns: 46.0,
+  populationOns: 46.3,
   gniPerCapita: 4700,
   tradeGdpPct: 59.9,
   fdiPct: 1.5,
@@ -1318,10 +1327,10 @@ export const worldBankKPIs = {
 
 // ─── ONS vs WB deviation chart data ──────────────────────────────────────
 export const worldBankDeviation = [
-  { indicator: "Croissance PIB", wb: 2.9, ons: 3.1, diff: 0.2 },
-  { indicator: "Inflation %", wb: 5.8, ons: 5.6, diff: -0.2 },
-  { indicator: "Chomage %", wb: 12.0, ons: 11.8, diff: -0.2 },
-  { indicator: "PIB/hab ($)", wb: 4780, ons: 4620, diff: -160 },
-  { indicator: "Population (M)", wb: 46.2, ons: 46.0, diff: -0.2 },
+  { indicator: "Croissance PIB", wb: 2.9, ons: 3.6, diff: 0.7 },
+  { indicator: "Inflation %", wb: 5.8, ons: 4.0, diff: -1.8 },
+  { indicator: "Chomage %", wb: 12.0, ons: 9.7, diff: -2.3 },
+  { indicator: "PIB/hab ($)", wb: 4780, ons: 5760, diff: 980 },
+  { indicator: "Population (M)", wb: 46.2, ons: 46.3, diff: 0.1 },
   { indicator: "FBCF (% PIB)", wb: 41.0, ons: 42.2, diff: 1.2 },
 ];
