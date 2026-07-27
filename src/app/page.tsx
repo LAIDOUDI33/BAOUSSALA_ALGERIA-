@@ -50,7 +50,10 @@ import {
   MapPin, ArrowRightLeft, Landmark, Wheat, Briefcase,
   Wifi, Car, Pipette, TreePine, BookOpen, UserCheck, Home, Route,
   Target, CheckCircle2, CircleDot, Flame, Sun, Battery, Sunrise, Factory as FactoryIcon,
+  Brain, SlidersHorizontal, Bell,
 } from "lucide-react";
+
+import { DecisionSupportTab } from "@/components/tabs/DecisionSupportTab";
 
 // ─── Color palette ──────────────────────────────────────────────────────────
 const COLORS = {
@@ -138,6 +141,7 @@ export default function AlgeriaDashboard() {
     { val: "health", label: t.tabHealth, icon: Stethoscope },
     { val: "sdg", label: t.tabSdg, icon: Target },
     { val: "worldbank", label: t.tabWorldBank, icon: Landmark },
+    { val: "sad", label: t.tabSad, icon: Brain },
   ];
 
   return (
@@ -2388,6 +2392,10 @@ export default function AlgeriaDashboard() {
             </div>
 
             <p className="text-xs text-muted-foreground">{t.labelWbSource}</p>
+          </TabsContent>
+
+          <TabsContent value="sad" className="space-y-5">
+            <DecisionSupportTab t={t} />
           </TabsContent>
         </Tabs>
 

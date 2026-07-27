@@ -1,22 +1,21 @@
-# Worklog
+# Work Log
 
 ---
 Task ID: 1
-Agent: Main
-Task: Add World Bank tab with KPIs and ONS comparison to BAOUSSALA ALGERIA dashboard
+Agent: Main Agent
+Task: Implement 3 Decision Support System (SAD) modules — Forecasting, What-If Simulation, Intelligent Alerts
 
 Work Log:
-- Synced local repo with remote (git reset --hard origin/main)
-- Added 14 World Bank datasets to algeria-data.ts (GDP growth, inflation, unemployment, population, GNI, trade, FDI, debt, poverty, life expectancy, CO2, energy, internet, education/health spending)
-- Added 70+ i18n translation keys (interface + EN/FR/AR)
-- Created new 17th tab "Banque Mondiale" in page.tsx with 8 KPIs and 13 charts
-- 5 WB vs ONS comparison charts (GDP growth, inflation, unemployment, GDP/capita, FBCF)
-- 7 WB-exclusive charts (GNI, trade/GDP, FDI, external debt, poverty, CO2, energy, internet, edu/health)
-- Deviation summary table with color-coded differences
-- Updated global-search.tsx with 25+ new indicators
-- Build: 0 errors, pushed to GitHub
+- Analyzed existing project structure (page.tsx 2400+ lines, 16 tabs, i18n FR/AR/EN)
+- Created `src/lib/forecasting-engine.ts` — Linear regression + Holt's exponential smoothing, 3 scenarios (optimistic/baseline/pessimistic), What-If simulation with 6 economic levers (oil price, oil production, gas price, non-HC growth, import growth, public investment)
+- Created `src/lib/alert-engine.ts` — Z-score anomaly detection, threshold-based alerts, trend detection (consecutive deteriorating/improving), 6 default Algeria threshold configs
+- Created `src/components/tabs/DecisionSupportTab.tsx` — Full UI with 3 sub-tabs: Alerts (threshold display + active alerts list with severity badges), Forecast (6 selectable indicators, area chart with 3 scenarios + confidence intervals, scenario comparison cards), What-If (6 sliders with real-time simulation, 8 KPI results, impact bar chart)
+- Added 68 SAD translation keys to dictionaries.ts (FR/AR/EN)
+- Integrated SAD tab as 18th tab in page.tsx with Brain icon
+- Updated global-search.tsx with SAD search index
+- Verified: ESLint 0 errors, Agent Browser all 3 sub-tabs render correctly, 0 console errors, 10 alerts detected (5 critical + 5 warnings)
 
 Stage Summary:
-- Commit 631a264 pushed to main
-- 823 insertions across 6 files
-- All 17 tabs functional
+- 3 new files: forecasting-engine.ts, alert-engine.ts, DecisionSupportTab.tsx
+- 3 modified files: dictionaries.ts, page.tsx, global-search.tsx
+- Tab "Aide à la Décision" fully functional with FR/AR/EN support

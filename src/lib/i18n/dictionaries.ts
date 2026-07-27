@@ -753,6 +753,75 @@ export interface Dictionary {
   labelExport: string;
   labelExportPng: string;
   labelExportCsv: string;
+
+  // ─── DECISION SUPPORT (SAD) ───────────────────────────────────────
+  tabSad: string;
+  sadTabAlerts: string;
+  sadTabForecast: string;
+  sadTabWhatIf: string;
+  sadKpiAlerts: string;
+  sadKpiScenarios: string;
+  sadKpiScenariosSub: string;
+  sadKpiParams: string;
+  sadKpiParamsSub: string;
+  sadKpiIndicators: string;
+  sadKpiIndicatorsSub: string;
+  sadCriticalAlert: string;
+  sadRequiresAttention: string;
+  sadAlertBanner: string;
+  sadThresholdTitle: string;
+  sadThresholdSub: string;
+  sadAlertsTitle: string;
+  sadAlertsSub: string;
+  sadNoAlerts: string;
+  sadCritical: string;
+  sadWarning: string;
+  sadInfo: string;
+  sadTypeAnomaly: string;
+  sadTypeThreshold: string;
+  sadTypeTrend: string;
+  sadValue: string;
+  sadExpected: string;
+  sadForecastGdpGrowth: string;
+  sadForecastInflation: string;
+  sadForecastUnemp: string;
+  sadForecastTrade: string;
+  sadForecastIpi: string;
+  sadForecastDebt: string;
+  sadSelectIndicator: string;
+  sadForecastSub: string;
+  sadHistorical: string;
+  sadOptimistic: string;
+  sadBaseline: string;
+  sadPessimistic: string;
+  sadLastActual: string;
+  sadSimParams: string;
+  sadSimParamsSub: string;
+  sadOilPrice: string;
+  sadOilProd: string;
+  sadGasPrice: string;
+  sadNonHCGrowth: string;
+  sadImportGrowth: string;
+  sadPublicInvest: string;
+  sadReset: string;
+  sadSimGdpGrowth: string;
+  sadSimGdp: string;
+  sadSimTrade: string;
+  sadSimUnemp: string;
+  sadSimHydroRev: string;
+  sadSimExports: string;
+  sadSimFiscal: string;
+  sadSimDebt: string;
+  sadSimImpact: string;
+  sadSimImpactSub: string;
+  sadImpact: string;
+  sadRef: string;
+  sadFInd1: string;
+  sadFInd2: string;
+  sadFInd3: string;
+  sadFInd4: string;
+  sadFInd5: string;
+  sadFInd6: string;
 }
 
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
@@ -1495,6 +1564,75 @@ const en: Dictionary = {
   chartLifeExpLabel: "Life Expect.",
   chartVaccinationLabel: "Vaccination",
   chartPrimaryCareLabel: "Primary Care",
+
+  // ─── DECISION SUPPORT (SAD) ───────────────────────────────────────
+  tabSad: "Decision Support",
+  sadTabAlerts: "Alerts",
+  sadTabForecast: "Forecast",
+  sadTabWhatIf: "What-If",
+  sadKpiAlerts: "Active alerts",
+  sadKpiScenarios: "Scenarios",
+  sadKpiScenariosSub: "Optimistic / Baseline / Pessimistic",
+  sadKpiParams: "Sim. parameters",
+  sadKpiParamsSub: "6 adjustable levers",
+  sadKpiIndicators: "Monitored indicators",
+  sadKpiIndicatorsSub: "GDP, CPI, Unemployment, Trade, IPI, Debt",
+  sadCriticalAlert: "critical alert(s)",
+  sadRequiresAttention: "require your attention",
+  sadAlertBanner: "Statistical anomalies or threshold breaches detected on key indicators.",
+  sadThresholdTitle: "Monitoring thresholds",
+  sadThresholdSub: "Alert limit configuration by indicator",
+  sadAlertsTitle: "Detected alerts",
+  sadAlertsSub: "Statistical anomalies and threshold breaches",
+  sadNoAlerts: "No active alerts — all indicators within norms",
+  sadCritical: "Critical",
+  sadWarning: "Warning",
+  sadInfo: "Info",
+  sadTypeAnomaly: "Anomaly",
+  sadTypeThreshold: "Threshold",
+  sadTypeTrend: "Trend",
+  sadValue: "Value",
+  sadExpected: "Expected",
+  sadForecastGdpGrowth: "GDP Growth",
+  sadForecastInflation: "Inflation (Dec.)",
+  sadForecastUnemp: "Unemployment",
+  sadForecastTrade: "Trade Balance",
+  sadForecastIpi: "IPI (Q4)",
+  sadForecastDebt: "Debt/GDP",
+  sadSelectIndicator: "Select indicator to project",
+  sadForecastSub: "2025-2027 Projections — 3 scenarios",
+  sadHistorical: "Historical",
+  sadOptimistic: "Optimistic",
+  sadBaseline: "Baseline",
+  sadPessimistic: "Pessimistic",
+  sadLastActual: "Last actual",
+  sadSimParams: "Simulation parameters",
+  sadSimParamsSub: "Adjust economic levers and observe real-time impact",
+  sadOilPrice: "Oil price (USD/barrel)",
+  sadOilProd: "Oil production (Mb/d)",
+  sadGasPrice: "Gas price (USD/mmbtu)",
+  sadNonHCGrowth: "Non-hydrocarbon growth (%)",
+  sadImportGrowth: "Import growth (%)",
+  sadPublicInvest: "Public investment (% GDP)",
+  sadReset: "Reset",
+  sadSimGdpGrowth: "GDP Growth",
+  sadSimGdp: "GDP (Bn DZD)",
+  sadSimTrade: "Trade Balance",
+  sadSimUnemp: "Unemployment",
+  sadSimHydroRev: "HC Revenue",
+  sadSimExports: "Exports",
+  sadSimFiscal: "Fiscal Revenue",
+  sadSimDebt: "Debt/GDP",
+  sadSimImpact: "Simulation impact vs reference scenario",
+  sadSimImpactSub: "Deviations induced by adjusted parameters",
+  sadImpact: "Impact",
+  sadRef: "ref",
+  sadFInd1: "GDP Growth",
+  sadFInd2: "Inflation",
+  sadFInd3: "Unemployment",
+  sadFInd4: "Trade Balance",
+  sadFInd5: "IPI",
+  sadFInd6: "Debt/GDP",
 };
 
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
@@ -2237,6 +2375,75 @@ const fr: Dictionary = {
   chartLifeExpLabel: "Espérance",
   chartVaccinationLabel: "Vaccination",
   chartPrimaryCareLabel: "Soins Primaires",
+
+  // ─── DECISION SUPPORT (SAD) ───────────────────────────────────────
+  tabSad: "Aide à la Décision",
+  sadTabAlerts: "Alertes",
+  sadTabForecast: "Prévisions",
+  sadTabWhatIf: "Simulation",
+  sadKpiAlerts: "Alertes actives",
+  sadKpiScenarios: "Scénarios",
+  sadKpiScenariosSub: "Optimiste / Baseline / Pessimiste",
+  sadKpiParams: "Paramètres sim.",
+  sadKpiParamsSub: "6 leviers ajustables",
+  sadKpiIndicators: "Indicateurs surveillés",
+  sadKpiIndicatorsSub: "PIB, IPC, Chômage, Commerce, IPI, Dette",
+  sadCriticalAlert: "alerte(s) critique(s)",
+  sadRequiresAttention: "requièrent votre attention",
+  sadAlertBanner: "Des anomalies statistiques ou des dépassements de seuils ont été détectés sur les indicateurs clés.",
+  sadThresholdTitle: "Seuils de surveillance",
+  sadThresholdSub: "Configuration des limites d'alerte par indicateur",
+  sadAlertsTitle: "Alertes détectées",
+  sadAlertsSub: "Anomalies statistiques et franchissements de seuils",
+  sadNoAlerts: "Aucune alerte active — tous les indicateurs sont dans les normes",
+  sadCritical: "Critique",
+  sadWarning: "Avertissement",
+  sadInfo: "Info",
+  sadTypeAnomaly: "Anomalie",
+  sadTypeThreshold: "Seuil",
+  sadTypeTrend: "Tendance",
+  sadValue: "Valeur",
+  sadExpected: "Attendu",
+  sadForecastGdpGrowth: "Croissance PIB",
+  sadForecastInflation: "Inflation (déc.)",
+  sadForecastUnemp: "Chômage",
+  sadForecastTrade: "Solde Commercial",
+  sadForecastIpi: "IPI (Q4)",
+  sadForecastDebt: "Dette/PIB",
+  sadSelectIndicator: "Sélectionner l'indicateur à projeter",
+  sadForecastSub: "Projections 2025-2027 — 3 scénarios",
+  sadHistorical: "Historique",
+  sadOptimistic: "Optimiste",
+  sadBaseline: "Baseline",
+  sadPessimistic: "Pessimiste",
+  sadLastActual: "Dernière valeur réelle",
+  sadSimParams: "Paramètres de simulation",
+  sadSimParamsSub: "Ajustez les leviers économiques et observez l'impact en temps réel",
+  sadOilPrice: "Prix du pétrole (USD/baril)",
+  sadOilProd: "Production pétrolière (Mb/j)",
+  sadGasPrice: "Prix du gaz (USD/mmbtu)",
+  sadNonHCGrowth: "Croissance hors-hydrocarbures (%)",
+  sadImportGrowth: "Croissance des importations (%)",
+  sadPublicInvest: "Investissement public (% PIB)",
+  sadReset: "Réinitialiser",
+  sadSimGdpGrowth: "Croissance PIB",
+  sadSimGdp: "PIB (Mds DZD)",
+  sadSimTrade: "Solde Commercial",
+  sadSimUnemp: "Chômage",
+  sadSimHydroRev: "Revenus HC",
+  sadSimExports: "Exportations",
+  sadSimFiscal: "Recettes fiscales",
+  sadSimDebt: "Dette/PIB",
+  sadSimImpact: "Impact de la simulation vs scénario de référence",
+  sadSimImpactSub: "Comparaison des écarts induits par les paramètres ajustés",
+  sadImpact: "Impact",
+  sadRef: "réf",
+  sadFInd1: "Croissance PIB",
+  sadFInd2: "Inflation",
+  sadFInd3: "Chômage",
+  sadFInd4: "Solde Commercial",
+  sadFInd5: "IPI",
+  sadFInd6: "Dette/PIB",
 };
 
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
@@ -2974,6 +3181,75 @@ const ar: Dictionary = {
   labelExport: "تصدير",
   labelExportPng: "تصدير PNG",
   labelExportCsv: "تصدير CSV",
+
+  // ─── DECISION SUPPORT (SAD) ───────────────────────────────────────
+  tabSad: "دعم القرار",
+  sadTabAlerts: "تنبيهات",
+  sadTabForecast: "توقعات",
+  sadTabWhatIf: "محاكاة",
+  sadKpiAlerts: "تنبيهات نشطة",
+  sadKpiScenarios: "سيناريوهات",
+  sadKpiScenariosSub: "متفائل / مرجعي / متشائم",
+  sadKpiParams: "معلمات محاكاة",
+  sadKpiParamsSub: "6 روافع قابلة للتعديل",
+  sadKpiIndicators: "مؤشرات مراقبة",
+  sadKpiIndicatorsSub: "PIB, IPC, بطالة, تجارة, IPI, دين",
+  sadCriticalAlert: "تنبيه(ات) حرج(ة)",
+  sadRequiresAttention: "تتطلب اهتمامك",
+  sadAlertBanner: "تم اكتشاف شواذ إحصائية أو تجاوزات للحدود على المؤشرات الرئيسية.",
+  sadThresholdTitle: "حدود المراقبة",
+  sadThresholdSub: "إعداد حدود التنبيه حسب المؤشر",
+  sadAlertsTitle: "التنبيهات المكتشفة",
+  sadAlertsSub: "شواذ إحصائية وتجاوزات للحدود",
+  sadNoAlerts: "لا تنبيهات نشطة — جميع المؤشرات ضمن المعايير",
+  sadCritical: "حرج",
+  sadWarning: "تحذير",
+  sadInfo: "معلومة",
+  sadTypeAnomaly: "شذذ",
+  sadTypeThreshold: "حد",
+  sadTypeTrend: "اتجاه",
+  sadValue: "قيمة",
+  sadExpected: "متوقعة",
+  sadForecastGdpGrowth: "نمو الناتج المحلي",
+  sadForecastInflation: "التضخم (ديس.)",
+  sadForecastUnemp: "البطالة",
+  sadForecastTrade: "رصيد التجارة",
+  sadForecastIpi: "IPI (Q4)",
+  sadForecastDebt: "الدين/PIB",
+  sadSelectIndicator: "اختر المؤشر للتوقع",
+  sadForecastSub: "توقعات 2025-2027 — 3 سيناريوهات",
+  sadHistorical: "تاريخي",
+  sadOptimistic: "متفائل",
+  sadBaseline: "مرجعي",
+  sadPessimistic: "متشائم",
+  sadLastActual: "آخر قيمة فعلية",
+  sadSimParams: "معلمات المحاكاة",
+  sadSimParamsSub: "ضبط الروافع الاقتصادية ومراقبة التأثير",
+  sadOilPrice: "سعر النفط (دولار/برميل)",
+  sadOilProd: "الإنتاج النفطي (مب/ي)",
+  sadGasPrice: "سعر الغاز (دولار/mmbtu)",
+  sadNonHCGrowth: "النمو خارج المحركات (%)",
+  sadImportGrowth: "نمو الواردات (%)",
+  sadPublicInvest: "الاستثمار العام (% PIB)",
+  sadReset: "إعادة تعيين",
+  sadSimGdpGrowth: "نمو الناتج المحلي",
+  sadSimGdp: "PIB (مليار دج)",
+  sadSimTrade: "رصيد التجارة",
+  sadSimUnemp: "البطالة",
+  sadSimHydroRev: "إيرادات HC",
+  sadSimExports: "الصادرات",
+  sadSimFiscal: "الإيرادات الجبائية",
+  sadSimDebt: "الدين/PIB",
+  sadSimImpact: "تأثير المحاكاة vs السيناريو المرجعي",
+  sadSimImpactSub: "مقارنة الانحرافات الناتجة عن المعلمات",
+  sadImpact: "التأثير",
+  sadRef: "مرجع",
+  sadFInd1: "نمو PIB",
+  sadFInd2: "التضخم",
+  sadFInd3: "البطالة",
+  sadFInd4: "رصيد التجارة",
+  sadFInd5: "IPI",
+  sadFInd6: "الدين/PIB",
 };
 
 // ─── DICTIONARY MAP ───────────────────────────────────────────────────────────
