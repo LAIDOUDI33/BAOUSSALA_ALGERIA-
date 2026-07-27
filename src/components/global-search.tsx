@@ -48,6 +48,7 @@ function buildSearchIndex(t: Record<string, string>): SearchItem[] {
     { tab: "mining", keys: ["tabMiningEnergy", "chartMiningProd"], cat: "Mining & Energy" },
     { tab: "health", keys: ["tabHealth", "kpiHealthExpenditure", "kpiHealthCenters", "chartHealthInfrastructure", "chartHealthExpenditureTrend"], cat: "Health" },
     { tab: "sdg", keys: ["tabSdg", "kpiSdgOnTrack", "kpiSdgModerate", "kpiSdgInsufficient", "kpiSdgAchieved", "chartSdgProgress", "chartSdgRadar", "chartSdgEnergyMix", "chartSdgHousing", "chartSdgDesalination", "chartSdgWaterReuse", "chartSdgTelecoms", "chartSdgInnovation", "chartSdgFood", "chartSdgEducation", "chartSdgInequality", "chartSdgOceans", "chartSdgTimeline"], cat: "ODD / SDGs" },
+    { tab: "worldbank", keys: ["tabWorldBank", "kpiWbGdpGrowth", "kpiWbInflation", "kpiWbUnemployment", "kpiWbGniPerCapita", "kpiWbTradeGdp", "kpiWbFdi", "kpiWbExtDebt", "kpiWbLifeExp", "chartWbGdpGrowthComp", "chartWbInflationComp", "chartWbUnemploymentComp", "chartWbGdpPerCapitaComp", "chartWbPopulationComp", "chartWbGniTrend", "chartWbTradeGdp", "chartWbFdiTrend", "chartWbExtDebtTrend", "chartWbLifeExpTrend", "chartWbPovertyTrend", "chartWbCo2Trend", "chartWbEnergyAccess", "chartWbInternetTrend", "chartWbEduHealthSpend", "chartWbGcfComp", "chartWbDeviation"], cat: "Banque Mondiale / WB" },
   ];
 
   for (const tm of tabMap) {
