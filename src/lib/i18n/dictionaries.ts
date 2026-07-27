@@ -893,8 +893,8 @@ export interface Dictionary {
 
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
 const en: Dictionary = {
-  headerTitle: "Algeria Economic Dashboard",
-  headerSubtitle: "Office National des Statistiques (ONS) — Data Science Analysis Platform",
+  headerTitle: "Baoussala-DZ",
+  headerSubtitle: "Plateforme Algérienne d'Aide à la Décision — ONS Data Analytics",
 
   tabMacro: "Macroeconomic",
   tabInflation: "Prices & Inflation",
@@ -1770,8 +1770,8 @@ const en: Dictionary = {
 
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
 const fr: Dictionary = {
-  headerTitle: "Tableau de Bord \u00c9conomique de l'Alg\u00e9rie",
-  headerSubtitle: "Office National des Statistiques (ONS) — Plateforme d'Analyse de Donn\u00e9es",
+  headerTitle: "Baoussala-DZ",
+  headerSubtitle: "Plateforme Algérienne d'Aide à la Décision — ONS Data Analytics",
 
   tabMacro: "Macro\u00e9conomie",
   tabInflation: "Prix & Inflation",
@@ -2647,8 +2647,8 @@ const fr: Dictionary = {
 
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
 const ar: Dictionary = {
-  headerTitle: "\u0644\u0648\u062d\u0629 \u0627\u0644\u0642\u064a\u0627\u062f\u0629 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 \u0644\u0644\u062c\u0632\u0627\u0626\u0631",
-  headerSubtitle: "\u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) \u2014 \u0645\u0646\u0635\u0629 \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",
+  headerTitle: "Baoussala-DZ",
+  headerSubtitle: "منصة الجزائرية للقرار — ONS تحليل البيانات",
 
   tabMacro: "\u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0643\u0644\u064a",
   tabInflation: "\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u0648\u0627\u0644\u062a\u0636\u062e\u0645",

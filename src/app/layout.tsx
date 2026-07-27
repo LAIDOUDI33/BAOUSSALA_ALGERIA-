@@ -17,15 +17,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ONS Data Explorer — Algerian Economic Statistics",
-  description: "Comprehensive extraction and classification of Algerian economic statistics from the Office National des Statistiques (ONS) for post-analysis.",
-  keywords: ["Algeria", "ONS", "statistics", "economic data", "Office National des Statistiques", "GDP", "inflation", "trade"],
+  title: "Baoussala-DZ — Tableau de Bord Économique de l'Algérie",
+  description: "Baoussala-DZ : Plateforme algérienne d'aide à la décision basée sur les données de l'Office National des Statistiques (ONS). Tableau de bord économique complet.",
+  keywords: ["Baoussala-DZ", "Algérie", "Algeria", "ONS", "statistiques", "economic dashboard", "tableau de bord", "GDP", "inflation", "trade"],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/logo.svg",
   },
   openGraph: {
-    title: "ONS Data Explorer — Algerian Economic Statistics",
-    description: "Extract and analyze data from Algeria's National Statistics Office",
+    title: "Baoussala-DZ — Tableau de Bord Économique de l'Algérie",
+    description: "Baoussala-DZ : Plateforme algérienne d'aide à la décision économique",
     type: "website",
   },
 };

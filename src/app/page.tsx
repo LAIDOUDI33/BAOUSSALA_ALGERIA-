@@ -151,7 +151,7 @@ export default function AlgeriaDashboard() {
         <div className="max-w-[1400px] mx-auto px-4 py-5">
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center"><BarChart3 className="w-6 h-6" /></div>
+              <img src="/logo.svg" alt="DZ" className="w-10 h-10 rounded-xl" />
               <div>
                 <h1 className="text-xl sm:text-2xl font-bold tracking-tight">{t.headerTitle}</h1>
                 <p className="text-emerald-200/70 text-xs sm:text-sm">
