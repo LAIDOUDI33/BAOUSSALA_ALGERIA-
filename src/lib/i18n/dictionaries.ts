@@ -19,6 +19,7 @@ export interface Dictionary {
   tabFiscal: string;
   tabRegional: string;
   tabSdg: string;
+  tabWorldBank: string;
 
   // ─── MACRO ─────────────────────────────────────────────────────────
   kpiGdpGrowth: string;
@@ -672,6 +673,73 @@ export interface Dictionary {
   labelRemittanceCost: string;
   labelSdgSource: string;
 
+  // ─── WORLD BANK TAB ────────────────────────────────────────────────
+  kpiWbGdpGrowth: string;
+  kpiWbInflation: string;
+  kpiWbUnemployment: string;
+  kpiWbGniPerCapita: string;
+  kpiWbTradeGdp: string;
+  kpiWbFdi: string;
+  kpiWbExtDebt: string;
+  kpiWbLifeExp: string;
+  chartWbGdpGrowthComp: string;
+  chartWbGdpGrowthCompSub: string;
+  chartWbInflationComp: string;
+  chartWbInflationCompSub: string;
+  chartWbUnemploymentComp: string;
+  chartWbUnemploymentCompSub: string;
+  chartWbGdpPerCapitaComp: string;
+  chartWbGdpPerCapitaCompSub: string;
+  chartWbPopulationComp: string;
+  chartWbPopulationCompSub: string;
+  chartWbGniTrend: string;
+  chartWbGniTrendSub: string;
+  chartWbTradeGdp: string;
+  chartWbTradeGdpSub: string;
+  chartWbFdiTrend: string;
+  chartWbFdiTrendSub: string;
+  chartWbExtDebtTrend: string;
+  chartWbExtDebtTrendSub: string;
+  chartWbLifeExpTrend: string;
+  chartWbLifeExpTrendSub: string;
+  chartWbPovertyTrend: string;
+  chartWbPovertyTrendSub: string;
+  chartWbCo2Trend: string;
+  chartWbCo2TrendSub: string;
+  chartWbEnergyAccess: string;
+  chartWbEnergyAccessSub: string;
+  chartWbInternetTrend: string;
+  chartWbInternetTrendSub: string;
+  chartWbEduHealthSpend: string;
+  chartWbEduHealthSpendSub: string;
+  chartWbGcfComp: string;
+  chartWbGcfCompSub: string;
+  chartWbDeviation: string;
+  chartWbDeviationSub: string;
+  labelWbSource: string;
+  labelWb: string;
+  labelOns: string;
+  labelDeviation: string;
+  labelBnUsd: string;
+  labelMUsd: string;
+  labelPctPop: string;
+  labelTonsCapita: string;
+  labelPctFinalEnergy: string;
+  labelMobileSubs: string;
+  labelBroadband: string;
+  labelPctGdp: string;
+  labelPctGni: string;
+  labelYears: string;
+  labelPoverty215: string;
+  labelPoverty365: string;
+  labelPovertyNational: string;
+  labelMale: string;
+  labelFemale: string;
+  labelElectricity: string;
+  labelRenewable: string;
+  labelEduSpend: string;
+  labelHealthSpend: string;
+
   // ─── UI CONTROLS ─────────────────────────────────────────────────
   labelSearch: string;
   labelSearchPlaceholder: string;
@@ -1199,6 +1267,74 @@ const en: Dictionary = {
   labelQuintileShare: "Bottom Quintile %",
   labelRemittanceCost: "Remittance Cost %",
   labelSdgSource: "Source: VNR 2026 – Rapport National Volontaire, Comité intersectoriel ODD, ONS",
+
+  // World Bank Tab
+  tabWorldBank: "World Bank",
+  kpiWbGdpGrowth: "WB GDP Growth",
+  kpiWbInflation: "WB Inflation",
+  kpiWbUnemployment: "WB Unemployment",
+  kpiWbGniPerCapita: "GNI / Capita",
+  kpiWbTradeGdp: "Trade / GDP",
+  kpiWbFdi: "FDI Inflows",
+  kpiWbExtDebt: "External Debt",
+  kpiWbLifeExp: "Life Expectancy",
+  chartWbGdpGrowthComp: "GDP Growth — World Bank vs ONS",
+  chartWbGdpGrowthCompSub: "Annual GDP growth rate (%) — 2015–2024",
+  chartWbInflationComp: "Inflation — World Bank vs ONS",
+  chartWbInflationCompSub: "Consumer price inflation (%) — 2015–2024",
+  chartWbUnemploymentComp: "Unemployment — World Bank vs ONS",
+  chartWbUnemploymentCompSub: "Total labor force unemployment (%) — 2015–2024",
+  chartWbGdpPerCapitaComp: "GDP per Capita — World Bank vs ONS",
+  chartWbGdpPerCapitaCompSub: "Current USD — 2015–2024",
+  chartWbPopulationComp: "Population — World Bank vs ONS",
+  chartWbPopulationCompSub: "Total population (millions) — 2015–2024",
+  chartWbGniTrend: "GNI per Capita (Atlas Method)",
+  chartWbGniTrendSub: "Current USD — World Bank",
+  chartWbTradeGdp: "Trade as % of GDP",
+  chartWbTradeGdpSub: "Exports, Imports and Total — World Bank",
+  chartWbFdiTrend: "FDI Net Inflows (% of GDP)",
+  chartWbFdiTrendSub: "Foreign Direct Investment — World Bank",
+  chartWbExtDebtTrend: "External Debt Stocks (% of GNI)",
+  chartWbExtDebtTrendSub: "World Bank",
+  chartWbLifeExpTrend: "Life Expectancy at Birth",
+  chartWbLifeExpTrendSub: "Male, Female, Total — World Bank",
+  chartWbPovertyTrend: "Poverty Headcount Ratios",
+  chartWbPovertyTrendSub: "$2.15/day, $3.65/day, National line — World Bank",
+  chartWbCo2Trend: "CO₂ Emissions (metric tons/capita)",
+  chartWbCo2TrendSub: "Carbon dioxide emissions — World Bank",
+  chartWbEnergyAccess: "Energy Access & Renewables",
+  chartWbEnergyAccessSub: "Electricity access %, Renewable energy % — World Bank",
+  chartWbInternetTrend: "Digital Connectivity",
+  chartWbInternetTrendSub: "Internet, Mobile, Broadband % — World Bank",
+  chartWbEduHealthSpend: "Government Expenditure (% of GDP)",
+  chartWbEduHealthSpendSub: "Education & Health spending — World Bank",
+  chartWbGcfComp: "Gross Capital Formation — WB vs ONS",
+  chartWbGcfCompSub: "% of GDP — 2015–2024",
+  chartWbDeviation: "ONS vs World Bank — Deviation Summary",
+  chartWbDeviationSub: "Key 2024 indicators side-by-side comparison",
+  labelWbSource: "Source: World Bank Open Data (data.worldbank.org) — Compared with ONS (ons.dz)",
+  labelWb: "World Bank",
+  labelOns: "ONS",
+  labelDeviation: "Diff (ONS-WB)",
+  labelBnUsd: "Bn USD",
+  labelMUsd: "M USD",
+  labelPctPop: "% of Population",
+  labelTonsCapita: "Tons/Capita",
+  labelPctFinalEnergy: "% Final Energy",
+  labelMobileSubs: "Mobile Subs %",
+  labelBroadband: "Broadband %",
+  labelPctGdp: "% of GDP",
+  labelPctGni: "% of GNI",
+  labelYears: "Years",
+  labelPoverty215: "$2.15/day",
+  labelPoverty365: "$3.65/day",
+  labelPovertyNational: "National Line",
+  labelMale: "Male",
+  labelFemale: "Female",
+  labelElectricity: "Electricity Access",
+  labelRenewable: "Renewable Energy",
+  labelEduSpend: "Education",
+  labelHealthSpend: "Health",
 
   labelSearch: "Search",
   labelSearchPlaceholder: "Search indicators, charts, SDGs...",
@@ -1870,6 +2006,74 @@ const fr: Dictionary = {
   labelQuintileShare: "Quintile inf. %",
   labelRemittanceCost: "Coût envois de fonds %",
   labelSdgSource: "Source : VNR 2026 – Rapport National Volontaire, Comité intersectoriel ODD, ONS",
+
+  // World Bank Tab
+  tabWorldBank: "Banque Mondiale",
+  kpiWbGdpGrowth: "BM Croissance PIB",
+  kpiWbInflation: "BM Inflation",
+  kpiWbUnemployment: "BM Chômage",
+  kpiWbGniPerCapita: "RNB / Habitant",
+  kpiWbTradeGdp: "Commerce / PIB",
+  kpiWbFdi: "IDE Entrants",
+  kpiWbExtDebt: "Dette Extérieure",
+  kpiWbLifeExp: "Espérance de Vie",
+  chartWbGdpGrowthComp: "Croissance PIB — Banque Mondiale vs ONS",
+  chartWbGdpGrowthCompSub: "Taux de croissance annuel du PIB (%) — 2015–2024",
+  chartWbInflationComp: "Inflation — Banque Mondiale vs ONS",
+  chartWbInflationCompSub: "Inflation des prix à la consommation (%) — 2015–2024",
+  chartWbUnemploymentComp: "Chômage — Banque Mondiale vs ONS",
+  chartWbUnemploymentCompSub: "Taux de chômage (%) — 2015–2024",
+  chartWbGdpPerCapitaComp: "PIB par Habitant — Banque Mondiale vs ONS",
+  chartWbGdpPerCapitaCompSub: "USD courants — 2015–2024",
+  chartWbPopulationComp: "Population — Banque Mondiale vs ONS",
+  chartWbPopulationCompSub: "Population totale (millions) — 2015–2024",
+  chartWbGniTrend: "RNB par Habitant (méthode Atlas)",
+  chartWbGniTrendSub: "USD courants — Banque Mondiale",
+  chartWbTradeGdp: "Commerce en % du PIB",
+  chartWbTradeGdpSub: "Exportations, Importations et Total — Banque Mondiale",
+  chartWbFdiTrend: "IDE Nets Entrants (% du PIB)",
+  chartWbFdiTrendSub: "Investissement Étranger Direct — Banque Mondiale",
+  chartWbExtDebtTrend: "Stock de la Dette Extérieure (% du RNB)",
+  chartWbExtDebtTrendSub: "Banque Mondiale",
+  chartWbLifeExpTrend: "Espérance de Vie à la Naissance",
+  chartWbLifeExpTrendSub: "Hommes, Femmes, Total — Banque Mondiale",
+  chartWbPovertyTrend: "Taux de Pauvreté",
+  chartWbPovertyTrendSub: "2,15$/jour, 3,65$/jour, Seuil national — Banque Mondiale",
+  chartWbCo2Trend: "Émissions CO₂ (tonnes métriques/habitant)",
+  chartWbCo2TrendSub: "Émissions de dioxyde de carbone — Banque Mondiale",
+  chartWbEnergyAccess: "Accès à l'Énergie & Renouvelables",
+  chartWbEnergyAccessSub: "Accès électricité %, Énergie renouvelable % — Banque Mondiale",
+  chartWbInternetTrend: "Connectivité Numérique",
+  chartWbInternetTrendSub: "Internet, Mobile, Haut débit % — Banque Mondiale",
+  chartWbEduHealthSpend: "Dépenses Publiques (% du PIB)",
+  chartWbEduHealthSpendSub: "Dépenses Éducation & Santé — Banque Mondiale",
+  chartWbGcfComp: "Formation Brute de Capital — BM vs ONS",
+  chartWbGcfCompSub: "% du PIB — 2015–2024",
+  chartWbDeviation: "ONS vs Banque Mondiale — Écarts",
+  chartWbDeviationSub: "Comparaison côte à côte des indicateurs clés 2024",
+  labelWbSource: "Source : Banque Mondiale Open Data (data.worldbank.org) — Comparé avec ONS (ons.dz)",
+  labelWb: "Banque Mondiale",
+  labelOns: "ONS",
+  labelDeviation: "Écart (ONS-BM)",
+  labelBnUsd: "Md USD",
+  labelMUsd: "M USD",
+  labelPctPop: "% de la Population",
+  labelTonsCapita: "Tonnes/Hab",
+  labelPctFinalEnergy: "% Énergie Finale",
+  labelMobileSubs: "Abonnements Mobile %",
+  labelBroadband: "Haut Débit %",
+  labelPctGdp: "% du PIB",
+  labelPctGni: "% du RNB",
+  labelYears: "Années",
+  labelPoverty215: "2,15$/jour",
+  labelPoverty365: "3,65$/jour",
+  labelPovertyNational: "Seuil National",
+  labelMale: "Hommes",
+  labelFemale: "Femmes",
+  labelElectricity: "Accès Électricité",
+  labelRenewable: "Énergie Renouvelable",
+  labelEduSpend: "Éducation",
+  labelHealthSpend: "Santé",
 
   labelSearch: "Rechercher",
   labelSearchPlaceholder: "Rechercher indicateurs, graphiques, ODD...",

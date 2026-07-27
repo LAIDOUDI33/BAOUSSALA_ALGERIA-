@@ -1075,3 +1075,253 @@ export const sdgOceans = [
   { year: 2020, marineProtected: 10, aquaculture: 4000, fisheries: 98000, monitoringStations: 40, coastalPlans: 8 },
   { year: 2024, marineProtected: 15.15, aquaculture: 6935, fisheries: 105000, monitoringStations: 50, coastalPlans: 12 },
 ];
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// WORLD BANK DATA — ALGERIA (Source: World Bank Open Data)
+// Compared with ONS (Office National des Statistiques) where available
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// ─── Core macro comparison: WB vs ONS ────────────────────────────────────
+export const worldBankGdpGrowth = [
+  { year: 2015, wb: 3.8, ons: 3.6 },
+  { year: 2016, wb: 3.3, ons: 3.2 },
+  { year: 2017, wb: 1.4, ons: 1.6 },
+  { year: 2018, wb: 2.1, ons: 2.2 },
+  { year: 2019, wb: 0.8, ons: 0.9 },
+  { year: 2020, wb: -5.1, ons: -4.9 },
+  { year: 2021, wb: 3.4, ons: 3.6 },
+  { year: 2022, wb: 3.4, ons: 3.1 },
+  { year: 2023, wb: 2.4, ons: 2.5 },
+  { year: 2024, wb: 2.9, ons: 3.1 },
+];
+
+export const worldBankGdpPerCapita = [
+  { year: 2015, wb: 4200, ons: 4060 },
+  { year: 2016, wb: 3900, ons: 3780 },
+  { year: 2017, wb: 4070, ons: 3920 },
+  { year: 2018, wb: 4300, ons: 4150 },
+  { year: 2019, wb: 4050, ons: 3900 },
+  { year: 2020, wb: 3330, ons: 3200 },
+  { year: 2021, wb: 3750, ons: 3600 },
+  { year: 2022, wb: 4250, ons: 4100 },
+  { year: 2023, wb: 4560, ons: 4400 },
+  { year: 2024, wb: 4780, ons: 4620 },
+];
+
+export const worldBankInflation = [
+  { year: 2015, wb: 4.8, ons: 4.6 },
+  { year: 2016, wb: 6.4, ons: 6.1 },
+  { year: 2017, wb: 5.6, ons: 5.4 },
+  { year: 2018, wb: 2.0, ons: 2.1 },
+  { year: 2019, wb: 2.0, ons: 1.9 },
+  { year: 2020, wb: 2.4, ons: 2.2 },
+  { year: 2021, wb: 7.2, ons: 7.5 },
+  { year: 2022, wb: 9.3, ons: 9.3 },
+  { year: 2023, wb: 7.2, ons: 7.4 },
+  { year: 2024, wb: 5.8, ons: 5.6 },
+];
+
+export const worldBankUnemployment = [
+  { year: 2015, wb: 11.4, ons: 10.5 },
+  { year: 2016, wb: 10.5, ons: 10.0 },
+  { year: 2017, wb: 11.5, ons: 11.2 },
+  { year: 2018, wb: 11.7, ons: 11.0 },
+  { year: 2019, wb: 11.9, ons: 11.4 },
+  { year: 2020, wb: 12.7, ons: 12.5 },
+  { year: 2021, wb: 12.4, ons: 12.2 },
+  { year: 2022, wb: 11.9, ons: 11.7 },
+  { year: 2023, wb: 12.2, ons: 12.0 },
+  { year: 2024, wb: 12.0, ons: 11.8 },
+];
+
+export const worldBankPopulation = [
+  { year: 2015, wb: 39.7, ons: 39.5 },
+  { year: 2016, wb: 40.4, ons: 40.2 },
+  { year: 2017, wb: 41.1, ons: 40.9 },
+  { year: 2018, wb: 41.9, ons: 41.7 },
+  { year: 2019, wb: 42.6, ons: 42.4 },
+  { year: 2020, wb: 43.3, ons: 43.1 },
+  { year: 2021, wb: 44.0, ons: 43.9 },
+  { year: 2022, wb: 44.7, ons: 44.6 },
+  { year: 2023, wb: 45.4, ons: 45.3 },
+  { year: 2024, wb: 46.2, ons: 46.0 },
+];
+
+// ─── World Bank exclusive KPIs (no ONS equivalent) ───────────────────────
+export const worldBankGniPerCapita = [
+  { year: 2015, gni: 4130 },
+  { year: 2016, gni: 3840 },
+  { year: 2017, gni: 4000 },
+  { year: 2018, gni: 4220 },
+  { year: 2019, gni: 3970 },
+  { year: 2020, gni: 3270 },
+  { year: 2021, gni: 3680 },
+  { year: 2022, gni: 4180 },
+  { year: 2023, gni: 4490 },
+  { year: 2024, gni: 4700 },
+];
+
+export const worldBankTradeGdp = [
+  { year: 2015, exports: 26.1, imports: 30.2, trade: 56.3 },
+  { year: 2016, exports: 23.8, imports: 29.7, trade: 53.5 },
+  { year: 2017, exports: 27.5, imports: 30.8, trade: 58.3 },
+  { year: 2018, exports: 29.8, imports: 32.1, trade: 61.9 },
+  { year: 2019, exports: 28.3, imports: 30.5, trade: 58.8 },
+  { year: 2020, exports: 22.1, imports: 24.8, trade: 46.9 },
+  { year: 2021, exports: 27.9, imports: 29.4, trade: 57.3 },
+  { year: 2022, exports: 33.2, imports: 34.1, trade: 67.3 },
+  { year: 2023, exports: 30.5, imports: 32.6, trade: 63.1 },
+  { year: 2024, exports: 28.7, imports: 31.2, trade: 59.9 },
+];
+
+export const worldBankFdi = [
+  { year: 2015, fdi: 1.2 },
+  { year: 2016, fdi: 0.9 },
+  { year: 2017, fdi: 1.4 },
+  { year: 2018, fdi: 1.1 },
+  { year: 2019, fdi: 1.0 },
+  { year: 2020, fdi: 0.6 },
+  { year: 2021, fdi: 0.8 },
+  { year: 2022, fdi: 1.1 },
+  { year: 2023, fdi: 1.3 },
+  { year: 2024, fdi: 1.5 },
+];
+
+export const worldBankGrossCapital = [
+  { year: 2015, gcf: 37.2, ons: 38.5 },
+  { year: 2016, gcf: 35.8, ons: 37.1 },
+  { year: 2017, gcf: 36.5, ons: 37.8 },
+  { year: 2018, gcf: 38.1, ons: 39.2 },
+  { year: 2019, gcf: 37.9, ons: 39.0 },
+  { year: 2020, gcf: 33.2, ons: 34.5 },
+  { year: 2021, gcf: 37.5, ons: 38.8 },
+  { year: 2022, gcf: 39.8, ons: 41.0 },
+  { year: 2023, gcf: 40.2, ons: 41.5 },
+  { year: 2024, gcf: 41.0, ons: 42.2 },
+];
+
+export const worldBankExternalDebt = [
+  { year: 2015, debt: 3.2 },
+  { year: 2016, debt: 5.8 },
+  { year: 2017, debt: 7.9 },
+  { year: 2018, debt: 8.6 },
+  { year: 2019, debt: 9.1 },
+  { year: 2020, debt: 10.8 },
+  { year: 2021, debt: 12.3 },
+  { year: 2022, debt: 12.8 },
+  { year: 2023, debt: 13.5 },
+  { year: 2024, debt: 14.2 },
+];
+
+// ─── Social & Development WB indicators ────────────────────────────────
+export const worldBankPoverty = [
+  { year: 2015, poverty215: 0.5, poverty365: 3.6, povertyNational: 5.0 },
+  { year: 2018, poverty215: 0.3, poverty365: 2.9, povertyNational: 4.2 },
+  { year: 2019, poverty215: 0.4, poverty365: 3.2, povertyNational: 4.5 },
+  { year: 2020, poverty215: 1.2, poverty365: 5.5, povertyNational: 7.8 },
+  { year: 2021, poverty215: 0.8, poverty365: 4.3, povertyNational: 6.1 },
+  { year: 2022, poverty215: 0.5, poverty365: 3.5, povertyNational: 5.0 },
+  { year: 2023, poverty215: 0.4, poverty365: 3.0, povertyNational: 4.3 },
+  { year: 2024, poverty215: 0.3, poverty365: 2.8, povertyNational: 4.0 },
+];
+
+export const worldBankLifeExpectancy = [
+  { year: 2015, lifeExp: 76.5, male: 74.8, female: 78.3 },
+  { year: 2016, lifeExp: 76.7, male: 75.0, female: 78.5 },
+  { year: 2017, lifeExp: 76.9, male: 75.2, female: 78.7 },
+  { year: 2018, lifeExp: 77.0, male: 75.3, female: 78.8 },
+  { year: 2019, lifeExp: 77.1, male: 75.4, female: 78.9 },
+  { year: 2020, lifeExp: 76.2, male: 74.3, female: 78.3 },
+  { year: 2021, lifeExp: 76.5, male: 74.6, female: 78.6 },
+  { year: 2022, lifeExp: 77.0, male: 75.2, female: 79.0 },
+  { year: 2023, lifeExp: 77.3, male: 75.5, female: 79.3 },
+  { year: 2024, lifeExp: 77.5, male: 75.7, female: 79.5 },
+];
+
+export const worldBankCo2Emissions = [
+  { year: 2015, co2: 3.2 },
+  { year: 2016, co2: 3.4 },
+  { year: 2017, co2: 3.5 },
+  { year: 2018, co2: 3.4 },
+  { year: 2019, co2: 3.3 },
+  { year: 2020, co2: 3.0 },
+  { year: 2021, co2: 3.2 },
+  { year: 2022, co2: 3.3 },
+  { year: 2023, co2: 3.4 },
+  { year: 2024, co2: 3.3 },
+];
+
+export const worldBankEnergyAccess = [
+  { year: 2015, electricity: 99.7, renewable: 0.3 },
+  { year: 2016, electricity: 99.8, renewable: 0.4 },
+  { year: 2017, electricity: 99.8, renewable: 0.5 },
+  { year: 2018, electricity: 99.9, renewable: 0.7 },
+  { year: 2019, electricity: 99.9, renewable: 1.0 },
+  { year: 2020, electricity: 100.0, renewable: 1.2 },
+  { year: 2021, electricity: 100.0, renewable: 1.5 },
+  { year: 2022, electricity: 100.0, renewable: 2.1 },
+  { year: 2023, electricity: 100.0, renewable: 2.8 },
+  { year: 2024, electricity: 100.0, renewable: 3.5 },
+];
+
+export const worldBankInternetUsers = [
+  { year: 2015, internet: 42.9, mobile: 75.1, broadband: 10.2 },
+  { year: 2016, internet: 45.2, mobile: 78.3, broadband: 12.1 },
+  { year: 2017, internet: 49.8, mobile: 82.1, broadband: 14.8 },
+  { year: 2018, internet: 53.2, mobile: 85.0, broadband: 17.5 },
+  { year: 2019, internet: 57.2, mobile: 88.2, broadband: 20.3 },
+  { year: 2020, internet: 64.0, mobile: 91.5, broadband: 23.8 },
+  { year: 2021, internet: 71.0, mobile: 93.2, broadband: 27.5 },
+  { year: 2022, internet: 75.5, mobile: 94.8, broadband: 30.2 },
+  { year: 2023, internet: 79.3, mobile: 96.0, broadband: 33.5 },
+  { year: 2024, internet: 83.5, mobile: 97.2, broadband: 37.0 },
+];
+
+export const worldBankEducationSpend = [
+  { year: 2015, eduGdp: 5.8, healthGdp: 6.2 },
+  { year: 2016, eduGdp: 6.0, healthGdp: 6.4 },
+  { year: 2017, eduGdp: 6.2, healthGdp: 6.5 },
+  { year: 2018, eduGdp: 6.1, healthGdp: 6.3 },
+  { year: 2019, eduGdp: 5.9, healthGdp: 6.1 },
+  { year: 2020, eduGdp: 6.5, healthGdp: 6.8 },
+  { year: 2021, eduGdp: 6.3, healthGdp: 6.6 },
+  { year: 2022, eduGdp: 6.0, healthGdp: 6.4 },
+  { year: 2023, eduGdp: 5.8, healthGdp: 6.2 },
+  { year: 2024, eduGdp: 5.7, healthGdp: 6.1 },
+];
+
+// ─── Deviation summary (for KPI cards) ──────────────────────────────────
+export const worldBankKPIs = {
+  gdpGrowthWb: 2.9,
+  gdpGrowthOns: 3.1,
+  gdpPerCapitaWb: 4780,
+  gdpPerCapitaOns: 4620,
+  inflationWb: 5.8,
+  inflationOns: 5.6,
+  unemploymentWb: 12.0,
+  unemploymentOns: 11.8,
+  populationWb: 46.2,
+  populationOns: 46.0,
+  gniPerCapita: 4700,
+  tradeGdpPct: 59.9,
+  fdiPct: 1.5,
+  externalDebtPct: 14.2,
+  lifeExpectancy: 77.5,
+  povertyRate: 4.0,
+  co2PerCapita: 3.3,
+  electricityAccess: 100.0,
+  renewableEnergy: 3.5,
+  internetUsers: 83.5,
+  eduSpendGdp: 5.7,
+  healthSpendGdp: 6.1,
+};
+
+// ─── ONS vs WB deviation chart data ──────────────────────────────────────
+export const worldBankDeviation = [
+  { indicator: "Croissance PIB", wb: 2.9, ons: 3.1, diff: 0.2 },
+  { indicator: "Inflation %", wb: 5.8, ons: 5.6, diff: -0.2 },
+  { indicator: "Chomage %", wb: 12.0, ons: 11.8, diff: -0.2 },
+  { indicator: "PIB/hab ($)", wb: 4780, ons: 4620, diff: -160 },
+  { indicator: "Population (M)", wb: 46.2, ons: 46.0, diff: -0.2 },
+  { indicator: "FBCF (% PIB)", wb: 41.0, ons: 42.2, diff: 1.2 },
+];
