@@ -822,6 +822,73 @@ export interface Dictionary {
   sadFInd4: string;
   sadFInd5: string;
   sadFInd6: string;
+
+  // ─── ANALYTICS MODULES ─────────────────────────────────
+  sadTabAnalytics: string;
+  sadTabCorrelation: string;
+  sadTabBenchmark: string;
+  sadTabReports: string;
+  sadTabCustomDash: string;
+  sadCorrGDP: string;
+  sadCorrInflation: string;
+  sadCorrUnemp: string;
+  sadCorrTrade: string;
+  sadCorrIPI: string;
+  sadCorrDebt: string;
+  sadCorrOilPrice: string;
+  sadCorrOilRev: string;
+  sadCorrTitle: string;
+  sadCorrSub: string;
+  sadCorrTableInd: string;
+  sadCorrTopPairs: string;
+  sadCorrTopPairsSub: string;
+  sadBenchGrowth: string;
+  sadBenchInflation: string;
+  sadBenchUnemp: string;
+  sadBenchTrade: string;
+  sadBenchDebt: string;
+  sadBenchFdi: string;
+  sadBenchGni: string;
+  sadBenchEnergy: string;
+  sadBenchSelect: string;
+  sadBenchRanking: string;
+  sadBenchSub: string;
+  sadBenchRadarTitle: string;
+  sadBenchRadarSub: string;
+  sadRepMacro: string;
+  sadRepPrices: string;
+  sadRepLabor: string;
+  sadRepTrade: string;
+  sadRepRisks: string;
+  sadRepGdpGrowth: string;
+  sadRepUp: string;
+  sadRepGdpNom: string;
+  sadRepNonHC: string;
+  sadRepInflationDec: string;
+  sadRepDown: string;
+  sadRepDeflation: string;
+  sadRepFood: string;
+  sadRepUnemp: string;
+  sadRepActivity: string;
+  sadRepYouth: string;
+  sadRepExports: string;
+  sadRepImports: string;
+  sadRepBalance: string;
+  sadRepHydroShare: string;
+  sadRepRisk1: string;
+  sadRepRisk2: string;
+  sadRepRisk3: string;
+  sadRepAutoTitle: string;
+  sadRepAutoSub: string;
+  sadRepExport: string;
+  sadCustomSelect: string;
+  sadCustomSelected: string;
+  sadCustomEmpty: string;
+  sadCustomChart: string;
+  sadCustomChartLabel: string;
+  sadCustomDir: string;
+  sadCustomUp: string;
+  sadCustomDown: string;
 }
 
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
@@ -1633,6 +1700,72 @@ const en: Dictionary = {
   sadFInd4: "Trade Balance",
   sadFInd5: "IPI",
   sadFInd6: "Debt/GDP",
+  sadTabAnalytics: "Analytics",
+  sadTabCorrelation: "Correlations",
+  sadTabBenchmark: "Benchmarking",
+  sadTabReports: "Reports",
+  sadTabCustomDash: "Custom",
+  sadCorrGDP: "GDP Growth",
+  sadCorrInflation: "Inflation (Dec.)",
+  sadCorrUnemp: "Unemployment",
+  sadCorrTrade: "Trade Balance",
+  sadCorrIPI: "IPI",
+  sadCorrDebt: "Debt/GDP",
+  sadCorrOilPrice: "Oil Price",
+  sadCorrOilRev: "HC Revenue (Bn$)",
+  sadCorrTitle: "Correlation matrix",
+  sadCorrSub: "Pearson coefficients between main macroeconomic indicators (2010-2024)",
+  sadCorrTableInd: "Indicator",
+  sadCorrTopPairs: "Notable correlations",
+  sadCorrTopPairsSub: "Sorted by intensity",
+  sadBenchGrowth: "GDP Growth (%)",
+  sadBenchInflation: "Inflation (%)",
+  sadBenchUnemp: "Unemployment (%)",
+  sadBenchTrade: "Trade Balance (% GDP)",
+  sadBenchDebt: "Debt/GDP (%)",
+  sadBenchFdi: "FDI (% GDP)",
+  sadBenchGni: "GNI per capita ($)",
+  sadBenchEnergy: "Electricity access (%)",
+  sadBenchSelect: "Select indicator",
+  sadBenchRanking: "2024 Ranking",
+  sadBenchSub: "Comparison 2015-2024 (ONS, INS, CAPMAS, GASTAT)",
+  sadBenchRadarTitle: "Multi-indicator comparison (2024)",
+  sadBenchRadarSub: "Algeria vs regional peers",
+  sadRepMacro: "1. Macroeconomic summary",
+  sadRepPrices: "2. Prices and inflation",
+  sadRepLabor: "3. Labor market",
+  sadRepTrade: "4. Foreign trade",
+  sadRepRisks: "5. Watchpoints",
+  sadRepGdpGrowth: "GDP Growth",
+  sadRepUp: "up",
+  sadRepGdpNom: "Nominal GDP",
+  sadRepNonHC: "Non-HC Growth",
+  sadRepInflationDec: "Inflation Dec. 2024",
+  sadRepDown: "down",
+  sadRepDeflation: "Deflation",
+  sadRepFood: "Food inflation",
+  sadRepUnemp: "Unemployment",
+  sadRepActivity: "Activity rate",
+  sadRepYouth: "Youth unemployment",
+  sadRepExports: "Exports",
+  sadRepImports: "Imports",
+  sadRepBalance: "Trade balance",
+  sadRepHydroShare: "92.8pct HC",
+  sadRepRisk1: "Deflation",
+  sadRepRisk2: "HC dependence",
+  sadRepRisk3: "Informal employment",
+  sadRepAutoTitle: "Automated economic report Q3 2025",
+  sadRepAutoSub: "Key indicator summary based on official ONS data",
+  sadRepExport: "Export",
+  sadCustomSelect: "Select your indicators",
+  sadCustomSelected: "selected",
+  sadCustomEmpty: "Select at least one indicator to build your dashboard",
+  sadCustomChart: "Selected indicators chart",
+  sadCustomChartLabel: "Value",
+  sadCustomDir: "Direction",
+  sadCustomUp: "Increase desired",
+  sadCustomDown: "Decrease desired",
+
 };
 
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
@@ -2444,6 +2577,72 @@ const fr: Dictionary = {
   sadFInd4: "Solde Commercial",
   sadFInd5: "IPI",
   sadFInd6: "Dette/PIB",
+  sadTabAnalytics: "Analytique",
+  sadTabCorrelation: "Corrélations",
+  sadTabBenchmark: "Benchmarking",
+  sadTabReports: "Rapports",
+  sadTabCustomDash: "Perso.",
+  sadCorrGDP: "Croissance PIB",
+  sadCorrInflation: "Inflation (déc.)",
+  sadCorrUnemp: "Chômage",
+  sadCorrTrade: "Solde Commercial",
+  sadCorrIPI: "IPI",
+  sadCorrDebt: "Dette/PIB",
+  sadCorrOilPrice: "Prix pétrole",
+  sadCorrOilRev: "Rev. HC (Mds $)",
+  sadCorrTitle: "Matrice de corrélation",
+  sadCorrSub: "Coefficients de Pearson entre les principaux indicateurs macroéconomiques (2010-2024)",
+  sadCorrTableInd: "Indicateur",
+  sadCorrTopPairs: "Corrélations notables",
+  sadCorrTopPairsSub: "Classées par intensité",
+  sadBenchGrowth: "Croissance PIB (%)",
+  sadBenchInflation: "Inflation (%)",
+  sadBenchUnemp: "Chômage (%)",
+  sadBenchTrade: "Solde Commercial (% PIB)",
+  sadBenchDebt: "Dette/PIB (%)",
+  sadBenchFdi: "IDE (% PIB)",
+  sadBenchGni: "RNB/habitant ($)",
+  sadBenchEnergy: "Accès électricité (%)",
+  sadBenchSelect: "Sélectionner l’indicateur",
+  sadBenchRanking: "Classement 2024",
+  sadBenchSub: "Comparaison 2015-2024 (ONS, INS, CAPMAS, GASTAT)",
+  sadBenchRadarTitle: "Vue comparative multi-indicateurs (2024)",
+  sadBenchRadarSub: "Algérie vs pays de la région",
+  sadRepMacro: "1. Synthèse macroéconomique",
+  sadRepPrices: "2. Prix et inflation",
+  sadRepLabor: "3. Marché du travail",
+  sadRepTrade: "4. Commerce extérieur",
+  sadRepRisks: "5. Points de vigilance",
+  sadRepGdpGrowth: "Croissance PIB",
+  sadRepUp: "en hausse",
+  sadRepGdpNom: "PIB nominal",
+  sadRepNonHC: "Croissance hors-HC",
+  sadRepInflationDec: "Inflation déc. 2024",
+  sadRepDown: "en baisse",
+  sadRepDeflation: "Déflation",
+  sadRepFood: "Inflation alimentaire",
+  sadRepUnemp: "Chômage",
+  sadRepActivity: "Taux d’activité",
+  sadRepYouth: "Chômage jeunes",
+  sadRepExports: "Exportations",
+  sadRepImports: "Importations",
+  sadRepBalance: "Solde commercial",
+  sadRepHydroShare: "92.8% HC",
+  sadRepRisk1: "Déflation",
+  sadRepRisk2: "Dépendance HC",
+  sadRepRisk3: "Informel",
+  sadRepAutoTitle: "Rapport économique automatique T3 2025",
+  sadRepAutoSub: "Synthèse des indicateurs clés basée sur les données officielles ONS",
+  sadRepExport: "Exporter",
+  sadCustomSelect: "Sélectionner vos indicateurs",
+  sadCustomSelected: "sélectionnés",
+  sadCustomEmpty: "Sélectionnez au moins un indicateur pour construire votre tableau de bord",
+  sadCustomChart: "Évolution des indicateurs sélectionnés",
+  sadCustomChartLabel: "Valeur",
+  sadCustomDir: "Direction",
+  sadCustomUp: "Hausse souhaitée",
+  sadCustomDown: "Baisse souhaitée",
+
 };
 
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
@@ -3250,6 +3449,72 @@ const ar: Dictionary = {
   sadFInd4: "رصيد التجارة",
   sadFInd5: "IPI",
   sadFInd6: "الدين/PIB",
+  sadTabAnalytics: "تحليل",
+  sadTabCorrelation: "ارتباطات",
+  sadTabBenchmark: "مقارنة",
+  sadTabReports: "تقارير",
+  sadTabCustomDash: "مخصص",
+  sadCorrGDP: "نمو PIB",
+  sadCorrInflation: "التضخم",
+  sadCorrUnemp: "البطالة",
+  sadCorrTrade: "رصيد التجارة",
+  sadCorrIPI: "IPI",
+  sadCorrDebt: "الدين/PIB",
+  sadCorrOilPrice: "سعر النفط",
+  sadCorrOilRev: "إيرادات HC",
+  sadCorrTitle: "مصفوفة الارتباط",
+  sadCorrSub: "معاملات بيرسون (2010-2024)",
+  sadCorrTableInd: "مؤشر",
+  sadCorrTopPairs: "ارتباطات بارزة",
+  sadCorrTopPairsSub: "مرتبة حسب الشدة",
+  sadBenchGrowth: "نمو PIB (%)",
+  sadBenchInflation: "التضخم (%)",
+  sadBenchUnemp: "البطالة (%)",
+  sadBenchTrade: "رصيد التجارة (% PIB)",
+  sadBenchDebt: "الدين/PIB (%)",
+  sadBenchFdi: "استثمار (% PIB)",
+  sadBenchGni: "RNB/فرد ($)",
+  sadBenchEnergy: "وصول للكهرباء (%)",
+  sadBenchSelect: "اختر المؤشر",
+  sadBenchRanking: "ترتيب 2024",
+  sadBenchSub: "مقارن29 2015-2024",
+  sadBenchRadarTitle: "مقارنة متعددة (2024)",
+  sadBenchRadarSub: "الجزائر vs دول المنطقة",
+  sadRepMacro: "1. ملخص اقتصادي",
+  sadRepPrices: "2. الأسعار",
+  sadRepLabor: "3. سوق العمل",
+  sadRepTrade: "4. التجارة الخارجية",
+  sadRepRisks: "5. نقاط رقابة",
+  sadRepGdpGrowth: "نمو PIB",
+  sadRepUp: "ارتفاع",
+  sadRepGdpNom: "PIB اسمي",
+  sadRepNonHC: "نمو خارج HC",
+  sadRepInflationDec: "التضخم ديس. 2024",
+  sadRepDown: "انخفاض",
+  sadRepDeflation: "انكماش",
+  sadRepFood: "تضخم الغذاء",
+  sadRepUnemp: "البطالة",
+  sadRepActivity: "معدل النشا",
+  sadRepYouth: "بطالة الشباب",
+  sadRepExports: "الصادرات",
+  sadRepImports: "الواردات",
+  sadRepBalance: "رصيد التجارة",
+  sadRepHydroShare: "92.8% HC",
+  sadRepRisk1: "انكماش",
+  sadRepRisk2: "التبعية HC",
+  sadRepRisk3: "العمل غير الرسمي",
+  sadRepAutoTitle: "تقرير اقتصادي T3 2025",
+  sadRepAutoSub: "ملخص المؤشرات ONS",
+  sadRepExport: "تصدير",
+  sadCustomSelect: "اختر مؤشراتك",
+  sadCustomSelected: "مختارة",
+  sadCustomEmpty: "اختر مؤشرات لبناء لوحتك",
+  sadCustomChart: "تطور المؤشرات",
+  sadCustomChartLabel: "قيمة",
+  sadCustomDir: "الاتجاه",
+  sadCustomUp: "ارتفاع مطلوب",
+  sadCustomDown: "انخفاض مطلوب",
+
 };
 
 // ─── DICTIONARY MAP ───────────────────────────────────────────────────────────

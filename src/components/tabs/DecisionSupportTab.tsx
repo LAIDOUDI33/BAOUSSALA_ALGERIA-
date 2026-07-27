@@ -59,7 +59,9 @@ const SAD_COLORS = {
 };
 
 // ─── Sub-tabs ────────────────────────────────────────────────────────────────
-type SubTab = "forecast" | "whatif" | "alerts";
+type SubTab = "forecast" | "whatif" | "alerts" | "analytics";
+
+import { AnalyticsModules } from "./AnalyticsModules";
 
 export function DecisionSupportTab({ t }: Props) {
   const [subTab, setSubTab] = useState<SubTab>("alerts");
@@ -214,6 +216,7 @@ export function DecisionSupportTab({ t }: Props) {
           { key: "alerts" as SubTab, icon: Bell, label: t.sadTabAlerts || "Alertes" },
           { key: "forecast" as SubTab, icon: Brain, label: t.sadTabForecast || "Prévisions" },
           { key: "whatif" as SubTab, icon: SlidersHorizontal, label: t.sadTabWhatIf || "Simulation" },
+          { key: "analytics" as SubTab, icon: BarChart3, label: t.sadTabAnalytics || "Analytique" },
         ]).map(tab => (
           <Button
             key={tab.key}
@@ -415,6 +418,9 @@ export function DecisionSupportTab({ t }: Props) {
           </div>
         </div>
       )}
+
+      {/* ──────────── ANALYTICS TAB ──────────── */}
+      {subTab === "analytics" && <AnalyticsModules t={t} />}
 
       {/* ──────────── WHAT-IF TAB ──────────── */}
       {subTab === "whatif" && (
