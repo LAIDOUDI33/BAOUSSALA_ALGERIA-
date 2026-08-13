@@ -783,6 +783,93 @@ export interface Dictionary {
   wilayaSource: string;
   footer: string;
 
+  // ─── INDUSTRY KPI TAB ─────────────────────────────────────────────
+  tabIndustryKpi: string;
+  indKpiOverview: string;
+  indKpiProduction: string;
+  indKpiInvestment: string;
+  indKpiExports: string;
+  indKpiAgrofood: string;
+  indKpiMfgValue: string;
+  indKpiMfgGDP: string;
+  indKpiIPI: string;
+  indKpiPubGrowth: string;
+  indKpiFDI: string;
+  indKpiProjects: string;
+  indKpiIndustryGDP: string;
+  indKpiEmpIndustry: string;
+  indKpiSMEs: string;
+  indKpiNonHydroExp: string;
+  indKpiPubProd2024: string;
+  indKpiPubProdQ2: string;
+  indKpiIPI2024: string;
+  indKpiConstructMat: string;
+  indKpiFDI2024: string;
+  indKpiProjects2024: string;
+  indKpiFDIProjects: string;
+  indKpiNewIndProjects: string;
+  indKpiTotalExp: string;
+  indKpiHydroExp: string;
+  indKpiHydroPct: string;
+  indKpiAgroEnt: string;
+  indKpiAgroJobs: string;
+  indKpiAgroValue: string;
+  indKpiAgroShare: string;
+  indChartMfgValue: string;
+  indChartMfgValueSub: string;
+  indChartGDPShare: string;
+  indChartGDPShareSub: string;
+  indChartEmployment: string;
+  indChartEmploymentSub: string;
+  indChartOilPrice: string;
+  indChartOilPriceSub: string;
+  indChartPubGrowth: string;
+  indChartPubGrowthSub: string;
+  indChartIPIBySector: string;
+  indChartIPIBySectorSub: string;
+  indChartQuarterlyGrowth: string;
+  indChartQuarterlyGrowthSub: string;
+  indChartSubSector: string;
+  indChartSubSectorSub: string;
+  indChartMfgPctGDP: string;
+  indChartMfgPctGDPSub: string;
+  indChartFDI: string;
+  indChartFDISub: string;
+  indChartProjects: string;
+  indChartProjectsSub: string;
+  indChartFDIProj: string;
+  indChartDomestic: string;
+  indChartSMEs: string;
+  indChartSMEsSub: string;
+  indChartSMETotal: string;
+  indChartSMEJobs: string;
+  indChartPublicEmp: string;
+  indChartPublicEmpSub: string;
+  indChartEmployees: string;
+  indChartExports: string;
+  indChartExportsSub: string;
+  indChartHydro: string;
+  indChartNonHydro: string;
+  indChartTopProducts: string;
+  indChartTopProductsSub: string;
+  indChartValue: string;
+  indChartGrowth: string;
+  indChartAgroEnterprises: string;
+  indChartAgroEnterprisesSub: string;
+  indChartEnterprises: string;
+  indChartAgroValue: string;
+  indChartAgroValueSub: string;
+  indChartAgroJobs: string;
+  indChartAgroJobsSub: string;
+  indChartJobs: string;
+  indSectorAgri: string;
+  indSectorIndustry: string;
+  indSectorServices: string;
+  indSectorEnergy: string;
+  indSectorMfg: string;
+  indSectorMining: string;
+  indSectorConstruction: string;
+
   // ─── SDG TAB ─────────────────────────────────────────────────────────
   kpiSdgOnTrack: string;
   kpiSdgModerate: string;
@@ -1514,6 +1601,91 @@ const en: Dictionary = {
   sadMethodHoltDesc: "Double exponential smoothing capturing level + trend.",
   sadDisclaimer: "Simulations are illustrative projections, not official forecasts.",
   tabWilaya: "Wilayas",
+  tabIndustryKpi: "Industry KPIs",
+  indKpiOverview: "Overview",
+  indKpiProduction: "Production",
+  indKpiInvestment: "Investment",
+  indKpiExports: "Exports",
+  indKpiAgrofood: "Agro-food",
+  indKpiMfgValue: "Mfg Value Added",
+  indKpiMfgGDP: "Mfg % of GDP",
+  indKpiIPI: "IPI Index (2024)",
+  indKpiPubGrowth: "Public Prod. Growth",
+  indKpiFDI: "FDI Inflow",
+  indKpiProjects: "Investment Projects",
+  indKpiIndustryGDP: "Industry % GDP",
+  indKpiEmpIndustry: "Industry Employment",
+  indKpiSMEs: "Total SMEs (2021)",
+  indKpiNonHydroExp: "Non-Hydro Exports",
+  indKpiPubProd2024: "Public Prod. 2024",
+  indKpiPubProdQ2: "Public Prod. Q2 2025",
+  indKpiIPI2024: "IPI 2024",
+  indKpiConstructMat: "Construction Mat. Q2",
+  indKpiFDI2024: "FDI 2024",
+  indKpiProjects2024: "Total Projects 2024",
+  indKpiFDIProjects: "FDI Projects",
+  indKpiNewIndProjects: "New Industrial Projects",
+  indKpiTotalExp: "Total Exports 2024",
+  indKpiHydroExp: "Hydrocarbon Exports",
+  indKpiHydroPct: "Hydrocarbon Share",
+  indKpiAgroEnt: "Agro-food Enterprises",
+  indKpiAgroJobs: "Agro-food Jobs",
+  indKpiAgroValue: "Agro-food Value",
+  indKpiAgroShare: "Share of Mfg Output",
+  indChartMfgValue: "Manufacturing Value Added",
+  indChartMfgValueSub: "World Bank, current USD billions",
+  indChartGDPShare: "GDP by Sector",
+  indChartGDPShareSub: "Share of gross domestic product",
+  indChartEmployment: "Employment by Sector",
+  indChartEmploymentSub: "% of total employment",
+  indChartOilPrice: "Crude Oil Price",
+  indChartOilPriceSub: "Algerian Saharan Blend, USD/barrel",
+  indChartPubGrowth: "Public Industrial Production Growth",
+  indChartPubGrowthSub: "Annual % change, ONS",
+  indChartIPIBySector: "IPI by Sector",
+  indChartIPIBySectorSub: "Base 2015 = 100",
+  indChartQuarterlyGrowth: "Quarterly IPI Growth",
+  indChartQuarterlyGrowthSub: "Annual % change",
+  indChartSubSector: "Sub-Sector Performance Q2 2025",
+  indChartSubSectorSub: "Year-on-year % change, ONS/APS",
+  indChartMfgPctGDP: "Manufacturing % of GDP",
+  indChartMfgPctGDPSub: "World Bank national accounts",
+  indChartFDI: "Foreign Direct Investment",
+  indChartFDISub: "CNUCED, billion USD",
+  indChartProjects: "Investment Projects (AAPI)",
+  indChartProjectsSub: "Registered investment intentions",
+  indChartFDIProj: "FDI",
+  indChartDomestic: "Domestic",
+  indChartSMEs: "SME / PME Evolution",
+  indChartSMEsSub: "Ministry of Industry bulletin",
+  indChartSMETotal: "Total SMEs (thousands)",
+  indChartSMEJobs: "Jobs (thousands)",
+  indChartPublicEmp: "Public Industrial Employment (SPMI)",
+  indChartPublicEmpSub: "ONS, Ministry of Industry",
+  indChartEmployees: "Employees",
+  indChartExports: "Industrial Exports Breakdown",
+  indChartExportsSub: "Billion USD",
+  indChartHydro: "Hydrocarbons",
+  indChartNonHydro: "Non-Hydrocarbons",
+  indChartTopProducts: "Top Industrial Products (2024)",
+  indChartTopProductsSub: "Billion USD",
+  indChartValue: "Value",
+  indChartGrowth: "Growth %",
+  indChartAgroEnterprises: "Agro-food Enterprises",
+  indChartAgroEnterprisesSub: "Ministry of Industry",
+  indChartEnterprises: "Enterprises",
+  indChartAgroValue: "Agro-food Production Value",
+  indChartAgroValueSub: "Billion USD",
+  indChartAgroJobs: "Agro-food Employment",
+  indChartAgroJobsSub: "Direct jobs",
+  indChartJobs: "Jobs",
+  indSectorAgri: "Agriculture",
+  indSectorIndustry: "Industry",
+  indSectorServices: "Services",
+  indSectorEnergy: "Energy",
+  indSectorMfg: "Manufacturing",
+  indSectorMining: "Mining",
+  indSectorConstruction: "Construction",
   wilayaKpiTotal: "Total Wilayas",
   wilayaKpiTotalSub: "48 historical + 21 new (2019+)",
   wilayaKpiWilayas: "wilayas",
@@ -2575,6 +2747,91 @@ const fr: Dictionary = {
   chartPrimaryCareLabel: "Soins Primaires",
 
   tabWilaya: "Wilayas",
+  tabIndustryKpi: "KPIs Industrie",
+  indKpiOverview: "Vue d'ensemble",
+  indKpiProduction: "Production",
+  indKpiInvestment: "Investissement",
+  indKpiExports: "Exportations",
+  indKpiAgrofood: "Agroalimentaire",
+  indKpiMfgValue: "Valeur ajout\u00e9e manufacturi\u00e8re",
+  indKpiMfgGDP: "Mfg % du PIB",
+  indKpiIPI: "IPI (2024)",
+  indKpiPubGrowth: "Croiss. prod. publique",
+  indKpiFDI: "IDE entrants",
+  indKpiProjects: "Projets d'investissement",
+  indKpiIndustryGDP: "Industrie % PIB",
+  indKpiEmpIndustry: "Emploi industriel",
+  indKpiSMEs: "Total PME (2021)",
+  indKpiNonHydroExp: "Exportations non-hydro",
+  indKpiPubProd2024: "Prod. publique 2024",
+  indKpiPubProdQ2: "Prod. publique T2 2025",
+  indKpiIPI2024: "IPI 2024",
+  indKpiConstructMat: "Mat. construction T2",
+  indKpiFDI2024: "IDE 2024",
+  indKpiProjects2024: "Total projets 2024",
+  indKpiFDIProjects: "Projets IDE",
+  indKpiNewIndProjects: "Nouveaux projets ind.",
+  indKpiTotalExp: "Exportations totales 2024",
+  indKpiHydroExp: "Exportations hydrocarbures",
+  indKpiHydroPct: "Part hydrocarbures",
+  indKpiAgroEnt: "Entreprises agroalim.",
+  indKpiAgroJobs: "Emplois agroalim.",
+  indKpiAgroValue: "Valeur agroalimentaire",
+  indKpiAgroShare: "Part production mfg",
+  indChartMfgValue: "Valeur ajout\u00e9e manufacturi\u00e8re",
+  indChartMfgValueSub: "Banque mondiale, milliards USD courants",
+  indChartGDPShare: "PIB par secteur",
+  indChartGDPShareSub: "Part du produit int\u00e9rieur brut",
+  indChartEmployment: "Emploi par secteur",
+  indChartEmploymentSub: "% de l'emploi total",
+  indChartOilPrice: "Prix du p\u00e9trole brut",
+  indChartOilPriceSub: "Saharan Blend alg\u00e9rien, USD/baril",
+  indChartPubGrowth: "Croissance production industrielle publique",
+  indChartPubGrowthSub: "Variation annuelle %, ONS",
+  indChartIPIBySector: "IPI par secteur",
+  indChartIPIBySectorSub: "Base 2015 = 100",
+  indChartQuarterlyGrowth: "Croissance trimestrielle IPI",
+  indChartQuarterlyGrowthSub: "Variation annuelle %",
+  indChartSubSector: "Performance sous-secteurs T2 2025",
+  indChartSubSectorSub: "Variation annuelle %, ONS/APS",
+  indChartMfgPctGDP: "Manufacture % du PIB",
+  indChartMfgPctGDPSub: "Comptes nationaux, Banque mondiale",
+  indChartFDI: "Investissement \u00e9tranger direct",
+  indChartFDISub: "CNUCED, milliards USD",
+  indChartProjects: "Projets d'investissement (AAPI)",
+  indChartProjectsSub: "Intentions d'investissement enregistr\u00e9es",
+  indChartFDIProj: "IDE",
+  indChartDomestic: "National",
+  indChartSMEs: "\u00c9volution PME",
+  indChartSMEsSub: "Bulletin du Minist\u00e8re de l'Industrie",
+  indChartSMETotal: "Total PME (milliers)",
+  indChartSMEJobs: "Emplois (milliers)",
+  indChartPublicEmp: "Emploi industriel public (SPMI)",
+  indChartPublicEmpSub: "ONS, Minist\u00e8re de l'Industrie",
+  indChartEmployees: "Employ\u00e9s",
+  indChartExports: "R\u00e9partition exportations industrielles",
+  indChartExportsSub: "Milliards USD",
+  indChartHydro: "Hydrocarbures",
+  indChartNonHydro: "Non-hydrocarbures",
+  indChartTopProducts: "Principaux produits industriels (2024)",
+  indChartTopProductsSub: "Milliards USD",
+  indChartValue: "Valeur",
+  indChartGrowth: "Croissance %",
+  indChartAgroEnterprises: "Entreprises agroalimentaires",
+  indChartAgroEnterprisesSub: "Minist\u00e8re de l'Industrie",
+  indChartEnterprises: "Entreprises",
+  indChartAgroValue: "Valeur production agroalimentaire",
+  indChartAgroValueSub: "Milliards USD",
+  indChartAgroJobs: "Emploi agroalimentaire",
+  indChartAgroJobsSub: "Emplois directs",
+  indChartJobs: "Emplois",
+  indSectorAgri: "Agriculture",
+  indSectorIndustry: "Industrie",
+  indSectorServices: "Services",
+  indSectorEnergy: "\u00c9nergie",
+  indSectorMfg: "Manufacture",
+  indSectorMining: "Mines",
+  indSectorConstruction: "Construction",
   wilayaKpiTotal: "Total Wilayas",
   wilayaKpiTotalSub: "48 historiques + 21 nouvelles (2019+)",
   wilayaKpiWilayas: "wilayas",
@@ -3429,6 +3686,91 @@ const ar: Dictionary = {
   sadDisclaimer: "المحاكاة توقعات توضيحية ليست رسمية.",
 
   tabWilaya: "الولايات",
+  tabIndustryKpi: "مؤشرات الصناعة",
+  indKpiOverview: "نظرة عامة",
+  indKpiProduction: "الإنتاج",
+  indKpiInvestment: "الاستثمار",
+  indKpiExports: "الصادرات",
+  indKpiAgrofood: "الصناعات الغذائية",
+  indKpiMfgValue: "القيمة المضافة للتصنيع",
+  indKpiMfgGDP: "التصنيع % من الناتج",
+  indKpiIPI: "مؤشر الإنتاج الصناعي 2024",
+  indKpiPubGrowth: "نمو الإنتاج العمومي",
+  indKpiFDI: "الاستثمار الأجنبي",
+  indKpiProjects: "مشاريع الاستثمار",
+  indKpiIndustryGDP: "الصناعة % من الناتج",
+  indKpiEmpIndustry: "التوظيف الصناعي",
+  indKpiSMEs: "إجمالي المؤسسات الصغيرة 2021",
+  indKpiNonHydroExp: "الصادرات غير المحروقات",
+  indKpiPubProd2024: "الإنتاج العمومي 2024",
+  indKpiPubProdQ2: "الإنتاج العمومي ث2 2025",
+  indKpiIPI2024: "مؤشر الإنتاج 2024",
+  indKpiConstructMat: "مواد البناء ث2",
+  indKpiFDI2024: "الاستثمار الأجنبي 2024",
+  indKpiProjects2024: "إجمالي المشاريع 2024",
+  indKpiFDIProjects: "مشاريع الاستثمار الأجنبي",
+  indKpiNewIndProjects: "مشاريع صناعية جديدة",
+  indKpiTotalExp: "إجمالي الصادرات 2024",
+  indKpiHydroExp: "صادرات المحروقات",
+  indKpiHydroPct: "حصة المحروقات",
+  indKpiAgroEnt: "مؤسسات غذائية",
+  indKpiAgroJobs: "توظيف غذائي",
+  indKpiAgroValue: "القيمة الغذائية",
+  indKpiAgroShare: "حصة الإنتاج التصنيعي",
+  indChartMfgValue: "القيمة المضافة للتصنيع",
+  indChartMfgValueSub: "البنك الدولي، مليارات دولار",
+  indChartGDPShare: "الناتج حسب القطاع",
+  indChartGDPShareSub: "الحصة من الناتج المحلي الإجمالي",
+  indChartEmployment: "التوظيف حسب القطاع",
+  indChartEmploymentSub: "% من إجمالي التوظيف",
+  indChartOilPrice: "سعر النفط الخام",
+  indChartOilPriceSub: "الخليط الجزائري، دولار/برميل",
+  indChartPubGrowth: "نمو الإنتاج الصناعي العمومي",
+  indChartPubGrowthSub: "التغير السنوي %، الديوان",
+  indChartIPIBySector: "مؤشر الإنتاج حسب القطاع",
+  indChartIPIBySectorSub: "القاعدة 2015 = 100",
+  indChartQuarterlyGrowth: "النمو الربعي لمؤشر الإنتاج",
+  indChartQuarterlyGrowthSub: "التغير السنوي %",
+  indChartSubSector: "أداء القطاعات الفرعية ث2 2025",
+  indChartSubSectorSub: "التغير السنوي %، الديوان/وأج",
+  indChartMfgPctGDP: "التصنيع % من الناتج",
+  indChartMfgPctGDPSub: "الحسابات الوطنية، البنك الدولي",
+  indChartFDI: "الاستثمار الأجنبي المباشر",
+  indChartFDISub: "الأونكتاد، مليارات دولار",
+  indChartProjects: "مشاريع الاستثمار (وآبي)",
+  indChartProjectsSub: "نوايا الاستثمار المسجلة",
+  indChartFDIProj: "استثمار أجنبي",
+  indChartDomestic: "وطني",
+  indChartSMEs: "تطور المؤسسات الصغيرة",
+  indChartSMEsSub: "نشاط وزارة الصناعة",
+  indChartSMETotal: "إجمالي المؤسسات (آلاف)",
+  indChartSMEJobs: "التوظيف (آلاف)",
+  indChartPublicEmp: "التوظيف الصناعي العمومي",
+  indChartPublicEmpSub: "الديوان، وزارة الصناعة",
+  indChartEmployees: "الموظفون",
+  indChartExports: "توزيع الصادرات الصناعية",
+  indChartExportsSub: "مليارات دولار",
+  indChartHydro: "المحروقات",
+  indChartNonHydro: "غير المحروقات",
+  indChartTopProducts: "أهم المنتجات الصناعية 2024",
+  indChartTopProductsSub: "مليارات دولار",
+  indChartValue: "القيمة",
+  indChartGrowth: "النمو %",
+  indChartAgroEnterprises: "المؤسسات الغذائية",
+  indChartAgroEnterprisesSub: "وزارة الصناعة",
+  indChartEnterprises: "المؤسسات",
+  indChartAgroValue: "القيمة الإنتاجية الغذائية",
+  indChartAgroValueSub: "مليارات دولار",
+  indChartAgroJobs: "التوظيف الغذائي",
+  indChartAgroJobsSub: "توظيف مباشر",
+  indChartJobs: "التوظيف",
+  indSectorAgri: "الفلاحة",
+  indSectorIndustry: "الصناعة",
+  indSectorServices: "الخدمات",
+  indSectorEnergy: "الطاقة",
+  indSectorMfg: "التصنيع",
+  indSectorMining: "المناجم",
+  indSectorConstruction: "البناء",
   wilayaKpiTotal: "إجمالي الولايات",
   wilayaKpiTotalSub: "48 تاريخية + 21 جديدة (2019+)",
   wilayaKpiWilayas: "ولاية",

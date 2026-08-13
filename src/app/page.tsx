@@ -23,6 +23,7 @@ import { useI18n } from "@/lib/i18n/context";
 import { LanguageSwitcher } from "@/components/language-switcher";
 
 import WilayaMapTab from "@/components/tabs/WilayaMapTab";
+import { IndustryKpiTab } from "@/components/tabs/IndustryKpiTab";
 import { DecisionSupportTab } from "@/components/tabs/DecisionSupportTab";
 import { BenchmarkingTab } from "@/components/tabs/BenchmarkingTab";
 import { ChartCard } from "@/components/chart-card";
@@ -115,6 +116,7 @@ export default function AlgeriaDashboard() {
     { val: "inflation", label: t.tabInflation, icon: Scale },
     { val: "trade", label: t.tabTrade, icon: Globe },
     { val: "industry", label: t.tabIndustry, icon: Factory },
+    { val: "industryKpi", label: t.tabIndustryKpi, icon: BarChart3 },
     { val: "labor", label: t.tabLabor, icon: Users },
     { val: "social", label: t.tabSocial, icon: Heart },
     { val: "fiscal", label: t.tabFiscal, icon: DollarSign },
@@ -471,6 +473,10 @@ export default function AlgeriaDashboard() {
                 </BarChart>
               </ChartContainer>
             </ChartCard>
+          </TabsContent>
+
+          <TabsContent value="industryKpi" className="space-y-5">
+            <IndustryKpiTab />
           </TabsContent>
 
           <TabsContent value="labor" className="space-y-5">
