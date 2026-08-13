@@ -24,6 +24,8 @@ import { LanguageSwitcher } from "@/components/language-switcher";
 
 import WilayaMapTab from "@/components/tabs/WilayaMapTab";
 import { DecisionSupportTab } from "@/components/tabs/DecisionSupportTab";
+import { BenchmarkingTab } from "@/components/tabs/BenchmarkingTab";
+import { ChartCard } from "@/components/chart-card";
 
 import {
   Card, CardContent, CardDescription, CardHeader, CardTitle,
@@ -97,17 +99,7 @@ function KpiCard({ title, value, unit, change, changeDir, icon: Icon, color }: {
   );
 }
 
-function ChartCard({ title, subtitle, children, className }: { title: string; subtitle?: string; children: React.ReactNode; className?: string }) {
-  return (
-    <Card className={`border-0 shadow-sm ${className || ""}`}>
-      <CardHeader className="pb-2 pt-4 px-4">
-        <CardTitle className="text-sm font-semibold">{title}</CardTitle>
-        {subtitle && <CardDescription className="text-xs">{subtitle}</CardDescription>}
-      </CardHeader>
-      <CardContent className="px-4 pb-4">{children}</CardContent>
-    </Card>
-  );
-}
+// ─── ChartCard is imported from @/components/chart-card (export: PNG/JPG/SVG/CSV) ─
 
 // MAIN PAGE
 export default function AlgeriaDashboard() {
@@ -136,6 +128,7 @@ export default function AlgeriaDashboard() {
     { val: "health", label: t.tabHealth, icon: Stethoscope },
     { val: "sdg", label: t.tabSdg, icon: Target },
     { val: "worldbank", label: t.tabWorldBank, icon: Landmark },
+    { val: "benchmarking", label: t.tabBenchmarking, icon: BarChart3 },
     { val: "sad", label: t.tabSad, icon: Brain },
     { val: "wilaya", label: t.tabWilaya, icon: MapIcon },
   ];
@@ -184,7 +177,7 @@ export default function AlgeriaDashboard() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartGdpGrowth} subtitle={t.chartGdpGrowthSub}>
+              <ChartCard title={t.chartGdpGrowth} subtitle={t.chartGdpGrowthSub} unit="%" data={gdpAnnual}>
                 <ChartContainer config={{ gdpBillionUsd: { label: t.chartGdpBnUsd, color: COLORS.emerald }, growthPct: { label: t.chartGrowthPct, color: COLORS.blue } }} className="h-[320px] w-full">
                   <ComposedChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -199,7 +192,7 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title={t.chartGdpSector} subtitle={t.chartGdpSectorSub}>
+              <ChartCard title={t.chartGdpSector} unit="%" data={gdpBySector} subtitle={t.chartGdpSectorSub}>
                 <ChartContainer config={{
                   agriculture: { label: t.sectorAgriculture, color: COLORS.emerald },
                   industry: { label: t.sectorIndustry, color: COLORS.blue },
@@ -222,7 +215,7 @@ export default function AlgeriaDashboard() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartQuarterlyGdp} subtitle={t.chartQuarterlyGdpSub}>
+              <ChartCard title={t.chartQuarterlyGdp} unit="%" data={gdpQuarterly} subtitle={t.chartQuarterlyGdpSub}>
                 <ChartContainer config={{ growthPct: { label: t.chartGrowthPct, color: COLORS.emerald } }} className="h-[280px] w-full">
                   <BarChart data={gdpQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -238,7 +231,7 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title={t.chartGdpPerCapita} subtitle={t.chartGdpPerCapitaSub}>
+              <ChartCard title={t.chartGdpPerCapita} unit="$" data={gdpAnnual} subtitle={t.chartGdpPerCapitaSub}>
                 <ChartContainer config={{ perCapitaUsd: { label: t.chartGdpCapita, color: COLORS.blue } }} className="h-[280px] w-full">
                   <AreaChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -261,7 +254,7 @@ export default function AlgeriaDashboard() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartCpiMonthly} subtitle={t.chartCpiMonthlySub}>
+              <ChartCard title={t.chartCpiMonthly} unit="Indice" data={cpiMonthly} subtitle={t.chartCpiMonthlySub}>
                 <ChartContainer config={{ yoyPct: { label: t.chartInflationYoy, color: COLORS.red }, foodYoy: { label: t.chartFoodYoy, color: COLORS.amber }, coreYoy: { label: t.chartCoreYoy, color: COLORS.blue } }} className="h-[340px] w-full">
                   <LineChart data={cpiMonthly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -290,7 +283,7 @@ export default function AlgeriaDashboard() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartCpiDivision} subtitle={t.chartCpiDivisionSub}>
+              <ChartCard title={t.chartCpiDivision} unit="%" data={cpiByDivision} subtitle={t.chartCpiDivisionSub}>
                 <ChartContainer config={{ y2024: { label: "2024 YoY %", color: COLORS.blue } }} className="h-[340px] w-full">
                   <BarChart data={cpiByDivision} layout="vertical" margin={{ top: 5, right: 20, left: 100, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -398,7 +391,7 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title={t.chartTradePartners} subtitle={t.chartTradePartnersSub}>
+              <ChartCard title={t.chartTradePartners} unit="Mds USD" data={tradeByPartner} subtitle={t.chartTradePartnersSub}>
                 <ChartContainer config={{
                   exports: { label: t.chartExports, color: COLORS.emerald },
                   imports: { label: t.chartImports, color: COLORS.red },
@@ -550,7 +543,7 @@ export default function AlgeriaDashboard() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartPopGrowth} subtitle={t.chartPopGrowthSub}>
+              <ChartCard title={t.chartPopGrowth} unit="M" data={demographics} subtitle={t.chartPopGrowthSub}>
                 <ChartContainer config={{ populationM: { label: t.chartPopulationM, color: COLORS.purple } }} className="h-[300px] w-full">
                   <AreaChart data={demographics} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -1379,7 +1372,7 @@ export default function AlgeriaDashboard() {
               <KpiCard title={t.kpiTractorFleet} value="160" unit="K" icon={Truck} color={COLORS.slate} change={3.2} changeDir="up" />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartCerealProd} subtitle={t.chartCerealProdSub}>
+              <ChartCard title={t.chartCerealProd} unit data={agricultureData} subtitle={t.chartCerealProdSub}>
                 <ChartContainer config={{ cerealProdMt: { label: t.chartCerealLabel, color: COLORS.emerald }, selfSufficCereals: { label: t.chartSelfSufficLabel, color: COLORS.amber } }} className="h-[320px] w-full">
                   <ComposedChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -1745,7 +1738,7 @@ export default function AlgeriaDashboard() {
               <KpiCard title={t.kpiPhosphate} value="1.5" unit="Mt" icon={Factory} color={COLORS.emerald} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartMiningProd} subtitle={t.chartMiningProdSub}>
+              <ChartCard title={t.chartMiningProd} unit data={miningEnergy} subtitle={t.chartMiningProdSub}>
                 <ChartContainer config={{
                   ironOreMt: { label: t.chartIronOreLabel, color: COLORS.amber },
                   phosphateMt: { label: t.chartPhosphateLabel, color: COLORS.emerald },
@@ -2134,7 +2127,7 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 3: WB vs ONS Comparison — GDP Growth + Inflation ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbVsOnsGdp} subtitle={t.chartWbVsOnsGdpSub}>
+              <ChartCard title={t.chartWbVsOnsGdp} unit="%" data={worldBankGdpGrowth} subtitle={t.chartWbVsOnsGdpSub}>
                 <ChartContainer config={{ wb: { label: t.labelWb, color: COLORS.cyan }, ons: { label: t.labelOns, color: COLORS.emerald } }} className="h-[300px] w-full">
                   <LineChart data={worldBankGdpGrowth} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2147,7 +2140,7 @@ export default function AlgeriaDashboard() {
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbVsOnsInflation} subtitle={t.chartWbVsOnsInflationSub}>
+              <ChartCard title={t.chartWbVsOnsInflation} unit="%" data={worldBankInflation} subtitle={t.chartWbVsOnsInflationSub}>
                 <ChartContainer config={{ wb: { label: t.labelWb, color: COLORS.red }, ons: { label: t.labelOns, color: COLORS.rose } }} className="h-[300px] w-full">
                   <LineChart data={worldBankInflation} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2164,7 +2157,7 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 4: WB vs ONS — Unemployment + GDP Per Capita ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbVsOnsUnemp} subtitle={t.chartWbVsOnsUnempSub}>
+              <ChartCard title={t.chartWbVsOnsUnemp} unit="%" data={worldBankUnemployment} subtitle={t.chartWbVsOnsUnempSub}>
                 <ChartContainer config={{ wb: { label: t.labelWb, color: COLORS.amber }, ons: { label: t.labelOns, color: COLORS.orange } }} className="h-[300px] w-full">
                   <LineChart data={worldBankUnemployment} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2177,7 +2170,7 @@ export default function AlgeriaDashboard() {
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbGdpCapita} subtitle={t.chartWbGdpCapitaSub}>
+              <ChartCard title={t.chartWbGdpCapita} unit="$" data={worldBankGdpPerCapita} subtitle={t.chartWbGdpCapitaSub}>
                 <ChartContainer config={{ wb: { label: t.labelWb, color: COLORS.cyan }, ons: { label: t.labelOns, color: COLORS.emerald } }} className="h-[300px] w-full">
                   <LineChart data={worldBankGdpPerCapita} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2194,7 +2187,7 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 5: WB-only — External Debt + Life Expectancy ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbExtDebt} subtitle={t.chartWbExtDebtSub}>
+              <ChartCard title={t.chartWbExtDebt} unit="% RNB" data={worldBankExternalDebt} subtitle={t.chartWbExtDebtSub}>
                 <ChartContainer config={{ debt: { label: t.wbKpiDebt, color: COLORS.rose } }} className="h-[300px] w-full">
                   <AreaChart data={worldBankExternalDebt} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2205,7 +2198,7 @@ export default function AlgeriaDashboard() {
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbLifeExp} subtitle={t.chartWbLifeExpSub}>
+              <ChartCard title={t.chartWbLifeExp} unit="Années" data={worldBankLifeExpectancy} subtitle={t.chartWbLifeExpSub}>
                 <ChartContainer config={{ male: { label: t.labelMale, color: COLORS.blue }, female: { label: t.labelFemale, color: COLORS.rose } }} className="h-[300px] w-full">
                   <AreaChart data={worldBankLifeExpectancy} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2222,7 +2215,7 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 6: Social & Environment — Poverty + CO2 ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbPoverty} subtitle={t.chartWbPovertySub}>
+              <ChartCard title={t.chartWbPoverty} unit="%" data={worldBankPoverty} subtitle={t.chartWbPovertySub}>
                 <ChartContainer config={{ poverty215: { label: t.labelPoverty215, color: COLORS.red }, poverty365: { label: t.labelPoverty365, color: COLORS.amber }, povertyNational: { label: t.labelPovertyNat, color: COLORS.slate } }} className="h-[300px] w-full">
                   <BarChart data={worldBankPoverty} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2236,7 +2229,7 @@ export default function AlgeriaDashboard() {
                   </BarChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbCo2} subtitle={t.chartWbCo2Sub}>
+              <ChartCard title={t.chartWbCo2} unit="t/hab" data={worldBankCo2Emissions} subtitle={t.chartWbCo2Sub}>
                 <ChartContainer config={{ co2: { label: t.labelCo2, color: COLORS.slate } }} className="h-[300px] w-full">
                   <BarChart data={worldBankCo2Emissions} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2255,7 +2248,7 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 7: Digital & Energy — Internet + Energy Access ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbInternetTrend} subtitle={t.chartWbInternetTrendSub}>
+              <ChartCard title={t.chartWbInternetTrend} unit="%" data={worldBankInternetUsers} subtitle={t.chartWbInternetTrendSub}>
                 <ChartContainer config={{ internet: { label: "Internet %", color: COLORS.blue }, mobile: { label: t.labelMobileSubs, color: COLORS.emerald }, broadband: { label: t.labelBroadband, color: COLORS.purple } }} className="h-[300px] w-full">
                   <ComposedChart data={worldBankInternetUsers} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2269,7 +2262,7 @@ export default function AlgeriaDashboard() {
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbEnergy} subtitle={t.chartWbEnergySub}>
+              <ChartCard title={t.chartWbEnergy} unit="%" data={worldBankEnergyAccess} subtitle={t.chartWbEnergySub}>
                 <ChartContainer config={{ electricity: { label: t.labelElectricity, color: COLORS.amber }, renewable: { label: t.labelRenewable, color: COLORS.emerald } }} className="h-[300px] w-full">
                   <ComposedChart data={worldBankEnergyAccess} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2287,7 +2280,7 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 8: Trade & Education ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbTradeFdi} subtitle={t.chartWbTradeFdiSub}>
+              <ChartCard title={t.chartWbTradeFdi} unit="% PIB" data={worldBankTradeGdp} subtitle={t.chartWbTradeFdiSub}>
                 <ChartContainer config={{ exports: { label: t.labelExports, color: COLORS.emerald }, imports: { label: t.labelImports, color: COLORS.red }, trade: { label: t.labelTradeOpenness, color: COLORS.cyan } }} className="h-[300px] w-full">
                   <ComposedChart data={worldBankTradeGdp} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2301,7 +2294,7 @@ export default function AlgeriaDashboard() {
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbEduHealthSpend} subtitle={t.chartWbEduHealthSpendSub}>
+              <ChartCard title={t.chartWbEduHealthSpend} unit="% PIB" data={worldBankEducationSpend} subtitle={t.chartWbEduHealthSpendSub}>
                 <ChartContainer config={{ eduGdp: { label: t.labelEduSpend, color: COLORS.blue }, healthGdp: { label: t.labelHealthSpend, color: COLORS.rose } }} className="h-[300px] w-full">
                   <LineChart data={worldBankEducationSpend} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2318,7 +2311,7 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 9: GCF Comparison + Deviation Summary ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbGcfComp} subtitle={t.chartWbGcfCompSub}>
+              <ChartCard title={t.chartWbGcfComp} unit="% PIB" data={worldBankGrossCapital} subtitle={t.chartWbGcfCompSub}>
                 <ChartContainer config={{ gcf: { label: t.labelWb, color: COLORS.cyan }, ons: { label: t.labelOns, color: COLORS.emerald } }} className="h-[300px] w-full">
                   <LineChart data={worldBankGrossCapital} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -2331,7 +2324,7 @@ export default function AlgeriaDashboard() {
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbDeviation} subtitle={t.chartWbDeviationSub}>
+              <ChartCard title={t.chartWbDeviation} unit data={worldBankDeviation} subtitle={t.chartWbDeviationSub}>
                 <div className="space-y-2">
                   {worldBankDeviation.map((d, i) => (
                     <div key={i} className="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50">
@@ -2347,6 +2340,9 @@ export default function AlgeriaDashboard() {
             </div>
 
             <p className="text-xs text-muted-foreground">{t.labelWbSource}</p>
+          </TabsContent>
+          <TabsContent value="benchmarking" className="space-y-5">
+            <BenchmarkingTab t={t} />
           </TabsContent>
           <TabsContent value="sad" className="space-y-5">
             <DecisionSupportTab t={t} />
