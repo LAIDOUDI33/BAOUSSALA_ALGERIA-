@@ -1,0 +1,5085 @@
+ الجمهورية الجزائرية
+الديمقراطية الشعبية 
+  République Algérienne Démocratique et Populaire 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bulletin d’information 
+Statistique  
+                
+            
+ 
+N°29  
+ 
+ 
+ 
+ 
+Edition novembre 2016 
+وزارة الصناعة و المناجم 
+Ministère de l’Industrie et des Mines 
+ 
+ 
+ 
+Direction Générale de la Veille Stratégique, 
+des Etudes et des Systèmes d’Information 
+ 
+Données du 1er semestre 2016 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 2 - 
+ 
+ 
+ 
+ 
+Abréviations 
+PME 
+ 
+ Petite et Moyenne Entreprise 
+EPE  
+ 
+Entreprise Publique Economique  
+Mds 
+ 
+Milliards  
+PIB  
+ 
+Produit Intérieur Brut 
+VA 
+ 
+Valeur Ajoutée 
+HH 
+ 
+Hors Hydrocarbures 
+ANGEM  
+Agence Nationale de Gestion du Micro Crédit 
+ANSEJ  
+Agence Nationale de Soutien à l’Emploi des Jeunes 
+ANDI   
+Agence Nationale de Développement de l’Investissement 
+CGCI-PME 
+Caisse de Garantie des Crédits d’Investissements-PME 
+FGAR   
+Fonds de Garantie des Crédits aux PME  
+CNAC   
+Caisse Nationale d’Assurance Chômage 
+ECOFIE :              Société d’études économiques et d’analyses financières du secteur public marchand 
+ 
+Avertissement  
+Source principale : Référentiels CNAS et CASNOS 
+ 
+ 
+Le Bulletin d’information statistique                    
+Participe à une meilleure visibilité de l’évolution des indicateurs économiques, 
+notamment, ceux relatifs à la démographie des PME. 
+ 
+La diffusion du présent document à une large échelle, y compris sur le Web, répond 
+aux préoccupations du ministère de mettre l’information utile à disposition d’un 
+maximum d’opérateurs et d’utilisateurs. 
+ 
+Nous tenons à exprimer notre reconnaissance                              
+Aux institutions publiques et aux structures déconcentrées du MIM qui contribuent 
+régulièrement à l’alimentation en données de ce Bulletin, devenu un périodique 
+diffusé tous les semestres. 
+ 
+Nous tenons à exprimer nos vifs remerciements                          
+Aux nombreux lecteurs qui nous ont fait part de leurs observations et suggestions. 
+ 
+ 
+Pour toute remarque ou suggestion, prière de nous contacter via l’adresse suivante :  
+ 
+dgvsesi@industrie.gov.dz 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 3 - 
+ 
+Sommaire  
+  
+ 
+Préambule ........................................................................................................................................ - 5 - 
+Chiffres clés au 30/06/2016 ........................................................................................................... - 8 - 
+I- POPULATION DES PME ............................................................................................................. - 9 - 
+1- Situation à la fin du 1e semestre 2016 ............................................................................................... - 9 - 
+2- Distribution .......................................................................................................................................... - 10 - 
+2.1 Par taille .................................................................................................................................................................. - 10 - 
+2.2 Par nature juridique ............................................................................................................................................... - 11 - 
+2.3 Par statut juridique et secteur d’activité .............................................................................................................. - 12 - 
+2.4 Par région ............................................................................................................................................................... - 13 - 
+2.5 Densité .................................................................................................................................................................... - 13 - 
+2.6 Evolution de la population globale des PME ..................................................................................................... - 14 - 
+2.7 Evolution des PME (personnes morales) par secteur d'activité ...................................................................... - 14 - 
+2.8 Evolution de l’emploi par type de PME ............................................................................................................... - 15 - 
+3- Demographie ....................................................................................................................................... - 15 - 
+3.1 Croissance .............................................................................................................................................................. - 15 - 
+3.2 Création de PME ................................................................................................................................................... - 16 - 
+3.3 Réactivation ............................................................................................................................................................ - 16 - 
+3.4 Radiation (mortalité) .............................................................................................................................................. - 16 - 
+II- STATISTIQUES DES PROGRAMMES D’APPUI À LA PME ..................................................- 19 - 
+1. Dispositif national d’appui à l’investissement (ANDI) .................................................................. - 19 - 
+1.1 Projets d’investissement déclarés par secteur d’activité.................................................................................. - 19 - 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers) .................................................................. - 20 - 
+1.3 Projets d’investissement déclarés par tranche d’effectif .................................................................................. - 20 - 
+2. Dispositifs locaux d’appui relevant du secteur de l’Industrie des Mines ................................. - 21 - 
+2.1 Etat de réalisation des Centres de Facilitation et Pépinières d’Entreprises. ................................................. - 21 - 
+2.2 Bilan d’activité des pépinières d’entreprises ...................................................................................................... - 21 - 
+2.3 Bilan d’activité des centres de facilitation ........................................................................................................... - 24 - 
+2.4 Activités du FGAR ................................................................................................................................................. - 25 - 
+2.5 Activités de la CGCI-PME (dispositif relevant du Ministère des finances) .................................................... - 27 - 
+3. Dispositifs Sociaux d’appui à la PME ............................................................................................. - 29 - 
+3.1 Dispositif « ANSEJ » ............................................................................................................................................. - 29 - 
+3.2 Dispositif « CNAC »............................................................................................................................................... - 30 - 
+3.3 Dispositif « ANGEM » ........................................................................................................................................... - 31 - 
+4. Dispositif national de mise à niveau ............................................................................................... - 32 - 
+4.1 Etat d’avancement du programme national de mise à niveau des PME ....................................................... - 32 - 
+4.2 Situation des conventions : .................................................................................................................................. - 33 - 
+III-ETUDE DU MIM SUR LA CONJONCTURE EN 2016 .............................................................- 34 - 
+IV- SITUATION ECONOMIQUE AU 2ème TRIMESTRE 2016 : ....................................................- 36 - 
+Comptes Economiques Nationaux ............................................................................................................................ - 36 - 
+Commerce extérieur .................................................................................................................................................... - 38 - 
+V- DONNEES SUR LES FACTEURS CLES DE L’INVESTISSEMENT......................................- 41 - 
+Foncier industriel .......................................................................................................................................................... - 41 - 
+VI-ANNEXES ...................................................................................................................................- 43 - 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 4 - 
+ 
+ 
+ 
+ 
+Liste des tableaux 
+Tableau 1 Population globale des PME à fin 2015 ..................................................................................................................... - 9 - 
+Tableau 2 typologie des PME ........................................................................................................................................................ - 10 - 
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité ..................................................................... - 11 - 
+Tableau 4 Professions libérales par secteur d’activité (Source : CASNOS)....................................................................... - 11 - 
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) ............. - 12 - 
+Tableau 6 Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) .......................................... - 12 - 
+Tableau 7 Concentration des PME privées (personnes morales) par région ..................................................................... - 13 - 
+Tableau 8 Densité des PME privées (personnes morales) par région ................................................................................ - 13 - 
+Tableau 9 Evolution de la population globale des PME (S1/2015 et S1/2016) ................................................................. - 14 - 
+Tableau 10 Evolution des PME privées (personnes morales) par secteur d’activité (S1 2015/ S1 2016)................... - 14 - 
+Tableau 11 Evolution des emplois déclarés par type de PME............................................................................................... - 15 - 
+Tableau 12 Mouvements constatés dans la démographie des PME privées ..................................................................... - 15 - 
+Tableau 13 Mortalité des PME privées ........................................................................................................................................ - 16 - 
+Tableau 14 Mortalité des PME privées par secteur d'activité (personnes morales) ......................................................... - 16 - 
+Tableau 15 La mortalité des PME privées dans le secteur des services ............................................................................ - 17 - 
+Tableau 16 La mortalité des PME dans le secteur de l’industrie .......................................................................................... - 17 - 
+Tableau 17 La mortalité des PME privées (personnes physiques) ...................................................................................... - 18 - 
+Tableau 18 Etats Récapitulatifs des projets d’investissement (S1/2016) ............................................................................ - 19 - 
+Tableau 19 FGAR : Situation globale des dossiers traités Avril 2004/ au 30/06/2016 ..................................................... - 25 - 
+Tableau 20  FGAR : Situation des dossiers traités par type de projets Avril 2004/ au 30/06/2016 .............................. - 26 - 
+Tableau 21 FGAR : Dossiers traités (du 01/01/2016 au 30/06/2016) .................................................................................. - 26 - 
+Tableau 22 FGAR : Dossiers traités par type de projets (du 01/01/2016 au 30/06/2016) .............................................. - 27 - 
+Tableau 23 CGCI-PME : Situation globale des garanties par secteur d’activité (au 31/12/2015) ................................. - 27 - 
+Tableau 24 CGCI-PME : Situation globale des garanties par région (au 30/06/2016) .................................................... - 28 - 
+Tableau 25 garanties CGCI-PME au 30/06/2016 par tranche de crédit .............................................................................. - 28 - 
+Tableau 27 ANSEJ : Attestations d’éligibilité par secteur d’activité (Cumul au 30/06/2016) .......................................... - 29 - 
+Tableau 28  ANSEJ : Projets financés par secteur d’activité (Cumul au 30/06/2016) (Unité : DA) .............................. - 29 - 
+Tableau 29 ANSEJ : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2016) ............................... - 30 - 
+Tableau 30 CNAC : Projets financés par secteur d’activité (cumul au 30/06/2016) ......................................................... - 30 - 
+Tableau 31 CNAC : Présentation des principaux agrégats .................................................................................................... - 31 - 
+Tableau 32 ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2016) .............................................. - 31 - 
+Tableau 33 ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2016) .................................................... - 31 - 
+Tableau 34 Répartition des dossiers de mise à niveau reçus à fin juin 2016 .................................................................... - 32 - 
+Tableau 35 Situation des dossiers ajournés .............................................................................................................................. - 32 - 
+Tableau 36 Répartition des dossiers reçus par secteur d’activité et délégations .............................................................. - 32 - 
+Tableau 37 Répartition des dossiers par délégation : .............................................................................................................. - 33 - 
+Tableau 38 Nombre de conventions signées par typologie des PME : ............................................................................... - 33 - 
+Tableau 39 Nombre de conventions signées par secteur d’activités : ................................................................................. - 33 - 
+Tableau 40 Nombre de conventions signées par délégation : ............................................................................................... - 33 - 
+Tableau 41 Evolution de la Balance commerciale de l’Algérie (S1/2015 –S1/2016) (en Millions de Dollars US) ..... - 38 - 
+Tableau 42 Evolution des importations par groupes de produits (S1/2015 – S1/2016) .................................................... - 38 - 
+Tableau 43 Principaux produits hors hydrocarbure  exportés (S1/2015- S1/2015) .......................................................... - 39 - 
+Tableau 44 : PME privées par secteurs d'activité ..................................................................................................................... - 43 - 
+Tableau 45  Concentration des PME (personnes morales) par wilaya ................................................................................ - 44 - 
+Tableau 46 FGAR : Dossiers traités par secteur d’activité (de 2004 à fin juin 2016) ....................................................... - 45 - 
+Tableau 47 FGAR : Dossiers traités par région (de 2004 à fin juin 2016) .............................................................................. - 46 - 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 5 - 
+ 
+Préambule  
+La présente édition du bulletin présente les principaux agrégats de la PME arrêtés à fin juin 
+2016 et une synthèse sur le lancement de l’étude de conjoncture pour l’année 2016 que 
+réalise le Ministère de l’industrie et des Mines. 
+Comme l’année 2006 sera marquée par la nouvelle loi sur la PME en discussion au niveau 
+de l’Assemblée Populaire Nationale, ce préambule se doit d’introduire les éléments clés de 
+cette réforme majeure. 
+La révision de la loi d’orientation de la PME a été engagée par le Ministère de l’Industrie et 
+des Mines (MIM) dès 2014, dans l’objectif de moderniser l’écosystème de l’entreprise 
+algérienne en impulsant une nouvelle dynamique à la PME. Ce projet de loi a été adopté à la 
+majorité par les membres de l'Assemblée Populaire Nationale lors d’une séance plénière 
+tenue le 30 novembre 2016.  
+Ce nouveau dispositif au profit de la PME ambitionne d’insuffler encore plus de dynamisme 
+à la création d’entreprises et à leur croissance grâce à un meilleur ciblage des besoins des 
+entreprises et au renforcement des capacités et de la cohérence entre les différents 
+organismes et dispositifs d’accompagnement des PME. 
+Ainsi, le texte introduit une adaptation de la définition de la PME pour mieux correspondre 
+au contexte actuel tant national qu'international. Il élargit aussi le champ d'application de la 
+définition de cette catégorie d'entreprises pour permettre d’accéder aux avantages accordés 
+par la loi aux PME suivantes : 
+-en phase de création ; 
+-cotées en bourse ; 
+-dont le capital social est détenu à hauteur de 49% par une ou plusieurs sociétés de 
+capital-investissement et qui respectent les autres critères de définition d'une PME. 
+S'agissant des mesures de soutien accordées, le texte prévoit des appuis pour les objectifs 
+suivants : 
+-la création de l'entreprise,  
+-la recherche-développement, l'innovation ; 
+-développer la sous-traitance ; 
+-le sauvetage et/ou la reprise des activités des PME viables en difficultés. 
+Ces mesures d'aides et de soutien à la promotion de la PME ont pour objectif de promouvoir 
+la diffusion de l'information à caractère industriel, commercial, juridique, économique, 
+financier, professionnel et technologique relative aux PME et d’encourager toute action 
+tendant à faciliter l'accès des PME au foncier. 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 6 - 
+ 
+Elles visent également à impulser la mise en place de régimes fiscaux adaptés aux PME, de 
+favoriser et d'encourager le développement de la culture entrepreneuriale, de faciliter l'accès 
+des PME aux instruments et services financiers adaptés à leurs besoins ainsi que 
+l'encouragement des associations professionnelles, les bourses de sous-traitance et les 
+groupements.  
+Enfin, le texte érige l'Agence Nationale de Développement et de Modernisation des PME 
+(ANDPME) en instrument de l'Etat en matière de mise en œuvre de la politique de 
+développement de la PME et, à ce titre, la renforce en moyens humains, matériels et 
+organisationnels pour la réalisation de ses missions.  
+Du point de vue financier, le compte d'affectation spécial "Fonds national de mise à niveau 
+des PME, d'appui à l'investissement et de promotion de la compétitivité industrielle", sera 
+complété par la mise en place d’un Fonds d'amorçage pour encourager la création de start-up 
+innovantes. 
+Ces fonds permettront de pallier au handicap du défaut de financement de la phase pré-
+création de l'entreprise qui n'est pas couvert par le capital investissement ainsi que la prise 
+en charge des frais préalables devant permettre la conception du produit prototype (frais de 
+recherche et de développement, prototypage, business plan, etc.). 
+Ce financement revêt une grande importance pour encourager la transformation des projets 
+de recherche en entreprises innovantes créatrices de richesse. propose en outre la création 
+auprès du ministre chargé des PME "Un Conseil national de concertation pour le 
+développement de la PME", composé d'organisations, et d'associations professionnels, 
+spécialisés et représentatives. Il constitue un espace de concertation entre l'Etat et les 
+bénéficiaires de la politique de développement des PME. 
+Par ailleurs, et afin de renforcer les politiques et les outils pour la promotion de PME, 
+améliorer le dispositif d’appui à son développement et renforcer le dialogue Public-Privé, le 
+MIM a lancé avec le concours financier du Groupe de la Banque Africaine de 
+Développement un Projet d’Appui au Développement de le Petite et Moyenne Entreprise 
+(PAD – PME) et comporte les trois composantes suivantes :  
+Composante 1 : appuyer la Direction Générale de la PME (DGPME) dans les activités 
+suivantes :  
+• Une évaluation des politiques et dispositifs d’appui à la promotion de la PME ; 
+• Une stratégie nationale de promotion de la PME à l’horizon 2025,  
+• Une étude sur les dispositifs de financement de la PME ;  
+• Une série de séminaires de formation des cadres de la DGPME.  
+Composante 2 : appuyer l’Agence Nationale de Développement de la PME (l’ANDPME) 
+dans les activités suivantes :  
+• Un audit organisationnel et fonctionnel de l’ANDPME ;  
+• Un accompagnement technique de la mise en œuvre du nouveau statut de l’ANDPME ;  
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 7 - 
+ 
+• Une série d’ateliers de formation au profit des PME, des agents de l’ANDPME et des 
+intervenants dans le programme de mise à niveau. 
+Composante 3 : appuyer le Conseil National Consultatif pour la promotion des PME (CNC-
+PME) dans les activités suivantes :  
+• Une cartographie des PME ;  
+• Une base de données dynamique contenant les informations relatives aux PME et les 
+informations économiques et sectorielles ;  
+• Une série de foras de dialogue et d’ateliers de formation au profit des agents du CNC-PME 
+et des représentants des PME, membres du CNC-PME. 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 8 - 
+ 
+Chiffres clés au 30/06/2016 
+Population totale des PME 
+(tous statuts et branches confondus) 
+1 014 075 
+dont PME publiques 
+438 
+ 
+PME créées en 1er semestre 2016 
+ 
+84 214 
+Cessations d’activités 
+(PME privées) 
+12 650 
+PME Industrielles (privées) 
+99 275 
+Densité des PME 
+(Nombre de PME 
+pour 1000 Habitants) 
+Toutes formes 
+confondues  
+/ moyenne internationale  
+23 / 45 
+Personnes morales  
+/ moyenne internationale 
+17 / 45 
+Emplois (agents) 
+2 487 914 
+Importations (Millions de $) 
+23 509 
+Exportations (Millions de $) 
+12 678 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 9 - 
+ 
+I- POPULATION DES PME 
+1- Situation à la fin du 1e semestre 2016 
+A la fin du 1er semestre 2016, la population globale des PME s’élève à 1014075             
+entités dont  près de 57% sont constituées de personnes morales, parmi lesquelles on 
+recense 438 Entreprises Publiques Economiques (EPE). Le reste est composé de personnes 
+physiques (43%), dont 20% de professions libérales et 23% d’activités artisanales.  
+Tableau 1 Population globale des PME à fin 2015 
+ 
+Types de PME 
+Nbre de PME 
+Part (%) 
+1. 
+PME privées 
+ 
+Personnes morales* 
+577 386 
+56,94 
+ 
+Personnes physiques**  
+436 251 
+43,02 
+ 
+ dont Professions libérales 
+202953 
+20,01 
+ 
+ dont Activités artisanales 
+233298 
+23,01 
+ 
+S/Total 1 
+1 013 637 
+100 
+2 
+PME publiques *** 
+ 
+Personnes morales 
+438 
+0,04 
+ 
+S/Total 2 
+438 
+0,04 
+ 
+Total 
+1 014 075 
+100,00 
+ 
+ 
+* Source : CNAS 
+** Source : CASNOS 
+*** Source : ECOFIE 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 10 - 
+ 
+2- Distribution  
+2.1 Par taille  
+A la fin du 1er semestre 2016, la population globale de la PME est composée de 97% de Très 
+Petite Entreprise TPE (effectif de moins de 10 salariés) qui demeure fortement dominante 
+dans le tissu économique, suivie par la Petite Entreprise PE avec 2,57% et la Moyenne 
+Entreprise ME avec 0,31%.  
+Tableau 2 typologie des PME 
+ 
+Type des PME 
+Nombre de PME 
+% 
+TPE (effectif de moins de 10 salariés) 
+983 653 
+97 
+PE (effectif entre 10 et 49  salariés)   
+27 380 
+2.7 
+ME (effectif entre 50 et 249 salariés) 
+3 042 
+0.3 
+Total 
+1 014 075 
+100 
+    Source : CNAS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 11 - 
+ 
+2.2 Par nature juridique 
+2.2.1 Personnes Morales  
+Les PME (personnes morales) tous statuts confondus sont présentes en force dans le secteur 
+des services qui en concentre plus de la moitié (52%), suivi par le secteur du BTPH (29%).   
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité  
+ 
+Secteurs d’Activité 
+PME privées* 
+ 
+PME publiques**  
+Total 
+Part en (%) 
+Agriculture 
+7 094 
+178 
+7 272 
+1 
+Hydrocarbures, Energie, Mines et 
+services liés 
+3 201 
+4 
+3 205 
+1 
+BTPH 
+169 124 
+22 
+169 146 
+29 
+Industries manufacturières 
+99 275 
+133 
+99 408 
+17 
+Services 
+298 692 
+101 
+298 793 
+52 
+Total Général 
+577 386 
+438 
+577824 
+100 
+*source CNAS  
+** source ECOFIE  
+2.2.2 Personnes physiques  
+Pour la période considérée, le nombre total des personnes physiques a atteint 436.251 PME,  
+dont  202.953 sont des professions libérales et 233.298 sont des activités artisanales (Voir le 
+tableau N°1). 
+ a. Professions libérales 
+La catégorie des professions libérales, englobe, notamment, les notaires, les avocats, les 
+huissiers de justice, les médecins, les architectes et les agriculteurs.  
+Les professions libérales, au nombre 202 953, exercent à 68,08% dans l’Agriculture, 20,68% 
+dans le secteur de la Santé et 11,23% dans la justice, tel que repris dans le tableau n°4.  
+Tableau 4 Professions libérales par secteur d’activité (Source : CASNOS) 
+  
+Santé 
+Justice 
+Exploitations agricoles 
+Total 
+Nbre au 30.06.2016 
+41 977 
+22 801 
+138 175 
+202 953 
+Part en % 
+20,68 
+11,23 
+68,08 
+100 
+Source : CASNOS 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 12 - 
+ 
+b-Activités Artisanales : 
+Durant le 1er semestre 2016, la CASNOS a enregistré 19 473 nouvelles affiliations, ce qui 
+porte le nombre total des artisans au 30/06/2016 à 233 298 PME.    
+2.3 Par statut juridique et secteur d’activité 
+2.3.1. PME publiques  
+Les PME publiques représentent une part minime dans la population globale des PME. Leur 
+nombre est de 438 PME durant le 1er semestre 2016 contre 532 durant le premier semestre 
+2015 soit un recul de 17,6%. Cette baisse est due essentiellement à la restructuration de 
+certains portefeuilles du Secteur Public Marchand (SPM). Leur effectif passe de 46 165 en 
+2014 à 35 698  salariés au 1er semestre 2016. 
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) 
+Secteurs 
+d’activités 
+1 à 9 salariés 
+10 à 49 salariés 
+50 à 249 salariés 
+Nombre 
+global 
+de PME 
+% 
+Effectif 
+global 
+% 
+Nombre  Effectifs Nombre Effectifs Nombre Effectifs 
+Industrie 
+0 
+0 
+16 
+501 
+177 
+15 854 
+193 
+44 
+16 355 
+46 
+Services 
+5 
+28 
+36 
+979 
+60 
+8 262 
+101 
+23 
+9 269 
+26 
+Agriculture 
+34 
+128 
+110 
+3 114 
+34 
+3 026 
+178 
+41 
+6 268 
+18 
+BTPH 
+- 
+- 
+2 
+66 
+20 
+3 377 
+22 
+5 
+3 443 
+10 
+Mines et 
+carrières 
+- 
+- 
+2 
+61 
+2 
+302 
+4 
+1 
+363 
+1 
+Total 
+39 
+156 
+166 
+4 721 
+233 
+30 821 
+438 
+100 
+35 698 
+100 
+Source : ECOFIE 
+Les PME publiques exercent dans tous les secteurs d’activité de l’économie nationale, 
+principalement dans l’Agriculture (41% des PME/EPE), l’Industrie (44%) et les Services 
+(23%). Les PME publiques industrielles emploient 46 % des effectifs du Secteur Public 
+Marchand SPM de type PME (Tableau 6).  
+2.3.2. PME Privées  
+Le nombre total des PME privées à la fin du 1er semestre 2016 est de 1 013 637. Elles sont 
+concentrées au niveau du secteur des services (le transport en particulier), l’Artisanat  et le 
+BTPH (le Bâtiment en particulier). 
+Tableau 6 Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) 
+ 
+  
+Secteurs d’Activité 
+Nombre 
+Part en (%) 
+I 
+Agriculture 
+7 094 
+0,70% 
+II 
+Hydrocarbures, Energie, Mines et services liés 
+3 201 
+0,32% 
+III 
+BTPH 
+169 124 
+16,68% 
+IV 
+Industries manufacturières 
+99 275 
+9,79% 
+V 
+Services y compris les professions libérales 
+501645 
+49,49% 
+VI 
+Artisanat 
+233298 
+23,02% 
+  
+Total Général 
+1013637 
+100 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 13 - 
+ 
+2.4 Par région  
+Selon la répartition spatiale du Schéma National d'Aménagement du Territoire (SNAT), les 
+PME (personnes morales) sont prédominantes dans le Nord et, à un degré moindre, dans les 
+Hauts-Plateaux. 
+Tableau 7 Concentration des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/2016 
+Taux de concentration (%) 
+Nord 
+401 231 
+69 
+Hauts-Plateaux 
+126 051 
+22 
+Sud 
+50 104 
+9 
+Total Général 
+577 386 
+100 
+     Source : CNAS 
+ 
+La région du Nord regroupe, 401 231 PME, soit 69 % des PME du pays, suivie par la région 
+des Hauts-Plateaux avec 126 051 PME soit 22%, et les régions du Sud et du Grand Sud 
+accueillent 50 104 PME soit 9% du total.  
+2.5 Densité  
+En termes de densité, selon les dernières statistiques de l’ONS sur la démographie              
+(40,4 Millions d’habitants au 1er janvier 2016) la moyenne nationale des PME est de l’ordre 
+de 23 PME (tous statuts confondus) pour 1.000 habitants. Ce ratio national diminue à 16 
+pour 1.000 habitants pour les PME privées de type « personnes morales » et présente un 
+écart important d’une région à l’autre du pays :  
+19 PME privées pour 1000 habitants au Nord du pays,  
+13 PME privées pour 1000 habitants dans la région des Hauts Plateaux.  
+15 PME privées pour 1000 habitants dans la région du Sud.  
+ 
+Tableau 8 Densité des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/2016* 
+Population par Wilaya 
+(RGPH 2008)** 
+Densité  
+Nord 
+401 231 
+21 075 874 
+19 
+Hauts-Plateaux 
+126 051 
+9 765 202 
+13 
+Sud  
+50 104 
+3 238 954 
+15 
+Total Général 
+577 386 
+34 080 030 
+17 
+    * Source : CNAS   ** Source : ONS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 14 - 
+ 
+                                                         
+2.6 Evolution de la population globale des PME 
+L’évolution de la population de la PME entre le 1er semestre 2015 et le 1er semestre 2016 est 
+de 13,07% tous secteurs juridiques confondus, représentant un accroissement net total de 
++117 264 PME. Pour les PME privées personnes morales, cette l’évolution est de 10,85%. 
+Tableau 9 Evolution de la population globale des PME (S1/2015 et S1/2016)  
+ 
+ 
+ 
+S1/2015 
+S1/2016 
+L’évolution 
+Population globale de la PME 
+896 811 
+1 014 075 
+13,07% 
+PME privées personnes morales  
+520875 
+577 386 
+10,85% 
+ 
+2.7 Evolution des PME (personnes morales) par secteur d'activité 
+Les secteurs où la création d’entreprise a été la plus forte entre les deux premiers semestres 
+des exercices 2015 et 2016, restent ceux de l’Agriculture avec 33,40% suivi par le secteur 
+des Hydrocarbures, Energie, Mines et services liés avec 25,19%.  
+Les PME à caractère industriel sont au nombre de 99 275 entités à la fin du 1er semestre 
+2016, contre 81 348 entités à la fin du 1er semestre 2015, soit une progression de 22,04 %. 
+Tableau 10 Evolution des PME privées (personnes morales) par secteur d’activité (S1 2015/ S1 2016) 
+ 
+Secteurs d’Activité 
+S1/2015 
+Parts 
+(%) 
+S1/2016 
+Parts 
+(%) 
+Evolution (%) 
+I 
+Agriculture 
+5318 
+1,02 
+7 094 
+1,23 
+33,40 
+II 
+Hydrocarbures, Energie, 
+Mines et services liés 
+2557 
+0,49 
+3 201 
+0,55 
+25,19 
+III 
+BTPH 
+165108 
+31,70 
+169 124 
+29,29 
+2,43 
+IV 
+Industries 
+manufacturières 
+81348 
+15,62 
+99 275 
+17,19 
+22,04 
+V 
+Services 
+266544 
+51,17 
+298 692 
+51,73 
+12,06 
+ 
+Total Général 
+520875 
+100,00 
+577 386 
+100,00 
+10,85 
+ 
+    Source : CNAS 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 15 - 
+ 
+ 
+2.8 Evolution de l’emploi par type de PME 
+L’effectif global des PME, à la fin du 1er semestre 2016, est de 2 487 9141 agents, dont 
+seulement 35 698 relèvent des PME publiques. A noter que l’effectif global des PME              
+a progressé de 11,6 % entre le 1er  semestre 2015 et le 1er  semestre 2016. 
+      Tableau 11 Evolution des emplois déclarés par type de PME 
+Types de PME 
+1er semestre 2015 
+1er semestre 2016 
+Evolution (%) 
+Nombre 
+Parts (%) 
+Nombre 
+Parts (%) 
+PME Privées 
+ Salariés 
+1 295 257 
+57,87 
+1438579 
+57,82 
+11,07 
+Employeurs 
+896 811 
+40,07 
+1013637 
+40,74 
+13,03 
+S/Total 
+2 192 068 
+97,94 
+2452216 
+98,57 
+11,87 
+PME Publiques 
+46 165 
+2,06 
+35 698 
+1,43 
+-22,67 
+Total 
+2 238 233 
+100 
+2 487 914 
+100 
+11,16 
+    Source : CNAS / CASNOS 
+ 
+3- Demographie 
+3.1 Croissance 
+L’évolution des PME privées durant le 1er semestre 2016 est de 13 % par rapport au              
+1er  semestre 2015, soit 84 214 nouvelles PME créées, ce qui porte le nombre global des 
+PME privées à 1 013 637. 
+Tableau 12 Mouvements constatés dans la démographie des PME privées 
+Nature des 
+PME 
+2015 
+Mouvements PME du 1er semestre 2016 
+1er 
+semestre 
+2016 
+Création 
+Réactivation 
+Radiation 
+Croissance 
+Personnes 
+morales 
+537 901 
+38788 
+4035 
+3338 
+39485 
+577 386 
+Personnes 
+Physiques 
+396 136 
+45426 
+4001 
+9312 
+40115 
+436 251 
+Total PME 
+privées 
+934 037 
+84 214 
+8036 
+12650 
+79600 
+1 013 637 
+    Source : CNAS 
+                                               
+ 
+1 Ce chiffre inclut les employeurs des entreprises des PME privées (personnes morales) et les Chefs d’entreprises privées relevant des fonctions 
+libérales ainsi que les artisans. 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 16 - 
+ 
+ 
+3.2 Création de PME 
+Le nombre de PME privées créées durant le 1er  semestre 2016, est de 84 214 PME.  Les 
+créations d’entreprises enregistrées au niveau de la CNAS à la fin du 1er  semestre 2016 
+s’élèvent à 38 788 nouvelles PME (personnes morales) alors qu’au niveau de la CASNOS, 
+on recense 45 426 nouvelles PME créées (personnes physiques) durant la même période. 
+3.3 Réactivation 
+A la fin du 1er semestre 2016, les réactivations ont touché 4035 PME privées (personnes    
+morales) déclarées auprès de la CNAS, on recense aussi 4001 PME privées (personnes    
+physique) déclarées auprès de la CASNOS. 
+3.4 Radiation (mortalité) 
+ 
+Durant le 1er semestre 2016, 12650 PME privées étaient radiées, dont 3338 sont des 
+personnes morales et 9312 PME personnes physiques.  
+Tableau 13 Mortalité des PME privées  
+Types de PME privées 
+Personnes* 
+Morales 
+Personnes ** 
+Physiques 
+Total 
+Nombre de cessation d’activité 
+3338 
+9312 
+12650 
+Parts en% 
+26,39 % 
+73,61 % 
+100,00 % 
+   
+  * Source : CNAS   ** Source : CASNOS 
+3.4.1 Mortalité des PME privées (personnes morales)  
+a- mortalité des PME privées par secteur d’activité 
+Les PME de type personnes morales ayant été radiées durant le 1er semestre 2016, sont au 
+nombre de 3 338. Ce nombre est visiblement en baisse par rapport aux 2084  enregistrées à 
+la fin du 1er semestre 2015.  
+Tableau 14 Mortalité des PME privées par secteur d'activité (personnes morales) 
+ 
+Secteurs d’Activité 
+S1/2015 
+S1/2016 
+Evolution  
+  
+ 
+Nbre 
+% 
+Nbre 
+% 
+I 
+Agriculture et pêche 
+15 
+53 
+38 
+253,3 
+II 
+Hydrocarbures, Energie, 
+Mines et services liés 
+12 
+83 
+71 
+591,7 
+III 
+BTPH 
+580 
+47 
+-533 
+-91,9 
+IV 
+Industries manufacturières 
+268 
+1433 
+1165 
+434,7 
+V 
+Services 
+1209 
+1722 
+513 
+42,4 
+Total Général 
+2 084 
+3338 
+1254 
+60,2 
+   Source : CNAS 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 17 - 
+ 
+Entre le 1er semestre 2015 et le 1er semestre 2016, une évolution  de la mortalité est 
+observée dans tous les secteurs, hormis le secteur BTPH qui marque une régression de 533 
+PME soit un taux de -92% par rapport au 1er semestre 2015.   
+ 
+b- Mortalité des PME privées dans le secteur des services  
+Tableau 15 La mortalité des PME privées dans le secteur des services 
+S1/2015
+S1/2016
+Evolution
+Part  2016 en %
+Transport et communication
+195
+230
+17,95
+13,36
+Commerce
+364
+509
+39,84
+29,56
+Hôtellerie et restauration
+84
+119
+41,67
+6,91
+Services aux entreprises
+388
+624
+60,82
+36,24
+Services aux ménages
+156
+207
+32,69
+12,02
+Etablissements financiers
+8
+16
+100,00
+0,93
+Affaires immobilières
+5
+5
+0,00
+0,29
+Services pour collectivités
+9
+12
+33,33
+0,70
+Total Services
+1209
+1 722
+42,43
+100
+    Source : CNAS 
+Les services fournis aux entreprises sont les plus vulnérables avec 624 PME radiées durant 
+le 1er semestre 2016 (36,24% du total), les activités du commerce sont en deuxième position 
+avec 509 PME. Les transports présentent également une forte vulnérabilité.  
+c- Mortalité des PME privées dans l’industrie  
+Au niveau du secteur industriel, en enregistre une forte mortalité de PME, particulièrement 
+dans les activités de la construction et l’industrie agroalimentaire. Le manque de maturation 
+dans le lancement des projets et le manque de la compétitivité pourraient expliquer en partie 
+cette mortalité. 
+ 
+ 
+Tableau 16 La mortalité des PME dans le secteur de l’industrie  
+S1/2015
+S1/2016
+Evolution
+Part    2015       
+(%)
+ISMME
+40
+65
+62,50
+4,54
+construction
+38
+1068
+2710,53
+74,53
+Chimie, plastique
+13
+15
+15,38
+1,05
+agroalimentaire
+84
+119
+41,67
+8,30
+Industrie du textile
+21
+72
+242,86
+5,02
+Industrie du cuir
+7
+6
+-14,29
+0,42
+papier
+48
+70
+45,83
+4,88
+Industrie divers
+17
+18
+5,88
+1,26
+Total Industrie
+268
+1 433
+434,70
+100
+    Source : CNAS 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 18 - 
+ 
+3.4.2 La mortalité des PME privées (personnes physiques)  
+Selon les chiffres de la CASNOS, les PME de type personne physique ayant cessé leurs 
+activités durant l’année le 1er semestre 2016, sont au nombre de 9312. Les activités des 
+artisans sont les plus vulnérables avec 5640 radiés (soit environ 60,57% du total) et le  
+secteur de la santé qui vient en deuxième position avec 1825 PME radiées soit 19,60% du 
+total. 
+Tableau 17 La mortalité des PME privées (personnes physiques) 
+ 
+ 
+  
+Santé 
+Justice 
+Exploitations 
+agricoles 
+Artisanat 
+Total 
+Nombre 
+de 
+cessation 
+d’activité 
+1825 
+253 
+1594 
+5640 
+9312 
+Part (%) 
+19,60 
+2,72 
+17,12 
+60,57 
+100 
+      Source : CASNOS 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 19 - 
+ 
+II- STATISTIQUES DES PROGRAMMES D’APPUI À LA PME 
+1. Dispositif national d’appui à l’investissement (ANDI) 
+Le bilan des déclarations d’investissements du 1er semestre 2016 est constitué 
+d’informations extraites de la base de données de l’ANDI affinées et corrigées en tenant 
+compte des projets annulés. 
+Il est à rappeler que ce bilan ne tient compte que des projets d’investissement dans les 
+activités de production de biens et services, couvèrent par le dispositif national d’appui à 
+l’investissement.   
+1.1 Projets d’investissement déclarés par secteur d’activité 
+Tableau 18 Etats Récapitulatifs des projets d’investissement (S1/2016) 
+Source : ANDI 
+ 
+Secteur 
+d'activité 
+Transport 
+BTPH 
+Industries 
+Services 
+Tourisme 
+Santé 
+Agriculture 
+Total  
+Projets déclarés 
+S1/2015 
+1672 
+987 
+1126 
+674 
+113 
+69 
+132 
+4773 
+S1/2016 
+991 
+479 
+1288 
+544 
+167 
+63 
+121 
+3653 
+Part  
+S1/2016 (%) 
+27,13 
+13,11 
+35,26 
+14,89 
+4,57 
+1,72 
+3,31 
+100,00 
+évolution 
+(%) 
+-40,73 
+-51,47 
+14,39 
+-19,29 
+47,79 
+-8,70 
+-8,33 
+-23,47 
+ 
+Montant (Millions de 
+DA)
+S1/2015 
+88092 
+80556 
+360302 
+125431 
+60467 
+12763 
+24476 
+752087 
+S1/2016 
+55117 
+41895 
+600167 
+92625 
+90733 
+25592 
+24298 
+930427 
+Part 
+S1/2016  (%) 
+5,92 
+4,50 
+64,50 
+9,96 
+9,75 
+2,75 
+2,61 
+100,00 
+ 
+Emplois 
+S1/2015 
+8169 
+14218 
+37857 
+10282 
+6592 
+1735 
+2452 
+81305 
+ 
+S1/2016 
+6329 
+7902 
+45243 
+9723 
+7710 
+ 1943 
+2154 
+81004 
+Part  
+S1/2016  (%) 
+7,81 
+9,76 
+55,85 
+12,00 
+9,52 
+2,40 
+2,66 
+100,00 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 20 - 
+ 
+ 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers) 
+Projets d'investissement 
+Nombre
+%
+Millions de DA
+%
+Nombre
+%
+Investissement locaux
+3 568 
+97,67
+743 239 
+79,88
+73 170 
+90,33
+Total investissement étranger
+85 
+2,33
+187 187 
+20,12
+7 834 
+9,67
+Total Général 
+3 653 
+100,00
+930 426 
+100,00
+81 004 
+100,00
+Projets déclarés 
+(S1 2016)
+Montant
+Emplois
+ 
+Source : ANDI 
+ 
+Durant la période considérée, le nombre de projets d’investissements déclarés par les 
+étrangers auprès de l’ANDI sont au nombre de 85 projets, qui ne représentent que 2,33% du 
+volume global. 
+ 
+1.3 Projets d’investissement déclarés par tranche d’effectif 
+Nombre
+%
+Millions de DA
+%
+Nombre
+%
+0 à 9
+1 946 
+53,27
+69 555 
+7,48
+6 849 
+8,46
+10 à 49
+1 286 
+35,20
+250 278 
+26,90
+27 643 
+34,13
+50 à 249
+394 
+10,79
+345 598 
+37,14
+34 362 
+42,42
+plus de 249
+27 
+0,74
+264 996 
+28,48
+12 150 
+15,00
+Total
+3 653
+100
+930 427
+100
+81 004
+100
+Projets déclarés        
+(S1 2016)
+Montant 
+Emplois
+Tranche d'effectif
+ 
+Source : ANDI 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 21 - 
+ 
+2. Dispositifs locaux d’appui relevant du secteur de l’Industrie des Mines  
+2.1 Etat de réalisation des Centres de Facilitation et Pépinières d’Entreprises.  
+Le tableau suivant illustre l’état des structures opérationnelles, celles réceptionnées, et celles 
+en cours de réalisation.  
+ 
+ 
+Centres de 
+facilitation 
+Pépinières 
+d’entreprises 
+Structures opérationnelles 
+ 16 
+30 
+Structures en cours de réalisation 
+4 
+11 
+Total des structures 
+20 
+41 
+                 Source : DGPME  
+ 
+2.2 Bilan d’activité des pépinières d’entreprises  
+Dotées d’un statut d’EPIC, les pépinières d’entreprises opérationnelles sont implantées dans 
+les wilayas suivantes : Annaba, Oran, Bordj Bou Arreridj, Ghardaïa, Biskra, Khenchela, 
+Mila, Sidi Bel Abbes, Ouargla, Batna, Adrar, El Bayadh, Oum El Bouaghi, Bouira, Tiaret et 
+Béchar. 
+Date de création :  
+*2009 : pour les pépinières d’Annaba, Oran, Bordj Bou Arréridj, Ghardaia  
+*2012 : pour les pépinières de Biskra, Mila, Sidi Bel Abbès, Ouargla, Batna, Adrar, El 
+Bayadh, Oum el Bouaghi.  
+*2016 : pour les pépinières de Bouira, Tiaret et Béchar.  
+Activités des pépinières d’entreprises : 
+Projets hébergés au niveau des  Pépinières d’entreprises : 
+Le principal indicateur de performance des pépinières d’entreprises est le nombre de projets 
+hébergés.  
+Les statistiques reprises dans le tableau ci-après concernent les projets hébergés au sein des 
+pépinières d’entreprises pendant le 1er semestre 2016. Il est à signaler que la durée 
+d’hébergement varie entre 24 et 36 mois renouvelables selon le degré de maturité des projets 
+ainsi que les besoins en accompagnement sollicités par les porteurs de projets. 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 22 - 
+ 
+Selon les données recueillies auprès des pépinières pour le 1er semestre 2016,  le nombre de 
+projets hébergés  au sein des treize pépinières a atteint  93 dont  37 entreprises ont été créées 
+soit un taux de  39,78% 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Les projets hébergés par secteur d’activités sont répartis comme suit :  
+Wilaya  
+Secteurs d’activités   
+Projets Innovants 
+Adrar  
+Tourisme : 02 
+Agriculture : 01  
+Agro alimentaire : 01 
+Industrie : 01  
+ 
+/ 
+El Bayadh  
+Industrie : 07 
+Services : 02  
+Agro alimentaire : 02 
+BTP : 01 
+Environnement 01 
+ 
+02 
+Bordj Bou Arreridj  
+Service : 02 
+Industrie : 02 
+01 
+Annaba  
+Service : 07 
+BTPH : 02 
+/ 
+Biskra   
+Service : 03 
+Agriculture et pèche : 01 
+Industrie : 02 
+ 
+/ 
+Mila  
+Services : 04 
+/ 
+ 
+Wilaya 
+Nombre de projets 
+hébergés durant le         
+1er semestre 2016 
+Nombre 
+d’entreprises 
+créées 
+Adrar  
+05 
+01 
+El Bayadh  
+13 
+07 
+Bordj Bou Arreridj  
+04 
+04 
+Annaba  
+09 
+02 
+Biskra  
+06 
+06 
+ Mila  
+04 
+03  
+Oran  
+13 
+00 
+Batna  
+11 
+06 
+ Khenchela  
+03 
+00 
+Sidi Bel Abbes  
+04 
+01 
+ Ghardaïa 
+06 
+06 
+ Ouargla  
+05 
+00 
+Oum El Bouaghi  
+10 
+01 
+Total 
+93 
+37 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 23 - 
+ 
+Oran  
+Industrie : 01  
+Agro-alimentaire : 01 
+Service : 05 
+TIC : 05 
+Tourisme : 01 
+ 
+/ 
+ 
+Batna  
+TIC : 04 
+Industrie : 02  
+Service : 04 
+Agro-alimentaire : 01 
+01 
+Khenchela  
+Industrie : 01 
+Agro-alimentaire : 01 
+Service : 01 
+01 
+Sidi Bel Abbes  
+TIC : 01 
+Génie électrique : 03 
+01 
+Ghardaïa  
+Energie renouvelable : 03 
+Récupération des déchets : 03 
+/ 
+Ouargla  
+Service : 04 
+Énergie renouvelable : 01  
+/ 
+Oum El Bouaghi  
+Service : 02 
+Industrie : 03  
+BTPH : 01 
+Agro-alimentaire : 02  
+Environnement : 01  
+Energie : 01  
+/ 
+Pour l’ensemble des pépinières la répartition des entreprises hébergées par secteur d’activité 
+est comme suit : 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Les activités de services représentent 37,6% des activités hébergées au sein des pépinières 
+suivies par le secteur de l’industrie qui représente 20,43%, les TIC avec un taux de 10,75%,  
+l’agro-alimentaire avec un taux de 8,60%  et les énergies par un taux de 7,52%. 
+Le nombre des projets dans le domaine du tourisme et de l’agriculture reste faible.  
+Secteur d’activité 
+Nombre 
+% 
+Service  
+35 
+37,63% 
+Industrie  
+19 
+20,43% 
+Agro-alimentaire   
+08 
+8,60% 
+BTPH  
+04 
+4,30% 
+TIC 
+10 
+10,75% 
+Tourisme 
+03 
+3,22% 
+Energie  
+07 
+7,52% 
+Environnement  
+05 
+5,37% 
+Agriculture 
+02 
+2,15% 
+Total 
+93 
+100% 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 24 - 
+ 
+2.3 Bilan d’activité des centres de facilitation  
+Le bilan des activités des centres de facilitation est récapitulé dans le tableau suivant :  
+ 
+Répartition des projets accompagnés par secteur d’activités : 
+Total des porteurs de 
+projets accompagnés 
+les secteurs 
+d’activités 
+nombre 
+taux 
+ 
+ 
+ 
+ 
+533 
+Industrie 
+152 
+28,51 % 
+service 
+137 
+25,70 % 
+travaux publics 
+66 
+12,38 % 
+agriculture 
+120 
+22,51 % 
+commerce 
+07 
+1,31 % 
+artisanat 
+43 
+8,06 % 
+divers 
+08 
+1,50 % 
+ 
+                 
+ 
+Wilaya 
+Porteurs de 
+projets 
+réceptionnés 
+porteurs de projets 
+accompagnés  
+Nombre de 
+Business Plan 
+élaborés 
+Nombre 
+d’entreprises 
+crées 
+Nombre 
+d’emplois 
+prévus  
+Tipaza 
+88 
+38 
+35 
+- 
+978 
+Oran  
+57 
+57 
+43 
+40 
+167 
+Adrar  
+90 
+55 
+18 
+23 
+48 
+Bordj Bou 
+100 
+85 
+14 
+- 
+435 
+Illizi  
+34 
+28 
+- 
+- 
+- 
+Jijel  
+26 
+06 
+09 
+- 
+178 
+Tamanrasset  
+54 
+53 
+- 
+- 
+- 
+Naama 
+203 
+96 
+08 
+08 
+209 
+Tindouf  
+47 
+14 
+- 
+- 
+- 
+Djelfa  
+140 
+11 
+- 
+- 
+- 
+Sidi Bel Abbès 
+26 
+03 
+03 
+- 
+26 
+Blida  
+46 
+07 
+07 
+30 
+30 
+Biskra 
+153 
+23 
+- 
+- 
+- 
+El bayadh 
+24 
+18 
+01 
+- 
+15 
+Khenchela  
+51 
+37 
+08 
+- 
+121 
+Laghouat 
+05 
+02 
+- 
+- 
+- 
+Total  
+1.144 
+533 
+146 
+101 
+2.207 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 25 - 
+ 
+ 
+2.4 Activités du FGAR  
+Durant  le 1er semestre 2016, le FGAR a octroyé, des garanties couvrant un montant de 
+4031,86 Mds de DA de crédits aux PME. En matière de certificats de garantie, le FGAR a 
+accordé l’équivalent de 1219, 76 Mds DA de crédits aux PME. Ces montants 
+représentent, en moyenne, 20,22 Millions de DA par offre de garantie et 32,54 Millions de 
+DA par certificat de garantie. Le taux moyen de financement octroyé par le FGAR, 
+représente 44% des projets neufs. Le FGAR a ainsi soutenu la création de 49 PME pour 
+31,64 Mds DA et a permis l’extension de 74 PME pour un montant de 33,53 Mds DA. 
+Durant  le 1er  semestre 2016, les engagements cumulés du FGAR ont augmenté de 74% en 
+offres de garantie et 75% en certificats de garantie.  
+   Tableau 19 FGAR : Situation globale des dossiers traités Avril 2004/ au 30/06/2016 
+ 
+Offres de garantie 
+Certificats de garantie 
+Nombre des garanties accordées 
+1 672 
+891 
+Coût total des projets (DA) 
+144 080 836 166 
+63 025 393 273 
+Montant des crédits sollicités (DA) 
+93 853 170 843 
+40 066 295 088 
+Taux moyen de financement sollicité 
+65% 
+64% 
+Montant des garanties accordées (DA) 
+46 109 733 540 
+21 421 148 016 
+Taux moyen de garantie accordée 
+49% 
+53% 
+Montant moyen de la garantie (DA) 
+27 577 592 
+24 041 692 
+Nombre d’emplois à créer 
+57 015 
+28 344 
+Impacts par emploi créé (DA) 
+2 527 069 
+2 223 589 
+Investissement par emploi  
+1 646 114 
+1 413 572 
+Crédit par emploi 
+808 730 
+755 756 
+Garantie par emploi 
+1 672 
+891 
+    Source :FGAR 
+Industrie  
+28,52% 
+Service  
+25,70 % 
+Travaux Public 
+12,38% 
+Agriculture 
+22,51% 
+Commerce  
+1,31% 
+Artisanat 
+8,07% 
+Divers  
+1,50% 
+Bilan d'activités des Centres de Facilitation  1er  Semestre 2016 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 26 - 
+ 
+Tableau 20  FGAR : Situation des dossiers traités par type de projets Avril 2004/ au 30/06/2016 
+ 
+Création 
+Extension* 
+Total 
+Nombre des garanties accordées 
+674 
+998 
+1672 
+Coût total des projets (DA) 
+58 622 437 341 
+85 458 398 825 
+144 080 836 
+Montant des crédits sollicités (DA) 
+33 977 807 626 
+59 875 363 217 
+93 853 170 843 
+Taux moyen de financement sollicité 
+58% 
+70% 
+65% 
+Montant des garanties accordées (DA) 
+13 628 556 178 
+32 481 177 362 
+46 109 733 540 
+Taux moyen de garantie accordée 
+40% 
+54% 
+49% 
+Montant moyen de la garantie (DA) 
+20 220 410 
+32 546 270 
+27 577 592 
+Nombre d’emplois à créer 
+13 767 
+43 248 
+57 015 
+Impacts par emploi créé (DA) 
+4 258 185 
+1 976 008 
+2 527 069 
+Investissement par emploi  
+2 468 062 
+1 384 465 
+1 646 114 
+Crédit par emploi 
+989 944 
+751 045 
+808 730 
+Garantie par emploi 
+674 
+998 
+1672 
+Source :FGAR 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements 
+Tableau 21 FGAR : Dossiers traités (du 01/01/2016 au 30/06/2016) 
+  
+Offres de garantie 
+Certificats de garantie 
+Nombre des garanties accordées 
+123 
+60 
+Coût total des projets (DA) 
+10 661 863 844 
+2 881 571 736 
+Montant des crédits sollicités (DA) 
+7 636 434 073 
+1 988 060 421 
+Taux moyen de financement sollicité 
+72% 
+69% 
+Montant des garanties accordées (DA) 
+4 031 865 953 
+1 219 765 735 
+Taux moyen de garantie accordée 
+53% 
+61% 
+Montant moyen de la garantie (DA) 
+32 779 398  
+20 329 429 
+Nombre d’emplois à créer 
+2 146 
+839 
+Impacts par emploi créé (DA) 
+4 968 250  
+3 434 531 
+Investissement par emploi  
+3 558 450  
+2 369 560 
+Crédit par emploi 
+1 878 782  
+1 453 833 
+Garantie par emploi 
+123 
+60 
+Source :FGAR 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 27 - 
+ 
+Tableau 22 FGAR : Dossiers traités par type de projets (du 01/01/2016 au 30/06/2016) 
+  
+Création 
+Extension* 
+Total 
+Nombre des garanties accordées 
+49 
+74 
+123 
+Coût total des projets (DA) 
+5 130 091 739 
+5 531 772 105 
+10 661 863 
+Montant des crédits sollicités (DA) 
+3 550 474 499 
+4 085 959 573 
+7 636 434 073 
+Taux moyen de financement sollicité 
+69% 
+74% 
+72% 
+Montant des garanties accordées (DA) 
+1 550 625 556 
+2 481 240 396 
+4 031 865 953 
+Taux moyen de garantie accordée 
+44% 
+61% 
+53% 
+Montant moyen de la garantie (DA) 
+31 645 420  
+33 530 276 
+ 32 779 398    
+Nombre d’emplois à créer 
+992 
+1154 
+2 146 
+Impacts par emploi créé (DA) 
+ 
+5 171 463  
+4 793 563 
+4 968 250    
+Investissement par emploi  
+3 579 107  
+3 540 693 
+3 558 450    
+Crédit par emploi 
+1 563 131  
+2 150 122 
+ 1 878 782    
+Garantie par emploi 
+49 
+74 
+123 
+Source :FGAR 
+ 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements.  
+ 
+2.5 Activités de la CGCI-PME (dispositif relevant du Ministère des finances)  
+Tableau 23 CGCI-PME : Situation globale des garanties par secteur d’activité (au 31/12/2015) 
+Secteur 
+d’Activité
+Nombre de 
+dossiers
+En %
+ Montant des 
+garanties (KDA) 
+En %
+ Emplois 
+créés 
+En %
+BTPH
+246
+30
+8 675 138 181
+23
+4308
+33
+Transport
+83
+10
+1 326 846 311
+3
+814
+6
+Industrie
+347
+43
+22 636 651 944
+59
+6303
+48
+Santé
+56
+7
+2 869 929 843
+7
+823
+6
+Services
+79
+10
+2 799 163 505
+7
+983
+7
+Total
+811
+100%
+38 307 729 784
+100%
+  13 231   100%  
+             Source : CGCI-PME 
+ 
+Une concentration a été constatée en nombre du flux de dossiers traités par la CGCI-PME 
+sur trois filières principales, BTPH et Industrie, qui représentent à elles seules 73% des 
+projets garantis. En termes financiers, le secteur de l’Industrie représente plus de la moitié 
+avec un taux de 59% suivi du secteur du BTPH avec un taux de 23%.  
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 28 - 
+ 
+Tableau 24 CGCI-PME : Situation globale des garanties par région (au 30/06/2016) 
+Région 
+Nombre de dossiers 
+% 
+Centre 
+330 
+41 
+Est 
+281 
+35 
+Ouest 
+120 
+15 
+Sud 
+80 
+10 
+Total 
+811 
+100% 
+Source :CGCI-PME 
+ 
+Cette répartition géographique de la garantie met en évidence les régions à plus ou moins 
+fortes potentialités économiques favorisant plus ou moins l’investissement des PME.              
+Les régions Centre et Est occupent la position avec respectivement 41% et 35%. 
+Tableau 25 garanties CGCI-PME au 30/06/2016 par tranche de crédit  
+Total 
+Banque 
+Tranche de crédit 
+Nbre de 
+dossiers 
+% 
+MT de crédit 
+garantis (KDA) 
+% 
+0 = < Mt < 10 MDA 
+253 
+31 
+1297 
+3 
+10 = < Mt < 50 MDA 
+313 
+39 
+7957 
+21 
+      > =50 MDA 
+245 
+30 
+29053 
+76 
+Total 
+811 
+100 
+383047 
+100 
+             Source :CGCI-PME 
+ 
+La répartition du volume global des crédits garantis repris dans le tableau ci-dessus laisse 
+apparaitre une forte proportion de la tranche de crédits inférieurs à 50 millions de DA qui 
+représente à elle seule 76% de l’ensemble des projets garantis au 30-06-2016, correspondant 
+en termes financiers à 21% des crédits garantis. 
+Cet ordre de grandeur (76%) confirme les statistiques qui indiquent que 98% du tissu de la 
+PME est constitué de très petites entreprises (TPE). Un marché très important qui renferme 
+de nombreuses TPE/PME éligibles au dispositif de garantie de la Caisse. 
+Une proportion assez significative de la tranche des crédits est égale et supérieure à 50 
+Millions de DA, qui représente, en terme physiques 21% du nombre total des dossiers 
+garantis, et une plus grande proportion en terme financiers, soit plus de deux tiers (76%) du 
+montant total des crédits garantis.      
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 29 - 
+ 
+3. Dispositifs Sociaux d’appui à la PME  
+3.1 Dispositif « ANSEJ » 
+Depuis sa mise en œuvre à la fin du 1er semestre 2016, le dispositif ANSEJ a permis, 
+d’accompagner 327802 entrepreneurs hommes contre 36643 entrepreneures femmes soit un 
+taux de féminité global de 10%. La femme entrepreneure occupe une place importante dans 
+les activités libérales avec 44%    
+Tableau 26 ANSEJ : Attestations d’éligibilité par secteur d’activité (Cumul au 30/06/2016) 
+ Nombre 
+d'attestations 
+d'éligibilité délivrées 
+ Nombre 
+d'attestations 
+de conformité  
+  (phase création) 
+ (phase 
+extension) 
+Agriculture
+129 644
+129 425
+219
+18,69%
+Artisanat
+78 805
+78 562
+243
+11,36%
+Bâtiment et travaux publics
+47 006
+46 308
+698
+6,78%
+Hydraulique
+1 481
+1 455
+26
+0,21%
+Industrie 
+60 680
+60 178
+502
+8,75%
+Maintenance
+6 998
+6 966
+32
+1,01%
+Pêche
+2 259
+2 254
+5
+0,33%
+Professions Libérales
+11 632
+11 233
+399
+1,68%
+Services
+229 296
+227 879
+1 417
+33,05%
+Transport Frigorifique 
+23 295
+23 160
+135
+3,36%
+Transport de Marchandises 
+73 432
+72 872
+560
+10,59%
+Transport de Voyageurs
+29 198
+27 837
+1 361
+4,21%
+Total
+693 726
+688 129
+5 597
+100%
+Secteur d'activité 
+%
+Total des attestations 
+d'Eligibilité et de 
+conformité Délivrées
+ 
+Source : ANSEJ 
+Tableau 27  ANSEJ : Projets financés par secteur d’activité (Cumul au 30/06/2016) (Unité : DA) 
+            
+Secteur d'Activité 
+Projets 
+financés 
+% 
+Impact 
+emplois 
+ 
+Nombre 
+moyen 
+d'emploi 
+Montant 
+d'investissement 
+ 
+Coût moyen 
+de l'emploi  
+Coût moyen 
+d'une micro-
+entreprise  
+Agriculture 
+52 367 
+14,4% 
+124 133 
+2 
+187 659 017 228 
+1 511 758 
+3 583 536 
+Artisanat 
+42 513 
+11,7% 
+125 318 
+3 
+109 205 095 478 
+871 424 
+2 568 746 
+BTPH 
+31 864 
+8,7% 
+93 386 
+3 
+119 623 718 654 
+1 280 960 
+3 754 197 
+Hydraulique 
+541 
+0,1% 
+2 010 
+4 
+3 166 713 960 
+1 575 480 
+5 853 445 
+Industrie  
+23 915 
+6,6% 
+70 007 
+3 
+107 706 475 303 
+1 538 510 
+4 503 720 
+Maintenance 
+9 081 
+2,5% 
+21 152 
+2 
+22 988 134 785 
+1 086 807 
+2 531 454 
+Pêche 
+1 119 
+0,3% 
+5 501 
+5 
+7 388 160 987 
+1 343 058 
+6 602 467 
+Professions Libérales 
+9 198 
+2,5% 
+20 809 
+2 
+21 123 343 895 
+1 015 106 
+2 296 515 
+Services 
+104 947 
+28,8% 
+244 253 
+2 
+334 794 946 748 
+1 370 689 
+3 190 134 
+Transport Frigorifique  
+13 385 
+3,7% 
+24 132 
+2 
+33 760 568 849 
+1 398 996 
+2 522 269 
+Transport 
+de 
+Marchandises  
+56 530 
+15,5% 
+96 237 
+2 
+145 557 153 559 
+1 512 486 
+2 574 866 
+Transport 
+de 
+Voyageurs 
+18 985 
+5,2% 
+43 679 
+2 
+46 624 698 041 
+1 067 440 
+2 455 870 
+Total 
+364 445 
+100% 
+870 617 
+2 
+1 139 598 027 486 
+1 308 954 
+3 126 941 
+Source : ANSEJ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 30 - 
+ 
+Selon le tableau ci-dessus, le secteur des services, est le secteur le plus attractif pour les 
+porteurs de projets accompagnés par l’ANSEJ depuis le lancement de ce dispositif (avec 104 
+947 projets)  suivi du secteur de transport des marchandises avec 56530 projets, puis le 
+secteur de l’agriculture avec 52 367 projets financés.  
+Tableau 28 ANSEJ : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2016)  
+Secteur d'Activité 
+Projets  
+financés 
+Hommes 
+Femmes 
+Taux de  
+Féminité 
+ (%) 
+Agriculture 
+52 367 
+49 951 
+2 416  
+5% 
+Artisanat 
+42 513 
+35 258 
+7 255  
+17% 
+Bâtiment et travaux publics 
+31 864 
+31 172 
+692  
+2% 
+Hydraulique 
+541 
+517 
+24  
+4% 
+Industrie  
+23 915 
+20 528 
+3 387  
+14% 
+Maintenance 
+9 081 
+8 928 
+153  
+2% 
+Pêche 
+1 119 
+1 103 
+16  
+1% 
+Professions Libérales 
+9 198 
+5 135 
+4 063  
+44% 
+Services 
+104 947 
+87 889 
+17 058  
+16% 
+Transport Frigorifique  
+13 385 
+12 996 
+389  
+3% 
+Transport de Marchandises  
+56 530 
+55 821 
+709  
+1% 
+Transport de Voyageurs 
+18 985 
+18 504 
+481  
+3% 
+Total 
+364 445 
+327 802 
+36 643 
+10% 
+Source : ANSEJ 
+3.2 Dispositif « CNAC »  
+Tableau 29 CNAC : Projets financés par secteur d’activité (cumul au 30/06/2016)  
+ 
+1er semestre 2015 
+Cumul au 30-06-2016 
+Secteurs 
+d'activités 
+Nombre 
+de projets 
+financés 
+Part de la 
+femme 
+Impact 
+emploi 
+Nombre 
+de 
+projets 
+financés 
+Part de la 
+femme 
+Impact 
+emploi 
+Total 
+financement 
+(MDA) 
+Agriculture 
+1 978 
+11,17% 
+4 677 
+16 166 
+11,77% 
+39 199 
+62 422,67 
+Artisanat 
+1 260 
+20% 
+3 250 
+11 130 
+22,09% 
+29 328 
+34 215,77 
+BTP 
+310 
+2,90% 
+934 
+7 909 
+2,28% 
+25 502 
+31 294 
+Hydraulique 
+9 
+0% 
+32 
+316 
+4,75% 
+1 097 
+2 226,47 
+Industrie 
+558 
+22,76% 
+1 597 
+10 379 
+21,72% 
+30 250 
+45 816,77 
+Maintenance 
+31 
+0% 
+73 
+768 
+2,34% 
+1 852 
+2 144,97 
+Pèche 
+27 
+0% 
+96 
+382 
+0,52% 
+1 389 
+2 611,50 
+Prof libérales 
+67 
+35,82% 
+152 
+778 
+43,19% 
+1 693 
+2 727,15 
+Services 
+1 274 
+18,05% 
+2 775 
+29 526 
+17,05% 
+62 091 
+104 233,35 
+Transport 
+marchandise 
+38 
+0% 
+49 
+45 831 
+1,52% 
+69 646 
+118 311,79 
+Transport 
+voyageurs 
+7 
+0% 
+20 
+12 188 
+1,23% 
+18 479 
+28 828,33 
+TOTAL 
+5 559 
+15,52% 
+13 655 
+135 373 
+9,64% 
+280 526 
+434 832,77 
+Source : CNAC 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 31 - 
+ 
+Tableau 30 CNAC : Présentation des principaux agrégats   
+Principaux agrégats 
+1er semestre 2016 
+Bilan cumulé global  
+(au 30-06-2016) 
+Nombre dossiers déposés 
+2 227 
+379 243 
+Attestations 
+d’éligibilités 
+et 
+de 
+financement  
+délivrées 
+1 882 
+248 829 
+Nombre d'accords bancaires 
+4 617 
+156 310 
+Nombre de rejets  bancaires 
+60 
+8 511 
+Nombre de  projets financés 
+5 559 
+135 373 
+Impact Emploi  
+13 655 
+280 526 
+Source : CNAC 
+3.3 Dispositif « ANGEM » 
+        Tableau 31 ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2016) 
+Type de financement 
+Nombre 
+% 
+Emplois créés 
+Financement Achat de Matières Premières  
+695 999 
+90,43% 
+1 043 998,5 
+Financement triangulaire « ANGEM-Banque-promoteur » 
+73 649 
+9,57% 
+110 473,5 
+Total 
+769 648 
+100% 
+1 154 472 
+  Source :ANGEM 
+Tableau 32 ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2016) 
+Secteur d’activités 
+Nombre de prêts octroyés 
+Montants accordés 
+Milliard de DA 
+Part (%) 
+Agriculture 
+109 779 
+6 473 589 749,22 
+14,26 
+TPI 
+295 703 
+13 807002897,99 
+38,42 
+BTP 
+65 146 
+4 872 052 980,05 
+8,46 
+Services 
+161 382 
+14 354 667 782,43 
+20,97 
+Artisanat 
+134 195 
+6 946 883 573,35 
+17,44 
+Commerce 
+2 741 
+667 604 889,69 
+0,36 
+Pêche 
+702 
+77 858 116,14 
+0,.09 
+Total 
+769 648 
+47 199 659 988,88 
+100 
+Source :ANGEM 
+Par secteur d’activité, les TPI (très petites industries), les services, l’artisanat et l’agriculture 
+sont les secteurs ayant bénéficié de la majorité des prêts octroyés avec 91,10% du total.  
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 32 - 
+ 
+4. Dispositif national de mise à niveau 
+ 
+4.1 Etat d’avancement du programme national de mise à niveau des PME  
+A la fin du 1er semestre 2016, 4783 PME ont souscrit au Programme National de Mise à 
+Niveau des PME dont plus de la moitié sont éligibles.   
+Tableau 33 Répartition des dossiers de mise à niveau reçus à fin juin 2016   
+Total  adhésion   
+4783 
+Eligible 
+2602 
+Non éligible 
+1551 
+Ajournée 
+616 
+Décision  
+2626 
+Dossiers en cours de traitement  
+14 
+Source :ANDPME 
+Tableau 34 Situation des dossiers ajournés 
+Situation des dossiers 
+Nombre 
+Ajournés 
+512 
+Entreprises contactées 
+348 
+Dossiers à confirmer 
+148 
+Complétés 
+38 
+Source :ANDPME 
+Tableau 35 Répartition des dossiers reçus par secteur d’activité et délégations 
+Secteur 
+ d’activité 
+Alger 
+Annaba 
+Ghardaïa 
+Sétif 
+Oran 
+Total par 
+Secteur 
+Agro-alimentaire 
+82 
+30 
+03 
+45 
+66 
+226 
+BTPH 
+557 
+834 
+160 
+1132 
+277 
+2960 
+Industrie  
+261 
+146 
+29 
+219 
+111 
+766 
+Service  
+134 
+96 
+34 
+73 
+150 
+487 
+Transport  
+22 
+31 
+08 
+34 
+23 
+118 
+Pêche  
+08 
+14 
+- 
+36 
+17 
+75 
+Tourisme hôtellerie  
+14 
+15 
+03 
+10 
+25 
+67 
+Service TIC 
+08 
+- 
+- 
+- 
+01 
+09 
+Autre  
+25 
+17 
+01 
+23 
+09 
+75 
+Total par Délégation  
+1111 
+1183 
+238 
+1572 
+679 
+4783 
+Source :ANDPME 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 33 - 
+ 
+Tableau 36 Répartition des dossiers par délégation : 
+Délégation 
+Nombre 
+Alger 
+1111 
+Annaba 
+1183 
+Sétif 
+1652 
+Oran 
+599 
+Ghardaïa 
+238 
+Total 
+4783 
+4.2 Situation des conventions : 
+Nombre de conventions déposées: 1320 
+Nombre de conventions signées : 1232 
+Nombre de conventions annulées : 88 
+Tableau 37 Nombre de conventions signées par typologie des PME : 
+Typologie 
+NBR des PME 
+TPE 
+238 
+PE 
+695 
+ME 
+299 
+Total  
+1232 
+Tableau 38 Nombre de conventions signées par secteur d’activités : 
+Secteur d’activité 
+Nbr des PME 
+Agro alimentaire 
+64 
+BTPH 
+765 
+Industrie 
+228 
+Services 
+121 
+Tourisme et hôtellerie 
+20 
+Transports 
+30 
+Pêche 
+04 
+Total 
+1232 
+Tableau 39 Nombre de conventions signées par délégation : 
+Les délégations 
+Nombre des PME 
+Alger 
+394 
+Oran 
+151 
+Annaba 
+280 
+Sétif 
+377 
+Ghardaïa 
+30 
+Total 
+1232 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 34 - 
+ 
+III-ETUDE DU MIM SUR LA CONJONCTURE EN 2016 
+Le ministère de l’industrie et des mines a lancé au titre de l’année 2015 avec la collaboration 
+d’un bureau d’études, la réalisation d’une étude sur la conjoncture dans le secteur industriel 
+et minier, public et privé, 2014 et 2015. 
+Pour rappel, l’enquête de conjoncture, vise la maitrise des tendances conjoncturelles de 
+l’évolution des paramètres relatifs au développement du secteur industriel et minier par le 
+choix des indicateurs les plus révélateurs de la réalité des entreprises, en mettant à 
+contribution les directions de wilaya qualifiées, d’acteurs principaux, pour la réalisation de 
+ce dispositif d’enquête . 
+Cette enquête qui se veut pérenne, s’inscrit dans le cadre des missions dévolues au Ministre 
+de l’Industrie et des Mines, particulièrement la Direction Générale de la Veille Stratégique 
+et des Systèmes d’Information (DGVSESI) et représente, à juste titre, l’un des modules 
+charnières du système d’information du secteur industriel et minier ayant pour objectif : 
+ D’initier un système d’information sur le secteur en se basant sur les directions de 
+wilaya de l’industrie et des mines (DIM) 
+ D’initier les cadres des DIM à la pratique de réalisation de leurs propres enquêtes 
+périodiques et la réalisation de leurs propres travaux d’analyse à partir de ces 
+enquêtes. 
+En effet, l’étude s’appuie sur une enquête statistique qui couvre différents volets incluant la 
+conjoncture économique au sens strict (production trimestrielle, opinions sur l’évolution de 
+l’activité au 1er trimestre 2015), mais aussi les indicateurs annuels du secteur (production, 
+valeur ajoutée, emploi, investissement…), le climat des affaires (contraintes rencontrées par 
+les entreprises…) et les prévisions de clôture de l’année 2015. Cette enquête a été réalisée 
+par les cadres de la DGVSESI, les DIM et le Bureau d’études pour une partie de 
+l’échantillon d’Alger. 
+Ce travail a comporté aussi une série de formations au bénéfice des personnes des directions 
+de wilaya de l’industrie et des mines (DIM) qui ont été mises à contribution pour la 
+réalisation de l’enquête. Le contenu de ces formations est : la collecte des données par 
+questionnaire, le questionnaire, rappels et introduction à la statistique, l’initiation à un 
+logiciel de traitement statistique SPSS, le traitement des données d’une enquête et la 
+réalisation de rapports ainsi que l’introduction à la mise en place d’un système d’information 
+du secteur de l’industrie et des mines, basé sur les DIM. Cette enquête est sanctionnée d’un 
+rapport final sur la conjoncture dans le secteur de l’Industrie et des Mines en 2014 et 2015. 
+ Les résultats de cette enquête ont été publiés dans le précédent numéro de ce bulletin (N°28 
+édition de l’année 2015) 
+Dans le cadre du prolongement de cette enquête de conjoncture, et tenant compte de 
+l’expérience acquise, il a été retenu d’enquêter pour l’année 2016 les mêmes entreprises déjà 
+enquêtées en 2015, selon l’approche « enquête par panel » augmentées d’un nombre 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 35 - 
+ 
+d’entreprises en relation avec l’importance du tissu industriel de la wilaya (échantillon 
+complémentaire). 
+La réalisation de l’enquête de conjoncture de l’année 2016, repose sur l’approche 
+méthodologique ci-après : 
+- Une population  ciblée constituée de l’ensemble des entreprises économiques relevant du 
+secteur industriel et minier, à travers l'ensemble du territoire national. 
+- La méthode retenue pour définir la représentativité de l’échantillon, est celle du « sondage 
+aléatoire  stratifié » en prenant en considération les deux variables à savoir : tranches 
+d’effectifs et secteurs d’activités. 
+Le fichier utilisé  pour le tirage de l’échantillon est celui de l’ONS, issu du recensement 
+économique de 2011, jugé plus fiable et moins contraignant moyennant des actualisations. Il 
+comporte 86 207 entreprises privées réparties sur les tranches d’effectifs suivantes : 
+ 82 716   Entreprises inférieures à 10 salariés; 
+   2 558   Entreprises entre 10 et 49 salariés; 
+     793    Entreprises entre 50 et 249 salariés; 
+     140    Entreprises  de 250 salariés et plus.  
+ 
+Les entreprises publiques et les entreprises de 250 salariés et plus sont enquêtées de manière 
+exhaustive ; Un  échantillon de 1 974 entreprises a été tiré en tenant compte  du principe de  
+stratification par  tranches d’effectifs et secteurs d’activités.  
+ 
+Le nombre d’entreprises arrêté pour chaque wilaya se situe entre 30 et 40 entreprises; 
+exceptionnellement le nombre d’entreprises arrêté pour la wilaya d’Alger est de 130   
+entreprises, compte tenu de l’importance du tissu industriel de cette wilaya. 
+ 
+Les résultats de cette enquête en cours de réalisation, seront publiés dans les prochains 
+numéros du bulletin d’information statistique de la PME.   
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 36 - 
+ 
+IV- SITUATION ECONOMIQUE AU 2
+ème TRIMESTRE 2016 : 
+Comptes Economiques Nationaux 
+Au deuxième trimestre 2016, les Comptes Economiques Nationaux Trimestriels indiquent 
+une croissance en volume du PIB de l’ordre de 3,4% par rapport au deuxième trimestre 
+2015. Le taux de croissance du PIB hors hydrocarbures est de 4,7% au deuxième  trimestre  
+de l’année2016 alors qu’il était de 5,3% au deuxième trimestre 2015 par rapport à T2_2014. 
+Le PIB nominal en T2-2016 par rapport à T2_2015 enregistre une hausse modérée de 2,2%  
+du fait de la baisse du déflateur du PIB de 1,2% (cf. baisse des prix des hydrocarbures). 
+Le tableau et le graphe ci-dessous résument les principales évolutions enregistrées au cours 
+des quatre trimestres de l’année 2015 et des deux premiers trimestres 2016. 
+ 
+Croissance (%) en volume chaîné en glissement annuel (T/T-4) (au prix de 
+l'année précédente) 
+  
+2015 
+2016 
+Intitulés des grands secteurs 
+T1        T2        T3            T4 
+année 
+T1                  T2 
+Agriculture, sylviculture et pêche 
+Hydrocarbures 
+Industries1 
+BTPH y compris STPP  
+Services Marchands  
+Services Non Marchands 
+4,8      6,0      7,2           7,5 
+-1,9     -0,2     -1,4          5,3 
+5,3      4,2      4,5           3,2 
+5,1      4,0      4,8           5,9 
+6,2      5,4      5,0           4,9 
+3,3      3,9      4,1           3,5 
+6,4 
+0,4 
+4,3 
+5,0 
+5,3 
+3,7 
+4,8             5,3 
+3,0             0,2 
+4,2             3,4 
+4,4             8,3 
+4,5             5,0 
+2,8             3,3 
+Le Produit Intérieur Brut (PIB) 
+3,1      3,7      3,5           4,8 
+38 
+4,0             3,4 
+Le PIB hors Hydrocarbures 
+4,9      5,3      5,4           5,8 
+53 
+4,3             4,7 
+Le PIB hors Agriculture 
+2,9      3,5      3,0           4,5 
+35 
+3,9             3,2 
+      Source : ONS 
+ 
+Une analyse plus fine de l’évolution du PIB conduit à retenir les principaux développements 
+suivants pour les grands secteurs d’activité au cours du 2ème trimestre 2016. 
+L’Agriculture : Au deuxième trimestre de l’année 2016, la valeur ajoutée du secteur 
+agricole augmente de  5,3% au lieu de 6% pendant la même période de l’année 2015. La 
+production végétale (notamment celle des céréales) est en retrait par rapport au deuxième 
+trimestre de l’année 2015.    
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+  
+Les Hydrocarbures : Au 2ème trimestre 2016, le secteur des hydrocarbures connait une 
+évolution faiblement positive de 0,2% contre -0,2% durant la même période de l’année 
+2015.Ce retournement de tendance permet cependant, la forte  baisse une contribution 
+légèrement positive à la croissance du PIB trimestriel.des prix  des  produits  pétroliers  a  
+                                               
+ 
+1 Le secteur de l’Industrie dans la nomenclature de l’ONS va au-delà du périmètre du MIM. 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 37 - 
+ 
+conduit  à  une  baisse  de  la  valeur  ajoutée  nominale  du  fait essentiellement de la baisse 
+du déflateur évaluée 26,1%. 
+ 
+L’industrie : Au 2ème trimestre 2016, l’industrie enregistre un ralentissement  de  son  
+rythme de croissance trimestrielle soit une hausse de 3,4% au lieu de 4,2% durant la même 
+période de l’année précédente. 
+Les sous-secteurs de l’industrie connaissent les évolutions suivantes : 
+      
+    
+  
+·    Eau et  Energie : la valeur ajoutée augmente de 5% contre7, 3% ;  
+·    Mines  et carrières : une légère augmentation de 0,1% contre une baisse de 6,6% ;   
+·    ISMME : 3,3% contre 10,7% 
+·    Matériaux de construction : une forte hausse de 7,2% contre 0,2% ; 
+·    Chimie, plastic, caoutchouc : 3,2% contre 2,5% ;  
+·    Industrie agro-alimentaires : 3,5% contre 6,5% ;  
+·    Textiles, confection : 1,6% au lieu de 3,6% ;  
+·    Cuirs et chaussures : une croissance de 3% contre une baisse 5,5% ; 
+·    Bois, papier, lièges : 8,5% contre 2,6% ;  
+·    Industries diverses : une baisse de 13,6 % au lieu d’une baisse de 20,4%. 
+ 
+    
+  
+  
+Le Bâtiment et Travaux Publics et Hydraulique  (y compris les services et travaux 
+publics pétroliers) : Au deuxième trimestre 2016, le volume de la valeur ajoutée du secteur 
+du BTPH progresse de 8,3% contre 4% pendant la même période de l’année 2015.Cette 
+progression est due pour l’essentiel à la construction de logement. Le secteur des services et 
+travaux publics pétroliers enregistre une croissance de 5,3% au lieu  de  2,6% durant la 
+même période de l’année 2015.   
+      
+  
+    
+  
+Les services marchands : La valeur ajoutée des services marchands au 2ème trimestre 
+2016 évolue presque au même rythme que celle observée au 2ème trimestre 2015 soit 5% 
+contre 5,4%. 
+-Le secteur des transports et communications enregistre une croissance de 6,3% 
+contre 5,9% ;  
+ -Le secteur de commerce évolue au rythme de 4,2% contre 5,2% ; 
+-Le secteur « hôtels -cafés –restaurants »enregistre une croissance de 3,1%contre 
+3,6%;  
+-Le secteur des «services fournis aux entreprises » progresse de 5,8% contre 2,7%; 
+-La valeur ajoutée du secteur «services fournis aux ménages » affiche une croissance 
+de 3,3%. 
+Les services non marchands : Les services non marchands affichent une croissance de 
+3,3% au 2ème trimestre 2016 contre  3,9% au  2ème trimestre 2015, les services des 
+administrations publiques sont les plus importants. 
+  
+  
+· Le secteur des administrations publiques enregistre une croissance de3,1% contre 
+3,8% ;  
+· Les services financiers évoluent au rythme de 5,4% contre 4,6% ;    
+· les affaires immobilières progressent de 4,1% contre 5,2%. 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 38 - 
+ 
+Commerce extérieur 
+Balance commerciale  
+Par rapport au 1er semestre 2015, la balance du commerce extérieur Algérien en 1er 
+semestre 2016 a enregistrée :  
+o Une diminution des importations de 23,51 milliards de dollars soit une baisse de près 
+de 14,34% ; 
+o Une diminution des exportations de 12,68 milliards de dollars soit une baisse de près 
+de 33,02%. 
+Les résultats globaux obtenus en matière d’échanges extérieurs de l’Algérie en 1er semestre 
+2016 font ressortir un déficit de la balance commerciale de -10,83 milliards de dollars US 
+contre un déficit de 8,51 milliards de dollars US enregistré durant le premier semestre. Cette 
+tendance s'explique simultanément par la baisse des importations et des exportations 
+enregistrées durant la période sous citée.  
+Tableau 40 Evolution de la Balance commerciale de l’Algérie (S1/2015 –S1/2016) (en Millions de Dollars US) 
+  
+S1/2015 
+S1/2016 
+Evolution en% 
+Importations 
+27 445 
+23509 
+-14,34 
+Exportations 
+18 928 
+12678 
+-33,02 
+Balance Commerciale 
+-8517 
+-10 831 
+ 
+Source : CNIS 
+Importations  
+Les importations Algériennes ont diminué de plus de prés de 14,34 % par rapport au 1er 
+semestre 2015,  Leur répartition par groupe de produits au cours du 1er semestre 2016, fait 
+ressortir à travers le tableau ci-après des baisses pour les groupes «biens d'équipements» de 
+15,28% , les «biens alimentaires» avec une proportion de 21,09%, les «biens destinés à 
+l'outil de production» de 11,65 % et enfin, les «biens de consommation non alimentaires» de 
+9,70%.  
+Tableau 41 Evolution des importations par groupes de produits (S1/2015 – S1/2016) 
+Groupes de produits 
+S1/2015 
+S1/2016 
+Evolution 
+(%)  
+Valeur en 
+Millions de 
+dollars 
+(%) 
+Valeur en 
+Millions 
+de dollars 
+(%) 
+Biens Alimentaires 
+5121 
+18,66 
+4041 
+17,19 
+-21,09 
+Biens destinés à                 
+l’Outil de production 
+8297 
+30,23 
+7330 
+31,18 
+-11,65 
+Biens d’équipements 
+9479 
+34,54 
+8031 
+34,16 
+-15,28 
+Biens de consommation 
+non alimentaires 
+4548 
+16,57 
+4107 
+17,47 
+-9,70 
+Total Général 
+27445 
+100 
+23509 
+100 
+-14,34 
+Source : CNIS 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 39 - 
+ 
+L'examen par groupes de produits fait ressortir durant le 1er semestre 2016, les résultats 
+suivants: 
+ Les « biens d'équipements » qui représentent une part de (34,16%) des 
+importations, sont constitués essentiellement, de véhicules de transport de personnes 
+et de marchandises, des turboréacteurs et turbopropulseurs et des appareils 
+électriques pour la téléphonie.  
+ Pour les « biens destinés au fonctionnement de l'outil de production » : il s'agit 
+surtout, des huiles de pétrole, des matériaux de construction (barres enfer ou en acier, 
+tubes et tuyaux, bois, etc.)  
+ Le groupe des « biens alimentaires » vient en troisième position dans la structure 
+des importations réalisées durant le 1er semestre 2016 avec une part de (17,19%) du 
+volume global, soit 4,04 milliards de dollars US. Par rapport au 1er semestre 2015. 
+ Le groupe de « biens de consommation non alimentaires » occupe le dernier rang 
+dans la structure de nos importations avec la côte part de 17,47% et un volume de 
+4,10 milliards de dollars US. 
+Exportations  
+Les hydrocarbures ont représenté l'essentiel de nos exportations à l'étranger durant le 1er 
+semestre 2016, avec une part de 93,55% du volume global des exportations, et une 
+diminution de 33,62% par rapport au 1er semestre 2015.  
+Les exportations « hors hydrocarbures », qui restent toujours marginales, avec seulement 
+6,45% du volume global des exportations soit l'équivalent de 8,18 milliards de Dollars US, 
+ont enregistré une diminution de 22,83% par rapport au 1er semestre 2015.  
+Les groupes de produits exportés en dehors des hydrocarbures sont constitués 
+essentiellement par des demi-produits qui représentent une part de 4,92% du volume global 
+des exportations soit l'équivalent de 6,24 milliard de Dollars US, des biens alimentaires avec 
+une part de 1,02% , soit 129 millions de Dollars US, des produits bruts avec une part de 
+0,27%, soit en valeur absolue de 34 millions de Dollars US et enfin des biens d'équipements 
+industriels et des biens de consommation non alimentaires avec les parts respectives de 
+0,17% et 0,07%.  
+Tableau 42 Principaux produits hors hydrocarbure  exportés (S1/2015- S1/2015) 
+                                                                                                   Valeurs en millions de Dollars US 
+Désignation du produit 
+Valeurs en millions de Dollars US 
+S1/2015 
+S1/2016 
+Valeurs 
+% 
+Valeurs 
+% 
+Huiles et autres produits provenant 
+de la distillation des goudrons 
+279,39 
+26,36 
+216,1 
+26,42 
+Ammoniacs anhydres 
+305,09 
+28,78 
+175,54 
+21,46 
+Engrais minéraux 
+158,06 
+14,91 
+167,12 
+20,43 
+
+---PAGE---
+Bulletin d’information statistique n°29     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2016  
+Ministère de l’Industrie et des Mines                                                                                        Page - 40 - 
+ 
+Sucres de canne ou de betterave 
+95,17 
+8,98 
+80,38 
+9,83 
+Hydrogènes cycliques 
+32,39 
+3,06 
+28,58 
+3,49 
+Phosphate de calcium 
+44,55 
+4,20 
+20,9 
+2,56 
+Alcools acycliques 
+17,15 
+1,62 
+13,48 
+1,65 
+Hydrogène, gaz rare 
+11,96 
+1,13 
+12,81 
+1,57 
+Dattes 
+24,94 
+2,35 
+12,35 
+1,51 
+Fil, câbles et autres conducteurs 
+isoles. 
+- 
+  
+12,34 
+1,51 
+S / TOTAL 
+968,7 
+91,39 
+739,6 
+90,42 
+Total du groupe 
+1060 
+100,00 
+818 
+100,00 
+Source : CNIS 
+ 
+ 
+
+---PAGE---
+ 
+ 
+V- DONNEES SUR LES FACTEURS CLES DE L’INVESTISSEMENT 
+Foncier industriel 
+Le tableau suivant présente la situation des allocations de foncier opérées, à fin juin 2016, au niveau des projets de parcs industriels 
+Parc industriel 
+Superficie (m2) 
+Superficie 
+allouée 
+(m2) 
+Investisseurs 
+implantés 
+Arrêtés de 
+concession signés 
+Actes de concession 
+établis 
+Permis 
+de 
+construir
+e 
+délivrés 
+Projet
+s 
+lancés 
+Projets 
+entrés en 
+activité  
+Wilaya de 
+localisation 
+Dénomination 
+Nombre 
+Superficie (m*) 
+Nombre 
+Superficie (m3) 
+Nombre 
+Superficie (m2) 
+Djelfa 
+Ain Oussera 
+4 000 000 
+1 273 613 
+10 
+665 700 
+45 
+962 715 
+- 
+- 
+- 
+- 
+ 
+Mn Defla 
+Boumedfaa 
+580 000 
+8 368 
+1 
+8 368 
+1 
+8 368 
+- 
+- 
+- 
+- 
+ 
+Chlef 
+Oued Sly 
+1 100 000 
+135 074 
+- 
+- 
+1 
+13 074 
+- 
+- 
+- 
+- 
+ 
+' 
+boumerdes 
+Larbatache 
+1 430 000 
+1 031 464 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+ 
+iiiel 
+Bellara 
+5 230 000 
+2 560 000 
+2 
+2 
+2 
+2 560 000 
+2 
+2 560 000 
+- 
+2 
+  
+Constantine 
+Sidi Roman 
+1 400 000 
+229 410 
+3 
+20 294 
+13 
+94 444 
+- 
+- 
+- 
+- 
+  
+Ain Abid 
+5 430 928 
+69 687 
+- 
+- 
+2 
+65 556 
+- 
+- 
+- 
+- 
+- 
+Mlila 
+Chelghoum Laid 
+2 473 800 
+182 728 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+_ 
+Tlemcen 
+Ouled Bendamou 
+1 030 977 
+181 551 
+8 
+181 551 
+0 
+101 551 
+- 
+- 
+- 
+- 
+  
+Sidi Bel Abbes 
+Sidi Bel Abbes 
+603 590 
+204 218 
+3 
+204 218 
+3 
+204 218 
+3 
+162 765 
+2 
+2 
+2 
+Sidi Bel Abbes 
+Ras El Ma 
+1 000 000 
+28 938 
+8 
+28 938 
+8 
+28 938 
+1 
+3 104 
+- 
+- 
+  
+Relizane 
+Sidi Khettab 
+5 000 000 
+3 697 456 
+67 
+2 965 126 
+100 
+3 482 465 
+39 
+1 462 722 
+23 
+26 
+- 
+Ain Temouchent 
+Tamazoura 
+2 052 800 
+1 137 950 
+72 
+1 147411 
+25 
+304 126 
+- 
+- 
+- 
+7 
+_ 
+Mostaganem 
+Bordjia 
+2 000 099 
+361 028 
+- 
+- 
+18 
+293 528 
+- 
+- 
+- 
+- 
+- 
+Mascara 
+Oggaz 
+981 596 
+360 724 
+27 
+360 625 
+27 
+360 625 
+- 
+- 
+- 
+- 
+- 
+Jouira 
+Oued El Bardi 
+1 896 100 
+286 039 
+5 
+285 039 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+Annaba 
+Ain Berda 
+1 018 123 
+519 373 
+40 
+285 130 
+74 
+519 373 
+63 
+403 479 
+- 
+- 
+_ 
+El-Tarf 
+El-Metroha 
+700 000 
+362 628 
+- 
+- 
+79 
+  
+17 
+- 
+- 
+- 
+- 
+Sous total Nord 
+37 928 013 
+12630 248 
+246 
+6 155 402 
+406 
+9 078 981 
+125 
+4 592 070 
+25 
+37 
+ 
+Batna 
+Ain Yagout 
+1 298 911 
+590 028 
+10 
+416 847 
+1 
+200 013 
+1 
+200 013 
+- 
+3 
+- 
+Naama 
+Horchaia 
+1 500 000 
+25 098 
+3 
+25 098 
+3 
+25 098 
+- 
+- 
+- 
+- 
+- 
+
+---PAGE---
+ 
+Ministère de l’Industrie et des Mines                                                                                        Page - 42 - 
+ 
+Tiaret 
+Zaaroura 
+3 270 000 
+308 318 
+12 
+284 524 
+15 
+284 524 
+1 
+8 883 
+- 
+- 
+- 
+Tiaret 
+Ain Bouchekif 
+3 190 000 
+59 495 
+1 
+59 495 
+1 
+59 495 
+  
+  
+- 
+- 
+~ 
+Bayadh 
+Rogassa 
+1 500 000 
+  
+  
+  
+  
+  
+  
+  
+- 
+- 
+- 
+BBA 
+Ras El Oued 
+1 340 750 
+210 974 
+19 
+165 708 
+21 
+125 946 
+- 
+  
+  
+- 
+- 
+Mechta Fatima 
+3 020 000 
+1 410 398 
+55 
+739 335 
+90 
+924 077 
+5 
+232 572 
+1 
+31 
+1 
+M’sila 
+Draa El Hadja 
+777 501 
+567 092 
+- 
+- 
+- 
+- 
+- 
+  
+- 
+3 
+- 
+Setif 
+Ouled Saber 
+7 000 485 
+3213619 
+- 
+- 
+- 
+- 
+- 
+  
+- 
+- 
+- 
+Tébessa 
+PI El-Aouinet 
+1 544 149 
+127 444 
+- 
+- 
+- 
+- 
+- 
+  
+- 
+- 
+- 
+Sous total Haut Plateaux 
+25 241796 
+6513265 
+1005 
+'1891.007 
+131 
+1 619 153 
+7 
+441 468 
+1 
+37 
+1 
+Adrar 
+Timi 
+2148796 
+1577658 
+ 
+ 
+65 
+1 577 658 
+59 
+1 522 458 
+9 
+- 
+- 
+Bechar 
+Bechar 
+1 870 000 
+308 443 
+13  
+254 332  
+17 
+274 585 
+11 
+129 862 
+7 
+5 
+ 
+Sous total Sud 
+4 018 796 
+1 886 101 
+513 
+254 332. 
+      82 
+1 852 243 
+70 
+1 652 320 
+16 
+5 
+ 
+Total général 
+67 188 605 
+21029 614 
+359 
+8100741 
+     619 
+12 550377 
+202 
+6 685 858 
+42 
+79 
+4 
+
+---PAGE---
+ 
+ 
+VI-ANNEXES 
+Tableau 43 : PME privées par secteurs d'activité 
+ 
+Sectateurs d'activité 
+2015 
+Mouvements enregistrés durant le 1er semestre 
+2016 
+le 1er 
+semestre 
+2016 
+Créations 
+I 
+Radiation 
+II 
+Réactivation 
+III 
+Ecart 
+(I+III)-II 
+I- Agriculture et pêche 
+Agriculture et pêche 
+5625 
+1491 
+53 
+31 
+1469 
+7094 
+ST1 
+5625 
+1491 
+53 
+31 
+1469 
+7094 
+            II- Hydrocarbures, Energie, Mines et Services liés 
+Eau et énergie 
+138 
+7 
+2 
+1 
+6 
+144 
+Hydrocarbures 
+1010 
+574 
+78 
+8 
+504 
+1514 
+Services et travaux pétroliers 
+373 
+11 
+0 
+0 
+11 
+384 
+Mines et carrières 
+1118 
+37 
+3 
+7 
+41 
+1159 
+ST2 
+2639 
+629 
+83 
+16 
+562 
+3201 
+III- BTPH 
+Bâtiment et travaux publics 
+168557 
+545 
+47 
+69 
+567 
+169124 
+ST3 
+168557 
+545 
+47 
+69 
+567 
+169124 
+IV- Industrie manufacturières 
+ISMME 
+12816 
+822 
+65 
+90 
+847 
+13663 
+Matériaux de construction 
+11013 
+10785 
+1068 
+924 
+10641 
+21654 
+Chimie, plastique 
+3691 
+197 
+15 
+22 
+204 
+3895 
+Industrie agroalimentaire 
+24746 
+1550 
+119 
+163 
+1594 
+26340 
+Industrie du textile 
+6737 
+1035 
+72 
+52 
+1015 
+7752 
+Industrie du cuir 
+2057 
+68 
+6 
+14 
+76 
+2133 
+Industrie du bois et papier 
+17776 
+938 
+70 
+140 
+1008 
+18784 
+Industrie divers 
+4865 
+167 
+18 
+40 
+189 
+5054 
+ST4 
+83701 
+15562 
+1433 
+1445 
+15574 
+99275 
+V- Services 
+Transport et communication 
+50592 
+3057 
+230 
+393 
+3220 
+53812 
+Commerce 
+102122 
+8797 
+509 
+764 
+9052 
+111174 
+Hôtellerie  et restauration 
+28405 
+1844 
+119 
+252 
+1977 
+30382 
+Services fournis aux 
+entreprises 
+48998 
+3147 
+624 
+452 
+2975 
+51973 
+Services fournis aux ménages 
+39887 
+3340 
+207 
+562 
+3695 
+43582 
+Etablissements financiers 
+2002 
+51 
+16 
+18 
+53 
+2055 
+Affaires immobilières 
+1944 
+127 
+5 
+15 
+137 
+2081 
+Services pour collectivités 
+3429 
+198 
+12 
+18 
+204 
+3633 
+ST5 
+277379 
+20561 
+1722 
+2474 
+21313 
+298692 
+Total Général 
+537901 
+38788 
+3338 
+4035 
+39485 
+577386 
+Source : CNAS 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+ 
+Ministère de l’Industrie et des Mines                                                                                        Page - 44 - 
+ 
+Tableau 44  Concentration des PME (personnes morales) par wilaya  
+Taux de concentration = (Nombre de PME/Population résidente)*1000 
+Wilaya 
+Nbre de PME 
+S1/2016 
+Population par Wilaya (RGPH 
+2008) 
+Taux de 
+concentration 
+Nord 
+Alger 
+64 683 
+2988145 
+22 
+Tipaza 
+25 307 
+591010 
+43 
+Boumerdès 
+21 783 
+802083 
+27 
+Blida 
+19 811 
+1002937 
+20 
+Tizi Ouzou 
+33 981 
+1127607 
+30 
+Bouira 
+13 410 
+695583 
+19 
+Médéa 
+9 150 
+819932 
+11 
+Ain Defla 
+9 215 
+766013 
+12 
+Bejaia 
+27 658 
+912577 
+30 
+Chlef 
+13 165 
+1002088 
+13 
+Oran 
+28 492 
+1454078 
+20 
+Tlemcen 
+13 252 
+604744 
+22 
+Sidi Bel Abbes 
+9 933 
+949135 
+10 
+Aïn Temouchent 
+6 059 
+726180 
+8 
+Mostaganem 
+9 702 
+737118 
+13 
+Mascara 
+9 629 
+784073 
+12 
+Relizane 
+7 548 
+371239 
+20 
+Constantine 
+18 940 
+938475 
+20 
+Mila 
+10 579 
+766886 
+14 
+Jijel 
+10 499 
+636948 
+16 
+Annaba 
+13 934 
+609499 
+23 
+Skikda 
+11 976 
+898680 
+13 
+El Tarf 
+5 060 
+408414 
+12 
+Guelma 
+7 465 
+482430 
+15 
+ Total du Nord 
+401 231 
+21075874 
+17  
+Hauts-Plateaux 
+M’sila 
+13 256 
+990591 
+13 
+Djelfa 
+8 666 
+1092184 
+8 
+Laghouat 
+5 889 
+455602 
+13 
+Tiaret 
+7 805 
+846823 
+9 
+Saida 
+3 345 
+330641 
+10 
+Tissemsilt 
+3 107 
+294476 
+11 
+Naama 
+2 625 
+192891 
+14 
+El Bayadh 
+3 000 
+228624 
+13 
+Bordj Bou Arréridj 
+12 921 
+628475 
+21 
+Sétif  
+25 286 
+1489979 
+17 
+Batna 
+14 162 
+1119791 
+13 
+Oum El Bouaghi 
+6 355 
+621612 
+10 
+Khenchela 
+6 366 
+386683 
+16 
+Tébessa 
+7 607 
+648703 
+12 
+Souk Ahras 
+5 661 
+438127 
+13 
+ Total des Hauts-Plateaux 
+126 051 
+9765202 
+13 
+Sud 
+Illizi 
+1 782 
+49149 
+36 
+Tamanrasset 
+2 671 
+176637 
+15 
+Tindouf 
+1 856 
+52333 
+35 
+Adrar 
+4 004 
+399714 
+10 
+Biskra 
+7 777 
+721356 
+11 
+Ouargla 
+8 850 
+558558 
+16 
+El Oued 
+7 429 
+647548 
+11 
+Bechar 
+6 801 
+270061 
+25 
+Ghardaia 
+8 934 
+363598 
+25 
+ Total du Sud 
+50 104 
+3238954 
+15 
+Total Général 
+577 386 
+34080030 
+17 
+
+---PAGE---
+ 
+Ministère de l’Industrie et des Mines                                                                                        Page - 45 - 
+ 
+ 
+Tableau 45 FGAR : Dossiers traités par secteur d’activité (de 2004 à fin juin 2016) 
+SECTEUR D'ACTIVITE  
+Nombre 
+de 
+Projets 
+%   
+Montant de la 
+Garantie 
+%   
+Nombre 
+d'Emplois 
+%   
+ INDUSTRIE 
+850 
+51% 
+28 110 152 095 
+61% 
+34 152 
+60% 
+MINE ET CARRIERES 
+18 
+1,1% 
+514 954 237 
+1,1% 
+534 
+0,9% 
+INDUSTRIE 
+SIDERURGIQUE 
+METALIQUE MECANIQUE 
+ET ELECTRIQUE  
+109 
+6,5% 
+3 564 820 448 
+7,7% 
+5 724 
+10,0% 
+MAT.CONST.ET VERRE 
+148 
+8,9% 
+6 021 930 287 
+13,1% 
+4 410 
+7,7% 
+CHIMIE, CAOUTCHOUC 
+ET PLASTIQUE 
+145 
+8,7% 
+4 612 703 250 
+10,0% 
+5 212 
+9,1% 
+AGROALIMENTAIRE 
+TABACS ET ALLUMETTES 
+263 
+15,7% 
+9 283 289 075 
+20,1% 
+11 299 
+19,8% 
+TEXT.BONNET ET 
+CONFECTION 
+29 
+1,7% 
+506 748 550 
+1,1% 
+844 
+1,5% 
+INDUSTRIE CUIR ET 
+CHAUSSURES  
+6 
+0,4% 
+197 904 500 
+0,4% 
+279 
+0,5% 
+BOIS, LIEGE, PAPIER ET 
+IMPRIMERIE 
+85 
+5,1% 
+1 970 006 168 
+4,3% 
+2 838 
+5,0% 
+INDUSTRIES DIVERSES 
+47 
+2,8% 
+1 437 795 580 
+3,1% 
+3 012 
+5,3% 
+BTPH 
+478 
+29% 
+9 932 319 678 
+22% 
+15 370 
+27% 
+TRAVAUX PUBLICS 
+275 
+16,4% 
+6 070 498 878 
+13,2% 
+9 264 
+16,2% 
+BATIMENT 
+190 
+11,4% 
+3 592 531 461 
+7,8% 
+5 885 
+10,3% 
+HYDRAULIQUE 
+13 
+0,8% 
+269 289 339 
+0,6% 
+221 
+0,4% 
+ AGRICULTURE & PECHE 
+17 
+1% 
+581 421 821 
+1% 
+659 
+1% 
+AGRICULTURE 
+4 
+0,2% 
+70 366 398 
+0,2% 
+299 
+0,5% 
+PECHE  
+13 
+0,8% 
+511 055 423 
+1,1% 
+360 
+0,6% 
+ SERVICES 
+327 
+20% 
+7 485 839 946 
+16% 
+6 834 
+12% 
+TRANSPORT  
+79 
+4,7% 
+3 479 936 334 
+7,5% 
+2 829 
+5,0% 
+SANTE 
+170 
+10,2% 
+2 030 614 530 
+4,4% 
+1 495 
+2,6% 
+MAINTENANCE 
+INDUSTRIELLE 
+15 
+0,9% 
+444 054 697 
+1,0% 
+290 
+0,5% 
+TOURISME & LOISIR 
+40 
+2,4% 
+1 185 169 189 
+2,6% 
+1 221 
+2,1% 
+NTIC 
+12 
+0,7% 
+210 932 470 
+0,5% 
+673 
+1,2% 
+COMMUNICATION 
+5 
+0,3% 
+78 783 030 
+0,2% 
+47 
+0,1% 
+ENGINEERING ET ETUDE 
+TECHNIQUES 
+6 
+0,4% 
+56 349 696 
+0,1% 
+279 
+0,5% 
+TOTAL  
+1 672 
+100% 
+46 109 733 540 
+100% 
+57 015 
+100% 
+Source : FGAR
+
+---PAGE---
+ 
+Ministère de l’Industrie et des Mines                                                                                        Page - 46 - 
+ 
+Tableau 46 FGAR : Dossiers traités par région (de 2004 à fin juin 2016) 
+REGION 
+Nombre de Projet 
+% 
+Montant de la Garantie 
+% 
+Nombre d'Emplois 
+% 
+EST 
+ANNABA 
+31 
+1,9% 
+951 082 243 
+2,1% 
+1 614  
+2,8% 
+EL-TAREF 
+11 
+0,7% 
+454 115 870 
+1,0% 
+324  
+0,6% 
+TEBESSA 
+18 
+1,1% 
+387 965 445 
+0,8% 
+441  
+0,8% 
+SOUK AHRAS 
+14 
+0,8% 
+198 604 707 
+0,4% 
+499  
+0,9% 
+BATNA 
+28 
+1,7% 
+863 506 356 
+1,9% 
+1 064  
+1,9% 
+BISKRA 
+14 
+0,8% 
+331 192 725 
+0,7% 
+303  
+0,5% 
+CONSTANTINE 
+50 
+3,0% 
+1 873 080 917 
+4,1% 
+1 920  
+3,4% 
+KHENCHELA 
+6 
+0,4% 
+131 984 427 
+0,3% 
+241  
+0,4% 
+M'SILA 
+24 
+1,4% 
+730 821 640 
+1,6% 
+676  
+1,2% 
+SETIF 
+55 
+3,3% 
+1 932 573 404 
+4,2% 
+2 009  
+3,5% 
+BORDJ BOU ARRERIDJ 
+35 
+2,1% 
+1 249 882 882 
+2,7% 
+1 494  
+2,6% 
+BEJAIA 
+111 
+6,6% 
+1 857 176 424 
+4,0% 
+3 300  
+5,8% 
+JIJEL 
+7 
+0,4% 
+373 642 938 
+0,8% 
+413  
+0,7% 
+OUM EL BOUAGHI 
+8 
+0,5% 
+239 961 668 
+0,5% 
+272  
+0,5% 
+SKIKDA 
+10 
+0,6% 
+155 537 828 
+0,3% 
+272  
+0,5% 
+GUELMA 
+6 
+0,4% 
+190 022 860 
+0,4% 
+117  
+0,2% 
+MILA 
+15 
+0,9% 
+525 195 441 
+1,1% 
+633  
+1,1% 
+S/TOTAL 
+443 
+26% 
+12 446 347 775 
+27% 
+15 592  
+27% 
+CENTRE 
+BOUIRA 
+44 
+2,6% 
+1 630 877 864 
+3,54% 
+1 671  
+2,93% 
+TIZI OUZOU 
+147 
+8,8% 
+2 957 007 235 
+6,41% 
+4 891  
+8,58% 
+BOUMERDES 
+58 
+3,5% 
+1 305 240 701 
+2,83% 
+1 308  
+2,29% 
+ALGER 
+435 
+26,0% 
+12 325 807 572 
+26,73% 
+15 435  
+27,07% 
+BLIDA 
+79 
+4,7% 
+1 658 869 058 
+3,60% 
+1 834  
+3,22% 
+TIPAZA 
+33 
+2,0% 
+980 098 157 
+2,13% 
+1 342  
+2,35% 
+MEDEA 
+11 
+0,7% 
+319 607 065 
+0,69% 
+247  
+0,43% 
+DJELFA 
+8 
+0,5% 
+140 004 252 
+0,30% 
+229  
+0,40% 
+S/TOTAL 
+815 
+49% 
+21 317 511 904 
+46% 
+26 957  
+47% 
+OUEST 
+AIN-DEFLA 
+15 
+0,9% 
+449 077 920 
+0,97% 
+507 
+0,9% 
+CHLEF 
+19 
+1,1% 
+720 325 828 
+1,56% 
+786 
+1,4% 
+TIARET 
+12 
+0,7% 
+767 670 400 
+1,66% 
+278 
+0,5% 
+RELIZANE 
+20 
+1,2% 
+619 745 839 
+1,34% 
+674 
+1,2% 
+NAAMA 
+4 
+0,2% 
+57 564 212 
+0,12% 
+119 
+0,2% 
+SIDI BELABES 
+21 
+1,3% 
+577 871 500 
+1,25% 
+923 
+1,6% 
+AIN-TEMOUCHENT 
+11 
+0,7% 
+353 174 731 
+0,77% 
+368 
+0,6% 
+TISSEMSILT 
+2 
+0,1% 
+30 263 450 
+0,07% 
+35 
+0,1% 
+SAIDA 
+9 
+0,5% 
+148 801 500 
+0,32% 
+165 
+0,3% 
+ORAN 
+137 
+8,2% 
+3 851 016 626 
+8,35% 
+5 183 
+9,1% 
+MASCARA 
+18 
+1,1% 
+651 911 865 
+1,41% 
+1 156 
+2,0% 
+MOSTAGANEM 
+39 
+2,3% 
+1 286 205 337 
+2,79% 
+1 254 
+2,2% 
+TLEMCEN 
+28 
+1,7% 
+712 511 297 
+1,55% 
+951 
+1,7% 
+S/TOTAL 
+335 
+20% 
+10 226 140 505 
+22% 
+12 399 
+22% 
+SUD 
+ADRAR 
+10 
+0,6% 
+213 289 871 
+0,5% 
+215 
+0,4% 
+EL-OUED 
+7 
+0,4% 
+180 971 725 
+0,4% 
+149 
+0,3% 
+BECHAR 
+2 
+0,1% 
+98 936 218 
+0,2% 
+136 
+0,2% 
+GHARDAIA 
+15 
+0,9% 
+334 019 366 
+0,7% 
+454 
+0,8% 
+LAGHOUAT 
+8 
+0,5% 
+306 123 625 
+0,7% 
+377  
+0,7% 
+OUARGLA 
+24 
+1,4% 
+662 369 273 
+1,4% 
+522 
+0,9% 
+TINDOUF 
+1 
+0,1% 
+7 260 000 
+0,0% 
+34 
+0,1% 
+TAMANRASSET 
+9 
+0,5% 
+265 251 537 
+0,6% 
+158 
+0,3% 
+ILLIZI 
+3 
+0,2% 
+51 511 741 
+0,1% 
+22 
+0,0% 
+S/TOTAL 
+79 
+5% 
+2 119 733 356 
+5% 
+2 067 
+3% 
+TOTAL 
+1672 
+100% 
+46 109 733 540  
+100% 
+57 015 
+99% 
+Source : FGAR 
+ 
+ 
+
+---PAGE---

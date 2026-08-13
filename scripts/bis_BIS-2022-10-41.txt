@@ -1,0 +1,4774 @@
+ الجمهورية الجزائرية
+الديمقراطية الشعبية 
+        République Algérienne Démocratique et Populaire 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bulletin d’information 
+Statistique de la PME   
+ 
+                N°41 
+                
+ 
+            
+ 
+ 
+ 
+ 
+Edition Octobre 2022 
+ 
+ 
+ 
+ 
+ وزارة الصناعة 
+Ministère de l’Industrie  
+ 
+ 
+ 
+Direction Générale de la Veille Stratégique, 
+               des Etudes et des Systèmes d’Information  
+ 
+Données du 1er semestre 2022 
+ 
+
+---PAGE---
+- 2 - 
+ 
+Abréviations 
+PME 
+ 
+ Petite et Moyenne Entreprise 
+EPE  
+ 
+Entreprise Publique Economique  
+Mds 
+ 
+Milliards  
+PIB  
+ 
+Produit Intérieur Brut 
+VA 
+ 
+Valeur Ajoutée 
+HH 
+ 
+Hors Hydrocarbures 
+ANGEM            Agence Nationale de Gestion du Micro Crédit 
+ANADE            Agence Nationale d'Appui et de Développement de l'Entreprenariat 
+ 
+ANDI   
+Agence Nationale de Développement de l’Investissement 
+CGCI-PME 
+Caisse de Garantie des Crédits d’Investissements-PME 
+FGAR   
+Fonds de Garantie des Crédits aux PME  
+CNAC   
+Caisse Nationale d’Assurance Chômage 
+ECOFIE :              Société d’études économiques et d’analyses financières du secteur public marchand 
+ 
+ 
+ 
+Avertissement  
+Source principale : Référentiels CNAS et CASNOS 
+Remerciements 
+ 
+Le Bulletin d’information statistique                    
+Participe à une meilleure visibilité de l’évolution des indicateurs économiques et, 
+notamment, de ceux relatifs à la démographie des PME. 
+ 
+La diffusion du présent document à une large échelle, y compris sur le Web, répond 
+aux préoccupations du ministère de mettre l’information utile à la disposition d’un 
+maximum d’opérateurs et d’utilisateurs. 
+ 
+Nous tenons à exprimer notre reconnaissance                              
+Aux institutions publiques et aux structures déconcentrées du MI qui contribuent 
+régulièrement à l’alimentation en données de ce Bulletin, devenu un périodique 
+diffusé tous les semestres. 
+ 
+Nous tenons à exprimer nos vifs remerciements                          
+Aux nombreux lecteurs qui nous ont fait part de leurs observations et suggestions. 
+ 
+
+---PAGE---
+- 3 - 
+ 
+  
+ 
+ 
+Table des matières 
+Préambule ............................................................................................................................. - 5 - 
+Chiffres clés au 30/06/2022 ................................................................................................. - 6 - 
+I- POPULATION DES PME .................................................................................................. - 7 - 
+1- Situation à la fin du 1e semestre 2022 ..................................................................................................- 7 - 
+2- Distribution ..........................................................................................................................................- 8 - 
+2.1 Par taille ...............................................................................................................................................- 8 - 
+2.2 Par nature juridique.............................................................................................................................- 9 - 
+2.3 Par statut juridique et secteur d’activité ........................................................................................... - 10 - 
+2.4 Par région ......................................................................................................................................... - 11 - 
+2.5 Densité .............................................................................................................................................. - 12 - 
+2.6 Evolution de la population globale des PME ................................................................................... - 13 - 
+2.7 Evolution des PME (tout secteur confondu) par secteur d'activité .................................................. - 13 - 
+2.8 Evolution de l’emploi par type de PME ........................................................................................... - 14 - 
+3- Démographie .................................................................................................................................... - 14 - 
+3.1 Croissance .......................................................................................................................................... - 14 - 
+3.2 Création de PME .............................................................................................................................. - 15 - 
+3.3 Réactivation ...................................................................................................................................... - 15 - 
+3.4 Radiation (mortalité) ........................................................................................................................ - 15 - 
+II- STATISTIQUES DES PROGRAMMES D’APPUI À LA PME ..........................................- 17 - 
+1. Etat du dispositif « FGAR » .............................................................................................................. - 17 - 
+2. Activités de la CGCI-PME (dispositif relevant du Ministère des finances) ................................... - 21 - 
+3. Dispositif « ANGEM » ...................................................................................................................... - 25 - 
+III. Dispositifs Sociaux d’appui à la PME ............................................................................- 26 - 
+1. Dispositif « ANADE » ....................................................................................................................... - 26 - 
+2. Dispositif « CNAC » .......................................................................................................................... - 28 - 
+3. Bilan des activités relatif aux Centres d’appui et de conseil aux PME et Pépinières d’Entreprises au 1er 
+semestre 2022 .................................................................................................................................... - 31 - 
+4. Dispositif « ANIREF » ....................................................................................................................... - 32 - 
+VI- Commerce extérieur ........................................................................................................- 35 - 
+1. Balance commerciale ........................................................................................................................ - 35 - 
+2. Importations ...................................................................................................................................... - 36 - 
+2. Exportations ....................................................................................................................................... - 37 - 
+V-ANNEXES ........................................................................................................................- 38 - 
+ 
+ 
+ 
+Sommaire 
+
+---PAGE---
+- 4 - 
+ 
+ 
+ 
+Liste des tableaux 
+ 
+ 
+TABLEAU 1 POPULATION GLOBALE DES PME A LA FIN DU 1ER SEMESTRE 2022 .......................................................... - 7 - 
+TABLEAU 2 : TYPOLOGIE DES PME DURANT LE 1ER SEMESTRE 2022 ............................................................................ - 8 - 
+TABLEAU 3 REPARTITION DES PME (PERSONNES MORALES) PAR SECTEUR D’ACTIVITE ............................................. - 9 - 
+TABLEAU 4 PROFESSIONS LIBERALES PAR SECTEUR D’ACTIVITE ................................................................................. - 10 - 
+TABLEAU 5 REPARTITION DES PME PUBLIQUES PAR TRANCHE D’EFFECTIFS ET SECTEUR D’ACTIVITES .................... - 10 - 
+TABLEAU 7 CONCENTRATION DES PME PRIVEES (PERSONNES MORALES) PAR REGION ............................................ - 11 - 
+TABLEAU 8 DENSITE DES PME PRIVEES (PERSONNES MORALES) PAR REGION ........................................................... - 12 - 
+TABLEAU 9 EVOLUTION DE LA POPULATION GLOBALE DES PME (S1/2021 ET S1/2022) ........................................... - 13 - 
+TABLEAU 10 EVOLUTION DES PME PAR SECTEUR D’ACTIVITE (S1 2021/ S1 2022) .................................................... - 13 - 
+TABLEAU 11 EVOLUTION DES EMPLOIS DECLARES PAR TYPE DE PME ....................................................................... - 14 - 
+TABLEAU 12 MOUVEMENTS CONSTATES DANS LA DEMOGRAPHIE DES PME PRIVEES ............................................... - 14 - 
+TABLEAU 13 MORTALITE DES PME PRIVEES ............................................................................................................... - 15 - 
+TABLEAU 14. MORTALITE DES PME PRIVEES PAR SECTEUR D'ACTIVITE (PERSONNES MORALES) .............................. - 16 - 
+TABLEAU 15 : LA MORTALITE DES PME PRIVEES (PERSONNES PHYSIQUES) ............................................................... - 16 - 
+TABLEAU 16 FGAR : REPARTITION DES PROJETS DE GARANTIS EN CERTIFICATS DE GARANTIE AVRIL 2004 AU 
+30/06/2022 ........................................................................................................................................................... - 17 - 
+TABLEAU 17 FGAR :   REPARTITION DES GARANTIES PAR PROJET EN CREATION ET EXTENSION DU 01/01/2022 AU 
+30/06/2022 ........................................................................................................................................................... - 19 - 
+TABLEAU 18 ANADE : PROJETS FINANCES PAR SECTEUR D’ACTIVITE (CUMUL AU 30/06/2022).............................. - 26 - 
+TABLEAU 19  ANADE : PROJETS FINANCES PAR GENRE ET PAR SECTEUR D’ACTIVITE (CUMUL AU 30/06/2022) ..... - 27 - 
+TABLEAU 20 EVOLUTION DE LA BALANCE COMMERCIALE DE L’ALGERIE (S1/2021 –S1/2022) ................................ - 35 - 
+TABLEAU 21 : EVOLUTION DES IMPORTATIONS PAR GROUPES DE PRODUITS (S1/2021 – S1/2022) ............................ - 36 - 
+TABLEAU 22 : PME PRIVEES (P. MORALE) PAR SECTEURS D'ACTIVITE ....................................................................... - 38 - 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 5 - 
+ 
+Préambule  
+ 
+A la fin du 1er semestre 2022, l’Algérie compte 1 320 664 PME, qui emploient      
+3 220 661 de personnes, dont 3 200 717 proviennent du secteur privé, soit une 
+évolution de 4,45% par rapport au premier semestre de l’année 2021. Environ 98% 
+d’entre elle sont des très petites entreprises 
+ 
+La dynamique et le mouvement semestriel de cette catégorie d’entreprises se sont 
+traduits par une croissance semestrielle de 34 300 PME. Il y a eu 34 057 nouvelles 
+créations de PME, 4 470 réactivations (après arrêts temporaires) et 4 227 radiations. 
+ 
+En ce qui concerne les PME publiques, le nombre total a connu une diminution en 
+premier semestre 2022 par rapport au premier semestre précédent ; il est de 224 
+PME, soit une réduction d’une PME par rapport au 1er semestre 2021, Nous 
+constatons une diminution du nombre des PME publiques, cette dernière étant due 
+au processus de la privatisation de ces entreprises engagé dans le cadre de la 
+restructuration et de la réorganisation du secteur public. 
+En matière de densité, l’Algérie, avec un taux de 29 PME pour 1000 habitants au 
+premier semestre 2022, est très loin des standards internationaux, où ils sont 
+généralement beaucoup plus élevés. 
+ 
+A cet effet et en raison du renforcement des capacités des institutions de soutien et 
+d’accompagnement des PME, une convention de coopération a été signée entre le 
+Fonds de garantie des crédits aux petites et moyennes entreprises (FGAR) et la 
+Banque de développement local (BDL) visant à garantir les crédits d'exploitation au 
+profit des propriétaires de PME. 
+Cette importante convention, première du genre dans le secteur financier et 
+bancaire, permettra aux PME de garantir les crédits d'exploitation, en plus des 
+crédits d’investissement, ajoutant que le principal objectif de ce partenariat était la 
+promotion de l'économie nationale par le financement des investissements des 
+petites et moyennes entreprises conformément aux orientations des hautes 
+autorités du pays. 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 6 - 
+ 
+Chiffres clés au 30/06/2022 
+ 
+Population totale des PME 
+(tous statuts confondus) 
+1 320 664 
+ 
+PME créées  
+ 
+34 057 
+Cessations d’activités 
+(PME privés) 
+4 227 
+PMI  
+112 963 
+PME publiques  
+224 
+ 
+Densité des PME  
+(Nombre de PME 
+pour 1000 Habitants) 
+Tous statuts 
+juridiques 
+confondus 
+29 
+Personnes morales 
+privées/ Moyenne 
+internationale 
+16 
+Emplois (agents) 
+3 220 661 
+Importations (Millions de $) 
+20 223,81 
+Exportations (Millions de $) 
+25 922,62 
+ 
+ 
+
+---PAGE---
+- 7 - 
+ 
+I- POPULATION DES PME 
+1- Situation à la fin du 1e semestre 2022 
+A la fin du 1er semestre 2022, la population globale des PME s’élève à 1 320 664 
+entités dont 56.19% sont constituées de personnes morales, parmi lesquelles on 
+recense 224 Entreprises Publiques Economiques (EPE). Le reste est composé de 
+personnes physiques avec (43,79%), dont 20,18% de professions libérales et 23,62% 
+d’activités artisanales.  
+Tableau 1 Population globale des PME à la fin du 1er semestre 2022  
+ 
+Types de PME 
+ 
+Nbre de PME 
+Part (%) 
+1. 
+PME privées 
+ 
+Personnes morales1 
+                 742089 
+            56,19 
+ 
+Personnes physiques2  
+                578351 
+            43,79 
+ 
+ dont Professions libérales 
+                266449 
+             20,18 
+ 
+ dont Activités artisanales                311902 
+            23,62 
+ 
+                        S/Total 1 
+              1 320 440 
+            99,98 
+2 
+PME publiques3 
+ 
+Personnes morales 
+                 224 
+             0,02 
+ 
+S/Total 2 
+                  224 
+             0,02 
+ 
+Total 
+             1 320 664 
+           100,00 
+ 
+                          
+[NOM DE 
+CATÉGORIE]
+56,19%
+[NOM DE 
+CATÉGORIE]
+43,79%
+la répartition des PME selon 
+persones physiques et personnes morales
+ 
+                                                             
+ 
+1 Source : CNAS 
+2 Source : CASNOS 
+3 Source : ECOFIE 
+
+---PAGE---
+- 8 - 
+ 
+ 
+2- Distribution 
+2.1 Par taille  
+Durant le 1er semestre 2022, les TPE4 sont au nombre de 33 716 TPE, soit un taux 
+de 98,3%, demeurant ainsi fortement dominante dans le tissu économique. 
+Tableau 2 : typologie des PME durant le 1er semestre 2022  
+Secteurs 
+d’activités 
+ 
+Année 
+2021 
+S1/2022 
+Cumul Au 
+S1/2022 
+de 0 à 9 
+salariés 
+de10 à 49 
+salariés 
+de 50 à 249 
+salariés 
+Total PME 
+de 0 à 250 
+salariés 
+Agriculture 
+8 010 
+285 
+29 
+-1 
+313 
+8 323 
+Hydrocarbures, 
+Energie, Mines et 
+services liés 
+3 243 
+63 
+9 
+13 
+85 
+3 328 
+BTPH 
+199 331 
+2271 
+188 
+19 
+2478 
+201 809 
+Industries 
+manufacturières 
+109 991 
+2922 
+47 
+3 
+2972 
+112 963 
+Services y compris 
+les professions 
+libérales 
+662 185 
+19878 
+205 
+71 
+20154 
+682 339 
+Artisanat 
+303 605 
+8297 
+ 
+ 
+8297 
+311 902 
+Total 
+1 286 365 
+33716 
+478 
+105 
+34299 
+1 320 664 
+% 
+98,30 
+1,39 
+0,31 
+100 
+ 
+                                    
+33 716
+478
+105
+de 0 à 9 salariés
+de10 à 49 salariés
+de 50 à 249 salariés
+les PME par tranche d'effectifs
+ 
+                                                             
+ 
+4 TPE (Très Petite Entreprise) : effectif de moins de 10 salarié 
+ 
+ 
+
+---PAGE---
+- 9 - 
+ 
+2.2 Par nature juridique 
+ 
+ 
+2.2.1 Personnes Morales  
+Les PME (personnes morales) tous statuts confondus sont présentes en force dans 
+le secteur des services qui se concentre dans plus de la moitié de la population des 
+PME soit un taux de 56,03%, suivi par le secteur du BTPH (27,19%), puis vient en 
+troisième position il y a le secteur de l’industrie soit un taux de 15,22%.   
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité  
+ 
+Secteurs d’Activité 
+PME privées* 
+ 
+PME publiques** 
+Total 
+Part en (%) 
+Agriculture 
+8 241 
+82 
+8 323 
+1,12 
+Hydrocarbures, Energie, Mines 
+et services liés 
+3 326 
+2 
+3 328 
+0,45 
+BTPH 
+201 796 
+13 
+201 809 
+27,19 
+Industries manufacturières 
+112 893 
+70 
+112 963 
+15,22 
+Services 
+415833 
+57 
+415 890 
+56,03 
+Total Général 
+742089 
+224 
+742 313 
+100,00 
+*source CNAS ** source ECOFIE  
+ 
+2.2.2 Personnes physiques  
+Pour la période considérée, le nombre total des personnes physiques a atteint     
+578351 PME, dont 266 449 sont des professions libérales et 311 902 sont des activités 
+artisanales (Voir le tableau N°1). 
+ a. Professions libérales 
+La catégorie des professions libérales, englobe, notamment, les notaires, les avocats, 
+les huissiers de justice, les médecins, les architectes et les agriculteurs.  
+Les professions libérales, au nombre de 266 449, exercent à 67,06% dans 
+l’Agriculture, suivi par le secteur de la Santé soit un taux de 21,48%, tel que repris 
+dans le tableau n°4.  
+ 
+ 
+
+---PAGE---
+- 10 - 
+ 
+Tableau 4 Professions libérales par secteur d’activité  
+  
+Santé 
+Justice 
+Exploitations agricoles 
+Total 
+Nbre au 30.06.2022 
+57 239 
+30535 
+178 675 
+266 449 
+Part en % 
+21,48 
+11,46 
+67,06 
+100 
+ 
+b-Activités Artisanales : 
+Durant le 1er semestre 2022, la CASNOS a enregistré une évolution de 8294 
+affiliations, ce qui porte le nombre total des artisans au 30/06/2022 à 311 902 PME.    
+2.3 Par statut juridique et secteur d’activité 
+2.3.1. PME publiques  
+Les PME publiques représentent une part minime dans la population globale des 
+PME. Leur nombre est de 224 PME durant le 1er semestre 2022 contre 225 durant le 
+premier de l’année écoulé, soit un recul de - 0,44%.  
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) 
+Secteurs 
+d’activités 
+1 à 9 salariés 
+10 à 49 
+salariés 
+50 à 249 
+salariés 
+Nombre 
+global 
+de PME 
+% 
+Effectif 
+global 
+% 
+Nombre Effectifs Nombre Effectifs Nombre Effectifs 
+Industrie 
+3 
+13 
+14 
+403 
+53 
+6995 
+70 
+31,25 
+7411 
+37,16 
+Services 
+0 
+0 
+9 
+250 
+48 
+6312 
+57 
+25,45 
+6562 
+32,90 
+Agriculture 
+15 
+84 
+48 
+1312 
+19 
+2120 
+82 
+36,61 
+3516 
+17,63 
+BTPH 
+0 
+0 
+0 
+0 
+13 
+2124 
+13 
+5,80 
+2124 
+10,65 
+Mines et 
+carrières 
+0 
+0 
+0 
+0 
+2 
+331 
+2 
+0,89 
+331 
+1,66 
+Total 
+18 
+97 
+71 
+1965 
+135 
+17882 
+224 
+100,00 
+19944 
+100,00 
+Source : ECOFIE 
+Les PME publiques exercent dans tous les secteurs d’activité de l’économie 
+nationale, on observe du tableau ci-dessus l’émergence du secteur de l’Agriculture 
+avec 36,61% des PME/EPE, suivie du secteur de l’Industrie (31,25%) puis vient le 
+secteur des Services (25,45%).  
+Les PME publiques industrielles emploient 37,16 % des effectifs du Secteur Public 
+Marchand SPM de type PME.  
+ 
+ 
+
+---PAGE---
+- 11 - 
+ 
+ 
+2.3.2. PME Privées  
+Le nombre total des PME privées à la fin du 1er semestre 2022 est de 1 320 440. Elles 
+sont concentrées au niveau du secteur des services (le transport en particulier), 
+l’Artisanat et le BTPH. 
+Tableau 6 : Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) 
+ 
+ 
+Secteurs d’Activité 
+Nombre 
+Part en 
+(%) 
+I 
+Agriculture 
+8241 
+0,62 
+II 
+Hydrocarbures, Energie, Mines et services 
+liés 
+3326 
+0,25 
+III 
+BTPH 
+201796 
+15,28 
+IV 
+Industries manufacturières 
+112893 
+8,55 
+V 
+Services y compris les professions libérales 
+682282 
+51,67 
+VI 
+Artisanat 
+311902 
+23,62 
+ 
+Total Général 
+1 320 440 
+100,00 
+ 
+2.4 Par région  
+Selon la répartition spatiale du Schéma National d'Aménagement du Territoire 
+(SNAT), les PME (personnes morales) sont prédominantes dans le Nord et, à un 
+degré moindre, dans les Hauts-Plateaux. 
+Tableau 7 Concentration des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/2022 
+Taux de concentration (%) 
+Nord 
+510 944 
+68,85 
+Hauts-Plateaux 
+166 143 
+22,39 
+Sud & Grand Sud  
+65 002 
+8,76 
+Total Général 
+742 089 
+100,00 
+     Source : CNAS 
+La région du Nord regroupe, 510 944 PME, soit 68,85 % des PME du pays, suivie 
+par la région des Hauts-Plateaux avec 166 153 PME soit 22,39%, et les régions du 
+Sud et du Grand Sud accueillent 65 002 PME soit un taux de 8,76% du total.  
+
+---PAGE---
+- 12 - 
+ 
+2.5 Densité  
+ 
+En tenant compte de la population Nationale au 1er janvier 2022, selon les 
+prévisions de l’ONS qui s’élève à 45,5 millions d’habitants, la densité moyenne est 
+de 29 entreprises pour 1000 habitants.  
+Par région la densité des PME se représente comme suit :  
+ 
+ 32 PME pour 1000 habitants au Nord du pays,  
+ 23 PME pour 1000 habitants dans la région des Hauts Plateaux.  
+ 27 PME pour 1000 habitants dans la région du Sud.  
+ 
+Région 
+Nbre de PME 
+S1/2021 
+Population par 
+Wilaya (RGPH 
+2008)** 
+part (RGPH 
+2008)** 
+Population 
+par Wilaya 
+au 1er 
+janvier 2021 
+densité 
+Nord 
+909277 
+21075874 
+0,618 
+28192445 
+ 
+            32 
+Hauts-Plateaux 
+295697 
+9765202 
+0,287 
+13062563 
+            23 
+Sud 
+115690 
+3238954 
+0,095 
+4332633 
+             27 
+Total Général 
+1320664 
+34080030 
+1 
+45587641 
+            29 
+Ce ratio national diminue à 16 pour 1.000 habitants pour les PME privées de type 
+« personnes morales » et présente un écart important d’une région à l’autre du 
+pays :  
+ 18 PME privées pour 1000 habitants au Nord du pays,  
+ 13 PME privées pour 1000 habitants dans la région des Hauts Plateaux.  
+ 15 PME privées pour 1000 habitants dans la région du Sud.  
+ 
+Tableau 8 Densité des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/20215 
+Population par 
+Wilaya (RGPH 
+2008)6  
+part 
+(RGPH 
+2008)  
+Population par 
+Wilaya au 1er 
+janvier 2021 
+densité 
+Nord 
+510 944 
+21075874 
+0,618 
+28192445 
+18 
+Hauts-Plateaux 
+166 143 
+9765202 
+0,287 
+ 
+13 
+Sud 
+65 002 
+3238954 
+0,095 
+13062563 
+15 
+Total Général 
+742 089 
+34080030 
+1 
+4332633 
+16 
+                                                             
+ 
+5 Source : CNAS 
+6 La démographie au janvier 2021 par wilaya par rapport à la structure du (RGPH 2008) 
+ 
+
+---PAGE---
+- 13 - 
+ 
+2.6 Evolution de la population globale des PME 
+ 
+L’évolution de la population de la PME entre le 1er semestre 2021 et le   1er semestre 
+2022 est de 4,22 % tous secteurs juridiques confondus, représentant un 
+accroissement net total de +53 444 PME. Pour les PME privées personnes morales, 
+cette évolution est de 4,58%. 
+Tableau 9 Evolution de la population globale des PME (S1/2021 et S1/2022)  
+ 
+ 
+S1/2021 
+S1/2022 
+Evolution % 
+Population globale de la PME 
+1267220 
+1320664 
+4,22 
+Dont PME privées personnes 
+morales 
+709 571 
+742 089 
+4,58 
+ 
+2.7 Evolution des PME (tout secteur confondu) par secteur d'activité 
+Les secteurs où la création d’entreprise a été la plus forte à la fin du premier 
+semestre 2022, restent ceux des services avec 51,67%. 
+Les PME à caractère industriel sont au nombre de 108 762 entités à la fin du 1er 
+semestre 2021, contre 112 963 entités à la fin du 1er semestre 2022, soit une évolution 
+de 4.22 %. 
+Tableau 10 Evolution des PME par secteur d’activité (S1 2021/ S1 2022) 
+ 
+ 
+ 
+ 
+Secteurs d’Activité 
+S1/2021 
+Parts(%) S1/2022 Parts(%) Evolution 
+(%) 
+I 
+Agriculture 
+7909 
+0,62 
+8 323 
+0,63 
+5,23 
+II 
+Hydrocarbures, Energie, Mines et 
+services liés 
+3199 
+0,25 
+3 328 
+0,25 
+4,03 
+III 
+BTPH 
+197937 
+15,62 
+201 809 
+15,28 
+1,96 
+IV 
+Industries manufacturières 
+108762 
+8,58 
+112 963 
+8,55 
+3,86 
+V 
+Services y compris les professions 
+libérales 
+651225 
+51,39 
+682 339 
+51,67 
+4,78 
+VI 
+Artisanat 
+298188 
+23,53 
+311 902 
+23,62 
+4,60 
+ 
+Total 
+1267220 
+100 
+1 320 664 
+100,00 
+4,22 
+Source : CNAS/CASNOS/ECOFIE 
+ 
+
+---PAGE---
+- 14 - 
+ 
+2.8 Evolution de l’emploi par type de PME 
+A la fin du 1er semestre 2022, l’effectif global des PME est au nombre de         
+3 220 661 agents, dont seulement 19 944 salariés relèvent des PME publiques.      
+L’effectif global des PME a progressé de 4,45 % entre le 1er semestre 2021 et le 1er 
+semestre 2022      
+ 
+Tableau 11 Evolution des emplois déclarés par type de PME 
+Types de PME 
+1er semestre 2021 
+1er semestre 2022 
+Evolution 
+(%) 
+Nombre 
+Parts (%) 
+Nombre 
+Parts (%) 
+ 
+salariés 
+179 6492 
+58,26 
+188 0277 
+58,38 
+4,66 
+employeurs 
+1 266 995 
+41,09 
+1 320 440 
+41,00 
+4,22 
+S/Total 
+3 063 487 
+99,35 
+3200717 
+99,38 
+4,48 
+PME Publiques 
+20 016 
+0,65 
+19 944 
+0,62 
+-0,36 
+Total 
+3 083 503 
+100 
+3 220 661 
+100 
+4,45 
+ 
+Source : CNAS / CASNOS 
+ 
+ 
+ 
+3- Démographie 
+ 
+3.1 Croissance 
+Durant le 1er semestre 2022, le nombre global des PME privées est de 1 320 440,                     
+soit 34 300 nouvelles PME créées. 
+Tableau 12 Mouvements constatés dans la démographie des PME privées         
+Nature des 
+PME 
+ 
+ 
+ 
+2021 
+Mouvements PME du 1er semestre 2022 
+Au 1er 
+semestre 2022 
+Création 
+(1) 
+Réactivation 
+(2) 
+Radiation 
+(3) 
+Croissance 
+(1)+(2)-(3) 
+Personnes 
+morales 
+720 495 
+18925 
+3 530 
+861 
+21 594 
+742 089 
+Personnes 
+Physiques 
+565 645 
+15132 
+940 
+3366 
+12 706 
+578 351 
+Total PME 
+privées 
+1 286 140 
+34 057 
+4 470 
+4 227 
+34 300 
+1 320 440 
+
+---PAGE---
+- 15 - 
+ 
+ 
+3.2 Création de PME 
+Le nombre de PME privées créées durant le 1er semestre 2022 est de 34 057 PME.  
+Les créations d’entreprises enregistrées au niveau de la CNAS à la fin du                
+1er semestre 2022 s’élèvent à 18 925 nouvelles PME (personnes morales) alors qu’au 
+niveau de la CASNOS, on recense 15 132 nouvelles PME créées (personnes 
+physiques) durant la même période. 
+ 
+3.3 Réactivation 
+A la fin du 1er semestre 2022, les réactivations ont touché 3 530 PME privées 
+(personnes    morales) déclarées auprès de la CNAS, on recense aussi 940 PME 
+privées (personnes    physique) déclarées auprès de la CASNOS 
+ 
+3.4 Radiation (mortalité)  
+Durant le 1er semestre 2022, on recense 4 227 PME privées étaient radiées, dont     
+861 sont des personnes morales et 3 366 PME personnes physiques.  
+Tableau 13 Mortalité des PME privées  
+Types de PME privées 
+Personnes7 
+Morales 
+Personnes 
+Physiques8 
+Total 
+Nombre de cessation d’activité 
+861 
+3 366 
+4 227 
+Parts en % 
+20,37 
+79,63 
+100 
+ 
+ 
+ 
+3.4.1 Mortalité des PME privées (personnes morales)  
+a- Mortalité des PME privées par secteur d’activité 
+Durant le 1er semestre 2022, les radiations de PME de type personnes morales sont 
+au nombre de 861 PME. Ce nombre est visiblement en baisse par rapport aux 4 692 
+enregistrées à la fin du 1er semestre 2021 (voir le tableau n°14). 
+ 
+                                                             
+ 
+7 Source : CNAS 
+8 Source : CASNOS 
+
+---PAGE---
+- 16 - 
+ 
+ 
+  
+Tableau 14. Mortalité des PME privées par secteur d'activité (personnes morales) 
+ 
+Secteurs d’Activité 
+ 
+S1/2021 
+S1/2022 
+Evolution en Nbre 
+I 
+Agriculture et pêche 
+42 
+ 
+ 
+21 
+-21 
+II 
+Hydrocarbures, Energie, 
+Mines et services liés 
+11 
+4 
+-7 
+III 
+BTPH 
+1052 
+167 
+-885 
+IV 
+Industries manufacturières 
+677 
+124 
+-553 
+V 
+Services 
+2910 
+545 
+-2365 
+  
+Total Général 
+4692 
+861 
+-3831 
+Source : CNAS 
+Le secteur de "services"  qui a enregistré 545 PME radiées, est le plus touché par la 
+mortalité des PME durant  le la premier semestre 2022 , sachant que les activités du 
+commerce sont les moins pérennes avec 240 PME radiées durant la même période. 
+Le manque de maturation dans le lancement des projets et le manque de la 
+compétitivité expliquent en partie cette mortalité. 
+ 
+3.4.2 La mortalité des PME privées (personnes physiques)  
+Selon les chiffres de la CASNOS, les PME de type personne physique ayant cessé 
+leurs activités durant le 1er semestre 2022, sont au nombre de 3 366 PME. Les 
+activités des artisans sont les plus vulnérables avec un nombre de 1 717 PME radiés 
+(soit un taux de 51,01%) suivi par le secteur des exploitations agricoles en deuxième 
+position avec nombre de 1 331 PME radiées soit un taux de 39,54%. 
+Tableau 15 : La mortalité des PME privées (personnes physiques) 
+ 
+ 
+Santé 
+Justice 
+Exploitations 
+agricoles 
+Artisanat 
+Total 
+Nombre      de cessation 
+d’activité 
+242 
+76 
+1 331 
+1 717 
+3 366 
+Part (%) 
+7,19 
+2,26 
+39,54 
+51,01 
+100 
+
+---PAGE---
+- 17 - 
+ 
+      Source : CASNOS 
+ 
+II- STATISTIQUES DES PROGRAMMES D’APPUI À LA PME 
+ 
+ 
+1. Etat du dispositif « FGAR » 
+ 
+  Situation Globale 
+   Tableau 166 FGAR : Répartition des projets de garantis en certificats de garantie Avril 2004 au 
+30/06/2022                        
+Montants en DA  
+Items 
+ 
+ 
+FGAR 
+MEDA 
+TOTAL  
+Nombre des garanties 
+accordées 
+ 
+ 
+1 021,00 
+691 
+1 712,00 
+Coût total des projets 
+64 548 275 094,46 
+62 310 524 779,15 
+126 858 799 873,61 
+Montant des crédits sollicités 
+37 785 994 631,57 
+46 888 529 064,02 
+84 674 523 695,59 
+Taux moyen de financement 
+sollicité 
+58.54% 
+75.25% 
+66.75% 
+Montant des garanties 
+accordées 
+19 301 859 765,55 
+26 501 973 219,91 
+45 803 832 985,46 
+Taux moyen de garantie 
+accordée 
+51.08% 
+56.52% 
+54.09% 
+Montant moyen de la 
+garantie 
+18 904 857,75 
+38 353 072,68 
+26 754 575,34 
+Nombre d'emplois à créer 
+19 638 
+24 333 
+43 971,00 
+Investissement par emploi 
+3 286 906,77 
+2 560 741,58 
+2 885 056,06 
+Crédit par emploi 
+1 924 126,42 
+1 926 952,25 
+1 925 690,20 
+Garantie par emploi 
+982 883,17 
+1 089 137,11 
+1 041 682,77 
+
+---PAGE---
+- 18 - 
+ 
+Source : FGAR 
+ 
+ 
+     Tableau 17 FGAR : Répartition des projets de garantis en certificats de garantie du 01/01/2022 au 
+30/06/2022                        
+ 
+ 
+Items 
+ 
+ 
+FGAR 
+MEDA 
+TOTAL  
+Nombre des garanties 
+accordées 
+ 
+27,00 
+ 
+20,00 
+ 
+ 
+47,00 
+Coût total des projets 
+ 
+1 792 843 387,00 
+ 
+3 733 758 727,00 
+ 
+5 526 602 114,00 
+Montant des crédits sollicités 
+ 
+1 324 774 443,00 
+ 
+2 780 200 565,00 
+ 
+4 104 975 008,00 
+Taux moyen de financement 
+sollicité 
+ 
+73.89% 
+ 
+74.46% 
+ 
+74.28% 
+Montant des garanties 
+accordées 
+ 
+765 778 411,00 
+ 
+1 449 010 921,20 
+ 
+2 214 789 332,20 
+Taux moyen de garantie 
+accordée 
+ 
+57.8% 
+ 
+52.12% 
+ 
+53.95% 
+Montant moyen de la 
+garantie 
+ 
+28 362 163,37 
+ 
+72 450 546,06 
+ 
+47 123 177,28 
+Nombre d'emplois à créer 
+ 
+441 
+ 
+631 
+ 
+1 072 
+Investissement par emploi 
+ 
+4 065 404,51 
+ 
+5 917 208,76 
+ 
+515 541 241,98 
+Crédit par emploi 
+ 
+3 004 023,68 
+ 
+4 406 023,08 
+ 
+3 829 267,73 
+Garantie par emploi 
+ 
+1 736 458,98 
+ 
+2 296 372,30 
+ 
+2 066 034,82 
+Source : FGAR 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 19 - 
+ 
+ 
+ 
+Répartition des garanties par projet en création et extension du 01/01/2022 au 30/06/2022 
+ 
+                        
+                                                                                                                                                        Montants en DA    
+Items 
+Création 
+FGAR 
+Création 
+MEDA 
+Extension 
+FGAR 
+Extension 
+MEDA 
+Total 
+Création 
+Total 
+Extension * 
+TOTAL 
+Nombre des garanties 
+accordées 
+106 
+0 
+22 
+106 
+55 
+161 
+106 
+Coût total des projets  
+21529263727 
+0 
+2216943743 
+21529263727 
+11342655222 
+32871918949 
+21529263727 
+Montant des crédits 
+sollicités 
+12098882843 
+0 
+914698457 
+12098882843 
+7685844171 
+19784727014 
+12098882843 
+Taux moyen de 
+financement sollicité  
+56,20% 
+0 
+41,26% 
+56,20% 
+67,76% 
+60,19% 
+56,20% 
+Montant des garanties 
+accordées 
+4435546515 
+0 
+596963325 
+4435546515 
+3864372288,
+20 
+8299918803,20 
+4435546515 
+Taux moyen de 
+garantie accordée 
+36,66% 
+0 
+65,26% 
+36,66% 
+50,28% 
+41,95% 
+36,66% 
+Montant moyen de la 
+garantie  
+41844778,44 
+0 
+27134696,59 
+41844778,44 
+126147089,4 
+167991867,9 
+41844778,44 
+Nombre d'emplois à 
+créer  
+2328 
+0 
+296 
+2328 
+1391 
+3719 
+2328 
+Investissement par 
+emploi   
+9247965,52 
+0 
+7489674,81 
+9247965,52 
+8154317,20 
+8838913,40 
+9247965,52 
+Crédit par emploi   
+5197114,62 
+0 
+3090197,49 
+5197114,62 
+5525409,18 
+5319905,09 
+5197114,62 
+Garantie par emploi  
+1905303,49 
+0 
+2016767,99 
+1905303,49 
+2778125,30 
+2231760,90 
+1905303,49 
+ 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 20 - 
+ 
+ 
+ 
+ 
+Répartition des garanties par projet en création et extension Avril 2004 au 30/06/2022 
+   
+                                                                               
+Montants en DA  
+Items 
+Création 
+FGAR 
+Création 
+MEDA 
+Extension 
+FGAR 
+Extension MEDA 
+Total Création 
+Total 
+Extension * 
+TOTAL 
+Nombre des 
+garanties 
+accordées 
+1647 
+0 
+695 
+1163 
+1647 
+1858 
+3505 
+Coût total des 
+projets  
+239000963281,76 
+0 
+53617094963,06 
+152916365029,42 
+239000963281,76 
+206533459992,48 
+445534423274,24 
+Montant des 
+crédits sollicités 
+141037066443,75 
+0 
+31867804061,53 
+110331601025,48 
+141037066443,75 
+142199405087,01 
+283236471530,76 
+Taux moyen de 
+financement 
+sollicité  
+59,01% 
+0 
+0,59 
+72,15% 
+59,01 
+68,85 
+63,57 
+Montant des 
+garanties 
+accordées 
+52099677313,15 
+0 
+15062476280,50 
+57632607371,39 
+52099677313,15 
+72695083651,89 
+124794760965,04 
+Taux moyen de 
+garantie accordée 
+36,94% 
+0 
+0,47 
+52,24% 
+36,94 
+51,12 
+44,06 
+Montant moyen 
+de la garantie  
+316330763,69 
+0 
+21672627,74 
+49555122,42 
+31633076,69 
+39125448,68 
+35604782,02 
+Nombre 
+d'emplois à créer  
+36041 
+0 
+18067,00 
+46505 
+36041 
+64572 
+100613 
+Investissement 
+par emploi   
+6631363,26 
+0 
+2967681,13 
+3288170,41 
+6631363,26 
+3198498,73 
+4428199,37 
+Crédit par emploi   
+3913239,55 
+0 
+1763868,05 
+2372467,5 
+3913239,55 
+2202183,69 
+2815108,10 
+Garantie par 
+emploi  
+1445566,92 
+0 
+833701,22 
+1239277,66 
+1445566,92 
+1125798,85 
+1240344,30 
+Source : FGAR 
+ 
+ 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 21 - 
+ 
+ 
+ 
+ 
+2. Activités de la CGCI-PME (dispositif relevant du Ministère des finances)  
+ 
+1- 
+Etat des garanties CGCI-Pme     au     30-06-2022 : 
+Durant le 1er semestre de 2022, le niveau d’activité a connu augmentation par rapport à 
+la même période de l’exercice 2021 (augmentation de (+) 33%), soit 332 garanties 
+octroyées contre 249 garanties au 30-06-2021. (Cf. Tableau ci-dessous permettant 
+d’apprécier l’évolution de la garantie Pme et de la garantie déléguée Tpe). 
+                                                                                                                                                           U : DA 
+D E S I G N A T I O N 
+NBRE 
+MONTANT CREDIT 
+TOTAL DOSSIERS RECUS ET TRAITES 
+4 392 
+178 223 669 744 
+TOTAL DOSSIERS GARANTIS  
+4 108 
+165 080 646 024 
+Dont  GARANTIES EN COURS (Portefeuille) 
+1 974 
+89 778 029 676 
+ GARANTIES ANNULEES 
+464 
+21 806 970 672 
+GARANTIES CLÖTUREES 
+1 353 
+44 928 307 193 
+DOSSIERS SINISTRES 
+317 
+8 567 338 483 
+GARANTIES OCTROYEES au 30-06-2022 
+332 
+12 796 911 944 
+ 
+Ceci dit, l’encours du portefeuille de garanties au 30-06-2022 représente un nombre total 
+de 1 974 garanties accordées et notifiées aux Banques et Etablissements Financiers de la 
+place, partenaires de la Cgci-pme.   
+Globalement, la Cgci-pme a reçu et traité, depuis le démarrage effectif de son activité,           
+4 392 demandes de garanties au 30-06-2022 contre 3 964 demandes au 30-06-2021 (Cf. Tableau 
+ci-dessus), dont la répartition par secteur d’activité, par région et par tranche de crédit est 
+exposée dans les points 2.3 et 4 ci-dessous. 
+Il est à rappeler que durant l’exercice 2020, l’activité de garantie Pme/Tpe de la Cgci-pme a 
+diminué sensiblement en raison de la pandémie de la COVID-19 qui a impacté 
+significativement les différents secteurs de l’économie nationale. Cette pandémie a 
+engendré une baisse assez conséquente du financement de l’investissement Pme/Tpe par 
+les banques et les Etablissements Financiers de la place. 
+La nouvelle stratégie de la Cgci-pme axée sur le nouveau produit de la garantie déléguée 
+Tpe-Pe, s’inscrit dans le cadre de la politique des Pouvoirs Publics et répond, en 
+conséquence, à l’impératif économique d’engager en relation avec ses partenaires, Banques 
+
+---PAGE---
+- 22 - 
+ 
+et Etablissements Financiers, un processus efficient d’inclusion financière et de 
+bancarisation de l’important gisement Tpe/Pe qui constitue la véritable cheville ouvrière 
+du développement local, à travers les 58 wilayas du pays.  
+2- 
+Répartition des garanties au 30-06-2022 par secteur d’activité :   
+                                                                                                                
+ 
+Encours garantis au 30-06-2022 
+Du 01-01-2022 au 30-06-2022 
+Secteur 
+Nombre de dossier 
+% 
+Nombre de dossier 
+% 
+INDUSTRIE 
+1 059 
+54% 
+183 
+55% 
+SERVICES 
+338 
+17% 
+65 
+20% 
+BTPH 
+245 
+12% 
+38 
+11% 
+SANTE 
+106 
+5% 
+15 
+5% 
+TRANSPORT 
+96 
+5% 
+11 
+3% 
+TOURISME 
+85 
+4% 
+14 
+4% 
+Professions 
+Libérale 
+45 
+2% 
+6 
+2% 
+TOTAL 
+1 974 
+100% 
+332 
+100% 
+Le portefeuille global des garanties est constitué majoritairement de projet dans le 
+secteur de l’industrie (54%) suivi des services (17%) et le BTPH (12%). Les 16 % restants 
+sont constitués des secteurs de la santé, du transport, du tourisme et des professions 
+libérales. (Cf. tableau ci-dessus).                                  
+Les filières énumérées dans le tableau ci-dessus, constituent l’essentiel du portefeuille 
+« PME » des banques partenaires.     
+Durant le premier semestre de l’exercice 2022, les projets garantis dans le secteur de 
+l’industrie restent prédominants à 55% suivi respectivement des services (20%), du 
+BTPH (11%), de la santé (05%,) du tourisme (04%), du transport (03%), et des 
+professions libérales (02%) émanant de la garantie déléguée Tpe/Pe.                                                     
+Il est à préciser, également cependant que les pme du secteur de l’industrie qui 
+représente 54% du portefeuille global des garanties, évoluent dans plusieurs branches 
+d’activité, telles que :   
+- 
+Industrie extractive ; 
+- 
+Industrie mécanique ; 
+- 
+Industrie alimentaire ; 
+- 
+Métallurgie ; 
+- 
+Fabrication de matériaux de 
+construction ; 
+- 
+Transformation de plastique ; 
+- 
+Industrie du textile ; 
+- 
+Industrie du papier et du 
+carton ; 
+- 
+Industrie chimique ; 
+- 
+Industrie du cuir et de la 
+chaussure ; 
+- 
+Fabrication de meubles 
+- 
+Fabrication de machines et 
+équipements ; 
+
+---PAGE---
+- 23 - 
+ 
+- 
+Industrie pharmaceutique et 
+parapharmaceutique ; 
+- 
+Industrie 
+cosmétique
+ 
+ 
+ 
+ 
+ 
+ 
+3- Répartition des garanties au 30-06-2022 par région :   
+ 
+ 
+ 
+La répartition par zones géographiques observée au 30-06-2022 met en évidence une 
+disparité en matière d’investissement au niveau des quatre grandes régions du Pays.  
+La région Est et Centre occupent toujours la pole position avec respectivement 40% et 
+33%, alors que la région Ouest et Sud présentent respectivement des taux de 18% et 
+9%.  
+ 
+ 
+4- 
+REGION 
+Encours garantis au 30-06-2022 
+Du 01-01-2022 au 30-06-2022 
+NBRE DOS. 
+% 
+NBRE 
+DOS. 
+% 
+EST 
+787 
+40% 
+132 
+40 
+CENTRE 
+654 
+33% 
+102 
+31 
+OUEST 
+365 
+18% 
+61 
+18 
+SUD 
+168 
+9% 
+37 
+11 
+TOTAL 
+1974 
+100% 
+332 
+100 
+
+---PAGE---
+- 24 - 
+ 
+ 
+ 
+ 
+ 
+5- Répartition des garanties au 30-06-2022 par tranche de crédit : 
+                                                                                                          U : DA 
+Intitulé 
+Tranche de crédit 
+Nbre Dossiers 
+% 
+MT Crédit 
+% 
+Portefeuille globale 
+0 ≤ 30 MDA 
+1 380 
+70% 
+ 18 992 274 250    
+21% 
+30 ≤ 100 MDA 
+337 
+17% 
+19 370 744 411 
+22% 
++ 100 MDA 
+257 
+13% 
+51 415 011 013 
+57% 
+T O T A L 
+1 974 
+100% 
+89 778 029 676 
+100% 
+ 
+L’analyse du tableau ci-dessus suscite les commentaires suivants : 
+ 
+Une proportion assez significative de la tranche de crédit inférieure ou égale à 30 
+millions de DA représentant, en termes physiques, 70%, correspondant à seulement 
+21% du montant total des crédits garantis. La garantie déléguée représente 70% de ce 
+portefeuille, en nombre, qui est en augmentation de (+) 01% par rapport à l’exercice 
+précédent. 
+Cette tranche du crédit est appelée à augmenter encore, avec l’élargissement de la 
+garantie déléguée à d’autres partenaires durant le premier semestre 2022. 
+ 
+Une proportion de la tranche des crédits garantis supérieure à 30 Millions DA et 
+inférieure ou égale à 100 MDA, représentant, en termes physiques 17 %, et en 
+termes financiers, 22% du total des crédits garantis. 
+     La tranche des crédits garantis supérieure à 100 MDA, enregistre un faible taux en 
+nombre (13%) et couvre par contre, à elle seule, 57% des crédits garantis, soit près de 
+51 Milliards de DA. 
+D’un point de vue analytique, il ressort clairement que le plus grand risque 
+engagement encouru par la Caisse se situerait dans cette dernière tranche de crédits 
+finançant essentiellement des projets de création Pme, exposés à une plus forte 
+sinistralité par rapport aux projets en développement. 
+
+---PAGE---
+- 25 - 
+ 
+Pour une meilleure analyse du risque que pourrait générer cette tranche de crédit 
+sensible (tranche supérieure à 100 MDA), la CGCI-Pme a délégué aux banques et 
+Etablissement de crédit sa décision d’octroi de la garantie pour les dossiers dont la 
+tranche de crédit est inférieure à 50 MDA. 
+ 
+3. Dispositif « ANGEM » 
+ 
+Crédits octroyés par type de financement (Cumul au 30/06/2022) 
+Type de financement 
+Nombre 
+% 
+Emplois créés 
+Financement Achat de Matières Premières  
+866 809 
+90,00% 
+1 259 766 
+Financement triangulaire « ANGEM-Banque-promoteur » 
+96 262 
+10,00% 
+148 639 
+Total 
+963 071 
+100% 
+1 408 405 
+  Source : ANGEM 
+ 
+ 
+Crédits octroyés par secteur d’activité (Cumul au 30/06/2022) 
+Secteur d’activités 
+Nombre de prêts octroyés 
+Montants accordés en DA 
+Part (%) 
+Agriculture 
+130 286 
+9 239 016 742,43 
+13,54% 
+TPI 
+380 549 
+19 854 468 261,70 
+39,51% 
+BTP 
+85 489 
+7 808 984 280,79 
+8,88% 
+Services 
+190 435 
+18 015 246 554,68 
+19,77% 
+Artisanat 
+169 687 
+10 326 530 535,22 
+17,62% 
+Commerce 
+5 630 
+1 418 976 794,99 
+0,58% 
+Pêche 
+995 
+138 979 762,24 
+0,10% 
+Total 
+963 071 
+66 802 202 932,05 
+100,00% 
+ 
+Source : ANGEM 
+ 
+Par secteur d’activité, les TPI (très petites industries), les services, l’artisanat et 
+l’agriculture sont les secteurs ayant bénéficié de la majorité des prêts octroyés avec 
+près de 91% du total. 
+ 
+Crédits octroyés par genre (Cumul au 30/06/2022) 
+Genre 
+Nombre 
+Part(%) 
+Femme 
+609 990 
+63,34% 
+
+---PAGE---
+- 26 - 
+ 
+Homme 
+353 081 
+36,66% 
+ 
+    Source : ANGEM 
+ 
+Les crédits octroyés pour les femmes au niveau de l’ENGEM représentent plus de 63% 
+des crédits
+ 
+III. Dispositifs Sociaux d’appui à la PME 
+  
+1. Dispositif « ANADE » 9 
+  
+Situation Globale 
+Répartition des projets financés par Secteur d'Activité depuis la création au 30/06/2022. 
+ 
+Tableau 18 ANADE : Projets financés par secteur d’activité (Cumul au 30/06/2022) 
+Secteur d'Activité 
+Projets 
+financés 
+% 
+Nombre d'emplois 
+correspondants 
+Nombre 
+moyen 
+d'emplois 
+Montant 
+d'investissement 
+Coût moyen 
+de l'emploi 
+(DA) 
+Coût moyen 
+d'une micro-
+entreprise 
+(DA) 
+AGRICULTURE 
+60 626 
+15% 
+143 101 
+2 
+229 030 777 807 
+1 600 483 
+3 777 765 
+ARTISANAT 
+44 005 
+11% 
+128 352 
+3 
+113 402 817 094 
+883 530 
+2 577 044 
+BTPH 
+36 760 
+9% 
+106 098 
+3 
+143 240 934 326 
+1 350 081 
+3 896 652 
+HYDRAULIQUE 
+572 
+0% 
+2 083 
+4 
+3 407 009 004 
+1 635 626 
+5 956 309 
+INDUSTRIE 
+32 080 
+8% 
+90 476 
+3 
+158 329 951 618 
+1 749 966 
+4 935 472 
+MAINTENANCE 
+11 704 
+3% 
+26 840 
+2 
+33 665 686 112 
+1 254 310 
+2 876 426 
+PECHE 
+1 139 
+0,28% 
+5 570 
+5 
+7 556 599 482 
+1 356 661 
+6 634 416 
+PROFESSION  
+LIBERALE 
+14 222 
+4% 
+31 817 
+2 
+39 587 251 435 
+1 244 217 
+2 783 522 
+SERVICE 
+111 301 
+28% 
+259 159 
+2 
+368 489 449 367 
+1 421 866 
+3 310 747 
+TRANSPORT  
+13 390 
+3,3% 
+24 138 
+2 
+33 799 593 882 
+1 400 265 
+2 524 242 
+                                                             
+ 
+9 En vertu du décret exécutif n° 20-329 du 22 novembre 2020, la dénomination de l’ANSEJ est devenue « agence nationale d'appui et de 
+développement de l'entreprenariat » par abréviation « ANADE » 
+ 
+
+---PAGE---
+- 27 - 
+ 
+FRIGORIFIQUE 
+TRANSPORT  
+DE MARCHANDISE 
+56 850 
+14,2% 
+96 789 
+2 
+147 695 043 176 
+1 525 949 
+2 597 978 
+TRANSPORT  
+DE VOYAGEURS 
+19 024 
+5% 
+43 737 
+2 
+46 958 944 032 
+1 073 666 
+2 468 405 
+Total 
+401 673 
+100% 
+958 160 
+2 
+1 325 164 057 336 
+1 383 030 
+3 299 112 
+Source : ANADE 
+ 
+ 
+Projets financés par genre et par secteur d’activité 
+ 
+Tableau 19 ANADE : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2022)  
+Secteur d'Activité 
+Projets financés 
+Hommes 
+Femmes 
+Taux de 
+Féminité (%) 
+AGRICULTURE 
+60 626 
+57 801 
+2 825  
+5% 
+ARTISANAT 
+44 005 
+36 462 
+7 543  
+17% 
+BTPH 
+36 760 
+35 868 
+892  
+2% 
+HYDRAULIQUE 
+572 
+545 
+27  
+5% 
+INDUSTRIE 
+32 080 
+27 211 
+4 869  
+15% 
+MAINTENANCE 
+11 704 
+11 521 
+183  
+2% 
+PECHE 
+1 139 
+1 122 
+17  
+1% 
+PROFESSION  
+LIBERALE 
+14 222 
+7 590 
+6 632  
+47% 
+SERVICE 
+111 301 
+92 553 
+18 748  
+17% 
+TRANSPORT  
+FRIGORIFIQUE 
+13 390 
+13 001 
+389  
+3% 
+TRANSPORT  
+DE MARCHANDISES 
+56 850 
+56 138 
+712  
+1% 
+TRANSPORT  
+DE VOYAGEURS 
+19 024 
+18 542 
+482  
+3% 
+Total 
+401 673 
+358 354 
+43 319 
+11% 
+Source : ANADE 
+ 
+ 
+          
+Selon le tableau ci-dessus, le secteur des services, est le secteur le plus attractif 
+pour les porteurs de projets accompagnés par l’ANADE depuis le lancement de ce 
+dispositif  (avec 111 301 projets) suivi du secteur de l’agriculture avec 60 626 
+projets, puis le secteur de transport de marchandises avec 56 850 projets financés. 
+
+---PAGE---
+- 28 - 
+ 
+Le dispositif ANADE a permis, d’accompagner 358 354 entrepreneurs hommes 
+contre 43 319 entrepreneures femmes soit un taux de féminité global de 11%. 
+ 
+ 
+ 
+ 
+ 
+2. Dispositif « CNAC »  
+ 
+Dispositif de soutien à la création d’activités par les chômeurs promoteurs âgés de     
+30 à 55 ans « dispositif 30-55 ans ». 
+1. Projets financés par la CNAC dans le cadre du dispositif 30-55 ans et emploi 
+prévus au démarrage : 
+ 
+ 
+Année 2022 au 30 juin10 
+Cumul au 30/06/2022 
+  
+Nombre 
+de 
+projets 
+financés 
+Emploi 
+prévus au 
+démarrage 
+Total 
+financement11 
+de 
+l’investissement 
+(Million DA) 
+Nombre 
+de 
+projets 
+financés 
+Emploi 
+prévus au 
+démarrage 
+Total 
+financement de 
+l’investissement 
+(Million DA) 
+Total 
+40 
+107 
+214,27 
+160 202 
+340 500 
+554 780,18 
+ 
+2. Répartition des projets financés par secteur d’activité : 
+ 
+Secteurs 
+d'activités 
+Année 2022 au 30 juin 
+Cumul au 30/06/2022 
+Nombre de 
+projets 
+financés 
+Emploi 
+prévus au 
+démarrag
+e 
+Total 
+financement 
+de 
+l’investissem
+ent (Million 
+DA) 
+Nombre de 
+projets 
+financés 
+Emploi 
+prévus 
+au 
+démarra
+ge 
+Total 
+financement 
+de 
+l’investissem
+ent (Million 
+DA) 
+AGRICULTURE 
+10 
+17 
+41,59 
+26 977 
+63 830 
+113 742,15 
+ARTISANAT 
+9 
+23 
+35,30 
+16 668 
+43 115 
+55 316,53 
+BTP 
+3 
+11 
+16,98 
+8 949 
+28 466 
+37 603,67 
+                                                             
+ 
+10 Il y a lieu de préciser que la gestion du dispositif 30-55 ans a été transférée vers l’ANADE à partir du 21 janvier 2022(décret exécutif n° 22-45 du 
+21 janvier 2022). 
+11 Il s’agit d’un financement triangulaire (CNAC-BANQUE-PROMOTEUR). 
+
+---PAGE---
+- 29 - 
+ 
+HYDRAULIQUE 
+0 
+0 
+0,00 
+372 
+1 255 
+2 627,35 
+INDUSTRIE 
+7 
+24 
+58,64 
+12 950 
+37 547 
+61 498,81 
+MAINTENANCE 
+1 
+3 
+4,87 
+1 027 
+2 483 
+3 319,15 
+PECHE 
+0 
+0 
+0,00 
+626 
+2 231 
+4 211,68 
+PROF LIBERALE 
+1 
+1 
+9,47 
+1 772 
+3 822 
+7 940,98 
+SERVICES 
+9 
+28 
+47,41 
+32 390 
+68 986 
+118 276,43 
+TRANSPORT 
+MARCHANDISE 
+0 
+0 
+0,00 
+46 124 
+70 053 
+120 632,29 
+TRANSPORT 
+VOYAGEURS 
+0 
+0 
+0,00 
+12 347 
+18 712 
+29 611,13 
+Total 
+40 
+107 
+214,27 
+160 202 
+340 500 
+554 780,18 
+ 
+ 
+3. Autres données statistiques (situation au 30 Juin 2022) : 
+3-1  Répartition des projets financés par secteurs d’activités et par genre : 
+ 
+ 
+Année 2022 au 30 juin 
+Cumul au 30/06/2022 
+Secteurs d'activités 
+Nombre de 
+projets 
+financés 
+Part de la 
+femme % 
+Nombre de 
+projets 
+financés 
+Part de la 
+femme % 
+AGRICULTURE 
+10 
+0% 
+26 977 
+11,0% 
+ARTISANAT 
+9 
+11,1% 
+16 668 
+22,5% 
+BTP 
+3 
+0% 
+8 949 
+2,6% 
+HYDRAULIQUE 
+0 
+0% 
+372 
+5,6% 
+INDUSTRIE 
+7 
+42,9% 
+12 950 
+22,1% 
+MAINTENANCE 
+1 
+0% 
+1 027 
+2,0% 
+PECHE 
+0 
+0% 
+626 
+0,5% 
+PROF LIBERALE 
+1 
+100% 
+1 772 
+49,4% 
+SERVICES 
+9 
+22,2% 
+32 390 
+17,3% 
+TRANSPORT MARCHANDISE 
+0 
+0% 
+46 124 
+1,5% 
+TRANSPORT VOYAGEURS 
+0 
+0% 
+12 347 
+1,2% 
+Total 
+40 
+17,5% 
+160 202 
+10,7% 
+ 
+ 
+ 
+
+---PAGE---
+- 30 - 
+ 
+0
+5
+10
+15
+AGRICULTURE
+ARTISANAT
+BTP
+HYDRAULIQUE
+INDUSTRIE
+MAINTENANCE
+PECHE
+PROF LIBERALE
+SERVICES
+TRANSPORT…
+TRANSPORT VOYAGEURS
+Nombre de projets financés                  
+( Année 2022 au 30 juin )  
+0
+10 00020 00030 00040 00050 000
+AGRICULTURE
+ARTISANAT
+BTP
+HYDRAULIQUE
+INDUSTRIE
+MAINTENANCE
+PECHE
+PROF LIBERALE
+SERVICES
+TRANSPORT MARCHANDISE
+TRANSPORT VOYAGEURS
+Nombre de projets financés 
+Cumul au 30/06/2022 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3-2  Répartition des projets financés par banques : 
+ 
+ 
+Année 2022 au 30 juin 
+Cumul au 30/06/2022 
+Banques 
+Nombre 
+de 
+projets 
+financés 
+Emploi 
+prévus au 
+démarrage 
+Total financement 
+de 
+l’investissement 
+(Million DA) 
+Nombre 
+de projets 
+financés 
+Emploi 
+prévus au 
+démarrage 
+Total financement 
+de 
+l’investissement 
+(Million DA) 
+BADR 
+11 
+21 
+49,80 
+47 413 
+101 938 
+175 880,91 
+BDL 
+13 
+41 
+75,27 
+31 986 
+69 041 
+105 049,70 
+BEA 
+1 
+4 
+3,82 
+21 204 
+43 586 
+70 602,35 
+BNA 
+7 
+19 
+47,42 
+32 199 
+68 440 
+109 053,31 
+CPA 
+8 
+22 
+37,95 
+27 400 
+57 495 
+94 193,90 
+Total 
+40 
+107 
+214,27 
+160 202 
+340 500 
+554 0,18 
+ 
+3-1 Présentation des principaux agrégats : 
+ 
+INDICATEURS 
+Année 2022 au 30 juin 
+Cumul au 30 Juin 2022 
+Nombre de dossiers déposés  
+0 
+429 527 
+Nombre de dossiers acceptés par les CSVF 
+0 
+286 573 
+Nombre de projets financés 
+40 
+160 202 
+
+---PAGE---
+- 31 - 
+ 
+Nombre d’emplois prévus au démarrage  
+107 
+340 500 
+                          
+0
+50 000
+100 000
+150 000
+200 000
+250 000
+300 000
+350 000
+400 000
+450 000
+500 000
+Nombre de dossiers
+déposés
+Nombre de dossiers
+acceptés par les
+CSVF
+Nombre de projets
+financés
+Nombre d’emplois 
+prévus au 
+démarrage 
+Cumul au 30 Juin 2022
+ 
+ 
+ 
+3. Bilan des activités relatif aux Centres d’appui et de conseil aux PME et 
+Pépinières d’Entreprises au 1er semestre 2022 
+ 
+Durant le premier semestre 2022, le bilan des activités relatif aux centres d’appui 
+et de conseil aux PME et des pépinières d’entreprises fait ressortir les résultats 
+suivants :  
+a- Centres d’appui et de conseil 
+Situation 
+Opérationnel 
+Nombre de 
+PME reçus 
+et orientées 
+Nbre de 
+porteurs de 
+projets 
+accompagné 
+Nbre de 
+porteurs de 
+projets reçus 
+Nombre de 
+business plan 
+élaborés  
+Centres d’appui et de 
+conseil aux PME 
+28 
+490 
+166 
+703 
+95 
+Source : ANDPMEPI 
+28
+490
+166
+703
+95
+0
+100
+200
+300
+400
+500
+600
+700
+800
+Opérationnel
+Nombre de PME reçus et orientées
+Nbre de porteurs de projets accompagné
+Nbre de porteurs de projets reçus
+Nombre de business plan élaborés
+Centres d’appui et de conseil aux PME
+ 
+
+---PAGE---
+- 32 - 
+ 
+b- Pépinières d’entreprise 
+Situation 
+ 
+Opérationnelle 
+Nombre de 
+porteur de 
+projets reçu 
+Nombre de 
+projets 
+hébergés 
+Nombre 
+d’entreprises 
+créés 
+Nombre 
+d’emploi prévu 
+Pépinières 
+d’entrepris
+es 
+19 
+685 
+ 
+160 
+68 
+293 
+Source : ANDPMEPI 
+ 
+
+---PAGE---
+ 
+4. Dispositif « ANIREF » 
+Allocations du foncier au niveau des nouvelles zones industrielles/ Point de situation arrêté au 30/06/2022 
+N° 
+ 
+ 
+Région 
+Wilaya  
+Dénomin
+ation de 
+la zone 
+industriel
+le 
+Superficie 
+de la zone 
+(m²) 
+Superficie 
+concessibl
+e de la 
+zone (m²) 
+Superficie 
+globale 
+allouée 
+(m²) 
+Nombr
+e de 
+lots 
+alloués 
+Investisseurs 
+implantés 
+Arrêtés de 
+concession établis 
+Actes de concession 
+établis 
+Permis de 
+construire 
+délivrés 
+Projets 
+lancés 
+Projets 
+entrés 
+en 
+activité 
+Nom
+bre 
+Superficie 
+(m²) 
+Nombre 
+Superfici
+e (m²) 
+Nombre 
+Superficie 
+(m²) 
+1 
+Nord 
+Annaba 
+Ain Berda 
+1 018 123 
+757 601 
+628 261 
+106 
+78 
+583 342 
+83 
+628 019 
+81 
+614 923 
+69 
+59 
+/ 
+2 
+El-Tarf 
+Metroha 
+700 000 
+487 471 
+       352 
+117    
+79 
+72 
+352 117 
+70 
+346 596 
+59 
+ 
+288 437 
+28 
+/ 
+3 
+Bouira 
+Oued El 
+Berdi 
+1 896 031 
+1 319 998 
+1 003 392 
+164 
+53 
+1 000 020 
+53 
+952 691 
+49 
+953 480 
+41 
+29 
+5 
+4 
+Dirah 
+2 500 000 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+5 
+Relizane 
+Sidi 
+Khettab 
+5 000 000 
+4 055 945 
+1 893 345 
+129 
+27 
+966 257 
+85 
+1 884 218 
+74 
+1 714 428 
+63 
+47 
+4 
+6 
+Ain 
+Temouchent 
+Tamazour
+a 
+2 050 028 
+1 585 911 
+1 397 359 
+229 
+84 
+1 222 437 
+102 
+1 370 278 
+62 
+1 022 293 
+93 
+81 
+10 
+7 
+Mostaganem Bordjia 
+2 000 099 
+1 461 061 
+1 021 619 
+319 
+22 
+464 551 
+50 
+1 021 619 
+34 
+723 327 
+23 
+12 
+/ 
+8 
+Bordjia 2 
+2 000 000 
+1 842 671 
+269 772 
+30 
+/ 
+/ 
+5 
+194 415 
+/ 
+/ 
+/ 
+/ 
+/ 
+9 
+Mascara 
+Oggaz 
+981 587 
+688 985 
+365 041 
+104 
+32 
+254 887 
+47 
+365 041 
+26 
+150 012 
+43 
+41 
+2 
+10 
+Tlemcen 
+Ouled Ben 
+Damou  
+1 037 848 
+706 521 
+94 680 
+14 
+4 
+40 930 
+12 
+94 680 
+8 
+70 205 
+5 
+4 
+/ 
+11 
+El Aricha 
+3 000 000 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+12 
+Sidi Bel 
+Abbes 
+Sidi Bel 
+Abbes  
+547 590 
+410 841 
+373 821 
+42 
+8 
+264 073 
+21 
+358 616 
+13 
+296 850 
+1 
+7 
+1 
+13 
+Ras El Ma  
+1 000 000 
+743 588 
+155 088 
+31 
+13 
+105 734 
+15 
+155 088 
+7 
+77 585 
+/ 
+/ 
+/ 
+14 
+Ain Defla 
+Boumedfa
+a 
+430 958 
+/ 
+163 116 
+38 
+1 
+8 368 
+32 
+163 116 
+/ 
+/ 
+/ 
+/ 
+/ 
+15 
+Chlef 
+Oued Sly 
+1 100 000 
+788 550 
+621 054 
+110 
+/ 
+/ 
+43 
+503 649 
+33 
+297 642 
+/ 
+/ 
+/ 
+16 
+Boukadir 
+2 000 000 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+17 
+Médéa 
+Ksar El 
+Boukhari 
+2 000 000 
+1 344 934 
+795 236 
+77 
+32 
+588 886 
+43 
+734 490 
+39 
+694 915 
+15 
+5 
+/ 
+18 
+Boumerdes 
+Larbaatac
+he 
+1 369 100 
+1 104 618 
+885 301 
+208 
+35 
+313 889 
+148 
+881 890 
+123 
+764 066 
+45 
+34 
+1 
+19 
+Jijel 
+Bellara 
+5 230 000 
+4 020 830 
+3 039 649 
+110 
+12 
+2 863 316 
+26 
+3 039 649 
+11 
+2 803 795 
+11 
+1 
+2 
+20 
+Constantine 
+Sidi 
+Roman 
+1 400 000 
+967 977 
+705 340 
+199 
+65 
+705 340 
+155 
+705 340 
+95 
+414 617 
+/ 
+/ 
+/ 
+21 
+Ain Abid 
+5 430 982 
+3 278 661 
+460 336 
+82 
+/ 
+/ 
+/ 
+460 336 
+/ 
+/ 
+/ 
+/ 
+/ 
+22 
+Didouche 
+Mourad 
+3 040 000 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+23 
+Mila 
+Chelghou
+m Laid 
+2 473 820 
+1 808 629 
+880 810 
+271 
+54 
+880 810 
+64 
+880 810 
+/ 
+/ 
+53 
+7 
+/ 
+24 
+Tizi Ouzou 
+Souamaa 
+3 270 000 
+1 265 697 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+
+---PAGE---
+- 34 - 
+ 
+25 
+Draa El 
+Mizan/Tizi 
+Ghenif 
+1 160 000 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+26 
+Bejaia 
+El Kseur 
+1 758 709 
+1 104 418 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+27 
+Beni 
+Mansour 
+1 753 510 
+1 424 000 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+28 
+Guelma 
+Ain 
+Reggada 
+1 401 405 
+1 169 689 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+29 
+Oran 
+Bethioua 
+5 463 861 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+Sous-total nord  
+63 013 651 
+32 338 596 
+15 105 337 
+2 342 
+592 
+10 614 
+957 
+1 054 
+14 740 
+541 
+714 
+10 886 
+574 
+521 
+355 
+25 
+30 
+Haut 
+Plateaux 
+Tébessa 
+ El-
+Aouinet 
+1 544 149 
+1 000 004 
+76 376 
+19 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+31 
+Djelfa 
+Ain 
+Oussera 
+4 000 000 
+2 413 040 
+964 686 
+90 
+10 
+174 074 
+56 
+900 173 
+45 
+782 145 
+11 
+5 
+1 
+32 
+Batna 
+Ain 
+Yagout 
+1 298 911 
+960 693 
+582 357 
+103 
+22 
+472 210 
+14 
+472 210 
+7 
+361 597 
+20 
+12 
+2 
+33 
+Bordj Bou 
+Arreridj 
+Ras El 
+Oued 
+1 340 750 
+972 055 
+645 769 
+107 
+68 
+645 769 
+67 
+641 765 
+6 
+66 903 
+41 
+39 
+2 
+34 
+Mechta 
+Fatima 
+3 820 000 
+2 857 474 
+2 302 646 
+281 
+212 
+2 302 646 
+211 
+2 294 019 
+37 
+674 413 
+161 
+146 
+8 
+35 
+M'sila 
+Draa El 
+Hadja 
+777 501 
+578 915 
+562 836 
+48 
+6 
+206 643 
+29 
+353 515 
+6 
+206 643 
+0 
+3 
+1 
+36 
+Setif 
+Ouled 
+Saber 
+7 000 485 
+5 711 241 
+3 175 470 
+201 
+129 
+2 166 989 
+174 
+3 068 758 
+153 
+2 744 190 
+52 
+17 
+1 
+37 
+Tiaret 
+Zaaroura 
+3 275 039 
+1 797 001 
+906 705 
+153 
+26 
+883 737 
+31 
+906 705 
+30 
+895 866 
+25 
+23 
+/ 
+38 
+Ain 
+Bouchekif 
+3 187 295 
+1 796 740 
+87 694 
+9 
+1 
+59 495 
+2 
+87 717 
+2 
+87 694 
+2 
+1 
+/ 
+39 
+El Bayadh  
+Rogassa  
+1 500 000 
+847 841 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+40 
+Saida  
+kolea  
+1 000 000 
+619 733 
+355 992 
+85 
+8 
+             52 
+870    
+67 
+333 104 
+12 
+42 229 
+45 
+8 
+/ 
+41 
+Naama 
+Horchaia  
+1 500 000 
+1 244 180 
+8 679 
+1 
+1 
+8 679 
+1 
+8 679 
+1 
+8 679 
+0 
+0 
+/ 
+42 
+Oum El 
+Bouaghi 
+Ouled 
+Gacem 
+3 998 545 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+43 
+Souk Ahras 
+M'daourou
+ch 
+2 180 545 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+Sous-total HP  
+36 423 220 
+20 798 917 
+9 669 210 
+1 097 
+483 
+6 973 112 
+652 
+9 066 645 
+299 
+5 870 359 
+357 
+254 
+15 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 35 - 
+ 
+N° Région 
+Wilaya  
+Dénomination 
+de la zone 
+industrielle 
+Superficie 
+de la zone 
+(m²) 
+Superficie 
+concessible 
+de la zone 
+(m²) 
+Superficie 
+globale 
+allouée 
+(m²) 
+Nombre de 
+lots 
+alloués 
+Investisseurs 
+implantés 
+Arrêtés de 
+concession établis 
+Actes de concession 
+établis 
+Permis 
+de 
+constr
+uire 
+délivré
+s 
+Proje
+ts 
+lancé
+s 
+Proje
+ts 
+entré
+s en 
+activi
+té 
+Nombre 
+Superficie 
+(m²) 
+Nombre 
+Superficie 
+(m²) 
+Nombre 
+Superficie 
+(m²) 
+44 
+Sud 
+Béchar 
+Béchar 
+1 870 000 
+1 039 916 
+314 459 
+25 
+13 
+254 332 
+19 
+304 443 
+11 
+141 552 
+7 
+5 
+2 
+45 
+Adrar 
+Timmi 
+2 148 796 
+1 642 664 
+1 523 664 
+75 
+52 
+1 342 623 
+64 
+1 523 664 
+63 
+1 478 658 
+29 
+28 
+/ 
+46 
+Ouargla 
+Hassi Ben 
+Abdellah 
+5 000 000 
+3 595 136 
+624 895 
+26 
+/ 
+/ 
+9 
+239 227 
+/ 
+/ 
+1 
+1 
+/ 
+47 
+Biskra 
+Ouméche 
+2 000 000 
+1 206 315 
+488 164 
+88 
+/ 
+/ 
+61 
+488 164 
+17 
+174 446 
+2 
+/ 
+/ 
+48 
+El Oued 
+Guemmar 
+2 000 000 
+1 455 372 
+47 965 
+2 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+49 
+Ghardaia 
+Oued Nechou 
+1 000 000 
+648 933 
+288 216 
+68 
+/ 
+/ 
+11 
+255 434 
+/ 
+/ 
+/ 
+/ 
+/ 
+50 
+Illizi 
+Ain Aménas 
+640 000 
+439 350 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+/ 
+ 
+Sous-total sud 
+14 658 796 
+10 027 686 
+3 287 363 
+284 
+65 
+1 596 955 
+164 
+2 810 931 
+91 
+1 794 656 
+39 
+34 
+2 
+ 
+ Total général   
+ 114 095 667       63 165 199  28 061 910 
+3 723 
+1 140 
+19 185 024 
+1 870 
+26 618 118 
+1 104 
+18 551 589 
+917 
+643 
+42 
+ 
+Source : ANIREF 
+ 
+
+---PAGE---
+ 
+VI- Commerce extérieur 
+1. Balance commerciale  
+ 
+Par rapport au 1er semestre 2021, la balance du commerce extérieur Algérien en 1er 
+semestre 2022 a enregistré :  
+ Un volume des importations de 20,22 milliards de dollars US soit une hausse 
+de 7.41%  . 
+ Un volume global des exportations de 25,92 milliards de dollars US, soit une 
+augmentation de 48,30%   
+       D’où un taux de couverture des importations par les exportations de 128.18% 
+pour le premier semestre 2022 contre un taux de 92,84% pour la même période 2019. 
+ 
+Tableau 20 Evolution de la Balance commerciale de l’Algérie (S1/2021 –S1/2022) (en Millions de Dollars US) 
+Valeurs en millions
+1er  SEM 2021
+1er  SEM 2022*
+Dollars
+Dollars
+Dollars
+Importations
+18 829,15
+20 223,81
+7,41
+Exportations
+17 480,35
+25 922,62
+48,30
+Balance Commerciale
+-1 348,80
+5 698,81
+-522,51
+Taux de Couverture (%)
+92,84
+128,18
+ 
+      Source : Direction Générale des douanes/DEP 
+      *Résultats provisoires 
+ 
+    
+ 
+           
+ 
+ 
+
+---PAGE---
+- 37 - 
+ 
+ 
+ 
+2. Importations  
+  La répartition des importations par groupes de produits, comme l’indique le 
+tableau ci-après fait ressortir que les groupes « alimentation » et « demi-produit » 
+représentent plus de la moitié de la facture des importations globale durant le premier 
+semestre 2022.  
+Tableau 21 : Evolution des importations par groupes de produits (S1/2021 – S1/2022) 
+Valeurs en millions Usd
+Valeurs
+Struc %
+Valeurs
+Struc %
+Allimentation
+4807,81
+25,53
+5322,99
+26,32
+10,72
+Energie et lubrifiants
+300,19
+1,59
+323,54
+1,60
+7,78
+produits bruts
+1 643,38 
+8,73
+2 296,80 
+11,36
+39,76
+Demi -produits
+3 745,50 
+19,89
+4 988,70 
+24,67
+33,19
+Biens d'équipements agricoles
+150,59 
+0,80
+106,74 
+0,53
+-29,12
+Biens d'équipements industriels
+5 213,06 
+27,69
+4 413,40 
+21,82
+-15,34
+Biens de consommation non-alimentaies
+2 968,62 
+15,77
+2 771,63 
+13,70
+-6,64
+Total
+18 829,15 
+100,00
+20 223,80 
+100,00
+7,41
+1er SEM 2021
+Evolution 
+(%)
+Groupes d'utilisateurs
+1er SEM 2022
+ 
+               Source : Direction Générale des douanes/DEP 
+ 
+ L'examen par groupes de produits fait ressortir durant le 1er semestre 2022, les résultats 
+suivants : 
+ Le groupe des « biens alimentaires » occupe le premier rang » dans la structure des 
+importations réalisées durant le 1er semestre 2022 avec une part de (26,32%) du 
+volume global 
+ les « demis produits » occupe le 2éme rang avec une part de (24.64%) des 
+importations ; 
+ Les « biens d'équipements industriels » qui représentent la 3éme position avec une 
+part de (21,82%) des importations, ces importations sont constituées essentiellement, 
+de véhicules de transport de personnes et de marchandises, des turboréacteurs et 
+turbopropulseurs et des appareils électriques pour la téléphonie. 
+ 
+
+---PAGE---
+- 38 - 
+ 
+2. Exportations  
+ 
+On remarque du tableau ci-dessous, une nette amélioration des demis produits 
+d’un montant de plus de 1533 millions d’USD. 
+ 
+Valeurs en millions Usd
+Valeurs
+Struc %
+Valeurs
+Struc %
+Allimentation
+285,12
+1,63
+159,44
+0,62
+-44,08
+Energie et lubrifiants
+15433,17
+88,29
+22415,56
+86,47
+45,24
+produits bruts
+77,69 
+0,44
+128,56 
+0,50
+65,48
+Demi -produits
+1 626,87 
+9,31
+3 160,54 
+12,19
+94,27
+Biens d'équipements agricoles
+0,44 
+0,00
+0,84 
+0,00
+90,91
+Biens d'équipements industriels
+25,20 
+0,14
+25,02 
+0,10
+-0,71
+Biens de consommation non-alimentaies
+31,86 
+0,18
+32,66 
+0,13
+2,51
+Total
+17 480,35 
+100,00
+25 922,62 
+100,00
+48,30
+1er SEM 2021
+Evolution 
+(%)
+Groupes d'utilisateurs
+1er SEM 2022
+ 
+              Source : Direction Générale des douanes/DEP 
+ 
+ 
+  
+
+---PAGE---
+ 
+V-ANNEXES 
+ 
+Tableau 22 : PME privées par secteurs d'activité 
+Sectateurs d'activité 
+ 
+Mouvements enregistrés durant S1/2022 
+ 
+2021 
+Créations 
+I 
+Radiation 
+II 
+Réactivation 
+III 
+Ecart 
+(I+III)-II 
+S1/2022 
+I- Agriculture et pêche 
+Agriculture et pêche 
+7927 
+294 
+21 
+41 
+314 
+8241 
+ST1 
+7927 
+294 
+21 
+41 
+314 
+8241 
+II- Hydrocarbures, Energie, Mines et Services liés 
+Eau et énergie 
+203 
+16 
+1 
+4 
+19 
+222 
+Hydrocarbures 
+1081 
+7 
+2 
+6 
+11 
+1092 
+Services et travaux 
+pétroliers 
+506 
+11 
+0 
+3 
+14 
+520 
+Mines et carrières 
+1451 
+31 
+1 
+11 
+41 
+1492 
+ST2 
+3241 
+65 
+4 
+24 
+85 
+3326 
+III- BTPH 
+Bâtiment et travaux 
+publics 
+199318 
+1963 
+167 
+682 
+2478 
+201796 
+ST3 
+199318 
+1963 
+167 
+682 
+2478 
+201796 
+IV- Industrie manufacturières 
+ISMME 
+16880 
+292 
+12 
+54 
+334 
+17214 
+Matériaux de construction 
+13284 
+150 
+13 
+34 
+171 
+13455 
+Chimie, plastique 
+5957 
+222 
+6 
+29 
+245 
+6202 
+Industrie agroalimentaire 
+34418 
+1380 
+66 
+171 
+1485 
+35903 
+industries du textile 
+8766 
+165 
+9 
+30 
+186 
+8952 
+Industrie du cuir 
+2324 
+29 
+2 
+4 
+31 
+2355 
+Industrie du bois et papier 
+22374 
+342 
+14 
+82 
+410 
+22784 
+Industrie divers 
+5916 
+98 
+2 
+16 
+112 
+6028 
+ST4 
+109919 
+2678 
+124 
+420 
+2974 
+112893 
+V- Services 
+Transport et 
+communication 
+63998 
+994 
+52 
+293 
+1235 
+65233 
+Commerce 
+157316 
+6785 
+240 
+822 
+7367 
+164683 
+Hôtellerie et restauration 
+41937 
+1928 
+57 
+256 
+2127 
+44064 
+Services fournis aux 
+entreprises 
+63133 
+1220 
+81 
+347 
+1486 
+64619 
+Services fournis aux 
+ménages 
+63327 
+2461 
+99 
+585 
+2947 
+66274 
+Services pour collectivités 
+10379 
+537 
+16 
+60 
+581 
+10960 
+ST5 
+400090 
+13925 
+545 
+2363 
+15743 
+415833 
+Total Général 
+720495 
+18 925 
+861 
+3 530 
+21 594 
+742 089 
+Source : CNAS 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 40 - 
+ 
+ 
+Tableau 27 : Concentration des PME (personnes morales) par wilaya  
+Taux de concentration = (Nombre de PME/Population résidente) *1000 
+Wilaya 
+PME 
+2021 
+Mouvement S1/2022 
+  
+  
+  
+  
+Création 
+radiation 
+réactivation 
+croissance 
+PME 
+S1/2022 
+RGPH2008 
+1er 
+janvier 
+2022 
+La 
+densité  
+Nord 
+Chlef 
+14586 
+288 
+19 
+69 
+338 
+14924 
+1002088 
+1340457 
+11 
+Bejaia 
+36738 
+196 
+33 
+46 
+209 
+36947 
+912577 
+1220722 
+30 
+Blida 
+25699 
+80 
+0 
+17 
+97 
+25796 
+1002937 
+1341593 
+19 
+Bouira 
+17474 
+216 
+14 
+29 
+231 
+17705 
+695583 
+930457 
+19 
+Tlemcen 
+16736 
+2264 
+126 
+283 
+2421 
+19157 
+604744 
+808944 
+24 
+Tizi Ouzou 
+42355 
+242 
+10 
+33 
+265 
+42620 
+1127607 
+1508360 
+28 
+Alger 
+79650 
+432 
+6 
+25 
+451 
+80101 
+2988145 
+3997135 
+20 
+Jijel 
+13962 
+240 
+8 
+51 
+283 
+14245 
+636948 
+852023 
+17 
+Skikda 
+14834 
+826 
+25 
+122 
+923 
+15757 
+898680 
+1202132 
+13 
+Sidi 
+Bel 
+Abbes 
+11113 
+247 
+2 
+20 
+265 
+11378 
+949135 
+1269624 
+9 
+Annaba 
+17178 
+426 
+25 
+110 
+511 
+17689 
+609499 
+815305 
+22 
+Guelma 
+9621 
+259 
+5 
+43 
+297 
+9918 
+482430 
+645329 
+15 
+Constantine 
+22356 
+81 
+11 
+10 
+80 
+22436 
+938475 
+1255365 
+18 
+Médéa 
+12133 
+192 
+2 
+32 
+222 
+12355 
+819932 
+1096794 
+11 
+Mostaganem 
+11685 
+127 
+8 
+12 
+131 
+11816 
+737118 
+986016 
+12 
+Mascara 
+11425 
+253 
+12 
+23 
+264 
+11689 
+784073 
+1048826 
+11 
+Oran 
+33572 
+78 
+6 
+38 
+110 
+33682 
+1454078 
+1945068 
+17 
+Boumerdès 
+28325 
+241 
+4 
+115 
+352 
+28677 
+802083 
+1072918 
+27 
+El Tarf 
+5482 
+385 
+18 
+356 
+723 
+6205 
+408414 
+546321 
+11 
+Tipaza 
+34161 
+191 
+3 
+57 
+245 
+34406 
+591010 
+790573 
+44 
+Mila 
+13310 
+1101 
+55 
+120 
+1166 
+14476 
+766886 
+1025836 
+14 
+Ain Defla 
+11560 
+90 
+2 
+16 
+104 
+11664 
+766013 
+1024668 
+11 
+Aïn 
+Temouchent 
+7583 
+146 
+6 
+19 
+159 
+7742 
+726180 
+971385 
+8 
+Relizane 
+9498 
+59 
+0 
+2 
+61 
+9559 
+371239 
+496593 
+19 
+Total 
+du 
+Nord 
+501036 
+8660 
+400 
+1648 
+9908 
+510944 
+21075874 
+28192445 
+18 
+Hauts-Plateaux 
+Laghouat 
+7026 
+125 
+3 
+37 
+159 
+7185 
+455602 
+609443 
+12 
+Oum 
+El 
+Bouaghi 
+8366 
+488 
+47 
+145 
+586 
+8952 
+621612 
+831508 
+11 
+Batna 
+19029 
+214 
+7 
+30 
+237 
+19266 
+1119791 
+1497904 
+13 
+Tébessa 
+9289 
+739 
+14 
+122 
+847 
+10136 
+648703 
+867747 
+12 
+Tiaret 
+9639 
+181 
+9 
+45 
+217 
+9856 
+846823 
+1132765 
+9 
+Sétif 
+33239 
+918 
+39 
+142 
+1021 
+34260 
+1489979 
+1993092 
+17 
+Saida 
+4317 
+132 
+4 
+44 
+172 
+4489 
+330641 
+442287 
+10 
+M’sila 
+16736 
+381 
+7 
+63 
+437 
+17173 
+990591 
+1325078 
+13 
+El Bayadh 
+3584 
+308 
+7 
+33 
+334 
+3918 
+228624 
+305822 
+13 
+Bordj 
+Bou 
+Arréridj 
+16798 
+35 
+2 
+14 
+47 
+16845 
+628475 
+840689 
+20 
+Tissemsilt 
+3701 
+35 
+1 
+6 
+40 
+3741 
+294476 
+393910 
+9 
+Khenchela 
+7600 
+938 
+41 
+96 
+993 
+8593 
+386683 
+517252 
+17 
+Souk Ahras 
+6626 
+1327 
+34 
+117 
+1410 
+8036 
+438127 
+586067 
+14 
+Djelfa 
+10725 
+489 
+14 
+51 
+526 
+11251 
+1092184 
+1460976 
+8 
+Naama 
+ 
+ 
+2306 
+111 
+3 
+28 
+136 
+2442 
+192891 
+258023 
+9 
+
+---PAGE---
+- 41 - 
+ 
+Total 
+des 
+Hauts-
+Plateaux 
+158981 
+6421 
+232 
+973 
+7162 
+166143 
+9765202 
+13062563 
+13 
+Sud 
+Adrar 
+4530 
+146 
+7 
+27 
+166 
+4696 
+350217 
+468473 
+10 
+Biskra 
+8552 
+769 
+46 
+133 
+856 
+9408 
+547147 
+731899 
+13 
+Bechar 
+7575 
+1008 
+92 
+332 
+1248 
+8823 
+258645 
+345980 
+26 
+Tamanrasset 
+3205 
+649 
+10 
+22 
+661 
+3866 
+137074 
+183359 
+21 
+Ouargla 
+11204 
+40 
+16 
+152 
+176 
+11380 
+519149 
+694447 
+16 
+Illizi 
+2197 
+369 
+21 
+52 
+400 
+2597 
+34494 
+46141 
+56 
+Tindouf 
+2222 
+210 
+5 
+63 
+268 
+2490 
+52333 
+70004 
+36 
+El Oued 
+9868 
+141 
+8 
+19 
+152 
+10020 
+597755 
+799596 
+13 
+Ghardaïa 
+11125 
+1 
+0 
+0 
+1 
+11126 
+323403 
+432605 
+26 
+Timimoun 
+  
+10 
+0 
+0 
+10 
+10 
+33060 
+44223 
+0 
+Bordj 
+Badji 
+Mokhtar 
+  
+154 
+8 
+30 
+176 
+176 
+16437 
+21987 
+8 
+Ouled Djellal 
+  
+0 
+0 
+0 
+0 
+0 
+174209 
+233033 
+0 
+Béni Abbes 
+  
+205 
+13 
+46 
+238 
+238 
+11416 
+15271 
+16 
+In Salah 
+  
+  
+  
+  
+  
+0 
+32518 
+43498 
+0 
+In Guezzam 
+  
+  
+  
+  
+  
+0 
+7045 
+9424 
+0 
+Tougourt 
+  
+36 
+3 
+1 
+34 
+34 
+39409 
+52716 
+1 
+Djanet 
+  
+70 
+0 
+8 
+78 
+78 
+14655 
+19603 
+4 
+M'ghair 
+  
+35 
+0 
+24 
+59 
+59 
+49 793 
+66606 
+1 
+Meniaa 
+  
+1 
+0 
+0 
+1 
+1 
+40195 
+53767 
+0 
+Total du Sud 
+60478 
+3844 
+229 
+909 
+4524 
+65002 
+3238954 
+4332633 
+15 
+Total Général 
+720 495 
+18 925 
+861 
+3 530 
+21 594 
+742089 
+34080030 
+45587641 
+16 
+Source :CNAS 
+
+---PAGE---

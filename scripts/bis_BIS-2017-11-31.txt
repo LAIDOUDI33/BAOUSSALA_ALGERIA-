@@ -1,0 +1,5249 @@
+ 
+ 
+ الجمھورية الجزائرية
+الديمقراطية الشعبية
+ 
+  République Algérienne Démocratique et Populaire 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bulletin d’information 
+Statistique de la PME   
+                
+            
+ 
+N°31  
+ 
+ 
+ 
+Edition novembre 2017 
+ وزارة الصناعة و المناجم
+Ministère de l’Industrie et des Mines 
+ 
+ 
+ 
+Direction Générale de la Veille Stratégique, 
+des Etudes et des Systèmes d’Information 
+ 
+Données du 1er semestre 2017
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 2 ‐ 
+ 
+ 
+ 
+ 
+Abréviations 
+PME 
+ 
+ Petite et Moyenne Entreprise 
+EPE  
+ 
+Entreprise Publique Economique  
+Mds 
+ 
+Milliards  
+PIB  
+ 
+Produit Intérieur Brut 
+VA 
+ 
+Valeur Ajoutée 
+HH 
+ 
+Hors Hydrocarbures 
+ANGEM  
+Agence Nationale de Gestion du Micro Crédit 
+ANSEJ  
+Agence Nationale de Soutien à l’Emploi des Jeunes 
+ANDI   
+Agence Nationale de Développement de l’Investissement 
+CGCI-PME 
+Caisse de Garantie des Crédits d’Investissements-PME 
+FGAR   
+Fonds de Garantie des Crédits aux PME  
+CNAC   
+Caisse Nationale d’Assurance Chômage 
+ECOFIE :              Société d’études économiques et d’analyses financières du secteur public marchand 
+ 
+Avertissement  
+Source principale : Référentiels CNAS et CASNOS 
+Remerciements 
+ 
+Le Bulletin d’information statistique                    
+Participe à une meilleure visibilité de l’évolution des indicateurs économiques et, 
+notamment, de ceux relatifs à la démographie des PME. 
+ 
+La diffusion du présent document à une large échelle, y compris sur le Web, répond 
+aux préoccupations du ministère de mettre l’information utile à disposition d’un 
+maximum d’opérateurs et d’utilisateurs. 
+ 
+Nous tenons à exprimer notre reconnaissance                              
+Aux institutions publiques et aux structures déconcentrées du MIM qui contribuent 
+régulièrement à l’alimentation en données de ce Bulletin, devenu un périodique 
+diffusé tous les semestres. 
+ 
+Nous tenons à exprimer nos vifs remerciements                          
+Aux nombreux lecteurs qui nous ont fait part de leurs observations et suggestions. 
+ 
+ 
+Pour toute remarque ou suggestion, prière de nous contacter via l’adresse suivante :  
+ 
+dgvsesi@industrie.gov.dz
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 3 ‐ 
+ 
+Sommaire 
+ 
+Préambule ........................................................................................................................................ ‐ 5 ‐ 
+Chiffres clés au 30/06/2017 ........................................................................................................... ‐ 7 ‐ 
+I- POPULATION DES PME ............................................................................................................. ‐ 8 ‐ 
+1- Situation à la fin du 1e semestre 2017 ............................................................................................... ‐ 8 ‐ 
+2- Distribution ............................................................................................................................................ ‐ 9 ‐ 
+2.1 Par taille .................................................................................................................................................................... ‐ 9 ‐ 
+2.2 Par nature juridique ............................................................................................................................................... ‐ 10 ‐ 
+2.3 Par statut juridique et secteur d’activité .............................................................................................................. ‐ 11 ‐ 
+2.4 Par région ............................................................................................................................................................... ‐ 12 ‐ 
+2.5 Densité .................................................................................................................................................................... ‐ 12 ‐ 
+2.6 Evolution de la population globale des PME ..................................................................................................... ‐ 13 ‐ 
+2.7 Evolution des PME (personnes morales) par secteur d'activité ...................................................................... ‐ 13 ‐ 
+2.8 Evolution de l’emploi par type de PME ............................................................................................................... ‐ 14 ‐ 
+3- Demographie ....................................................................................................................................... ‐ 14 ‐ 
+3.1 Croissance .............................................................................................................................................................. ‐ 14 ‐ 
+3.2 Création de PME ................................................................................................................................................... ‐ 15 ‐ 
+3.3 Réactivation ............................................................................................................................................................ ‐ 15 ‐ 
+3.4 Radiation (mortalité) .............................................................................................................................................. ‐ 15 ‐ 
+II- STATISTIQUES LES PROGRAMMES D’APPUI À LA PME ..................................................‐ 18 ‐ 
+1. Dispositif national d’appui à l’investissement (ANDI) .................................................................. ‐ 18 ‐ 
+1.1 Projets d’investissement déclarés par secteur d’activité .................................................................................. ‐ 18 ‐ 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers) .................................................................. ‐ 19 ‐ 
+1.3 Projets d’investissement déclarés par tranche d’effectif .................................................................................. ‐ 19 ‐ 
+2. Dispositifs locaux d’appui relevant du secteur de l’Industrie des Mines ................................. ‐ 20 ‐ 
+2.1 Etat de réalisation des Centres de Facilitation et Pépinières d’Entreprises. ................................................. ‐ 20 ‐ 
+2.2 Bilan d’activité des pépinières d’entreprises ...................................................................................................... ‐ 20 ‐ 
+ 
+Les pépinières d’entreprises de Bechar et Brouira entament la phase de démarrage : 
+équipements de bureaux des porteurs de projets et procédures administratives en cours. . ‐ 
+21 ‐ 
+2.4 Activités du FGAR ................................................................................................................................................. ‐ 24 ‐ 
+2.5 Activités de la CGCI-PME (dispositif relevant du Ministère des finances) .................................................... ‐ 26 ‐ 
+3. Dispositifs Sociaux d’appui à la PME ............................................................................................. ‐ 28 ‐ 
+3.1 Dispositif « ANSEJ » ............................................................................................................................................. ‐ 28 ‐ 
+3.2 Dispositif « CNAC » .............................................................................................................................................. ‐ 30 ‐ 
+3.3 Dispositif « ANGEM » ........................................................................................................................................... ‐ 31 ‐ 
+III- LA CONJONCTURE ECONOMIQUE DU SECTEUR INDUSTRIEL......................................‐ 32 ‐ 
+Commerce extérieur .................................................................................................................................................... ‐ 39 ‐ 
+VI-ANNEXES ...................................................................................................................................‐ 42 ‐ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 4 ‐ 
+ 
+Liste des tableaux 
+Tableau 1 Population globale des PME à fin S1/2017 ............................................................................................................ - 8 - 
+Tableau 2 typologie des PME ...................................................................................................................................................... - 9 - 
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité .................................................................... - 10 - 
+Tableau 4 Professions libérales par secteur d’activité (Source : CASNOS) ..................................................................... - 10 - 
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) .............. - 11 - 
+Tableau 6 Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) .......................................... - 12 - 
+Tableau 7 Concentration des PME privées (personnes morales) par région ................................................................... - 12 - 
+Tableau 8 Densité des PME privées (personnes morales) par région ............................................................................... - 13 - 
+Tableau 9 Evolution de la population globale des PME (S1/2016 et S1/2017) ................................................................ - 13 - 
+Tableau 10 Evolution des PME privées (personnes morales) par secteur d’activité (S1 2016/ S1 2017) ................... - 13 - 
+Tableau 11 Evolution des emplois déclarés par type de PME ............................................................................................. - 14 - 
+Tableau 12 Mouvements constatés dans la démographie des PME privées ................................................................... - 14 - 
+Tableau 13 Mortalité des PME privées..................................................................................................................................... - 15 - 
+Tableau 14 Mortalité des PME privées par secteur d'activité (personnes morales) ........................................................ - 15 - 
+Tableau 15 La mortalité des PME privées dans le secteur des services ........................................................................... - 16 - 
+Tableau 16 La mortalité des PME dans le secteur de l’industrie ......................................................................................... - 16 - 
+Tableau 17 La mortalité des PME privées (personnes physiques) ..................................................................................... - 17 - 
+Tableau 18 Etats Récapitulatifs des projets d’investissement (S1/2017) .......................................................................... - 18 - 
+Tableau 19 FGAR : Situation globale des dossiers traités Avril 2004/ au 30/06/2017 .................................................... - 24 - 
+Tableau 20  FGAR : Situation des dossiers traités par type de projets Avril 2004/ au 30/06/2017 .............................. - 24 - 
+Tableau 21 FGAR : Dossiers traités (du 01/01/2016 au 30/06/2017)................................................................................. - 25 - 
+Tableau 22 FGAR : Dossiers traités par type de projets (du 01/01/2016 au 30/06/2017) .............................................. - 25 - 
+Tableau 23 CGCI-PME : Situation globale des garanties par secteur d’activité (au 30/06/2017) ................................. - 26 - 
+Tableau 24 CGCI-PME : Situation globale des garanties par région (au 30/06/2017) .................................................... - 26 - 
+Tableau 25 Garanties CGCI‐PME au 30‐06‐2017 par tranche de crédit ............................................................................... - 27 - 
+Tableau 26 ANSEJ : Attestations d’éligibilité par secteur d’activité (Cumul au 30/06/2017) .......................................... - 28 - 
+Tableau 27  ANSEJ : Projets financés par secteur d’activité (Cumul au 30/06/2017) (Unité : DA) .............................. - 29 - 
+Tableau 28 ANSEJ : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2017) ............................... - 30 - 
+Tableau 29 CNAC : Projets financés par secteur d’activité (cumul au 30/06/2017) ........................................................ - 30 - 
+Tableau 30 CNAC : Présentation des principaux agrégats .................................................................................................. - 30 - 
+Tableau 31 ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2017) ............................................. - 31 - 
+Tableau 32 ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2017) ................................................... - 31 - 
+Tableau 40 Evolution de la Balance commerciale de l’Algérie (S1/2016 –S1/2017) (en Millions de Dollars US) ...... - 39 - 
+Tableau 41 Evolution des importations par groupes de produits (S1/2016 – S1/2017) ................................................... - 40 - 
+Tableau 42 Principaux produits hors hydrocarbure  exportés (S1/2016- S1/2017) ......................................................... - 41 - 
+Tableau 43 : PME privées par secteurs d'activité .................................................................................................................. - 42 - 
+Tableau 44  Concentration des PME (personnes morales) par wilaya .............................................................................. - 43 - 
+Tableau 45 FGAR : Dossiers traités par secteur d’activité (de 2004 à fin juin 2017) ...................................................... - 44 - 
+Tableau 46 FGAR : Dossiers traités par région (de 2004 à fin juin 2017) ............................................................................ - 45 - 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 5 ‐ 
+ 
+Préambule  
+Le  présent  numéro  du  Bulletin  d’information  statistique  du  premier  semestre  de  l’année  2017,  
+présente  des  éclairages  sur  les  éléments  d’information  de  la  structure  et  de  l’évolution  d’une 
+population globale de 1 060 289 PME. Ces entreprises représente une part majoritaire  (97,7%) de  
+Très  Petite  Entreprises  (effectif  de  moins  de  10  salariés),  soit  1 035  891  PME,  et  emploient 
+2 601 958 salariés. 
+ Le plan d’action du gouvernement vise la création d’un (1) million de nouvelles PME durant le 
+quinquennat 2015‐2019. 
+Vue le rôle primordial que  jouent les PME dans le processus de développement économique et 
+industriel du pays. les pouvoirs publics ont pris une série de mesures d’aides et soutiens    à la 
+promotion des PME. 
+Ainsi la loi d’orientation sur le développement de la PME promulguée en mois de juin 2017, qui 
+modifie et complète la loi de 2001, vise l’encouragement de l’émergence des PME, l’amélioration 
+de leur compétitivité et leur capacité d’exportation ainsi que l’amélioration du taux d’intégration 
+nationale et la promotion de la sous‐traitance. 
+Il introduit, à cet effet, plusieurs mesures de soutien à cette catégorie d’entreprises en matière de 
+création,  de  la  recherche  et  développement,  de  l’innovation,  de  développement  de  la  sous‐
+traitance, de financement d’actions de sauvetage et de reprise des activités des PME en difficulté 
+mais viables. 
+Le texte de loi comprend plusieurs mesures de soutien aux PME notamment en ce qui concerne  
+ 
+La création de PME, la recherche, le développement, lʹinnovation, le développement de la 
+sous‐traitance  et  le  financement  dʹactions  de  sauvetage  et  de  reprise  dʹactivités  des 
+entreprises en difficulté mais viable. 
+ 
+Une réforme du dispositif de soutien aux PME des points de vue législatif et institutionnel 
+ainsi quʹau niveau des instances intervenant dans la mise en œuvre de ce dispositif. 
+La  PME  est  une  entreprise  de  production  de  biens  et/ou  de  services  employant  une  (1)  à  250 
+personnes et dont le chiffre dʹaffaires annuel nʹexcède pas 4 milliards de dinars ou dont le total du 
+bilan 
+annuel 
+nʹexcède 
+pas 
+à 
+1 
+milliard 
+de 
+DA. 
+Des mesures dʹaide et de soutien à la promotion de la PME qui ont pour objectif de promouvoir la 
+diffusion  de  lʹinformation  à  caractère  industriel,  commercial,  juridique,  économique,  financier, 
+professionnel,  et  technologique  relative  aux  PME  et  encourager  toute  action  tendant  à  faciliter 
+lʹaccès 
+des 
+PME 
+au 
+foncier. 
+Pour un meilleur encadrement des PME et en vue des les encourager à créer une richesse et des 
+postes dʹemploi,  
+Les entreprises qui bénéficient des mesures de soutien aux PME prévues dans sont ʺles PME dont 
+près de 49% de leur capital social sont détenus par une société ou un groupement de sociétés à 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 6 ‐ 
+ 
+capital dʹinvestissement ainsi ʺquʹen fonction de leur tailles et des priorités définies par filières et 
+territoiresʺ. 
+ 
+Le  texte  prévoit  également  des  actions  dʹaide  et  de  soutien  à  la  PME  financées  du  compte 
+dʹaffectation spécial ʺFonds national de mise à niveau des PME, dʹappui à lʹinvestissement et de 
+promotion de la compétitivité industrielleʺ, outre les dépenses de gestion de lʹAgence chargée de 
+la  mise  en  oeuvre  de  la  stratégie  de  développement  des  PME  et  des  opérations  dʹaide  et  de 
+soutien 
+aux 
+PME. 
+La priorité est accordée dans la classification des PME  au chiffre dʹaffaire et au montant du bilan 
+annuel, si elle est classée dans une catégorie selon son chiffre dʹaffaire ou le montant de son bilan 
+annuel ou dans une autre catégorie, si on tient compte du nombre de ses employés. 
+ 
+Ce texte de loi permet aux Collectivités locales de prendre les mesures nécessaires pour aider, 
+assister et promouvoir les PME, en facilitant lʹobtention du foncier adéquat à leurs activités et en 
+consacrant 
+une 
+partie 
+des 
+zones 
+dʹactivités 
+et 
+zones 
+industrielles. 
+Le texte de loi charge ʺune agenceʺ de la mise en œuvre de la stratégie de développement des 
+PME en termes dʹémergence, de croissance et de pérennisation y compris par lʹamélioration de la 
+qualité  de  la  promotion  de  lʹinnovation  et  au  renforcement  des  compétences  et  des  capacités 
+managériales 
+des 
+PME. 
+Le ministère chargé de la PME crée des Fonds de garantie des crédits et des fonds dʹamorçage 
+conformément  à  la  règlementation  en  vigueur  à  lʹeffet  de  garantir  des  crédits  aux  PME  et  de 
+promouvoir 
+les 
+start‐up 
+dans 
+le 
+cadre 
+des 
+projets 
+innovants. 
+Le ministère a été chargé, en coordination avec les autres ministères et autorités concernées, de 
+prendre  toute  initiative  visant  à  définir  les  besoins  des  PME  en  matière  de  financement  et 
+dʹencouragement 
+de 
+la 
+création 
+des 
+moyens 
+financiers 
+nécessaires. 
+Le  texte  de  loi  prévoit  aussi  la  création  du  Conseil  national  de  concertation  pour  le 
+développement de la PME composé dʹorganisations, dʹassociations professionnelles spécialisées 
+représentant  les  entreprises,  de  représentants  de  secteurs  et  dʹorganismes  concernés  par  la 
+création et le développement de la PME. 
+Ce  texte  permet  aux  associations  professionnelles  et  groupements  qui  créent  des  structures 
+dʹappui  aux  PME  de  bénéficier  dʹun  appui  financier  ou  matériel  de  lʹEtat  conformément  à  la 
+législation et au règlement en vigueur. 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 7 ‐ 
+ 
+Chiffres clés au 30/06/2017 
+Population totale des PME 
+(tous statuts confondus) 
+1 060 289 
+ 
+PME créées en 1er semestre 2017 
+ 
+4166 
+Cessations d’activités
+(PME privées) 
+9 941 
+PMI privées 
+92 804 
+PME publiques  
+264 
+ 
+Densité des PME  
+(Nombre de PME 
+pour 1000 Habitants) 
+Tous 
+statuts 
+juridiques 
+confondus/ 
+Moyenne 
+internationale 
+23/45 
+Personnes morales 
+privées/ Moyenne 
+internationale 
+17/45 
+Emplois (agents) 
+2 601 958 
+Importations (Millions de $) 
+22 986 
+Exportations (Millions de $) 
+18 141 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 8 ‐ 
+ 
+I- POPULATION DES PME 
+1‐ Situation à la fin du 1e semestre 2017 
+A la fin du 1er semestre 2017, la population globale des PME s’élève à 1 060  289             
+entités dont  près de 57% sont constituées de personnes morales, parmi lesquelles on 
+recense 264 Entreprises Publiques Economiques (EPE). Le reste est composé de personnes 
+physiques (44%), dont 21% de professions libérales et 23% d’activités artisanales.  
+Tableau 1 Population globale des PME à fin S1/2017 
+ 
+Types de PME 
+Nbre de PME 
+Part (%) 
+1. 
+PME privées 
+ 
+Personnes morales* 
+595810
+56,94 
+ 
+Personnes physiques**  
+464 215 
+43,78 
+ 
+ dont Professions libérales 
+220 516 
+20,79 
+ 
+ dont Activités artisanales 
+243 699 
+22,98 
+ 
+                        S/Total 1 
+1 060 025 
+100 
+2 
+PME publiques *** 
+ 
+Personnes morales 
+264
+0,02 
+ 
+S/Total 2 
+264
+0,02 
+ 
+Total 
+1 060 289 
+100,00 
+ 
+ 
+ 
+ 
+ 
+* Source : CNAS 
+** Source : CASNOS 
+*** Source : ECOFIE 
+ 
+ 
+Personnes 
+morales
+56%
+Personnes 
+physiques
+44%
+les composantes de la PME
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 9 ‐ 
+ 
+2‐ Distribution  
+2.1 Par taille  
+A la fin du 1er semestre 2017, la population globale de la PME est composée de 97,7% de 
+Très Petite Entreprise TPE (effectif de moins de 10 salariés) qui demeure fortement 
+dominante dans le tissu économique, suivie par la Petite Entreprise PE avec 2,00% et la 
+Moyenne Entreprise ME avec 0,30%.  
+Tableau 2 typologie des PME 
+ 
+Type des PME 
+Nombre de PME 
+% 
+TPE (effectif de moins de 10 salariés)
+1035891 
+97.7
+PE (effectif entre 10 et 49  salariés)  
+21202 
+2.00
+ME (effectif entre 50 et 249 salariés)
+3196 
+0.30
+Total 
+1 060 289 
+100 
+    Source : CNAS 
+ 
+ 
+ 
+97,7%
+2%
+0,3%
+les PME par taille
+TPE (effectif de moins de 10 salariés)
+PE (effectif entre 10 et 49  salariés)
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 10 ‐ 
+ 
+ 
+ 
+2.2 Par nature juridique 
+2.2.1 Personnes Morales  
+Les PME (personnes morales) tous statuts confondus sont présentes en force dans le secteur 
+des services qui en concentre plus de la moitié (53%), suivi par le secteur du BTPH 
+(29,82%).   
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité  
+ 
+Secteurs d’Activité 
+PME privées* 
+ 
+PME publiques** 
+Total 
+Part en (%)
+Agriculture 
+6392 
+84 
+6 476 
+1,09 
+Hydrocarbures, Energie, Mines et 
+services liés 
+2843 
+3 
+2 846 
+0,48 
+BTPH 
+177727 
+23 
+177 750 
+29,82 
+Industries manufacturières 
+92804 
+84 
+92 888 
+15,58 
+Services 
+316044 
+70 
+316 114 
+53,03 
+Total Général 
+595810 
+264 
+596 074 
+100 
+*source CNAS  
+** source ECOFIE  
+2.2.2 Personnes physiques  
+Pour la période considérée, le nombre total des personnes physiques a atteint 464.215 PME,  
+dont  220.516 sont des professions libérales et 243.699 sont des activités artisanales (Voir le 
+tableau N°1). 
+ a. Professions libérales 
+La catégorie des professions libérales, englobe, notamment, les notaires, les avocats, les 
+huissiers de justice, les médecins, les architectes et les agriculteurs.  
+Les professions libérales, au nombre 220 516, exercent à 68,80% dans l’Agriculture, 20,24% 
+dans le secteur de la Santé et 10,95% dans la justice, tel que repris dans le tableau n°4.  
+Tableau 4 Professions libérales par secteur d’activité (Source : CASNOS) 
+  
+Santé 
+Justice 
+Exploitations agricoles 
+Total 
+Nbre au 30.06.2016 
+44 639 
+24 153 
+151 724 
+220 516 
+Part en % 
+20,24 
+10,95 
+68,80 
+100 
+Source : CASNOS 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 11 ‐ 
+ 
+ 
+ 
+b-Activités Artisanales : 
+Durant le 1er semestre 2017, la CASNOS a enregistré 8457 nouvelles affiliations, ce qui 
+porte le nombre total des artisans au 30/06/2016 à 243 699 PME.    
+2.3 Par statut juridique et secteur d’activité 
+2.3.1. PME publiques  
+Les PME publiques représentent une part minime dans la population globale des PME. Leur 
+nombre est de 264 PME durant le 1er semestre 2017 contre 438 durant le premier semestre 
+2016 soit un recul de 65,9%. Cette baisse est due essentiellement à la restructuration de 
+certains portefeuilles du Secteur Public Marchand (SPM). Leur effectif passe de 35 698 en 
+2016 à 23 679   salariés au 1er  semestre 2017. 
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) 
+Secteurs 
+d’activités 
+1 à 9 salariés 
+10 à 49 salariés 
+50 à 249 salariés 
+Nombre 
+global 
+de PME
+% 
+Effectif 
+global 
+% 
+Nombre   Effectifs  Nombre Effectifs Nombre
+Effectifs
+Industrie 
+0 
+0 
+14
+405
+70
+9029
+84
+31,82 
+9 434
+39,84
+Services 
+3 
+13 
+20
+541
+47
+6532
+70
+26,52 
+7 086
+29,93
+Agriculture 
+11
+55 
+55
+1484
+18
+1866
+84
+31,82 
+3 405
+14,38
+BTPH 
+- 
+- 
+1
+46
+22
+3357
+23
+8,71 
+3 403
+14,37
+Mines et 
+carrières 
+- 
+- 
+1
+42
+2
+309 
+3 
+1,14 
+351 
+1,48 
+Total 
+14 
+68 
+91 
+2518 
+159 
+21 093 
+264 
+100,00 
+23 679 
+100,00 
+Source : ECOFIE 
+Les PME publiques exercent dans tous les secteurs d’activité de l’économie nationale, on 
+observe du tableau ci dessus des parts équitables dans l’Agriculture et l’Industrie (31,82% 
+des PME/EPE) ensuite les Services (26,52%). Les PME publiques industrielles emploient  
+46 % des effectifs du Secteur Public Marchand SPM de type PME.  
+2.3.2. PME Privées  
+Le nombre total des PME privées à la fin du 1er semestre 2017 est de 1 060 025. Elles sont 
+concentrées au niveau du secteur des services (le transport en particulier), l’Artisanat  et le 
+BTPH (le Bâtiment en particulier). 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 12 ‐ 
+ 
+Tableau 6 Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) 
+ 
+  
+Secteurs d’Activité 
+Nombre 
+Part en (%) 
+I 
+Agriculture 
+6392 
+0,60% 
+II 
+Hydrocarbures, Energie, Mines et services liés 
+2843 
+0,27% 
+III 
+BTPH 
+177727 
+16,77% 
+IV 
+Industries manufacturières 
+92804 
+8,75% 
+V 
+Services y compris les professions libérales 
+536560 
+50,62% 
+VI 
+Artisanat 
+243699 
+22,99% 
+  
+Total Général 
+1 060 025 
+100,00% 
+2.4 Par région  
+Selon la répartition spatiale du Schéma National d'Aménagement du Territoire (SNAT), les 
+PME (personnes morales) sont prédominantes dans le Nord et, à un degré moindre, dans les 
+Hauts-Plateaux. 
+Tableau 7 Concentration des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/2017
+Taux de concentration (%)
+Nord 
+415 242 
+69 
+Hauts‐Plateaux 
+129 767 
+22 
+Sud 
+50 801 
+9 
+Total Général 
+595810
+100 
+     Source : CNAS 
+ 
+La région du Nord regroupe, 401 231 PME, soit 69 % des PME du pays, suivie par la région 
+des Hauts-Plateaux avec 126 051 PME soit 22%, et les régions du Sud et du Grand Sud 
+accueillent 50 104 PME soit 9% du total.  
+2.5 Densité  
+En termes de densité, selon les dernières statistiques de l’ONS sur la démographie             
+(40,4 Millions d’habitants au 1er janvier 2016) la moyenne nationale des PME est de l’ordre 
+de 23 PME (tous statuts confondus) pour 1.000 habitants. Ce ratio national diminue à 17 
+pour 1.000 habitants pour les PME privées de type « personnes morales » et présente un 
+écart important d’une région à l’autre du pays :  
+20 PME privées pour 1000 habitants au Nord du pays,  
+13 PME privées pour 1000 habitants dans la région des Hauts Plateaux.  
+16 PME privées pour 1000 habitants dans la région du Sud.  
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 13 ‐ 
+ 
+Tableau 8 Densité des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/2017* 
+Population par Wilaya 
+(RGPH 2008)** 
+Densité 
+Nord 
+415 242 
+21 075 874 
+20 
+Hauts‐Plateaux 
+129 767 
+9 765 202 
+13 
+Sud  
+50 801 
+3 238 954 
+16 
+Total Général 
+595810
+34 080 030 
+17
+    * Source : CNAS   ** Source : ONS 
+ 
+ 
+ 
+                                                  
+2.6 Evolution de la population globale des PME 
+L’évolution de la population de la PME entre le 1er semestre 2016 et le 1er semestre 2017 est 
+de 4,56 % tous secteurs juridiques confondus, représentant un accroissement net total de  
++46 214  PME. Pour les PME privées personnes morales, cette l’évolution est de 3,24%. 
+Tableau 9 Evolution de la population globale des PME (S1/2016 et S1/2017)  
+ 
+ 
+ 
+S1/2016 
+S1/2017 
+L’évolution 
+Population globale de la PME 
+1 014 075 
+1 060 289 
+4,56 
+PME privées personnes morales  
+577 386 
+596074 
+3,24 
+ 
+2.7 Evolution des PME (personnes morales) par secteur dʹactivité 
+Les secteurs où la création d’entreprise a été la plus forte entre les deux premiers semestres 
+des exercices 2016 et 2017, restent ceux des services  avec 53,04%. 
+Les PME à caractère industriel sont au nombre de 92 804 entités à la fin du 1er  semestre 
+2017, contre 99 275 entités à la fin du 1er  semestre 2016, soit une régression de 6,52 %. 
+Tableau 10 Evolution des PME privées (personnes morales) par secteur d’activité (S1 2016/ S1 2017) 
+ 
+Secteurs d’Activité 
+S1/2016 
+Parts 
+(%) 
+S1/2017
+Parts 
+(%) 
+Evolution (%) 
+I 
+Agriculture 
+7 094 
+1,23 
+6392 
+1,07 
+-9,90 
+II 
+Hydrocarbures, Energie, 
+Mines et services liés 
+3 201 
+0,55 
+2843 
+0,48 
+-11,18 
+III 
+BTPH 
+ 
+169 124 
+29,29 
+177727
+29,83 
+5,09 
+IV 
+Industries 
+manufacturières 
+99 275 
+17,19 
+92804 
+15,58 
+-6,52 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 14 ‐ 
+ 
+V 
+Services 
+298 692 
+51,73 
+316044
+53,04 
+5,81 
+ 
+Total Général 
+577 386 
+100,00 
+595810
+100,00 
+3,19 
+ 
+    Source : CNAS 
+ 
+2.8 Evolution de l’emploi par type de PME 
+L’effectif global des PME, à la fin du 1er semestre 2017, est de 2 601 958 agents, dont 
+seulement 23 679 relèvent des PME publiques. A noter que l’effectif global des PME             
+a progressé de 4,58 % entre le 1er  semestre 2016 et le 1er  semestre 2017. 
+      Tableau 11 Evolution des emplois déclarés par type de PME 
+Types de PME 
+1er semestre 2016 
+1er semestre 2017 
+Evolution (%) 
+Nombre 
+Parts (%) 
+Nombre 
+Parts (%) 
+PME Privées 
+ Salariés 
+1438579 
+57,82 
+1 517 990 
+58,34 
+5,52 
+Employeurs 
+1013637 
+40,74 
+1 060 289
+40,75 
+4,60 
+S/Total 
+2452216 
+98,57
+2578279 
+99,09 
+5,14 
+PME Publiques 
+35 698 
+1,43 
+23679 
+0,91 
+-33,67 
+Total 
+2 487 914 
+100 
+     2 601 958 
+100,00 
+4,58
+    Source : CNAS / CASNOS 
+ 
+3‐ Demographie 
+3.1 Croissance 
+L’évolution des PME privées durant le 1er semestre 2017 est de 4,5 % par rapport au             
+1er  semestre 2016, soit 41 066 nouvelles PME créées, ce qui porte le nombre global des 
+PME privées à 1 060 025. 
+Tableau 12 Mouvements constatés dans la démographie des PME privées 
+Nature des 
+PME 
+2016 
+Mouvements PME du 1er semestre 2017 
+1er 
+semestre 
+2017 
+Création 
+Réactivation 
+Radiation 
+Croissance 
+Personnes 
+morales 
+575 906 
+18411 
+3544 
+2051 
+19904 
+595 810 
+Personnes 
+Physiques 
+446325 
+22655 
+3125 
+7890 
+17890 
+464 215 
+Total PME 
+privées 
+1 022 231 
+41 066 
+6669 
+9941 
+37794 
+1 060 025 
+    Source : CNAS 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 15 ‐ 
+ 
+ 
+3.2 Création de PME 
+Le nombre de PME privées créées durant le 1er  semestre 2017, est de 41 066 PME.  Les 
+créations d’entreprises enregistrées au niveau de la CNAS à la fin du 1er  semestre 2017 
+s’élèvent à 18 411 nouvelles PME (personnes morales) alors qu’au niveau de la CASNOS, 
+on recense 22655  nouvelles PME créées (personnes physiques) durant la même période. 
+3.3 Réactivation 
+A la fin du 1er semestre 2017, les réactivations ont touché 3544 PME privées (personnes    
+morales) déclarées auprès de la CNAS, on recense aussi 3125 PME privées (personnes    
+physique) déclarées auprès de la CASNOS. 
+3.4 Radiation (mortalité) 
+ 
+Durant le 1er semestre 2017, 9 941 PME privées étaient radiées, dont 2 051 sont des 
+personnes morales et 7 890 PME personnes physiques.  
+Tableau 13 Mortalité des PME privées  
+Types de PME privées 
+Personnes* 
+Morales 
+Personnes ** 
+Physiques 
+Total 
+Nombre de cessation d’activité 
+2 051 
+7 890 
+9941 
+Parts en% 
+20,63 % 
+79,37 % 
+100,00 % 
+   
+  * Source : CNAS   ** Source : CASNOS 
+3.4.1 Mortalité des PME privées (personnes morales)  
+a- mortalité des PME privées par secteur d’activité 
+Les PME de type personnes morales ayant été radiées durant le 1er semestre 2017, sont au 
+nombre de 20 51. Ce nombre est visiblement en baisse par rapport aux 3 338  enregistrées à 
+la fin du 1er semestre 2016.  
+Tableau 14 Mortalité des PME privées par secteur dʹactivité (personnes morales) 
+ 
+Secteurs d’Activité 
+S1/2016 
+S1/2017
+Evolution  
+  
+ 
+Nbre 
+% 
+Nbre 
+% 
+I 
+Agriculture et pêche 
+53 
+23 
+‐30 
+‐56,60 
+II 
+Hydrocarbures, Energie, 
+Mines et services liés 
+83 
+8 
+‐75 
+‐90,36 
+III 
+BTPH 
+47 
+520 
+473 
+1006,38 
+IV 
+Industries manufacturières 
+1433 
+221 
+‐1212 
+‐84,58 
+V 
+Services 
+1722 
+1279 
+‐443 
+‐25,73 
+Total Général 
+3338
+2051
+‐1287 
+‐38,56 
+   Source : CNAS 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 16 ‐ 
+ 
+Entre le 1er semestre 2016 et le 1er semestre 2017, une régression  de la mortalité est 
+observée dans tous les secteurs, hormis le secteur BTPH qui marque une progression de 473 
+PME soit un taux de 1006,38% par rapport au 1er semestre 2016.   
+ 
+ 
+b- Mortalité des PME privées dans le secteur des services  
+Tableau 15 La mortalité des PME privées dans le secteur des services 
+S1/2016
+S1/2017
+Evolution
+Part  2016 en %
+Transport et communication
+230
+159
+-30,87
+13,36
+Commerce
+509
+383
+-24,75
+29,56
+Hôtellerie et restauration
+119
+91
+-23,53
+6,91
+Services aux entreprises
+624
+466
+-25,32
+36,24
+Services aux ménages
+207
+162
+-21,74
+12,02
+Etablissements financiers
+16
+3
+-81,25
+0,93
+Affaires immobilières
+5
+7
+40,00
+0,29
+Services pour collectivités
+12
+8
+-33,33
+0,70
+Total Services
+1 722
+1279
+-25,73
+100,00
+    Source : CNAS 
+Les services fournis aux entreprises sont les plus vulnérables avec 466 PME radiées durant 
+le 1er semestre 2017 (36,24% du total), les activités du commerce sont en deuxième position 
+avec 383 PME. Les transports présentent également une forte vulnérabilité.  
+ 
+c- Mortalité des PME privées dans l’industrie  
+Au niveau du secteur industriel, en enregistre une forte mortalité de PME, particulièrement 
+dans les activités de l’industrie agroalimentaire. Le manque de maturation dans le lancement 
+des projets et le manque de la compétitivité pourraient expliquer en partie cette mortalité. 
+ 
+ 
+Tableau 16 La mortalité des PME dans le secteur de l’industrie  
+S1/2016
+S1/2017
+Evolution
+Part    2015       
+(%)
+ISMME
+65
+33
+-49,23
+14,93
+construction
+1068
+24
+-97,75
+10,86
+Chimie, plastique
+15
+5
+-66,67
+2,26
+agroalimentaire
+119
+81
+-31,93
+36,65
+Industrie du textile
+72
+26
+-63,89
+11,76
+Industrie du cuir
+6
+5
+-16,67
+2,26
+papier
+70
+37
+-47,14
+16,74
+Industrie divers
+18
+10
+-44,44
+4,52
+Total Industrie
+1 433
+221
+-84,58
+100
+    Source : CNAS 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 17 ‐ 
+ 
+ 
+3.4.2 La mortalité des PME privées (personnes physiques)  
+Selon les chiffres de la CASNOS, les PME de type personne physique ayant cessé leurs 
+activités durant l’année le 1er semestre 2017, sont au nombre de 7890. Les activités des 
+artisans sont les plus vulnérables avec 4910 radiés (soit environ 62,23% du total) et le  
+secteur des exploitations agricoles en  deuxième position avec 2 019 PME radiées soit 
+25,59% du total. 
+Tableau 17 La mortalité des PME privées (personnes physiques) 
+ 
+ 
+  
+Santé 
+Justice 
+Exploitations 
+agricoles 
+Artisanat 
+Total 
+Nombre 
+de 
+cessation 
+d’activité 
+710 
+251 
+2019 
+4910 
+7890 
+Part (%) 
+9,00
+3,18
+25,59
+62,23 
+100,00
+      Source : CASNOS 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 18 ‐ 
+ 
+II- STATISTIQUES LES PROGRAMMES D’APPUI À LA PME 
+1. Dispositif national d’appui à l’investissement (ANDI) 
+Le bilan des déclarations d’investissements du 1er semestre 2017 est constitué 
+d’informations extraites de la base de données de l’ANDI affinées et corrigées en tenant 
+compte des projets annulés. 
+Il est à rappeler que ce bilan ne tient compte que des projets d’investissement dans les 
+activités de production de biens et services, couvèrent par le dispositif national d’appui à 
+l’investissement.   
+1.1 Projets d’investissement déclarés par secteur d’activité 
+Tableau 18 Etats Récapitulatifs des projets d’investissement (S1/2017) 
+Source : ANDI 
+ 
+Secteur 
+dʹactivité 
+Transport 
+BTPH 
+Industries 
+Services 
+Tourisme
+Santé 
+Agriculture
+Total  
+Projets déclarés 
+S1/2016 
+991 
+479 
+1288 
+544 
+167 
+63 
+121 
+3653 
+S1/2017 
+525 
+364 
+1298 
+322 
+205 
+108 
+94 
+2916 
+Part  
+S1/2017 (%) 
+18,00 
+12,48 
+44,51 
+11,04 
+7,03 
+3,70 
+3,22 
+100,00 
+évolution 
+(%) 
+-47,02 
+-24,01 
+0,78 
+-40,81 
+22,75 
+71,43 
+-22,31 
+-20,18 
+ 
+Montant (Millions de 
+DA)
+S1/2016 
+55117 
+41895 
+600167 
+92625 
+90733 
+25592 
+24298 
+930427 
+S1/2017 
+42398 
+39467 
+794139 
+126099 
+232442 
+28863 
+20079 
+1283487 
+Part  
+S1/2017 (%) 
+3,30 
+3,07 
+61,87 
+9,82 
+18,11 
+2,25 
+1,56 
+100,00 
+ 
+Emplois 
+S1/2016 
+6329 
+7902 
+45243 
+9723 
+7710 
+ 1943 
+2154 
+81004 
+S1/2017 
+4627 
+5884 
+59923 
+7244 
+12573 
+2479 
+2158 
+94888 
+Part  
+S1/2017 (%) 
+4,88 
+6,20 
+63,15 
+7,63 
+13,25 
+2,61 
+2,27 
+100,00 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 19 ‐ 
+ 
+ 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers) 
+Projets d'investissement 
+Nombre
+%
+Millions de DA
+%
+Nombre
+%
+Investissement locaux
+2 845 
+97,57
+1 019 826 
+79,46
+83 736 
+88,25
+Total investissement étranger
+71 
+2,43
+263 661 
+20,54
+11 152 
+11,75
+Total Général 
+2 916 
+100,00
+1 283 487 
+100,00
+94 888 
+100,00
+Projets déclarés 
+(S1 2017)
+Montant
+Emplois
+ 
+Source : ANDI 
+ 
+Durant la période considérée, le nombre de projets d’investissements déclarés par les 
+étrangers auprès de l’ANDI sont au nombre de 71 projets, qui ne représentent que 2,43% du 
+volume global. 
+ 
+1.3 Projets d’investissement déclarés par tranche d’effectif 
+Nombre
+%
+Millions de DA
+%
+Nombre
+%
+0 à 9
+1 278 
+43,83
+51 959 
+4,05
+4 962 
+5,23
+10 à 49
+1 158 
+39,71
+252 848 
+19,70
+24 634 
+25,96
+50 à 249
+440 
+15,09
+452 242 
+35,24
+39 835 
+41,98
+plus de 249
+40 
+1,37
+526 438 
+41,02
+25 457 
+26,83
+Total
+2 916
+100
+1 283 487
+100
+94 888
+100
+Projets déclarés        
+(S1 2017)
+Montant 
+Emplois
+Tranche dʹeffectif
+                   
+Source : ANDI 
+ 
+                      
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 20 ‐ 
+ 
+2. Dispositifs locaux d’appui relevant du secteur de l’Industrie des Mines  
+2.1 Etat de réalisation des Centres de Facilitation et Pépinières 
+d’Entreprises.  
+ 
+Le tableau suivant illustre l’état des structures opérationnelles, celles réceptionnées, et celles 
+en cours de réalisation.  
+ 
+ 
+Centres de 
+facilitation 
+Pépinières 
+d’entreprises 
+Structures opérationnelles 
+26 
+16 
+Structures en cours de réalisation 
+1 
+6 
+Total des structures 
+27 
+41 
+                 Source : DGPME  
+ 
+ 
+2.2 Bilan d’activité des pépinières d’entreprises  
+Dotées d’un statut d’EPIC, les pépinières d’entreprises opérationnelles sont implantées dans 
+les wilayas suivantes : Annaba, Oran, Bordj Bou Arreridj, Ghardaïa, Biskra, Khenchela, 
+Mila, Sidi Bel Abbes, Ouargla, Batna, Adrar, El Bayadh, Oum El Bouaghi, Bouira, Tiaret et 
+Béchar. 
+Activités des pépinières d’entreprises : 
+Projets hébergés au niveau des  Pépinières d’entreprises : 
+Le principal indicateur de performance des pépinières d’entreprises est le nombre de projets 
+hébergés.  
+Les statistiques reprises dans le tableau ci-après concernent les projets hébergés au sein des 
+pépinières d’entreprises pendant le 1er semestre 2017. Il est à signaler que la durée 
+d’hébergement varie entre 24 et 36 mois renouvelables selon le degré de maturité des projets 
+ainsi que les besoins en accompagnement sollicités par les porteurs de projets. 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 21 ‐ 
+ 
+Selon les données recueillies auprès des pépinières pour le 1er semestre 2017,  le nombre de 
+projets hébergés  au sein des treize pépinières a atteint  139 dont  94 entreprises ont été 
+créées avec 399 postes d’emploi. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Les pépinières d’entreprises de Bechar et Brouira entament la phase de démarrage : équipements de bureaux 
+des porteurs de projets et procédures administratives en cours. 
+Les projets hébergés par région et par secteur d’activités : 
+  
+Wilaya 
+Secteur d’activités 
+Nombre de Projets hébergés 
+Projets Innovants* 
+Oum El Bouaghi 
+Service 
+03 
+ 
+BTPH 
+04 
+ 
+Industrie  
+02 
+ 
+Energie  
+01 
+ 
+Environnement  
+01 
+ 
+Adrar  
+Agro-alimentaire 
+00 
+ 
+Service  
+01 
+ 
+BTPH  
+02 
+ 
+Industrie  
+00 
+ 
+Agriculture et pêche  
+01 
+ 
+Tourisme  
+03 
+ 
+ 
+ 
+Agro-alimentaire 
+03 
+ 
+Service  
+08 
+ 
+ 
+Wilaya 
+Nombre de projets 
+hébergés durant le       
+1er semestre 2017 
+Nombre 
+d’entreprises 
+créées 
+Nombre 
+d’emploi crées 
+Adrar  
+7 
+2 
+65 
+El Bayadh  
+20
+14
+72
+Bordj Bou Arreridj  
+8
+3
+3 
+Annaba  
+15
+1
+48 
+Biskra  
+20
+13
+60 
+ Mila  
+9
+1
+15 
+Oran  
+9
+2
+6 
+Batna  
+14
+5
+15 
+ Khenchela  
+11
+3
+39 
+Sidi Bel Abbes 
+1
+1
+1 
+ Ghardaïa 
+7
+4
+40 
+ Ouargla  
+5
+4
+21 
+Oum El Bouaghi  
+11
+38
+65 
+Tiaret 
+2
+3
+6 
+Bechar * 
+/
+/
+/ 
+Bouira* 
+/
+/
+/ 
+Total 
+139
+94
+399 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 22 ‐ 
+ 
+ 
+Biskra  
+Industrie  
+02 
+ 
+Chimie et plastique 
+01 
+ 
+Agriculture et pêche  
+01 
+ 
+Le fer et le solid 
+04 
+ 
+Tourisme  
+01 
+ 
+ 
+ 
+Bordj           Bou 
+Arriredj   
+Service 
+06 
+ 
+Industrie  
+02 
+01 
+Khenchela  
+Agro-alimentaire  
+03 
+01 
+Service 
+02 
+ 
+BTPH  
+00 
+ 
+Agriculture et pêche  
+00 
+ 
+Industrie  
+04 
+ 
+Oran  
+agro-alimentaire  
+02 
+02 
+services  
+07 
+02 
+Tourisme  
+00 
+01 
+Batna  
+Service 
+09 
+ 
+BTPH  
+01 
+ 
+TIC 
+01 
+ 
+Industrie  
+03 
+01  
+El Bayadh  
+Agro-alimentaire  
+06 
+ 
+Service  
+05 
+ 
+Chimie et plastique 
+02 
+ 
+Agriculture et pêche  
+01 
+ 
+Matériaux de construction 
+02 
+ 
+Industrie photovoltaïque 
+01 
+01 
+Industrie pharmaceutique 
+01 
+ 
+Industrie 
+electro-
+mecanique 
+02 
+01 
+Annaba  
+BTPH  
+03 
+ 
+Service 
+10 
+ 
+Fabrication 
+produit 
+parapharmaceutique 
+01 
+ 
+Industrie  
+01 
+ 
+Ghardaia 
+Agro-alimentaire  
+01 
+01  
+Industrie  
+02 
+02 
+Environnement  
+04 
+ 
+ 
+Tiaret  
+Service 
+02 
+02 
+Mila  
+Agro-alimentaire  
+01 
+ 
+Service  
+03 
+ 
+BTPH  
+01 
+ 
+Industrie   
+03 
+ 
+Tourisme  
+01 
+ 
+Sidi Bel Abbes  
+Service .tic 
+01 
+01 
+Ouartgla 
+Service  
+05 
+ 
+ 
+Bouira  
+ 
+/ 
+/ 
+/ 
+Bechar  
+ 
+/ 
+/ 
+/ 
+Total 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 23 ‐ 
+ 
+Bilan  d’activités des Centres de Facilitation 
+ 
+Wilaya 
+Nombre de 
+porteur de projets 
+reçus 
+Nombre de 
+porteur de 
+projets 
+accompagnés 
+(préciser le 
+dispositif : 
+ANSEJ, 
+ANGEM, 
+….etc 
+Nombre de 
+business 
+plan 
+élaborés 
+Nombre 
+d’emplois  
+prévus 
+Nombre 
+d’entreprises 
+crées 
+OBS 
+1‐Adrar  
+42 
+24 
+06 
+19 
+06 
+ 
+2‐El Bayadh  
+39 
+06
+01
+12
+01 
+3‐Tipaza  
+83 
+52
+22
+00 
+00 
+ 
+4‐Tindouf 
+49 
+06
+00
+26
+03 
+ 
+5‐Jijel  
+23 
+04
+06
+126 
+00 
+@ 
+6‐Biskra  
+63 
+03
+00
+27
+00 
+ 
+7‐Sidi Bel Abbes  
+28 
+14
+14
+469
+02 
+ 
+8‐Illizi  
+33 
+25
+01
+18
+00 
+ 
+9‐Oran  
+201 
+201
+05
+60
+/ 
+ 
+10‐Blida  
+62 
+62
+04
+150
+07 
+ 
+11‐Khenchela  
+105 
+11
+03
+30
+00 
+ 
+12‐Naama  
+71 
+26
+02
+52
+02 
+ 
+13‐Bordj 
+Bou 
+Arreridj  
+39 
+19
+09
+253
+09 
+ 
+14‐Tamanrasset  
+06 
+00 
+00 
+00 
+00 
+ 
+15‐Djelfa  
+138 
+37
+00 
+14
+02 
+ 
+16‐Laghouat  
+09 
+00 
+00 
+00 
+00 
+@ 
+17‐Chlef  
+25 
+25
+02 
+90 
+00 
+@ 
+18‐Mila  
+32 
+29
+00 
+00 
+00 
+/(absences de 
+personnel) 
+19‐Béjaia  
+42 
+24
+06
+06
+19 
+ 
+20‐Batna  
+/ 
+/
+/
+/
+/ 
+/(absences de 
+personnel) 
+21‐Béchar  
+20 (pour l’octroi 
+d’assiette foncière) 
+/ 
+/ 
+/ 
+/ 
+(absences de 
+personnel) 
+22‐Bouira 
+/ 
+/ 
+/ 
+/ 
+/ 
+/(absences de 
+personnel) 
+23‐Ouargla  
+24 
+24
+14
+33 
+11 
+@ 
+24‐Souk Ahras  
+05 
+00 
+00 
+00 
+00 
+ manque de personnel) 
+25‐El Oued  
+03 
+00 
+00 
+00 
+00 
+//(absences de 
+personnel) 
+26‐Oum 
+El 
+bouaghi  
+/ 
+/ 
+/ 
+/ 
+/ 
+/(absences de 
+personnel)/ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 24 ‐ 
+ 
+ 
+2.4 Activités du FGAR  
+Durant  le 1er semestre 2017, le FGAR a octroyé, des garanties couvrant un montant de 
+4951,86 Mds de DA de crédits aux PME. En matière de certificats de garantie, le FGAR a 
+accordé l’équivalent de 1869, 67 Mds DA de crédits aux PME. Ces montants 
+représentent, en moyenne, 27,76 Millions de DA par offre de garantie et 35,50 Millions de 
+DA par certificat de garantie. Le taux moyen de financement octroyé par le FGAR, 
+représente 50% des projets neufs. Le FGAR a ainsi soutenu la création de 62 PME pour 
+4174,80 Mds DA et a permis l’extension de 91 PME pour un montant de 5784,62 Mds DA. 
+Durant  le 1er  semestre 2017, les engagements cumulés du FGAR ont augmenté de 50% en 
+offres de garantie et 59% en certificats de garantie.  
+     Tableau 19 FGAR : Situation globale des dossiers traités Avril 2004/ au 30/06/2017 
+ 
+Offres de garantie 
+Certificats de garantie 
+Nombre des garanties accordées 
+1 937 
+1032 
+Coût total des projets  
+165 149 503 372 
+70 519 058 427 
+Montant des crédits sollicités 
+108 281 293 993 
+45 735 381 681 
+Taux moyen  de financement sollicité  
+66% 
+65% 
+Montant des garanties accordées 
+53 493 856 208 
+24 757 426 289 
+Taux moyen  de garantie accordée 
+49% 
+54% 
+Montant moyen de la garantie  
+27 616 859
+23 989 754
+Nombre dʹemplois à créer  
+61 788
+30 151 
+Investissement par emploi   
+2 672 841 
+2 338 863 
+Crédit par emploi   
+1 752 465
+1 516 878
+Garantie  par emploi  
+865 764 
+821 115 
+    Source :FGAR 
+    Tableau 20  FGAR : Situation des dossiers traités par type de projets Avril 2004/ au 30/06/2017 
+Création 
+Extension* 
+Total 
+Nombre des garanties accordées 
+776 
+1161 
+1937 
+Coût total des projets  
+67 831 413 912
+97 318 089 460 
+165 149 503 
+Montant des crédits sollicités 
+39 702 694 201 
+68 578 599 792 
+108 281 293 
+993
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 25 ‐ 
+ 
+Taux 
+moyen 
+ 
+de 
+financement 
+59%
+70%
+66%
+Montant des garanties accordées 
+16 032 686 483 
+37 461 169 726 
+53 493 856 208 
+Taux moyen  de garantie accordée 
+40% 
+55% 
+49% 
+Montant moyen de la garantie  
+20 660 678  
+32 266 296 
+27 616 859 
+Nombre dʹemplois à créer  
+15 703
+46 085
+61 788
+Investissement par emploi  
+4 319 647
+2 111 709 
+2 672 841
+Crédit par emploi   
+2 528 351 
+1 488 089 
+1 752 465 
+Garantie  par emploi  
+1 020 995
+812 871 
+865 764
+Source :FGAR 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements 
+Tableau 21 FGAR : Dossiers traités (du 01/01/2016 au 30/06/2017) 
+ 
+Source :FGAR 
+Tableau 22 FGAR : Dossiers traités par type de projets (du 01/01/2016 au 30/06/2017) 
+ 
+Création 
+Extension* 
+Total 
+Nombre des garanties accordées 
+62 
+91 
+153 
+Coût total des projets  
+6 713 510 991 
+8 406 686 195 
+15 120 197 
+Montant des crédits sollicités 
+4 174 804 205
+5 784 622 579 
+9 959 426 785
+  
+Offres de garantie 
+Certificats de garantie 
+Nombre des garanties accordées 
+153 
+68 
+Coût total des projets  
+15 120 197 186
+4 066 106 357
+Montant des crédits sollicités 
+9 959 426 785
+3 148 421 293
+Taux moyen  de financement sollicité  
+66% 
+77% 
+Montant des garanties accordées 
+4 951 863 908 
+1 869 672 334 
+Taux moyen  de garantie accordée
+50%
+59% 
+Montant moyen de la garantie  
+32 365 124  
+27 495 181 
+Nombre dʹemplois à créer  
+3 006
+973 
+Investissement par emploi   
+5 030 006 
+4 178 938 
+Crédit par emploi  
+3 313 183 
+3 235 788 
+Garantie  par emploi  
+1 647 327 
+1 921 554 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 26 ‐ 
+ 
+Taux moyen  de financement sollicité  
+62% 
+69% 
+66% 
+Montant des garanties accordées 
+1 721 269 115 
+3 230 594 794 
+4 951 863 908 
+Taux moyen  de garantie accordée
+41%
+56% 
+50%
+Montant moyen de la garantie  
+27 762 405  
+35 501 042 
+32 365 124 
+Nombre dʹemplois à créer  
+1 283
+1723 
+3 006
+Investissement par emploi   
+5 232 666 
+4 879 098 
+5 030 006
+Crédit par emploi  
+3 253 939 
+3 357 297 
+3 313 183
+Garantie  par emploi  
+1 341 597  
+1 874 982 
+1 647 327 
+Source :FGAR 
+ 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements.  
+ 
+2.5 Activités de la CGCI‐PME (dispositif relevant du Ministère des 
+finances)  
+Tableau 23 CGCI‐PME : Situation globale des garanties par secteur d’activité (au 30/06/2017) 
+Secteur 
+d’Activité
+Nombre de 
+dossiers
+En %
+ Montant des 
+garanties (KDA) 
+En %
+ Emplois 
+créés 
+En %
+BTPH
+238
+26
+12 803 614 456
+16
+3648
+24
+Transport
+88
+10
+3 051 201 679
+4
+692
+5
+Industrie
+429
+47
+51 758 759 170
+65
+8502
+57
+Santé
+58
+6
+4 232 146 821
+5
+899
+6
+Services
+105
+11
+8 242 337 613
+10
+1271
+8
+Total
+918
+100%
+80 088 059 739
+100%
+  15 012   100%  
+             Source : CGCI-PME 
+ 
+Une concentration a été constatée en nombre du flux de dossiers traités par la CGCI-PME 
+sur deux filières principales, BTPH et Industrie, qui représentent à elles seules 73% des 
+projets garantis. En termes financiers, le secteur de l’Industrie représente la moitié avec un 
+taux de 47% suivi du secteur du BTPH avec un taux de 26%.  
+Tableau 24 CGCI‐PME : Situation globale des garanties par région (au 30/06/2017) 
+Région 
+Nombre de dossiers 
+% 
+Centre
+365 
+40 
+Est 
+393 
+43 
+Ouest 
+136 
+15 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 27 ‐ 
+ 
+Sud 
+24 
+2 
+Total 
+918
+100% 
+Source :CGCI-PME 
+ 
+Cette répartition géographique de la garantie met en évidence les régions à plus ou moins 
+fortes potentialités économiques favorisant plus ou moins l’investissement des PME. Les 
+régions Est et Centre  occupent la position avec respectivement 43% et 40%. 
+Tableau 25 Garanties CGCI‐PME au 30‐06‐2017 par tranche de crédit 
+Total 
+Banque 
+Tranche de crédit 
+Nbre de 
+dossiers 
+% 
+MT de crédit 
+garantis (KDA) 
+% 
+0 = < Mt < 10 MDA 
+262 
+28 
+1395 
+3 
+10 = < Mt < 50 MDA 
+339 
+37 
+9355 
+20 
+      > =50 MDA 
+317 
+35 
+36973 
+77 
+Total 
+811
+100
+383047 
+100
+             Source :CGCI-PME 
+ 
+La répartition du volume global des crédits garantis repris dans le tableau ci-dessus laisse 
+apparaitre une forte proportion de la tranche de crédits inférieurs à 50 millions de DA qui 
+représente à elle seule 77% de l’ensemble des projets garantis au 30-06-2017, correspondant 
+en termes financiers à 35% des crédits garantis. 
+Cet ordre de grandeur (77%) confirme les statistiques qui indiquent que 98% du tissu de la 
+PME est constitué de très petites entreprises (TPE). Un marché très important qui renferme 
+de nombreuses TPE/PME éligibles au dispositif de garantie de la Caisse. 
+Une proportion assez significative de la tranche des crédits est égale et supérieure à 50 
+Millions de DA, qui représente, en terme physiques 20% du nombre total des dossiers 
+garantis, et une plus grande proportion en terme financiers, soit plus de deux tiers (77%) du 
+montant total des crédits garantis.      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 28 ‐ 
+ 
+3. Dispositifs Sociaux d’appui à la PME  
+3.1 Dispositif « ANSEJ » 
+ 
+Depuis sa mise en œuvre à la fin du 1er semestre 2017, le dispositif ANSEJ a permis, 
+d’accompagner 332 632 entrepreneurs hommes contre 37 578 entrepreneures femmes soit 
+un taux de féminité global de 10%. La femme entrepreneure occupe une place importante 
+dans les activités libérales avec 45%     
+Tableau 26 ANSEJ : Attestations d’éligibilité par secteur d’activité (Cumul au 30/06/2017) 
+ Nombre 
+d'attestations 
+d'éligibilité délivrées 
+ Nombre 
+d'attestations 
+de conformité  
+  (phase création) 
+ (phase 
+extension) 
+Services
+230 513
+229 076
+1 437
+33,05%
+Artisanat
+79 069
+78 824
+245
+11,34%
+Agriculture
+130 629
+130 404
+225
+18,73%
+Hydraulique
+1 509
+1 480
+29
+0,22%
+Pêche
+2 260
+2 255
+5
+0,32%
+Transport frigorifique
+23 295
+23 160
+135
+3,34%
+Transport de marchandises + 
+(GPL)
+73 432
+72 872
+560
+10,53%
+Transport de voyageurs
+29 173
+27 812
+1 361
+4,18%
+Industrie
+61 117
+60 606
+511
+8,76%
+BTPH
+47 474
+46 749
+725
+6,81%
+Professions libérales
+12 033
+11 612
+421
+1,73%
+Maintenance
+7 047
+7 013
+34
+1,01%
+Total
+697 551
+691 863
+5 688
+100%
+Secteur d'activité 
+%
+Total des attestations 
+d'Eligibilité et de 
+conformité Délivrées
+ 
+Source : ANSEJ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 29 ‐ 
+ 
+Tableau 27  ANSEJ : Projets financés par secteur d’activité (Cumul au 30/06/2017) (Unité : DA) 
+            
+Secteur dʹActivité 
+Projets 
+financés 
+% 
+Impact 
+emplois 
+ 
+Nombre 
+moyen 
+dʹemploi 
+Montant 
+dʹinvestissement 
+ 
+Coût moyen 
+de lʹemploi  
+Coût moyen 
+dʹune micro‐
+entreprise  
+AGRICULTURE 
+54 147 
+14,6% 
+127 790 
+2 
+196 532 709 934 
+1 537 935 
+3 629 614 
+ARTISANAT 
+42 674 
+11,5% 
+125 624 
+3 
+109 683 353 938 
+873 108 
+2 570 262 
+BTPH 
+32 543 
+8,8% 
+95 027 
+3 
+123 036 021 939 
+1 294 748 
+3 780 722 
+HYDRAULIQUE 
+544 
+0,1% 
+2 020 
+4 
+3 190 805 711 
+1 579 607 
+5 865 452 
+INDUSTRIE 
+24 892 
+6,7% 
+72 250 
+3 
+113 135 051 265 
+1 565 883 
+4 545 037 
+MAINTENANCE 
+9 391 
+2,5% 
+21 729 
+2 
+24 199 866 329 
+1 113 713 
+2 576 921 
+PECHE 
+1 131 
+0,3% 
+5 549 
+5 
+7 499 507 851 
+1 351 506 
+6 630 865 
+PROFESSION  
+LIBERALE 
+9 699 
+2,6% 
+21 842 
+2 
+23 292 618 220 
+1 066 414 
+2 401 548 
+SERVICE 
+106 288 
+28,7% 
+247 122 
+2 
+341 127 093 202 
+1 380 400 
+3 209 460 
+TRANSPORT  
+FRIGORIFIQUE 
+13 385 
+3,6% 
+24 132 
+2 
+33 760 568 849 
+1 398 996 
+2 522 269 
+TRANSPORT  
+DE MARCHANDISE 
+56 530 
+15,3% 
+96 237 
+2 
+145 557 153 559 
+1 512 486 
+2 574 866 
+TRANSPORT  
+DE VOYAGEURS 
+18 986 
+5,1% 
+43 681 
+2 
+46 632 116 239 
+1 067 561 
+2 456 132 
+Total 
+370 210 
+100% 
+883 003 
+2 
+1 167 646 867 035 
+1 322 359 
+3 154 012 
+Source : ANSEJ 
+ 
+Selon le tableau ci-dessus, le secteur des services, est le secteur le plus attractif pour les 
+porteurs de projets accompagnés par l’ANSEJ depuis le lancement de ce dispositif (avec 106 
+288 projets)  suivi du secteur de transport des marchandises avec 56530 projets, puis le 
+secteur de l’agriculture avec 54 147 projets financés.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 30 ‐ 
+ 
+Tableau 28 ANSEJ : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2017)  
+Secteur dʹActivité 
+Projets  
+financés 
+Hommes 
+Femmes 
+Taux de 
+Féminité (%) 
+ 
+AGRICULTURE 
+54 147 
+51 622 
+2 525  
+5% 
+ARTISANAT 
+42 674 
+35 362 
+7 312  
+17% 
+BTPH 
+32 543 
+31 826 
+717  
+2% 
+HYDRAULIQUE 
+544 
+520 
+24  
+4% 
+INDUSTRIE 
+24 892 
+21 352 
+3 540  
+14% 
+MAINTENANCE 
+9 391 
+9 231 
+160  
+2% 
+PECHE 
+1 131 
+1 115 
+16  
+1% 
+PROFESSION LIBERALE 
+9 699 
+5 362 
+4 337  
+45% 
+SERVICE 
+106 288 
+88 920 
+17 368  
+16% 
+TRANSPORT FRIGORIFIQUE 
+13 385 
+12 996 
+389  
+3% 
+TRANSPORT DE  MARCHANDISES 
+56 530 
+55 821 
+709  
+1% 
+TRANSPORT DE VOYAGEURS 
+18 986 
+18 505 
+481  
+3% 
+Total 
+370 210 
+332 632 
+37 578 
+10% 
+Source : ANSEJ 
+3.2 Dispositif « CNAC »  
+Tableau 29 CNAC : Projets financés par secteur d’activité (cumul au 30/06/2017)  
+ 
+1er semestre 2017
+Cumul au 30‐06‐2017
+Secteurs dʹactivités 
+Nombre 
+de 
+projets 
+financés 
+Part de la 
+femme 
+Impact 
+emploi 
+Nombre de 
+projets financés 
+Part de la 
+femme 
+Impact 
+emploi 
+Total 
+financement 
+(MDA) 
+AGRICULTURE 
+707 
+10,04%
+1 698
+3 250,18
+18 220 
+11,84%
+44 020
+ARTISANAT 
+339 
+25,07%
+871
+1 273,26
+12 225 
+22,20%
+32 093
+BTP 
+84 
+4,76%
+234
+410,37
+8 164 
+2,35% 
+26 226
+HYDRAULIQUE 
+4 
+0%
+8
+29,83
+325 
+4,62% 
+1 116
+INDUSTRIE 
+196 
+23,47%
+555
+1 109,01
+10 936 
+21,70%
+31 872
+MAINTENANCE 
+12 
+8,33%
+35
+67,93
+807 
+2,35% 
+1 945
+PECHE 
+15 
+0%
+45
+82,00
+419 
+0,48% 
+1 507
+PROF LIBERALE 
+53 
+60,38% 
+111 
+287,67 
+884 
+44,68% 
+1 924 
+SERVICES 
+268 
+19,78%
+659
+1 162,28
+30 379 
+17,07%
+64 089
+TRANSPORT MARCHANDISE 
+2 
+0%
+2
+12,09
+45 846 
+1,52% 
+69 664
+TRANSPORT VOYAGEURS 
+1 
+0% 
+3 
+6,92 
+12 192 
+1,23% 
+18 486 
+TOTAL 
+1 681 
+17,37% 
+4 221 
+7 691,55 
+140 397 
+9,90% 
+292 942 
+Source : CNAC 
+ 
+Tableau 30 CNAC : Présentation des principaux agrégats   
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 31 ‐ 
+ 
+Principaux agrégats 
+1er semestre 2017 
+Bilan cumulé global 
+(au 30‐06‐2017) 
+Nombre dossiers déposés 
+1 817 
+382 814 
+Attestations d’éligibilités et de financement  délivrées 
+1 509  
+251 857  
+Nombre dʹaccords bancaires 
+976 
+159 445 
+Nombre de rejets  bancaires 
+ 19 
+8 544  
+Nombre de  projets financés 
+1 681 
+140 397 
+Impact Emploi  
+4 221 
+292 942 
+Source : CNAC 
+3.3 Dispositif « ANGEM » 
+        Tableau 31 ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2017) 
+Type de financement 
+Nombre
+% 
+Emplois créés
+Financement Achat de Matières Premières  
+718 401
+90,21% 
+1 077 601
+Financement triangulaire « ANGEM-Banque-promoteur » 
+77 932
+9,79% 
+116 898
+Total 
+796 333
+100% 
+1 194 499
+  Source :ANGEM 
+Tableau 32 ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2017) 
+Secteur d’activités 
+Nombre de prêts octroyés 
+Montants accordés 
+Milliard de DA 
+Part (%) 
+Agriculture 
+112 358
+6 796 468 682,17 
+14,11%
+TPI 
+307 667
+14 548 822 709,03 
+38,64%
+BTP 
+67 766
+5 225 439 709,32 
+8,51%
+Services 
+165 853
+14 993 080 244,98 
+20,83%
+Artisanat 
+138 815
+7 272 241 066,97 
+17,43%
+Commerce 
+3 122
+764 254 733,76 
+0,39%
+Pêche 
+752
+91 288 962,45 
+0,09%
+Total 
+796 333
+49 691 596 108,68 
+100% 
+Source :ANGEM 
+Par secteur d’activité, les TPI (très petites industries), les services, l’artisanat et l’agriculture 
+sont les secteurs ayant bénéficié de la majorité des prêts octroyés avec 91,10% du total.  
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 32 ‐ 
+ 
+III- LA CONJONCTURE ECONOMIQUE DU SECTEUR INDUSTRIEL 
+EN 2éme TRIMESTRE 2017 
+INDICE DE LA PRODUCTION INDUSTRIELLE 
+Evolution globale 
+La production industrielle du secteur Public enregistre une hausse de 2,0% au deuxième trimestre 2017 
+par rapport à la même période de l’année précédente (1,4%). 
+Le  secteur  de  l’Energie  se  distingue  par  un  net  relèvement  de  8,8%,  taux  largement  supérieur  à  celui 
+relevé le même trimestre de l’année écoulée (+4,9%). 
+Les  Hydrocarbures  observent  une  stagnation  par  rapport  au  même  trimestre  de  l’année  2016  qui  s’est 
+caractérisé par une baisse de 2,4%. 
+Les Industries Agro‐alimentaires poursuivent leur tendance à la hausse en inscrivant une variation de 
++4,3%, appréciable mais de moindre ampleur que celle enregistrée au trimestre précédent (+6,2%). 
+Après une baisse de 3,1% relevée au premier trimestre 2017, les Matériaux de Construction voient leur 
+production remarquablement augmenter au deuxième trimestre en transcrivant une évolution de +5,6%. 
+Les Industries des Bois et Papier inscrivent également une croissance appréciable, soit +9,1% au deuxième 
+trimestre  2017,  néanmoins  très  en  deçà  de  celle  enregistrée  au  trimestre  précédent  (+32,4%)  et  de  celle 
+enregistrée à la même période de l’année 2016 (+37,6%). 
+Le reste des activités enregistre des baisses au premier trimestre 2017, notamment les Mines et Carrières, 
+les ISMMEE, les Industries Chimiques et les Industries des Cuirs et Chaussures. 
+VARIATIONS DES INDICES DE LA PRODUCTION INDUSTRIELLE PAR SECTEUR D’ACTIVITE : 2016– 2017 
+                                                                                       Base 100 en 1989 
+(Secteur public national) 
+ 
+VARIATIONS EN % 
+CODES 
+Nomencl.  
+ 
+2t16/ 2t15  
+2t17/ 2t16  
+ 
+INDICE GENERAL  
+1,4  
+2,0  
+ 
+INDICE HORS HYDROCARBURES  
+3,0  
+2,7  
+ 
+INDICE IND. MANUFACTURIERES  
+2,2  
+‐4,0  
+NSA  
+02  
+ENERGIE 
+4,9  
+8,8  
+NSA  
+03  
+HYDROCARBURES  
+‐2,4  
+0,0  
+NSA  
+05  
+MINES ET CARRIERES  
+‐4,1  
+‐5,7  
+NSA  
+06  
+I.S.M.M.E.E. 
+‐3,4  
+‐9,1  
+NSA  
+07  
+MAT. CONST. CERAM. ET VERRE 
+6,6  
+5,6  
+NSA  
+09  
+CHIMIE, CAOUTCHOUC ET PLASTIQUES 
+12,7  
+‐18,2  
+NSA  
+10  
+AGROALIM.TABACS, ET ALLUMETTES 
+‐5,2  
+4,3  
+NSA  
+11  
+TEXT. BONNETTERIE ET CONFECTION 
+2,5  
+‐8,7  
+NSA  
+12  
+IND. CUIRS ET CHAUSSURES 
+11,8  
+‐26,9  
+NSA  
+13  
+BOIS, LIEGE, PAPIER ET IMPRIMERIE 
+37,6  
+9,1  
+NSA  
+14  
+INDUSTRIES DIVERSES  
+‐16,1  
+‐7,4  
+ 
+Source : ONS 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 33 ‐ 
+ 
+ 
+L’évolution de la production industrielle par secteur d’activité permet de distinguer les aspects 
+suivants : 
+ 
+Les  Mines  et  Carrières  accusent  une  variation  négative  de  ‐5,7%  au  deuxième  trimestre  2017, 
+proche de celle observée au trimestre précédent (‐5,5%). A l’exception de l’extraction du minerai 
+de fer qui observe une croissance remarquable de 18,0%, le reste des activités relevant du secteur 
+affiche des baisses. L’extraction de la pierre, argile et sable persiste dans la baisse et enregistre une 
+variation de ‐5,8%. 
+Après  des  hausses  appréciables  inscrites  au  premier  trimestre  2017  (respectivement  +4,1%  et 
++12,2%), l’extraction du sel et celle du 
+minerai  de  phosphates,  voient  leur  production  diminuer  respectivement  de  7,7%  et  de  5,8%. 
+L’extraction du minerai des matières minérales enregistre également une baisse de 19,3%, plus 
+importante que celle observée au trimestre précédent, soit ‐4,1%. 
+Les ISMMEE poursuivent leur tendance à la baisse, amorcée dés le deuxième trimestre 2016 et 
+enregistrent  un  taux  de  ‐9,1%  au  deuxième  trimestre  2017,  important,  néanmoins  de  moindre 
+ampleur  que  celui  relevé  au  premier  trimestre  2017  (‐12,5%).  Cette  baisse  résulte  du  recul  du 
+niveau  de  production  engendré  par  certaines  activités,  notamment,  la  fabrication  de  biens 
+intermédiaires  métalliques,  mécaniques  et  électriques  (‐5,9%),  la  fabrication  des  biens 
+d’équipement mécanique (‐63,5%) et la fabrications des biens de consommation électrique    (‐
+50,7%). 
+Toutefois, 
+des 
+augmentations 
+appréciables 
+caractérisent 
+certaines 
+activités, 
+essentiellement  la  sidérurgie  et  transformation  de  la  fonte  et  acier  qui  inscrit  une  variation  de 
++19,6%,  meilleure  que  celle  observée  au  premier  trimestre  (+10,8%)  et  la  fabrication  des  biens 
+d’équipement métallique avec un taux de +14,5%. 
+‐ Un relèvement de la production caractérise les Matériaux de construction qui enregistrent une 
+hausse appréciable de 5,6% au premier trimestre 2017, situant la variation semestrielle à +1,5%. 
+Cette  tendance  découle  particulièrement  de  la  fabrication  des  liants  hydrauliques  qui  voit  sa 
+production  sensiblement  augmenter  au  deuxième  soit,  +12,8%.  En  outre,  le  reste  des  activités 
+connait des baisses. 
+La  fabrication  des  matériaux  de  construction  et  produits  rouges  qui  s’est  distinguée  par  une 
+hausse de 13,5% au premier trimestre, 
+accuse une décroissance de 9,8% au second. La fabrication des produits en ciment et matériaux de 
+construction divers affiche une baisse 
+de 58,1%, proche de celle observée au premier trimestre (‐57,6%). Il y a lieu de relever que cette 
+dernière a connu des hausses respectives de 20,5% et de 9,0% aux deux premiers trimestres de 
+l’année  précédente.  L’industrie  du  verre  enregistre  des  baisses  pour  le  deuxième  trimestre 
+consécutif, soit respectivement ‐7,9% et ‐19,9%. 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 34 ‐ 
+ 
+‐  Les  Industries  Chimiques  enregistrent  une  variation  négative  pour  le  troisième  trimestre 
+consécutif.  La  baisse  observée  au  deuxième  trimestre  2017  est  de  18,2%  et  est  perceptible  au 
+niveau de l’ensemble des activités relevant du secteur. La fabrication d’autres produits chimiques 
+qui s’est distinguée par une croissance de 37,2% au premier trimestre, assiste à une chute de sa 
+production au deuxième, soit ‐23,9%. Les Autres biens intermédiaires en plastique enregistrent 
+une baisse de 21,0% par rapport à la même période de l’année écoulée qui avait connu une hausse 
+de 40,8%. La fabrication des produits pharmaceutiques et celle des engrais et pesticides affichent 
+le même taux, soit ‐19,2%. De même, la chimie organique de base et la fabrication de peinture 
+enregistrent des variations négatives 
+(respectivement ‐24,5% et ‐13,7%). 
+‐ La production des Industries Agro Alimentaires poursuit sa tendance à la hausse, amorcée dés 
+le troisième trimestre 2016 et enregistre une croissance 4,3% au deuxième trimestre 2017, situant 
+la  variation  semestrielle  à  +5,3%.  Cette  hausse  est  tangible  au  niveau  du  travail  de  grains  qui 
+enregistre une nouvelle performance de 18,0%, similaire à celle observée au trimestre précédent 
+(+18,1%). Avec un taux de‐0,6%, relevé au deuxième trimestre 2017, l’Industrie du lait affiche une 
+légère baisse. Les Industries de tabacs manufacturés et allumettes et la fabrication de produits 
+alimentaires pour animaux accusent des baisses pour le deuxième trimestre consécutif. 
+‐ Après deux hausses consécutives observées au quatrième trimestre 2016 et au premier trimestre 
+2017  (respectivement  +3,5%  et  +1,2%),  les  Industries  textiles  enregistrent  une  décroissance  de 
+8,7% au deuxième trimestre 2017. Le principal facteur de cette tendance est la fabrication de biens 
+intermédiaires dont la production chute de 17,0%, contrairement aux biens de consommations qui 
+inscrivent un redressement appréciable de 12,8%. 
+‐ La tendance à la baisse, amorcée dès le troisième trimestre 2016, pour les Cuirs et Chaussures, 
+se poursuit au deuxième trimestre 2017 avec une variation de ‐26,9%. Ce résultat est perceptible 
+au niveau des biens intermédiaires qui se distinguent par un taux de ‐40,1%, plus important que 
+celui inscrit au trimestre précédent (‐16,6%). En revanche, les biens de consommation qui s’étaient 
+caractérisés  par  une  variation  négative  de  ‐5,6%  au  premier  trimestre  2017,  enregistrent  un 
+relèvement appréciable au deuxième trimestre avec +10,9%. 
+‐ Les Industries des bois et papier continuent d’enregistrer des variations positives. La hausse 
+observée  au  deuxième  trimestre  2017  est  de  9,1%.  Il  s’agit  d’un  taux,  certes  appréciable, 
+néanmoins  de  moindre  ampleur  que  ceux  inscrits  aux  trimestres  précédents,  notamment  au 
+deuxième et au quatrième trimestre 2016 (respectivement +37,6% et +44,8%). Ce résultat est induit 
+par deux activités relevant du secteur. 
+Il  s’agit  de  l’industrie  de  l’ameublement  et  celle  du  liège  qui  enregistrent  des  croissances 
+respectives de 81,8% et de 59,7% par rapport au même trimestre de l’année précédente. Les deux 
+autres activités qui sont la menuiserie générale et biens intermédiaires en bois et la fabrication et 
+transformation du papier notent des variations négatives pour le deuxième trimestre consécutif 
+avec des baisses plus importantes au trimestre dernier (respectivement ‐56,1% et ‐16,1%). 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 35 ‐ 
+ 
+LES PRIX A LA PRODUCTION INDUSTRIELLE 
+‐ au 2ème trimestre 2017*‐ 
+ 
+Evolution globale 
+Les prix à la production industrielle, hors hydrocarbures, du secteur public national, 
+affichent une variation négative de ‐0,2 % au deuxième trimestre 2017 par rapport au 
+trimestre précédent qui s’est caractérisé par une hausse de 2,1%. 
+Au  deuxième  trimestre  2017  et  par  rapport  à  la  même  période  de  l’année  écoulée,  le  taux 
+enregistré est de +1,0%. 
+Evolution par secteur d’activité 
+Au deuxième trimestre 2017 et par rapport au premier trimestre de la même année, 
+l’évolution des prix à la production industrielle du secteur public national, se caractérise par: 
+Le secteur de l’Energie enregistre une baisse de 1,6% au deuxième trimestre 2017 et ce, après une 
+croissance de 1,1% observée au trimestre précédent. 
+Le  secteur  des  Mines  et  Carrières  accuse  une  baisse  de  3,9%  induite,  particulièrement,  par  la 
+diminution des prix du minerai de phosphates, soit ‐6,5%. En outre, des augmentations 
+caractérisent les prix de certaines activités, notamment le minerai des matières minérales dont la 
+hausse avoisine les 24,0%. 
+Une décélération du rythme de hausse définit les Industries Chimiques dont la variation passe 
+de  +2,0%  au  premier  trimestre  à  +0,7%  au  deuxième  trimestre.  En  dehors  des  autres  biens 
+intermédiaires  en  plastique  et  des  autres  produits  chimiques  dont  les  prix  augmentent, 
+respectivement, de 3,4% et de 1,6%, le reste affiche une des stagnations. 
+De même, les Industries Agro‐alimentaires affichent une nette décélération du 
+rythme de hausse avec un taux passant de +3,3% au premier trimestre 2017 à +0,1% au deuxième 
+trimestre. 
+Même  constat  pour  les  Industries  Textiles  dont  la  variation  passe  respectivement  de  +2,0%  à 
++1,3%. 
+Les Industries des Bois et Papier inscrivent une baisse modérée de 0,3% due à la baisse des prix 
+de l’activité fabrication et transformation du papier (‐1,1%). 
+Le reste des activités affiche une stagnation des prix. 
+*A signaler que les données du premier trimestre 2017 sont provisoires. 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 36 ‐ 
+ 
+PRIX A LA PRODUCTION INDUSTRIELLE ((Priix TTC)) AU DEUXIEME TRIMESTRE 2017 
+ 
+Secteur : Publliic Nattiionall                                                                                              Base et référence 1989 
+ 
+ 
+VARIATIONS EN % 
+Codes 
+Nomenclat.  
+INTITULE AGREGATION  
+1T17/ 
+4T16  
+1T17/ 
+1T16  
+2T17/ 
+1T17  
+2T17/ 
+2T16  
+1S17/ 
+2S16  
+1S17/ 
+1S16  
+ 
+INDUSTRIES HORS 
+HYDROCARBURES  
+2,1  
+2,1  
+‐0,2  
+1,0  
+2,0  
+1,5  
+INDUSTRIES 
+MANUFACTURIERES  
+2,4  
+2,8  
+0,2  
+2,5  
+2,5  
+2,6  
+NSA  
+02  
+ENERGIE  
+1,1  
+10,5  
+‐1,6  
+0,1  
+0,2  
+5,1  
+NSA  
+05  
+MINES ET CARRIERES  
+‐1,4  
+‐13,4  
+‐3,9  
+‐18,4  
+‐4,2  
+‐16,0  
+NSA  
+06  
+I.S.M.M.E.E  
+1,5  
+1,6  
+0,0  
+1,3  
+1,6  
+1,4  
+NSA  
+07  
+MAT.CONST.CERAMIQUE, 
+VERRE  
+1,7  
+1,9  
+0,0  
+1,8  
+1,7  
+1,8  
+NSA  
+09  
+CHIMIE, CAOUTCHOUC, 
+PLASTIQUES  
+2,0  
+2,9  
+0,7  
+3,6  
+2,8  
+3,2  
+NSA  
+10  
+IND.AGRO‐
+ALIMENT.TABACS, ALUM.  
+3,3  
+4,0  
+0,1  
+3,3  
+3,3  
+3,6  
+NSA  
+11  
+IND.TEXT.BONNETERIE 
+CONFECTION  
+2,0  
+2,5  
+1,3  
+3,8  
+2,6  
+3,1  
+NSA  
+12  
+IND.CUIRS ET 
+CHAUSSURES  
+1,7  
+1,7  
+0,1  
+1,8  
+1,8  
+1,8  
+NSA  
+13  
+IND.BOIS, LIEGE, PAPIER 
+IMPRIM.  
+2,5  
+2,4  
+‐0,3  
+2,1  
+2,8  
+2,3  
+NSA  
+14  
+INDUST. DIVERSES  
+1,7  
+‐0,9  
+0,1  
+1,8  
+1,8  
+0,5  
+Source : ONS 
+ 
+Croissance globale et sectorielle au 2ème trimestre 2017 
+ 
+Evolution globale 
+Au deuxième trimestre 2017, le Produit Intérieur Brut (PIB) connait une croissance de 1,5% par 
+rapport au même trimestre de 2016. 
+Le  taux  de  croissance  du  PIB  hors  hydrocarbures  se  maintient  à  2,1%  au  cours  du  deuxième 
+trimestre de l’année 2017 au lieu de 3,5% durant la même période de l’année 2016. 
+En  prix  courants,  le  PIB  du  deuxième  trimestre  s’est  accru  de  5,9%  au  lieu  de  4,0%  durant  la 
+même période de l’année 2016. Cette évolution en valeur courante et compte tenu de la croissance 
+en volume du PIB, a par conséquent conduit à une hausse du niveau général des prix de 4,4% 
+contre0,9% pour la même période de l’année écoulée. 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 37 ‐ 
+ 
+Les  données  et  les  illustrations  ci‐dessous  résument  les  principales  évolutions  enregistrées  au 
+cours de l’année 2016 et des deux premiers trimestres de 2017. 
+Croissance (%) en volume Par grands secteurs (2éme trimestre 2016‐ 2éme trimestre 2017) 
+ 
+Les grands secteurs 
+2éme trimestre 2016 
+2éme trimestre 2017 
+Le Produit Intérieur Brut (PIB)  
+3,1 
+1,5 
+Le PIB hors Hydrocarbures  
+3,5 
+2,1 
+Le PIB hors Agriculture  
+3,0 
+1,5 
+Agriculture, sylviculture et pêche  
+2,6 
+1,8 
+Hydrocarbures  
+9,7 
+‐2,2 
+Industries 
+3,3 
+3,7 
+BTPH y compris STPP  
+4,1 
+2,0 
+Services Marchands  
+2,5 
+3,1 
+Services Non Marchands 
+‐1,3 
+1,8 
+ Source : ONS 
+Evolution trimestrielle du taux de croissance du PIB, du PIB hors hydrocarbures et du PIB hors 
+agriculture en volume chainé 
+Une  présentation  de  la  croissance  par  grands  secteurs  illustre  les  développements  nouveaux 
+intervenus et résume les évolutions enregistrées au 2èmetrimestre 2017. 
+ 
+L’Agriculture : 
+Le deuxième trimestre 2017 est marqué par une augmentation modérée de l’activité agricole de 
+l’ordre de 1,8% au lieu d’une croissance de 4,2% durant la même période de l’année 2016. Cette 
+croissance est à l’évidence expliquée par des baisses de la production végétale et particulièrement 
+celles des céréales. 
+ 
+L’Industrie : 
+Au  deuxième  trimestre  2017,  la  valeur  ajoutée  globale  réalisée  par  l’ensemble  des  activités  du 
+secteur de l’industrie affiche une augmentation de 3,7% au lieu de 3,4% au deuxième trimestre de 
+l’année 2016. 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 38 ‐ 
+ 
+Les sous‐secteurs de l’industrie connaissent les évolutions (%) contrastées suivantes : 
+ 
+ 
+T2_2016/T2_2015
+T2_2017/T2_2016 
+Eau Energie 
+3,3 
+8,2 
+Mines et carrières 
+‐2,7 
+‐1,7 
+ISMME 
+0,5 
+2,2 
+Matériaux de construction 
+6,5 
+2,8 
+Chimie, plastic, caoutchouc 
+3,8 
+3,1 
+Industrie agro‐alimentaires 
+5,6 
+3,7 
+Textiles 
+0,7 
+0,8 
+Cuirs et chaussures 
+1,5 
+‐3,9 
+Bois, papier, lièges 
+12,5 
+10,1 
+Industrie diverses 
+‐16,7 
+‐5,1 
+Source : ONS 
+Le Bâtiment et Travaux Publics et Hydraulique (y compris les services et travaux publics pétroliers). 
+Au  deuxième  trimestre  2017,  le  secteur  du  BTPH  connait  une  décélération  par  rapport  au 
+2èmetrimestre 2016 avec une croissance évaluée à 2,0 % contre 8,3% pendant la même période de 
+l’année précédente. 
+La valeur ajoutée du secteur des services et travaux publics pétroliers enregistre une croissance de 
+2,8% contre 3,1% au deuxième trimestre 2016. 
+Les services marchands : 
+Au deuxième trimestre 2017, les services marchands se sont accrus de3,1% au lieu de 3,0% durant 
+la  même  période  de  l’année  précédente.  La  croissance  a  concerné  tous  les  sous‐secteurs  des 
+services marchands soit : 
+ 
+Transports et communications : 6,5% contre 5,4% au 2ème trimestre 2016 ; 
+ 
+Commerce : 0,7% contre 1,0% au 2ème trimestre 2016 ; 
+ 
+Hôtels‐Cafés‐Restaurants (HCR) :0,4% contre 2 ,3% au 2ème trimestre 2016 ; 
+ 
+Services fournis aux entreprises : 4,6% contre 2,5% au 2ème trimestre 2016 ; 
+ 
+Services fournis aux ménages : 3,1% contre 7, 1% au 2ème trimestre 2016. 
+ 
+Evolution du taux de croissance (%) du secteur des services marchands en volume chainé Les 
+services non marchands 
+La valeur ajoutée des services non marchands a connu de son côté, durant le deuxième trimestre 
+2017 un ralentissement de son rythme de croissance. Elle s’est accrue de 1,8% au lieu de 3,2% 
+durant le deuxième trimestre de l’année précédente .Cette croissance est issue des performances 
+réalisées par les sous ‐secteurs suivants : 
+ 
+ 
+Administrations publiques de 1, 8 % au lieu de 3,0% ; 
+ 
+Services financiers de 4,1% au lieu de 3,8% ; 
+ 
+Affaires immobilières de 4,8% au lieu de 6,0%. 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 39 ‐ 
+ 
+ 
+ 
+Commerce extérieur 
+Balance commerciale  
+Par rapport au 1er semestre 2016, la balance du commerce extérieur Algérien en 
+1er semestre 2017 a enregistrée :  
+o Une  diminution  des  importations  de  22,98  milliards  de  dollars  soit  une 
+baisse de prés de 3,78% ; 
+o Une  diminution  des  exportations  de  18,14  milliards  de  dollars  soit  une 
+baisse de prés de 36,16%. 
+   Cela  s’est  traduit  par  une  réduction  du      déficit  de  la  balance 
+commerciale  durant    la  période      du    premier    semestre    2017  de    5,7  
+milliards  de  dollars  US  en  valeur  absolue,  soit        une  diminution    en  
+proportion    de    54,15%    par  rapport  à  celui  enregistré  durant  la  même 
+période de l’année 2016.  
+    Ces résultats dégagent un taux de couverture des importations par les 
+exportations de 79% durant le premier semestre  2017, contre 56%   au cours des six  
+premiers mois 2016. 
+Tableau 33 Evolution de la Balance commerciale de l’Algérie (S1/2016 –S1/2017) (en Millions de Dollars US) 
+ 
+Dinars
+Dollars
+Dinars
+Dollars
+Importations
+2 597 391 
+23 890 
+2 516 810 
+22 986 
+‐3,78
+Exportations
+1 448 301 
+13 323 
+1 986 085 
+18 141 
+36,16
+Balance Commerciale
+‐1 149 090
+‐10 567
+‐530 725
+‐4 845
+Taux de Couverture (%)
+56
+79
+Evolution 
+(%)
+1 er SEMESTRE 2016
+1 er SEMESTRE 2017*
+ 
+ 
+Source : CNIS 
+ 
+ 
+‐20 000
+‐10 000
+0
+10 000
+20 000
+30 000
+Importations
+Exportations
+Balance
+Commerciale
+MILLIONS USD
+EVOLUTION   DU    COMMERCE   EXTERIEUR
+PERIODE: 1er    SEMESTRE   2016/2017
+1ER  SEM  2016
+1ER  SEM  2017*
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 40 ‐ 
+ 
+Importations  
+La  répartition  des  importations  par  groupes  de  produits,  comme  l’indique  le 
+tableau  ci‐après    fait  ressortir  une    augmentation  des  biens  alimentaires    9,61%, 
+alors que pour les autres groupes de produits, on a enregistré des diminutions  de 
+l’ordre de  10,8  %   des biens  destinés  à l’outil de production, de 5,6% des biens 
+d’équipements, et de 0,53%  pour les biens de consommation non‐alimentaires  . 
+ 
+Tableau 34 Evolution des importations par groupes de produits (S1/2016 – S1/2017) 
+Valeurs en millions Usd
+Valeurs
+Struc %
+Valeurs
+Struc %
+BIENS ALIMENTAIRES
+4 048 
+16,94
+4 437 
+19,30
+9,61
+BIENS DESTINES A l'OUTIL DE PRODUCTION
+7 566 
+31,67
+6 751 
+29,37
+‐10,77
+BIENS D'EQUIPEMENTS
+8 123 
+34,00
+7 667 
+33,36
+‐5,61
+BIENS DE CONSOMMATION NON ALIMENTAIRES
+4 153 
+17,38
+4 131 
+17,97
+‐0,53
+TOTAL
+23 890 
+100 %
+22 986 
+100 %
+‐3,78
+1 er  SEM 2016
+1 er SEM 2017*
+Evolution 
+(%)
+Groupes de Produits
+ 
+Source : CNIS 
+ 
+L'examen par groupes de produits fait ressortir durant le 1er semestre 2017, les résultats suivants: 
+ Les « biens d'équipements » qui représentent une part de (33,16%) des importations, sont 
+constitués essentiellement, de véhicules de transport de personnes et de marchandises, des 
+turboréacteurs et turbopropulseurs et des appareils électriques pour la téléphonie.  
+ Pour les « biens destinés au fonctionnement de l'outil de production » : il s'agit surtout, 
+des huiles de pétrole, des matériaux de construction (barres en fer ou en acier, tubes et 
+tuyaux, bois, etc.) soit une part de 29,37% des importations. 
+ Le groupe des « biens alimentaires » vient en troisième position dans la structure des 
+importations réalisées durant le 1er semestre 2017 avec une part de (19,30%) du volume 
+global, soit 7,66 milliards de dollars US. Par rapport au 1er semestre 2016. 
+ Le groupe de « biens de consommation non alimentaires » occupe le dernier rang dans la 
+structure de nos importations avec la côte part de 17,97% et un volume de 4,13 milliards de 
+dollars US. 
+Exportations  
+Dans  la  structure  des  exportations  Algériennes,  les  hydrocarbures  continuent  à 
+représenter l’essentiel de nos ventes à l’étranger durant le premier semestre 2017 avec une 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 41 ‐ 
+ 
+part de 94,75% du volume global des  exportations, et une hausse  de  38,32% par rapport 
+à  la même période 2016. 
+ 
+   Quant aux  exportations « hors hydrocarbures », elles  demeurent toujours  marginales,  
+avec seulement 5,25% du volume  global  des exportations soit une valeur de 952 millions  
+de    dollars  US.  Elles  ont    enregistré  une  hausse  de      6,25%  par  rapport  au  premier 
+semestre  2016. 
+Les principaux produits hors hydrocarbures  exportés, sont constitués essentiellement 
+par le groupe « demi‐produits » qui représente une part de 3,81% du volume global des 
+exportations  soit  l’équivalent    de 691  millions  de  dollars  US.  Le  groupe  « biens 
+alimentaires»  vient en  seconde  position avec une part de 1,04%  soit  189 millions de 
+dollars US suivi par le groupe « produits bruts »  avec la part de 0,19% soit en valeur 
+absolue 34 millions de dollars US, et enfin les groupes« biens d’équipement industriels» 
+et   «biens de consommations non alimentaires » avec les parts respectives  de  0,16% et 
+0,05%.   
+Tableau 35 Principaux produits hors hydrocarbure  exportés (S1/2016‐ S1/2017) 
+                                                                                                   Valeurs en millions de Dollars US 
+Valeurs en millions Usd
+Valeurs
+Struc %
+Valeurs
+Struc %
+HUILES ET AUTRES PRODUITS 
+PROVENANT DE LA DISTILLATION DES 
+GOUDRONS
+219,12 
+24,46 
+294,65 
+30,95 
+34,47 
+AMMONIACS ANHYDRES
+174,20 
+19,44 
+211,60 
+22,23 
+21,47 
+SUCRES DE CANNE OU DE BETTERAVE 
+79,80 
+8,91 
+121,10 
+12,72 
+51,75 
+ENGRAIS MINERAUX OU CHIMIQUES 
+AZOTES
+215,50 
+24,05 
+115,00 
+12,08 
+‐46,64 
+DATTES
+22,40 
+2,50 
+29,60 
+3,11 
+32,14 
+PHOSPHATE DE CALCIUM
+28,40 
+3,17 
+27,30 
+2,87 
+‐3,87 
+MACHINE A LAVER LE LINGE
+1,00 
+‐
+18,80 
+1,97 
+‐
+HYDROCARBURES CYCLIQUES
+23,20 
+2,59 
+14,00 
+1,47 
+‐39,66 
+HYDROGENE ET GAZ RARES
+14,50 
+1,62 
+16,63 
+1,75 
+14,69 
+ALCOOLS ACYCLIQUES 
+18,30 
+2,04 
+11,01 
+1,16 
+‐39,84 
+Sous Total
+796,42 
+88,89 
+859,69 
+90,30 
+7,94 
+Total du Groupe
+896 
+100 %
+952 
+100 %
+6,25 
+1 er SEM   2016
+1 er SEM 2017
+Evolution 
+(%)
+Principaux Produits
+ 
+Source : CNIS 
+ 
+ 
+
+---PAGE---
+ 
+ 
+VI-ANNEXES 
+Tableau 36 : PME privées par secteurs dʹactivité 
+Sectateurs d'activité 
+2016
+Mouvements enregistrés durant le 1er 
+semestre 2017 
+1er 
+semestre 
+2017 
+Créations 
+I 
+Radiation 
+II 
+Réactivation 
+III 
+Ecart 
+(I+III)-II 
+I‐ Agriculture et pêche
+Agriculture et pêche 
+6130
+259
+23
+26 
+262
+6392
+ST1 
+6130
+259
+23
+26 
+262
+6392
+II‐ Hydrocarbures, Energie, Mines et Services liés 
+Eau et énergie
+150
+3
+0
+1 
+4 
+154
+Hydrocarbures 
+1035
+11
+3
+8 
+16 
+1051
+Services et travaux pétroliers 
+399
+17
+1
+0 
+16 
+415
+Mines et carrières 
+1183
+39
+4
+5 
+40 
+1223
+ST2 
+2767
+70
+8
+14 
+76 
+2843
+III‐ BTPH
+Bâtiment et travaux publics 
+174848
+2585
+520
+814 
+2879
+177727
+ST3 
+174848
+2585
+520
+814 
+2879
+177727
+IV‐ Industrie manufacturières
+ISMME 
+13756
+430
+33
+66 
+463
+14219
+Matériaux de construction 
+11782
+344
+24
+67 
+387
+12169
+Chimie, plastique 
+3999
+173
+5
+26 
+194
+4193
+Industrie agroalimentaire 
+26635
+1036
+81
+152 
+1107
+27742
+industries du textile 
+7315
+283
+26
+46 
+303
+7618
+Industrie du cuir 
+2117
+28
+5
+9 
+32 
+2149
+Industrie du bois et papier 
+18887
+518
+37
+110 
+591
+19478
+Industrie divers 
+5106
+117
+10
+23 
+130
+5236
+ST4 
+89597
+2929
+221
+499 
+3207
+92804
+V‐ Services
+Transport et 
+communication 
+53 790 
+1563 
+159 
+367 
+1771 
+55561 
+Commerce 
+112 727
+5698
+383
+689 
+6004
+118731
+Hôtellerie  et restauration 
+31 541
+1373
+91
+209 
+1491
+33032
+Services fournis aux 
+entreprises 
+52 331 
+1477 
+466 
+435 
+1446 
+53777 
+Services fournis aux 
+ménages 
+44 177 
+1998 
+162 
+439 
+2275 
+46452 
+Services pour collectivités 
+7998 
+4005 
+3728 
+3748 
+4025 
+8305 
+ST5 
+302564
+12568
+1279
+2191 
+13480
+316044
+Total Général
+575 906
+18 411
+2 051
+3 544 
+19 904
+595810
+Source : CNAS 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 43 ‐ 
+ 
+Tableau 37  Concentration des PME (personnes morales) par wilaya  
+Taux de concentration = (Nombre de PME/Population résidente)*1000 
+Wilaya 
+Nbre de 
+PME 
+2016 
+Mouvement des PME S1 2017
+Nbre de 
+PME 
+S12017 
+Population 
+par Wilaya 
+(RGPH 
+2008)* 
+Taux de 
+concentration 
+Nord 
+Création
+Radiation
+Réactivatio
+n 
+croissanc
+e 
+Alger 
+64 678 
+1721 
+143 
+307 
+1885 
+66563 
+2988145 
+22 
+Tipaza 
+25 464 
+1086 
+98 
+120 
+1108 
+26572 
+591010 
+45 
+Boumerdès 
+21 512 
+905 
+90 
+115 
+930 
+22442 
+802083 
+28 
+Blida 
+20 036 
+731 
+90 
+188 
+829 
+20865 
+1002937 
+21 
+Tizi Ouzou 
+34 743 
+1355 
+219 
+424 
+1560 
+36303 
+1127607 
+32 
+Bouira 
+13 359 
+550 
+25 
+73 
+598 
+13957 
+695583 
+20 
+Médéa 
+9 344 
+344 
+22 
+44 
+366 
+9710 
+819932 
+12 
+Ain Defla 
+9 405 
+231 
+13 
+67 
+285 
+9690 
+766013 
+13 
+Bejaia 
+28 372 
+933 
+126 
+152 
+959 
+29331 
+912577 
+32 
+Chlef 
+13 053 
+287 
+103 
+57 
+241 
+13294 
+1002088 
+13 
+Oran 
+26 688 
+1027 
+31 
+116 
+1112 
+27800 
+1454078 
+19 
+Tlemcen 
+13 486 
+606 
+65 
+170 
+711 
+14197 
+604744 
+23 
+Sidi Bel Abbes 
+9 678 
+258 
+51 
+86 
+293 
+9971 
+949135 
+11 
+Aïn Temouchent 
+6 171 
+194 
+6 
+33 
+221 
+6392 
+726180 
+9 
+Mostaganem 
+9 413 
+193 
+7 
+25 
+211 
+9624 
+737118 
+13 
+Mascara 
+9 354 
+280 
+58 
+54 
+276 
+9630 
+784073 
+12 
+Relizane 
+7 648 
+219 
+8 
+37 
+248 
+7896 
+371239 
+21 
+Constantine 
+18 362 
+616 
+66 
+104 
+654 
+19016 
+938475 
+20 
+Mila 
+10 338 
+305 
+16 
+106 
+395 
+10733 
+766886 
+14 
+Jijel 
+10 752 
+475 
+26 
+95 
+544 
+11296 
+636948 
+18 
+Annaba 
+13 951 
+370 
+13 
+89 
+446 
+14397 
+609499 
+24 
+Skikda 
+12 077 
+397 
+44 
+25 
+378 
+12455 
+898680 
+14 
+El Tarf 
+5 108 
+116 
+58 
+55 
+113 
+5221 
+408414 
+13 
+Guelma 
+7 623 
+226 
+6 
+44 
+264 
+7887 
+482430 
+16 
+ Total du Nord 
+400 615 
+13 425 
+1 384 
+2 586 
+14 627 
+415242 
+21075874 
+20 
+Hauts‐Plateaux 
+M’sila 
+12 528 
+440 
+15 
+78 
+503 
+13031 
+990591 
+13 
+Djelfa 
+8 685 
+191 
+3 
+36 
+224 
+8909 
+1092184 
+8 
+Laghouat 
+5 869 
+114 
+21 
+23 
+116 
+5985 
+455602 
+13 
+Tiaret 
+7 870 
+139 
+1 
+44 
+182 
+8052 
+846823 
+10 
+Saida 
+3 407 
+102 
+12 
+21 
+111 
+3518 
+330641 
+11 
+Tissemsilt 
+2 823 
+127 
+5 
+24 
+146 
+2969 
+294476 
+10 
+Naama 
+2 444 
+99 
+119 
+8 
+-12 
+2432 
+192891 
+13 
+El Bayadh 
+3 033 
+84 
+11 
+19 
+92 
+3125 
+228624 
+14 
+Bordj Bou Arréridj 
+12 815 
+464 
+52 
+124 
+536 
+13351 
+628475 
+21 
+Sétif  
+25 816 
+858 
+72 
+136 
+922 
+26738 
+1489979 
+18 
+Batna 
+14 417 
+510 
+25 
+38 
+523 
+14940 
+1119791 
+13 
+Oum El Bouaghi 
+6 303 
+234 
+53 
+36 
+217 
+6520 
+621612 
+10 
+Khenchela 
+6 408 
+123 
+46 
+38 
+115 
+6523 
+386683 
+17 
+Tébessa 
+7 695 
+226 
+8 
+20 
+238 
+7933 
+648703 
+12 
+Souk Ahras 
+5 583 
+143 
+18 
+33 
+158 
+5741 
+438127 
+13 
+ Total des Hauts‐Plateaux 
+125 696 
+3 854 
+461 
+678 
+4 071 
+129767 
+9765202 
+13 
+Sud 
+Illizi 
+1 772 
+35 
+14 
+12 
+33 
+1805 
+49149 
+37 
+Tamanrasset 
+2 695 
+56 
+19 
+24 
+61 
+2756 
+176637 
+16 
+Tindouf 
+1 907 
+34 
+1 
+7 
+40 
+1947 
+52333 
+37 
+Adrar 
+4 038 
+124 
+79 
+24 
+69 
+4107 
+399714 
+10 
+Biskra 
+7 043 
+202 
+32 
+56 
+226 
+7269 
+721356 
+10 
+Ouargla 
+8 818 
+259 
+18 
+27 
+268 
+9086 
+558558 
+16 
+El Oued 
+7 535 
+237 
+33 
+48 
+252 
+7787 
+647548 
+12 
+Bechar 
+6 696 
+0 
+0 
+0 
+0 
+6696 
+270061 
+25 
+Ghardaia 
+9 091 
+185 
+10 
+82 
+257 
+9348 
+363598 
+26 
+ Total du Sud 
+49 595 
+1 132 
+206 
+280 
+1 206 
+50801 
+3238954 
+16 
+Total Général 
+575 906 
+18 411 
+2 051 
+3 544 
+19 904 
+595810 
+34080030 
+17 
+Source : CNAS// *Source : ONS 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 44 ‐ 
+ 
+Tableau 38 FGAR : Dossiers traités par secteur d’activité (de 2004 à fin juin 2017) 
+SECTEUR DʹACTIVITE  
+Nombre 
+de Projets 
+%   
+Montant de la 
+Garantie 
+%   
+Nombre 
+dʹEmplois 
+%   
+ INDUSTRIE 
+970
+50%
+32 151 448 062 
+60% 
+36 609
+59%
+MINE ET CARRIERES
+18 
+0,9% 
+507 740 665 
+0,9% 
+534 
+0,9% 
+INDUSTRIE  SIDERURGIQUE  METALIQUE 
+MECANIQUE ET ELECTRIQUE  
+126 
+6,5% 
+4 159 239 113 
+7,8% 
+6 212 
+10,1% 
+MAT.CONST.ET VERRE 
+163 
+8,4% 
+6 458 170 860 
+12,1% 
+4 722 
+7,6% 
+CHIMIE, CAOUTCHOUC ET PLASTIQUE
+168 
+8,7% 
+5 560 604 780 
+10,4% 
+5 654 
+9,2% 
+AGROALIMENTAIRE 
+TABACS 
+ET 
+ALLUMETTES 
+309 
+16,0% 
+10 866 600 664 
+20,3% 
+12 066 
+19,5% 
+TEXT.BONNET ET CONFECTION 
+31 
+1,6% 
+518 244 550 
+1,0% 
+849 
+1,4% 
+INDUSTRIE CUIR ET CHAUSSURES  
+7 
+0,4% 
+204 406 100 
+0,4% 
+279 
+0,5% 
+BOIS, LIEGE, PAPIER ET IMPRIMERIE 
+95 
+4,9% 
+2 264 567 393 
+4,2% 
+3 134 
+5,1% 
+INDUSTRIES DIVERSES 
+53 
+2,7% 
+1 611 873 937 
+3,0% 
+3 159 
+5,1% 
+ BTPH 
+526
+27%
+10 993 691 363 
+21% 
+15 999
+26%
+TRAVAUX PUBLICS 
+289 
+14,9% 
+6 515 055 539 
+12,2% 
+9 467 
+15,3% 
+BATIMENT 
+220 
+11,4% 
+4 116 340 135 
+7,7% 
+6 273 
+10,2% 
+HYDRAULIQUE 
+17 
+0,9% 
+362 295 689 
+0,7% 
+259 
+0,4% 
+ AGRICULTURE & PECHE 
+24
+1%
+882 180 868 
+2% 
+845
+1%
+AGRICULTURE 
+4 
+0,2% 
+70 366 398 
+0,1% 
+299 
+0,5% 
+PECHE  
+20 
+1,0% 
+811 814 470 
+1,5% 
+546 
+0,9% 
+ SERVICES 
+417
+22%
+9 466 535 915 
+18% 
+8 335
+13%
+SANTE 
+94 
+4,9% 
+3 882 493 510 
+7,3% 
+3 362 
+5,4% 
+TRANSPORT  
+220 
+11,4% 
+2 893 068 094 
+5,4% 
+1 972 
+3,2% 
+MAINTENANCE INDUSTRIELLE 
+16 
+0,8% 
+475 663 183 
+0,9% 
+300 
+0,5% 
+TOURISME & LOISIR
+59 
+3,0% 
+1 764 003 723 
+3,3% 
+1 548 
+2,5% 
+NTIC 
+14 
+0,7% 
+242 000 279 
+0,5% 
+711 
+1,2% 
+COMMUNICATION 
+8 
+0,4% 
+152 957 430 
+0,3% 
+163 
+0,3% 
+Engineering 
+et 
+études 
+techniques 
+topographiques 
+6 
+0,3% 
+56 349 696 
+0,1% 
+279 
+0,5% 
+TOTAL  
+1 937
+100%
+53 493 856 208 
+100% 
+61 788
+100%
+ Source : FGAR 
+
+---PAGE---
+Bulletin d’information statistique n°31     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2017  
+ Ministère de l’Industrie et des Mines                                                                                        Page ‐ 45 ‐ 
+ 
+Tableau 39 FGAR : Dossiers traités par région (de 2004 à fin juin 2017) 
+REGION 
+Nombre de Projets
+%  
+Montant de la Garantie
+%   
+Nombre dʹEmplois
+%  
+EST 
+ ANNABA 
+36 
+1,9% 
+1 051 833 364 
+2,0% 
+1 723  
+2,8% 
+ EL‐TAREF 
+13 
+0,7% 
+466 400 270 
+0,9% 
+329  
+0,5% 
+ TEBESSA 
+19 
+1,0% 
+433 916 445 
+0,8% 
+461  
+0,7% 
+ SOUK AHRAS 
+16 
+0,8% 
+266 420 826 
+0,5% 
+521  
+0,8% 
+ BATNA  
+33 
+1,7% 
+984 547 422 
+1,8% 
+1 150  
+1,9% 
+ BISKRA 
+17 
+0,9% 
+446 800 101 
+0,8% 
+410  
+0,7% 
+ CONSTANTINE 
+58 
+3,0% 
+2 045 499 138 
+3,8% 
+2 163  
+3,5% 
+ KHENCHELA 
+7 
+0,4% 
+190 484 427 
+0,4% 
+253  
+0,4% 
+ MʹSILA  
+27 
+1,4% 
+987 170 644 
+1,8% 
+724  
+1,2% 
+ SETIF 
+64 
+3,3% 
+2 221 728 077 
+4,2% 
+2 199  
+3,6% 
+ BORDJ BOU ARRERIDJ 
+40 
+2,1% 
+1 484 377 569 
+2,8% 
+1 539  
+2,5% 
+ BEJAIA  
+130 
+6,7% 
+2 167 680 381 
+4,1% 
+3 479  
+5,6% 
+ JIJEL 
+9 
+0,5% 
+417 358 456 
+0,8% 
+428  
+0,7% 
+ OUM EL BOUAGHI 
+10 
+0,5% 
+279 968 942 
+0,5% 
+294  
+0,5% 
+ SKIKDA 
+11 
+0,6% 
+162 737 828 
+0,3% 
+276  
+0,4% 
+ GUELMA 
+8 
+0,4% 
+206 246 860 
+0,4% 
+133  
+0,2% 
+ MILA  
+18 
+0,9% 
+585 205 321 
+1,1% 
+670  
+1,1% 
+ S/TOTAL  
+516 
+27%
+14 398 376 071
+27% 
+16 752 
+27%
+CENTRE 
+ BOUIRA  
+44 
+2,3% 
+1 630 877 864 
+3,05% 
+1 671  
+2,70% 
+ TIZI OUZOU  
+166 
+8,6% 
+3 374 059 609 
+6,31% 
+5 168  
+8,36% 
+ BOUMERDES  
+69 
+3,6% 
+1 618 552 657 
+3,03% 
+1 447  
+2,34% 
+ ALGER  
+506 
+26,1% 
+14 554 336 115 
+27,21% 
+16 714  
+27,05% 
+ BLIDA  
+90 
+4,6% 
+1 943 391 498 
+3,63% 
+2 162  
+3,50% 
+ TIPAZA 
+38 
+2,0% 
+1 156 677 757 
+2,16% 
+1 526  
+2,47% 
+ MEDEA 
+12 
+0,6% 
+370 052 853 
+0,69% 
+328  
+0,53% 
+ DJELFA 
+11 
+0,6% 
+215 141 468 
+0,40% 
+250  
+0,40% 
+ S/TOTAL  
+936 
+48%
+24 863 089 821
+46% 
+29 266 
+47%
+OUEST 
+ AIN‐DEFLA  
+17 
+0,9% 
+486 723 560 
+0,91% 
+526 
+0,9% 
+ CHLEF 
+25 
+1,3% 
+961 004 770 
+1,80% 
+862 
+1,4% 
+ TIARET  
+13 
+0,7% 
+817 502 365 
+1,53% 
+318 
+0,5% 
+ RELIZANE  
+22 
+1,1% 
+651 221 839 
+1,22% 
+684 
+1,1% 
+ NAAMA 
+5 
+0,3% 
+107 191 577 
+0,20% 
+152 
+0,2% 
+ SIDI BELABES 
+24 
+1,2% 
+648 676 208 
+1,21% 
+990 
+1,6% 
+ AIN‐TEMOUCHENT 
+13 
+0,7% 
+504 866 600 
+0,94% 
+440 
+0,7% 
+ TISSEMSILT  
+2 
+0,1% 
+30 263 450 
+0,06% 
+35 
+0,1% 
+ SAIDA 
+9 
+0,5% 
+148 801 500 
+0,28% 
+165 
+0,3% 
+ ORAN  
+146 
+7,5% 
+4 224 526 777 
+7,90% 
+5 446 
+8,8% 
+ MASCARA  
+19 
+1,0% 
+656 895 882 
+1,23% 
+1 170 
+1,9% 
+ MOSTAGANEM  
+41 
+2,1% 
+1 319 769 893 
+2,47% 
+1 275 
+2,1% 
+ TLEMCEN 
+29 
+1,5% 
+728 411 297 
+1,36% 
+959 
+1,6% 
+ EL BAYADH 
+3 
+0,2% 
+95 645 617 
+0,18% 
+91 
+0,1% 
+ S/TOTAL  
+368 
+19%
+11 381 501 335
+21% 
+13 113
+21%
+SUD
+ ADRAR 
+13 
+0,7% 
+266 965 189 
+0,5% 
+240 
+0,4% 
+ EL‐OUED 
+10 
+0,5% 
+232 772 236 
+0,4% 
+243 
+0,4% 
+ BECHAR 
+4 
+0,2% 
+152 250 106 
+0,3% 
+179 
+0,3% 
+ GHARDAIA 
+25 
+1,3% 
+415 274 427 
+0,8% 
+575 
+0,9% 
+ LAGHOUAT 
+12 
+0,6% 
+383 763 174 
+0,7% 
+417  
+0,7% 
+ OUARGLA 
+37 
+1,9% 
+955 285 311 
+1,8% 
+749 
+1,2% 
+ TINDOUF 
+2 
+0,1% 
+52 860 000 
+0,1% 
+44 
+0,1% 
+ TAMANRASSET 
+10 
+0,5% 
+321 883 077 
+0,6% 
+188 
+0,3% 
+ ILLIZI 
+4 
+0,2% 
+69 835 461 
+0,1% 
+22 
+0,0% 
+ S/TOTAL  
+117 
+6%
+2 850 888 981
+5% 
+2 657
+4%
+ TOTAL 
+1937 
+100%
+53 493 856 208 
+100% 
+61 788
+100%
+Source : FGAR 
+
+---PAGE---

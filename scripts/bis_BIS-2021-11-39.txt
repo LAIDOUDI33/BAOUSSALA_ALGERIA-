@@ -1,0 +1,4062 @@
+ الجمهورية الجزائرية
+الديمقراطية الشعبية 
+        République Algérienne Démocratique et Populaire 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bulletin d’information 
+Statistique de la PME   
+N°39 
+                
+ 
+            
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Edition novembre 2021 
+ 
+ 
+ وزارة الصناعة 
+Ministère de l’Industrie  
+Données du 1er semestre 2021 
+ 
+
+---PAGE---
+- 2 - 
+ 
+Abréviations 
+PME 
+ 
+ Petite et Moyenne Entreprise 
+EPE  
+ 
+Entreprise Publique Economique  
+Mds 
+ 
+Milliards  
+PIB  
+ 
+Produit Intérieur Brut 
+VA 
+ 
+Valeur Ajoutée 
+HH 
+ 
+Hors Hydrocarbures 
+ANGEM            Agence Nationale de Gestion du Micro Crédit 
+ANADE            Agence Nationale d'Appui et de Développement de l'Entreprenariat 
+ 
+ANDI   
+Agence Nationale de Développement de l’Investissement 
+CGCI-PME 
+Caisse de Garantie des Crédits d’Investissements-PME 
+FGAR   
+Fonds de Garantie des Crédits aux PME  
+CNAC   
+Caisse Nationale d’Assurance Chômage 
+ECOFIE :              Société d’études économiques et d’analyses financières du secteur public marchand 
+ 
+ 
+ 
+Avertissement  
+Source principale : Référentiels CNAS et CASNOS 
+Remerciements 
+ 
+Le Bulletin d’information statistique                    
+Participe à une meilleure visibilité de l’évolution des indicateurs économiques et, 
+notamment, de ceux relatifs à la démographie des PME. 
+ 
+La diffusion du présent document à une large échelle, y compris sur le Web, répond 
+aux préoccupations du ministère de mettre l’information utile à la disposition d’un 
+maximum d’opérateurs et d’utilisateurs. 
+ 
+Nous tenons à exprimer notre reconnaissance                              
+Aux institutions publiques et aux structures déconcentrées du MI qui contribuent 
+régulièrement à l’alimentation en données de ce Bulletin, devenu un périodique 
+diffusé tous les semestres. 
+ 
+Nous tenons à exprimer nos vifs remerciements                          
+Aux nombreux lecteurs qui nous ont fait part de leurs observations et suggestions. 
+ 
+Pour toute remarque ou suggestion, prière de nous contacter via l’adresse suivante :  
+ 
+dgvsesi@industrie.gov.dz
+
+---PAGE---
+- 3 - 
+ 
+  
+ 
+ 
+Table des matières 
+Préambule ............................................................................................................................. - 5 - 
+Chiffres clés au 30/06/2021 ................................................................................................. - 6 - 
+I- POPULATION DES PME .................................................................................................. - 7 - 
+1- Situation à la fin du 1e semestre 2021 ..................................................................................................- 7 - 
+2- Distribution ..........................................................................................................................................- 8 - 
+2.1 Par taille ...............................................................................................................................................- 8 - 
+2.2 Par nature juridique.............................................................................................................................- 9 - 
+2.3 Par statut juridique et secteur d’activité ........................................................................................... - 10 - 
+2.4 Par région ......................................................................................................................................... - 11 - 
+2.5 Densité .............................................................................................................................................. - 12 - 
+2.6 Evolution de la population globale des PME ................................................................................... - 13 - 
+2.7 Evolution des PME (tout secteur confondu) par secteur d'activité .................................................. - 13 - 
+2.8 Evolution de l’emploi par type de PME ........................................................................................... - 14 - 
+3- Démographie .................................................................................................................................... - 14 - 
+3.1 Croissance .......................................................................................................................................... - 14 - 
+3.2 Création de PME .............................................................................................................................. - 15 - 
+3.3 Réactivation ...................................................................................................................................... - 15 - 
+3.4 Radiation (mortalité) ........................................................................................................................ - 15 - 
+II- STATISTIQUES DES PROGRAMMES D’APPUI À LA PME ..........................................- 17 - 
+1. Dispositif national d’appui à l’investissement (ANDI) ................................................................... - 17 - 
+1.1 Projets d’investissement déclarés par secteur d’activité ................................................................... - 17 - 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers) ..................................................... - 18 - 
+1.3 Projets d’investissement déclarés par tranche d’effectif ................................................................... - 18 - 
+2. Bilan des activités relatif aux Centres d’appui et de conseil aux PME et Pépinières d’Entreprises au 1er 
+semestre 2021 .................................................................................................................................... - 19 - 
+3. Etat du dispositif « FGAR » .............................................................................................................. - 21 - 
+4. Activités de la CGCI-PME (dispositif relevant du Ministère des finances) ................................... - 25 - 
+III. Dispositifs Sociaux d’appui à la PME ............................................................................- 28 - 
+1. Dispositif « ANADE » ....................................................................................................................... - 28 - 
+2. Dispositif « CNAC » .......................................................................................................................... - 30 - 
+3. Dispositif « ANGEM » ...................................................................................................................... - 31 - 
+4. Dispositif « ANIREF » ....................................................................................................................... - 32 - 
+VI- Commerce extérieur ........................................................................................................- 33 - 
+1. Balance commerciale ........................................................................................................................ - 33 - 
+2. Importations ...................................................................................................................................... - 34 - 
+3. Exportations ....................................................................................................................................... - 35 - 
+V-ANNEXES ........................................................................................................................- 36 - 
+ 
+Sommaire 
+
+---PAGE---
+- 4 - 
+ 
+ 
+Liste des tableaux 
+ 
+Tableau 1 Population globale des PME à la fin du 1er semestre 2021 ............................................................. - 7 - 
+Tableau 2 : typologie des PME créées .................................................................................................................... - 8 - 
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité .................................................... - 9 - 
+Tableau 4 Professions libérales par secteur d’activité ................................................................................................. - 9 - 
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) - 10 
+- 
+Tableau 6 : Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) .................................. - 11 - 
+Tableau 7 Concentration des PME privées (personnes morales) par région .................................................. - 11 - 
+Tableau 8 Densité des PME privées (personnes morales) par région .............................................................. - 12 - 
+Tableau 9 Evolution de la population globale des PME (S1/2020 et S1/2021) ............................................. - 13 - 
+Tableau 10 Evolution des PME par secteur d’activité (S1 2020/ S1 2021) ........................................................ - 13 - 
+Tableau 11 Evolution des emplois déclarés par type de PME .......................................................................... - 14 - 
+Tableau 12 Mouvements constatés dans la démographie des PME privées ................................................ - 14 - 
+Tableau 13 Mortalité des PME privées................................................................................................................. - 15 - 
+Tableau 14. Mortalité des PME privées par secteur d'activité (personnes morales) ...................................... - 16 - 
+Tableau 15 : La mortalité des PME privées (personnes physiques) ................................................................. - 16 - 
+Tableau 16 Etats récapitulatifs des projets d’investissement au (S1/2021) ...................................................... - 17 - 
+Tableau 17 FGAR : Répartition des garanties par projet en création et extension Avril 2004/ au 30/06/2021 ... - 
+21 - 
+Tableau 18  FGAR : Répartition des garanties en offres et certificats de garantie Avril 2004 au 30/06/2021 .......... - 22 - 
+Tableau 19 FGAR : Répartition des garanties par projet en création et extension (du 01/01/2021 au 30/06/2021) .. - 23 - 
+Tableau 20 FGAR : Répartition des garanties en offres et certificats de garantie (du 01/01/2020 au 
+30/06/2021) ............................................................................................................................................................... - 24 - 
+Tableau 24 ANSEJ : Projets financés par secteur d’activité (Cumul au 30/06/2021) ................................... - 28 - 
+Tableau 25  ANSEJ : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2021) ........... - 29 - 
+Tableau 26 CNAC : Projets financés par secteur d’activité (cumul au 30/06/2021) ................................................. - 30 - 
+Tableau 27 ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2021) .......................... - 31 - 
+Tableau 28 ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2021)................................. - 31 - 
+Tableau 29 Evolution de la Balance commerciale de l’Algérie (S1/2020 –S1/2021) (en Millions de Dollars 
+US) ............................................................................................................................................................................ - 33 - 
+Tableau 30 : Evolution des importations par groupes de produits (S1/2020 – S1/2021) ............................... - 34 - 
+Tableau 31 Evolution des exportations par groupes de produits (S1/2020- S1/2021)                                                          
+U : Millions USD ...................................................................................................................................................... - 35 - 
+Tableau 32 : PME privées par secteurs d'activité ................................................................................................ - 36 - 
+Tableau 33 : Concentration des PME (personnes morales) par wilaya ........................................................... - 37 - 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 5 - 
+ 
+ 
+ 
+Préambule  
+ 
+Les PME constituent un outil stratégique, vital et primordial dans toute économie 
+qui se donne comme objectifs un développement réel, dynamique et durable.  
+Elle est l’instrument incontournable pour la création des richesses d’un pays, pour 
+une croissance continue et soutenue, pour la création d’emplois. 
+Le tissu économique algérien demeure, à l’image de beaucoup de pays, dominé par la 
+TPE (très petite entreprise), qui représente plus de 97,51% des entreprises, avec un 
+effectif entre 0 et 9 salariés. Soit entre 2 et 3 comme nombre moyen de personnes 
+employées par entreprise ce qui explique la grande présence des très petites 
+entreprises dans le parc des PME privées en Algérie. 
+A la fin du 1er semestre 2021, le nombre des entités industrielles recensées est de 
+108.762 entreprises, sur une population globale de 1 267 220 PME dont on recense 
+709 571 personnes morales privées déclarées auprès de la CNAS, 225 PME 
+publiques déclarés auprès de l’ECOFIE et 557424 personnes physiques déclarées 
+auprès de la CASNOS.  
+Un schéma économique à prédominance des secteurs des services avec 51,39% du 
+total des PME. En effet le secteur du commerce, essentiellement aux mains de très 
+petites entreprises familiales TPE de (0 à 10 salariés), est dominant. 
+Les PME se caractérisent par densité en deçà de la densité moyenne dans les pays 
+développés, puisqu’elle ne compte que près de 28 entreprises par 1000 Habitants, 
+contre 45 entreprises par 1000 habitants, dans les pays de l’OCDE. 
+A la fin il y a lieu de signaler, que la conjoncture économique internationale connaît 
+un ralentissement inquiétant dû, en grande partie, à la propagation de l’épidémie du 
+coronavirus. 
+Cette baisse d’activité, s’est répercutée négativement sur la croissance de la création 
+des PME en Algérie durant cette période. 
+ 
+ 
+ 
+
+---PAGE---
+- 6 - 
+ 
+ 
+ 
+Chiffres clés au 30/06/2021 
+ 
+Population totale des PME 
+(tous statuts confondus) 
+1 267 220 
+ 
+PME créées  
+ 
+33 758 
+Cessations d’activités 
+(PME privés) 
+7 103 
+PMI  
+108 762 
+PME publiques  
+225 
+ 
+Densité des PME  
+(Nombre de PME 
+pour 1000 Habitants) 
+Tous statuts 
+juridiques 
+confondus/ Moyenne 
+internationale 
+28/45 
+Personnes morales 
+privées/ Moyenne 
+internationale 
+16/45 
+Emplois (agents) 
+3 083 503 
+Importations (Millions de $) 
+18 779,75 
+Exportations (Millions de $) 
+16 358,05 
+ 
+
+---PAGE---
+- 7 - 
+ 
+I- POPULATION DES PME 
+1- Situation à la fin du 1e semestre 2021 
+A la fin du 1er semestre 2021, la population globale des PME s’élève à 1 267 220 
+entêtées dont 56% sont constituées de personnes morales, parmi lesquelles on 
+recense 225 Entreprises Publiques Economiques (EPE). Le reste est composé de 
+personnes physiques avec (44%), dont 20,46% de professions libérales et 23,53% 
+d’activités artisanales.  
+Tableau 1 Population globale des PME à la fin du 1er semestre 2021  
+ 
+Types de PME 
+ 
+Nbre de PME 
+Part (%) 
+1. 
+PME privées 
+ 
+Personnes morales* 
+ 
+709 571 
+55,99 
+ 
+Personnes physiques**   
+557 424 
+43,99 
+ 
+ dont Professions libérales 
+ 
+259 236 
+20,46 
+ 
+ dont Activités artisanales  
+298 188 
+23,53 
+ 
+                        S/Total 1 
+ 
+1 266 995 
+99,98 
+2 
+PME publiques *** 
+ 
+Personnes morales 
+ 
+225 
+0,02 
+ 
+S/Total 2 
+ 
+225 
+0,02 
+ 
+Total 
+ 
+1 267 220 
+100,00 
+ 
+                          
+Personnes 
+morales*
+56%
+Personnes 
+physiques** 
+44%
+la répartition des PME selon 
+persones physiques et personnes morales
+ 
+* Source : CNAS    ** Source : CASNOS   *** Source : ECOFIE 
+ 
+ 
+
+---PAGE---
+- 8 - 
+ 
+2- Distribution 
+2.1 Par taille  
+Durant le 1er semestre 2020, le nombre des PME est composé de 97,57% de Très 
+Petite Entreprise TPE (effectif de moins de 10 salariés), soit 35 267 TPE qui 
+demeurent fortement dominante dans le tissu économique, suivie par la Petite 
+Entreprise PE avec 2,19% et la Moyenne Entreprise ME avec 0,24% 
+Tableau 2 : typologie des PME créées  
+Secteurs d’activités 
+Année 
+2020 
+S1/2021 
+Cumul 
+Au 
+S1/2021 
+de 0 à 9 
+salariés 
+de10 à 49 
+salariés 
+de 50 à 249 
+salariés 
+Total PME 
+de 0 à 250 
+salariés 
+Agriculture 
+7 690 
+210 
+10 
+-1 
+219 
+7 909 
+Hydrocarbures, 
+Energie, Mines et 
+services liés 
+3 115 
+74 
+9 
+1 
+84 
+3 199 
+BTPH 
+193 964 
+3612 
+327 
+34 
+3973 
+197 937 
+Industries 
+manufacturières 
+106 121 
+2498 
+115 
+28 
+2641 
+108 762 
+Services y compris 
+les professions 
+libérales 
+631459 
+19409 
+331 
+26 
+19766 
+651 225 
+Artisanat 
+288 724 
+9464 
+- 
+- 
+9464 
+298 188 
+Total 
+1 231 073 
+35267 
+792 
+88 
+36147 
+1 267 220 
+% 
+97,57 
+2,19 
+0,24 
+100 
+ 
+ 
+                                    
+97,57
+2,19
+0,24
+de 0 à 9 salariés
+de10 à 49 salariés
+de 50 à 249 salariés
+les PME par tranche d'effectifs
+Série1
+Série2
+ 
+
+---PAGE---
+- 9 - 
+ 
+2.2 Par nature juridique 
+2.2.1 Personnes Morales  
+Les PME (personnes morales) tous statuts confondus sont présentes en force dans 
+le secteur des services qui en concentre plus de la moitié (55,23%), suivi par le 
+secteur du BTPH (27,89%), et en troisième position il y a le secteur de l’industrie 
+avec 15,32%.   
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité  
+ 
+Secteurs d’Activité 
+PME privées* 
+ 
+PME publiques** 
+Total 
+Part en (%) 
+Agriculture 
+7827 
+82 
+7909 
+1,11 
+Hydrocarbures, Energie, Mines 
+et services liés 
+3197 
+2 
+3199 
+0,45 
+BTPH 
+197925 
+12 
+197937 
+27,89 
+Industries manufacturières 
+108689 
+73 
+108762 
+15,32 
+Services 
+391933 
+56 
+391989 
+55,23 
+Total Général 
+709571 
+225 
+709796 
+      100,00 
+*source CNAS ** source ECOFIE  
+2.2.2 Personnes physiques  
+Pour la période considérée, le nombre total des personnes physiques a atteint     
+557 424 PME, dont 259 236 sont des professions libérales et 298 188 sont des 
+activités artisanales (Voir le tableau N°1). 
+ a. Professions libérales 
+La catégorie des professions libérales, englobe, notamment, les notaires, les 
+avocats, les huissiers de justice, les médecins, les architectes et les agriculteurs.  
+Les professions libérales, au nombre de 259 236, exercent à 67,7% dans 
+l’Agriculture, 20,94% dans le secteur de la Santé et 11,37% dans la justice, tel que 
+repris dans le tableau n°4.  
+Tableau 4 Professions libérales par secteur d’activité  
+  
+Santé 
+Justice 
+Exploitations agricoles 
+Total 
+Nbre au 30.06.2021 
+54277 
+29483 
+175476 
+259236 
+Part en % 
+20,94 
+11,37 
+67,69 
+100 
+
+---PAGE---
+- 10 - 
+ 
+ 
+b-Activités Artisanales : 
+Durant le 1er semestre 2021, la CASNOS a enregistré une évolution de 9464 
+affiliations, ce qui porte le nombre total des artisans au 30/06/2021 à 288 188 PME.    
+2.3 Par statut juridique et secteur d’activité 
+2.3.1. PME publiques  
+Les PME publiques représentent une part minime dans la population globale des 
+PME. Leur nombre est de 225 PME durant le 1er semestre 2021 contre 239 durant 
+le premier semestre 2020 soit un recul de - 5,85%. Cette baisse est due 
+essentiellement à la restructuration de certains portefeuilles du Secteur Public 
+Marchand (SPM).  
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) 
+Secteurs 
+d’activités 
+1 à 9 salariés 
+10 à 49 
+salariés 
+50 à 249 
+salariés 
+Nombre 
+global 
+de PME 
+% 
+Effectif 
+global 
+% 
+Nombre Effectifs Nombre Effectifs Nombre Effectifs 
+Industrie 
+4 
+14 
+14 
+376 
+55 
+7301 
+73 
+32,44 
+7691 
+38,42 
+Services 
+0 
+0 
+9 
+275 
+47 
+6011 
+56 
+24,89 
+6286 
+31,40 
+Agriculture 
+14 
+71 
+49 
+1352 
+19 
+2242 
+82 
+36,44 
+3665 
+18,31 
+BTPH 
+0 
+0 
+0 
+0 
+12 
+2038 
+12 
+5,33 
+2038 
+10,18 
+Mines et 
+carrières 
+0 
+0 
+0 
+0 
+2 
+336 
+2 
+0,89 
+336 
+1,68 
+Total 
+18 
+85 
+72 
+2003 
+135 
+17928 
+225 
+100,00 
+20016 
+100,00 
+Source : ECOFIE 
+Les PME publiques exercent dans tous les secteurs d’activité de l’économie 
+nationale, on observe du tableau ci-dessus l’émergence du secteur de l’Agriculture 
+avec 36,44% des PME/EPE, suivie du secteur de l’Industrie (32,44%) ensuite le 
+secteur des Services (24,89%).  
+Les PME publiques industrielles emploient 38,42 % des effectifs du Secteur Public 
+Marchand SPM de type PME.  
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 11 - 
+ 
+2.3.2. PME Privées  
+Le nombre total des PME privées à la fin du 1er semestre 2021 est de 1 266 995. 
+Elles sont concentrées au niveau du secteur des services (le transport en 
+particulier), l’Artisanat et le BTPH. 
+Tableau 6 : Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) 
+ 
+ 
+Secteurs d’Activité 
+Nombre 
+Part en 
+(%) 
+I 
+Agriculture 
+7 827 
+0,62 
+II 
+Hydrocarbures, Energie, Mines et services 
+liés 
+3 197 
+0,25 
+III 
+BTPH 
+197 925 
+15,62 
+IV 
+Industries manufacturières 
+108 689 
+8,58 
+V 
+Services y compris les professions libérales 
+651 169 
+51,39 
+VI 
+Artisanat 
+298 188 
+23,54 
+ 
+Total Général 
+1 266 995 
+100,00 
+ 
+2.4 Par région  
+Selon la répartition spatiale du Schéma National d'Aménagement du Territoire 
+(SNAT), les PME (personnes morales) sont prédominantes dans le Nord et, à un 
+degré moindre, dans les Hauts-Plateaux. 
+Tableau 7 Concentration des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/2021 
+Taux de concentration (%) 
+Nord 
+493691 
+69,58 
+Hauts-Plateaux 
+156207 
+22,01 
+Sud & Grand Sud  
+59673 
+8,41 
+Total Général 
+709571 
+100 
+     Source : CNAS 
+La région du Nord regroupe, 493 691 PME, soit 69,58 % des PME du pays, suivie 
+par la région des Hauts-Plateaux avec 156 207 PME soit 22%, et les régions du Sud 
+et du Grand Sud accueillent 59 673 PME soit 8,41% du total.  
+
+---PAGE---
+- 12 - 
+ 
+2.5 Densité  
+En termes de densité, selon les dernières statistiques de l’ONS sur la démographie 
+(44,7 Millions d’habitants en 2021) la moyenne nationale des PME est de l’ordre de 
+28 PME (tous statuts confondus) pour 1.000 habitants. et présente un écart 
+important d’une région à l’autre du pays : 
+ 32 PME pour 1000 habitants au Nord du pays,  
+ 22 PME pour 1000 habitants dans la région des Hauts Plateaux.  
+ 25 PME pour 1000 habitants dans la région du Sud.  
+Région 
+Nbre de PME 
+S1/2021 
+Population par 
+Wilaya (RGPH 
+2008)** 
+part (RGPH 
+2008)** 
+Population 
+par Wilaya 
+au 1er 
+janvier 2021 
+densité 
+Nord 
+881 732 
+21075874 
+0,618 
+27624600 
+32 
+Hauts-
+Plateaux 
+278 915 
+9765202 
+0,287 
+12828900 
+22 
+Sud 
+106 573 
+3238954 
+0,095 
+4246500 
+25 
+Total Général 
+1 267 220 
+34080030 
+1 
+44700000 
+28 
+Ce ratio national diminue à 16 pour 1.000 habitants pour les PME privées de type 
+« personnes morales » et présente un écart important d’une région à l’autre du 
+pays :  
+ 18 PME privées pour 1000 habitants au Nord du pays,  
+ 12 PME privées pour 1000 habitants dans la région des Hauts Plateaux.  
+ 14 PME privées pour 1000 habitants dans la région du Sud.  
+ 
+Tableau 8 Densité des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/2021* 
+Population par 
+Wilaya (RGPH 
+2008) ** 
+part 
+(RGPH 
+2008) ** 
+Population par 
+Wilaya au 1er 
+janvier 2021 
+densité 
+Nord 
+493691 
+21075874 
+0,618 
+27624600 
+18 
+Hauts-Plateaux 
+156207 
+9765202 
+0,287 
+12828900 
+12 
+Sud 
+59673 
+3238954 
+0,095 
+4246500 
+14 
+Total Général 
+709571 
+34080030 
+1 
+44700000 
+16 
+    * Source : CNAS   ** Source : ONS 
+*** la démographie du janvier 2021 par wilaya par rapport à la structure du (RGPH 2008)  
+
+---PAGE---
+- 13 - 
+ 
+2.6 Evolution de la population globale des PME 
+ 
+L’évolution de la population de la PME entre le 1er semestre 2020 et le             1er 
+semestre 2021 est de 4,8 % tous secteurs juridiques confondus, représentant un 
+accroissement net total de +57 729 PME. Pour les PME privées personnes morales, 
+cette évolution est de 4,6%. 
+Tableau 9 Evolution de la population globale des PME (S1/2020 et S1/2021)  
+ 
+ 
+S1/2020 
+S1/2021 
+Evolution % 
+Population globale de la PME 
+1 209 491 
+1 267 220 
+4,8 
+Dont PME privées personnes 
+morales 
+678 057 
+709 571 
+4,6 
+ 
+2.7 Evolution des PME (tout secteur confondu) par secteur d'activité 
+Les secteurs où la création d’entreprise a été la plus forte à la fin du premier 
+semestre 2021, restent ceux des services avec 51,39%. 
+Les PME à caractère industriel sont au nombre de 104 598 entités à la fin du 1er 
+semestre 2020, contre 108 762 entités à la fin du 1er semestre 2021, soit une 
+évolution de 4 %. 
+Tableau 10 Evolution des PME par secteur d’activité (S1 2020/ S1 2021) 
+ 
+ 
+ 
+ 
+Secteurs d’Activité 
+S1/2020 
+Parts(%) S1/2021 Parts(%) Evolution 
+(%) 
+I 
+Agriculture 
+7540 
+0,62 
+7909 
+0,62 
+4,9 
+II 
+Hydrocarbures, Energie, Mines et 
+services liés 
+3090 
+0,26 
+3199 
+0,25 
+3,5 
+III 
+BTPH 
+191454 
+15,83 
+197937 
+15,62 
+3,4 
+IV 
+Industries manufacturières 
+104598 
+8,65 
+108762 
+8,58 
+4,0 
+V 
+Services y compris les professions 
+libérales 
+622099 
+51,43 
+651225 
+51,39 
+4,7 
+VI 
+Artisanat 
+280710 
+23,21 
+298188 
+23,53 
+6,2 
+ 
+Total 
+1209491 
+100 
+1267220 
+100 
+4,8 
+Source : CNAS/CASNOS/ECOFIE 
+
+---PAGE---
+- 14 - 
+ 
+ 
+2.8 Evolution de l’emploi par type de PME 
+L’effectif global des PME, à la fin du 1er semestre 2021, est de 3 083 503 agents, 
+dont seulement 20 016 relèvent des PME publiques. A noter que l’effectif global 
+des PME a progressé de 5,57 % entre le 1er semestre 2020 et le 1er semestre 2021      
+ 
+ Tableau 11 Evolution des emplois déclarés par type de PME 
+Types de PME 
+1er semestre 2020 
+1er semestre 2021 
+Evolution (%) 
+Nombre 
+Parts (%) 
+Nombre 
+Parts (%) 
+  
+salariés 
+1 689 980 
+57,86 
+1796492 
+58,26 
+6,3 
+employeurs 
+1 209 252 
+41,4 
+1266995 
+41,09 
+4,78 
+S/Total 
+2 899 232 
+99,26 
+3063487 
+99,35 
+5,67 
+ 
+ 
+PME Publiques 
+21 537 
+0,74 
+20016 
+0,65 
+-7,06 
+Total 
+2 920 769 
+100 
+3 083 503 
+100 
+5,57 
+ 
+Source : CNAS / CASNOS 
+ 
+ 
+ 
+3- Démographie 
+ 
+3.1 Croissance 
+Durant le 1er semestre 2021, le nombre global des PME privées est de 1 266 995,                     
+soit 36151 nouvelles PME créées. 
+Tableau 12 Mouvements constatés dans la démographie des PME privées         
+Nature des 
+PME 
+ 
+ 
+ 
+2020 
+Mouvements PME du 1er semestre 2021 
+Au 1er 
+semestre 2021 
+Création 
+(1) 
+Réactivation 
+(2) 
+Radiation 
+(3) 
+Croissance 
+(1)+(2)-(3) 
+Personnes 
+morales 
+689 383 
+16720 
+8160 
+4 692 
+20 188 
+709 571 
+Personnes 
+Physiques 
+541 461 
+17038 
+1336 
+2411 
+15 963 
+557 424 
+Total PME 
+privées 
+1 230 844 
+33 758 
+9 496 
+7 103 
+36 151 
+1 266 995 
+
+---PAGE---
+- 15 - 
+ 
+ 
+3.2 Création de PME 
+Le nombre de PME privées créées durant le 1er semestre 2021 est de 33 758 PME.  
+Les créations d’entreprises enregistrées au niveau de la CNAS à la fin du 1er 
+semestre 2021 s’élèvent à 16 720 nouvelles PME (personnes morales) alors qu’au 
+niveau de la CASNOS, on recense 17 038 nouvelles PME créées (personnes 
+physiques) durant la même période. 
+ 
+3.3 Réactivation 
+A la fin du 1er semestre 2021, les réactivations ont touché 8160 PME privées 
+(personnes    morales) déclarées auprès de la CNAS, on recense aussi 1336 PME 
+privées (personnes    physique) déclarées auprès de la CASNOS 
+ 
+3.4 Radiation (mortalité)  
+Durant le 1er semestre 2020, 7 103 PME privées étaient radiées, dont 4692 sont des 
+personnes morales et 2 411 PME personnes physiques.  
+Tableau 13 Mortalité des PME privées  
+Types de PME privées 
+Personnes* 
+Morales 
+Personnes ** 
+Physiques 
+Total 
+Nombre de cessation d’activité 
+823 
+3 232 
+4 055 
+Parts en % 
+20,30 
+79,70 
+100,00 
+    * Source : CNAS   ** Source : CASNOS 
+ 
+ 
+ 
+3.4.1 Mortalité des PME privées (personnes morales)  
+a- Mortalité des PME privées par secteur d’activité 
+Les PME de type personnes morales ayant été radiées durant le 1er semestre 2021, 
+sont au nombre de 4 692. Ce nombre est visiblement en hausse par rapport aux 
+823 enregistrées à la fin du 1er semestre 2020 (voir le tableau n°14). 
+ 
+ 
+
+---PAGE---
+- 16 - 
+ 
+  
+Tableau 14. Mortalité des PME privées par secteur d'activité (personnes morales) 
+ 
+Secteurs d’Activité 
+ 
+S1/2020 
+S1/2021 
+Evolution en Nbre 
+I 
+Agriculture et pêche 
+14 
+42 
+200,0 
+II 
+Hydrocarbures, Energie, 
+Mines et services liés 
+1 
+11 
+1000,0 
+III 
+BTPH 
+177 
+1052 
+494,4 
+IV 
+Industries manufacturières 
+117 
+677 
+478,6 
+V 
+Services 
+514 
+2910 
+466,1 
+  
+Total Général 
+823 
+4692 
+470,1 
+Source : CNAS 
+ 
+3.4.2 La mortalité des PME privées (personnes physiques)  
+Selon les chiffres de la CASNOS, les PME de type personne physique ayant cessé 
+leurs activités durant le 1er semestre 2021, sont au nombre de 2 411. Les activités 
+des artisans sont les plus vulnérables avec 1 108 radiés (soit environ 45,96% du 
+total) et le secteur des exploitations agricoles en deuxième position avec                  
+1 023 PME radiées soit 42,43% du total. 
+Tableau 15 : La mortalité des PME privées (personnes physiques) 
+ 
+ 
+Santé 
+Justice 
+Exploitations 
+agricoles 
+Artisanat 
+Total 
+Nombre      de cessation 
+d’activité 
+223 
+57 
+1 023 
+1 108 
+2411 
+Part (%) 
+9,25 
+2,36 
+42,43 
+45,96 
+100,00 
+      Source : CASNOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 17 - 
+ 
+ 
+ 
+II- STATISTIQUES DES PROGRAMMES D’APPUI À LA PME 
+1. Dispositif national d’appui à l’investissement (ANDI) 
+Le bilan des déclarations d’investissement au 1er semestre 2021 est constitué d’informations extraites 
+de la base de données de l’ANDI affinées et corrigées en tenant compte des projets annulés. 
+Il est à rappeler que ce bilan ne tient compte que des projets d’investissement dans les activités de 
+production de biens et services, couverts par le dispositif national d’appui à l’investissement.   
+ 
+1.1 Projets d’investissement déclarés par secteur d’activité 
+Tableau 16 Etats récapitulatifs des projets d’investissement au (S1/2021) 
+Secteurs 
+d'activités 
+Projets 
+déclarés 
+Projets 
+déclarés % 
+Montant      
+(en Million 
+DA) 
+Montant    
+(en 
+Million 
+DA) %  
+Emplois 
+Emplois 
+% 
+Agriculture 
+1484 
+2,40 
+355028 
+2,28 
+57812 
+4,63 
+BTPH 
+11685 
+18,87 
+1447656 
+9,30 
+241162 
+19,32 
+industrie 
+14106 
+22,78 
+9187906 
+59,00 
+574773 
+46,06 
+santé 
+1272 
+2,05 
+283933 
+1,82 
+30324 
+2,43 
+transport 
+26027 
+42,04 
+1063891 
+6,83 
+141599 
+11,35 
+tourisme 
+1290 
+2,08 
+1372266 
+8,81 
+76921 
+6,16 
+services 
+6046 
+9,77 
+1862475 
+11,96 
+125399 
+10,05 
+Total général 
+61910 
+100,00 
+15573155 
+100,00 
+1247990 
+100,00 
+ 
+Plus de 42% des projets déclarés au niveau de l’ANDI, sont des entreprises du 
+secteur du transport, en deuxième position on trouve les entreprises à caractère 
+industriel avec près de 23% sur un total de 61 910 projets.  
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 18 - 
+ 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers)  
+  
+Projets déclarés  
+Montant 
+Emplois 
+Projets d'investissement  Nombre 
+% 
+Millions de 
+DA 
+% 
+Nombre 
+% 
+Investissement locaux 
+61117 
+98,72 
+12897217 
+82,82 
+1118637 
+89,64 
+Total investissement 
+étranger 
+793 
+1,281 
+2675939 
+17,18 
+129353 
+10,36 
+Total Général  
+61910 
+100 
+15 573 156 
+100 
+1247990 
+100 
+Source : ANDI   
+Durant la période considérée, nous avons 793 projets des investissements étrangers 
+déclarés auprès de l’ANDI.  
+ 
+1.3 Projets d’investissement déclarés par tranche d’effectif 
+Tranches 
+d'effectifs 
+ 
+Type de 
+PME 
+Projets 
+déclarés 
+Projets 
+% 
+Montant 
+Millions de 
+DA  
+Montant%  
+Emplois 
+Emplois % 
++250 
+GE 
+38 670 
+62,46 
+1 162 195 
+7,46 
+134 940 
+10,81 
+0 à 9 
+TPE 
+18 230 
+29,45 
+4 419 977 
+28,38 
+370 581 
+29,69 
+10 à 49 
+PE 
+4 533 
+7,32 
+4 989 880 
+32,04 
+414 690 
+33,23 
+50 à 249 
+ME 
+477 
+0,77 
+5 001 103 
+32,11 
+327 779 
+26,26 
+TOTAL 
+61910 
+100,00 
+15 573 155 
+100,00 
+1 247 990 
+100,00 
+Source : ANDI 
+Au 1er semestre 2021, près de 63% des projets déclarés auprès de l’ANDI sont des grands 
+entreprises (plus de 250 salariés), la très petite entreprise (0 à 9 salariés) est en 2éme 
+position avec près de 30% des projets d’investissement.  
+ 
+ 
+ 
+
+---PAGE---
+- 19 - 
+ 
+2. Bilan des activités relatif aux Centres d’appui et de conseil aux PME et 
+Pépinières d’Entreprises au 1er semestre 2021 
+ 
+Durant le 1er semestre 2021, le bilan des activités des centres d’appui et de conseil aux 
+PME et des pépinières d’entreprises fait ressortir les résultats suivants : 
+45 structures locales, réparties sur 33 wilayas du Centre, de l'Ouest, de l'Est et du Sud 
+du pays, dont : 
+ 17 pépinières d'entreprises ;  
+ 28 centres de soutien et de consulting. 
+a- centres de soutien et de consulting 
+a-1 point de situation 
+situation 
+Nombre de 
+porteurs de 
+projets reçus 
+Nombre de porteurs 
+de projets 
+accompagnés 
+Nombre 
+d’entreprises 
+créées 
+Nombre 
+d’emploi 
+prévu 
+Nombre de 
+business plan 
+élaborés 
+Centres d’appui 
+et de conseil aux 
+PME 
+673 
+182 
+33 
+215 
+36 
+Source : ADPI-PME 
+a-2-Les projets accompagnés par secteurs d’activités 
+Secteurs d'activités 
+Nbre des projets accompagnés 
+Services 
+97 
+Industrie 
+32 
+Agriculture 
+36 
+TIC 
+4 
+BTPH 
+4 
+Environnement 
+3 
+Santé 
+1 
+Commerce 
+1 
+Artisanat 
+2 
+Tourisme 
+1 
+Energie 
+1 
+Total 
+182 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 20 - 
+ 
+a-3-Les projets créés par secteurs d’activités 
+Secteurs d'activités 
+Nbre des projets créés 
+Services 
+22 
+Industrie 
+5 
+Agriculture 
+4 
+BTPH 
+1 
+Santé 
+1 
+Total 
+33 
+ 
+b- 
+Pépinières d’entreprises 
+b-1 point de situation 
+situation 
+Nombre de porteurs de projets 
+reçus 
+Nombre d’entreprises 
+créées 
+Nombre de projet 
+hébergés 
+Nombre 
+d’emploi créé 
+Pépinières 
+d’entreprises 
+471 
+30 
+69 
+106 
+b-2-Les projets hébergés par secteurs d’activités 
+Secteurs d'activités 
+Nbre des projets accompagnés 
+Services 
+29 
+Industrie 
+14 
+Agriculture 
+10 
+TIC 
+6 
+BTPH 
+1 
+Environnement 
+3 
+Energie 
+5 
+Artisanat 
+1 
+Total 
+69 
+b-3-Les projets créés par secteurs d’activités 
+Secteurs 
+d'activités 
+Nbre des projets créés 
+Services 
+11 
+Industrie 
+5 
+Agriculture 
+3 
+Environnement 
+2 
+BTPH 
+1 
+TIC 
+4 
+Energie 
+4 
+Total 
+30 
+ 
+ 
+
+---PAGE---
+- 21 - 
+ 
+ 
+3. Etat du dispositif « FGAR » 
+ 
+     Tableau 17 FGAR : Répartition des garanties par projet en création et extension Avril 2004/ au 
+30/06/2021                        
+Montants en DA  
+Items 
+Création 
+Extension * 
+TOTAL  
+Nombre des garanties 
+accordées 
+1465 
+1742 
+3207 
+Coût total des projets  
+204 217 145 828 
+184 436 002 885 
+388 653 148 712 
+Montant des crédits sollicités 
+121 039 637 236 
+126 712 811 829 
+247 752 449 065 
+Taux moyen de financement 
+sollicité  
+59% 
+69% 
+64% 
+Montant des garanties 
+accordées 
+44 791 678 162 
+65 211 201 758 
+110 002 879 920 
+Taux moyen de garantie 
+accordée 
+37% 
+51% 
+44% 
+Montant moyen de la 
+garantie  
+30 574 524  
+37 434 674 
+34 300 867 
+Nombre d'emplois à créer  
+32 398 
+60 859 
+93 257 
+Investissement par emploi  
+6 303 387 
+3 030 546 
+4 167 549 
+Crédit par emploi   
+3 736 022 
+2 082 072 
+2 656 663 
+Garantie par emploi  
+1 382 545 
+1 071 513 
+1 179 567 
+Source : FGAR 
+ 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements 
+ 
+ 
+
+---PAGE---
+- 22 - 
+ 
+ 
+ 
+ 
+ Tableau 18  FGAR : Répartition des garanties en offres et certificats de garantie Avril 2004 au 30/06/2021                                        
+Items 
+Offres de garantie * 
+Certificats de garantie * 
+Nombre des garanties accordées 
+3 207 
+1 612 
+Coût total des projets  
+388 653 148 712 
+115 695 037 083 
+Montant des crédits sollicités 
+247 752 449 065 
+77 517 776 859 
+Taux moyen de financement 
+sollicité  
+64% 
+67% 
+Montant des garanties accordées 
+110 002 879 920 
+41 863 989 472 
+Taux moyen de garantie accordée 
+44% 
+54% 
+Montant moyen de la garantie  
+34 300 867 
+25 970 217 
+Nombre d'emplois à créer  
+93 257 
+41 934 
+Investissement par emploi   
+4 167 549 
+2 758 979 
+Crédit par emploi   
+2 656 663 
+1 848 566 
+Garantie par emploi  
+1 179 567 
+998 330 
+ 
+* Offres de garantie    :                        accord de principe d'octroi de la garantie financière.  
+ 
+* Certificats de garantie :                   offre de garantie, accomplie, en financement bancaire et 
+devient un engagement définitif du FGAR. 
+ 
+
+---PAGE---
+- 23 - 
+ 
+ 
+ 
+ 
+ 
+Tableau 19 FGAR : Répartition des garanties par projet en création et extension (du 01/01/2021 au 30/06/2021) 
+                                                                                                                                                                    Montants en DA    
+ 
+Items 
+Création 
+Extension * 
+TOTAL  
+Nombre des garanties 
+accordées 
+80 
+62 
+142 
+Coût total des projets  
+14 567 054 351 
+14 538 591 696 
+29 105 646 047 
+Montant des crédits 
+sollicités 
+9 415 859 027 
+9 829 415 472 
+19 245 274 499 
+Taux moyen de 
+financement sollicité  
+65% 
+68% 
+66% 
+Montant des garanties 
+accordées 
+3 600 536 113 
+4 793 949 543 
+8 394 485 656 
+Taux moyen de garantie 
+accordée 
+38% 
+49% 
+44% 
+Montant moyen de la 
+garantie  
+45 006 701 
+77 321 767 
+59 116 096 
+Nombre d'emplois à créer  
+2 079 
+1832 
+3 911 
+Investissement par 
+emploi   
+7 006 760 
+7 935 912 
+7 441 996 
+Crédit par emploi   
+4 529 033 
+5 365 401 
+4 920 807 
+Garantie par emploi  
+1 731 860 
+2 616 785 
+2 146 378 
+ 
+* Offres de garantie                           : 
+accord de principe d'octroi de la garantie financière.  
+* Certificats de garantie                    : 
+offre de garantie, accomplie, en financement bancaire et 
+devient un engagement définitif du FGAR. 
+ 
+ 
+ 
+
+---PAGE---
+- 24 - 
+ 
+ 
+ 
+Tableau 20 FGAR : Répartition des garanties en offres et certificats de garantie (du 01/01/2020 au 30/06/2021)   
+                                                                               
+Montants en DA  
+ 
+Items 
+Offres de garantie * 
+Certificats de garantie * 
+Nombre des garanties 
+accordées 
+142 
+51 
+Coût total des projets  
+29 105 646 047 
+5 303 426 611 
+Montant des crédits sollicités 
+19 245 274 499 
+4 347 141 914 
+Taux moyen de financement 
+sollicité  
+66% 
+82% 
+Montant des garanties 
+accordées 
+8 394 485 656 
+2 435 853 955 
+Taux moyen de garantie 
+accordée 
+44% 
+56% 
+Montant moyen de la garantie  
+59 116 096  
+47 761 842 
+Nombre d'emplois à créer  
+3 911 
+1125 
+Investissement par emploi   
+7 441 996  
+4 714 157 
+Crédit par emploi   
+4 920 807  
+3 864 126 
+Garantie par emploi  
+2 146 378  
+2 165 204 
+ 
+Source : FGAR 
+ 
+ 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements 
+ 
+
+---PAGE---
+- 25 - 
+ 
+ 
+ 
+4. Activités de la CGCI-PME (dispositif relevant du Ministère des finances)  
+ 
+1- 
+Etat des garanties CGCI-Pme     au     30-06-2021 : 
+ 
+                                                                                                                                                           U : DA 
+D E S I G N A T I O N 
+NBRE 
+MONTANT CREDIT 
+TOTAL DOSSIERS RECUS ET TRAITES 
+3 964 
+163 586 536 538 
+TOTAL DOSSIERS GARANTIS  
+3 709    
+150 949 501 977 
+dont  
+GARANTIES EN COURS (Portefeuille) 
+1 940 
+88 682 993 220 
+ 
+ GARANTIES ANNULEES 
+417 
+18 808 125 828 
+GARANTIES CLÖTUREES 
+1 202 
+38 180 414 876 
+DOSSIERS SINISTRES 
+150 
+5 277 968 054 
+GARANTIES OCTROYEES au 30-06-2021 
+249 
+8 218 831 228 
+ 
+L’encours du portefeuille de garanties au 30-06-2021 représente un nombre total de 1 940 
+garanties accordées et notifiées aux Banques et Etablissements Financiers de la place, 
+partenaires de la Cgci-pme.   
+Globalement, la Cgci-pme a reçu et traité, depuis le démarrage effectif de son activité,       
+3 964 demandes de garanties au 30-06-2021 contre 3 742 demandes au 31-12-2020 (Cf. Tableau 
+ci-dessus), dont la répartition par secteur d’activité, par région et par tranche de crédit est 
+exposée dans les points 2.3 et 4 ci-dessous. 
+Il est à rappeler que durant l’exercice 2020, l’activité de garantie Pme/Tpe de la Cgci-pme 
+a diminué sensiblement en raison de la pandémie de la COVID-19 qui a impacté 
+significativement les différents secteurs de l’économie nationale. Cette pandémie a 
+engendré une baisse assez conséquente du financement de l’investissement Pme/Tpe par 
+les banques et les Etablissements Financiers de la place. 
+Cet effet négatif est ressenti encore au niveau des garanties délivrées durant le premier 
+semestre de l’exercice 2021 si on devait le comparer à celui de 2019 (année avant COVID-
+19). Néanmoins, le niveau d’activité a toutefois connu un rebond par rapport au premier 
+semestre de l’exercice 2020 (augmentation de (+) 54%), soit 249 garanties octroyées contre 
+162 garanties le premier semestre de 2020, mais il reste bien en deçà des objectifs fixés 
+pour l’année 2021. 
+
+---PAGE---
+- 26 - 
+ 
+Ceci étant, Le volume des garanties octroyées durant le premier semestre de l’exercice 
+2021 (249 garanties délivrées) est constitué essentiellement de garanties déléguées Tpe/Pe 
+octroyées par les Etablissements de Crédit, dans le cadre du dispositif de la garantie 
+déléguée Tpe/Pe (159 garanties délivrées). Le reste (90) représente les garanties Pme 
+octroyées aux différents partenaires de la Cgci-pme. 
+La nouvelle stratégie de la Cgci-pme axée sur le nouveau produit de la garantie déléguée 
+Tpe-Pe, s’inscrit dans le cadre de la politique des Pouvoirs Publics et répond, en 
+conséquence, à l’impératif économique d’engager en relation avec ses partenaires, 
+Banques et Etablissements Financiers, un processus efficient d’inclusion financière et de 
+bancarisation de l’important gisement Tpe/Pe qui constitue la véritable cheville ouvrière 
+du développement local, à travers les 58 wilayas du pays.  
+2- 
+Répartition des garanties au 30-06-2021 par secteur d’activité :   
+                                                                                                                
+Secteur 
+Nbr de dossiers 
+% 
+INDUSTRIE 
+1008 
+52% 
+SERVICES 
+382 
+20% 
+BTPH 
+300 
+15% 
+SANTE 
+126 
+7% 
+TRANSPORT 
+124 
+6% 
+TOTAL 
+1940 
+100% 
+ 
+On notera encore cette période que la concentration sur trois filières principales n’a 
+pas varié : Industrie, services et BTPH, qui représentent 87% des dossiers garantis 
+(52%+20%+15%). Le secteur de la santé et du transport se positionnent aux 4eme et 5eme 
+rangs avec respectivement 126 et 124 dossiers garantis et représentant un taux de 13 % 
+du portefeuille (Cf. tableau ci-dessus) :                                  
+Les filières énumérées dans le tableau ci-dessus, constituent l’essentiel du portefeuille 
+« PME » des banques partenaires.                                                                                    
+Il est à préciser, cependant que les pme du secteur de l’industrie qui représente 52% 
+du portefeuille global et dont les crédits d’investissements sont adossés à la garantie 
+de la Cgci-pme, évoluent dans plusieurs branches d’activité, telles que :   
+- 
+Industrie extractive ; 
+- 
+Industrie mécanique ; 
+- 
+Industrie alimentaire ; 
+- 
+Métallurgie ; 
+- 
+Fabrication de matériaux de construction ; 
+- 
+Transformation de plastique ; 
+
+---PAGE---
+- 27 - 
+ 
+- 
+Industrie du textile ; 
+- 
+Industrie du papier et du carton ; 
+- 
+Industrie chimique ; 
+- 
+Industrie du cuir et de la chaussure ; 
+- 
+Fabrication de meubles 
+- 
+Fabrication de machines et équipements ; 
+- 
+Industrie pharmaceutique et parapharmaceutique ; 
+- 
+Industrie cosmétique. 
+- 
+Industrie pharmaceutique et parapharmaceutique  
+ 
+ 
+3- Répartition des garanties au 30-06-2021 par région :   
+ 
+                                                                                                    
+TOTAL 
+BANQUES 
+REGION 
+NBRE DOS. 
+% 
+EST 
+775 
+40% 
+CENTRE 
+670 
+35% 
+OUEST 
+355 
+18% 
+SUD 
+140 
+7% 
+TOTAL 
+1940 
+100% 
+ 
+La même répartition par zones géographiques est observée au 30-06-2021. Elle met en 
+évidence une disparité en matière d’investissement au niveau des quatre grandes régions 
+du Pays.  
+La région Est et Centre occupent toujours la pole position avec respectivement 40% et 
+35%, alors que la région Ouest et Sud présentent respectivement des taux de 18% et 7%.  
+Une stabilisation de l’activité autour de 07% est observée au niveau de la région du SUD 
+comparativement aux exercices précédents.  
+En tout état de cause, l’évolution de l’activité doit dépendre beaucoup plus du 
+dynamisme commercial des banques partenaires au niveau de cette région à forte 
+potentialité économique, mais aussi des incitations à l’investissement des Pouvoirs 
+Publics à l’endroit des porteurs de projets (Cf. tableau ci-dessus).  L’introduction d’un 
+nouveau produit (garantie déléguée Tpe/Pe) devrait améliorer la performance des 
+banques et Etablissements Financiers au niveau local. 
+ 
+ 
+
+---PAGE---
+- 28 - 
+ 
+ 
+III. Dispositifs Sociaux d’appui à la PME 
+  
+1. Dispositif « ANADE » (*) 
+ 
+Tableau 21 ANSEJ : Projets financés par secteur d’activité (Cumul au 30/06/2021) 
+ 
+Secteur d'Activité 
+Projets 
+financés 
+% 
+Nombre 
+d'emplois 
+correspondants 
+Nombre 
+moyen 
+d'emplois 
+Montant 
+d'investissement 
+(Milliard de D 
+ 
+A) 
+Coût moyen 
+de l'emploi 
+(DA) 
+Coût moyen 
+d'une micro-
+entreprise 
+(DA) 
+AGRICULTURE 
+59365 
+15% 
+140394 
+2 
+222,63 
+1585771 
+370235 
+ARTISANAT 
+43419 
+11% 
+127113 
+3 
+111,65 
+878361 
+2571482 
+BTPH 
+35692 
+9% 
+103224 
+3 
+138,90 
+1345583 
+3891530 
+HYDRAULIQUE 
+566 
+0% 
+2070 
+4 
+3,37 
+1626477 
+5948422 
+INDUSTRIE 
+28855 
+7% 
+82602 
+3 
+139,69 
+16911062 
+4840933 
+MAINTENANCE 
+11077 
+3% 
+25411 
+2 
+31,20 
+1227967 
+2816996 
+PECHE 
+1133 
+0,29% 
+5556 
+5 
+7,52 
+1352974 
+6634708 
+PROFESSION 
+12715 
+3% 
+28460 
+2 
+35,56 
+1249488 
+2796731 
+LIBERALE 
+SERVICE 
+109564 
+28% 
+255152 
+2 
+360,25 
+1411892 
+3288006 
+TRANSPORT 
+13 390 
+3,50% 
+24138 
+2 
+33,80 
+1400265 
+2524242 
+FRIGORIFIQUE 
+TRANSPORT 
+56775 
+14,50% 
+96675 
+2 
+147,15 
+1522154 
+2591885 
+DE 
+MARCHANDISE 
+TRANSPORT DE 
+VOYAGEURS 
+19017 
+5% 
+43726 
+2 
+46,89 
+1072454 
+2465906 
+Total 
+391568 
+100% 
+934521 
+2 
+1278,60 
+1368197 
+3265356 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(*) En vertu du décret exécutif n° 20-329 du 22 novembre 2020, la dénomination de l’ANSEJ est devenue « agence nationale d'appui et de 
+développement de l'entreprenariat » par abréviation « ANADE » 
+ 
+ 
+ 
+
+---PAGE---
+- 29 - 
+ 
+ 
+ 
+ 
+Tableau 22  ANSEJ : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2021)  
+            
+Secteur d'Activité 
+Projets  
+financés 
+Hommes 
+Femmes 
+Taux de  
+Féminité 
+ (%) 
+AGRICULTURE 
+59365 
+56613 
+2752 
+5 
+ARTISANAT 
+43419 
+36037 
+7382 
+17 
+BTPH 
+35692 
+34845 
+847 
+2 
+HYDRAULIQUE 
+566 
+539 
+27 
+5 
+INDUSTRIE 
+28855 
+24553 
+4302 
+15 
+MAINTENANCE 
+11077 
+10895 
+182 
+2 
+PECHE 
+1133 
+1117 
+16 
+1 
+PROFESSION LIBERALE 
+12715 
+6805 
+5 910 
+46 
+SERVICE 
+109564 
+91268 
+18296 
+17 
+TRANSPORT FRIGORIFIQUE 
+ 
+13 390 
+13001 
+389 
+3 
+TRANSPORT DE MARCHANDISES 
+ 
+56775 
+56064 
+711 
+1 
+TRANSPORT DE VOYAGEURS 
+ 
+19017 
+18536 
+481 
+3 
+Total 
+391568 
+350273 
+41295 
+11 
+Source : ANSEJ 
+ 
+Selon le tableau ci-dessus, le secteur des services, est le secteur le plus attractif 
+pour les porteurs de projets accompagnés par l’ANADE depuis le lancement de ce 
+dispositif  (avec 109564 projets) suivi du secteur de l’agriculture avec 59365 
+projets, puis le secteur de transport de marchandises avec 56775projets financés. 
+Le dispositif ANADE a permis, d’accompagner 391 568 entrepreneurs hommes 
+contre 41 295 entrepreneures femmes soit un taux de féminité global de 11%. 
+ 
+
+---PAGE---
+- 30 - 
+ 
+ 
+2. Dispositif « CNAC »  
+ 
+Tableau 23 CNAC : Projets financés par secteur d’activité (cumul au 30/06/2021)  
+ 
+Secteurs 
+d'activités 
+Cumul au 30/06/2021 
+Nombre de 
+projets financés 
+Part de la 
+femme % 
+Impact emploi 
+Total 
+financement 
+(Million DA) 
+AGRICULTURE 
+26 136 
+11,00% 
+62 150 
+109 599,01 
+ARTISANAT 
+15 898 
+22,50% 
+41 291 
+52 710,49 
+BTP 
+8 907 
+2,60% 
+28 393 
+36 882,67 
+HYDRAULIQUE 
+363 
+5,20% 
+1 234 
+2 558,65 
+INDUSTRIE 
+12 339 
+22,00% 
+35 819 
+58 245,08 
+MAINTENANCE 
+984 
+2,10% 
+2 385 
+3 125,03 
+PECHE 
+521 
+0,40% 
+1 876 
+3 642,95 
+PROF LIBERALE 
+1 602 
+48,30% 
+3 471 
+7 057,81 
+SERVICES 
+31 985 
+17,30% 
+68 063 
+115 915,82 
+TRANSPORT 
+MARCHANDISE 
+46 123 
+1,50% 
+70 053 
+120 260,26 
+TRANSPORT 
+VOYAGEURS 
+12 275 
+1,20% 
+18 625 
+29 279,92 
+Total 
+157 133 
+10,60% 
+333 360 
+539 277,66 
+ 
+ 
+Par secteur d’activité, les activités du transport de marchandise, les services, 
+l’agriculture, l’artisanat ayant bénéficié de la majorité des projets financés avec 
+près de 85% du total.   
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 31 - 
+ 
+3. Dispositif « ANGEM » 
+ 
+        Tableau 24 ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2021) 
+Type de financement 
+Nombre 
+% 
+Emplois créés 
+Financement Achat de Matières Premières  
+854 822 
+90 ,26% 
+1 245 311 
+Financement triangulaire « ANGEM-Banque-promoteur » 
+92 263 
+9,74% 
+141 337 
+Total 947 085 
+100,00% 
+1 386 648 
+  Source : ANGEM 
+ 
+Tableau 25 ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2021) 
+Secteur d’activités 
+Nombre de prêts octroyés 
+Montants accordés en DA 
+Part (%) 
+Agriculture 
+128 077 
+8 837 667 045,29 
+13,52% 
+TPI 
+376 190 
+19 145 643 047,28 
+39,72% 
+BTP 
+82 935 
+7 310 990 091,01 
+8,76% 
+Services 
+187 397 
+17 428 174 895,01 
+19,79% 
+Artisanat 
+166 477 
+9 833 718 446,51 
+17,58% 
+Commerce 
+5 063 
+1 271 262 898,73 
+0,53% 
+Pêche 
+946 
+130 346 327,32 
+0,10% 
+Total 
+947 085 
+63 957 802 751,15 
+100,00% 
+ 
+Source : ANGEM 
+ 
+Par secteur d’activité, les TPI (très petites industries), les services, l’artisanat et 
+l’agriculture sont les secteurs ayant bénéficié de la majorité des prêts octroyés avec 
+près de 91% du total. 
+ 
+Crédits octroyés par genre (Cumul au 30/06/2021) 
+Genre 
+Nombre 
+Part(%) 
+Femme 
+602 205 
+63,59% 
+Homme 
+344 880 
+36,41% 
+ 
+  
+    Source : ANGEM 
+
+---PAGE---
+- 32 - 
+ 
+4. Dispositif « ANIREF » 
+Allocations du foncier au niveau des nouvelles zones industrielles/ Point de situation arrêté au 30/06/2021 
+N
+°   
+Régi
+on 
+Wilaya  
+Dénomina
+tion de la 
+zone 
+industriell
+e 
+Superficie 
+de la zone 
+(m²) 
+Superficie 
+concessible 
+de la zone 
+(m²) 
+Superficie 
+globale 
+allouée 
+(m²) 
+Nombre 
+de lots 
+alloués 
+Investisseurs implantés 
+Arrêtés de concession 
+établis 
+Actes de concession 
+établis 
+Permis 
+de 
+construi
+re 
+délivrés 
+Projets 
+lancés 
+Projets 
+entrés 
+en 
+activité 
+Nombre 
+Superficie 
+(m²) 
+Nombre 
+Superficie 
+(m²) 
+Nombre 
+Superficie 
+(m²) 
+1 
+Nor
+d 
+Annaba 
+Ain Berda 
+1 018 123 
+791 083 
+641 791 
+110 
+82 
+596 872 
+87 
+641 791 
+82 
+603 871 
+72 
+59 
+- 
+2 
+El-Tarf 
+Metroha 
+700 000 
+487 471 
+412 423 
+92 
+80 
+389 377 
+79 
+387 540 
+68 
+329 380 
+63 
+30 
+- 
+3 
+Bouira 
+Oued El 
+Berdi 
+1 896 031 
+1 319 998 
+1 082 
+748 
+177 
+36 
+828 136 
+61 
+1 082 
+748 
+36 
+828 136 
+33 
+29 
+0 
+4 
+Relizan
+e 
+Sidi 
+Khettab 
+5 000 000 
+4 055 945 
+2 927 786 
+209 
+55 
+1 858 332 
+115 
+2 903 362 
+87 
+1 890 531 
+65 
+44 
+4 
+5 
+Ain 
+Temouc
+hent 
+Tamazour
+a 
+2 050 028 
+1 589 911 
+1 401 359 
+230 
+84 
+1 222 437 
+102 
+1 370 278 
+55 
+968 352 
+91 
+90 
+4 
+6 
+Mostag
+anem 
+Bordjia 
+2 000 099 
+1 434 456 
+1 162 242 
+368 
+24 
+555 048 
+54 
+1 162 242 
+35 
+813 824 
+23 
+12 
+- 
+7 
+Mascar
+a 
+Oggaz 
+981 596 
+667 701 
+487 347 
+138 
+41 
+388 378 
+52 
+487 347 
+24 
+232 381 
+46 
+34 
+- 
+8 
+Tlemce
+n  
+Ouled 
+Ben 
+Damou  
+1 037 800 
+706 916 
+250 791 
+30 
+4 
+35 698 
+26 
+253 535 
+17 
+166 712 
+5 
+4 
+- 
+9 
+Sidi Bel 
+Abbes  
+Sidi Bel 
+Abbes  
+547 590 
+410 841 
+                   
+373 821    
+                
+43    
+           
+6    
+             
+253 424    
+       
+21    
+           
+358 616    
+           
+13    
+             
+296 850    
+2 
+6 
+1 
+1
+0 
+Ras El Ma  
+1 000 000 
+773 710 
+158 293 
+33 
+12 
+91 546 
+16 
+158 293 
+7 
+77 584 
+- 
+- 
+ -  
+1
+1 
+Ain 
+Defla 
+Boumedfa
+a 
+430 958 
+- 
+163 116 
+38 
+1 
+8 368 
+32 
+163 116 
+- 
+- 
+- 
+- 
+ -  
+1
+2 
+Chlef 
+Oued Sly 
+1 100 000 
+788 550 
+621 004 
+110 
+- 
+- 
+43 
+503 599 
+33 
+297 642 
+- 
+- 
+ -  
+1
+3 
+Médéa 
+Ksar El 
+Boukhari 
+2 000 000 
+1 344 934 
+888 814 
+85 
+39 
+722 867 
+52 
+888 814 
+40 
+736 090 
+- 
+5 
+ -  
+1
+4 
+Boumer
+des 
+Larbaatac
+he 
+1 369 100 
+1 104 618 
+971 161 
+227 
+42 
+354 620 
+152 
+971 161 
+129 
+875 321 
+46 
+41 
+1 
+1
+5 
+Jijel 
+Bellara 
+5 230 000 
+4 095 327 
+3 163 960 
+81 
+14 
+3 163 960 
+14 
+3 163 960 
+3 
+2 820 000 
+3 
+2 
+ -  
+1
+6 
+Constan
+tine 
+Sidi 
+Roman 
+1 400 000 
+967 977 
+705 340 
+197 
+65 
+289 794 
+155 
+705 340 
+       
+95    
+           
+198 739    
+- 
+- 
+ -  
+1
+7 
+Ain Abid 
+5 430 928 
+4 117 000 
+/ 
+/ 
+ -  
+ -  
+  
+  
+- 
+- 
+- 
+- 
+ -  
+1
+8 
+Mila 
+Chelghou
+m Laid 
+2 473 820 
+1 808 629 
+880 412 
+271 
+64 
+880 412 
+64 
+880 412 
+- 
+- 
+53 
+7 
+ -  
+Sous total nord  
+35 666 073 
+26 465 
+067 
+16 292 
+408 
+2 439 
+649 
+11 639 
+269 
+1 125 
+16 082 
+154 
+724 
+11 135 
+413 
+502 
+363 
+10 
+1
+9 
+Ha
+ut 
+Pla
+tea
+ux 
+Tébess
+a 
+ El-
+Aouinet 
+1 544 149 
+1 000 004 
+76 376 
+19 
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+2
+0 
+Djelfa 
+Ain 
+Oussera 
+4 000 000 
+2 413 040 
+1 506 985 
+145 
+8 
+362 514 
+           
+67    
+             
+1 381 140    
+59 
+923 555 
+2 
+4 
+1 
+2
+1 
+Batna 
+Ain 
+Yagout 
+1 298 911 
+960 693 
+805 583 
+111 
+27 
+652 774 
+17 
+584 624 
+1 
+200 000 
+5 
+11 
+ -  
+2
+2 
+Bordj 
+Bou 
+Arreridj 
+Ras El 
+Oued 
+1 340 750 
+972 057 
+645 769 
+107 
+66 
+635 598 
+43 
+451 983 
+2 
+43 698 
+ -  
+36 
+2 
+2
+3 
+Mechta 
+Fatima 
+3 820 000 
+2 857 474 
+2 314 981 
+281 
+212 
+2 314 981 
+177 
+1 950 984 
+25 
+498 197 
+10 
+149 
+5 
+2
+4 
+M'sila 
+Draa El 
+Hadja 
+777 501 
+578 915 
+562 835 
+48 
+2 
+169 996 
+29 
+353 515 
+2 
+169 996 
+0 
+2 
+0 
+2
+5 
+Setif 
+Ouled 
+Saber 
+7 000 485 
+5 711 241 
+3 175 
+470 
+201 
+127 
+2 150 
+989 
+174 
+3 068 
+758 
+153 
+2 744 190 
+52 
+14 
+1 
+2
+6 
+Tiaret 
+Zaaroura 
+3 275 039 
+2 130 298 
+906 705 
+153 
+24 
+858 925 
+31 
+906 705 
+34 
+895 866 
+23 
+22 
+0 
+2
+7 
+Ain 
+Bouchekif 
+3 187 295 
+1 872 903 
+87 694 
+9 
+1 
+59 495 
+2 
+87 717 
+2 
+87 694 
+2 
+1 
+ -  
+2
+8 
+El 
+Bayadh  
+Rogassa  
+1 500 000 
+939 717 
+  
+  
+ -  
+ -  
+  
+  
+ -  
+ -  
+ -  
+ -  
+ -  
+2
+9 
+Saida  
+kolea  
+1 000 000 
+694 752 
+351 998 
+81 
+6 
+21 639 
+67 
+325 632 
+12 
+42 229 
+35 
+6 
+ -  
+3
+0 
+Naama 
+Horchaia  
+1 500 000 
+1 101 577 
+8 679 
+1 
+1 
+8 679 
+1 
+8 679 
+0 
+0 
+ -  
+ -  
+ -  
+Sous total HP  
+30 244 130 
+21 232 
+671 
+10 443 
+075 
+1 156 
+474 
+7 235 590 
+608 
+9 119 737 
+290 
+5 605 425 
+129 
+245 
+9 
+3
+1 
+Su
+d 
+Bechar 
+Bechar 
+1 870 000 
+1 039 916 
+314 458 
+25 
+13 
+254 333 
+19 
+304 442 
+11 
+141 552 
+7 
+5 
+2 
+3
+2 
+Adrar 
+Timmi 
+2 148 796 
+1 642 664 
+1 527 664 
+76 
+52 
+1 342 623 
+65 
+1 527 664 
+64 
+1 482 658 
+35 
+18 
+0 
+3
+3 
+Ouargla 
+Hassi Ben 
+Abdellah 
+5 000 000 
+3 595 136 
+626 898 
+26 
+ -  
+ -  
+9 
+239 227 
+ -  
+ -  
+ -  
+- 
+ -  
+3
+4 
+Biskra 
+Ouméche 
+2 000 000 
+1 206 315 
+415 465 
+77 
+ -  
+ -  
+50 
+415 465 
+ -  
+ -  
+ -  
+- 
+ -  
+3
+5 
+Eloued 
+Guemmar 
+2 000 000 
+1 455 372 
+47 965 
+2 
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+  
+ -  
+ -  
+3
+6 
+Ghardai
+a 
+Oued 
+Nechou 
+1 000 000 
+648 933 
+288 216 
+68 
+ -  
+ -  
+11 
+255 434 
+ -  
+ -  
+ -  
+ -  
+ -  
+Sous total sud  
+14 018 796 
+9 588 336 
+3 220 666 
+274 
+65 
+1 596 956 
+154 
+2 742 232 
+75 
+1 624 210 
+42 
+23 
+2 
+Total général  
+  79 
+928 
+999    
+ 57 286 
+074    
+29 956 
+149    
+ 3 869   
+  1 188    
+ 20 471 
+815    
+   1 887    
+ 27 944 
+123    
+   1 089    
+  18 365 
+047    
+     673    
+      631    
+   21    
+ 
+Source : ANIREF 
+
+---PAGE---
+- 33 - 
+ 
+VI- Commerce extérieur 
+ 
+1. Balance commerciale  
+ 
+Par rapport au 1er semestre 2020, la balance du commerce extérieur Algérien en 1er 
+semestre 2021 a enregistré :  
+ Un volume des importations de 18,78 milliards de dollars US soit une hausse 
+de 9.68%  . 
+ Un volume global des exportations de 16,36 milliards de dollars US, soit une 
+augmentation de 37,10%   
+ 
+ 
+ 
+Cela s’est traduit par un déficit de la balance commerciale au premier semestre 2021 de 
+l’ordre de  2,42 milliards de dollars US. 
+       D’où un taux de couverture des importations par les exportations de 87,1% pour 
+le premier semestre 2021 contre un taux de 69,68% pour la même période 2019. 
+ 
+Tableau 26 Evolution de la Balance commerciale de l’Algérie (S1/2020 –S1/2021) (en Millions de Dollars US) 
+Valeurs en millions
+Dinars
+Dollars
+Dinars
+Dollars
+Dinars
+Dollars
+Importations
+2 130 506,18
+17 121,75
+2 503 590,03
+18 779,75
+17,51
+9,68
+Exportations
+1 484 436,70
+11 931,07
+2 180 500,19
+16 358,05
+46,89
+37,10
+Balance Commerciale
+-646 069,48
+-5 190,68
+-323 089,84
+-2 421,70
+-49,99
+-53,35
+Taux de Couverture (%)
+69,68
+87,10
+1er  SEM 2020
+1er  SEM 2021*
+%
+ 
+      Source : Direction Générale des douanes/DEP 
+      *Résultats provisoires 
+ 
+     
+           
+
+---PAGE---
+- 34 - 
+ 
+ 
+2. Importations  
+  La répartition des importations par groupes de produits, comme l’indique le 
+tableau ci-après fait ressortir que les groupes « biens d’équipement industriels » et 
+« alimentation » représente plus de la moitié de la facture des importations globale 
+durant le premier semestre 2021.  
+Tableau 27 : Evolution des importations par groupes de produits (S1/2020 – S1/2021) 
+Valeurs en millions Usd
+Valeurs
+Struc %
+Valeurs
+Struc %
+Allimentation
+4247,22
+24,81
+4794,53
+25,53
+12,89
+Energie et lubrifiants
+623,43
+3,64
+300,76
+1,60
+-51,76
+produits bruts
+1 174,82 
+6,86
+1 643,27 
+8,75
+39,87
+Demi -produits
+3 621,75 
+21,15
+3 729,23 
+19,86
+2,97
+Biens d'équipements agricoles
+127,93 
+0,75
+150,12 
+0,80
+17,35
+Biens d'équipements industriels
+4 490,23 
+26,23
+5 194,83 
+27,66
+15,69
+Biens de consommation non-alimentaies
+2 836,38 
+16,57
+2 966,99 
+15,80
+4,60
+Total
+17 121,76 
+100,00
+18 779,73 
+100,00
+9,68
+1er SEM 2020
+Evolution 
+(%)
+Groupes d'utilisateurs
+1er SEM 2021
+ 
+               Source : Direction Générale des douanes/DEP 
+ 
+ L'examen par groupes de produits fait ressortir durant le 1er semestre 2021, les résultats 
+suivants : 
+ Les « biens d'équipements industriels » qui représentent plus d’un quart (27,66%) 
+une part des importations, sont constitués essentiellement, de véhicules de transport 
+de personnes et de marchandises, des turboréacteurs et turbopropulseurs et des 
+appareils électriques pour la téléphonie ;  
+ Le groupe des « biens alimentaires » occupe le deuxième rang » dans la structure 
+des importations réalisées durant le 1er semestre 2020 avec une part de (25,53%) du 
+volume global 
+ Pour les « demis produits » nous avons une part de 19,86% des importations ; 
+ Le groupe de « biens de consommation non alimentaires » vient en quatrième 
+position dans la structure de nos importations avec la quote part de 15,80% ; 
+ 
+
+---PAGE---
+- 35 - 
+ 
+3. Exportations  
+ 
+Tableau 28 Evolution des exportations par groupes de produits (S1/2020- S1/2021)                                                                    
+U : Millions USD  
+Valeurs en millions Usd 
+Groupes d'utilisateurs 
+1er SEM 2020 
+1er SEM 2021 
+Evolution 
+(%) 
+Valeurs 
+Struc % 
+Valeurs 
+Struc % 
+Alimentation 
+214,26 
+1,80 
+286,02 
+1,75 
+33,49 
+Energie et lubrifiants 
+10895,49 
+91,32 
+14332,23 
+87,62 
+31,54 
+produits bruts 
+31,31 
+0,26 
+77,63 
+0,47 
+147,94 
+Demi -produits 
+734,13 
+6,15 
+1604,69 
+9,81 
+118,58 
+Biens d'équipements 
+agricoles 
+0,6 
+0,01 
+0,44 
+0,00 
+-26,67 
+Biens d'équipements 
+industriels 
+41,84 
+0,35 
+25,2 
+0,15 
+-39,77 
+Biens de consommation 
+non-alimentaires 
+13,46 
+0,11 
+31,83 
+0,19 
+136,48 
+Total 
+11931,09 
+100,00 
+16358,04 
+100,00 
+37,10 
+Source : Direction Générale des douanes/DEP 
+ 
+ 
+Durant le premier semestre de l’année en cours on remarque : 
+ 
+ 
+Une progression remarquable des exportations des demis produits de 
+870.56 millions USD, soit 118.58%. 
+ 
+ 
+Une nette amélioration des exportations des énergies et lubrifiants 
+hydrocarbures avec un montant de près de 3.44 USD. 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+
+---PAGE---
+ 
+V-ANNEXES 
+ 
+Tableau 29 : PME privées par secteurs d'activité 
+Sectateurs d'activité 
+Année 
+2020 
+Mouvements enregistrés durant l'année S1/2021 
+S1/2021 
+Créations I 
+Radiation II 
+Réactivation III 
+Ecart 
+(I+III)-II 
+I- Agriculture et pêche 
+Agriculture et pêche 
+7607 
+192 
+42 
+70 
+220 
+7827 
+ST1 
+7607 
+192 
+42 
+70 
+220 
+7827 
+II- Hydrocarbures, Energie, Mines et Services liés 
+Eau et énergie 
+192 
+8 
+2 
+2 
+8 
+200 
+Hydrocarbures 
+1073 
+8 
+3 
+2 
+7 
+1080 
+Services et travaux 
+pétroliers 
+462 
+26 
+2 
+3 
+27 
+489 
+Mines et carrières 
+1386 
+29 
+4 
+17 
+42 
+1428 
+ST2 
+3113 
+71 
+11 
+24 
+84 
+3197 
+III- BTPH 
+Bâtiment et travaux 
+publics 
+193950 
+3036 
+1052 
+1991 
+3975 
+197925 
+ST3 
+193950 
+3036 
+1052 
+1991 
+3975 
+197925 
+IV- Industrie manufacturières 
+ISMME 
+16277 
+371 
+84 
+136 
+423 
+16700 
+Matériaux de 
+construction 
+13005 
+177 
+78 
+106 
+205 
+13210 
+Chimie, plastique 
+5509 
+275 
+31 
+53 
+297 
+5806 
+Industrie 
+agroalimentaire 
+32884 
+866 
+236 
+394 
+1024 
+33908 
+industries du textile 
+8560 
+144 
+85 
+89 
+148 
+8708 
+Industrie du cuir 
+2262 
+20 
+13 
+27 
+34 
+2296 
+Industrie du bois et 
+papier 
+21792 
+357 
+111 
+173 
+419 
+22211 
+Industrie divers 
+5760 
+83 
+39 
+46 
+90 
+5850 
+ST4 
+106049 
+2293 
+677 
+1024 
+2640 
+108689 
+V- Services 
+Transport et 
+communication 
+62049 
+946 
+373 
+705 
+1278 
+63327 
+Commerce 
+146802 
+5507 
+1110 
+1667 
+6064 
+152866 
+Hôtellerie et 
+restauration 
+40168 
+809 
+338 
+698 
+1169 
+41337 
+Services fournis aux 
+entreprises 
+60386 
+1486 
+457 
+805 
+1834 
+62220 
+Services fournis aux 
+ménages 
+59467 
+2134 
+588 
+1064 
+2610 
+62077 
+Services pour 
+collectivités 
+9792 
+246 
+44 
+112 
+314 
+10106 
+ST5 
+378664 
+11128 
+2910 
+5051 
+13269 
+391933 
+Total Général 
+689 383 
+16 720 
+4 692 
+8 160 
+20 188 
+709 571 
+Source : CNAS 
+ 
+
+---PAGE---
+- 37 - 
+ 
+Tableau 30 : Concentration des PME (personnes morales) par wilaya  
+Taux de concentration = (Nombre de PME/Population résidente) *1000 
+Wilaya 
+PME 2020 
+Mouvement S1/ 2021 
+S1/ 2021 
+RGPH2008 
+Densité 
+Création 
+radiation 
+réactivation 
+croissance 
+Nord 
+Alger 
+76040 
+1745 
+385 
+1064 
+2424 
+78464 
+2988145 
+26 
+Tipaza 
+32600 
+1121 
+423 
+280 
+978 
+33578 
+591010 
+57 
+Boumerdès 
+26921 
+871 
+140 
+189 
+920 
+27841 
+802083 
+35 
+Blida 
+24471 
+690 
+176 
+253 
+767 
+25238 
+1002937 
+25 
+Tizi Ouzou 
+41120 
+928 
+782 
+732 
+878 
+41998 
+1127607 
+37 
+Bouira 
+16719 
+421 
+64 
+119 
+476 
+17195 
+695583 
+25 
+Médéa 
+11624 
+291 
+21 
+81 
+351 
+11975 
+819932 
+15 
+Ain Defla 
+11126 
+190 
+25 
+119 
+284 
+11410 
+766013 
+15 
+Bejaia 
+35205 
+855 
+27 
+188 
+1016 
+36221 
+912577 
+40 
+Chlef 
+14020 
+364 
+101 
+258 
+521 
+14541 
+1002088 
+15 
+Oran 
+31655 
+941 
+87 
+235 
+1089 
+32744 
+1454078 
+23 
+Tlemcen 
+16150 
+391 
+512 
+508 
+387 
+16537 
+604744 
+27 
+Sidi Bel Abbes 
+10654 
+247 
+108 
+172 
+311 
+10965 
+949135 
+12 
+Aïn Temouchent 
+7233 
+162 
+9 
+98 
+251 
+7484 
+726180 
+10 
+Mostaganem 
+11225 
+266 
+36 
+71 
+301 
+11526 
+737118 
+16 
+Mascara 
+11059 
+244 
+32 
+24 
+236 
+11295 
+784073 
+14 
+Relizane 
+9169 
+42 
+20 
+22 
+44 
+9213 
+371239 
+25 
+Constantine 
+21795 
+410 
+338 
+219 
+291 
+22086 
+938475 
+24 
+Mila 
+12516 
+291 
+59 
+392 
+624 
+13140 
+766886 
+17 
+Jijel 
+13252 
+257 
+27 
+260 
+490 
+13742 
+636948 
+22 
+Annaba 
+16356 
+259 
+78 
+447 
+628 
+16984 
+609499 
+28 
+Skikda 
+14287 
+285 
+140 
+198 
+343 
+14630 
+898680 
+16 
+El Tarf 
+5260 
+114 
+12 
+57 
+159 
+5419 
+408414 
+13 
+Guelma 
+9327 
+119 
+59 
+78 
+138 
+9465 
+482430 
+20 
+Total du Nord 
+479784 
+11504 
+3661 
+6064 
+13907 
+493691 
+21075874 
+23 
+Hauts-Plateaux 
+M’sila 
+15882 
+446 
+81 
+143 
+508 
+16390 
+990591 
+17 
+Djelfa 
+10262 
+181 
+6 
+136 
+311 
+10573 
+1092184 
+10 
+Laghouat 
+6767 
+101 
+43 
+129 
+187 
+6954 
+455602 
+15 
+Tiaret 
+9251 
+181 
+39 
+91 
+233 
+9484 
+846823 
+11 
+Saida 
+4156 
+117 
+8 
+3 
+112 
+4268 
+330641 
+13 
+Tissemsilt 
+3542 
+107 
+30 
+46 
+123 
+3665 
+294476 
+12 
+Naama 
+2166 
+82 
+20 
+66 
+128 
+2294 
+192891 
+12 
+El Bayadh 
+3479 
+52 
+8 
+15 
+59 
+3538 
+228624 
+15 
+Bordj Bou Arréridj 
+15737 
+465 
+30 
+317 
+752 
+16489 
+628475 
+26 
+Sétif 
+31701 
+847 
+171 
+142 
+818 
+32519 
+1489979 
+22 
+Batna 
+18134 
+445 
+78 
+140 
+507 
+18641 
+1119791 
+17 
+Oum El Bouaghi 
+7757 
+240 
+44 
+149 
+345 
+8102 
+621612 
+13 
+Khenchela 
+7334 
+166 
+37 
+51 
+180 
+7514 
+386683 
+19 
+Tébessa 
+8967 
+176 
+33 
+74 
+217 
+9184 
+648703 
+14 
+Souk Ahras 
+6473 
+140 
+56 
+35 
+119 
+6592 
+438127 
+15 
+Total des Hauts-Plateaux 
+151608 
+3746 
+684 
+1537 
+4599 
+156207 
+9765202 
+16 
+Sud 
+Illizi 
+2118 
+33 
+6 
+13 
+40 
+2158 
+49149 
+44 
+Tamanrasset 
+3119 
+62 
+41 
+31 
+52 
+3171 
+176637 
+18 
+Tindouf 
+2156 
+40 
+2 
+5 
+43 
+2199 
+52333 
+42 
+Adrar 
+4357 
+165 
+88 
+97 
+174 
+4531 
+399714 
+11 
+Biskra 
+8264 
+206 
+56 
+75 
+225 
+8489 
+721356 
+12 
+Ouargla 
+10636 
+262 
+54 
+121 
+329 
+10965 
+558558 
+20 
+El Oued 
+9213 
+369 
+38 
+98 
+429 
+9642 
+647548 
+15 
+Bechar 
+7346 
+126 
+28 
+58 
+156 
+7502 
+270061 
+28 
+Ghardaia 
+10782 
+207 
+34 
+61 
+234 
+11016 
+363598 
+30 
+Total du Sud 
+57991 
+1470 
+347 
+559 
+1682 
+59673 
+3238954 
+18 
+Total Général 
+689 383 
+16 720 
+4 692 
+8 160 
+20 188 
+709571 
+34080030 
+21 
+
+---PAGE---
+- 38 - 
+ 
+ 
+ 
+ 
+        
+
+---PAGE---

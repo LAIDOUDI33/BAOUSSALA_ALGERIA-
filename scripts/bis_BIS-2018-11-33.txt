@@ -1,0 +1,4611 @@
+ الجمهورية الجزائرية
+الديمقراطية الشعبية 
+  République Algérienne Démocratique et Populaire 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bulletin d’information 
+Statistique de la PME   
+                
+            
+ 
+N°33 
+ 
+ 
+ 
+Edition novembre 2018 
+ 
+ 
+ وزارة الصناعة
+والمناجم 
+Ministère de l’Industrie et des Mines 
+ 
+ 
+ 
+Direction Générale de la Veille Stratégique, 
+des Etudes et des Systèmes d’Information 
+ 
+Données du 1er semestre 2018 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 2 - 
+ 
+ 
+Abréviations 
+PME 
+ 
+ Petite et Moyenne Entreprise 
+EPE  
+ 
+Entreprise Publique Economique  
+Mds 
+ 
+Milliards  
+PIB  
+ 
+Produit Intérieur Brut 
+VA 
+ 
+Valeur Ajoutée 
+HH 
+ 
+Hors Hydrocarbures 
+ANGEM  
+Agence Nationale de Gestion du Micro Crédit 
+ANSEJ  
+Agence Nationale de Soutien à l’Emploi des Jeunes 
+ANDI   
+Agence Nationale de Développement de l’Investissement 
+CGCI-PME 
+Caisse de Garantie des Crédits d’Investissements-PME 
+FGAR   
+Fonds de Garantie des Crédits aux PME  
+CNAC   
+Caisse Nationale d’Assurance Chômage 
+ECOFIE :              Société d’études économiques et d’analyses financières du secteur public marchand 
+ 
+Avertissement  
+Source principale : Référentiels CNAS et CASNOS 
+Remerciements 
+ 
+Le Bulletin d’information statistique                    
+Participe à une meilleure visibilité de l’évolution des indicateurs économiques et, 
+notamment, de ceux relatifs à la démographie des PME. 
+ 
+La diffusion du présent document à une large échelle, y compris sur le Web, répond 
+aux préoccupations du ministère de mettre l’information utile à la disposition d’un 
+maximum d’opérateurs et d’utilisateurs. 
+ 
+Nous tenons à exprimer notre reconnaissance                              
+Aux institutions publiques et aux structures déconcentrées du MIM qui contribuent 
+régulièrement à l’alimentation en données de ce Bulletin, devenu un périodique 
+diffusé tous les semestres. 
+ 
+Nous tenons à exprimer nos vifs remerciements                          
+Aux nombreux lecteurs qui nous ont fait part de leurs observations et suggestions. 
+ 
+ 
+Pour toute remarque ou suggestion, prière de nous contacter via l’adresse suivante :  
+ 
+dgvsesi@industrie.gov.dz
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 3 - 
+ 
+  
+ 
+ 
+Préambule ............................................................................................................................................................................................ - 5 - 
+Chiffres clés au 30/06/2018................................................................................................................................................................ - 6 - 
+I- POPULATION DES PME ............................................................................................................................................................ - 7 - 
+1- Situation à la fin du 1e semestre 2018 ................................................................................................................................................. - 7 - 
+2- Distribution .................................................................................................................................................................................................... - 8 - 
+2.1 Par taille.................................................................................................................................................................... - 8 - 
+2.2 Par nature juridique ................................................................................................................................................ - 9 - 
+2.3 Par statut juridique et secteur d’activité ............................................................................................................ - 10 - 
+2.4 Par région ............................................................................................................................................................... - 11 - 
+2.5 Densité .................................................................................................................................................................... - 11 - 
+2.6 Evolution de la population globale des PME .................................................................................................... - 12 - 
+2.7 Evolution des PME (personnes morales) par secteur d'activité ...................................................................... - 12 - 
+2.8 Evolution de l’emploi par type de PME ............................................................................................................. - 13 - 
+3- Demographie ............................................................................................................................................................................................... - 14 - 
+3.1 Croissance .............................................................................................................................................................. - 14 - 
+3.2 Création de PME ................................................................................................................................................... - 14 - 
+3.3 Réactivation ........................................................................................................................................................... - 14 - 
+3.4 Radiation (mortalité) ............................................................................................................................................ - 14 - 
+II- STATISTIQUES LES PROGRAMMES D’APPUI À LA PME .......................................................................................... - 17 - 
+1. Dispositif national d’appui à l’investissement (ANDI) .......................................................................................................... - 17 - 
+1.1 Projets d’investissement déclarés par secteur d’activité .................................................................................. - 17 - 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers) ................................................................... - 18 - 
+1.3 Projets d’investissement déclarés par tranche d’effectif .................................................................................. - 18 - 
+2. Dispositifs locaux d’appui relevant du secteur de l’Industrie des Mines...................................................................... - 19 - 
+2.1 Etat de réalisation des Centres de Facilitation et Pépinières d’Entreprises. .................................................. - 19 - 
+2.2 Bilan d’activité des centres de facilitations ........................................................................................................ - 20 - 
+2.3  Répartition des projets accompagnés par les Centres de Facilitation selon le domaine d’activité : .......... - 20 - 
+        2.4 Activités du FGAR ............................................................................................................................................................................... - 23 - 
+        2.5 Activités de la CGCI-PME (dispositif relevant du Ministère des finances) ........................................................................................ - 25 - 
+      3. Dispositifs Sociaux d’appui à la PME .............................................................................................................................. - 27 - 
+       3.1 Dispositif « ANSEJ » ............................................................................................................................................................................ - 27 - 
+       3.2 Dispositif « CNAC » ............................................................................................................................................................................ - 30 - 
+       3.3 Dispositif « ANGEM » ........................................................................................................................................................................ - 31 - 
+       3.4 Dispositif « ANIREF » ......................................................................................................................................................................... - 32 - 
+III- COMMERCE EXTERIEUR .................................................................................................................................................... - 33 - 
+ Balance commerciale ..................................................................................................................................................................................... - 33 - 
+ Importations ..................................................................................................................................................................................................... - 33 - 
+ Exportations ..................................................................................................................................................................................................... - 35 - 
+VI-ANNEXES .................................................................................................................................................................................... - 36 - 
+ 
+ 
+ 
+ 
+ 
+SOMMAIRE 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 4 - 
+ 
+Liste des tableaux 
+Tableau 1 Population globale des PME à fin S1/2018 ........................................................................................................... - 7 - 
+Tableau 2 typologie des PME .................................................................................................................................................. - 8 - 
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité ..................................................................... - 9 - 
+Tableau 4 Professions libérales par secteur d’activité (Source : CASNOS) ........................................................................ - 9 - 
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) ............... - 10 - 
+Tableau 6 Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) .......................................... - 11 - 
+Tableau 7 Concentration des PME privées (personnes morales) par région ................................................................... - 11 - 
+Tableau 8 Densité des PME privées (personnes morales) par région............................................................................... - 11 - 
+Tableau 9 Evolution de la population globale des PME (S1/2017 et S1/2018) ................................................................. - 12 - 
+Tableau 10 Evolution des PME privées (personnes morales) par secteur d’activité (S1 2017/ S1 2018) ...................... - 13 - 
+Tableau 11 Evolution des emplois déclarés par type de PME .......................................................................................... - 13 - 
+Tableau 12 Mouvements constatés dans la démographie des PME privées ................................................................... - 14 - 
+Tableau 13 Mortalité des PME privées ................................................................................................................................. - 14 - 
+Tableau 14 Mortalité des PME privées par secteur d'activité (personnes morales)........................................................ - 15 - 
+Tableau 15 La mortalité des PME privées dans le secteur des services ........................................................................... - 15 - 
+Tableau 16 La mortalité des PME dans le secteur de l’industrie ....................................................................................... - 16 - 
+Tableau 17 La mortalité des PME privées (personnes physiques) .................................................................................... - 16 - 
+Tableau 18 Etats Récapitulatifs des projets d’investissement (S1/2018) ........................................................................... - 17 - 
+Tableau 19 FGAR : Situation globale des dossiers traités Avril 2004/ au 30/06/2018  .................................................... - 23 - 
+Tableau 20  FGAR : Situation des dossiers traités par type de projets Avril 2004/ au 30/06/2018 ................................ - 24 - 
+Tableau 21 FGAR : Dossiers traités (du 01/01/2017 au 30/06/2018) ................................................................................... - 24 - 
+Tableau 22 FGAR : Dossiers traités par type de projets (du 01/01/2017 au 30/06/2018) ................................................. - 25 - 
+Tableau 23 CGCI-PME : Situation globale des garanties par secteur d’activité (au 30/06/2018) ................................... - 25 - 
+Tableau 24 CGCI-PME : Situation globale des garanties par région (au 30/06/2018) ..................................................... - 25 - 
+Tableau 25 Garanties CGCI-PME au 30-06-2018 par tranche de crédit ............................................................................ - 26 - 
+Tableau 26 ANSEJ : Attestations d’éligibilité par secteur d’activité (Cumul au 30/06/2018) ........................................ - 27 - 
+Tableau 27  ANSEJ : Projets financés par secteur d’activité (Cumul au 30/06/2018) ...................................................... - 28 - 
+Tableau 28 ANSEJ : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2018) ................................. - 29 - 
+Tableau 29 CNAC : Projets financés par secteur d’activité (cumul au 30/06/2018) ........................................................ - 30 - 
+Tableau 30 CNAC : Présentation des principaux agrégats ................................................................................................ - 30 - 
+Tableau 31 ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2018) ............................................. - 31 - 
+Tableau 32 ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2018) ................................................... - 31 - 
+Tableau 33 Evolution de la Balance commerciale de l’Algérie (S1/2017 –S1/2018) ......................................................... - 33 - 
+Tableau 34 Evolution des importations par groupes de produits (S1/2017 – S1/2018) .................................................. - 34 - 
+Tableau 35 Principaux produits hors hydrocarbure  exportés (S1/2017- S1/2018) .......................................................... - 35 - 
+Tableau 36 : PME privées par secteurs d'activité ................................................................................................................ - 36 - 
+Tableau 37  Concentration des PME (personnes morales) par wilaya ............................................................................. - 37 - 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 5 - 
+ 
+Préambule  
+Le présent Bulletin affiche essentiellement les éléments d’informations statistiques en rapport 
+avec le nombre, la structure et la dynamique de développement du tissu de la population des 
+PME en Algérie durant le premier semestre de l’année 2018.  
+Le nouveau plan d’action des PME est axé sur le développement des PME activant dans le 
+domaine de la sous-traitance industrielle, et de l'exportation, en cohérence avec la politique du 
+Gouvernement, en vue de la réduction de la facture d'importation du pays. 
+ 
+A cet égard, plusieurs mesures pour le développement des PME sont introduites dans le projet de 
+loi de finances 2018, et ce, en application de la nouvelle loi d'orientation sur le développement de 
+la Petite et Moyenne entreprise (PME) promulguée en début 2017. 
+Ces mesures concernent notamment le Fonds de soutien à la mise à niveau qui deviendra le 
+Fonds de soutien à la modernisation des PME, ainsi que l'Agence de développement de la PME 
+qui va changer de statut, et cela nous permettra de mettre en place la nouvelle organisation de 
+l`Agence nationale de développement et de modernisation des PME (Andpme) pour avoir plus 
+de souplesse et mener à bien les missions qui lui sont attribuées. 
+Pour rappel, la loi d`orientation sur le développement de la PME, modifiant et complétant la loi 
+de 2001, vise l`encouragement de l`émergence des PME, l`amélioration de leur compétitivité et de 
+leur capacité d`exportation ainsi que l`amélioration du taux d`intégration nationale et la 
+promotion de la sous-traitance. 
+Le texte érige l`Andpme en un instrument de l`Etat chargé de la mise en œuvre de la stratégie de 
+développement de la PME et la renforce pour la réalisation de ses missions. 
+Cette agence devrait assurer, selon le texte, la mise en œuvre de la politique de développement 
+des PME en matière d`émergence, de croissance, et de pérennisation y compris l`amélioration de 
+la qualité, la promotion de l`innovation et le renforcement des compétences et des capacités 
+managériales des PME. 
+En outre, la nouvelle loi met en place des fonds de garantie des crédits et un Fonds d`amorçage 
+pour encourager la création de start-up innovantes. 
+A cet effet, la population globale de cette catégorie d’entreprises s’élève à 1 093 170 entités, tous 
+statuts confondus. Prés de 99,9% de cet ensemble d’entités sont constituées d’entreprises privées 
+avec 60%  de personnes morales.  
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 6 - 
+ 
+Chiffres clés au 30/06/2018 
+Population totale des PME 
+(tous statuts confondus) 
+1 093 170 
+ 
+PME créées en 1er semestre 2017 
+ 
+31 884 
+Cessations d’activités 
+(PME privées) 
+21 139 
+PMI privées 
+97 728 
+PME publiques  
+262 
+ 
+Densité des PME  
+(Nombre de PME 
+pour 1000 Habitants) 
+Tous 
+statuts 
+juridiques 
+confondus/ 
+Moyenne 
+internationale 
+26/45 
+Personnes morales 
+privées/ Moyenne 
+internationale 
+15/45 
+Emplois (agents) 
+2 690 246 
+Importations (Millions de $) 
+22 784 
+Exportations (Millions de $) 
+19 828 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 7 - 
+ 
+I- POPULATION DES PME 
+1- Situation à la fin du 1e semestre 2018 
+A la fin du 1er semestre 2018, la population globale des PME s’élève à 1 093 170             
+entités dont plus de 57% sont constituées de personnes morales, parmi lesquelles on 
+recense 262 Entreprises Publiques Economiques (EPE). Le reste est composé de personnes 
+physiques (43%), dont 20% de professions libérales et 22% d’activités artisanales.  
+Tableau 1 Population globale des PME à fin S1/2018 
+ 
+Types de PME 
+Nbre de PME 
+Part (%) 
+1. 
+PME privées 
+ 
+Personnes morales* 
+628219 
+57,47 
+ 
+Personnes physiques**  
+464689 
+42,55 
+ 
+ dont Professions libérales 
+223 195 
+20,42 
+ 
+ dont Activités artisanales 
+241 494 
+22,09 
+ 
+                        S/Total 1 
+1 092 908 
+42,51 
+2 
+PME publiques *** 
+ 
+Personnes morales 
+262 
+0,02 
+ 
+S/Total 2 
+262 
+0,02 
+ 
+Total 
+1 093 170 
+100,00 
+ 
+ 
+ 
+ 
+ 
+* Source : CNAS 
+** Source : CASNOS 
+*** Source : ECOFIE 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 8 - 
+ 
+ 
+2- Distribution  
+2.1 Par taille  
+A la fin du 1er semestre 2018, la population globale de la PME est composée de 97,7% de 
+Très Petite Entreprise TPE (effectif de moins de 10 salariés), soit 1 068 027 TPE qui 
+demeurent fortement dominante dans le tissu économique, suivie par la Petite Entreprise PE 
+avec 2,00% et la Moyenne Entreprise ME avec 0,30%.  
+Tableau 2 typologie des PME 
+ 
+Type des PME 
+Nombre de PME 
+% 
+TPE (effectif de moins de 10 salariés) 
+1 068 027 
+97,7 
+PE (effectif entre 10 et 49  salariés) 
+21 863 
+2.00 
+ME (effectif entre 50 et 249 salariés) 
+3 280 
+0.30 
+Total 
+1 093 170 
+100 
+    Source : CNAS 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 9 - 
+ 
+2.2 Par nature juridique 
+2.2.1 Personnes Morales  
+Les PME (personnes morales) tous statuts confondus sont présentes en force dans le secteur des services qui 
+en concentre plus de la moitié (53,82%), suivi par le secteur du BTPH (29,04%).   
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité  
+ 
+Secteurs d’Activité 
+PME privées* 
+ 
+PME publiques**  
+Total 
+Part en (%) 
+Agriculture 
+6877 
+96 
+6 973 
+1,11 
+Hydrocarbures, Energie, Mines et 
+services liés 
+2936 
+2 
+2 938 
+0,47 
+BTPH 
+182477 
+24  
+182 501 
+29,04 
+Industries manufacturières 
+97728 
+ 
+75 
+97 803 
+15,56 
+Services 
+338201 
+65 
+338 266 
+53,82 
+Total Général 
+628219 
+262 
+628 481 
+100 
+*source CNAS  
+** source ECOFIE  
+2.2.2 Personnes physiques  
+Pour la période considérée, le nombre total des personnes physiques a atteint 464.689 PME,  dont  223.195 
+sont des professions libérales et 241.494 sont des activités artisanales (Voir le tableau N°1). 
+ a. Professions libérales 
+La catégorie des professions libérales, englobe, notamment, les notaires, les avocats, les huissiers de justice, 
+les médecins, les architectes et les agriculteurs.  
+Les professions libérales, au nombre 220 516, exercent à 68,80% dans l’Agriculture, 20,16% dans le secteur 
+de la Santé et 10,05% dans la justice, tel que repris dans le tableau n°4.  
+Tableau 4 Professions libérales par secteur d’activité (Source : CASNOS) 
+  
+Santé 
+Justice 
+Exploitations agricoles 
+Total 
+Nbre au 30.06.2018 
+44 993 
+24 672 
+153 530 
+223 195 
+Part en % 
+20,16 
+11,05 
+68,79 
+100 
+Source : CASNOS 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 10 - 
+ 
+b-Activités Artisanales : 
+Durant le 1er semestre 2018, la CASNOS a enregistré une régression de 828 affiliations, ce qui porte le 
+nombre total des artisans au 30/06/2018 à 241 494 PME.    
+ 
+2.3 Par statut juridique et secteur d’activité 
+2.3.1. PME publiques  
+Les PME publiques représentent une part minime dans la population globale des PME. Leur nombre est de 
+262 PME durant le 1er semestre 2018 contre 264 durant le premier semestre 2017 soit un recul de 74%. 
+Cette baisse est due essentiellement à la restructuration de certains portefeuilles du Secteur Public 
+Marchand (SPM). Leur effectif passe de 23 679 en 2016 à 22 073 salariés au 1er semestre 2018. 
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) 
+Secteurs 
+d’activités 
+1 à 9 salariés 
+10 à 49 salariés 
+50 à 249 salariés 
+Nombre 
+global 
+de PME 
+% 
+Effectif 
+global 
+% 
+Nombre  Effectifs Nombre Effectifs Nombre Effectifs 
+Industrie 
+1* 
+1 
+17 
+529 
+57 
+7 204 
+75 
+28,63 
+7 734 
+35,04 
+Services 
+0 
+0 
+14 
+422 
+51 
+6944 
+65 
+24,81 
+7 366 
+33,37 
+Agriculture 
+21 
+107 
+60 
+1500 
+15 
+1418 
+96 
+36,64 
+3 025 
+13,70 
+BTPH 
+0 
+0 
+1 
+44 
+23 
+3694 
+24 
+9,16 
+3 738 
+16,93 
+Mines et 
+carrières 
+0 
+0 
+1 
+42 
+1 
+168 
+2 
+0,76 
+210 
+0,95 
+Total 
+22 
+108 
+93 
+2 537 
+147 
+19248 
+262 
+100 
+22 073 
+100 
+Source : ECOFIE 
+*entreprise en activité gelée, en attente d’absorption par Batimetal 
+Les PME publiques exercent dans tous les secteurs d’activité de l’économie nationale, on observe du 
+tableau ci dessus l’émergence du secteur de l’Agriculture avec 36.64% des PME/EPE, suivie du secteur de 
+l’Industrie (28,64%) ensuite le secteur des les Services (24,81%).  
+Les PME publiques industrielles emploient 35 % des effectifs du Secteur Public Marchand SPM de type 
+PME.  
+2.3.2. PME Privées  
+Le nombre total des PME privées à la fin du 1er semestre 2018 est de 1 092 908. Elles sont concentrées au 
+niveau du secteur des services (le transport en particulier), l’Artisanat et le BTPH (le Bâtiment en 
+particulier). 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 11 - 
+ 
+ 
+Tableau 6 Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) 
+ 
+  
+Secteurs d’Activité 
+Nombre 
+Part en (%) 
+I 
+Agriculture 
+6877 
+0,629 
+II 
+Hydrocarbures, Energie, Mines et services liés 
+2936 
+0,269 
+III 
+BTPH 
+182477 
+16,696 
+IV 
+Industries manufacturières 
+97728 
+8,942 
+V 
+Services y compris les professions libérales 
+338201 
+51,367 
+VI 
+Artisanat 
+241 494 
+22,096 
+  
+Total Général 
+1 092 908 
+100,00% 
+2.4 Par région  
+Selon la répartition spatiale du Schéma National d'Aménagement du Territoire (SNAT), les PME 
+(personnes morales) sont prédominantes dans le Nord et, à un degré moindre, dans les Hauts-Plateaux. 
+Tableau 7 Concentration des PME privées (personnes morales) par région 
+Région 
+Nbre de PME S1/2018 
+Taux de concentration (%) 
+Nord 
+438 260 
+70 
+Hauts-Plateaux 
+136 899 
+22 
+Sud 
+53 060 
+8 
+Total Général 
+628 219 
+100 
+     Source : CNAS 
+ 
+La région du Nord regroupe, 438 260 PME, soit 70 % des PME du pays, suivie par la région des Hauts-
+Plateaux avec 136 899PME soit 22%, et les régions du Sud et du Grand Sud accueillent 53 060 PME soit 
+8% du total.  
+2.5 Densité  
+En termes de densité, selon les dernières statistiques de l’ONS sur la démographie (41,3 Millions 
+d’habitants au 1er janvier 2017) la moyenne nationale des PME est de l’ordre de 26 PME (tous statuts 
+confondus) pour 1.000 habitants. Ce ratio national diminue à 15 pour 1.000 habitants pour les PME privées 
+de type « personnes morales » et présente un écart important d’une région à l’autre du pays :  
+17 PME privées pour 1000 habitants au Nord du pays,  
+11 PME privées pour 1000 habitants dans la région des Hauts Plateaux.  
+13 PME privées pour 1000 habitants dans la région du Sud.  
+ 
+ 
+Tableau 8 Densité des PME privées (personnes morales) par région 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 12 - 
+ 
+Région 
+Nbre de PME 
+S1/2018* 
+Population par 
+Wilaya (RGPH 
+2008)** 
+Densité 
+Population 
+par Wilaya 
+(RGPH 
+2008)*** 
+Densité * 
+Nord 
+438 260 
+21 075 874 
+21 
+25 540 869 
+17 
+Hauts-Plateaux 
+136 899 
+9 765 202 
+14 
+11 833 993 
+11 
+Sud  
+53 060 
+3 238 954 
+16 
+3 925 137 
+13 
+personnes morales 
+628 219 
+34 080 030 
+18 
+41 300 000 
+15 
+population générale de la 
+PME 
+1 093 170 
+- 
+- 
+41 300 000 
+26 
+    * Source : CNAS   ** Source : ONS 
+*** la démographie au 1er janvier 2017 par wilaya par rapport à la structure du  (RGPH 2008)  
+ 
+2.6 Evolution de la population globale des PME 
+L’évolution de la population de la PME entre le 1er semestre 2017 et le 1er semestre 2018 est 
+de 3,10 % tous secteurs juridiques confondus, représentant un accroissement net total de  
++32 881  PME. Pour les PME privées personnes morales, cette évolution est de 5,39%. 
+ 
+Tableau 9 Evolution de la population globale des PME (S1/2017 et S1/2018)  
+ 
+ 
+ 
+S1/2017 
+S1/2018 
+Evolution % 
+Population globale de la PME 
+1 060 289 
+1 093 170 
+3,10 
+PME privées personnes morales  
+596 074 
+628 219 
+5,39 
+ 
+2.7 Evolution des PME (personnes morales) par secteur d'activité 
+Les secteurs où la création d’entreprise a été la plus forte entre les deux premiers semestres des 
+exercices 2017 et 2018, restent ceux des services avec 53,83%. 
+Les PME à caractère industriel sont au nombre de 97 728 entités à la fin du 1er semestre 2018, 
+contre 92 804 entités à la fin du 1er semestre 2017, soit une évolution de 5,31 %. 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 13 - 
+ 
+ 
+Tableau 10 Evolution des PME privées (personnes morales) par secteur d’activité (S1 2017/ S1 2018) 
+ 
+Secteurs d’Activité 
+S1/2017 
+Parts 
+(%) 
+S1/2018 
+Parts 
+(%) 
+Evolution (%) 
+I 
+Agriculture 
+6392 
+1,07 
+6877 
+1,09 
+7,59 
+II 
+Hydrocarbures, Energie, 
+Mines et services liés 
+2843 
+0,48 
+2936 
+0,47 
+3,27 
+III 
+BTPH 
+ 
+177727 
+29,83 
+182477 
+29,05 
+2,67 
+IV 
+Industries 
+manufacturières 
+92804 
+15,58 
+97728 
+ 
+15,56 
+5,31 
+V 
+Services 
+316044 
+53,04 
+338201 
+53,83 
+7,01 
+ 
+Total Général 
+595810 
+100,00 
+628219 
+100,00 
+5,44 
+ 
+    Source : CNAS 
+ 
+2.8 Evolution de l’emploi par type de PME 
+L’effectif global des PME, à la fin du 1er semestre 2018, est de 2 690 246 agents, dont seulement 
+22 073 relèvent des PME publiques. A noter que l’effectif global des PME a progressé de 3,39 % 
+entre le 1er semestre 2017 et le 1er semestre 2018. 
+      Tableau 11 Evolution des emplois déclarés par type de PME 
+Types de PME 
+1er semestre 2017 
+1er semestre 2018 
+Evolution (%) 
+Nombre 
+Nombre 
+Nombre 
+Parts (%) 
+ 
+ Salariés 
+1 517 990 
+58,34 
+1575003 
+58,54 
+3,76 
+Employeurs 
+1 060 289 
+40,75 
+1 093 170 
+40,63 
+3,10 
+S/Total 
+2578279 
+99,09 
+2668173 
+99,18 
+3,49 
+PME Publiques 
+23679 
+0,91 
+22 073 
+0,82 
+-6,78 
+Total 
+     2 601 958 
+100,00 
+2 690 246 
+100,00 
+3,39 
+    Source : CNAS / CASNOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 14 - 
+ 
+3- Demographie 
+3.1 Croissance 
+Une régression  des PME privées durant le 1er semestre 2018 est de 22,35 % par rapport au               
+1er semestre 2017, soit 31 884 nouvelles PME créées, ce qui porte le nombre global des PME 
+privées à 1 092 908. 
+ 
+Tableau 12 Mouvements constatés dans la démographie des PME privées 
+Nature des 
+PME 
+2017 
+Mouvements PME du 1er semestre 2018 
+1er 
+semestre 
+2018 
+Création 
+Réactivation 
+Radiation 
+Croissance 
+Personnes 
+morales 
+609 344 
+17426 
+4 870 
+3 421 
+18 875 
+628 219 
+Personnes 
+Physiques 
+464 892 
+14458 
+3 057 
+17 718 
+-203 
+464 689 
+Total PME 
+privées 
+1 074 236 
+31 884 
+7 927 
+21 139 
+18672 
+1092908 
+    Source : CNAS 
+ 
+3.2 Création de PME 
+Le nombre de PME privées créées durant le 1er semestre 2018 est de 31 884 PME.  Les 
+créations d’entreprises enregistrées au niveau de la CNAS à la fin du 1er semestre 2018 
+s’élèvent à 17 426 nouvelles PME (personnes morales) alors qu’au niveau de la CASNOS, 
+on recense 14 458 nouvelles PME créées (personnes physiques) durant la même période. 
+3.3 Réactivation 
+A la fin du 1er semestre 2018, les réactivations ont touché 4 870 PME privées (personnes    
+morales) déclarées auprès de la CNAS, on recense aussi 3 057 PME privées (personnes    
+physique) déclarées auprès de la CASNOS. 
+3.4 Radiation (mortalité)  
+Durant le 1er semestre 2018, 21 139 PME privées étaient radiées, dont 3421 sont des 
+personnes morales et 17718 PME personnes physiques.  
+Tableau 13 Mortalité des PME privées  
+Types de PME privées 
+Personnes* 
+Morales 
+Personnes ** 
+Physiques 
+Total 
+Nombre de cessation d’activité 
+3421 
+17718 
+21139 
+Parts en% 
+16,18 
+83,82 
+100 
+   
+  * Source : CNAS   ** Source : CASNOS 
+ 
+3.4.1 Mortalité des PME privées (personnes morales)  
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 15 - 
+ 
+a- Mortalité des PME privées par secteur d’activité 
+Les PME de type personnes morales ayant été radiées durant le 1er semestre 2018, sont au 
+nombre de 3421. Ce nombre est visiblement en hausse par rapport aux 20 51enregistrées à la 
+fin du 1er semestre 2017 (voir le tableau n°14).  
+Tableau 14 Mortalité des PME privées par secteur d'activité (personnes morales) 
+ 
+Secteurs d’Activité 
+S1/2017 
+S1/2018 
+Evolution  
+  
+ 
+% 
+% 
+Nbre 
+% 
+I 
+Agriculture et pêche 
+23 
+41 
+18 
+78,26 
+II 
+Hydrocarbures, Energie, 
+Mines et services liés 
+8 
+8 
+0 
+0,00 
+III 
+BTPH 
+520 
+1009 
+489 
+94,04 
+IV 
+Industries manufacturières 
+221 
+423 
+202 
+91,40 
+V 
+Services 
+1279 
+1940 
+661 
+51,68 
+ 
+Total Général 
+2051 
+3421 
+1370 
+66,80 
+   Source : CNAS 
+ 
+ 
+Entre le 1er semestre 2017 et le 1er semestre 2018, une évolution de la mortalité est observée 
+dans tous les secteurs, hormis le secteur des Hydrocarbures, Energie, Mines et services 
+liés qui marque une stagnation en nombre de PME par rapport au 1er semestre 2017.   
+ 
+b- Mortalité des PME privées dans le secteur des services  
+Tableau 15 La mortalité des PME privées dans le secteur des services 
+S1/2017
+S1/2018
+Evolution
+Part  2018 en %
+Transport et communication
+159
+258
+62,26
+13,30
+Commerce
+383
+642
+67,62
+33,09
+Hôtellerie et restauration
+91
+308
+238,46
+15,88
+Services aux entreprises
+466
+405
+-13,09
+20,88
+Services aux ménages
+162
+290
+79,01
+14,95
+Services pour collectivités
+18
+37
+105,56
+1,91
+Total Services
+1279
+1940
+51,68
+100,00
+    
+Source : CNAS 
+Les activités du commerce sont les plus vulnérables avec 642 PME radiées durant le 1er 
+semestre 2018 (33,09% du total), les services fournis aux entreprises sont en deuxième 
+position avec 405 PME. 
+ 
+c- Mortalité des PME privées dans l’industrie  
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 16 - 
+ 
+Au niveau du secteur industriel, en enregistre une forte mortalité de PME, particulièrement 
+dans les activités de l’industrie agroalimentaire. Le manque de maturation dans le lancement 
+des projets et le manque de la compétitivité pourraient expliquer en partie cette mortalité. 
+ 
+ 
+Tableau 16 La mortalité des PME dans le secteur de l’industrie  
+S1/2017
+S1/2018
+Evolution
+Part    2018          
+(%)
+ISMME
+33
+43
+30,30
+10,17
+Matériaux de construction
+24
+62
+158,33
+14,66
+Chimie, plastique
+5
+16
+220,00
+3,78
+Industrie agroalimentaire
+81
+168
+107,41
+39,72
+Industrie du textile
+26
+41
+57,69
+9,69
+Industrie du cuir
+5
+7
+40,00
+1,65
+Industrie du bois et papier
+37
+72
+94,59
+17,02
+Industrie divers
+10
+14
+40,00
+3,31
+Total Industrie
+221
+423
+91,40
+100
+    Source : CNAS 
+3.4.2 La mortalité des PME privées (personnes physiques)  
+Selon les chiffres de la CASNOS, les PME de type personne physique ayant cessé leurs 
+activités durant l’année le 1er semestre 2018, sont au nombre de 17 718. Les activités des 
+artisans sont les plus vulnérables avec 11 315 radiés (soit environ 63,86% du total) et le 
+secteur des exploitations agricoles en deuxième position avec 4 541 PME radiées soit 
+25,63% du total. 
+Tableau 17 La mortalité des PME privées (personnes physiques) 
+ 
+ 
+  
+Santé 
+Justice 
+Exploitations 
+agricoles 
+Artisanat 
+Total 
+Nombre 
+de 
+cessation 
+d’activité 
+1 453 
+409 
+4 541 
+11 315 
+17 718 
+Part (%) 
+8,20 
+2,31 
+25,63 
+63,86 
+100 
+      Source : CASNOS 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 17 - 
+ 
+II- STATISTIQUES DES PROGRAMMES D’APPUI À LA PME 
+1. Dispositif national d’appui à l’investissement (ANDI) 
+Le bilan des déclarations d’investissements du 1er semestre 2018 est constitué 
+d’informations extraites de la base de données de l’ANDI affinées et corrigées en tenant 
+compte des projets annulés. 
+Il est à rappeler que ce bilan ne tient compte que des projets d’investissement dans les 
+activités de production de biens et services, couverts par le dispositif national d’appui à 
+l’investissement.   
+1.1 Projets d’investissement déclarés par secteur d’activité 
+Tableau 18 Etats Récapitulatifs des projets d’investissement (S1/2018) 
+     Source : ANDI 
+ 
+Secteur 
+d'activité 
+BTPH 
+Industries 
+Services 
+Tourisme 
+Santé 
+Agriculture 
+Total  
+Projets déclarés 
+S1/2017 
+364 
+1298 
+322 
+205 
+108 
+94 
+2916 
+S1/2018 
+408 
+1 179 
+162 
+113 
+63 
+102 
+2 027 
+Part  
+S1/2018 (%) 
+20,13 
+58,16 
+7,99 
+5,57 
+3,11 
+5,03 
+100,00 
+évolution 
+(%) 
+12,09 
+-9,17 
+-49,69 
+-44,88 
+-41,67 
+8,51 
+-30,49 
+ 
+Montant (Millions de 
+(DA) 
+S1/2017 
+39467 
+794139 
+126099 
+232442 
+28863 
+20079 
+1283487 
+S1/2018 
+53 566 
+481 294 
+203 686 
+51 224 
+38 441 
+19 904 
+848 114 
+Part  
+S1/2018 (%) 
+6,32 
+56,75 
+24,02 
+6,04 
+4,53 
+2,35 
+100,00 
+Emplois 
+S1/2018 
+5884 
+59923 
+7244 
+12573 
+2479 
+2158 
+94888 
+ 
+5 175 
+46 636 
+10 427 
+6 244 
+3 015 
+2 339 
+73 836 
+Part  
+S1/2018 (%) 
+7,01 
+63,16 
+14,12 
+8,46 
+4,08 
+3,17 
+100,00 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 18 - 
+ 
+ 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers)  
+Projets d'investissement 
+Nombre
+%
+Millions de DA
+%
+Nombre
+%
+Investissement locaux
+2 016
+99,46
+802 940
+94,67
+69 565
+94,22
+Total investissement étranger
+11
+0,54
+45 173
+5,33
+4 271
+5,78
+Total Général 
+2 027 
+100,00
+848 114 
+100,00
+73 836 
+100,00
+Projets déclarés 
+(S1 2018)
+Montant
+Emplois
+ 
+Source : ANDI   
+ 
+Durant la période considérée, le nombre de projets d’investissements déclarés par les 
+étrangers auprès de l’ANDI sont au nombre de 11 projets, qui ne représentent que 0,54% du 
+volume global. 
+ 
+1.3 Projets d’investissement déclarés par tranche d’effectif 
+Nombre
+%
+Millions de DA
+%
+Nombre
+%
+0 à 9
+663
+32,71
+38 588
+4,55
+3 034
+4,11
+10 à 49
+994
+49,04
+228 741
+26,97
+20 825
+28,20
+50 à 249
+339
+16,72
+330 839
+39,01
+30 625
+41,48
+plus de 249
+31
+1,53
+249 945
+29,47
+19 352
+26,21
+Total
+2 027
+100
+848 114
+100
+73 836
+100
+Projets déclarés        
+(S1 2018)
+Montant 
+Emplois
+Tranche d'effectif
+                  
+Source : ANDI 
+ 
+ 
+                      
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 19 - 
+ 
+2. Dispositifs locaux d’appui relevant du secteur de l’Industrie des Mines  
+2.1 Etat de réalisation des Centres de Facilitation et Pépinières d’Entreprises.  
+ 
+Le tableau suivant illustre l’état des structures opérationnelles, celles réceptionnées, et celles en cours de 
+réalisation.  
+ 
+ 
+Centres de 
+facilitation 
+Pépinières 
+d’entreprises 
+Structures opérationnelles 
+26 
+ 
+16 
+Structures en cours de réalisation 
+01 
+03 
+Total des structures 
+27 
+19 
+                 Source : DGPME  
+ 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 20 - 
+ 
+ 
+2.2 Bilan d’activité des centres de facilitations  
+ 
+ 
+   2.3  Répartition des projets accompagnés par les Centres de Facilitation selon le domaine d’activité : 
+ 
+Durant le 1er semestre 2018, le secteur industriel est en 1ere position selon le nombre des porteurs 
+de projets accompagnés par les centres de facilitation (27,26%), suivi par le secteur des services 
+(26,34%), les activités agricoles sont en troisième position et l’Artisanat se situe en quatrième 
+position, les activité du commerce représentent une part minime soit 2,39% du total des projets.   
+ 
+ 
+ 
+wilaya 
+Nombre de 
+Porteurs de 
+projets 
+réceptionnés 
+Nombre de 
+porteurs de projets 
+accompagnés  
+Nombre de 
+Business Plan 
+élaborés 
+Nombre 
+d’entreprises 
+crées 
+Nombre d’emplois 
+prévus 
+Tipaza 
+66 
+42 
+29 
+05 
+598 
+Oran  
+184 
+57 
+03 
+24 
+60 
+Adrar  
+51 
+29 
+07 
+07 
+65 
+Bordj Bou Arreridj 
+95 
+86 
+16 
+05 
+399 
+Illizi  
+38 
+26 
+01 
+- 
+08 
+Jijel  
+60 
+05 
+06 
+- 
+08 
+Tamanrasset  
+10 
+10 
+01 
+- 
+14 
+Naama 
+107 
+28 
+02 
+- 
+14 
+Tindouf  
+38 
+06 
+- 
+05 
+11 
+Djelfa  
+61 
+06 
+06 
+04 
+09 
+Sidi Bel Abbès 
+139 
+10 
+10 
+01 
+436 
+Blida  
+92 
+67 
+04 
+03 
+264 
+Biskra 
+93 
+13 
+02 
+- 
+53 
+El Bayadh 
+92 
+08 
+03 
+02 
+115 
+Khenchela  
+452 
+09 
+02 
+- 
+61 
+Laghouat  
+11 
+04 
+02 
+02 
+12 
+Béchar 
+90 
+- 
+- 
+- 
+- 
+Béjaia 
+130 
+20 
+- 
+- 
+- 
+Ouargla 
+21 
+21 
+- 
+17 
+54 
+Chlef 
+39 
+20 
+03 
+11 
+70 
+Souk ahras 
+95 
+52 
+06 
+01 
+114 
+Oum el bouaghi 
+- 
+- 
+- 
+- 
+- 
+Batna  
+04 
+04 
+- 
+- 
+- 
+Bouira  
+23 
+10 
+02 
+01 
+33 
+Mila  
+13 
+04 
+- 
+02 
+- 
+El oued  
+10 
+06 
+- 
+- 
+- 
+Total  
+2.014 
+543 
+105 
+90 
+2.470 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 21 - 
+ 
+ 
+Nombre Total des porteurs de 
+projets accompagnés 
+ 
+les secteurs d’activités 
+ 
+nombre 
+ 
+taux 
+ 
+ 
+543 
+Industrie 
+ 
+148 
+27,26 % 
+Service 
+ 
+143 
+26,34 % 
+Travaux Publics 
+ 
+40 
+7,37 % 
+Agriculture 
+ 
+85 
+15,65 % 
+Commerce 
+ 
+13 
+2,39 % 
+Artisanat 
+ 
+61 
+11,23 % 
+Divers 
+ 
+53 
+9,76 % 
+ 
+ 
+                  
+ 
+ 
+2.4 Présentation du Bilan d’Activités des Pépinières d’Entreprises :  
+ 
+Projets hébergés au niveau des (16) Pépinières d’Entreprises : 
+ 
+Le bilan d’activités du 1er semestre 2018 pour les seize (16) pépinières d'entreprises 
+opérationnelles s’illustre comme suit : 
+ 
+Le nombre de projets hébergés au sein des seize pépinières a atteint (127) dont (50) entreprises ont 
+été créées. Le nombre d’emplois crées est de 297. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 22 - 
+ 
+ 
+ 
+Taux d’Occupation : 
+N° 
+Wilaya 
+Nombre de locaux 
+Nombre de locaux Occupés 
+Taux d’Occupation des locaux 
+01 
+ADRAR 
+07 
+07 
+100 % 
+02 
+BATNA 
+12 
+12 
+100 % 
+03 
+MILA 
+18 
+06 
+33,33 % 
+04 
+EL BAYADH 
+09 
+09 
+100 % 
+05 
+BISKRA 
+29 
+14 
+48,28 % 
+06 
+BOUIRA 
+20 
+02 
+10 % 
+07 
+ANNABA 
+10 
+10 
+100 % 
+08 
+KHENCHELA 
+11 
+11 
+100 % 
+09 
+OUM EL BOUAGHI 
+12 
+12 
+100 % 
+10 
+GHARDAIA 
+13 
+02 
+15,38 % 
+11 
+BORDJ BOU ARRERIDJ 
+08 
+03 
+37,50 % 
+12 
+BECHAR 
+10 
+   - 
+- 
+13 
+SIDI BEL ABBES 
+10 
+ 03 
+30 % 
+14 
+TIARET 
+12 
+10 
+ 83,33 % 
+15 
+ORAN 
+16 
+09 
+ 56,25 % 
+16 
+OUARGLA 
+10 
+10 
+100 % 
+ 
+TOTAL 
+ 
+207 
+ 
+120 
+ 
+     57,97 % 
+ 
+ 
+ 
+ 
+N° 
+ 
+ 
+Wilaya 
+ 
+Nombre de Projets hébergés  
+1er semestre 2018 
+ 
+ 
+Nombre d’entreprises crées   
+1er semestre 2018 
+ 
+Nombre d’Emploi 
+crées  
+1er  semestre 2018 
+01 
+ADRAR 
+07 
+01 
+05 
+02 
+BATNA 
+12 
+04 
+04 
+03 
+MILA 
+06 
+04 
+34 
+04 
+EL BAYADH 
+15 
+03 
+04 
+05 
+BISKRA 
+14 
+11 
+53 
+06 
+BOUIRA 
+02 
+02 
+35 
+07 
+ANNABA 
+15 
+02 
+35 
+08 
+KHENCHELA 
+11 
+04 
+63 
+09 
+OUM EL BOUAGHI 
+12 
+02 
+26 
+10 
+GHARDAIA 
+02 
+02 
+40 
+11 
+BORDJ BOU ARRERIDJ 
+03 
+03 
+09 
+12 
+BECHAR 
+- 
+- 
+- 
+13 
+SIDI BEL ABBES 
+03 
+01 
+05 
+14 
+TIARET 
+06 
+04 
+10 
+15 
+ORAN 
+09 
+- 
+- 
+16 
+OUARGLA 
+10 
+09 
+14 
+TOTAL 
+ 
+127 
+50 
+297 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 23 - 
+ 
+2.4 Activités du FGAR  
+Durant le 1er semestre 2018, le FGAR a octroyé des garanties couvrant un montant de 9,94 Mds de DA de 
+crédits aux PME. En matière de certificats de garantie, le FGAR a accordé l’équivalent de 2, 45 Mds DA de 
+crédits aux PME. Ces montants représentent, en moyenne, 49,49 Millions de DA par offre de garantie et 
+28,91 Millions de DA par certificat de garantie. Le taux moyen de financement octroyé par le FGAR, 
+représente 69% des projets neufs. Le FGAR a ainsi soutenu la création de 116 PME pour 20,67 Mds DA et 
+a permis l’extension de 85 PME pour un montant de 10,75 Mds DA. Durant le 1er semestre 2018, les 
+engagements cumulés du FGAR ont augmenté de 47% en offres de garantie et 50% en certificats de 
+garantie.  
+     Tableau 19 FGAR : Situation globale des dossiers traités Avril 2004/ au 30/06/2018                                  Montants en DA 
+Items 
+Offres de garantie * 
+Certificats de garantie * 
+Nombre des garanties accordées 
+2 289 
+1208 
+Coût total des projets  
+225 740 077 985 
+86 501 221 558 
+Montant des crédits sollicités 
+145 709 876 298 
+56 188 197 338 
+Taux moyen  de financement sollicité  
+65% 
+65% 
+Montant des garanties accordées 
+69 536 658 400 
+29 908 884 635 
+Taux moyen  de garantie accordée 
+48% 
+53% 
+Montant moyen de la garantie  
+30 378 619 
+24 759 010 
+Nombre d'emplois à créer  
+69 757 
+33 332 
+Investissement par emploi   
+3 236 092 
+2 595 140 
+Crédit par emploi   
+2 088 821 
+1 685 713 
+Garantie  par emploi  
+996 841 
+897 302 
+    Source :FGAR 
+ 
+ * Offres de garantie :   accord de principe d'octroi de la garantie financière. 
+ * Certificats de garantie : offre de garantie, accomplie, en financement bancaire et devient un engagement définitif du FGAR. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 24 - 
+ 
+ Tableau 20  FGAR : Situation des dossiers traités par type de projets Avril 2004/ au 30/06/2018               Montants en DA 
+ 
+Création 
+Extension* 
+Total 
+Nombre des garanties accordées 
+970 
+1319 
+2289 
+Coût total des projets  
+107 720 766 881 
+118 019 311 105 
+225 740 077 985 
+Montant des crédits sollicités 
+63 390 643 673 
+82 319 232 625 
+145 709 876 298 
+Taux moyen  de financement sollicité  
+59% 
+70% 
+65% 
+Montant des garanties accordées 
+25 134 525 044 
+44 402 133 356 
+69 536 658 400 
+Taux moyen  de garantie accordée 
+40% 
+54% 
+48% 
+Montant moyen de la garantie  
+25 911 881  
+33 663 482 
+30 378 619 
+Nombre d'emplois à créer  
+20 822 
+48 935 
+69 757 
+Investissement par emploi  
+5 173 411 
+2 411 757 
+3 236 092 
+Crédit par emploi   
+3 044 407 
+1 682 216 
+2 088 821 
+Garantie  par emploi  
+1 207 114 
+907 370 
+996 841 
+Source :FGAR 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements 
+Tableau 21 FGAR : Dossiers traités (du 01/01/2017 au 30/06/2018)                                                                 Montants en DA 
+Source : FGAR 
+ 
+  
+Offres de garantie 
+Certificats de garantie 
+Nombre des garanties accordées 
+201 
+85 
+Coût total des projets  
+31 425 550 363 
+7 796 677 983 
+Montant des crédits sollicités 
+21 056 355 151 
+4 955 986 659 
+Taux moyen  de financement sollicité  
+67% 
+64% 
+Montant des garanties accordées 
+9 948 702 055 
+2 458 076 081 
+Taux moyen  de garantie accordée 
+47% 
+50% 
+Montant moyen de la garantie  
+49 496 030  
+28 918 542 
+Nombre d'emplois à créer  
+4 342 
+1371 
+Investissement par emploi   
+7 237 575  
+5 686 855 
+Crédit par emploi   
+4 849 460  
+3 614 870 
+Garantie  par emploi  
+2 291 272  
+1 792 907 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 25 - 
+ 
+Tableau 22 FGAR : Dossiers traités par type de projets (du 01/01/2017 au 30/06/2018)                              Montants en DA 
+  
+Création 
+Extension* 
+Total 
+Nombre des garanties accordées 
+116 
+85 
+201 
+Coût total des projets  
+20 671 315 052 
+10 754 235 311 
+31 425 550 363 
+Montant des crédits sollicités 
+14 225 670 711 
+6 830 684 440 
+21 056 355 151 
+Taux moyen  de financement sollicité  
+69% 
+64% 
+67% 
+Montant des garanties accordées 
+6 187 265 798 
+3 761 436 257 
+9 948 702 055 
+Taux moyen  de garantie accordée 
+43% 
+55% 
+47% 
+Montant moyen de la garantie  
+53 338 498  
+44 252 191 
+            49 496 
+030
+Nombre d'emplois à créer  
+2 815 
+1527 
+4 342 
+Investissement par emploi   
+7 343 274  
+7 042 721 
+              7 237 
+Crédit par emploi   
+5 053 524  
+4 473 271 
+              4 849 
+Garantie  par emploi  
+2 197 963  
+2 463 285 
+              2 
+291 
+272
+Source :FGAR 
+ 
+2.5 Activités de la CGCI-PME (dispositif relevant du Ministère des finances)  
+Tableau 23 CGCI-PME : Situation globale des garanties par secteur d’activité (au 30/06/2018) 
+Secteur 
+d’Activité
+Nombre de 
+dossiers
+En %
+ Montant des garanties 
+(DA) 
+En %
+ Emplois 
+créés 
+En %
+BTPH
+213
+19
+8 657 174 140
+13
+3521
+19
+Transport
+69
+6
+1 486 413 600
+2
+651
+3
+Industrie
+577
+51
+43 316 887 954
+65
+10948
+58
+Santé
+57
+5
+3 061 552 440
+5
+961
+5
+Services
+209
+19
+9 908 624 492
+15
+2811
+15
+Total
+1125
+100%
+66 430 652 626
+100%
+   18 892   100%  
+             Source : CGCI-PME 
+ 
+Une concentration a été constatée en nombre du flux de dossiers traités par la CGCI-PME sur deux filières 
+principales, Industrie et BTPH, qui représentent à elles seules 70% des projets garantis. En termes 
+financiers, le secteur de l’Industrie représente plus que la moitié avec un taux de 65% suivi du secteur du 
+BTPH avec un taux de 13%.  
+ 
+ 
+ 
+Tableau 24 CGCI-PME : Situation globale des garanties par région (au 30/06/2018) 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 26 - 
+ 
+Région 
+Nombre de dossiers 
+% 
+Centre 
+446 
+40 
+Est 
+447 
+40 
+Ouest 
+195 
+17 
+Sud 
+37 
+3 
+Total 
+1125 
+100% 
+Source : CGCI-PME 
+ 
+Cette répartition géographique de la garantie met en évidence les régions à plus ou moins fortes potentialités 
+économiques favorisant plus ou moins l’investissement des PME. Les régions Est et Centre  occupent la 
+pole  position avec chacune 40%, tendit que les régions Ouest et sud présentent respectivement des taux de 
+17% et 3%.    
+Tableau 25 Garanties CGCI-PME au 30-06-2018 par tranche de crédit 
+Total 
+Banques 
+Tranche de crédit 
+Nbre de 
+dossiers 
+% 
+MT de crédit 
+garantis (Mds DA) 
+% 
+0 -  <= 50 MDA 
+734 
+65 
+13,45 
+20 
+50 -  < =100 MDA 
+176 
+16 
+12,92 
+20 
+      > 100 MDA 
+215 
+19 
+40,05 
+60 
+Total 
+1125 
+100 
+66,43 
+100 
+             Source :CGCI-PME 
+ 
+La répartition du volume global des crédits garantis repris dans le tableau ci-dessus laisse apparaitre une 
+forte proportion de la tranche de crédits inférieurs à 50 millions de DA qui représente à elle seule 65% de 
+l’ensemble des projets garantis au 30-06-2018, correspondant en termes financiers à seulement 20% des 
+crédits garantis. 
+Cet ordre de grandeur (65%) confirme les statistiques qui indiquent que 98% du tissu de la PME est 
+constitué de très petites entreprises (TPE). Un marché très important qui renferme de nombreuses TPE/PME 
+éligibles au dispositif de garantie de la Caisse. 
+Une proportion assez significative de la tranche des crédits est égale et supérieure à 50 Millions de DA, qui 
+représente, en terme physiques 35% du nombre total des dossiers garantis, et une plus grande proportion en 
+terme financiers, soit plus de deux tiers (80%) du montant total des crédits garantis.      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 27 - 
+ 
+3.1 Dispositif « ANSEJ » 
+Tableau 26 ANSEJ : Attestations d’éligibilité par secteur d’activité (Cumul au 30/06/2018) 
+ Nombre d'attestations 
+d'éligibilité délivrées 
+ Nombre 
+d'attestations de 
+conformité  
+  (phase création) 
+ (phase 
+extension) 
+Services
+232 244
+230 775
+1 469
+33,02%
+Artisanat
+79 457
+79 212
+245
+11,30%
+Agriculture
+132 242
+132 012
+230
+18,80%
+Hydraulique
+1 551
+1 520
+31
+0,22%
+Pêche
+2 261
+2 256
+5
+0,32%
+Transport frigorifique
+23 295
+23 160
+135
+3,31%
+Transport de marchandises + (GPL)
+73 432
+72 872
+560
+10,44%
+Transport de voyageurs
+29 199
+27 838
+1 361
+4,15%
+Industrie
+61 939
+61 421
+518
+8,81%
+BTPH
+48 092
+47 340
+752
+6,84%
+Professions libérales
+12 589
+12 131
+458
+1,79%
+Maintenance
+7 110
+7 076
+34
+1,01%
+Total
+703 411
+697 613
+5 798
+100%
+Secteur d'activité 
+%
+Total des attestations 
+d'Eligibilité et de 
+conformité Délivrées
+ 
+Source : ANSEJ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3. DISPOSITIFS SOCIAUX D’APPUI À LA PME 
+  
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 28 - 
+ 
+Tableau 27  ANSEJ : Projets financés par secteur d’activité (Cumul au 30/06/2018)  
+            
+Secteur d'Activité 
+Projets 
+financés 
+% 
+Impact 
+emplois 
+ 
+Nombre 
+moyen 
+d'emploi 
+Montant 
+d'investissement 
+(Unité : DA) 
+Coût moyen de 
+l'emploi 
+(Unité : DA)  
+Coût moyen 
+d'une micro-
+entreprise  
+(Unité : DA) 
+AGRICULTURE 
+55232 
+14,76 
+130155 
+2 
+202 177 508 536 
+1 537 935 
+3 629 614 
+ARTISANAT 
+42772 
+11,43 
+125799 
+3 
+109 955 451 632 
+873 108 
+2 570 262 
+BTPH 
+33144 
+8,85 
+96532 
+3 
+126 376 742 933 
+1 294 748 
+3 780 722 
+HYDRAULIQUE 
+545 
+0,15 
+2021 
+4 
+3 198 085 711 
+1 579 607 
+5 865 452 
+INDUSTRIE 
+25586 
+6,84 
+74081 
+3 
+117 501 970 312 
+1 565 883 
+4 545 037 
+MAINTENANCE 
+9699 
+2,59 
+22367 
+2 
+25 510 378 974 
+1 113 713 
+2 576 921 
+PECHE 
+1131 
+0,30 
+5549 
+5 
+7 499 507 851 
+1 351 506 
+6 630 865 
+PROFESSION  
+LIBERALE 
+10323 
+2,76 
+23230 
+2 
+25 891 374 915 
+1 066 414 
+2 401 548 
+SERVICE 
+106992 
+28,58 
+248915 
+2 
+345 093 884 199 
+1 380 400 
+3 209 460 
+TRANSPORT  
+FRIGORIFIQUE 
+13385 
+3,58 
+24 132 
+2 
+33 767 158 812 
+1 398 996 
+2 522 269 
+TRANSPORT  
+DE MARCHANDISE 
+56530 
+15,10 
+96 237 
+2 
+145 557 153 559 
+1 512 486 
+2 574 866 
+TRANSPORT  
+DE VOYAGEURS 
+18986 
+5,07 
+43681 
+2 
+46 632 841 373 
+1 067 561 
+2 456 132 
+Total 
+374325 
+100,00 
+892699 
+2 
+1 189 162 058 806 
+1 332 097 
+3 176 817 
+Source : ANSEJ 
+ 
+Selon le tableau ci-dessus, le secteur des services, est le secteur le plus attractif pour les 
+porteurs de projets accompagnés par l’ANSEJ depuis le lancement de ce dispositif (avec 106 
+992 projets) suivi du secteur de transport des marchandises avec 56530 projets, puis le 
+secteur de l’agriculture avec 55 232 projets financés,  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 29 - 
+ 
+Tableau 28 ANSEJ : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2018)  
+Secteur d'Activité 
+Projets  
+financés 
+Hommes 
+Femmes 
+Taux de  
+Féminité (%) 
+ 
+AGRICULTURE 
+55232 
+52653 
+2579 
+4,67 
+ARTISANAT 
+42772 
+35452 
+7320 
+17,11 
+BTPH 
+33144 
+32400 
+744 
+2,24 
+HYDRAULIQUE 
+545 
+521 
+24 
+4,40 
+INDUSTRIE 
+25586 
+21931 
+3655 
+14,29 
+MAINTENANCE 
+9699 
+9534 
+165 
+1,70 
+PECHE 
+1131 
+115 
+16 
+1,41 
+PROFESSION LIBERALE 
+10323 
+5661 
+4662 
+45,16 
+SERVICE 
+106992 
+89429 
+17563 
+16,42 
+TRANSPORT FRIGORIFIQUE 
+13385 
+12996 
+389 
+2,91 
+TRANSPORT DE  MARCHANDISES 
+56530 
+55821 
+709 
+1,25 
+TRANSPORT DE VOYAGEURS 
+18986 
+18505 
+481 
+2,53 
+Total 
+374325 
+335018 
+38307 
+10,23 
+Source : ANSEJ 
+ 
+ 
+Depuis sa mise en œuvre à la fin du 1er semestre 2018, le dispositif ANSEJ a permis, 
+d’accompagner 374 325 entrepreneurs hommes contre 38 307 entrepreneures femmes soit 
+un taux de féminité global de 10%. La femme entrepreneure occupe une place importante 
+dans les activités libérales avec 45%    
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 30 - 
+ 
+3.2 Dispositif « CNAC »  
+Tableau 29 CNAC : Projets financés par secteur d’activité (cumul au 30/06/2018)  
+1er semestre 2018 
+Cumulé au 30-06-2018 
+Secteurs d'activités 
+Nombre de 
+projets financés 
+Part de la 
+ Femme 
+Impact  
+emploi 
+Total 
+financement  
+(Million DA) 
+ 
+Nombre de 
+projets 
+financés 
+Part de la 
+ femme 
+Impact  
+emploi 
+Total 
+financement  
+(Million 
+DA) 
+Agriculture 
+637 
+71 
+1 539 
+2 977,87 
+19 698 
+2 332 
+47 525 
+78 467,58 
+Artisanat 
+352 
+87  
+899 
+1 465,28 
+12 938 
+2 897 
+33 900 
+41 074,92 
+BTP 
+62 
+2 
+173 
+347,16 
+8 295 
+198 
+26 590 
+33 221,10 
+Hydraulique 
+1 
+0 
+5 
+9,92 
+332 
+16 
+1 143 
+2 339,22 
+Industrie 
+120 
+35 
+306 
+766,92 
+11 203 
+2 441 
+32 590 
+50 695,92 
+Maintenance 
+15 
+0 
+37 
+67,62 
+833 
+19 
+2 004 
+2 434,61 
+Pêche 
+19 
+0 
+74 
+148,96 
+451 
+2 
+1 625 
+3 093,10 
+Professions Libérales 
+66 
+35 
+140 
+371,16 
+989 
+449 
+2 147 
+3 858,72 
+Services 
+164 
+42 
+408 
+757,64 
+30 714 
+5 269 
+64 926 
+109 171,43 
+Transport 
+Marchandise 
+1 
+0 
+1 
+2,15 
+45 848 
+698 
+69 666 
+118 383,90 
+Transport Voyageurs 
+0 
+0 
+0 
+0 
+12 192 
+150 
+18 486 
+28 851 
+TOTAL 
+1 437 
+272 
+3 582 
+6 914,68 
+143 493 
+14 471 
+300 602 
+471 591,51 
+Source : CNAC 
+ 
+ Tableau 30 CNAC : Présentation des principaux agrégats 
+   
+ 
+ 
+Principaux agrégats 
+1er semestre 2018 
+Bilan cumulé global  
+(au 30-06-2018) 
+Nombre de dossiers déposés 
+4 027 
+389 047 
+Attestations 
+d’éligibilités 
+et 
+de 
+financement  délivrées 
+2 649 
+257 679 
+Nombre d'accords bancaires 
+1 784 
+162 785 
+Nombre de rejets bancaires 
+34 
+8 597 
+Nombre de  projets financés 
+1 437 
+143 493 
+Impact Emploi  
+3 582 
+300 602 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 31 - 
+ 
+3.3 Dispositif « ANGEM » 
+        Tableau 31 ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2018) 
+Type de financement 
+Nombre 
+% 
+Emplois créés 
+Financement Achat de Matières Premières  
+763 254 
+90,33 % 
+1 144 881 
+Financement triangulaire « ANGEM-Banque-promoteur » 
+81 672 
+9,67 % 
+122 508 
+Total 
+844 926 
+100,00% 
+1 267 389 
+  Source :ANGEM 
+Tableau 32 ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2018) 
+Secteur d’activités 
+Nombre de prêts octroyés 
+Montants accordés 
+Part (%) 
+Agriculture 
+117 134 
+7 433 009 868 
+13,86% 
+TPI 
+331 023 
+15 995 425 321 
+39,18% 
+BTP 
+71 879 
+5 783 400 634 
+8,51% 
+Services 
+172 243 
+15 654 481 531 
+20,39% 
+Artisanat 
+148 260 
+8 098 101 652 
+17,55% 
+Commerce 
+3 583 
+882 383 573 
+0,42% 
+Pêche 
+804 
+101 097 887 
+0,10% 
+Total 
+844 926 
+53 947 900 465,80 
+100,00% 
+Source :ANGEM 
+Par secteur d’activité, les TPI (très petites industries), les services, l’artisanat et l’agriculture 
+sont les secteurs ayant bénéficié de la majorité des prêts octroyés avec 91% du total,  
+ 
+ 
+ 
+ 
+
+---PAGE---
+3.4 Dispositif « ANIREF » 
+Allocation du foncier au niveau des nouvelles zones industrielles/ Point de situation arrêté au 30/06/2018 
+N°   
+Région 
+Zone industrielle 
+Superficie de la zone 
+(m²) 
+Superficie 
+concessible de 
+la zone (m²) 
+Superficie 
+globale allouée 
+(m²) 
+Nombre 
+de lot 
+alloué 
+Investisseurs implantés 
+Arrêtés de concession 
+établis 
+Actes de concession 
+établis 
+Permis de 
+construire 
+délivrés 
+Projets 
+lancés 
+Projets 
+entrés en 
+activité 
+Wilaya 
+Dénominatio
+n  
+Nombre 
+Superficie 
+(m²) 
+Nombre 
+Superficie 
+(m²) 
+Nombre 
+Superficie 
+(m²) 
+1 
+Nord 
+Annaba 
+Ain Berda 
+1 018 123 
+791 083 
+706 344 
+121 
+87 
+633 390 
+91 
+706 344 
+89 
+652 582 
+50 
+44 
+- 
+2 
+El-Tarf 
+Metroha 
+700 000 
+487 471 
+358 328 
+81 
+65 
+311 470 
+73 
+350 312 
+67 
+318 205 
+32 
+14 
+- 
+3 
+Bouira 
+Oued El Bardi 
+1 896 100 
+1 319 998 
+882 667 
+145 
+39 
+882 667 
+39 
+822 667 
+20 
+522 246 
+- 
+16 
+- 
+4 
+Relizane 
+Sidi Khettab 
+5 000 000 
+4 096 200 
+3 252 906 
+232 
+126 
+3 252 906 
+126 
+3 252 906 
+41 
+1 644 672 
+28 
+41 
+2 
+5 
+Ain Temouchent 
+Tamazoura 
+2 052 800 
+1 585 921 
+1 436 621 
+257 
+109 
+1 380 537 
+106 
+1 351 005 
+47 
+907 347 
+86 
+62 
+2 
+6 
+Mostaganem 
+Bordjia 
+2 000 099 
+1 434 456 
+1 002 479 
+323 
+32 
+728 287 
+42 
+1 002 479 
+26 
+647 327 
+14 
+7 
+- 
+7 
+Mascara 
+Oggaz 
+981 596 
+667 701 
+404 923 
+105 
+46 
+404 923 
+50 
+404 923 
+9 
+86 319 
+38 
+32 
+- 
+8 
+Tlemcen  
+Ouled Ben 
+Damou  
+1 030 977 
+706 916 
+610 893 
+69 
+4 
+113 427 
+47 
+610 893 
+7 
+75 074 
+4 
+4 
+- 
+9 
+Sidi Bel Abbes  
+Sidi Bel Abbes  
+547 590 
+410 841 
+213 555 
+9 
+3 
+204 020 
+4 
+213 555 
+4 
+204 150 
+2 
+3 
+1 
+10 
+Ras El Ma  
+1 000 000 
+773 710 
+115 523 
+25 
+12 
+91 546 
+15 
+115 524 
+1 
+3 105 
+- 
+- 
+ -  
+11 
+Ain Defla 
+Boumedfaa 
+430 958 
+- 
+163 116 
+38 
+1 
+8 368 
+32 
+163 116 
+- 
+- 
+- 
+- 
+ -  
+12 
+Chlef 
+Oued Sly 
+1 100 000 
+788 550 
+621 004 
+110 
+- 
+- 
+43 
+503 599 
+33 
+297 642 
+- 
+- 
+ -  
+13 
+Boumerdes 
+Larbatache 
+1 369 100 
+1 097 540 
+852 430 
+206 
+- 
+- 
+135 
+851 605 
+42 
+341 337 
+1 
+1 
+ -  
+14 
+Médéa 
+Ksar El 
+Boukhari 
+2 000 000 
+1 344 934 
+888 814 
+90 
+39 
+722 866 
+52 
+888 814 
+42 
+755 516 
+- 
+2 
+ -  
+15 
+Jijel 
+Bellara 
+5 230 000 
+4 095 327 
+2 903 025 
+18 
+6 
+2 903 025 
+6 
+2 903 025 
+3 
+2 820 000 
+1 
+2 
+ -  
+16 
+Constantine 
+Sidi Roman 
+1 400 000 
+967 977 
+919 510 
+210 
+44 
+178 377 
+156 
+7 042 361 
+63 
+270 473 
+- 
+- 
+ -  
+17 
+Ain Abid 
+5 430 928 
+4 105 020 
+588 046 
+104 
+ -  
+ -  
+88 
+588 046 
+- 
+- 
+- 
+- 
+ -  
+18 
+Mila 
+Chelghoum 
+Laid 
+2 473 820 
+1 808 629 
+1 046 232 
+325 
+80 
+949 519 
+52 
+586 215 
+- 
+- 
+- 
+- 
+ -  
+Sous Total 1 
+35 662 091 
+26 482 274 
+16 966 417 
+2 468 
+693 
+12 765 328 
+1 157 
+22 357 389 
+494 
+9 545 995 
+256 
+228 
+5 
+19 
+Haut 
+Plateaux 
+Tébessa 
+ El-Aouinet 
+1 544 149 
+1 000 004 
+130 293 
+33 
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+20 
+Djelfa 
+Ain Oussera 
+4 000 000 
+2 015 083 
+1 681 835 
+162 
+10 
+665 700 
+86 
+1 681 835 
+31 
+772 663 
+1 
+3 
+ -  
+21 
+Batna 
+Ain Yagout 
+1 298 911 
+960 706 
+713 686 
+106 
+29 
+675 210 
+19 
+607 060 
+1 
+200 000 
+5 
+11 
+ -  
+22 
+BBA 
+Ras El Oued 
+1 340 750 
+972 057 
+644 786 
+107 
+47 
+640 281 
+41 
+538 161 
+ -  
+ -  
+17 
+15 
+1 
+23 
+Mechta Fatima 
+3 820 000 
+2 635 661 
+2 206 498 
+276 
+193 
+1 838 010 
+215 
+1 985 536 
+12 
+306 322 
+76 
+45 
+2 
+24 
+M'sila 
+Draa El Hadja 
+777 501 
+578 915 
+562 835 
+48 
+ -  
+ -  
+10 
+207 773 
+2 
+116 804 
+1 
+3 
+ -  
+25 
+Setif 
+Ouled Saber 
+7 000 485 
+5 600 940 
+2 842 049 
+180 
+128 
+2 155 989 
+139 
+2 370 412 
+17 
+225 566 
+1 
+14 
+ -  
+26 
+Tiaret 
+Zaaroura 
+3 275 039 
+2 130 298 
+881 822 
+147 
+26 
+881 822 
+26 
+881 822 
+30 
+880 275 
+19 
+18 
+ -  
+27 
+Ain Bouchekif 
+3 187 295 
+1 872 903 
+278 547 
+45 
+6 
+278 547 
+6 
+278 547 
+1 
+59 495 
+1 
+1 
+ -  
+28 
+El Bayadh  
+Rogassa  
+1 500 000 
+939 717 
+19 908 
+8 
+ -  
+ -  
+1 
+19 908 
+ -  
+ -  
+ -  
+ -  
+ -  
+29 
+Saida  
+kolea  
+1 000 000 
+694 752 
+74 394 
+22 
+ -  
+ -  
+22 
+74 394 
+ -  
+ -  
+ -  
+ -  
+ -  
+30 
+Naama 
+Horchaia  
+1 500 000 
+1 101 577 
+25 098 
+3 
+3 
+25 098 
+3 
+25 098 
+2 
+17 469 
+ -  
+ -  
+ -  
+Sous Total 2 
+30 244 130 
+20 502 613 
+10 061 751 
+1 137 
+442 
+7 160 657 
+568 
+8 670 546 
+96 
+2 578 594 
+121 
+110 
+3 
+31 
+Sud 
+Bechar 
+Bechar 
+1 870 000 
+1 039 916 
+302 026 
+24 
+13 
+254 332 
+18 
+292 010 
+11 
+141 552 
+7 
+5 
+2 
+32 
+Adrar 
+Timmi 
+2 148 796 
+1 642 658 
+1 597 658 
+67 
+50 
+1 416 623 
+66 
+1 597 658 
+63 
+1 560 958 
+20 
+3 
+ -  
+33 
+Ouargla 
+Hassi Ben 
+Abdellah 
+5 000 000 
+3 595 136 
+624 895 
+26 
+ -  
+ -  
+9 
+239 227 
+ -  
+ -  
+ -  
+ -  
+ -  
+34 
+Biskra 
+Ouméche 
+2 000 000 
+1 206 315 
+415 465 
+77 
+ -  
+ -  
+50 
+415 465 
+ -  
+ -  
+ -  
+ -  
+ -  
+35 
+Eloued 
+Guemmar 
+2 000 000 
+1 455 372 
+47 965 
+2 
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+ -  
+36 
+Ghardaia 
+Oued Nechou 
+1 000 000 
+648 933 
+288 216 
+68 
+ -  
+ -  
+11 
+255 434 
+ -  
+ -  
+ -  
+ -  
+ -  
+Sous Total 3 
+14 018 796 
+9 588 330 
+3 276 225 
+264 
+63 
+1 670 955 
+154 
+2 799 794 
+74 
+1 702 510 
+27 
+8 
+2 
+TOTAL GENERAL 
+79 925 017 
+56 573 217 
+30 304 392 
+3 869 
+1 198 
+21 596 940 
+1 879 
+33 827 729 
+664 
+13 827 099 
+404 
+346 
+10 
+
+---PAGE---
+ 
+ 
+ 
+ 
+Balance commerciale  
+Par rapport au 1er semestre 2017, la balance du commerce extérieur Algérien en 1er 
+semestre 2018 a enregistrée :  
+ Un volume des importations de 22,78 milliards de dollars US soit une 
+baisse de 2,1%  par rapport aux résultats du  premier semestre 2017. 
+ Un volume global des exportations de 19,83 milliards de dollars US, en 
+hausse de 12,56%  par rapport aux résultats du premier semestre  2017. 
+Cela s’est traduit par un déficit de la balance commerciale au premier semestre 2018 
+de l’ordre de  2,96 milliards de dollars US, affichant ainsi une baisse  de  47,75%  
+par rapport à celui  enregistré  au 1er  semestre  2017. 
+       D’où un taux de couverture des importations par les exportations de 87% pour le premier 
+semestre 2018 contre un taux de  76% pour  la même période 2017. 
+Tableau 33 Evolution de la Balance commerciale de l’Algérie (S1/2017 –S1/2018) (en Millions de Dollars US) 
+Valeurs en millions
+Dinars
+Dollars
+Dinars
+Dollars
+Importations
+2 548 640
+23 273
+2 617 644
+22 784
+-2,10
+Exportations
+1 929 014
+17 616
+2 278 601
+19 828
+12,56
+Balance Commerciale
+-619 626
+-5 657
+-339 043
+-2 956
+Taux de Couverture (%)
+76
+87
+Evolution 
+(%)
+1er  SEM 2017
+1er  SEM 2018*
+ Source : CNIS 
+ 
+ 
+Importations  
+  La répartition des importations par groupes de produits, comme l’indique le tableau ci-
+après fait ressortir des augmentations pour les biens alimentaires (3,45 %), les biens destinés à 
+l’outil de production (1,21%) et les biens de consommation non alimentaires (10, 07%).Et à 
+l’inverse, une diminution pour les biens d’équipements (14,88%). 
+ 
+ 
+ 
+ 
+ 
+III- COMMERCE EXTÉRIEUR
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 34 - 
+ 
+ 
+Tableau 34 Evolution des importations par groupes de produits (S1/2017 – S1/2018) 
+Valeurs en millions Usd
+Valeurs
+Struc %
+Valeurs
+Struc %
+BIENS ALIMENTAIRES
+4 437 
+19,07
+4 590 
+20,15
+3,45
+BIENS DESTINES A l'OUTIL DE PRODUCTION
+6 931 
+29,78
+7 015 
+30,79
+1,21
+BIENS D'EQUIPEMENTS
+7 716 
+33,15
+6 568 
+28,83
+-14,88
+BIENS DE CONSOMMATION NON ALIMENTAIRES
+4 189 
+18,00
+4 611 
+20,24
+10,07
+TOTAL
+23 273 
+100 %
+22 784 
+100 %
+-2,10
+1er SEM 2017
+1er SEM 2018
+Evolution 
+(%)
+Groupes de Produits
+ 
+Source : CNIS 
+ 
+L'examen par groupes de produits fait ressortir durant le 1er semestre 2018, les résultats suivants : 
+ 
+Les « biens d'équipements » qui représentent une part de (28,83%) des importations, sont 
+constitués essentiellement, de véhicules de transport de personnes et de marchandises, 
+des turboréacteurs et turbopropulseurs et des appareils électriques pour la téléphonie ;  
+ 
+Pour les « biens destinés au fonctionnement de l'outil de production » : il s'agit surtout, 
+des huiles de pétrole, des matériaux de construction (barres en fer ou en acier, tubes et 
+tuyaux, bois, etc,) soit une part de 30,79% des importations ; 
+ 
+Le groupe de « biens de consommation non alimentaires » vient en troisième position 
+dans la structure de nos importations avec la quote part de 20,24% ; 
+ 
+ Le groupe des « biens alimentaires occupe le dernier rang » dans la structure des 
+importations réalisées durant le 1er semestre 2018 avec une part de (20,15%) du volume 
+global 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 35 - 
+ 
+ 
+ 
+Exportations  
+Dans la structure des exportations Algériennes, les hydrocarbures continuent à représenter 
+l’essentiel de nos ventes à l’étranger durant les six premiers mois 2018 avec une part de 93,38% du 
+volume global des exportations, et une hausse de 11,19% par rapport à la même période 2017. 
+   Quant aux exportations « hors hydrocarbures », elles demeurent toujours marginales, avec 
+seulement 6,62% du volume global des exportations soit une valeur de 1,31 milliard de dollars 
+US. Elles ont enregistré une hausse de   36,10% par rapport au premier semestre 2017. 
+Les principaux produits hors hydrocarbures exportés, sont constitués essentiellement par le 
+groupe « demi-produits » qui représente une part de 5,01% du volume global des exportations 
+soit l’équivalent de 993 millions de dollars US. Le groupe « biens alimentaires » vient en seconde 
+position avec une part de 1,02% soit 202 millions de dollars US suivi par le groupe « produits 
+bruts » avec la part de 0,26% soit en valeur absolue 52 millions de dollars US, et enfin les 
+groupes « biens d’équipement industriels » et « biens de consommations non alimentaires » avec 
+les parts respectives de 0,24% et 0,09%.   
+Tableau 35 Principaux produits hors hydrocarbure  exportés (S1/2017- S1/2018) 
+                                                                                                   Valeurs en millions de Dollars US 
+Valeurs en millions Usd
+Valeurs
+Struc %
+Valeurs
+Struc %
+ENGRAIS MINERAUX OU CHIMIQUES 
+AZOTES
+123,35 
+12,80 
+387,46 
+29,53 
+214,11 
+HUILES ET AUTRES PRODUITS 
+PROVENANT DE LA DISTILLATION DES 
+GOUDRONS
+281,32 
+29,18 
+288,78 
+22,01 
+2,65 
+AMMONIACS ANHYDRES
+210,34 
+21,82 
+218,13 
+16,63 
+3,70 
+SUCRES DE CANNE OU DE BETTERAVE 
+119,52 
+12,40 
+127,28 
+9,70 
+6,49 
+DATTES
+30,46 
+3,16 
+42,95 
+3,27 
+41,00 
+PHOSPHATE DE CALCIUM
+26,94 
+2,79 
+21,54 
+1,64 
+-20,04 
+FILS,CABLES ET AUTRES 
+CONDUCTEURS ISOLES
+1,07 
+0,11 
+18,82 
+1,43 
+-
+HYDROGENE ET GAZ RARE
+14,92 
+1,55 
+18,17 
+1,38 
+21,78 
+Sous Total
+807,92 
+83,81 
+1 123,13 
+85,60 
+39,02 
+Total du Groupe
+964 
+100 %
+1 312 
+100 %
+36,10 
+1er SEM  2017
+1er SEM   2018
+Evolution 
+(%)
+Principaux Produits
+ 
+Source : CNIS 
+ 
+ 
+
+---PAGE---
+ 
+VI-ANNEXES 
+Tableau 36 : PME privées par secteurs d'activité 
+Secteurs d'activité 
+2017 
+Mouvements enregistrés durant S1/2018 
+Année 
+S1/2018 
+Créations I 
+Radiation 
+II 
+Réactivation 
+III 
+Ecart 
+(I+III)-II 
+I- Agriculture et pêche 
+Agriculture et pêche 
+6599 
+284 
+41 
+35 
+278 
+6877 
+ST1 
+6599 
+284 
+41 
+35 
+278 
+6877 
+II- Hydrocarbures, Energie, Mines et 
+Services liés 
+  
+  
+  
+  
+  
+0 
+Eau et énergie 
+158 
+4 
+2 
+1 
+3 
+161 
+Hydrocarbures 
+1050 
+2 
+1 
+2 
+3 
+1053 
+Services et travaux pétroliers 
+430 
+10 
+2 
+2 
+10 
+440 
+Mines et carrières 
+1249 
+31 
+3 
+5 
+33 
+1282 
+ST2 
+2887 
+47 
+8 
+10 
+49 
+2936 
+III- BTPH 
+Bâtiment et travaux publics 
+179303 
+2807 
+1009 
+1376 
+3174 
+182477 
+ST3 
+179303 
+2807 
+1009 
+1376 
+3174 
+182477 
+IV- Industrie manufacturières 
+ISMME 
+14560 
+414 
+43 
+88 
+459 
+15019 
+Matériaux de construction 
+12374 
+175 
+62 
+51 
+164 
+12538 
+Chimie, plastique 
+4358 
+214 
+16 
+21 
+219 
+4577 
+Industrie agroalimentaire 
+28616 
+940 
+168 
+236 
+1008 
+29624 
+industries du textile 
+7810 
+250 
+41 
+54 
+263 
+8073 
+Industrie du cuir 
+2177 
+15 
+7 
+6 
+14 
+2191 
+Industrie du bois et papier 
+19745 
+469 
+72 
+152 
+549 
+20294 
+Industrie divers 
+5290 
+121 
+14 
+15 
+122 
+5412 
+ST4 
+94930 
+2598 
+423 
+623 
+2798 
+97728 
+V- Services 
+Transport et communication 
+56554 
+1240 
+258 
+390 
+1372 57926 
+Commerce 
+122968 
+5261 
+642 
+894 
+5513 128481 
+Hôtellerie  et restauration 
+34651 
+1311 
+308 
+272 
+1275 35926 
+Services fournis aux entreprises 
+54336 
+1243 
+405 
+582 
+1420 55756 
+Services fournis aux ménages 
+48788 
+2162 
+290 
+622 
+2494 51282 
+Services pour collectivités 
+8328 
+473 
+37 
+66 
+502 
+8830 
+ST5 
+325625 
+11690 
+1940 
+2826 
+12576 338201 
+Total Général 
+609 344 
+17 426 
+3 421 
+4 870 
+18 875 628219 
+Source :CNAS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+Bulletin d’information statistique n°33     
+ 
+ 
+ 
+ 
+ 
+1er semestre 2018  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 37 - 
+ 
+ 
+Tableau 37  Concentration des PME (personnes morales) par wilaya  
+Taux de concentration = (Nombre de PME/Population résidente) *1000 
+Wilaya 
+Nbre de 
+PME Année 
+2017 
+Mouvement des PME Année 2017 
+Nbre de 
+PME S1 
+2018 
+Population par 
+Wilaya (RGPH 
+2008)* 
+Taux de 
+concentr
+ation 
+Création 
+radiation 
+réactivation 
+croissance 
+Nord 
+Alger 
+67839 
+1709 
+124 
+297 
+1882 
+69721 
+2988145 
+23 
+Tipaza 
+27472 
+1012 
+77 
+158 
+1093 
+28565 
+591010 
+48 
+Boumerdès 
+23099 
+840 
+74 
+105 
+871 
+23970 
+802083 
+30 
+Blida 
+21243 
+671 
+69 
+184 
+786 
+22029 
+1002937 
+22 
+Tizi Ouzou 
+36754 
+1256 
+180 
+479 
+1555 
+38309 
+1127607 
+34 
+Bouira 
+14373 
+445 
+19 
+108 
+534 
+14907 
+695583 
+21 
+Médéa 
+10072 
+328 
+11 
+98 
+415 
+10487 
+819932 
+13 
+Ain Defla 
+9899 
+219 
+10 
+79 
+288 
+10187 
+766013 
+13 
+Bejaia 
+30165 
+978 
+31 
+279 
+1226 
+31391 
+912577 
+34 
+Chlef 
+13481 
+325 
+61 
+78 
+342 
+13823 
+1002088 
+14 
+Oran 
+28683 
+963 
+17 
+108 
+1054 
+29737 
+1454078 
+20 
+Tlemcen 
+14784 
+544 
+66 
+213 
+691 
+15475 
+604744 
+26 
+Sidi Bel Abbes 
+10114 
+317 
+1261 
+397 
+-547 
+9567 
+949135 
+10 
+Aïn Temouchent 
+6498 
+152 
+8 
+39 
+183 
+6681 
+726180 
+9 
+Mostaganem 
+9915 
+215 
+59 
+34 
+190 
+10105 
+737118 
+14 
+Mascara 
+9697 
+240 
+9 
+68 
+299 
+9996 
+784073 
+13 
+Relizane 
+8162 
+203 
+9 
+31 
+225 
+8387 
+371239 
+23 
+Constantine 
+19309 
+528 
+46 
+119 
+601 
+19910 
+938475 
+21 
+Mila 
+11029 
+311 
+98 
+115 
+328 
+11357 
+766886 
+15 
+Jijel 
+11610 
+431 
+90 
+168 
+509 
+12119 
+636948 
+19 
+Annaba 
+14632 
+356 
+18 
+73 
+411 
+15043 
+609499 
+25 
+Skikda 
+12756 
+346 
+133 
+60 
+273 
+13029 
+898680 
+14 
+El Tarf 
+4976 
+143 
+46 
+53 
+150 
+5126 
+408414 
+13 
+Guelma 
+8097 
+192 
+4 
+54 
+242 
+8339 
+482430 
+17 
+ Total du Nord 
+424 659 
+12 724 
+2 520 
+3 397 
+13 601 
+438260 
+21075874 
+21 
+Hauts-Plateaux 
+M’sila 
+13364 
+402 
+23 
+376 
+755 
+14119 
+990591 
+14 
+Djelfa 
+9201 
+189 
+3 
+58 
+244 
+9445 
+1092184 
+9 
+Laghouat 
+6059 
+130 
+35 
+47 
+142 
+6201 
+455602 
+14 
+Tiaret 
+8253 
+120 
+3 
+36 
+153 
+8406 
+846823 
+10 
+Saida 
+3624 
+74 
+18 
+25 
+81 
+3705 
+330641 
+11 
+Tissemsilt 
+3042 
+110 
+15 
+19 
+114 
+3156 
+294476 
+11 
+Naama 
+2514 
+109 
+515 
+47 
+-359 
+2155 
+192891 
+11 
+El Bayadh 
+3201 
+77 
+14 
+13 
+76 
+3277 
+228624 
+14 
+Bordj Bou 
+Arréridj 
+13685 
+0 
+12 
+55 
+43 
+13728 
+628475 
+22 
+Sétif  
+27548 
+915 
+56 
+179 
+1038 
+28586 
+1489979 
+19 
+Batna 
+15435 
+588 
+30 
+88 
+646 
+16081 
+1119791 
+14 
+Oum El Bouaghi 
+6718 
+250 
+31 
+46 
+265 
+6983 
+621612 
+11 
+Khenchela 
+6607 
+153 
+19 
+54 
+188 
+6795 
+386683 
+18 
+Tébessa 
+8103 
+160 
+16 
+24 
+168 
+8271 
+648703 
+13 
+Souk Ahras 
+5823 
+143 
+15 
+40 
+168 
+5991 
+438127 
+14 
+ Total des Hauts-
+Plateaux 
+133 177 
+3 420 
+805 
+1 107 
+3 722 
+136899 
+9765202 
+14 
+Sud 
+Illizi 
+1846 
+29 
+2 
+13 
+40 
+1886 
+49149 
+38 
+Tamanrasset 
+2763 
+63 
+18 
+25 
+70 
+2833 
+176637 
+16 
+Tindouf 
+1958 
+53 
+0 
+15 
+68 
+2026 
+52333 
+39 
+Adrar 
+3888 
+150 
+16 
+53 
+187 
+4075 
+399714 
+10 
+Biskra 
+7370 
+174 
+13 
+48 
+209 
+7579 
+721356 
+11 
+Ouargla 
+9328 
+247 
+12 
+31 
+266 
+9594 
+558558 
+17 
+El Oued 
+7900 
+221 
+12 
+68 
+277 
+8177 
+647548 
+13 
+Bechar 
+6909 
+88 
+6 
+30 
+112 
+7021 
+270061 
+26 
+Ghardaia 
+9546 
+257 
+17 
+83 
+323 
+9869 
+363598 
+27 
+ Total du Sud 
+51 508 
+1 282 
+96 
+366 
+1 552 
+53060 
+3238954 
+16 
+Total Général 
+609 344 
+17 426 
+3 421 
+4 870 
+18 875 
+628219 
+34080030 
+18 
+ 
+Source : CNAS/ONS 
+
+---PAGE---

@@ -44,12 +44,12 @@ export function BenchmarkingTab({ t }: Props) {
   const eg = countryMeta.EG;
   const sa = countryMeta.SA;
 
-  const tabList = [
-    { key: "overview" as const, label: t.benchTabOverview || "Vue d'ensemble" },
-    { key: "growth" as const, label: t.benchTabGrowth || "Croissance & Commerce" },
-    { key: "social" as const, label: t.benchTabSocial || "Social & IDH" },
-    { key: "digital" as const, label: t.benchTabDigital || "Numérique & Énergie" },
-    { key: "fiscal" as const, label: t.benchTabFiscal || "Budget & Dette" },
+  const tabList: Array<{key: "overview"|"growth"|"social"|"digital"|"fiscal"; label: string}> = [
+    { key: "overview", label: t.benchTabOverview || "Vue d'ensemble" },
+    { key: "growth", label: t.benchTabGrowth || "Croissance & Commerce" },
+    { key: "social", label: t.benchTabSocial || "Social & IDH" },
+    { key: "digital", label: t.benchTabDigital || "Numérique & Énergie" },
+    { key: "fiscal", label: t.benchTabFiscal || "Budget & Dette" },
   ];
 
   // ─── Helper: highlight Algeria's rank ───

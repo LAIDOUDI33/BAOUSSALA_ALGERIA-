@@ -1,0 +1,4523 @@
+ الجمهورية الجزائرية
+الديمقراطية الشعبية 
+        République Algérienne Démocratique et Populaire 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bulletin d’information 
+Statistique de la PME   
+N°37 
+                
+ 
+            
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ وزارة الصناعة 
+Données du 1er semestre 2020 
+ 
+
+---PAGE---
+- 2 - 
+ 
+ 
+Edition novembre 2020 
+ 
+ 
+Abréviations 
+PME 
+ 
+ Petite et Moyenne Entreprise 
+EPE  
+ 
+Entreprise Publique Economique  
+Mds 
+ 
+Milliards  
+PIB  
+ 
+Produit Intérieur Brut 
+VA 
+ 
+Valeur Ajoutée 
+HH 
+ 
+Hors Hydrocarbures 
+ANGEM            Agence Nationale de Gestion du Micro Crédit 
+ANADE            Agence Nationale d'Appui et de Développement de l'Entreprenariat 
+ 
+ANDI   
+Agence Nationale de Développement de l’Investissement 
+CGCI-PME 
+Caisse de Garantie des Crédits d’Investissements-PME 
+FGAR   
+Fonds de Garantie des Crédits aux PME  
+CNAC  
+ 
+Caisse Nationale d’Assurance Chômage 
+ECOFIE :              Société d’études économiques et d’analyses financières du secteur 
+public marchand 
+ 
+ 
+ 
+Avertissement  
+Source principale : Référentiels CNAS et CASNOS 
+Remerciements 
+ 
+Le Bulletin d’information statistique                    
+Participe à une meilleure visibilité de l’évolution des indicateurs économiques et, 
+notamment, de ceux relatifs à la démographie des PME. 
+ 
+La diffusion du présent document à une large échelle, y compris sur le Web, 
+répond aux préoccupations du ministère de mettre l’information utile à la 
+disposition d’un maximum d’opérateurs et d’utilisateurs. 
+ 
+Nous tenons à exprimer notre reconnaissance                              
+Aux institutions publiques et aux structures déconcentrées du MI qui contribuent 
+régulièrement à l’alimentation en données de ce Bulletin, devenu un périodique 
+diffusé tous les semestres. 
+ 
+Nous tenons à exprimer nos vifs remerciements                          
+
+---PAGE---
+- 3 - 
+ 
+Aux nombreux lecteurs qui nous ont fait part de leurs observations et 
+suggestions. 
+ 
+Pour toute remarque ou suggestion, prière de nous contacter via l’adresse 
+suivante :  
+ 
+dgvsesi@industrie.gov.dz
+
+---PAGE---
+- 4 - 
+ 
+  
+ 
+ 
+Table des matières 
+Préambule ............................................................................................................................................... - 6 - 
+Chiffres clés au 30/06/2020 ................................................................................................................... - 7 - 
+I- POPULATION DES PME................................................................................................................ - 8 - 
+1- Situation à la fin du 1e semestre 2020 ........................................................................................................... - 8 - 
+2- Distribution ....................................................................................................................................................... - 9 - 
+2.1 Par taille ............................................................................................................................................................ - 9 - 
+2.2 Par nature juridique ...................................................................................................................................... - 10 - 
+2.3 Par statut juridique et secteur d’activité ..................................................................................................... - 11 - 
+2.4 Par région ........................................................................................................................................................ - 12 - 
+2.5 Densité ............................................................................................................................................................ - 12 - 
+2.6 Evolution de la population globale des PME ............................................................................................ - 14 - 
+2.7 Evolution des PME (tout secteur confondu) par secteur d'activité ........................................................ - 14 - 
+2.8 Evolution de l’emploi par type de PME ..................................................................................................... - 15 - 
+3- Demographie ................................................................................................................................................... - 16 - 
+3.1 Croissance ....................................................................................................................................................... - 16 - 
+3.2 Création de PME ............................................................................................................................................ - 16 - 
+3.3 Réactivation .................................................................................................................................................... - 16 - 
+3.4 Radiation (mortalité) ..................................................................................................................................... - 16 - 
+II- STATISTIQUES DES PROGRAMMES D’APPUI À LA PME................................................ - 18 - 
+1. Dispositif national d’appui à l’investissement (ANDI) .......................................................................... - 18 - 
+1.1 Projets d’investissement déclarés par secteur d’activité .......................................................................... - 18 - 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers) ........................................................... - 19 - 
+1.3 Projets d’investissement déclarés par tranche d’effectif .......................................................................... - 19 - 
+2. Bilan des activités relatif aux Centres d’appui et de conseil aux PME et Pépinières d’Entreprises - 20 - 
+3. Etat du FGAR .................................................................................................................................................. - 23 - 
+4. Activités de la CGCI-PME (dispositif relevant du Ministère des finances) ........................................ - 27 - 
+III. Dispositifs Sociaux d’appui à la PME ...................................................................................... - 29 - 
+1. Dispositif « ANSEJ » ...................................................................................................................................... - 29 - 
+2. Dispositif « CNAC » ...................................................................................................................................... - 31 - 
+3. Dispositif « ANGEM » .................................................................................................................................. - 31 - 
+4. Dispositif « ANNIREF » ................................................................................................................................ - 33 - 
+VI- Commerce extérieur ...................................................................................................................... - 34 - 
+1.Balance commerciale ....................................................................................................................................... - 34 - 
+2.Importations .............................................................................................................................................................. 
+3.Exportations ...............................................................................................................................................................  
+V- Enquête sur L’impact du covid-19 sur le secteur privé en Algérie…………………………………...-35- 
+V-ANNEXES ........................................................................................................................ - 37 - 
+ 
+Sommaire 
+
+---PAGE---
+- 5 - 
+ 
+ 
+Liste des tableaux 
+ 
+Tableau 1 Population globale des PME à fin S1/2020 ....................................................................................... - 8 - 
+Tableau 2 : typologie des PME............................................................................................................................. - 9 - 
+Tableau 3 Répartition des PME (Personnes morales) par secteur d’activité ............................................... - 10 - 
+Tableau 4 Professions libérales par secteur d’activité .................................................................................... - 10 - 
+Tableau 5 Répartition des PME publiques par tranche d’effectifs et secteur d’activités ........................... - 11 - 
+Tableau 6 Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) ..................... - 12 - 
+Tableau 7 Concentration des PME privées (personnes morales) par région ............................................... - 12 - 
+Tableau 8 Densité des PME privées (personnes morales) par région .......................................................... - 13 - 
+Tableau 9 Evolution de la population globale des PME (S1/2019 et S1/2020) ............................................. - 14 - 
+Tableau 10 Evolution des PME par secteur d’activité (S1 2019/ S1 2020) .................................................... - 14 - 
+Tableau 11 Evolution des emplois déclarés par type de PME ...................................................................... - 15 - 
+Tableau 12 Mouvements constatés dans la démographie des PME privées ............................................... - 16 - 
+Tableau 13 Mortalité des PME privées ............................................................................................................. - 16 - 
+Tableau 14 Mortalité des PME privées par secteur d'activité (personnes morales) ................................... - 17 - 
+Tableau 17 La mortalité des PME privées (personnes physiques) ............................................................... - 17 - 
+Tableau 18 Etats Récapitulatifs des projets d’investissement (S1/2020) ....................................................... - 18 - 
+Tableau 19 FGAR : Situation globale des dossiers traités Avril 2004/ au 30/06/2020                             ..... - 23 - 
+Tableau 20  FGAR : Situation des dossiers traités par type de projets              ............................................ - 24 - 
+Tableau 21 FGAR : Dossiers traités (S1/2020)                                                        ........................................... - 25 - 
+Tableau 22 FGAR : Dossiers traités par type de projets                               ................................................... - 26 - 
+Tableau 23 CGCI-PME : Situation globale des garanties par secteur d’activité (au 30/06/2020) .............. - 27 - 
+Tableau 24 CGCI-PME : Situation globale des garanties par région (au 30/06/2020) ................................. - 27 - 
+Tableau 25 Garanties CGCI-PME au 30-06-2020 par tranche de crédit ........................................................ - 28 - 
+Tableau 26 ANSEJ : Attestations d’éligibilité par secteur d’activité (Cumul au 30/06/2020) .................... - 29 - 
+Tableau 27  ANSEJ : Projets financés par genre et  par secteur d’activité (Cumul au 30/06/2020) ........... - 30 - 
+Tableau 29 CNAC : Projets financés par secteur d’activité (cumul au 30/06/2020) .................................... - 31 - 
+Tableau 30 CNAC : Présentation des principaux agrégats ..................................................................................... 
+Tableau 31 ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2020) ........................ - 31 - 
+Tableau 32 ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2020) .............................. - 32 - 
+Tableau 33 Evolution de la Balance commerciale de l’Algérie (S1/2019 –S1/2020)  ................................... - 34 - 
+Tableau 34 : Evolution des importations par groupes de produits (S1/2019 – S1/2020) ............................ - 35 - 
+Tableau 35 Principaux produits hors hydrocarbure  exportés (S1/2019- S1/2020) ..................................... - 36 - 
+Tableau 36 : PME privées par secteurs d'activité ............................................................................................ - 37 - 
+Tableau 37  Concentration des PME (personnes morales) par wilaya ......................................................... - 37 - 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 6 - 
+ 
+Préambule 
+ 
+La PME est considérée, à juste titre, comme un levier majeur de croissance économique et de 
+création d’emplois. Elle contribue à relever les défis, liés au développement durable et social au 
+niveau local et national. 
+Son existence favorise l’émergence de générations d’entrepreneurs engagés dans le processus 
+du développement de l’économie et de consolider la construction d’un tissu économique, 
+adapté aux axes stratégiques du pays, tel que la diversification des exportations et la 
+substitution de la production nationale à l’importation.  
+Cette importance, pour ne pas la restreindre au volet économique, s'étend également aux 
+autres volets, social, culturel, environnemental etc., dans la mesure où la PME est présente 
+au niveau de tous les domaines d’activité de la société. 
+Faut-il le rappeler, que la période du premier semestre 2020 a été particulièrement marquée 
+par la pandémie du COVID 19 ayant eu des retombées néfastes sur toutes les économies du 
+monde.  
+L’Algérie, à l’instar des autres pays, a pris de nombreuses mesures pour réduire au maximum 
+les effets négatifs de cette pandémie, notamment sur les entreprises, tout en veillant à la 
+préservation des exigences sociales et sanitaires en la matière. 
+A la fin du premier semestre 2020, le nombre total des PME privées a connu une hausse de 
+3,2% en passant de 1 171 701 durant le 1er semestre 2019 à 1 209 252 entreprises. 
+Par rapport au 1er semestre 2019, le nombre de PME privées a connu une évolution 
+remarquable, contrairement aux PME publiques qui sont restées pratiquement au même 
+niveau avec une diminution de cinq (05) entreprises. 
+En matière de densité, le secteur enregistre un taux de vingt-huit (28) PME pour mille 
+Habitants (28/1000) au 1er semestre 2020. Un taux qui reste très loin des normes 
+internationales. 
+En termes de création d’entreprises, il est enregistré durant le 1er semestre 2020, 15 720 
+nouvelles PME, soit une baisse de -49,60% par rapport à la même période de 2019. Cela 
+s’expliquerait par la crise sanitaire que connait le pays. 
+
+---PAGE---
+- 7 - 
+ 
+Chiffres clés au 30/06/2020 
+ 
+Population totale des PME 
+(tous statuts confondus) 
+1 209 491 
+ 
+PME créées  
+ 
+15 720 
+Cessations d’activités 
+(PME privés) 
+4 059 
+PME privés 
+1 209 252 
+PME publiques  
+239 
+ 
+Densité des PME  
+(Nombre de PME 
+pour 1000 Habitants) 
+Tous statuts 
+juridiques 
+confondus/ Moyenne 
+internationale 
+28/45 
+Personnes morales 
+privées/ Moyenne 
+internationale 
+15/45 
+Emplois (agents) 
+2 920 769 
+Importations (Millions de $) 
+17 105,45 
+Exportations (Millions de $) 
+15 077,50 
+ 
+ 
+ 
+
+---PAGE---
+- 8 - 
+ 
+I- POPULATION DES PME 
+1- Situation à la fin du 1e semestre 2020 
+A la fin du 1er semestre 2020, la population globale des PME s’élève à 1 209491 
+entêtées dont 56% sont constituées de personnes morales, parmi lesquelles on 
+recense 239 Entreprises Publiques Economiques (EPE). Le reste est composé de 
+personnes physiques avec près de (44%), dont 21% de professions libérales et 
+23% d’activités artisanales.  
+Tableau  Population globale des PME à la fin du 1er semestre 2020  
+ 
+Types de PME 
+ 
+Nbre de PME 
+Part (%) 
+1. 
+PME privées 
+ 
+Personnes morales* 
+ 
+678 057 
+56,06 
+ 
+Personnes physiques**   
+531 195 
+43,92 
+ 
+ dont Professions libérales 
+ 
+250 485 
+20,71 
+ 
+ dont Activités artisanales  
+280 710 
+23,21 
+ 
+                        S/Total 1 
+ 
+1 209 252 
+99,98 
+2 
+PME publiques *** 
+ 
+Personnes morales 
+ 
+239 
+0,02 
+ 
+S/Total 2 
+ 
+239 
+0,02 
+ 
+Total 
+ 
+1 209 491 
+100,00 
+* Source : CNAS    ** Source : CASNOS   *** Source : ECOFIE 
+ 
+                                   
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 9 - 
+ 
+ 
+2- Distribution 
+2.1 Par taille  
+Durant le 1er semestre 2020, le nombre des PME est composé de 97,53% de 
+Très Petite Entreprise TPE (effectif de moins de 10 salariés), soit 15 753 TPE 
+qui demeurent fortement dominante dans le tissu économique, suivie par la 
+Petite Entreprise PE avec 2,21% et la Moyenne Entreprise ME avec 0,26% 
+Tableau  : typologie des PME créées  
+Secteurs 
+d’activités 
+Année 
+2019 
+S1/2020 
+Cumul 
+Au 
+S1/2020 
+de 0 à 9 
+salariés 
+de10 à 49 
+salariés 
+de 50 à 249 
+salariés 
+Total PME 
+de 0 à 250 
+salariés 
+Agriculture 
+7481 
+55 
+-3 
+7 
+59 
+7 540 
+Hydrocarbures, 
+Energie, Mines et 
+services liés 
+3066 
+15 
+5 
+0 
+20 
+3 086 
+BTPH 
+190 170 
+1125 
+147 
+12 
+1284 
+191 454 
+Industries 
+manufacturières 
+103 693 
+850 
+56 
+-1 
+905 
+104 598 
+Services y compris 
+les professions 
+libérales 
+614 375 
+7552 
+152 
+24 
+7728 
+622 103 
+Artisanat 
+274 554 
+6156 
+0 
+0 
+6156 
+280 710 
+Total 
+1193339 
+15753 
+357 
+42 
+16152 
+1 209 491 
+% 
+97,53 
+2,21 
+0,26 
+100,00 
+ 
+de 0 à 9 salariés
+de10 à 49 salariés
+de 50 à 249 salariés
+15753
+357
+42
+PME par taille durant S1/2020
+ 
+
+---PAGE---
+- 10 - 
+ 
+                              
+2.2 Par nature juridique 
+2.2.1 Personnes Morales  
+Les PME (personnes morales) tous statuts confondus sont présentes en force 
+dans le secteur des services qui en concentre plus de la moitié (54,79%), suivi 
+par le secteur du BTPH (28,23%), et en troisième position il y a le secteur de 
+l’industrie avec 15,42%.   
+Tableau  Répartition des PME (Personnes morales) par secteur d’activité  
+ 
+Secteurs d’Activité 
+PME privées* 
+ 
+PME publiques**  
+Total 
+Part en (%) 
+Agriculture 
+7447 
+93 
+7540 
+1,11 
+Hydrocarbures, Energie, Mines 
+et services liés 
+3088 
+2 
+3090 
+0,46 
+BTPH 
+191438 
+16 
+191454 
+28,23 
+Industries manufacturières 
+104529 
+69 
+104598 
+15,42 
+Services 
+371555 
+59 
+371614 
+54,79 
+Total Général 
+678057 
+239 
+678296 
+100,00 
+*source CNAS ** source ECOFIE  
+2.2.2 Personnes physiques  
+Pour la période considérée, le nombre total des personnes physiques a atteint 
+531 195 PME, dont 250 485 sont des professions libérales et 280 710 sont des 
+activités artisanales (Voir le tableau N°1). 
+ a. Professions libérales 
+La catégorie des professions libérales, englobe, notamment, les notaires, les 
+avocats, les huissiers de justice, les médecins, les architectes et les agriculteurs.  
+Les professions libérales, au nombre de 250 485, exercent à 68,4% dans 
+l’Agriculture, 20,7% dans le secteur de la Santé et 10,8% dans la justice, tel que 
+repris dans le tableau n°4.  
+Tableau  Professions libérales par secteur d’activité  
+  
+Santé 
+Justice 
+Exploitations 
+agricoles
+Total 
+Nbre au 30.06.2020 
+51 902 
+27 110 
+171 473 
+250 485 
+Part en % 
+20,72 
+10,82 
+68,46 
+100 
+
+---PAGE---
+- 11 - 
+ 
+ 
+b-Activités Artisanales : 
+Durant le 1er semestre 2020, la CASNOS a enregistré une évolution de 6 156 
+affiliations, ce qui porte le nombre total des artisans au 30/06/2020 à 280 710 
+PME.    
+2.3 Par statut juridique et secteur d’activité 
+2.3.1. PME publiques  
+Les PME publiques représentent une part minime dans la population globale 
+des PME. Leur nombre est de 239 PME durant le 1er semestre 2020 contre 244 
+durant le premier semestre 2019 soit un recul de - 2,05%. Cette baisse est due 
+essentiellement à la restructuration de certains portefeuilles du Secteur Public 
+Marchand (SPM).  
+Tableau  Répartition des PME publiques par tranche d’effectifs et secteur d’activités (Source : ECOFIE) 
+Secteurs 
+d’activités 
+1 à 9 salariés 
+10 à 49 
+salariés 
+50 à 249 
+salariés 
+Nombre 
+global 
+de PME 
+% 
+Effectif 
+global 
+% 
+Nombre  Effectifs Nombre Effectifs Nombre Effectifs 
+Industrie 
+3 
+15 
+13 
+382 
+53 
+6999 
+69 
+28,87 
+7396 
+34,34 
+Services 
+0 
+0 
+8 
+239 
+51 
+6663 
+59 
+24,69 
+6902 
+32,05 
+Agricultur
+e 
+19 
+78 
+51 
+1254 
+23 
+2575 
+93 
+38,91 
+3907 
+18,14 
+BTPH 
+0 
+0 
+0 
+0 
+16 
+3000 
+16 
+6,69 
+3000 
+13,93 
+Mines et 
+carrières 
+0 
+0 
+0 
+0 
+2 
+332 
+2 
+0,84 
+332 
+1,54 
+Total 
+22 
+93 
+72 
+1 875 
+145 
+19 569 
+239 
+100,00 
+21 537 
+100,00 
+Source : ECOFIE 
+Les PME publiques exercent dans tous les secteurs d’activité de l’économie 
+nationale, on observe du tableau ci dessus l’émergence du secteur de 
+l’Agriculture avec 38,91% des PME/EPE, suivie du secteur de l’Industrie 
+(28,87%) ensuite le secteur des Services (24,69%).  
+Les PME publiques industrielles emploient 34,34 % des effectifs du Secteur 
+Public Marchand SPM de type PME.  
+ 
+ 
+
+---PAGE---
+- 12 - 
+ 
+2.3.2. PME Privées  
+Le nombre total des PME privées à la fin du 1er semestre 2020 est de 1 209 252. 
+Elles sont concentrées au niveau du secteur des services (le transport en 
+particulier), l’Artisanat et le BTPH (le Bâtiment en particulier). 
+Tableau  : Répartition des PME privées par secteur d’activité (Source : CNAS, CASNOS) 
+ 
+ 
+Secteurs d’Activité 
+Nombre 
+Part en 
+(%) 
+I 
+Agriculture 
+7447 
+0,62 
+II 
+Hydrocarbures, Energie, Mines et services 
+liés 
+3088 
+0,26 
+III 
+BTPH 
+191438 
+15,83 
+IV 
+Industries manufacturières 
+104529 
+8,64 
+V 
+Services y compris les professions libérales 
+622040 
+51,44 
+VI 
+Artisanat 
+280710 
+23,21 
+ 
+Total Général 
+1 209 252 
+100,00 
+ 
+2.4 Par région  
+Selon la répartition spatiale du Schéma National d'Aménagement du Territoire 
+(SNAT), les PME (personnes morales) sont prédominantes dans le Nord et, à 
+un degré moindre, dans les Hauts-Plateaux. 
+Tableau  Concentration des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/2020 
+Taux de concentration (%) 
+Nord 
+471786 
+69,58 
+Hauts-Plateaux 
+149104 
+21,99 
+Sud & Grand Sud  
+57167 
+8,43 
+Total Général 
+678 057 
+100,00 
+     Source : CNAS 
+La région du Nord regroupe, 471786 PME, soit 69,58 % des PME du pays, 
+suivie par la région des Hauts-Plateaux avec 149104 PME soit 22%, et les 
+régions du Sud et du Grand Sud accueillent 57167 PME soit 8,43% du total.  
+2.5 Densité  
+En termes de densité, selon les dernières statistiques de l’ONS sur la 
+démographie (43,9 Millions d’habitants en 2019) la moyenne nationale des 
+
+---PAGE---
+- 13 - 
+ 
+PME est de l’ordre de 28 PME (tous statuts confondus) pour 1.000 habitants. et 
+présente un écart important d’une région à l’autre du pays : 
+ 31 PME pour 1000 habitants au Nord du pays,  
+ 21 PME pour 1000 habitants dans la région des Hauts Plateaux.  
+ 24 PME pour 1000 habitants dans la région du Sud.  
+Région 
+Nbre de PME 
+S1/2020 
+Population 
+par Wilaya 
+(RGPH 
+2008)** 
+part (RGPH 
+2008)** 
+Population 
+par Wilaya 
+au 1er 
+janvier 2019 
+densité 
+Nord 
+843790 
+21075874 
+0,618 
+27130200 
+31 
+Hauts-
+Plateaux 
+266019 
+9765202 
+0,287 
+12599300 
+21 
+Sud 
+99682 
+3238954 
+0,095 
+4170500 
+24 
+Total 
+Général 
+1209491 
+34080030 
+1 
+43900000 
+28 
+Ce ratio national diminue à 15 pour 1.000 habitants pour les PME privées de 
+type « personnes morales » et présente un écart important d’une région à 
+l’autre du pays :  
+ 17 PME privées pour 1000 habitants au Nord du pays,  
+ 12 PME privées pour 1000 habitants dans la région des Hauts Plateaux.  
+ 14 PME privées pour 1000 habitants dans la région du Sud.  
+ 
+ 
+Tableau  Densité des PME privées (personnes morales) par région 
+Région 
+Nbre de PME 
+S1/2020* 
+Population 
+par Wilaya 
+(RGPH 
+2008)** 
+part 
+(RGPH 
+2008)** 
+Population 
+par Wilaya au 
+1er janvier 
+2019 
+densité 
+Nord 
+471786 
+21075874 
+0,618 
+27130200 
+17 
+Hauts-Plateaux 
+149104 
+9765202 
+0,287 
+12599300 
+12 
+Sud 
+57167 
+3238954 
+0,095 
+4170500 
+14 
+Total Général 
+678 057 
+34080030 
+1 
+43900000 
+15 
+    * Source : CNAS   ** Source : ONS 
+*** la démographie en 2019 par wilaya par rapport à la structure du (RGPH 2008)  
+ 
+
+---PAGE---
+- 14 - 
+ 
+2.6 Evolution de la population globale des PME 
+L’évolution de la population de la PME entre le 1er semestre 2019 et le             
+1er semestre 2020 est de 3,2 % tous secteurs juridiques confondus, représentant 
+un accroissement net total de +37 546 PME. Pour les PME privées personnes 
+morales, cette évolution est de 2,8%. 
+Tableau  Evolution de la population globale des PME (S1/2019 et S1/2020)  
+ 
+ 
+ 
+S1/2019 
+S1/2020 
+Evolution % 
+Population globale de la PME 
+1 171 945 
+1 209 491 
+3,20 
+Dont PME privées personnes 
+morales  
+659 573 
+678 057 
+2,80 
+ 
+2.7 Evolution des PME (tout secteur confondu) par secteur d'activité 
+Les secteurs où la création d’entreprise a été la plus forte entre les deux 
+premiers semestres des exercices 2019 et 2020, restent ceux des services avec 
+51,43%. 
+Les PME à caractère industriel sont au nombre de 104 598 entités à la fin du 1er 
+semestre 2020, contre 102 128 entités à la fin du 1er semestre 2019, soit une 
+évolution de 2,42 %. 
+Tableau  Evolution des PME par secteur d’activité (S1 2019/ S1 2020) 
+  
+Secteurs d’Activité 
+S1/2019 
+Parts(%) S1/2020 Parts(%) Evolution 
+(%) 
+I 
+Agriculture 
+7368 
+0,63 
+7540 
+0,62 
+2,33 
+II 
+Hydrocarbures, Energie, Mines et 
+services liés 
+3035 
+0,26 
+3090 
+0,26 
+1,81 
+III 
+BTPH 
+188290 
+16,06 
+191454 
+15,83 
+1,68 
+IV 
+Industries manufacturières 
+102128 
+8,71 
+104598 
+8,65 
+2,42 
+V 
+Services y compris les professions 
+libérales 
+602755 
+51,43 
+622099 
+51,43 
+3,21 
+VI 
+Artisanat 
+268369 
+22,90 
+280710 
+23,21 
+4,60 
+  
+Total 
+1171945 
+100 
+1209491 
+100,00 
+3,20 
+    Source : CNAS/CASNOS/ECOFIE 
+ 
+
+---PAGE---
+- 15 - 
+ 
+ 
+ 
+2.8 Evolution de l’emploi par type de PME 
+L’effectif global des PME, à la fin du 1er semestre 2020, est de 2 920 769 
+agents, dont seulement 21 537relèvent des PME publiques. A noter que 
+l’effectif global des PME a progressé de 3,62 % entre le 1er semestre 2019 et le 
+1er semestre 2020      
+ 
+ Tableau  Evolution des emplois déclarés par type de PME 
+Types de PME 
+1er semestre 2019 
+1er semestre 2020 
+Evolution (%) 
+Nombre 
+Parts (%) 
+Nombre 
+Parts (%) 
+  
+ Salariés 
+1 626 080 
+57,69 
+1 689 980 
+57,86 
+3,93 
+Employeurs 
+1 171 701 
+41,57 
+1 209 252 
+41,40 
+3,20 
+S/Total 
+2 797 781 
+99,26 
+2 899 232 
+99,26 
+3,63 
+ 
+PME Publiques 
+20 955 
+0,74 
+21 537 
+0,74 
+2,78 
+Total 
+2 818 736 
+100,00 
+2 920 769 
+100,00 
+3,62 
+ 
+Source : CNAS / CASNOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 16 - 
+ 
+3- Demographie 
+ 
+3.1 Croissance 
+Durant le 1er semestre 2020, le nombre global des PME privées est de                     
+1 209 252, soit 15 720 nouvelles PME créées. 
+Tableau  Mouvements constatés dans la démographie des PME privées         
+Nature des 
+PME 
+2019 
+Mouvements PME du 1er semestre 2020 
+Au 1er 
+semestre 2020 
+Créatio
+n (1) 
+Réactivatio
+n (2) 
+Radiation 
+(3) 
+Croissance 
+(1)+(2)-(3) 
+Personnes 
+morales 
+671 267 
+5782 
+1 831 
+823 
+6 790 
+678 057 
+Personnes 
+Physiques 
+521 829 
+9938 
+2 660 
+3 232 
+9 366 
+531 195 
+Total PME 
+privées 
+1 193 096 
+15 720 
+4 491 
+4 055 
+16 156 
+1 209 252 
+3.2 Création de PME 
+Le nombre de PME privées créées durant le 1er semestre 2020 est de 15 720 
+PME.  Les créations d’entreprises enregistrées au niveau de la CNAS à la fin 
+du 1er semestre 2020 s’élèvent à 5 782 nouvelles PME (personnes morales) alors 
+qu’au niveau de la CASNOS, on recense 9 938 nouvelles PME créées 
+(personnes physiques) durant la même période. 
+3.3 Réactivation 
+A la fin du 1er semestre 2020, les réactivations ont touché 1 831 PME privées 
+(personnes    morales) déclarées auprès de la CNAS, on recense aussi 2 660 
+PME privées (personnes    physique) déclarées auprès de la CASNOS 
+3.4 Radiation (mortalité)  
+Durant le 1er semestre 2020, 4 055 PME privées étaient radiées, dont 823 sont 
+des personnes morales et 3 232 PME personnes physiques.  
+Tableau  Mortalité des PME privées  
+Types de PME privées 
+Personnes* 
+Morales 
+Personnes ** 
+Physiques 
+Total 
+Nombre de cessation d’activité 
+823 
+3 232 
+4 055 
+Parts en % 
+20,30 
+79,70 
+100,00 
+    * Source : CNAS   ** Source : CASNOS 
+ 
+
+---PAGE---
+- 17 - 
+ 
+3.4.1 Mortalité des PME privées (personnes morales)  
+a- Mortalité des PME privées par secteur d’activité 
+Les PME de type personnes morales ayant été radiées durant le 1er semestre 
+2020, sont au nombre de 823. Ce nombre est visiblement en baisse par rapport 
+aux 1 755 enregistrées à la fin du 1er semestre 2019 (voir le tableau n°14).  
+Tableau  Mortalité des PME privées par secteur d'activité (personnes morales) 
+ 
+Secteurs d’Activité 
+ 
+S1/2019 
+S1/2020 
+Evolution en Nbre 
+I 
+Agriculture et pêche 
+17 
+14 
+-17,65 
+II 
+Hydrocarbures, Energie, 
+Mines et services liés 
+8 
+1 
+-87,50 
+III 
+BTPH 
+474 
+177 
+-62,66 
+IV 
+Industries manufacturières 
+235 
+117 
+-50,21 
+V 
+Services 
+1021 
+514 
+-49,66 
+  
+Total Général 
+1755 
+823 
+-53,11 
+Source : CNAS 
+ 
+3.4.2 La mortalité des PME privées (personnes physiques)  
+Selon les chiffres de la CASNOS, les PME de type personne physique ayant 
+cessé leurs activités durant le 1er semestre 2020, sont au nombre de 3 232. Les 
+activités des artisans sont les plus vulnérables avec 1 738 radiés (soit environ 
+53,77% du total) et le secteur des exploitations agricoles en deuxième position 
+avec 1 147 PME radiées soit 35,49% du total. 
+Tableau  : La mortalité des PME privées (personnes physiques) 
+ 
+ 
+Santé 
+Justice 
+Exploitations 
+agricoles 
+Artisanat 
+Total 
+Nombre      de cessation 
+d’activité 
+281 
+66 
+1147 
+1738 
+3232 
+Part (%) 
+8,69 
+2,04 
+35,49 
+53,77 
+100,00 
+      Source : CASNOS 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 18 - 
+ 
+ 
+ 
+ 
+II- STATISTIQUES DES PROGRAMMES D’APPUI À LA PME 
+1. Dispositif national d’appui à l’investissement (ANDI) 
+Le bilan des déclarations d’investissement du 1er semestre 2020 est constitué d’informations 
+extraites de la base de données de l’ANDI affinées et corrigées en tenant compte des projets 
+annulés. 
+Il est à rappeler que ce bilan ne tient compte que des projets d’investissement dans les activités de 
+production de biens et services, couverts par le dispositif national d’appui à l’investissement.   
+ 
+1.1 Projets d’investissement déclarés par secteur d’activité 
+Tableau  Etats récapitulatifs des projets d’investissement (S1/2020) 
+Secteurs 
+d'activités 
+Projets 
+déclarés 
+Projets 
+déclarés % 
+Montant      
+(en Million 
+DA) 
+Emplois 
+Emplois % 
+Agriculture 
+23 
+2,66 
+5949,158 
+357 
+1,86 
+industrie 
+385 
+44,51 
+93194,126 
+10896 
+56,77 
+BTPH 
+264 
+30,52 
+32803,730 
+3315 
+17,27 
+tourisme 
+25 
+2,89 
+22284,558 
+1488 
+7,75 
+santé 
+82 
+9,48 
+26981,349 
+1843 
+9,60 
+transport 
+43 
+4,97 
+5920,935 
+418 
+2,18 
+services 
+43 
+4,97 
+9215,300 
+875 
+4,56 
+Total général 
+865 
+100 
+196 349,156 
+19192 
+100,00 
+ 
+Plus de 44% des projets déclarés au niveau de l’ANDI, sont des entreprises à 
+caractère industriel, soit 385 projets sur un total des projets de 865 et avec un 
+montant de 196349,156 (MDA) et 19192 salariés.  
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 19 - 
+ 
+ 
+ 
+ 
+ 
+ 
+1.2 Projets d’investissement déclarés par origine (locaux/étrangers)  
+  
+Projets déclarés 
+(S1 2020) 
+Montant 
+Emplois 
+Projets d'investissement  Nombre 
+% 
+Millions de 
+DA 
+% 
+Nombre 
+% 
+Investissement locaux 
+865 
+100,00 
+196 349, 156 
+100,00 
+19 192 
+100,00 
+Total investissement 
+étranger 
+0 
+0,00 
+0 
+0,00 
+0 
+0,00 
+Total Général  
+865   
+100,00 
+196 349, 156   100,00 
+19 192   
+100,00 
+Source : ANDI   
+Durant la période considérée, aucune déclaration des investissements 
+étrangers auprès de l’ANDI.  
+ 
+1.3 Projets d’investissement déclarés par tranche d’effectif 
+nches d'effectifs e de PME ets déclarés ts déclarés % ntant (en Million 
+DA) 
+Emplois 
+Emplois % 
++250 
+GE 
+6 
+0,69 
+11056,550 
+2100 
+10,94 
+0 à 9 
+TPE 
+382 
+44,16 
+25120,131 
+1555 
+8,10 
+10 à 49 
+PE 
+379 
+43,82 
+100734,842 
+7686 
+40,05 
+50 à 249 
+ME 
+98 
+11,33 
+59437,633 
+7851 
+40,91 
+TOTAL 
+865 
+100 
+196 349,156 
+19192 
+100 
+Source : ANDI 
+ 
+
+---PAGE---
+- 20 - 
+ 
+ 
+ 
+ 
+ 
+2. Bilan des activités relatif aux Centres d’appui et de conseil aux PME et 
+Pépinières d’Entreprises au 1er semestre 2020 
+Durant le 1er semestre 2020, le bilan des activités des centres d’appui et de conseil aux 
+PME et des pépinières d’entreprises fait ressortir les résultats suivants : 
+ 
+a- Centres d’appui et de conseil 
+situation 
+opérationnel 
+En cours 
+de 
+réceptio
+n 
+Non 
+opération
+nel 
+Nbre de 
+porteurs 
+de projets 
+reçus 
+Nbre de 
+porteurs de 
+projets 
+accompagné
+s 
+Nombre 
+d’entreprises 
+créées 
+Nombre 
+d’emploi 
+prévu 
+Centres 
+d’appui et de 
+conseil aux 
+PME 
+27 
+1 
+1 
+1519 
+1030 
+59 
+332 
+Source : ADPI-PME 
+ 
+ 
+b- Pépinières d’entreprise 
+situation 
+opérationnelle 
+Siège 
+réception
+nés 
+Nombre 
+de 
+projets 
+reçus 
+Nombre 
+de 
+projets 
+incubés 
+Nombre 
+de projets 
+hébergés 
+Nombre 
+d’entrepris
+es créées 
+Nombre d’emploi prévu 
+Pépinières 
+d’entrepri
+ses 
+17 
+3 
+259 
+128 
+74 
+64 
+230 
+Source : ADPI-PME 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 21 - 
+ 
+ 
+ 
+Point de situation des pépinières d’entreprises par wilaya 
+N
+° 
+Wilaya 
+Situation d'activité 
+Nombre 
+ de  
+projets  
+reçus 
+Nombre  
+d'emploi  
+Prévu 
+Nombre  
+de  
+projets 
+incubés 
+Nombre  
+d'entreprises  
+créées 
+Nombre  
+de  
+projets 
+hébergés 
+1 
+Adrar 
+Opérationnelle 
+36 
+50 
+24 
+26 
+7 
+2 
+Alger 
+Opérationnelle 
+15 
+10 
+15 
+3 
+0 
+3 
+Annaba 
+Opérationnelle 
+1 
+35 
+45 
+1 
+6 
+4 
+Batna 
+Opérationnelle 
+47 
+12 
+5 
+4 
+2 
+5 
+Béchar 
+Opérationnelle 
+6 
+5 
+2 
+2 
+1 
+6 
+Biskra 
+Opérationnelle 
+13 
+33 
+1 
+12 
+12 
+7 
+Bordj Bou Arreridj 
+Opérationnelle 
+5 
+12 
+0 
+5 
+5 
+8 
+Bouira 
+Opérationnelle 
+6 
+0 
+0 
+0 
+0 
+10 
+El Bayadh 
+Opérationnelle 
+26 
+21 
+2 
+2 
+7 
+11 
+Ghardaïa 
+Opérationnelle 
+3 
+0 
+0 
+0 
+2 
+12 
+Khenchela 
+Opérationnelle 
+2 
+0 
+2 
+0 
+1 
+13 
+Laghouat  
+siège 
+ réceptionnée 
+0 
+0 
+0 
+0 
+0 
+14 
+Mila 
+Opérationnelle 
+5 
+0 
+0 
+0 
+0 
+15 
+Mostaganem 
+siège 
+ réceptionnée 
+0 
+0 
+0 
+0 
+0 
+16 
+Oran 
+Opérationnelle 
+24 
+17 
+6 
+4 
+3 
+17 
+Ouargla 
+Opérationnelle 
+19 
+16 
+ 
+1 
+8 
+18 
+Oum 
+ El Bouaghi 
+Opérationnelle 
+39 
+4 
+19 
+3 
+12 
+19 
+Sidi 
+ Bel Abbes 
+Opérationnelle 
+7 
+0 
+0 
+0 
+0 
+20 
+Tiaret 
+Opérationnelle 
+5 
+15 
+6 
+1 
+8 
+21 
+Tlemcen  
+siège 
+ réceptionnée 
+0 
+0 
+0 
+0 
+0 
+  
+TOTAL 
+259 
+230 
+128 
+64 
+74 
+Source : ADPI-PME 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 22 - 
+ 
+Point de situation des centres d’appui et de conseil aux PME par wilaya 
+N° 
+Wilaya 
+Situation 
+d'activité 
+Nombre de 
+projets 
+reçus 
+ Nombre 
+de porteurs 
+de projets 
+accompagn
+és 
+Nombre  
+de  
+business 
+plan 
+élaborés 
+ Nombre 
+d'entrepris
+es créées 
+Nombre  
+d'emploi  
+prévu 
+1 
+Adrar 
+Opérationnel 
+10 
+3 
+1 
+0 
+0 
+2 
+Alger 
+Non 
+opérationnel 
+0 
+0 
+0 
+0 
+0 
+3 
+Batna 
+Opérationnel 
+0 
+0 
+0 
+0 
+0 
+4 
+Béchar 
+Opérationnel 
+55 
+0 
+0 
+0 
+0 
+5 
+Bejaïa 
+Opérationnel 
+8 
+6 
+0 
+4 
+12 
+6 
+Biskra 
+Opérationnel 
+833 
+766 
+0 
+12 
+50 
+7 
+Blida 
+Opérationnel 
+25 
+10 
+0 
+0 
+0 
+8 
+Bordj Bou 
+Arreridj 
+Opérationnel 
+26 
+5 
+0 
+0 
+0 
+9 
+Bouira 
+Opérationnel 
+8 
+1 
+1 
+0 
+0 
+10 
+Boumerdas 
+en cours de 
+réception 
+0 
+0 
+0 
+0 
+0 
+11 
+Chlef 
+Opérationnel 
+19 
+19 
+0 
+4 
+50 
+12 
+Djelfa 
+Opérationnel 
+15 
+5 
+3 
+3 
+7 
+13 
+El Bayadh 
+Opérationnel 
+5 
+2 
+0 
+0 
+0 
+14 
+El oued 
+Opérationnel 
+10 
+0 
+0 
+0 
+0 
+15 
+Ghardaïa 
+Opérationnel 
+0 
+0 
+0 
+0 
+0 
+16 
+Illizi 
+Opérationnel 
+6 
+6 
+0 
+0 
+0 
+17 
+Jijel 
+Opérationnel 
+23 
+3 
+2 
+0 
+0 
+18 
+Khenchela 
+Opérationnel 
+38 
+3 
+2 
+0 
+0 
+19 
+Laghouat 
+Opérationnel 
+10 
+2 
+0 
+2 
+4 
+20 
+Mila 
+Opérationnel 
+11 
+2 
+0 
+8 
+8 
+21 
+Naama 
+Opérationnel 
+34 
+21 
+0 
+2 
+9 
+22 
+Oran 
+Opérationnel 
+112 
+112 
+0 
+0 
+0 
+23 
+Ouargla 
+Opérationnel 
+67 
+1 
+4 
+12 
+20 
+24 
+Oum  
+El bouaghi 
+Opérationnel 
+30 
+12 
+0 
+0 
+0 
+25 
+Sidi 
+ Bel Abbes 
+Opérationnel 
+90 
+25 
+0 
+1 
+0 
+26 
+Souk Ahras 
+Opérationnel 
+23 
+4 
+3 
+1 
+2 
+27 
+Tamanrasse
+t 
+Opérationnel 
+3 
+1 
+0 
+0 
+0 
+28 
+Tindouf 
+Opérationnel 
+25 
+6 
+0 
+2 
+8 
+29 
+Tipaza 
+Opérationnel 
+33 
+15 
+12 
+8 
+162 
+ 
+Total 
+1519 
+1030 
+28 
+59 
+332 
+Source : ADPI-PME 
+ 
+
+---PAGE---
+- 23 - 
+ 
+ 
+3. Etat du dispositif « FGAR » 
+ 
+     Tableau  FGAR : Situation globale des dossiers traités Avril 2004/ au 30/06/2020                        
+Montants en DA  
+N 
+Items 
+    Création 
+ Extension 
+TOTAL 
+1 
+Nombre des garanties 
+accordées 
+1 316,00 
+1 625,00 
+2 941,00 
+2 
+Coût total des projets 
+(DZD) 
+172 567 268 696,00 
+160 736 633 281,00 
+333 303 901 
+977,00 
+3 
+Montant des crédits 
+sollicités (DZD) 
+98 102 966 373,00 
+107 450 448 992,00 
+205 553 415 
+365,00 
+4 
+Taux moyen de 
+financement sollicité 
+40.6% 
+30.18% 
+35.59% 
+5 
+Montant des garanties 
+accordées (DZD) 
+37 484 340 096,00 
+57 988 550 450,00 
+95 472 890 
+546,00 
+6 
+Taux moyen de garantie 
+accordée 
+38% 
+54% 
+46% 
+7 
+Montant moyen de la 
+garantie (DZD) 
+28 483 541,11 
+35 685 261,82 
+32 462 730,55 
+8 
+Nombre d'emplois à créer 
+27 093,00 
+58 632,00 
+85 725,00 
+9 
+Investissement par emploi 
+(DZD) 
+6 369 441,14 
+2 741 448,92 
+3 888 059,52 
+10 
+Crédit par emploi (DZD) 
+3 620 970,97 
+1 832 624,66 
+2 397 823,45 
+11 Garantie par emploi (DZD) 
+1 383 543,35 
+989 025,63 
+1 113 711,18 
+ Source : FGAR 
+ 
+*Extension : comprend aussi les projets de renouvellement et/ou rénovation des équipements 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 24 - 
+ 
+ 
+ Tableau   FGAR : Répartition des projets garantis par secteur d’activité Avril 2004 au 30/06/2020                                        
+Secteur d'activités 
+Nombr
+e de 
+projet 
+% 
+Montant de la 
+garantie (DA) 
+% 
+Nombre 
+d'emploi
+s 
+% 
+TRANSPORT 
+330 
+11,19% 
+5 463 330 915,00 
+5,70% 
+3 941,00 
+4,68% 
+INDUSTRIE SIDERURGIQUE 
+METALIQUE MECANIQUE ET 
+ELECTRIQUE 
+213 
+7,24% 
+8 101 191 650,00 
+8,49% 
+8 476,00 
+9,82% 
+TOURISME, STATION SERCICES, 
+CATERING ET LOISIR 
+151 
+5,03% 
+7 553 997 914,00 
+7,87% 
+4 301,00 
+4,84% 
+SANTE 
+110 
+3,71% 
+3 368 913 577,00 
+3,51% 
+2 092,00 
+2,37% 
+MAT.CONST.ET VERRE 
+218 
+7,45% 
+9 386 078 217,00 
+9,94% 
+8 108,00 
+9,84% 
+BATIMENT 
+359 
+12,17% 
+6 947 792 325,00 
+7,27% 
+9 272,00 
+10,57% 
+HYDRAULIQUE 
+28 
+0,99% 
+819 471 361,00 
+0,87% 
+525 
+0,61% 
+CHIMIE, CAOUTCHOUC ET 
+PLASTIQUE 
+339 
+11,49% 
+13 739 621 251,00 
+14,41% 
+11 528,00 
+13,33% 
+AGROALIMENTAIRE TABACS ET 
+ALLUMETTES 
+488 
+16,73% 
+19 400 147 279,00 
+20,33% 
+16 425,00 
+18,95% 
+PECHE 
+64 
+2,14% 
+3 806 213 393,00 
+3,89% 
+1 441,00 
+1,66% 
+TRAVAUX PUBLICS 
+234 
+7,96% 
+5 435 003 314,00 
+5,75% 
+7 541,00 
+9,07% 
+COMMUNICATION 
+16 
+0,54% 
+272 286 913,00 
+0,28% 
+466 
+0,54% 
+BOIS, LIEGE, PAPIER ET 
+IMPRIMERIE 
+166 
+5,61% 
+4 725 761 509,00 
+4,85% 
+5 213,00 
+6,08% 
+TEXT.BONNET ET CONFECTION 
+46 
+1,53% 
+870 636 443,00 
+0,88% 
+1 116,00 
+1,26% 
+INDUSTRIES DIVERSES 
+59 
+2,07% 
+2 322 363 566,00 
+2,50% 
+2 028,00 
+2,37% 
+MAINTENANCE INDUSTRIELLE 
+34 
+1,19% 
+508 214 572,00 
+0,55% 
+535 
+0,86% 
+Engineering et Etudes Techniques 
+Topographiques 
+14 
+0,48% 
+240 115 581,40 
+0,25% 
+171 
+0,20% 
+MINE ET CARRIERES 
+42 
+1,39% 
+1 569 659 144,00 
+1,65% 
+1 128,00 
+1,31% 
+INDUSTRIE CUIR ET CHAUSSURES 
+8 
+0,31% 
+193 073 000,00 
+0,24% 
+249 
+0,29% 
+NTIC 
+15 
+0,51% 
+476 109 638,00 
+0,50% 
+698 
+0,80% 
+AGRICULTURE 
+7 
+0,27% 
+272 908 984,00 
+0,28% 
+471 
+0,54% 
+TOTAL 
+2941 
+100.00% 
+95 472 890 546,40 
+100.00% 
+85 725,00 
+100.00% 
+Source : FGAR 
+ 
+ 
+ 
+
+---PAGE---
+- 25 - 
+ 
+ 
+ 
+ 
+Tableau  FGAR : Dossiers traités (du 01/01/2020 au 30/06/2020 )                               
+Montants en DA    
+Items 
+Création 
+Extension 
+TOTAL 
+Nombre des garanties accordées 
+50 
+46 
+96 
+Coût total des projets (DZD) 
+13 589 735 859,00 
+8 223 491 623,00 
+21 813 227 482,00 
+Montant des crédits sollicités (DZD) 
+5 689 555 344,00 
+8 249 144 002,00 
+13 938 699 346,00 
+Taux moyen de financement sollicité 
+41.87% 
+26.57% 
+36.1% 
+Montant des garanties accordées 
+(DZD) 
+2 633 824 488,00 
+2 661 318 127,00 
+5 295 142 615,00 
+Taux moyen de garantie accordée 
+46% 
+32% 
+38% 
+Montant moyen de la garantie (DZD) 
+52 676 489,76 
+57 854 741,89 
+55 157 735,57 
+Nombre d'emplois à créer 
+27 
+1 435,00 
+1 462,00 
+Investissement par emploi (DZD) 
+503 323 550,33 
+5 730 656,18 
+9 533 994,08 
+Crédit par emploi (DZD) 
+210 724 272,00 
+5 748 532,41 
+538 613 415,60 
+Garantie par emploi (DZD) 
+97 549 055,11 
+57 854 741,89 
+55 157 735,57 
+ Source : FGAR 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 26 - 
+ 
+Tableau  FGAR : Répartition des projets garantis par secteur d’activité (du 01/01/2020 au 30/06/2020)   
+                                                                      
+Montants en DA  
+Secteur d'activités 
+Nombre 
+de projet 
+% 
+Montant de la 
+garantie 
+% 
+Nombre 
+d'emplois 
+% 
+INDUSTRIE 
+SIDERURGIQUE 
+METALIQUE MECANIQUE 
+ET ELECTRIQUE 
+13 
+13,40% 
+429 521 572,00 
+8,11% 
+78 
+5,34% 
+AGROALIMENTAIRE 
+TABACS ET ALLUMETTES 
+18 
+19,59% 
+1 079 742 479,00 
+20,39% 
+150 
+10,26% 
+PECHE 
+5 
+5,15% 
+400 816 200,00 
+7,57% 
+75 
+5,13% 
+BOIS, LIEGE, PAPIER ET 
+IMPRIMERIE 
+4 
+4,12% 
+118 872 530,00 
+2,24% 
+133 
+9,10% 
+TOURISME, STATION 
+SERCICES, CATERING ET 
+LOISIR 
+10 
+10,31% 
+1 266 979 192,00 
+23,93% 
+38 
+2,60% 
+BATIMENT 
+8 
+8,25% 
+281 872 504,00 
+5,32% 
+245 
+16,76% 
+TRANSPORT 
+10 
+10,31% 
+412 802 095,00 
+7,80% 
+283 
+19,36% 
+SANTE 
+7 
+7,22% 
+343 536 964,00 
+6,49% 
+92 
+6,29% 
+CHIMIE, CAOUTCHOUC 
+ET PLASTIQUE 
+11 
+11,34% 
+464 128 759,00 
+8,77% 
+259 
+17,72% 
+HYDRAULIQUE 
+2 
+2,06% 
+149 916 067,00 
+2,83% 
+30 
+2,05% 
+MINE ET CARRIERES 
+2 
+2,06% 
+78 840 000,00 
+1,49% 
+3 
+0,21% 
+MAT.CONST.ET VERRE 
+3 
+3,09% 
+156 885 510,00 
+2,96% 
+0 
+0,00% 
+TRAVAUX PUBLICS 
+1 
+1,03% 
+22 960 000,00 
+0,43% 
+22 
+1,50% 
+AGRICULTURE 
+1 
+1,03% 
+13 620 000,00 
+0,26% 
+29 
+1,98% 
+INDUSTRIES DIVERSES 
+1 
+1,03% 
+74 648 743,00 
+1,41% 
+25 
+1,71% 
+TOTAL 
+96 
+100.00% 
+5 295 142 615,00 
+100.00% 
+1462 
+100.00% 
+ Source : FGAR 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 27 - 
+ 
+4. Activités de la CGCI-PME (dispositif relevant du Ministère des 
+finances)  
+ 
+Tableau  CGCI-PME : Situation globale des garanties par secteur d’activité (au 30/06/2020) 
+Secteur d’Activité 
+Nombre de dossiers 
+En % 
+BTPH 
+296 
+17 
+Transport 
+128 
+7 
+Industrie 
+866 
+50 
+Santé 
+107 
+6 
+Services 
+324 
+19 
+Total 
+1721 
+100% 
+   Source : CGCI-PME 
+Une concentration a été constatée en nombre du flux de dossiers traités par la 
+CGCI-PME sur deux filières principales, Industrie et les services, qui 
+représentent à elles seules presque 70% des projets garantis. En termes 
+financiers, le secteur de l’Industrie représente la moitié avec un taux de 50% 
+suivi du secteur des services avec un taux de 19% et BTPH 15%.  
+Tableau  CGCI-PME : Situation globale des garanties par région (au 30/06/2020) 
+Région 
+Nombre de dossiers 
+% 
+Centre 
+596 
+35 
+Est 
+675 
+39 
+Ouest 
+329 
+19 
+Sud 
+121 
+7 
+Total 
+1721 
+100% 
+Source : CGCI-PME 
+ 
+Cette répartition géographique de la garantie met en évidence les régions à 
+plus ou moins fortes potentialités économiques favorisant plus ou moins 
+l’investissement des PME. Les régions Est et Centre occupent la pole position 
+découvrent respectivement 39% et 35%, tendit que les régions Ouest et sud 
+présentent respectivement des taux de 19% et 7%.    
+ 
+ 
+
+---PAGE---
+- 28 - 
+ 
+ 
+Tableau  Garanties CGCI-PME au 30-06-2020 par tranche de crédit 
+Total 
+Banques 
+Tranche de crédit 
+Nbre de 
+dossiers 
+% 
+MT de crédit 
+garantis (M DA) 
+% 
+0 -  <= 30 MDA 
+1054 
+61 
+12667,55 
+15 
+30  < =100 MDA 
+400 
+23 
+23081,34 
+27 
+      > 100 MDA 
+267 
+16 
+50976,97 
+59 
+Total 
+1721 
+100 
+86725,88 
+100 
+    Source : CGCI-PME 
+ 
+ 
+ 
+La répartition du volume global des crédits garantis repris dans le tableau ci-
+dessus laisse apparaitre une forte proportion de la tranche de crédits inférieurs 
+à 30 millions de DA qui représente à elle seule presque 61% de l’ensemble des 
+projets garantis au 30-06-2020, correspondant en termes financiers à seulement 
+15% des crédits garantis. 
+Cet ordre de grandeur (61%) peut être expliqué par la nature du tissu de la 
+PME dans notre pays dominé à 97% par des TPE, représentant la population 
+d’entreprises éligibles à cette tranche de garantie proposée par la CGCI PME.  
+Une proportion assez significative de la tranche des crédits est égale  ou 
+supérieure à 30 Millions de DA, ce qui représente, en termes physiques 23% 
+du nombre total des dossiers garantis, et une plus grande proportion en 
+termes financiers, soit (59%) du montant total des crédits garantis.      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 29 - 
+ 
+III. Dispositifs Sociaux d’appui à la PME 
+  
+1. Dispositif « ANADE » (*) 
+ 
+Tableau  ANSEJ : Attestations d’éligibilité par secteur d’activité (Cumul au 30/06/2020) 
+ 
+Secteur d'Activité 
+Projets 
+financés 
+% 
+Nombre 
+d'emplois 
+correspond
+ants 
+Nombre 
+moyen 
+d'emplois 
+Montant 
+d'investissement 
+Coût moyen 
+de l'emploi 
+(DA) 
+Coût moyen 
+d'une micro-
+entreprise 
+(DA) 
+AGRICULTURE 
+58 476 
+15% 
+138 324 
+2 
+217 878 324 381 
+1 575 130 
+3 725 944 
+ARTISANAT 
+43 192 
+11% 
+126 639 
+3 
+111 022 888 890 
+876 688 
+2 570 450 
+BTPH 
+35 099 
+9% 
+101 637 
+3 
+135 905 321 552 
+1 337 164 
+3 872 057 
+HYDRAULIQUE 
+561 
+0% 
+2 058 
+4 
+3 332 163 996 
+1 619 127 
+5 939 686 
+INDUSTRIE 
+27 639 
+7% 
+79 484 
+3 
+131 794 082 561 
+1 658 121 
+4 768 410 
+MAINTENANCE 
+10 682 
+3% 
+24 582 
+2 
+29 650 518 411 
+1 206 188 
+2 775 746 
+PECHE 
+1 131 
+0,29% 
+5 549 
+5 
+7 499 507 851 
+1 351 506 
+6 630 865 
+PROFESSION  
+LIBERALE 
+12 169 
+3% 
+27 286 
+2 
+33 161 820 290 
+1 215 342 
+2 725 106 
+SERVICE 
+108 778 
+28% 
+253 308 
+2 
+355 581 270 743 
+1 403 751 
+3 268 871 
+TRANSPORT  
+FRIGORIFIQUE 
+13 387 
+3,5% 
+24 135 
+2 
+33 778 718 170 
+1 399 574 
+2 523 248 
+TRANSPORT  
+DE MARCHANDISE 
+56 601 
+14,6% 
+96 369 
+2 
+145 948 509 176 
+1 514 476 
+2 578 550 
+TRANSPORT  
+DE VOYAGEURS 
+18 999 
+5% 
+43 700 
+2 
+46 723 047 719 
+1 069 177 
+2 459 237 
+Total 
+386 714 
+100% 
+923 071 
+2 
+1 252 276 173 739 
+1 356 641 
+3 238 249 
+ 
+Source : ANADE 
+(*) en vertu du décret exécutif n° 20-329 du 22 novembre 2020,la dénomination de  l’ANSEJ est devenue « agence nationale d'appui et 
+de développement de l'entreprenariat » par abréviation « ANADE » 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+---PAGE---
+- 30 - 
+ 
+Tableau   ANSEJ : Projets financés par genre et par secteur d’activité (Cumul au 30/06/2020)  
+            
+Secteur d'Activité 
+Projets  
+financés 
+Hommes 
+Femmes 
+Taux de  
+Féminité 
+ (%) 
+AGRICULTURE 
+58476 
+55762 
+2714 
+5 
+ARTISANAT 
+43192 
+35848 
+7344 
+17 
+BTPH 
+35099 
+34276 
+823 
+2 
+HYDRAULIQUE 
+561 
+536 
+25 
+4 
+INDUSTRIE 
+27639 
+23581 
+4058 
+15 
+MAINTENANCE 
+10682 
+10505 
+177 
+2 
+PECHE 
+1131 
+1115 
+16 
+1 
+PROFESSION LIBERALE 
+12169 
+6562 
+5607 
+46 
+SERVICE 
+108778 
+90696 
+18082 
+17 
+TRANSPORT FRIGORIFIQUE 
+ 
+13387 
+12998 
+389 
+3 
+TRANSPORT DE MARCHANDISES 
+ 
+56601 
+55892 
+709 
+1 
+TRANSPORT DE VOYAGEURS 
+ 
+18999 
+18518 
+481 
+3 
+Total 
+386714 
+346289 
+40425 
+10 
+Source : ANSEJ 
+ 
+Selon le tableau ci-dessus, le secteur des services, est le secteur le plus attractif 
+pour les porteurs de projets accompagnés par l’ANSEJ depuis le lancement de 
+ce dispositif  (avec 108778 projets) suivi du secteur de l’agriculture avec 58476 
+projets, puis le secteur de transport de marchandises avec 56601projets 
+financés. Le dispositif ANSEJ a permis, d’accompagner 346 289 entrepreneurs 
+hommes contre 40 425 entrepreneures femmes soit un taux de féminité global 
+de 10%. La femme entrepreneure occupe une place importante dans les 
+activités libérales avec 46%    
+ 
+
+---PAGE---
+- 31 - 
+ 
+ 
+2. Dispositif « CNAC »  
+ 
+Tableau  CNAC : Projets financés par secteur d’activité (cumul au 30/06/2020)  
+ 
+Secteurs d'activités 
+Projets en cours de réalisation/ Stock de dossiers 
+(détenteurs d'accords CSVF non financés au 
+30/06/2020. 
+Nombre 
+Total financement 
+ (Million DA) 
+AGRICULTURE 
+5 285 
+25 514,56 
+ARTISANAT 
+1597 
+5 906,25 
+BTP 
+385 
+2 436,45 
+HYDRAULIQUE 
+11 
+92,96 
+INDUSTRIE 
+678 
+4 153,00 
+MAINTENANCE 
+69 
+285,55 
+PECHE 
+75 
+351,61 
+PROF LIBERALE 
+207 
+758,42 
+SERVICES 
+1251 
+6 229,67 
+TRANSPORT MARCHANDISE 
+1036 
+5 748,84 
+TRANSPORT VOYAGEURS 
+233 
+809,93 
+TOTAL 
+10 827 
+52 287,23 
+ 
+ 
+ 
+3. Dispositif « ANGEM » 
+ 
+        Tableau  ANGEM : Crédits octroyés par type de financement (Cumul au 30/06/2020) 
+Type de financement 
+Nombre 
+% 
+Emplois créés 
+Financement Achat de Matières Premières  
+384256 
+90,39% 
+1221662 
+Financement triangulaire « ANGEM-Banque-promoteur » 
+88655 
+9,61 % 
+134727 
+Total 
+922911 
+100,00% 
+1356389 
+
+---PAGE---
+- 32 - 
+ 
+  Source : ANGEM 
+ 
+Tableau  ANGEM : Crédits octroyés par secteur d’activité (Cumul au 30/06/2020) 
+Secteur d’activités 
+Nombre de prêts octroyés 
+Part (%) 
+Montants accordés 
+(milliards DA) 
+Part (%) 
+Agriculture 
+125610 
+13,61 
+8,496 
+13,90 
+TPI 
+365919 
+39,65 
+18,288 
+29,92 
+BTP 
+80256 
+8,70 
+6,876 
+11,25 
+Services 
+183415 
+19,87 
+16,857 
+27,58 
+Artisanat 
+162263 
+17,58 
+9,357 
+15,31 
+Commerce 
+4558 
+0,49 
+1,138 
+1,86 
+Pêche 
+890 
+0,10 
+0,117 
+0,19 
+Total 
+922911 
+100,00 
+61,129 
+100,00 
+Source : ANGEM 
+Par secteur d’activité, les TPI (très petites industries), les services, l’artisanat et 
+l’agriculture sont les secteurs ayant bénéficié de la majorité des prêts octroyés 
+avec près de 91% du total. 
+ 
+ 
+125610
+365919
+80256
+183415
+162263
+4558
+890
+Agriculture
+TPI
+BTP
+Services
+Artisanat
+Commerce
+Pêche
+Crédits octroyés par secteur d’activité (Cumul au 
+30/06/2020)
+ 
+     
+ 
+ 
+ 
+ 
+ 
+    
+
+---PAGE---
+- 33 - 
+ 
+4. Dispositif « ANIREF » 
+Allocations du foncier au niveau des nouvelles zones industrielles/ Point de situation arrêté au 30/06/2020 
+Annaba
+Ain Berda
+1 018 123
+791 083
+645 626
+111
+84
+607 999
+88
+645 626
+84
+614 998
+74
+60 -
+233 815
+4 831
+El-Tarf
+Metroha
+700 000
+487 471
+417 600
+94
+82
+394 554
+81
+392 717
+70
+334 558
+64
+30 -
+16 315
+4 342
+Bouira
+Oued El Berdi
+1 896 031
+1 319 998
+1 082 748
+177
+36
+828 136
+61
+1 082 748
+36
+828 136
+33
+29 -
+59 493
+8 098
+Relizane
+Sidi Khettab
+5 000 000
+4 055 945
+2 927 786
+209
+55
+1 858 332
+115
+2 903 362
+87
+1 890 531
+65
+44
+4
+71 031
+14 093
+Ain TemoucheTamazoura
+2 050 028
+1 589 911
+1 365 535
+227
+85
+1 218 705
+99
+1 319 012
+50
+897 294
+79
+75
+2
+48 185
+6 176
+Mostaganem Bordjia
+2 000 099
+1 434 456
+1 162 242
+368
+24
+555 048
+54
+1 132 735
+35
+768 104
+23
+12 -
+37 271
+5 626
+Mascara
+Oggaz
+981 596
+667 701
+512 220
+145
+46
+444 930
+57
+512 220
+18
+197 901
+51
+36 -
+26 598
+4 375
+Tlemcen 
+Ouled Ben Dam
+1 037 800
+706 916
+379 099
+42
+5
+130 044
+31
+381844
+17
+166 712
+5
+4 -
+11 465
+2 662
+Sidi Bel Abbes
+547 590
+410 841
+378 307
+44
+6
+253 424
+22
+363 102
+13
+296 850
+2
+6
+1
+10 291
+3 681
+Ras El Ma 
+1 000 000
+773 710
+158 293
+33
+12
+91 546
+16
+158 293
+7
+77 584 -
+-
+ - 
+66 202
+982
+Ain Defla
+Boumedfaa
+430 958 -
+163 116
+38
+1
+8 368
+32
+163 116 -
+-
+-
+-
+ - 
+22 283
+3 482
+Chlef
+Oued Sly
+1 100 000
+788 550
+621 004
+110 -
+-
+43
+503 599
+33
+297 642 -
+-
+ - 
+22 352
+3 709
+Médéa
+Ksar El Boukha
+2 000 000
+1 344 934
+888 814
+85
+39
+722 867
+52
+888 814
+40
+736 090 -
+5  - 
+40 736
+3 419
+Boumerdes
+Larbaatache
+1 369 100
+1 104 618
+971 161
+227
+21
+107 911
+152
+971 161
+129
+875 321
+50
+21  - 
+69 355
+9 479
+Jijel
+Bellara
+5 230 000
+4 095 327
+3 163 960
+81
+14
+3 163 960
+14
+3 163 960
+3
+2 820 000
+3
+2  - 
+273 123
+7 692
+Sidi Roman
+1 400 000
+967 977
+711 959
+206
+65
+289 794
+154
+696 686
+76
+334 997 -
+-
+ - 
+40 127
+8 991
+Ain Abid
+5 430 928
+4 117 000
+506 514
+85  - 
+ - 
+71
+506 513 -
+-
+-
+-
+ - 
+70 631
+3 536
+Mila
+Chelghoum La
+2 473 820
+1 808 629
+1 058 507
+331
+83
+964 183
+52
+585 812 -
+-
+-
+-
+ - 
+28 580
+6 551
+35 666 073
+26 465 067
+17 114 491
+2 613
+658
+11 639 801
+1 194
+16 371 320
+698
+11 136 717
+449
+324
+7 1 147 853 101 725
+19  El-Aouinet
+1 544 149
+1 000 004
+76 376
+19  - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+6 111
+289
+Djelfa
+Ain Oussera
+4 000 000
+2 413 040
+1 560 370
+150
+9
+372 024
+72 1 438 579,37
+63
+943 800
+4
+4  - 
+143 079
+10300
+Batna
+Ain Yagout
+1 298 911
+960 693
+805 583
+111
+27
+652 774
+17
+584 624
+1
+200 000
+5
+11  - 
+49 710
+3 396
+Ras El Oued
+1 340 750
+972 057
+804 348
+139
+59
+769 511
+66
+804 348
+2
+43 698  - 
+22
+1
+15 032
+2 872
+Mechta Fatima
+3 820 000
+2 857 474
+2 472 430
+309
+221
+2 212 294
+244
+2 412 523
+25
+498 197
+10
+61
+2
+36 731
+7 267
+M'sila
+Draa El Hadja
+777 501
+578 915
+562 835
+48
+2
+169 996
+29
+353 515
+2
+169 996
+0
+2
+0
+15 396
+3 235
+Setif
+Ouled Saber
+7 000 485
+5 711 241
+3 175 470
+201
+127
+2 150 989
+174
+3 068 758
+153
+2 744 190
+52
+14
+0
+123 122
+19 126
+Zaaroura
+3 275 039
+2 130 298
+913 581
+154
+25
+865 801
+32
+913 581
+32
+877 209
+23
+22
+0
+17 961
+2 056
+Ain Bouchekif
+3 187 295
+1 872 903
+87 694
+9
+1
+59 495
+2
+87 717
+2
+87 694
+2
+1  - 
+2 967
+552
+El Bayadh 
+Rogassa 
+1 500 000
+939 717
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+Saida 
+kolea 
+1 000 000
+694 752
+335 957
+79  - 
+ - 
+67
+325 632
+11
+37 316
+34
+4  - 
+20 465
+4 116
+Naama
+Horchaia 
+1 500 000
+1 101 577
+25 098
+3
+3
+25 098
+3
+25 098
+2
+17 469  - 
+ - 
+ - 
+713
+317
+30 244 130
+21 232 671
+10 819 742
+1 222
+474
+7 277 982
+706
+10 014 375
+293
+5 619 569
+130
+141
+3
+431 287
+53 526
+Bechar
+Bechar
+1 870 000
+1 039 916
+314 458
+25
+13
+254 333
+19
+304 442
+11
+141 552
+7
+5
+2
+2 171
+868
+Adrar
+Timmi
+2 148 796
+1 642 664
+1 627 664
+77
+53
+1 442 623
+66
+1 627 664
+65
+1 582 658
+36
+18
+0
+8 970
+1 893
+Ouargla
+Hassi Ben Abd
+5 000 000
+3 595 136
+626 898
+26  - 
+ - 
+9
+239 227  - 
+ - 
+ - 
+-
+ - 
+3 465
+837
+Biskra
+Ouméche
+2 000 000
+1 206 315
+415 465
+77  - 
+ - 
+50
+415 465  - 
+ - 
+ - 
+-
+ - 
+59 365
+3 723
+Eloued
+Guemmar
+2 000 000
+1 455 372
+47 965
+2  - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ 
+ - 
+ - 
+139
+41
+Ghardaia
+Oued Nechou
+1 000 000
+648 933
+288 216
+68  - 
+ - 
+11
+255 434  - 
+ - 
+ - 
+ - 
+ - 
+5 893
+1 393
+14 018 796
+9 588 336
+3 320 666
+275
+66
+1 696 956
+155 2 842 231,91
+76
+1 724 210
+43
+23
+2
+80 003
+8 755
+79 928 999
+57 286 074
+31 254 899
+4 110 1 198
+20 614 739
+2 055
+29 227 927 1 067
+18 480 496
+622
+488
+12 1 659 143 164 006
+Sous Total Sud
+Total Général
+Sidi Bel Abbes
+Constantine
+Sous Total Nord 
+BBA
+Tiaret
+Sous Total HP
+Nbre d'emploi
+Wilaya
+Dénomination
+Nombre
+Superficie 
+(m²)
+Nombre
+Superficie 
+(m²)
+Nombre
+Superficie 
+(m²)
+Arrêtés de concession 
+établis
+Actes de concession 
+établis
+Permis de 
+construire délivrés
+Projets lancés
+Projets entrés en 
+activité
+Montant 
+d'investissement 
+MDA
+Zone industrielle
+Superficie de la 
+zone (m²)
+Superficie 
+concessible de la 
+zone (m²)
+Superficie globale 
+allouée (m²)
+Nombre de lot 
+alloué
+Investisseurs 
+implantés
+ 
+Source : ANIREF 
+
+---PAGE---
+- 34 - 
+ 
+VI- Commerce extérieur 
+ 
+1. Balance commerciale  
+Par rapport au 1er semestre 2019, la balance du commerce extérieur Algérien en 1er 
+semestre 2020 a enregistré :  
+ Un volume des importations de 17,10 milliards de dollars US soit une 
+baisse de -23,50%  . 
+ Un volume global des exportations de 15,07 milliards de dollars US, soit 
+une baisse de -19,53%   
+Cela s’est traduit par un déficit de la balance commerciale au premier semestre 2020 
+de l’ordre de  2,03 milliards de dollars US. 
+       D’où un taux de couverture des importations par les exportations de 88% 
+pour le premier semestre 2020 contre un taux de 84% pour la même période 2019. 
+Tableau  Evolution de la Balance commerciale de l’Algérie (S1/2019 –S1/2020) (en Millions de Dollars US) 
+Valeurs en millions
+Dinars
+Dollars
+Dinars
+Dollars
+Dinars
+Dollars
+Importations
+2 659 962,42
+22 359,09
+2 128 458,07
+17 105,45
+19,98
+-23,50
+Exportations
+2 228 776,51
+18 737,16
+1 875 907,64
+15 077,50
+15,83
+-19,53
+Balance Commerciale
+-431 186
+-3 622
+-252 550,43
+-2 027,95
+41,43
+-44,01
+Taux de Couverture (%)
+84
+88
+1er  SEM 2019
+1er  SEM 2020*
+%
+ 
+      Source : Direction Générale des douanes/DEP 
+      *Résultats provisoires 
+     
+          
+ 
+ 
+ 
+
+---PAGE---
+- 35 - 
+ 
+2. Importations  
+  La répartition des importations par groupes de produits, comme l’indique le 
+tableau ci-après fait ressortir que les groupes « biens d’équipement industriels » et 
+« alimentation » représente plus de la moitié de la facture des importations globale 
+durant le premier semestre 2020.  
+Tableau  : Evolution des importations par groupes de produits (S1/2019 – S1/2020) 
+Valeurs en millions Usd
+Valeurs
+Struc %
+Valeurs
+Struc %
+Allimentation
+4127,73
+18,46
+4284,92
+25,05
+Energie et lubrifiants
+308,97
+1,38
+623,41
+3,64
+produits bruts
+1 047,47 
+4,68
+1 173,44 
+6,86
+Demi -produits
+5 817,27 
+26,02
+3 895,87 
+22,78
+Biens d'équipements agricoles
+253,21 
+1,13
+109,40 
+0,64
+Biens d'équipements industriels
+7 574,19 
+33,88
+4 316,16 
+25,23
+Biens de consommation non-alimentaies
+3 230,24 
+14,45
+2 702,24 
+15,80
+Total
+22 359,08 
+100,00
+17 105,44 
+100,00
+1er SEM 2019
+1er SEM 2020
+Groupes d'utilisateurs
+ 
+               Source : Direction Générale des douanes/DEP 
+     L'examen par groupes de produits fait ressortir durant le 1er semestre 2020, les 
+résultats suivants : 
+ Les « biens d'équipements industriels » qui représentent plus d’un quart 
+(25,23%) une part des importations, sont constitués essentiellement, de véhicules 
+de transport de personnes et de marchandises, des turboréacteurs et 
+turbopropulseurs et des appareils électriques pour la téléphonie ;  
+ Le groupe des « biens alimentaires » occupe le deuxième rang » dans la 
+structure des importations réalisées durant le 1er semestre 2020 avec une part de 
+(25,05%) du volume global 
+ Pour les « biens destinés au fonctionnement de l'outil de production » : il 
+s'agit surtout, des huiles de pétrole, des matériaux de construction (barres en fer 
+ou en acier, tubes et tuyaux, bois, etc,) soit une part de 22,78% des importations ; 
+ Le groupe de « biens de consommation non alimentaires » vient en quatrième 
+position dans la structure de nos importations avec la quote part de 15,80% ; 
+
+---PAGE---
+- 36 - 
+ 
+ 
+3. Exportations  
+Dans la structure des exportations Algériennes, les hydrocarbures continuent à 
+représenter l’essentiel de nos ventes à l’étranger durant les six premiers mois de 2020 
+avec une part de 92,58% du volume global des exportations, et une baisse de -3,45% 
+par rapport à la même période de 2019. 
+   Quant aux exportations « hors hydrocarbures », elles demeurent toujours 
+marginales, avec seulement 7,42% du volume global des exportations soit une valeur 
+de 1,12 milliard de dollars US. Elles ont enregistré une baisse de   -15,82% par 
+rapport au premier semestre de 2019. 
+ 
+Tableau  Principaux produits hors hydrocarbure exportés (S1/2019- S1/2020)                                                     U : 
+Millions 
+USD
+Valeurs
+Struc %
+Valeurs
+Struc %
+ENGRAIS MINERAUX OU CHIMIQUES AZOTES
+433,23 
+32,58 
+418,67 
+37,40 
+-3,36 
+HUILES ET AUTRES PRODUITS PROVENANT DE 
+LA DISTILLATION DES GOUDRONS
+227,91 
+17,14 
+182,55 
+16,31 
+-19,90 
+SUCRES DE CANNE OU DE BETTERAVE 
+119,90 
+9,02 
+135,21 
+12,08 
+12,77 
+AMMONIACS ANHYDRES
+162,38 
+12,21 
+98,67 
+8,82 
+-39,24 
+DATTES, FRUITS SECS
+39,06 
+2,94 
+43,84 
+3,92 
+12,24 
+TURBOREACTEURS, TURBOPROPULSEURSET 
+AUTRES TURBINES A GAZ
+37,88
+3,38 
+CIMENT HYDRAULIQUES MEME COLORES
+38,09 
+2,86 
+26,33 
+2,35 
+-30,87 
+PHOSPHATES DE CALCIUM NATURELS
+32,08 
+2,41 
+23,72 
+2,12 
+-26,06 
+HYDROGENES, GAZ RARES ET AUTRES ET 
+AURES ELEMENTS NON METALIQUES
+26,49 
+1,99 
+18,31 
+1,64 
+-30,88 
+Sous Total
+1 079,14 
+81,16 
+985,18 
+88,02 
+-8,71 
+AUTRES
+250,51
+18,84 
+134,15
+11,98 
+-46,45 
+Total du Groupe
+1 329,65 
+100,00 
+1 119,33 
+100,00 
+-15,82 
+1er SEM  2019
+1er SEM   2020
+Evolution 
+(%)
+Principaux Produits
+ 
+Source : Direction Générale des douanes/DEP 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+
+---PAGE---
+V-ANNEXES 
+Tableau  : PME privées par secteurs d'activité 
+Sectateurs d'activité 
+  
+ à fin 2019 
+  
+Mouvements enregistrés durant S1 2020 
+Au S1 
+2020 
+  
+Créations I 
+Radiation 
+II 
+Réactivation 
+III 
+Ecart 
+(I+III)-II 
+I- Agriculture et pêche 
+Agriculture et pêche 
+7387 
+62 
+14 
+12 
+60 
+7447 
+S/Total 1 
+7387 
+62 
+14 
+12 
+60 
+7447 
+II- Hydrocarbures, Energie, Mines et Services liés 
+Eau et énergie 
+180 
+4 
+0 
+3 
+7 
+187 
+Hydrocarbures 
+1074 
+2 
+1 
+0 
+1 
+1075 
+Services et travaux pétroliers 
+461 
+4 
+0 
+0 
+4 
+465 
+Mines et carrières 
+1349 
+8 
+0 
+4 
+12 
+1361 
+S/Total 2 
+3064 
+18 
+1 
+7 
+24 
+3088 
+III- BTPH 
+Bâtiment et travaux publics 
+190155 
+1054 
+177 
+406 
+1283 
+191438 
+S/Total 3 
+190155 
+1054 
+177 
+406 
+1283 
+191438 
+IV- Industrie manufacturières 
+ 
+ 
+ 
+ 
+ 
+0 
+ISMME 
+15884 
+117 
+15 
+43 
+145 
+16029 
+Matériaux de construction 
+12842 
+63 
+10 
+12 
+65 
+12907 
+Chimie, plastique 
+5207 
+101 
+7 
+6 
+100 
+5307 
+Industrie agroalimentaire 
+31997 
+289 
+50 
+76 
+315 
+32312 
+industries du textile 
+8460 
+48 
+10 
+18 
+56 
+8516 
+Industrie du cuir 
+2242 
+7 
+1 
+3 
+9 
+2251 
+Industrie du bois et papier 
+21326 
+141 
+20 
+59 
+180 
+21506 
+Industrie divers 
+5663 
+37 
+4 
+5 
+38 
+5701 
+S/Total 4 
+103621 
+803 
+117 
+222 
+908 
+104529 
+V- Services 
+Transport et communication 
+60979 
+399 
+78 
+193 
+514 
+61493 
+Commerce 
+140871 
+1719 
+163 
+391 
+1947 
+142818 
+Hôtellerie et restauration 
+39425 
+328 
+57 
+94 
+365 
+39790 
+Services fournis aux 
+entreprises 
+58969 
+473 
+73 
+206 
+606 
+59575 
+Services fournis aux ménages 
+57191 
+843 
+131 
+292 
+1004 
+58195 
+Services pour collectivités 
+9605 
+83 
+12 
+8 
+79 
+9684 
+S/Total 5 
+367040 
+3845 
+514 
+1184 
+4515 
+371555 
+Total Général 
+671267 
+5 782 
+823 
+1 831 
+6 790 
+678057 
+Source : CNAS 
+ 
+ 
+ 
+ 
+Tableau  : Concentration des PME (personnes morales) par wilaya  
+
+---PAGE---
+Bulletin d’information statistique n°37    
+ 
+ 
+ 
+                   1er semestre 2020  
+ Ministère de l’Industrie et des Mines                                                                                        Page - 38 - 
+ 
+Taux de concentration = (Nombre de PME/Population résidente) *1000 
+Wilaya 
+Nbre de PME 
+au 2019 
+Mouvement des S1/2020 
+Nbre de 
+PME au 
+S1/2020 
+Population 
+par Wilaya 
+(RGPH 
+2008)* 
+Taux de 
+concentr
+ation 
+Création 
+radiation 
+réactivation 
+croissance 
+Nord 
+Alger 
+74540 
+461 
+53 
+122 
+530 
+75070 
+2988145 
+25 
+Tipaza 
+31471 
+345 
+33 
+63 
+375 
+31846 
+591010 
+54 
+Boumerdès 
+25955 
+301 
+8 
+24 
+317 
+26272 
+802083 
+33 
+Blida 
+23770 
+240 
+74 
+122 
+288 
+24058 
+1002937 
+24 
+Tizi Ouzou 
+40448 
+342 
+90 
+213 
+465 
+40913 
+1127607 
+36 
+Bouira 
+16285 
+146 
+16 
+37 
+167 
+16452 
+695583 
+24 
+Médéa 
+11288 
+99 
+5 
+21 
+115 
+11403 
+819932 
+14 
+Ain Defla 
+10760 
+51 
+2 
+34 
+83 
+10843 
+766013 
+14 
+Bejaia 
+33963 
+329 
+15 
+117 
+431 
+34394 
+912577 
+38 
+Chlef 
+13860 
+95 
+99 
+46 
+42 
+13902 
+1002088 
+14 
+Oran 
+30392 
+357 
+21 
+48 
+384 
+30776 
+1454078 
+21 
+Tlemcen 
+15895 
+177 
+65 
+113 
+225 
+16120 
+604744 
+27 
+Sidi Bel Abbes 
+10322 
+66 
+1 
+28 
+93 
+10415 
+949135 
+11 
+Aïn Temouchent 
+7047 
+48 
+0 
+5 
+53 
+7100 
+726180 
+10 
+Mostaganem 
+10829 
+76 
+3 
+36 
+109 
+10938 
+737118 
+15 
+Mascara 
+10772 
+94 
+3 
+14 
+105 
+10877 
+784073 
+14 
+Relizane 
+8918 
+83 
+3 
+22 
+102 
+9020 
+371239 
+24 
+Constantine 
+21354 
+129 
+66 
+59 
+122 
+21476 
+938475 
+23 
+Mila 
+12348 
+105 
+4 
+27 
+128 
+12476 
+766886 
+16 
+Jijel 
+12904 
+100 
+11 
+33 
+122 
+13026 
+636948 
+20 
+Annaba 
+15933 
+116 
+17 
+28 
+127 
+16060 
+609499 
+26 
+Skikda 
+13855 
+126 
+1 
+17 
+142 
+13997 
+898680 
+16 
+El Tarf 
+5100 
+41 
+3 
+5 
+43 
+5143 
+408414 
+13 
+Guelma 
+9119 
+60 
+2 
+32 
+90 
+9209 
+482430 
+19 
+Total du Nord 
+467128 
+3 987 
+595 
+1 266 
+4 658 
+471786 
+21075874 
+22 
+Hauts-Plateaux 
+M’sila 
+15291 
+141 
+6 
+59 
+194 
+15485 
+990591 
+16 
+Djelfa 
+10143 
+49 
+0 
+20 
+69 
+10212 
+1092184 
+9 
+Laghouat 
+6585 
+29 
+5 
+17 
+41 
+6626 
+455602 
+15 
+Tiaret 
+8954 
+47 
+0 
+18 
+65 
+9019 
+846823 
+11 
+Saida 
+3988 
+35 
+4 
+10 
+41 
+4029 
+330641 
+12 
+Tissemsilt 
+3447 
+34 
+5 
+8 
+37 
+3484 
+294476 
+12 
+Naama 
+2043 
+33 
+3 
+19 
+49 
+2092 
+192891 
+11 
+El Bayadh 
+3477 
+23 
+1 
+0 
+22 
+3499 
+228624 
+15 
+Bordj Bou Arréridj 
+15196 
+169 
+16 
+32 
+185 
+15381 
+628475 
+24 
+Sétif 
+30704 
+281 
+8 
+71 
+344 
+31048 
+1489979 
+21 
+Batna 
+17972 
+220 
+19 
+36 
+237 
+18209 
+1119791 
+16 
+Oum El Bouaghi 
+7536 
+67 
+17 
+26 
+76 
+7612 
+621612 
+12 
+Khenchela 
+7182 
+31 
+4 
+22 
+49 
+7231 
+386683 
+19 
+Tébessa 
+8734 
+44 
+5 
+24 
+63 
+8797 
+648703 
+14 
+Souk Ahras 
+6337 
+34 
+3 
+12 
+43 
+6380 
+438127 
+15 
+Total des Hauts-Plateaux 
+147589 
+1 237 
+96 
+374 
+1 515 
+149104 
+9765202 
+15 
+Sud 
+Illizi 
+2033 
+19 
+1 
+3 
+21 
+2054 
+49149 
+42 
+Tamanrasset 
+3021 
+23 
+9 
+20 
+34 
+3055 
+176637 
+17 
+Tindouf 
+2144 
+6 
+0 
+4 
+10 
+2154 
+52333 
+41 
+Adrar 
+4305 
+49 
+57 
+22 
+14 
+4319 
+399714 
+11 
+Biskra 
+8072 
+72 
+29 
+34 
+77 
+8149 
+721356 
+11 
+Ouargla 
+10389 
+81 
+11 
+26 
+96 
+10485 
+558558 
+19 
+El Oued 
+8829 
+153 
+5 
+26 
+174 
+9003 
+647548 
+14 
+Bechar 
+7304 
+32 
+6 
+17 
+43 
+7347 
+270061 
+27 
+Ghardaïa 
+10453 
+123 
+14 
+39 
+148 
+10601 
+363598 
+29 
+Total du Sud 
+56550 
+558 
+132 
+191 
+617 
+57167 
+3238954 
+18 
+Total Général 
+671267 
+5 782 
+823 
+1 831 
+6 790 
+678057 
+34080030 
+20 
+Source : CNAS
+
+---PAGE---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        
+
+---PAGE---

@@ -956,6 +956,82 @@ export interface Dictionary {
   labelQuintileShare: string;
   labelRemittanceCost: string;
   labelSdgSource: string;
+
+  // ─── PME BULLETIN (BIS) ──────────────────────────────────────────
+  tabPmeBulletin: string;
+  pmeSource: string;
+  pmeSubOverview: string;
+  pmeSubStructure: string;
+  pmeSubDynamics: string;
+  pmeSubGeography: string;
+  pmeSubCredit: string;
+  pmeKpiTotal: string;
+  pmeKpiCreations: string;
+  pmeKpiCessations: string;
+  pmeKpiDensity: string;
+  pmeKpiEmployment: string;
+  pmeKpiTotalCreations: string;
+  pmeKpiTotalCessations: string;
+  pmeKpiNetGrowth: string;
+  pmeKpiSurvival: string;
+  pmeKpiGuarantees: string;
+  pmeKpiCertificates: string;
+  pmeKpiAmountGuaranteed: string;
+  pmeChartTotalEvolution: string;
+  pmeChartTotalEvolutionSub: string;
+  pmeChartTotal: string;
+  pmeChartMovements: string;
+  pmeChartMovementsSub: string;
+  pmeChartCreations: string;
+  pmeChartCessations: string;
+  pmeChartDensity: string;
+  pmeChartDensitySub: string;
+  pmeChartPmeDensity: string;
+  pmeChartIntlAvg: string;
+  pmeChartTypeDist: string;
+  pmeChartSectorEvolution: string;
+  pmeChartSectorEvolutionSub: string;
+  pmeChartSizeDist: string;
+  pmeChartSizeDistSub: string;
+  pmeChartProfessions: string;
+  pmeChartProfessionsSub: string;
+  pmeTypeMorales: string;
+  pmeTypePhysiques: string;
+  pmeTypeArtisanat: string;
+  pmeSectorServices: string;
+  pmeSectorBtph: string;
+  pmeSectorMfg: string;
+  pmeSectorAgri: string;
+  pmeSectorEnergy: string;
+  pmeProfSante: string;
+  pmeProfJustice: string;
+  pmeProfAgri: string;
+  pmeChartAllMovements: string;
+  pmeChartAllMovementsSub: string;
+  pmeChartReactivations: string;
+  pmeChartNetGrowth: string;
+  pmeChartNetGrowthSub: string;
+  pmeChartNetGrowthVal: string;
+  pmeChartGrowthRate: string;
+  pmeChartGrowthRateSub: string;
+  pmeChartGrowthPct: string;
+  pmeChartRegional: string;
+  pmeChartRegionalSub: string;
+  pmeChartRegionalDensity: string;
+  pmeChartRegionalDensitySub: string;
+  pmeChartDensityVal: string;
+  pmeChartTopWilayas: string;
+  pmeChartTopWilayasSub: string;
+  pmeChartPmeCount: string;
+  pmeRegionNorth: string;
+  pmeRegionHp: string;
+  pmeRegionSouth: string;
+  pmeUnitDensity: string;
+  pmeChartGuaranteeAmount: string;
+  pmeChartGuaranteeAmountSub: string;
+  pmeChartGuaranteed: string;
+  pmeChartSolicited: string;
+  pmeUnitBda: string;
 }
 
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
@@ -1893,6 +1969,81 @@ const en: Dictionary = {
   chartLifeExpLabel: "Life Expect.",
   chartVaccinationLabel: "Vaccination",
   chartPrimaryCareLabel: "Primary Care",
+  // PME Bulletin
+  tabPmeBulletin: "PME Bulletin (BIS)",
+  pmeSource: "Source: BIS — Ministry of Industry (2014–2023)",
+  pmeSubOverview: "Overview",
+  pmeSubStructure: "Structure",
+  pmeSubDynamics: "Dynamics",
+  pmeSubGeography: "Geography",
+  pmeSubCredit: "Credit",
+  pmeKpiTotal: "Total PME",
+  pmeKpiCreations: "Creations (Latest)",
+  pmeKpiCessations: "Cessations (Latest)",
+  pmeKpiDensity: "Density (PME/1000 hab)",
+  pmeKpiEmployment: "Employment",
+  pmeKpiTotalCreations: "Total Creations",
+  pmeKpiTotalCessations: "Total Cessations",
+  pmeKpiNetGrowth: "Net Growth",
+  pmeKpiSurvival: "Survival Rate",
+  pmeKpiGuarantees: "Guarantees Granted",
+  pmeKpiCertificates: "Certificates",
+  pmeKpiAmountGuaranteed: "Amount Guaranteed",
+  pmeChartTotalEvolution: "Total PME Evolution",
+  pmeChartTotalEvolutionSub: "2014–2023 | BIS",
+  pmeChartTotal: "Total PME",
+  pmeChartMovements: "Creations vs Cessations",
+  pmeChartMovementsSub: "Annual PME movements",
+  pmeChartCreations: "Creations",
+  pmeChartCessations: "Cessations",
+  pmeChartDensity: "PME Density per 1000 Inhabitants",
+  pmeChartDensitySub: "vs International Average (45)",
+  pmeChartPmeDensity: "PME Density",
+  pmeChartIntlAvg: "International Avg",
+  pmeChartTypeDist: "PME by Legal Status",
+  pmeChartSectorEvolution: "PME by Sector (Morales)",
+  pmeChartSectorEvolutionSub: "2017–2023",
+  pmeChartSizeDist: "PME by Size",
+  pmeChartSizeDistSub: "TPE / PE / ME",
+  pmeChartProfessions: "Professions Liberales",
+  pmeChartProfessionsSub: "Health / Justice / Agricultural Exploitations",
+  pmeTypeMorales: "Legal Entities",
+  pmeTypePhysiques: "Sole Proprietors",
+  pmeTypeArtisanat: "Artisanat",
+  pmeSectorServices: "Services",
+  pmeSectorBtph: "BTPH",
+  pmeSectorMfg: "Manufacturing",
+  pmeSectorAgri: "Agriculture",
+  pmeSectorEnergy: "Energy",
+  pmeProfSante: "Health",
+  pmeProfJustice: "Justice",
+  pmeProfAgri: "Agricultural Exploitations",
+  pmeChartAllMovements: "PME Movements",
+  pmeChartAllMovementsSub: "Creations, Reactivations, Cessations",
+  pmeChartReactivations: "Reactivations",
+  pmeChartNetGrowth: "Net PME Growth",
+  pmeChartNetGrowthSub: "Creations + Reactivations - Cessations",
+  pmeChartNetGrowthVal: "Net Growth",
+  pmeChartGrowthRate: "PME Annual Growth Rate",
+  pmeChartGrowthRateSub: "Year-over-year %",
+  pmeChartGrowthPct: "Growth %",
+  pmeChartRegional: "Regional Distribution",
+  pmeChartRegionalSub: "Personnes Morales, 2014",
+  pmeChartRegionalDensity: "Regional PME Density",
+  pmeChartRegionalDensitySub: "PME per 1000 inhabitants",
+  pmeChartDensityVal: "Density",
+  pmeChartTopWilayas: "Top Wilayas by PME Count",
+  pmeChartTopWilayasSub: "2023 Estimates",
+  pmeChartPmeCount: "PME Count",
+  pmeRegionNorth: "North",
+  pmeRegionHp: "High Plateaus",
+  pmeRegionSouth: "South",
+  pmeUnitDensity: "PME",
+  pmeChartGuaranteeAmount: "Credit Guarantee Amount",
+  pmeChartGuaranteeAmountSub: "Billions DA",
+  pmeChartGuaranteed: "Guaranteed (BDA)",
+  pmeChartSolicited: "Solicited (BDA)",
+  pmeUnitBda: "BDA",
 };
 
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
@@ -2896,6 +3047,81 @@ const fr: Dictionary = {
   wilayaDens200: "200-500",
   wilayaDens500: "500+",
   wilayaSource: "Source : ONS — RGPH 2008 + Loi de Découpage Administratif 2019",
+  // PME Bulletin
+  tabPmeBulletin: "Bulletin PME (BIS)",
+  pmeSource: "Source : BIS — Ministère de l'Industrie (2014–2023)",
+  pmeSubOverview: "Vue d'ensemble",
+  pmeSubStructure: "Structure",
+  pmeSubDynamics: "Dynamique",
+  pmeSubGeography: "Géographie",
+  pmeSubCredit: "Crédit",
+  pmeKpiTotal: "Total PME",
+  pmeKpiCreations: "Créations (Dernier)",
+  pmeKpiCessations: "Cessations (Dernier)",
+  pmeKpiDensity: "Densité (PME/1000 hab)",
+  pmeKpiEmployment: "Emplois",
+  pmeKpiTotalCreations: "Total Créations",
+  pmeKpiTotalCessations: "Total Cessations",
+  pmeKpiNetGrowth: "Croissance Nette",
+  pmeKpiSurvival: "Taux de Survie",
+  pmeKpiGuarantees: "Garanties Accordées",
+  pmeKpiCertificates: "Certificats",
+  pmeKpiAmountGuaranteed: "Montant Garanti",
+  pmeChartTotalEvolution: "Évolution Totale des PME",
+  pmeChartTotalEvolutionSub: "2014–2023 | BIS",
+  pmeChartTotal: "Total PME",
+  pmeChartMovements: "Créations vs Cessations",
+  pmeChartMovementsSub: "Mouvements annuels des PME",
+  pmeChartCreations: "Créations",
+  pmeChartCessations: "Cessations",
+  pmeChartDensity: "Densité PME pour 1000 Habitants",
+  pmeChartDensitySub: "vs Moyenne Internationale (45)",
+  pmeChartPmeDensity: "Densité PME",
+  pmeChartIntlAvg: "Moy. Internationale",
+  pmeChartTypeDist: "PME par Statut Juridique",
+  pmeChartSectorEvolution: "PME par Secteur (Morales)",
+  pmeChartSectorEvolutionSub: "2017–2023",
+  pmeChartSizeDist: "PME par Taille",
+  pmeChartSizeDistSub: "TPE / PE / ME",
+  pmeChartProfessions: "Professions Libérales",
+  pmeChartProfessionsSub: "Santé / Justice / Exploitations Agricoles",
+  pmeTypeMorales: "Personnes Morales",
+  pmeTypePhysiques: "Personnes Physiques",
+  pmeTypeArtisanat: "Artisanat",
+  pmeSectorServices: "Services",
+  pmeSectorBtph: "BTPH",
+  pmeSectorMfg: "Industries Manufacturières",
+  pmeSectorAgri: "Agriculture",
+  pmeSectorEnergy: "Énergie",
+  pmeProfSante: "Santé",
+  pmeProfJustice: "Justice",
+  pmeProfAgri: "Exploitations Agricoles",
+  pmeChartAllMovements: "Mouvements PME",
+  pmeChartAllMovementsSub: "Créations, Réactivations, Cessations",
+  pmeChartReactivations: "Réactivations",
+  pmeChartNetGrowth: "Croissance Nette PME",
+  pmeChartNetGrowthSub: "Créations + Réactivations - Cessations",
+  pmeChartNetGrowthVal: "Croissance Nette",
+  pmeChartGrowthRate: "Taux de Croissance Annuel PME",
+  pmeChartGrowthRateSub: "Variation annuelle %",
+  pmeChartGrowthPct: "Croissance %",
+  pmeChartRegional: "Répartition Régionale",
+  pmeChartRegionalSub: "Personnes Morales, 2014",
+  pmeChartRegionalDensity: "Densité Régionale PME",
+  pmeChartRegionalDensitySub: "PME pour 1000 habitants",
+  pmeChartDensityVal: "Densité",
+  pmeChartTopWilayas: "Top Wilayas par Nombre de PME",
+  pmeChartTopWilayasSub: "Estimations 2023",
+  pmeChartPmeCount: "Nombre de PME",
+  pmeRegionNorth: "Nord",
+  pmeRegionHp: "Hauts Plateaux",
+  pmeRegionSouth: "Sud",
+  pmeUnitDensity: "PME",
+  pmeChartGuaranteeAmount: "Montant des Garanties de Crédit",
+  pmeChartGuaranteeAmountSub: "Milliards DA",
+  pmeChartGuaranteed: "Garanti (Mds DA)",
+  pmeChartSolicited: "Sollicité (Mds DA)",
+  pmeUnitBda: "Mds DA",
 };
 
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
@@ -3835,6 +4061,81 @@ const ar: Dictionary = {
   wilayaDens200: "200-500",
   wilayaDens500: "500+",
   wilayaSource: "المصدر: ONS — RGPH 2008 + قانون التقسيم الإداري 2019",
+  // PME Bulletin
+  tabPmeBulletin: "نشرة المؤسسات الصغيرة والمتوسطة",
+  pmeSource: "المصدر: BIS — وزارة الصناعة (2014–2023)",
+  pmeSubOverview: "نظرة عامة",
+  pmeSubStructure: "البنية",
+  pmeSubDynamics: "الديناميكية",
+  pmeSubGeography: "الجغرافيا",
+  pmeSubCredit: "الائتمان",
+  pmeKpiTotal: "إجمالي المؤسسات",
+  pmeKpiCreations: "الإنشاءات (آخر)",
+  pmeKpiCessations: "التوقف (آخر)",
+  pmeKpiDensity: "الكثافة (مؤسسة/1000 نسمة)",
+  pmeKpiEmployment: "التشغيل",
+  pmeKpiTotalCreations: "إجمالي الإنشاءات",
+  pmeKpiTotalCessations: "إجمالي التوقف",
+  pmeKpiNetGrowth: "النمو الصافي",
+  pmeKpiSurvival: "معدل البقاء",
+  pmeKpiGuarantees: "الضمانات الممنوحة",
+  pmeKpiCertificates: "الشهادات",
+  pmeKpiAmountGuaranteed: "المبلغ المضمون",
+  pmeChartTotalEvolution: "تطور إجمالي المؤسسات",
+  pmeChartTotalEvolutionSub: "2014–2023 | BIS",
+  pmeChartTotal: "إجمالي المؤسسات",
+  pmeChartMovements: "الإنشاءات مقابل التوقف",
+  pmeChartMovementsSub: "حركة المؤسسات السنوية",
+  pmeChartCreations: "الإنشاءات",
+  pmeChartCessations: "التوقف",
+  pmeChartDensity: "كثافة المؤسسات لكل 1000 نسمة",
+  pmeChartDensitySub: "مقابل المتوسط الدولي (45)",
+  pmeChartPmeDensity: "كثافة المؤسسات",
+  pmeChartIntlAvg: "المتوسط الدولي",
+  pmeChartTypeDist: "المؤسسات حسب الوضع القانوني",
+  pmeChartSectorEvolution: "المؤسسات حسب القطاع",
+  pmeChartSectorEvolutionSub: "2017–2023",
+  pmeChartSizeDist: "المؤسسات حسب الحجم",
+  pmeChartSizeDistSub: "صغيرة جداً / صغيرة / متوسطة",
+  pmeChartProfessions: "المهن الحرة",
+  pmeChartProfessionsSub: "الصحة / العدالة / الاستغلالات الفلاحية",
+  pmeTypeMorales: "أشخاص معنويين",
+  pmeTypePhysiques: "أشخاص طبيعيين",
+  pmeTypeArtisanat: "الحرف",
+  pmeSectorServices: "الخدمات",
+  pmeSectorBtph: "الأشغال العمومية",
+  pmeSectorMfg: "التصنيع",
+  pmeSectorAgri: "الفلاحة",
+  pmeSectorEnergy: "الطاقة",
+  pmeProfSante: "الصحة",
+  pmeProfJustice: "العدالة",
+  pmeProfAgri: "الاستغلالات الفلاحية",
+  pmeChartAllMovements: "حركة المؤسسات",
+  pmeChartAllMovementsSub: "الإنشاءات، إعادة التفعيل، التوقف",
+  pmeChartReactivations: "إعادة التفعيل",
+  pmeChartNetGrowth: "النمو الصافي للمؤسسات",
+  pmeChartNetGrowthSub: "الإنشاءات + إعادة التفعيل - التوقف",
+  pmeChartNetGrowthVal: "النمو الصافي",
+  pmeChartGrowthRate: "معدل النمو السنوي للمؤسسات",
+  pmeChartGrowthRateSub: "التغير السنوي %",
+  pmeChartGrowthPct: "النمو %",
+  pmeChartRegional: "التوزيع الجهوي",
+  pmeChartRegionalSub: "الأشخاص المعنويين، 2014",
+  pmeChartRegionalDensity: "الكثافة الجهوية للمؤسسات",
+  pmeChartRegionalDensitySub: "مؤسسة لكل 1000 نسمة",
+  pmeChartDensityVal: "الكثافة",
+  pmeChartTopWilayas: "أهم الولايات حسب عدد المؤسسات",
+  pmeChartTopWilayasSub: "تقديرات 2023",
+  pmeChartPmeCount: "عدد المؤسسات",
+  pmeRegionNorth: "الشمال",
+  pmeRegionHp: "الهضاب العليا",
+  pmeRegionSouth: "الجنوب",
+  pmeUnitDensity: "مؤسسة",
+  pmeChartGuaranteeAmount: "مبلغ ضمانات الائتمان",
+  pmeChartGuaranteeAmountSub: "مليار دينار",
+  pmeChartGuaranteed: "المضمون (مليار دج)",
+  pmeChartSolicited: "المطلوب (مليار دج)",
+  pmeUnitBda: "مليار دج",
 };
 
 // ─── DICTIONARY MAP ───────────────────────────────────────────────────────────

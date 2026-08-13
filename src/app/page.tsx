@@ -26,6 +26,7 @@ import WilayaMapTab from "@/components/tabs/WilayaMapTab";
 import { IndustryKpiTab } from "@/components/tabs/IndustryKpiTab";
 import { DecisionSupportTab } from "@/components/tabs/DecisionSupportTab";
 import { BenchmarkingTab } from "@/components/tabs/BenchmarkingTab";
+import PmeBulletinTab from "@/components/tabs/PmeBulletinTab";
 import { ChartCard } from "@/components/chart-card";
 
 import {
@@ -52,7 +53,7 @@ import {
   MapPin, ArrowRightLeft, Landmark, Wheat, Briefcase,
   Wifi, Car, Pipette, TreePine, BookOpen, UserCheck, Home, Route,
   Target, CheckCircle2, CircleDot, Flame, Sun, Battery, Sunrise, Factory as FactoryIcon,
-  Map as MapIcon, Brain,
+  Map as MapIcon, Brain, FileText,
 } from "lucide-react";
 
 // ─── Color palette ──────────────────────────────────────────────────────────
@@ -117,6 +118,7 @@ export default function AlgeriaDashboard() {
     { val: "trade", label: t.tabTrade, icon: Globe },
     { val: "industry", label: t.tabIndustry, icon: Factory },
     { val: "industryKpi", label: t.tabIndustryKpi, icon: BarChart3 },
+    { val: "pmeBulletin", label: t.tabPmeBulletin, icon: FileText },
     { val: "labor", label: t.tabLabor, icon: Users },
     { val: "social", label: t.tabSocial, icon: Heart },
     { val: "fiscal", label: t.tabFiscal, icon: DollarSign },
@@ -477,6 +479,10 @@ export default function AlgeriaDashboard() {
 
           <TabsContent value="industryKpi" className="space-y-5">
             <IndustryKpiTab />
+          </TabsContent>
+
+          <TabsContent value="pmeBulletin" className="space-y-5">
+            <PmeBulletinTab />
           </TabsContent>
 
           <TabsContent value="labor" className="space-y-5">
