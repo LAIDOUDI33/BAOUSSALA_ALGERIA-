@@ -19,7 +19,6 @@ export interface Dictionary {
   tabFiscal: string;
   tabRegional: string;
   tabSdg: string;
-  tabWorldBank: string;
 
   // ─── MACRO ─────────────────────────────────────────────────────────
   kpiGdpGrowth: string;
@@ -584,6 +583,73 @@ export interface Dictionary {
   chartYouthEmpLabel: string;
 
   // ─── FOOTER ────────────────────────────────────────────────────────
+
+  // ─── WILAYA CARTOGRAPHY ─────────────────────────────────────────────
+  tabWilaya: string;
+  wilayaKpiTotal: string;
+  wilayaKpiTotalSub: string;
+  wilayaKpiWilayas: string;
+  wilayaKpiPop: string;
+  wilayaKpiHab: string;
+  wilayaKpiPopSub: string;
+  wilayaKpiArea: string;
+  wilayaKpiAreaSub: string;
+  wilayaKpiDairas: string;
+  wilayaKpiDairasSub: string;
+  wilayaKpiCommunes: string;
+  wilayaKpiCommunesSub: string;
+  wilayaKpiDensity: string;
+  wilayaKpiHabKm2: string;
+  wilayaKpiDensitySub: string;
+  wilayaTabTable: string;
+  wilayaTabPop: string;
+  wilayaTabGeo: string;
+  wilayaTabAnalysis: string;
+  wilayaSearch: string;
+  wilayaFilterAll: string;
+  wilayaFilterLegacy: string;
+  wilayaFilterNew: string;
+  wilayaColName: string;
+  wilayaColDairas: string;
+  wilayaColCommunes: string;
+  wilayaColArea: string;
+  wilayaColPop: string;
+  wilayaColDensity: string;
+  wilayaColStatus: string;
+  wilayaColCount: string;
+  wilayaShown: string;
+  wilayaBadgeNew: string;
+  wilayaBadgeHist: string;
+  wilayaLegacy: string;
+  wilayaNew2019: string;
+  wilayaChartTop10Pop: string;
+  wilayaChartTop10PopSub: string;
+  wilayaChartPopRegion: string;
+  wilayaChartPopRegionSub: string;
+  wilayaChartDensDist: string;
+  wilayaChartDensDistSub: string;
+  wilayaChartNewVsOld: string;
+  wilayaChartNewVsOldSub: string;
+  wilayaChartTop10Area: string;
+  wilayaChartTop10AreaSub: string;
+  wilayaChartAreaRegion: string;
+  wilayaChartAreaRegionSub: string;
+  wilayaChartScatter: string;
+  wilayaChartScatterSub: string;
+  wilayaChartTop10Dens: string;
+  wilayaChartTop10DensSub: string;
+  wilayaChartCommPerWilaya: string;
+  wilayaChartCommPerWilayaSub: string;
+  wilayaChartPopVsArea: string;
+  wilayaChartPopVsAreaSub: string;
+  wilayaChartDairasVsComm: string;
+  wilayaChartDairasVsCommSub: string;
+  wilayaDens0: string;
+  wilayaDens10: string;
+  wilayaDens50: string;
+  wilayaDens200: string;
+  wilayaDens500: string;
+  wilayaSource: string;
   footer: string;
 
   // ─── SDG TAB ─────────────────────────────────────────────────────────
@@ -672,229 +738,12 @@ export interface Dictionary {
   labelQuintileShare: string;
   labelRemittanceCost: string;
   labelSdgSource: string;
-
-  // ─── WORLD BANK TAB ────────────────────────────────────────────────
-  kpiWbGdpGrowth: string;
-  kpiWbInflation: string;
-  kpiWbUnemployment: string;
-  kpiWbGniPerCapita: string;
-  kpiWbTradeGdp: string;
-  kpiWbFdi: string;
-  kpiWbExtDebt: string;
-  kpiWbLifeExp: string;
-  chartWbGdpGrowthComp: string;
-  chartWbGdpGrowthCompSub: string;
-  chartWbInflationComp: string;
-  chartWbInflationCompSub: string;
-  chartWbUnemploymentComp: string;
-  chartWbUnemploymentCompSub: string;
-  chartWbGdpPerCapitaComp: string;
-  chartWbGdpPerCapitaCompSub: string;
-  chartWbPopulationComp: string;
-  chartWbPopulationCompSub: string;
-  chartWbGniTrend: string;
-  chartWbGniTrendSub: string;
-  chartWbTradeGdp: string;
-  chartWbTradeGdpSub: string;
-  chartWbFdiTrend: string;
-  chartWbFdiTrendSub: string;
-  chartWbExtDebtTrend: string;
-  chartWbExtDebtTrendSub: string;
-  chartWbLifeExpTrend: string;
-  chartWbLifeExpTrendSub: string;
-  chartWbPovertyTrend: string;
-  chartWbPovertyTrendSub: string;
-  chartWbCo2Trend: string;
-  chartWbCo2TrendSub: string;
-  chartWbEnergyAccess: string;
-  chartWbEnergyAccessSub: string;
-  chartWbInternetTrend: string;
-  chartWbInternetTrendSub: string;
-  chartWbEduHealthSpend: string;
-  chartWbEduHealthSpendSub: string;
-  chartWbGcfComp: string;
-  chartWbGcfCompSub: string;
-  chartWbDeviation: string;
-  chartWbDeviationSub: string;
-  labelWbSource: string;
-  labelWb: string;
-  labelOns: string;
-  labelDeviation: string;
-  labelBnUsd: string;
-  labelMUsd: string;
-  labelPctPop: string;
-  labelTonsCapita: string;
-  labelPctFinalEnergy: string;
-  labelMobileSubs: string;
-  labelBroadband: string;
-  labelPctGdp: string;
-  labelPctGni: string;
-  labelYears: string;
-  labelPoverty215: string;
-  labelPoverty365: string;
-  labelPovertyNational: string;
-  labelMale: string;
-  labelFemale: string;
-  labelElectricity: string;
-  labelRenewable: string;
-  labelEduSpend: string;
-  labelHealthSpend: string;
-  labelExports: string;
-  labelImports: string;
-  labelTrade: string;
-
-  // ─── UI CONTROLS ─────────────────────────────────────────────────
-  labelSearch: string;
-  labelSearchPlaceholder: string;
-  labelSearchNoResults: string;
-  labelTheme: string;
-  labelThemeLight: string;
-  labelThemeDark: string;
-  labelExport: string;
-  labelExportPng: string;
-  labelExportCsv: string;
-
-  // ─── DECISION SUPPORT (SAD) ───────────────────────────────────────
-  tabSad: string;
-  sadTabAlerts: string;
-  sadTabForecast: string;
-  sadTabWhatIf: string;
-  sadKpiAlerts: string;
-  sadKpiScenarios: string;
-  sadKpiScenariosSub: string;
-  sadKpiParams: string;
-  sadKpiParamsSub: string;
-  sadKpiIndicators: string;
-  sadKpiIndicatorsSub: string;
-  sadCriticalAlert: string;
-  sadRequiresAttention: string;
-  sadAlertBanner: string;
-  sadThresholdTitle: string;
-  sadThresholdSub: string;
-  sadAlertsTitle: string;
-  sadAlertsSub: string;
-  sadNoAlerts: string;
-  sadCritical: string;
-  sadWarning: string;
-  sadInfo: string;
-  sadTypeAnomaly: string;
-  sadTypeThreshold: string;
-  sadTypeTrend: string;
-  sadValue: string;
-  sadExpected: string;
-  sadForecastGdpGrowth: string;
-  sadForecastInflation: string;
-  sadForecastUnemp: string;
-  sadForecastTrade: string;
-  sadForecastIpi: string;
-  sadForecastDebt: string;
-  sadSelectIndicator: string;
-  sadForecastSub: string;
-  sadHistorical: string;
-  sadOptimistic: string;
-  sadBaseline: string;
-  sadPessimistic: string;
-  sadLastActual: string;
-  sadSimParams: string;
-  sadSimParamsSub: string;
-  sadOilPrice: string;
-  sadOilProd: string;
-  sadGasPrice: string;
-  sadNonHCGrowth: string;
-  sadImportGrowth: string;
-  sadPublicInvest: string;
-  sadReset: string;
-  sadSimGdpGrowth: string;
-  sadSimGdp: string;
-  sadSimTrade: string;
-  sadSimUnemp: string;
-  sadSimHydroRev: string;
-  sadSimExports: string;
-  sadSimFiscal: string;
-  sadSimDebt: string;
-  sadSimImpact: string;
-  sadSimImpactSub: string;
-  sadImpact: string;
-  sadRef: string;
-  sadFInd1: string;
-  sadFInd2: string;
-  sadFInd3: string;
-  sadFInd4: string;
-  sadFInd5: string;
-  sadFInd6: string;
-
-  // ─── ANALYTICS MODULES ─────────────────────────────────
-  sadTabAnalytics: string;
-  sadTabCorrelation: string;
-  sadTabBenchmark: string;
-  sadTabReports: string;
-  sadTabCustomDash: string;
-  sadCorrGDP: string;
-  sadCorrInflation: string;
-  sadCorrUnemp: string;
-  sadCorrTrade: string;
-  sadCorrIPI: string;
-  sadCorrDebt: string;
-  sadCorrOilPrice: string;
-  sadCorrOilRev: string;
-  sadCorrTitle: string;
-  sadCorrSub: string;
-  sadCorrTableInd: string;
-  sadCorrTopPairs: string;
-  sadCorrTopPairsSub: string;
-  sadBenchGrowth: string;
-  sadBenchInflation: string;
-  sadBenchUnemp: string;
-  sadBenchTrade: string;
-  sadBenchDebt: string;
-  sadBenchFdi: string;
-  sadBenchGni: string;
-  sadBenchEnergy: string;
-  sadBenchSelect: string;
-  sadBenchRanking: string;
-  sadBenchSub: string;
-  sadBenchRadarTitle: string;
-  sadBenchRadarSub: string;
-  sadRepMacro: string;
-  sadRepPrices: string;
-  sadRepLabor: string;
-  sadRepTrade: string;
-  sadRepRisks: string;
-  sadRepGdpGrowth: string;
-  sadRepUp: string;
-  sadRepGdpNom: string;
-  sadRepNonHC: string;
-  sadRepInflationDec: string;
-  sadRepDown: string;
-  sadRepDeflation: string;
-  sadRepFood: string;
-  sadRepUnemp: string;
-  sadRepActivity: string;
-  sadRepYouth: string;
-  sadRepExports: string;
-  sadRepImports: string;
-  sadRepBalance: string;
-  sadRepHydroShare: string;
-  sadRepRisk1: string;
-  sadRepRisk2: string;
-  sadRepRisk3: string;
-  sadRepAutoTitle: string;
-  sadRepAutoSub: string;
-  sadRepExport: string;
-  sadCustomSelect: string;
-  sadCustomSelected: string;
-  sadCustomEmpty: string;
-  sadCustomChart: string;
-  sadCustomChartLabel: string;
-  sadCustomDir: string;
-  sadCustomUp: string;
-  sadCustomDown: string;
 }
 
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
 const en: Dictionary = {
-  headerTitle: "Baoussala-DZ",
-  headerSubtitle: "Plateforme Algérienne d'Aide à la Décision — ONS Data Analytics",
+  headerTitle: "Algeria Economic Dashboard",
+  headerSubtitle: "Office National des Statistiques (ONS) — Data Science Analysis Platform",
 
   tabMacro: "Macroeconomic",
   tabInflation: "Prices & Inflation",
@@ -1407,87 +1256,71 @@ const en: Dictionary = {
   labelRemittanceCost: "Remittance Cost %",
   labelSdgSource: "Source: VNR 2026 – Rapport National Volontaire, Comité intersectoriel ODD, ONS",
 
-  // World Bank Tab
-  tabWorldBank: "World Bank",
-  kpiWbGdpGrowth: "WB GDP Growth",
-  kpiWbInflation: "WB Inflation",
-  kpiWbUnemployment: "WB Unemployment",
-  kpiWbGniPerCapita: "GNI / Capita",
-  kpiWbTradeGdp: "Trade / GDP",
-  kpiWbFdi: "FDI Inflows",
-  kpiWbExtDebt: "External Debt",
-  kpiWbLifeExp: "Life Expectancy",
-  chartWbGdpGrowthComp: "GDP Growth — World Bank vs ONS",
-  chartWbGdpGrowthCompSub: "Annual GDP growth rate (%) — 2015–2024",
-  chartWbInflationComp: "Inflation — World Bank vs ONS",
-  chartWbInflationCompSub: "Consumer price inflation (%) — 2015–2024",
-  chartWbUnemploymentComp: "Unemployment — World Bank vs ONS",
-  chartWbUnemploymentCompSub: "Total labor force unemployment (%) — 2015–2024",
-  chartWbGdpPerCapitaComp: "GDP per Capita — World Bank vs ONS",
-  chartWbGdpPerCapitaCompSub: "Current USD — 2015–2024",
-  chartWbPopulationComp: "Population — World Bank vs ONS",
-  chartWbPopulationCompSub: "Total population (millions) — 2015–2024",
-  chartWbGniTrend: "GNI per Capita (Atlas Method)",
-  chartWbGniTrendSub: "Current USD — World Bank",
-  chartWbTradeGdp: "Trade as % of GDP",
-  chartWbTradeGdpSub: "Exports, Imports and Total — World Bank",
-  chartWbFdiTrend: "FDI Net Inflows (% of GDP)",
-  chartWbFdiTrendSub: "Foreign Direct Investment — World Bank",
-  chartWbExtDebtTrend: "External Debt Stocks (% of GNI)",
-  chartWbExtDebtTrendSub: "World Bank",
-  chartWbLifeExpTrend: "Life Expectancy at Birth",
-  chartWbLifeExpTrendSub: "Male, Female, Total — World Bank",
-  chartWbPovertyTrend: "Poverty Headcount Ratios",
-  chartWbPovertyTrendSub: "$2.15/day, $3.65/day, National line — World Bank",
-  chartWbCo2Trend: "CO₂ Emissions (metric tons/capita)",
-  chartWbCo2TrendSub: "Carbon dioxide emissions — World Bank",
-  chartWbEnergyAccess: "Energy Access & Renewables",
-  chartWbEnergyAccessSub: "Electricity access %, Renewable energy % — World Bank",
-  chartWbInternetTrend: "Digital Connectivity",
-  chartWbInternetTrendSub: "Internet, Mobile, Broadband % — World Bank",
-  chartWbEduHealthSpend: "Government Expenditure (% of GDP)",
-  chartWbEduHealthSpendSub: "Education & Health spending — World Bank",
-  chartWbGcfComp: "Gross Capital Formation — WB vs ONS",
-  chartWbGcfCompSub: "% of GDP — 2015–2024",
-  chartWbDeviation: "ONS vs World Bank — Deviation Summary",
-  chartWbDeviationSub: "Key 2024 indicators side-by-side comparison",
-  labelWbSource: "Source: World Bank Open Data (data.worldbank.org) — Compared with ONS (ons.dz)",
-  labelWb: "World Bank",
-  labelOns: "ONS",
-  labelDeviation: "Diff (ONS-WB)",
-  labelBnUsd: "Bn USD",
-  labelMUsd: "M USD",
-  labelPctPop: "% of Population",
-  labelTonsCapita: "Tons/Capita",
-  labelPctFinalEnergy: "% Final Energy",
-  labelMobileSubs: "Mobile Subs %",
-  labelBroadband: "Broadband %",
-  labelPctGdp: "% of GDP",
-  labelPctGni: "% of GNI",
-  labelYears: "Years",
-  labelPoverty215: "$2.15/day",
-  labelPoverty365: "$3.65/day",
-  labelPovertyNational: "National Line",
-  labelMale: "Male",
-  labelFemale: "Female",
-  labelElectricity: "Electricity Access",
-  labelRenewable: "Renewable Energy",
-  labelEduSpend: "Education",
-  labelHealthSpend: "Health",
-  labelExports: "Exports",
-  labelImports: "Imports",
-  labelTrade: "Total Trade",
-
-  labelSearch: "Search",
-  labelSearchPlaceholder: "Search indicators, charts, SDGs...",
-  labelSearchNoResults: "No results found.",
-  labelTheme: "Theme",
-  labelThemeLight: "Light",
-  labelThemeDark: "Dark",
-  labelExport: "Export",
-  labelExportPng: "Export PNG",
-  labelExportCsv: "Export CSV",
-
+  tabWilaya: "Wilayas",
+  wilayaKpiTotal: "Total Wilayas",
+  wilayaKpiTotalSub: "48 historical + 21 new (2019+)",
+  wilayaKpiWilayas: "wilayas",
+  wilayaKpiPop: "Total Population",
+  wilayaKpiHab: "inhabitants",
+  wilayaKpiPopSub: "RGPH 2008 census",
+  wilayaKpiArea: "Total Area",
+  wilayaKpiAreaSub: "Largest: Tamanrasset",
+  wilayaKpiDairas: "Daïras",
+  wilayaKpiDairasSub: "Administrative districts",
+  wilayaKpiCommunes: "Communes",
+  wilayaKpiCommunesSub: "Municipalities",
+  wilayaKpiDensity: "Avg. Density",
+  wilayaKpiHabKm2: "hab./km²",
+  wilayaKpiDensitySub: "National average",
+  wilayaTabTable: "Data Table",
+  wilayaTabPop: "Population",
+  wilayaTabGeo: "Geography",
+  wilayaTabAnalysis: "Analysis",
+  wilayaSearch: "Search wilaya by name or code...",
+  wilayaFilterAll: "All",
+  wilayaFilterLegacy: "Historical (48)",
+  wilayaFilterNew: "New 2019+ (21)",
+  wilayaColName: "Wilaya",
+  wilayaColDairas: "Daïras",
+  wilayaColCommunes: "Communes",
+  wilayaColArea: "Area (km²)",
+  wilayaColPop: "Population",
+  wilayaColDensity: "Density",
+  wilayaColStatus: "Status",
+  wilayaColCount: "Count",
+  wilayaShown: "wilayas displayed",
+  wilayaBadgeNew: "New",
+  wilayaBadgeHist: "Hist.",
+  wilayaLegacy: "Historical (48)",
+  wilayaNew2019: "New 2019+",
+  wilayaChartTop10Pop: "Top 10 Most Populated",
+  wilayaChartTop10PopSub: "RGPH 2008 — Population by wilaya",
+  wilayaChartPopRegion: "Population by Region",
+  wilayaChartPopRegionSub: "Distribution across 6 macro-regions",
+  wilayaChartDensDist: "Density Distribution",
+  wilayaChartDensDistSub: "Number of wilayas per density range",
+  wilayaChartNewVsOld: "Historical vs New Wilayas",
+  wilayaChartNewVsOldSub: "Comparison by count",
+  wilayaChartTop10Area: "Top 10 Largest by Area",
+  wilayaChartTop10AreaSub: "Surface area in km²",
+  wilayaChartAreaRegion: "Area by Region",
+  wilayaChartAreaRegionSub: "Territorial distribution",
+  wilayaChartScatter: "Area vs Density (bubble = population)",
+  wilayaChartScatterSub: "Each dot = one wilaya",
+  wilayaChartTop10Dens: "Top 10 Densest",
+  wilayaChartTop10DensSub: "Inhabitants per km²",
+  wilayaChartCommPerWilaya: "Top 10 by Communes",
+  wilayaChartCommPerWilayaSub: "Number of communes per wilaya",
+  wilayaChartPopVsArea: "Population vs Area (Top 15)",
+  wilayaChartPopVsAreaSub: "Combined comparison",
+  wilayaChartDairasVsComm: "Daïras vs Communes",
+  wilayaChartDairasVsCommSub: "Administrative structure correlation",
+  wilayaDens0: "< 10",
+  wilayaDens10: "10-50",
+  wilayaDens50: "50-200",
+  wilayaDens200: "200-500",
+  wilayaDens500: "500+",
+  wilayaSource: "Source: ONS — RGPH 2008 + Administrative Division Law 2019",
   footer: "Source: Office National des Statistiques (ONS) \u2014 www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes Economiques, ENEM, RGPH)",
   kpiOilProd: "Oil Production",
   kpiGasProd: "Gas Production",
@@ -1631,147 +1464,12 @@ const en: Dictionary = {
   chartLifeExpLabel: "Life Expect.",
   chartVaccinationLabel: "Vaccination",
   chartPrimaryCareLabel: "Primary Care",
-
-  // ─── DECISION SUPPORT (SAD) ───────────────────────────────────────
-  tabSad: "Decision Support",
-  sadTabAlerts: "Alerts",
-  sadTabForecast: "Forecast",
-  sadTabWhatIf: "What-If",
-  sadKpiAlerts: "Active alerts",
-  sadKpiScenarios: "Scenarios",
-  sadKpiScenariosSub: "Optimistic / Baseline / Pessimistic",
-  sadKpiParams: "Sim. parameters",
-  sadKpiParamsSub: "6 adjustable levers",
-  sadKpiIndicators: "Monitored indicators",
-  sadKpiIndicatorsSub: "GDP, CPI, Unemployment, Trade, IPI, Debt",
-  sadCriticalAlert: "critical alert(s)",
-  sadRequiresAttention: "require your attention",
-  sadAlertBanner: "Statistical anomalies or threshold breaches detected on key indicators.",
-  sadThresholdTitle: "Monitoring thresholds",
-  sadThresholdSub: "Alert limit configuration by indicator",
-  sadAlertsTitle: "Detected alerts",
-  sadAlertsSub: "Statistical anomalies and threshold breaches",
-  sadNoAlerts: "No active alerts — all indicators within norms",
-  sadCritical: "Critical",
-  sadWarning: "Warning",
-  sadInfo: "Info",
-  sadTypeAnomaly: "Anomaly",
-  sadTypeThreshold: "Threshold",
-  sadTypeTrend: "Trend",
-  sadValue: "Value",
-  sadExpected: "Expected",
-  sadForecastGdpGrowth: "GDP Growth",
-  sadForecastInflation: "Inflation (Dec.)",
-  sadForecastUnemp: "Unemployment",
-  sadForecastTrade: "Trade Balance",
-  sadForecastIpi: "IPI (Q4)",
-  sadForecastDebt: "Debt/GDP",
-  sadSelectIndicator: "Select indicator to project",
-  sadForecastSub: "2025-2027 Projections — 3 scenarios",
-  sadHistorical: "Historical",
-  sadOptimistic: "Optimistic",
-  sadBaseline: "Baseline",
-  sadPessimistic: "Pessimistic",
-  sadLastActual: "Last actual",
-  sadSimParams: "Simulation parameters",
-  sadSimParamsSub: "Adjust economic levers and observe real-time impact",
-  sadOilPrice: "Oil price (USD/barrel)",
-  sadOilProd: "Oil production (Mb/d)",
-  sadGasPrice: "Gas price (USD/mmbtu)",
-  sadNonHCGrowth: "Non-hydrocarbon growth (%)",
-  sadImportGrowth: "Import growth (%)",
-  sadPublicInvest: "Public investment (% GDP)",
-  sadReset: "Reset",
-  sadSimGdpGrowth: "GDP Growth",
-  sadSimGdp: "GDP (Bn DZD)",
-  sadSimTrade: "Trade Balance",
-  sadSimUnemp: "Unemployment",
-  sadSimHydroRev: "HC Revenue",
-  sadSimExports: "Exports",
-  sadSimFiscal: "Fiscal Revenue",
-  sadSimDebt: "Debt/GDP",
-  sadSimImpact: "Simulation impact vs reference scenario",
-  sadSimImpactSub: "Deviations induced by adjusted parameters",
-  sadImpact: "Impact",
-  sadRef: "ref",
-  sadFInd1: "GDP Growth",
-  sadFInd2: "Inflation",
-  sadFInd3: "Unemployment",
-  sadFInd4: "Trade Balance",
-  sadFInd5: "IPI",
-  sadFInd6: "Debt/GDP",
-  sadTabAnalytics: "Analytics",
-  sadTabCorrelation: "Correlations",
-  sadTabBenchmark: "Benchmarking",
-  sadTabReports: "Reports",
-  sadTabCustomDash: "Custom",
-  sadCorrGDP: "GDP Growth",
-  sadCorrInflation: "Inflation (Dec.)",
-  sadCorrUnemp: "Unemployment",
-  sadCorrTrade: "Trade Balance",
-  sadCorrIPI: "IPI",
-  sadCorrDebt: "Debt/GDP",
-  sadCorrOilPrice: "Oil Price",
-  sadCorrOilRev: "HC Revenue (Bn$)",
-  sadCorrTitle: "Correlation matrix",
-  sadCorrSub: "Pearson coefficients between main macroeconomic indicators (2010-2024)",
-  sadCorrTableInd: "Indicator",
-  sadCorrTopPairs: "Notable correlations",
-  sadCorrTopPairsSub: "Sorted by intensity",
-  sadBenchGrowth: "GDP Growth (%)",
-  sadBenchInflation: "Inflation (%)",
-  sadBenchUnemp: "Unemployment (%)",
-  sadBenchTrade: "Trade Balance (% GDP)",
-  sadBenchDebt: "Debt/GDP (%)",
-  sadBenchFdi: "FDI (% GDP)",
-  sadBenchGni: "GNI per capita ($)",
-  sadBenchEnergy: "Electricity access (%)",
-  sadBenchSelect: "Select indicator",
-  sadBenchRanking: "2024 Ranking",
-  sadBenchSub: "Comparison 2015-2024 (ONS, INS, CAPMAS, GASTAT)",
-  sadBenchRadarTitle: "Multi-indicator comparison (2024)",
-  sadBenchRadarSub: "Algeria vs regional peers",
-  sadRepMacro: "1. Macroeconomic summary",
-  sadRepPrices: "2. Prices and inflation",
-  sadRepLabor: "3. Labor market",
-  sadRepTrade: "4. Foreign trade",
-  sadRepRisks: "5. Watchpoints",
-  sadRepGdpGrowth: "GDP Growth",
-  sadRepUp: "up",
-  sadRepGdpNom: "Nominal GDP",
-  sadRepNonHC: "Non-HC Growth",
-  sadRepInflationDec: "Inflation Dec. 2024",
-  sadRepDown: "down",
-  sadRepDeflation: "Deflation",
-  sadRepFood: "Food inflation",
-  sadRepUnemp: "Unemployment",
-  sadRepActivity: "Activity rate",
-  sadRepYouth: "Youth unemployment",
-  sadRepExports: "Exports",
-  sadRepImports: "Imports",
-  sadRepBalance: "Trade balance",
-  sadRepHydroShare: "92.8pct HC",
-  sadRepRisk1: "Deflation",
-  sadRepRisk2: "HC dependence",
-  sadRepRisk3: "Informal employment",
-  sadRepAutoTitle: "Automated economic report Q3 2025",
-  sadRepAutoSub: "Key indicator summary based on official ONS data",
-  sadRepExport: "Export",
-  sadCustomSelect: "Select your indicators",
-  sadCustomSelected: "selected",
-  sadCustomEmpty: "Select at least one indicator to build your dashboard",
-  sadCustomChart: "Selected indicators chart",
-  sadCustomChartLabel: "Value",
-  sadCustomDir: "Direction",
-  sadCustomUp: "Increase desired",
-  sadCustomDown: "Decrease desired",
-
 };
 
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
 const fr: Dictionary = {
-  headerTitle: "Baoussala-DZ",
-  headerSubtitle: "Plateforme Algérienne d'Aide à la Décision — ONS Data Analytics",
+  headerTitle: "Tableau de Bord \u00c9conomique de l'Alg\u00e9rie",
+  headerSubtitle: "Office National des Statistiques (ONS) — Plateforme d'Analyse de Donn\u00e9es",
 
   tabMacro: "Macro\u00e9conomie",
   tabInflation: "Prix & Inflation",
@@ -2284,87 +1982,71 @@ const fr: Dictionary = {
   labelRemittanceCost: "Coût envois de fonds %",
   labelSdgSource: "Source : VNR 2026 – Rapport National Volontaire, Comité intersectoriel ODD, ONS",
 
-  // World Bank Tab
-  tabWorldBank: "Banque Mondiale",
-  kpiWbGdpGrowth: "BM Croissance PIB",
-  kpiWbInflation: "BM Inflation",
-  kpiWbUnemployment: "BM Chômage",
-  kpiWbGniPerCapita: "RNB / Habitant",
-  kpiWbTradeGdp: "Commerce / PIB",
-  kpiWbFdi: "IDE Entrants",
-  kpiWbExtDebt: "Dette Extérieure",
-  kpiWbLifeExp: "Espérance de Vie",
-  chartWbGdpGrowthComp: "Croissance PIB — Banque Mondiale vs ONS",
-  chartWbGdpGrowthCompSub: "Taux de croissance annuel du PIB (%) — 2015–2024",
-  chartWbInflationComp: "Inflation — Banque Mondiale vs ONS",
-  chartWbInflationCompSub: "Inflation des prix à la consommation (%) — 2015–2024",
-  chartWbUnemploymentComp: "Chômage — Banque Mondiale vs ONS",
-  chartWbUnemploymentCompSub: "Taux de chômage (%) — 2015–2024",
-  chartWbGdpPerCapitaComp: "PIB par Habitant — Banque Mondiale vs ONS",
-  chartWbGdpPerCapitaCompSub: "USD courants — 2015–2024",
-  chartWbPopulationComp: "Population — Banque Mondiale vs ONS",
-  chartWbPopulationCompSub: "Population totale (millions) — 2015–2024",
-  chartWbGniTrend: "RNB par Habitant (méthode Atlas)",
-  chartWbGniTrendSub: "USD courants — Banque Mondiale",
-  chartWbTradeGdp: "Commerce en % du PIB",
-  chartWbTradeGdpSub: "Exportations, Importations et Total — Banque Mondiale",
-  chartWbFdiTrend: "IDE Nets Entrants (% du PIB)",
-  chartWbFdiTrendSub: "Investissement Étranger Direct — Banque Mondiale",
-  chartWbExtDebtTrend: "Stock de la Dette Extérieure (% du RNB)",
-  chartWbExtDebtTrendSub: "Banque Mondiale",
-  chartWbLifeExpTrend: "Espérance de Vie à la Naissance",
-  chartWbLifeExpTrendSub: "Hommes, Femmes, Total — Banque Mondiale",
-  chartWbPovertyTrend: "Taux de Pauvreté",
-  chartWbPovertyTrendSub: "2,15$/jour, 3,65$/jour, Seuil national — Banque Mondiale",
-  chartWbCo2Trend: "Émissions CO₂ (tonnes métriques/habitant)",
-  chartWbCo2TrendSub: "Émissions de dioxyde de carbone — Banque Mondiale",
-  chartWbEnergyAccess: "Accès à l'Énergie & Renouvelables",
-  chartWbEnergyAccessSub: "Accès électricité %, Énergie renouvelable % — Banque Mondiale",
-  chartWbInternetTrend: "Connectivité Numérique",
-  chartWbInternetTrendSub: "Internet, Mobile, Haut débit % — Banque Mondiale",
-  chartWbEduHealthSpend: "Dépenses Publiques (% du PIB)",
-  chartWbEduHealthSpendSub: "Dépenses Éducation & Santé — Banque Mondiale",
-  chartWbGcfComp: "Formation Brute de Capital — BM vs ONS",
-  chartWbGcfCompSub: "% du PIB — 2015–2024",
-  chartWbDeviation: "ONS vs Banque Mondiale — Écarts",
-  chartWbDeviationSub: "Comparaison côte à côte des indicateurs clés 2024",
-  labelWbSource: "Source : Banque Mondiale Open Data (data.worldbank.org) — Comparé avec ONS (ons.dz)",
-  labelWb: "Banque Mondiale",
-  labelOns: "ONS",
-  labelDeviation: "Écart (ONS-BM)",
-  labelBnUsd: "Md USD",
-  labelMUsd: "M USD",
-  labelPctPop: "% de la Population",
-  labelTonsCapita: "Tonnes/Hab",
-  labelPctFinalEnergy: "% Énergie Finale",
-  labelMobileSubs: "Abonnements Mobile %",
-  labelBroadband: "Haut Débit %",
-  labelPctGdp: "% du PIB",
-  labelPctGni: "% du RNB",
-  labelYears: "Années",
-  labelPoverty215: "2,15$/jour",
-  labelPoverty365: "3,65$/jour",
-  labelPovertyNational: "Seuil National",
-  labelMale: "Hommes",
-  labelFemale: "Femmes",
-  labelElectricity: "Accès Électricité",
-  labelRenewable: "Énergie Renouvelable",
-  labelEduSpend: "Éducation",
-  labelHealthSpend: "Santé",
-  labelExports: "Exportations",
-  labelImports: "Importations",
-  labelTrade: "Commerce Total",
-
-  labelSearch: "Rechercher",
-  labelSearchPlaceholder: "Rechercher indicateurs, graphiques, ODD...",
-  labelSearchNoResults: "Aucun résultat trouvé.",
-  labelTheme: "Thème",
-  labelThemeLight: "Clair",
-  labelThemeDark: "Sombre",
-  labelExport: "Exporter",
-  labelExportPng: "Exporter PNG",
-  labelExportCsv: "Exporter CSV",
-
+  tabWilaya: "Wilayas",
+  wilayaKpiTotal: "Total Wilayas",
+  wilayaKpiTotalSub: "48 historiques + 21 nouvelles (2019+)",
+  wilayaKpiWilayas: "wilayas",
+  wilayaKpiPop: "Population Totale",
+  wilayaKpiHab: "habitants",
+  wilayaKpiPopSub: "Recensement RGPH 2008",
+  wilayaKpiArea: "Superficie Totale",
+  wilayaKpiAreaSub: "Plus grande : Tamanrasset",
+  wilayaKpiDairas: "Daïras",
+  wilayaKpiDairasSub: "Districts administratifs",
+  wilayaKpiCommunes: "Communes",
+  wilayaKpiCommunesSub: "Municipalités",
+  wilayaKpiDensity: "Densité Moy.",
+  wilayaKpiHabKm2: "hab./km²",
+  wilayaKpiDensitySub: "Moyenne nationale",
+  wilayaTabTable: "Tableau",
+  wilayaTabPop: "Population",
+  wilayaTabGeo: "Géographie",
+  wilayaTabAnalysis: "Analyse",
+  wilayaSearch: "Rechercher une wilaya par nom ou code...",
+  wilayaFilterAll: "Toutes",
+  wilayaFilterLegacy: "Historiques (48)",
+  wilayaFilterNew: "Nouvelles 2019+ (21)",
+  wilayaColName: "Wilaya",
+  wilayaColDairas: "Daïras",
+  wilayaColCommunes: "Communes",
+  wilayaColArea: "Superficie (km²)",
+  wilayaColPop: "Population",
+  wilayaColDensity: "Densité",
+  wilayaColStatus: "Statut",
+  wilayaColCount: "Nombre",
+  wilayaShown: "wilayas affichées",
+  wilayaBadgeNew: "Nouvelle",
+  wilayaBadgeHist: "Hist.",
+  wilayaLegacy: "Historiques (48)",
+  wilayaNew2019: "Nouvelles 2019+",
+  wilayaChartTop10Pop: "Top 10 Plus Peuplées",
+  wilayaChartTop10PopSub: "RGPH 2008 — Population par wilaya",
+  wilayaChartPopRegion: "Population par Région",
+  wilayaChartPopRegionSub: "Répartition sur 6 macro-régions",
+  wilayaChartDensDist: "Répartition Densité",
+  wilayaChartDensDistSub: "Nombre de wilayas par tranche de densité",
+  wilayaChartNewVsOld: "Wilayas Historiques vs Nouvelles",
+  wilayaChartNewVsOldSub: "Comparaison par nombre",
+  wilayaChartTop10Area: "Top 10 Plus Grandes",
+  wilayaChartTop10AreaSub: "Superficie en km²",
+  wilayaChartAreaRegion: "Superficie par Région",
+  wilayaChartAreaRegionSub: "Répartition territoriale",
+  wilayaChartScatter: "Superficie vs Densité (bulle = population)",
+  wilayaChartScatterSub: "Chaque point = une wilaya",
+  wilayaChartTop10Dens: "Top 10 Plus Denses",
+  wilayaChartTop10DensSub: "Habitants par km²",
+  wilayaChartCommPerWilaya: "Top 10 par Communes",
+  wilayaChartCommPerWilayaSub: "Nombre de communes par wilaya",
+  wilayaChartPopVsArea: "Population vs Superficie (Top 15)",
+  wilayaChartPopVsAreaSub: "Comparaison combinée",
+  wilayaChartDairasVsComm: "Daïras vs Communes",
+  wilayaChartDairasVsCommSub: "Corrélation administrative",
+  wilayaDens0: "< 10",
+  wilayaDens10: "10-50",
+  wilayaDens50: "50-200",
+  wilayaDens200: "200-500",
+  wilayaDens500: "500+",
+  wilayaSource: "Source : ONS — RGPH 2008 + Loi de Découpage Administratif 2019",
   footer: "Source : Office National des Statistiques (ONS) \u2014 www.ons.dz | Toutes les donn\u00e9es issues des publications ONS (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes \u00c9conomiques, ENEM, RGPH)",
   kpiOilProd: "Production de Pétrole",
   kpiGasProd: "Production de Gaz",
@@ -2508,147 +2190,12 @@ const fr: Dictionary = {
   chartLifeExpLabel: "Espérance",
   chartVaccinationLabel: "Vaccination",
   chartPrimaryCareLabel: "Soins Primaires",
-
-  // ─── DECISION SUPPORT (SAD) ───────────────────────────────────────
-  tabSad: "Aide à la Décision",
-  sadTabAlerts: "Alertes",
-  sadTabForecast: "Prévisions",
-  sadTabWhatIf: "Simulation",
-  sadKpiAlerts: "Alertes actives",
-  sadKpiScenarios: "Scénarios",
-  sadKpiScenariosSub: "Optimiste / Baseline / Pessimiste",
-  sadKpiParams: "Paramètres sim.",
-  sadKpiParamsSub: "6 leviers ajustables",
-  sadKpiIndicators: "Indicateurs surveillés",
-  sadKpiIndicatorsSub: "PIB, IPC, Chômage, Commerce, IPI, Dette",
-  sadCriticalAlert: "alerte(s) critique(s)",
-  sadRequiresAttention: "requièrent votre attention",
-  sadAlertBanner: "Des anomalies statistiques ou des dépassements de seuils ont été détectés sur les indicateurs clés.",
-  sadThresholdTitle: "Seuils de surveillance",
-  sadThresholdSub: "Configuration des limites d'alerte par indicateur",
-  sadAlertsTitle: "Alertes détectées",
-  sadAlertsSub: "Anomalies statistiques et franchissements de seuils",
-  sadNoAlerts: "Aucune alerte active — tous les indicateurs sont dans les normes",
-  sadCritical: "Critique",
-  sadWarning: "Avertissement",
-  sadInfo: "Info",
-  sadTypeAnomaly: "Anomalie",
-  sadTypeThreshold: "Seuil",
-  sadTypeTrend: "Tendance",
-  sadValue: "Valeur",
-  sadExpected: "Attendu",
-  sadForecastGdpGrowth: "Croissance PIB",
-  sadForecastInflation: "Inflation (déc.)",
-  sadForecastUnemp: "Chômage",
-  sadForecastTrade: "Solde Commercial",
-  sadForecastIpi: "IPI (Q4)",
-  sadForecastDebt: "Dette/PIB",
-  sadSelectIndicator: "Sélectionner l'indicateur à projeter",
-  sadForecastSub: "Projections 2025-2027 — 3 scénarios",
-  sadHistorical: "Historique",
-  sadOptimistic: "Optimiste",
-  sadBaseline: "Baseline",
-  sadPessimistic: "Pessimiste",
-  sadLastActual: "Dernière valeur réelle",
-  sadSimParams: "Paramètres de simulation",
-  sadSimParamsSub: "Ajustez les leviers économiques et observez l'impact en temps réel",
-  sadOilPrice: "Prix du pétrole (USD/baril)",
-  sadOilProd: "Production pétrolière (Mb/j)",
-  sadGasPrice: "Prix du gaz (USD/mmbtu)",
-  sadNonHCGrowth: "Croissance hors-hydrocarbures (%)",
-  sadImportGrowth: "Croissance des importations (%)",
-  sadPublicInvest: "Investissement public (% PIB)",
-  sadReset: "Réinitialiser",
-  sadSimGdpGrowth: "Croissance PIB",
-  sadSimGdp: "PIB (Mds DZD)",
-  sadSimTrade: "Solde Commercial",
-  sadSimUnemp: "Chômage",
-  sadSimHydroRev: "Revenus HC",
-  sadSimExports: "Exportations",
-  sadSimFiscal: "Recettes fiscales",
-  sadSimDebt: "Dette/PIB",
-  sadSimImpact: "Impact de la simulation vs scénario de référence",
-  sadSimImpactSub: "Comparaison des écarts induits par les paramètres ajustés",
-  sadImpact: "Impact",
-  sadRef: "réf",
-  sadFInd1: "Croissance PIB",
-  sadFInd2: "Inflation",
-  sadFInd3: "Chômage",
-  sadFInd4: "Solde Commercial",
-  sadFInd5: "IPI",
-  sadFInd6: "Dette/PIB",
-  sadTabAnalytics: "Analytique",
-  sadTabCorrelation: "Corrélations",
-  sadTabBenchmark: "Benchmarking",
-  sadTabReports: "Rapports",
-  sadTabCustomDash: "Perso.",
-  sadCorrGDP: "Croissance PIB",
-  sadCorrInflation: "Inflation (déc.)",
-  sadCorrUnemp: "Chômage",
-  sadCorrTrade: "Solde Commercial",
-  sadCorrIPI: "IPI",
-  sadCorrDebt: "Dette/PIB",
-  sadCorrOilPrice: "Prix pétrole",
-  sadCorrOilRev: "Rev. HC (Mds $)",
-  sadCorrTitle: "Matrice de corrélation",
-  sadCorrSub: "Coefficients de Pearson entre les principaux indicateurs macroéconomiques (2010-2024)",
-  sadCorrTableInd: "Indicateur",
-  sadCorrTopPairs: "Corrélations notables",
-  sadCorrTopPairsSub: "Classées par intensité",
-  sadBenchGrowth: "Croissance PIB (%)",
-  sadBenchInflation: "Inflation (%)",
-  sadBenchUnemp: "Chômage (%)",
-  sadBenchTrade: "Solde Commercial (% PIB)",
-  sadBenchDebt: "Dette/PIB (%)",
-  sadBenchFdi: "IDE (% PIB)",
-  sadBenchGni: "RNB/habitant ($)",
-  sadBenchEnergy: "Accès électricité (%)",
-  sadBenchSelect: "Sélectionner l’indicateur",
-  sadBenchRanking: "Classement 2024",
-  sadBenchSub: "Comparaison 2015-2024 (ONS, INS, CAPMAS, GASTAT)",
-  sadBenchRadarTitle: "Vue comparative multi-indicateurs (2024)",
-  sadBenchRadarSub: "Algérie vs pays de la région",
-  sadRepMacro: "1. Synthèse macroéconomique",
-  sadRepPrices: "2. Prix et inflation",
-  sadRepLabor: "3. Marché du travail",
-  sadRepTrade: "4. Commerce extérieur",
-  sadRepRisks: "5. Points de vigilance",
-  sadRepGdpGrowth: "Croissance PIB",
-  sadRepUp: "en hausse",
-  sadRepGdpNom: "PIB nominal",
-  sadRepNonHC: "Croissance hors-HC",
-  sadRepInflationDec: "Inflation déc. 2024",
-  sadRepDown: "en baisse",
-  sadRepDeflation: "Déflation",
-  sadRepFood: "Inflation alimentaire",
-  sadRepUnemp: "Chômage",
-  sadRepActivity: "Taux d’activité",
-  sadRepYouth: "Chômage jeunes",
-  sadRepExports: "Exportations",
-  sadRepImports: "Importations",
-  sadRepBalance: "Solde commercial",
-  sadRepHydroShare: "92.8% HC",
-  sadRepRisk1: "Déflation",
-  sadRepRisk2: "Dépendance HC",
-  sadRepRisk3: "Informel",
-  sadRepAutoTitle: "Rapport économique automatique T3 2025",
-  sadRepAutoSub: "Synthèse des indicateurs clés basée sur les données officielles ONS",
-  sadRepExport: "Exporter",
-  sadCustomSelect: "Sélectionner vos indicateurs",
-  sadCustomSelected: "sélectionnés",
-  sadCustomEmpty: "Sélectionnez au moins un indicateur pour construire votre tableau de bord",
-  sadCustomChart: "Évolution des indicateurs sélectionnés",
-  sadCustomChartLabel: "Valeur",
-  sadCustomDir: "Direction",
-  sadCustomUp: "Hausse souhaitée",
-  sadCustomDown: "Baisse souhaitée",
-
 };
 
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
 const ar: Dictionary = {
-  headerTitle: "Baoussala-DZ",
-  headerSubtitle: "منصة الجزائرية للقرار — ONS تحليل البيانات",
+  headerTitle: "\u0644\u0648\u062d\u0629 \u0627\u0644\u0642\u064a\u0627\u062f\u0629 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 \u0644\u0644\u062c\u0632\u0627\u0626\u0631",
+  headerSubtitle: "\u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) \u2014 \u0645\u0646\u0635\u0629 \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",
 
   tabMacro: "\u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0643\u0644\u064a",
   tabInflation: "\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u0648\u0627\u0644\u062a\u0636\u062e\u0645",
@@ -3300,221 +2847,6 @@ const ar: Dictionary = {
   labelQuintileShare: "حصة الخمسي",
   labelRemittanceCost: "تكلفة الحوالة",
   labelSdgSource: "المصدر: ONS ومراجع الأهداف",
-  // World Bank Tab
-  tabWorldBank: "البنك الدولي",
-  kpiWbGdpGrowth: "بم نمو الناتج المحلي",
-  kpiWbInflation: "بم التضخم",
-  kpiWbUnemployment: "بم البطالة",
-  kpiWbGniPerCapita: "الدخل الوطني الإجمالي / فرد",
-  kpiWbTradeGdp: "التجارة / ناتج",
-  kpiWbFdi: "استثمار أجنبي",
-  kpiWbExtDebt: "الدين الخارجي",
-  kpiWbLifeExp: "متوسط العمر",
-  chartWbGdpGrowthComp: "نمو الناتج المحلي — البنك الدولي vs ONS",
-  chartWbGdpGrowthCompSub: "معدل النمو السنوي (%) — 2015–2024",
-  chartWbInflationComp: "التضخم — البنك الدولي vs ONS",
-  chartWbInflationCompSub: "تضخم الأسعار (%) — 2015–2024",
-  chartWbUnemploymentComp: "البطالة — البنك الدولي vs ONS",
-  chartWbUnemploymentCompSub: "نسبة البطالة (%) — 2015–2024",
-  chartWbGdpPerCapitaComp: "الناتج المحلي / فرد — البنك الدولي vs ONS",
-  chartWbGdpPerCapitaCompSub: "دولار أمريكي جارٍ — 2015–2024",
-  chartWbPopulationComp: "السكان — البنك الدولي vs ONS",
-  chartWbPopulationCompSub: "إجمالي السكان (ملايين) — 2015–2024",
-  chartWbGniTrend: "الدخل الوطني الإجمالي / فرد",
-  chartWbGniTrendSub: "دولار أمريكي — البنك الدولي",
-  chartWbTradeGdp: "التجارة نسبة من الناتج",
-  chartWbTradeGdpSub: "الصادرات، الواردات والإجمالي — البنك الدولي",
-  chartWbFdiTrend: "الاستثمار الأجنبي (% من الناتج)",
-  chartWbFdiTrendSub: "الاستثمار المباشر — البنك الدولي",
-  chartWbExtDebtTrend: "محفظ الدين الخارجي (% من الدخل الوطني)",
-  chartWbExtDebtTrendSub: "البنك الدولي",
-  chartWbLifeExpTrend: "متوسط العمر عند الولادة",
-  chartWbLifeExpTrendSub: "ذكور، إناث، الإجمالي — البنك الدولي",
-  chartWbPovertyTrend: "معدلات الفقر",
-  chartWbPovertyTrendSub: "2.15$/يوم، 3.65$/يوم، خط وطني — البنك الدولي",
-  chartWbCo2Trend: "انبعاثات CO2 (طن/فرد)",
-  chartWbCo2TrendSub: "انبعاثات ثاني أكسيد الكربون — البنك الدولي",
-  chartWbEnergyAccess: "الوصول للطاقة والمتجددة",
-  chartWbEnergyAccessSub: "نسبة الكهرباء، الطاقة المتجددة — البنك الدولي",
-  chartWbInternetTrend: "الربط الرقمي",
-  chartWbInternetTrendSub: "الإنترنت، المحمول، النطاق العريض — البنك الدولي",
-  chartWbEduHealthSpend: "النفقات العامة (% من الناتج)",
-  chartWbEduHealthSpendSub: "التعليم والصحة — البنك الدولي",
-  chartWbGcfComp: "التكوين الرأسمالي — بم vs ONS",
-  chartWbGcfCompSub: "% من الناتج — 2015–2024",
-  chartWbDeviation: "ONS vs البنك الدولي — الانحرافات",
-  chartWbDeviationSub: "مقارنة جانبية للمؤشرات الرئيسية 2024",
-  labelWbSource: "المصدر: البنك الدولي للبيانات المفتوحة (data.worldbank.org) — مقارنة مع ONS",
-  labelWb: "البنك الدولي",
-  labelOns: "ONS",
-  labelDeviation: "الانحراف (ONS-بم)",
-  labelBnUsd: "مليار دولار",
-  labelMUsd: "مليون دولار",
-  labelPctPop: "% من السكان",
-  labelTonsCapita: "طن/فرد",
-  labelPctFinalEnergy: "% الطاقة النهائية",
-  labelMobileSubs: "% اشتراكات المحمول",
-  labelBroadband: "% النطاق العريض",
-  labelPctGdp: "% من الناتج",
-  labelPctGni: "% من الدخل الوطني الإجمالي",
-  labelYears: "سنوات",
-  labelPoverty215: "2.15$/يوم",
-  labelPoverty365: "3.65$/يوم",
-  labelPovertyNational: "الخط الوطني",
-  labelMale: "ذكور",
-  labelFemale: "إناث",
-  labelElectricity: "الوصول للكهرباء",
-  labelRenewable: "الطاقة المتجددة",
-  labelEduSpend: "التعليم",
-  labelHealthSpend: "الصحة",
-  labelExports: "الصادرات",
-  labelImports: "الواردات",
-  labelTrade: "إجمالي التجارة",
-
-  labelSearch: "بحث",
-  labelSearchPlaceholder: "البحث عن مؤشرات، رسوم بيانية، أهداف...",
-  labelSearchNoResults: "لم يتم العثور على نتائج.",
-  labelTheme: "المظهر",
-  labelThemeLight: "فاتح",
-  labelThemeDark: "داكن",
-  labelExport: "تصدير",
-  labelExportPng: "تصدير PNG",
-  labelExportCsv: "تصدير CSV",
-
-  // ─── DECISION SUPPORT (SAD) ───────────────────────────────────────
-  tabSad: "دعم القرار",
-  sadTabAlerts: "تنبيهات",
-  sadTabForecast: "توقعات",
-  sadTabWhatIf: "محاكاة",
-  sadKpiAlerts: "تنبيهات نشطة",
-  sadKpiScenarios: "سيناريوهات",
-  sadKpiScenariosSub: "متفائل / مرجعي / متشائم",
-  sadKpiParams: "معلمات محاكاة",
-  sadKpiParamsSub: "6 روافع قابلة للتعديل",
-  sadKpiIndicators: "مؤشرات مراقبة",
-  sadKpiIndicatorsSub: "PIB, IPC, بطالة, تجارة, IPI, دين",
-  sadCriticalAlert: "تنبيه(ات) حرج(ة)",
-  sadRequiresAttention: "تتطلب اهتمامك",
-  sadAlertBanner: "تم اكتشاف شواذ إحصائية أو تجاوزات للحدود على المؤشرات الرئيسية.",
-  sadThresholdTitle: "حدود المراقبة",
-  sadThresholdSub: "إعداد حدود التنبيه حسب المؤشر",
-  sadAlertsTitle: "التنبيهات المكتشفة",
-  sadAlertsSub: "شواذ إحصائية وتجاوزات للحدود",
-  sadNoAlerts: "لا تنبيهات نشطة — جميع المؤشرات ضمن المعايير",
-  sadCritical: "حرج",
-  sadWarning: "تحذير",
-  sadInfo: "معلومة",
-  sadTypeAnomaly: "شذذ",
-  sadTypeThreshold: "حد",
-  sadTypeTrend: "اتجاه",
-  sadValue: "قيمة",
-  sadExpected: "متوقعة",
-  sadForecastGdpGrowth: "نمو الناتج المحلي",
-  sadForecastInflation: "التضخم (ديس.)",
-  sadForecastUnemp: "البطالة",
-  sadForecastTrade: "رصيد التجارة",
-  sadForecastIpi: "IPI (Q4)",
-  sadForecastDebt: "الدين/PIB",
-  sadSelectIndicator: "اختر المؤشر للتوقع",
-  sadForecastSub: "توقعات 2025-2027 — 3 سيناريوهات",
-  sadHistorical: "تاريخي",
-  sadOptimistic: "متفائل",
-  sadBaseline: "مرجعي",
-  sadPessimistic: "متشائم",
-  sadLastActual: "آخر قيمة فعلية",
-  sadSimParams: "معلمات المحاكاة",
-  sadSimParamsSub: "ضبط الروافع الاقتصادية ومراقبة التأثير",
-  sadOilPrice: "سعر النفط (دولار/برميل)",
-  sadOilProd: "الإنتاج النفطي (مب/ي)",
-  sadGasPrice: "سعر الغاز (دولار/mmbtu)",
-  sadNonHCGrowth: "النمو خارج المحركات (%)",
-  sadImportGrowth: "نمو الواردات (%)",
-  sadPublicInvest: "الاستثمار العام (% PIB)",
-  sadReset: "إعادة تعيين",
-  sadSimGdpGrowth: "نمو الناتج المحلي",
-  sadSimGdp: "PIB (مليار دج)",
-  sadSimTrade: "رصيد التجارة",
-  sadSimUnemp: "البطالة",
-  sadSimHydroRev: "إيرادات HC",
-  sadSimExports: "الصادرات",
-  sadSimFiscal: "الإيرادات الجبائية",
-  sadSimDebt: "الدين/PIB",
-  sadSimImpact: "تأثير المحاكاة vs السيناريو المرجعي",
-  sadSimImpactSub: "مقارنة الانحرافات الناتجة عن المعلمات",
-  sadImpact: "التأثير",
-  sadRef: "مرجع",
-  sadFInd1: "نمو PIB",
-  sadFInd2: "التضخم",
-  sadFInd3: "البطالة",
-  sadFInd4: "رصيد التجارة",
-  sadFInd5: "IPI",
-  sadFInd6: "الدين/PIB",
-  sadTabAnalytics: "تحليل",
-  sadTabCorrelation: "ارتباطات",
-  sadTabBenchmark: "مقارنة",
-  sadTabReports: "تقارير",
-  sadTabCustomDash: "مخصص",
-  sadCorrGDP: "نمو PIB",
-  sadCorrInflation: "التضخم",
-  sadCorrUnemp: "البطالة",
-  sadCorrTrade: "رصيد التجارة",
-  sadCorrIPI: "IPI",
-  sadCorrDebt: "الدين/PIB",
-  sadCorrOilPrice: "سعر النفط",
-  sadCorrOilRev: "إيرادات HC",
-  sadCorrTitle: "مصفوفة الارتباط",
-  sadCorrSub: "معاملات بيرسون (2010-2024)",
-  sadCorrTableInd: "مؤشر",
-  sadCorrTopPairs: "ارتباطات بارزة",
-  sadCorrTopPairsSub: "مرتبة حسب الشدة",
-  sadBenchGrowth: "نمو PIB (%)",
-  sadBenchInflation: "التضخم (%)",
-  sadBenchUnemp: "البطالة (%)",
-  sadBenchTrade: "رصيد التجارة (% PIB)",
-  sadBenchDebt: "الدين/PIB (%)",
-  sadBenchFdi: "استثمار (% PIB)",
-  sadBenchGni: "RNB/فرد ($)",
-  sadBenchEnergy: "وصول للكهرباء (%)",
-  sadBenchSelect: "اختر المؤشر",
-  sadBenchRanking: "ترتيب 2024",
-  sadBenchSub: "مقارن29 2015-2024",
-  sadBenchRadarTitle: "مقارنة متعددة (2024)",
-  sadBenchRadarSub: "الجزائر vs دول المنطقة",
-  sadRepMacro: "1. ملخص اقتصادي",
-  sadRepPrices: "2. الأسعار",
-  sadRepLabor: "3. سوق العمل",
-  sadRepTrade: "4. التجارة الخارجية",
-  sadRepRisks: "5. نقاط رقابة",
-  sadRepGdpGrowth: "نمو PIB",
-  sadRepUp: "ارتفاع",
-  sadRepGdpNom: "PIB اسمي",
-  sadRepNonHC: "نمو خارج HC",
-  sadRepInflationDec: "التضخم ديس. 2024",
-  sadRepDown: "انخفاض",
-  sadRepDeflation: "انكماش",
-  sadRepFood: "تضخم الغذاء",
-  sadRepUnemp: "البطالة",
-  sadRepActivity: "معدل النشا",
-  sadRepYouth: "بطالة الشباب",
-  sadRepExports: "الصادرات",
-  sadRepImports: "الواردات",
-  sadRepBalance: "رصيد التجارة",
-  sadRepHydroShare: "92.8% HC",
-  sadRepRisk1: "انكماش",
-  sadRepRisk2: "التبعية HC",
-  sadRepRisk3: "العمل غير الرسمي",
-  sadRepAutoTitle: "تقرير اقتصادي T3 2025",
-  sadRepAutoSub: "ملخص المؤشرات ONS",
-  sadRepExport: "تصدير",
-  sadCustomSelect: "اختر مؤشراتك",
-  sadCustomSelected: "مختارة",
-  sadCustomEmpty: "اختر مؤشرات لبناء لوحتك",
-  sadCustomChart: "تطور المؤشرات",
-  sadCustomChartLabel: "قيمة",
-  sadCustomDir: "الاتجاه",
-  sadCustomUp: "ارتفاع مطلوب",
-  sadCustomDown: "انخفاض مطلوب",
-
 };
 
 // ─── DICTIONARY MAP ───────────────────────────────────────────────────────────
