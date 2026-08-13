@@ -30,6 +30,7 @@ const C = {
   tn: "#2563eb", tnLight: "#dbeafe",
   eg: "#d97706", egLight: "#fef3c7",
   sa: "#7c3aed", saLight: "#ede9fe",
+  rose: "#e11d48",
   best: "#059669",
   worst: "#dc2626",
 };
