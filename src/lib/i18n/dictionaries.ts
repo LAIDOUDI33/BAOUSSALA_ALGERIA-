@@ -621,6 +621,41 @@ export interface Dictionary {
   labelBroadband: string;
   labelEduSpend: string;
   labelHealthSpend: string;
+  chartWbVsOnsGdp: string;
+  chartWbVsOnsGdpSub: string;
+  chartWbVsOnsInflation: string;
+  chartWbVsOnsInflationSub: string;
+  chartWbVsOnsUnemp: string;
+  chartWbVsOnsUnempSub: string;
+  chartWbExtDebt: string;
+  chartWbExtDebtSub: string;
+  chartWbLifeExp: string;
+  chartWbLifeExpSub: string;
+  chartWbPoverty: string;
+  chartWbPovertySub: string;
+  chartWbCo2: string;
+  chartWbCo2Sub: string;
+  chartWbEnergy: string;
+  chartWbEnergySub: string;
+  labelExports: string;
+  labelImports: string;
+  labelTradeOpenness: string;
+  labelLifeExp: string;
+  labelMale: string;
+  labelFemale: string;
+  labelPoverty215: string;
+  labelPoverty365: string;
+  labelPovertyNat: string;
+  labelElectricity: string;
+  labelRenewable: string;
+  labelCo2: string;
+  labelYear: string;
+  labelDeviation: string;
+  wbKpiLifeExp: string;
+  wbKpiPoverty: string;
+  wbKpiCo2: string;
+  wbKpiRenewable: string;
+  wbKpiInternet: string;
 
   // ─── SAD (AIDE À LA DÉCISION) ───────────────────────────────────────
   tabSad: string;
@@ -1354,6 +1389,41 @@ const en: Dictionary = {
   labelBroadband: "Broadband %",
   labelEduSpend: "Education % GDP",
   labelHealthSpend: "Health % GDP",
+  chartWbVsOnsGdp: "GDP Growth: WB vs ONS",
+  chartWbVsOnsGdpSub: "Dual-source comparison — annual % change",
+  chartWbVsOnsInflation: "Inflation: WB vs ONS",
+  chartWbVsOnsInflationSub: "CPI annual % — two sources",
+  chartWbVsOnsUnemp: "Unemployment: WB vs ONS",
+  chartWbVsOnsUnempSub: "ILO estimate vs ONS survey — % labor force",
+  chartWbExtDebt: "External Debt (WB)",
+  chartWbExtDebtSub: "% of GNI — World Bank",
+  chartWbLifeExp: "Life Expectancy (WB)",
+  chartWbLifeExpSub: "Years at birth — male & female",
+  chartWbPoverty: "Poverty Rates (WB)",
+  chartWbPovertySub: "Headcount ratios at different poverty lines",
+  chartWbCo2: "CO2 Emissions (WB)",
+  chartWbCo2Sub: "Metric tons per capita",
+  chartWbEnergy: "Energy Access & Renewables (WB)",
+  chartWbEnergySub: "Electricity access rate & renewable energy share",
+  labelExports: "Exports",
+  labelImports: "Imports",
+  labelTradeOpenness: "Trade Openness",
+  labelLifeExp: "Life Expectancy",
+  labelMale: "Male",
+  labelFemale: "Female",
+  labelPoverty215: "$2.15/day",
+  labelPoverty365: "$3.65/day",
+  labelPovertyNat: "National Line",
+  labelElectricity: "Electricity %",
+  labelRenewable: "Renewable %",
+  labelCo2: "CO2 (t/cap)",
+  labelYear: "Year",
+  labelDeviation: "Deviation",
+  wbKpiLifeExp: "Life Expectancy",
+  wbKpiPoverty: "Poverty Rate",
+  wbKpiCo2: "CO2/Capita",
+  wbKpiRenewable: "Renewable Energy",
+  wbKpiInternet: "Internet Users",
   tabSad: "Decision Aid",
   sadForecastTab: "Forecasts",
   sadSimulationTab: "What-If",
@@ -1412,6 +1482,41 @@ const en: Dictionary = {
   labelBroadband: "Haut débit %",
   labelEduSpend: "Éducation % PIB",
   labelHealthSpend: "Santé % PIB",
+  chartWbVsOnsGdp: "Croissance PIB : BM vs ONS",
+  chartWbVsOnsGdpSub: "Comparaison double source — % annuel",
+  chartWbVsOnsInflation: "Inflation : BM vs ONS",
+  chartWbVsOnsInflationSub: "IPC annuel % — deux sources",
+  chartWbVsOnsUnemp: "Chômage : BM vs ONS",
+  chartWbVsOnsUnempSub: "Estimation OIT vs enquête ONS — % force de travail",
+  chartWbExtDebt: "Dette Extérieure (BM)",
+  chartWbExtDebtSub: "% du RNB — Banque Mondiale",
+  chartWbLifeExp: "Espérance de Vie (BM)",
+  chartWbLifeExpSub: "Années à la naissance — homme & femme",
+  chartWbPoverty: "Taux de Pauvreté (BM)",
+  chartWbPovertySub: "Ratios de pauvreté à différents seuils",
+  chartWbCo2: "Émissions CO2 (BM)",
+  chartWbCo2Sub: "Tonnes métriques par habitant",
+  chartWbEnergy: "Accès Énergie & Renouvelables (BM)",
+  chartWbEnergySub: "Taux d'accès à l'électricité & part des renouvelables",
+  labelExports: "Exportations",
+  labelImports: "Importations",
+  labelTradeOpenness: "Ouverture Commerciale",
+  labelLifeExp: "Espérance de Vie",
+  labelMale: "Homme",
+  labelFemale: "Femme",
+  labelPoverty215: "2,15$/jour",
+  labelPoverty365: "3,65$/jour",
+  labelPovertyNat: "Seuil National",
+  labelElectricity: "Électricité %",
+  labelRenewable: "Renouvelable %",
+  labelCo2: "CO2 (t/hab)",
+  labelYear: "Année",
+  labelDeviation: "Écart",
+  wbKpiLifeExp: "Espérance de Vie",
+  wbKpiPoverty: "Taux de Pauvreté",
+  wbKpiCo2: "CO2/habitant",
+  wbKpiRenewable: "Énergie Renouvelable",
+  wbKpiInternet: "Internautes",
   tabSad: "Aide à la Décision",
   sadForecastTab: "Prévisions",
   sadSimulationTab: "Simulations",
@@ -1470,6 +1575,41 @@ const en: Dictionary = {
   labelBroadband: "بروادباند %",
   labelEduSpend: "التعليم % ناتج",
   labelHealthSpend: "الصحة % ناتج",
+  chartWbVsOnsGdp: "نمو الناتج: البنك الدولي vs ONS",
+  chartWbVsOnsGdpSub: "مقارنة مصدرين — % سنوي",
+  chartWbVsOnsInflation: "التضخم: البنك الدولي vs ONS",
+  chartWbVsOnsInflationSub: "مؤشر الأسعار الاستهلاكية — مصدران",
+  chartWbVsOnsUnemp: "البطالة: البنك الدولي vs ONS",
+  chartWbVsOnsUnempSub: "تقدير منظمة العمل vs ONS — % القوة العاملة",
+  chartWbExtDebt: "الدين الخارجي (البنك الدولي)",
+  chartWbExtDebtSub: "% من الناتج القومي الإجمالي",
+  chartWbLifeExp: "متوسط العمر المتوقع (البنك الدولي)",
+  chartWbLifeExpSub: "سنوات عند الولادة — ذكور وإناث",
+  chartWbPoverty: "معدلات الفقر (البنك الدولي)",
+  chartWbPovertySub: "نسب الفقر حسب خطوط فقر مختلفة",
+  chartWbCo2: "انبعاثات CO2 (البنك الدولي)",
+  chartWbCo2Sub: "طن متري للفرد",
+  chartWbEnergy: "الوصول للطاقة والمتجددة (البنك الدولي)",
+  chartWbEnergySub: "معدل الوصول للكهرباء وحصة الطاقة المتجددة",
+  labelExports: "الصادرات",
+  labelImports: "الواردات",
+  labelTradeOpenness: "الانفتاح التجاري",
+  labelLifeExp: "متوسط العمر",
+  labelMale: "ذكر",
+  labelFemale: "أنثى",
+  labelPoverty215: "2.15$/يوم",
+  labelPoverty365: "3.65$/يوم",
+  labelPovertyNat: "الخط الوطني",
+  labelElectricity: "الكهرباء %",
+  labelRenewable: "متجدد %",
+  labelCo2: "CO2 (طن/فرد)",
+  labelYear: "السنة",
+  labelDeviation: "الانحراف",
+  wbKpiLifeExp: "متوسط العمر",
+  wbKpiPoverty: "معدل الفقر",
+  wbKpiCo2: "CO2/فرد",
+  wbKpiRenewable: "الطاقة المتجددة",
+  wbKpiInternet: "مستخدمو الإنترنت",
   tabSad: "القرار",
   sadForecastTab: "توقعات",
   sadSimulationTab: "محاكاة",

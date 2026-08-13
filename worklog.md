@@ -19,3 +19,30 @@ Stage Summary:
 - 3 new files: forecasting-engine.ts, alert-engine.ts, DecisionSupportTab.tsx
 - 3 modified files: dictionaries.ts, page.tsx, global-search.tsx
 - Tab "Aide à la Décision" fully functional with FR/AR/EN support
+
+---
+Task ID: 2
+Agent: main
+Task: Fix World Bank tab data bindings, add missing i18n keys, enhance WB vs ONS comparison
+
+Work Log:
+- Diagnosed root cause: charts used dataKey="value" but actual data has wb/ons/gni/fdi/etc.
+- KPI cards used wrong property names (gdpGrowth vs gdpGrowthWb)
+- Added 34 new i18n keys for enhanced WB charts (EN, FR, AR) to dictionaries.ts type definition + all 3 locale dictionaries
+- Rewrote WB tab with 13 charts using correct data bindings
+- Fixed 8 KPI cards: gdpGrowth→gdpGrowthWb, inflation→inflationWb, population→populationWb, unemployment→unemploymentWb, tradeGdp→tradeGdpPct, fdi→fdiPct, externalDebt→externalDebtPct
+- Added 5 new KPI cards: lifeExpectancy, povertyRate, co2PerCapita, renewableEnergy, internetUsers
+- Converted GDP Growth, Inflation, Unemployment, GDP/Capita charts from single-source to WB vs ONS dual-line comparison
+- Added 5 new charts: External Debt (area), Life Expectancy (male/female area), Poverty Rates (stacked bar), CO2 Emissions (colored bar), Energy Access & Renewables (dual-axis composed)
+- Enhanced Trade chart from single trade bar to exports+imports bars + trade line (ComposedChart)
+- Fixed Internet/Mobile/Broadband chart by adding data prop to ComposedChart
+- Fixed Education/Health chart by adding data prop to LineChart
+- GCF + Deviation table preserved as-is (already had correct keys)
+- Verified: TypeScript check passes for WB tab section (0 new errors)
+
+Stage Summary:
+- All WB charts now render with real data using correct dataKey bindings
+- WB vs ONS comparison is meaningful with dual-line charts and deviation analysis
+- 5 new indicator charts added (Debt, LifeExp, Poverty, CO2, Energy)
+- 34 new i18n keys added (EN/FR/AR) for all new chart labels
+
