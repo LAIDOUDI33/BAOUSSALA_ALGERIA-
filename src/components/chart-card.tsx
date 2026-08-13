@@ -2,8 +2,7 @@
 
 import React, { useRef, useCallback, useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Download, FileSpreadsheet, Image, FileImage, ChevronDown } from "lucide-react";
-import { toPng, toSvg, toJpeg } from "html-to-image";
+import { Download, FileSpreadsheet, Image, FileImage } from "lucide-react";
 
 // ─── CSV Export Helper ─────────────────────────────────────────────────────
 function downloadCsv(data: Record<string, unknown>[], filename: string) {
@@ -30,9 +29,10 @@ function downloadCsv(data: Record<string, unknown>[], filename: string) {
   URL.revokeObjectURL(url);
 }
 
-// ─── Image Export Helpers ──────────────────────────────────────────────────
+// ─── Image Export Helpers (dynamic import to avoid SSR issues) ─────────────
 async function exportImage(element: HTMLElement, filename: string, format: "png" | "jpg" | "svg") {
   try {
+    const htmlToImage = await import("html-to-image");
     const bgColor = getComputedStyle(element).backgroundColor || "#ffffff";
     const opts = {
       backgroundColor: bgColor,
@@ -46,15 +46,15 @@ async function exportImage(element: HTMLElement, filename: string, format: "png"
 
     switch (format) {
       case "jpg":
-        dataUrl = await toJpeg(element, opts);
+        dataUrl = await htmlToImage.toJpeg(element, opts);
         ext = "jpg";
         break;
       case "svg":
-        dataUrl = await toSvg(element, { ...opts, pixelRatio: 1 });
+        dataUrl = await htmlToImage.toSvg(element, { ...opts, pixelRatio: 1 });
         ext = "svg";
         break;
       default:
-        dataUrl = await toPng(element, opts);
+        dataUrl = await htmlToImage.toPng(element, opts);
         ext = "png";
     }
 
@@ -69,7 +69,7 @@ async function exportImage(element: HTMLElement, filename: string, format: "png"
 
 // ─── Unit label rendered inside chart area ─────────────────────────────────
 function UnitLabel({ unit }: { unit: string }) {
-  if (!unit) return null;
+  if (!unit || typeof unit !== "string") return null;
   return (
     <span className="absolute top-1.5 right-12 text-[10px] font-medium text-slate-400 dark:text-slate-500 bg-slate-100/80 dark:bg-slate-700/60 px-1.5 py-0.5 rounded z-10 pointer-events-none">
       {unit}
@@ -165,7 +165,7 @@ export function ChartCard({
         </div>
       </CardHeader>
       <CardContent className="px-4 pb-4 relative">
-        <UnitLabel unit={unit || ""} />
+        {unit && typeof unit === "string" && <UnitLabel unit={unit} />}
         {children}
       </CardContent>
     </Card>

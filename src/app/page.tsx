@@ -1372,7 +1372,7 @@ export default function AlgeriaDashboard() {
               <KpiCard title={t.kpiTractorFleet} value="160" unit="K" icon={Truck} color={COLORS.slate} change={3.2} changeDir="up" />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartCerealProd} unit data={agricultureData} subtitle={t.chartCerealProdSub}>
+              <ChartCard title={t.chartCerealProd} data={agricultureData} subtitle={t.chartCerealProdSub}>
                 <ChartContainer config={{ cerealProdMt: { label: t.chartCerealLabel, color: COLORS.emerald }, selfSufficCereals: { label: t.chartSelfSufficLabel, color: COLORS.amber } }} className="h-[320px] w-full">
                   <ComposedChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -1738,7 +1738,7 @@ export default function AlgeriaDashboard() {
               <KpiCard title={t.kpiPhosphate} value="1.5" unit="Mt" icon={Factory} color={COLORS.emerald} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartMiningProd} unit data={miningEnergy} subtitle={t.chartMiningProdSub}>
+              <ChartCard title={t.chartMiningProd} data={miningEnergy} subtitle={t.chartMiningProdSub}>
                 <ChartContainer config={{
                   ironOreMt: { label: t.chartIronOreLabel, color: COLORS.amber },
                   phosphateMt: { label: t.chartPhosphateLabel, color: COLORS.emerald },
@@ -2324,7 +2324,7 @@ export default function AlgeriaDashboard() {
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbDeviation} unit data={worldBankDeviation} subtitle={t.chartWbDeviationSub}>
+              <ChartCard title={t.chartWbDeviation} data={worldBankDeviation} subtitle={t.chartWbDeviationSub}>
                 <div className="space-y-2">
                   {worldBankDeviation.map((d, i) => (
                     <div key={i} className="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50">
