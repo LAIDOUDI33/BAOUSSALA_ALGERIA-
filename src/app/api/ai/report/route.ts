@@ -1,4 +1,4 @@
-// API Route Handler — no "use server" directive needed
+// API Route Handler (Next.js App Router)
 
 import { NextRequest, NextResponse } from "next/server";
 import ZAI from "z-ai-web-dev-sdk";
