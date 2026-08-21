@@ -28,6 +28,8 @@ import { DecisionSupportTab } from "@/components/tabs/DecisionSupportTab";
 import { BenchmarkingTab } from "@/components/tabs/BenchmarkingTab";
 import PmeBulletinTab from "@/components/tabs/PmeBulletinTab";
 import { AITab } from "@/components/tabs/AITab";
+import ExecutiveTab from "@/components/tabs/ExecutiveTab";
+import ExecutiveBriefingTab from "@/components/tabs/ExecutiveBriefingTab";
 import { ChartCard } from "@/components/chart-card";
 
 import {
@@ -54,7 +56,7 @@ import {
   MapPin, ArrowRightLeft, Landmark, Wheat, Briefcase,
   Wifi, Car, Pipette, TreePine, BookOpen, UserCheck, Home, Route,
   Target, CheckCircle2, CircleDot, Flame, Sun, Battery, Sunrise, Factory as FactoryIcon,
-  Map as MapIcon, Brain, FileText, Bot,
+  Map as MapIcon, Brain, FileText, Bot, LayoutDashboard, ClipboardList,
 } from "lucide-react";
 
 // ─── Color palette ──────────────────────────────────────────────────────────
@@ -136,6 +138,8 @@ export default function AlgeriaDashboard() {
     { val: "benchmarking", label: t.tabBenchmarking, icon: BarChart3 },
     { val: "sad", label: t.tabSad, icon: Brain },
     { val: "wilaya", label: t.tabWilaya, icon: MapIcon },
+    { val: "executive", label: t.tabExecutive, icon: LayoutDashboard },
+    { val: "executiveBrief", label: t.tabExecutiveBrief, icon: ClipboardList },
     { val: "ai", label: t.tabAI, icon: Bot },
   ];
 
@@ -2368,6 +2372,12 @@ export default function AlgeriaDashboard() {
           </TabsContent>
           <TabsContent value="wilaya" className="space-y-5">
             <WilayaMapTab t={t} />
+          </TabsContent>
+          <TabsContent value="executive" className="space-y-5">
+            <ExecutiveTab t={t} />
+          </TabsContent>
+          <TabsContent value="executiveBrief" className="space-y-5">
+            <ExecutiveBriefingTab t={t} />
           </TabsContent>
           <TabsContent value="ai" className="space-y-5">
             <AITab t={t} isRtl={isRtl} />

@@ -1059,6 +1059,64 @@ export interface Dictionary {
   pmeChartGuaranteed: string;
   pmeChartSolicited: string;
   pmeUnitBda: string;
+  // ── EXECUTIVE DASHBOARD ───────────────────────
+  tabExecutive: string;
+  tabExecutiveBrief: string;
+  execDashboardTitle: string;
+  execDashboardSub: string;
+  execLastUpdate: string;
+  execNationalScore: string;
+  execScoreChange: string;
+  execComponents: string;
+  execCompGrowth: string;
+  execCompStability: string;
+  execCompEmployment: string;
+  execCompTrade: string;
+  execCompFiscal: string;
+  execCompSocial: string;
+  execCompInfra: string;
+  execCompSustain: string;
+  execKpiGdp: string;
+  execKpiGrowth: string;
+  execKpiInflation: string;
+  execKpiUnemployment: string;
+  execKpiTradeSurplus: string;
+  execKpiForexReserves: string;
+  execKpiFdi: string;
+  execKpiInvestmentRate: string;
+  execTrendTitle: string;
+  execTrendSub: string;
+  execTrendGdp: string;
+  execTrendInfl: string;
+  execTrendUnemp: string;
+  execSectorTitle: string;
+  execSectorSub: string;
+  execSectorTable: string;
+  execSectorGrowth: string;
+  execSectorHydrocarbons: string;
+  execSectorAgriculture: string;
+  execSectorManufacturing: string;
+  execSectorConstruction: string;
+  execSectorServices: string;
+  execSectorMining: string;
+  execContrib: string;
+  execAlerts: string;
+  execAlertsCritical: string;
+  execAlertsWarning: string;
+  execAlertsInfo: string;
+  execAction: string;
+  execBriefTitle: string;
+  execBriefPrint: string;
+  execBriefHighlights: string;
+  execBriefRisks: string;
+  execBriefActions: string;
+  execBriefDecisions: string;
+  execBriefAlerts: string;
+  execBriefStatusPending: string;
+  execBriefStatusInReview: string;
+  execBriefStatusInProgress: string;
+  execBriefStatusCompleted: string;
+  execBriefDisclaimer: string;
 }
 
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
@@ -2098,6 +2156,64 @@ const en: Dictionary = {
   pmeChartGuaranteed: "Guaranteed (BDA)",
   pmeChartSolicited: "Solicited (BDA)",
   pmeUnitBda: "BDA",
+  // ── EXECUTIVE DASHBOARD ───────────────────────
+  tabExecutive: "Executive",
+  tabExecutiveBrief: "Briefing",
+  execDashboardTitle: "Executive Dashboard",
+  execDashboardSub: "Strategic overview of national economic indicators",
+  execLastUpdate: "Last update",
+  execNationalScore: "National Performance Score",
+  execScoreChange: "Change from previous quarter",
+  execComponents: "Performance Components",
+  execCompGrowth: "Economic Growth",
+  execCompStability: "Price Stability",
+  execCompEmployment: "Employment",
+  execCompTrade: "Trade Balance",
+  execCompFiscal: "Fiscal Health",
+  execCompSocial: "Social Welfare",
+  execCompInfra: "Infrastructure",
+  execCompSustain: "Sustainability",
+  execKpiGdp: "GDP",
+  execKpiGrowth: "Growth Rate",
+  execKpiInflation: "Inflation",
+  execKpiUnemployment: "Unemployment",
+  execKpiTradeSurplus: "Trade Surplus",
+  execKpiForexReserves: "FX Reserves",
+  execKpiFdi: "FDI Inflows",
+  execKpiInvestmentRate: "Investment Rate",
+  execTrendTitle: "Monthly Economic Trends",
+  execTrendSub: "12-month rolling trends for key indicators",
+  execTrendGdp: "GDP Growth %",
+  execTrendInfl: "Inflation %",
+  execTrendUnemp: "Unemployment %",
+  execSectorTitle: "Sector Performance",
+  execSectorSub: "Growth rate by sector (% year-over-year)",
+  execSectorTable: "Sector Breakdown",
+  execSectorGrowth: "Growth %",
+  execSectorHydrocarbons: "Hydrocarbons",
+  execSectorAgriculture: "Agriculture",
+  execSectorManufacturing: "Manufacturing",
+  execSectorConstruction: "Construction",
+  execSectorServices: "Services",
+  execSectorMining: "Mining",
+  execContrib: "Contribution",
+  execAlerts: "Strategic Alerts",
+  execAlertsCritical: "Critical",
+  execAlertsWarning: "Warning",
+  execAlertsInfo: "Info",
+  execAction: "Action",
+  execBriefTitle: "Executive Briefing",
+  execBriefPrint: "Print Briefing",
+  execBriefHighlights: "Key Highlights",
+  execBriefRisks: "Risk Factors",
+  execBriefActions: "Pending Action Items",
+  execBriefDecisions: "Key Decisions Tracking",
+  execBriefAlerts: "Active Alerts",
+  execBriefStatusPending: "Pending",
+  execBriefStatusInReview: "In Review",
+  execBriefStatusInProgress: "In Progress",
+  execBriefStatusCompleted: "Completed",
+  execBriefDisclaimer: "This briefing is generated from ONS data and is intended for internal executive use only.",
 };
 
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
@@ -3203,6 +3319,64 @@ const fr: Dictionary = {
   pmeChartGuaranteed: "Garanti (Mds DA)",
   pmeChartSolicited: "Sollicité (Mds DA)",
   pmeUnitBda: "Mds DA",
+  // ── EXECUTIVE DASHBOARD ───────────────────────
+  tabExecutive: "Direction",
+  tabExecutiveBrief: "Briefing",
+  execDashboardTitle: "Tableau de Bord de Direction",
+  execDashboardSub: "Vue stratégique des indicateurs économiques nationaux",
+  execLastUpdate: "Dernière mise à jour",
+  execNationalScore: "Score de Performance Nationale",
+  execScoreChange: "Variation par rapport au trimestre précédent",
+  execComponents: "Composantes de la Performance",
+  execCompGrowth: "Croissance Économique",
+  execCompStability: "Stabilité des Prix",
+  execCompEmployment: "Emploi",
+  execCompTrade: "Balance Commerciale",
+  execCompFiscal: "Santé Fiscale",
+  execCompSocial: "Protection Sociale",
+  execCompInfra: "Infrastructure",
+  execCompSustain: "Durabilité",
+  execKpiGdp: "PIB",
+  execKpiGrowth: "Taux de Croissance",
+  execKpiInflation: "Inflation",
+  execKpiUnemployment: "Chômage",
+  execKpiTradeSurplus: "Excédent Commercial",
+  execKpiForexReserves: "Réserves de Change",
+  execKpiFdi: "IDE",
+  execKpiInvestmentRate: "Taux d’Investissement",
+  execTrendTitle: "Tendances Économiques Mensuelles",
+  execTrendSub: "Tendances glissantes sur 12 mois pour les indicateurs clés",
+  execTrendGdp: "Croissance du PIB %",
+  execTrendInfl: "Inflation %",
+  execTrendUnemp: "Chômage %",
+  execSectorTitle: "Performance par Secteur",
+  execSectorSub: "Taux de croissance par secteur (% en glissement annuel)",
+  execSectorTable: "Répartition Sectorielle",
+  execSectorGrowth: "Croissance %",
+  execSectorHydrocarbons: "Hydrocarbures",
+  execSectorAgriculture: "Agriculture",
+  execSectorManufacturing: "Industrie Manufacturière",
+  execSectorConstruction: "BTP",
+  execSectorServices: "Services",
+  execSectorMining: "Mines",
+  execContrib: "Contribution",
+  execAlerts: "Alertes Stratégiques",
+  execAlertsCritical: "Critique",
+  execAlertsWarning: "Attention",
+  execAlertsInfo: "Info",
+  execAction: "Action",
+  execBriefTitle: "Briefing de Direction",
+  execBriefPrint: "Imprimer le Briefing",
+  execBriefHighlights: "Points Clés",
+  execBriefRisks: "Facteurs de Risque",
+  execBriefActions: "Actions en Attente",
+  execBriefDecisions: "Suivi des Décisions Clés",
+  execBriefAlerts: "Alertes Actives",
+  execBriefStatusPending: "En attente",
+  execBriefStatusInReview: "En cours d’examen",
+  execBriefStatusInProgress: "En cours",
+  execBriefStatusCompleted: "Terminé",
+  execBriefDisclaimer: "Ce briefing est généré à partir des données de l’ONS et est destiné à un usage interne de la direction uniquement.",
 };
 
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
@@ -4244,6 +4418,64 @@ const ar: Dictionary = {
   pmeChartGuaranteed: "المضمون (مليار دج)",
   pmeChartSolicited: "المطلوب (مليار دج)",
   pmeUnitBda: "مليار دج",
+  // ── EXECUTIVE DASHBOARD ───────────────────────
+  tabExecutive: "التنفيذي",
+  tabExecutiveBrief: "الإحطاط",
+  execDashboardTitle: "لوحة القيادة الاستراتيجية",
+  execDashboardSub: "نظرة استراتيجية على المؤشرات الاقتصادية الوطنية",
+  execLastUpdate: "آخر تحديث",
+  execNationalScore: "مؤشر الأداء الوطني",
+  execScoreChange: "التغيير مقارنة بالربع السابق",
+  execComponents: "مكونات الأداء",
+  execCompGrowth: "النمو الاقتصادي",
+  execCompStability: "استقرار الأسعار",
+  execCompEmployment: "التشغيل",
+  execCompTrade: "الميزان التجاري",
+  execCompFiscal: "الصحة المالية",
+  execCompSocial: "الحماية الاجتماعية",
+  execCompInfra: "البنية التحتية",
+  execCompSustain: "الاستدامة",
+  execKpiGdp: "الناتج المحلي",
+  execKpiGrowth: "معدل النمو",
+  execKpiInflation: "التضخم",
+  execKpiUnemployment: "البطالة",
+  execKpiTradeSurplus: "فائض التجارة",
+  execKpiForexReserves: "الاحتياطيات الأجنبية",
+  execKpiFdi: "الاستثمار الأجنبي",
+  execKpiInvestmentRate: "معدل الاستثمار",
+  execTrendTitle: "الاتجاهات الاقتصادية الشهرية",
+  execTrendSub: "اتجاهات متحركة لـ 12 شهراً للمؤشرات الرئيسية",
+  execTrendGdp: "نمو الناتج المحلي %",
+  execTrendInfl: "التضخم %",
+  execTrendUnemp: "البطالة %",
+  execSectorTitle: "أداء القطاعات",
+  execSectorSub: "معدل النمو حسب القطاع (% على أساس سنوي)",
+  execSectorTable: "تفصيل القطاعات",
+  execSectorGrowth: "النمو %",
+  execSectorHydrocarbons: "الهيدروكربونات",
+  execSectorAgriculture: "الزراعة",
+  execSectorManufacturing: "الصناعة التحويلية",
+  execSectorConstruction: "البناء والأشغال",
+  execSectorServices: "الخدمات",
+  execSectorMining: "التعدين",
+  execContrib: "المساهمة",
+  execAlerts: "التنبيهات الاستراتيجية",
+  execAlertsCritical: "حرج",
+  execAlertsWarning: "تحذير",
+  execAlertsInfo: "معلومات",
+  execAction: "الإجراء",
+  execBriefTitle: "إحطاط القيادة",
+  execBriefPrint: "طباعة الإحطاط",
+  execBriefHighlights: "أهم النقاط",
+  execBriefRisks: "عوامل الخطر",
+  execBriefActions: "الإجراءات في الانتظار",
+  execBriefDecisions: "متابعة القرارات الرئيسية",
+  execBriefAlerts: "التنبيهات النشطة",
+  execBriefStatusPending: "في الانتظار",
+  execBriefStatusInReview: "قيد المراجعة",
+  execBriefStatusInProgress: "قيد التنفيذ",
+  execBriefStatusCompleted: "متم",
+  execBriefDisclaimer: "يتم إنشاء هذا الإحطاط من بيانات المنظمة الوطنية للإحصاء وهو مخصص للاستخدام الداخلي للقيادة فقط.",
 };
 
 // ─── DICTIONARY MAP ───────────────────────────────────────────────────────────
