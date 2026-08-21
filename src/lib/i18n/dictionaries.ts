@@ -781,6 +781,33 @@ export interface Dictionary {
   wilayaDens200: string;
   wilayaDens500: string;
   wilayaSource: string;
+  tabAI: string;
+  aiChatTab: string;
+  aiReportTab: string;
+  aiChatTitle: string;
+  aiChatDesc: string;
+  aiChatPlaceholder: string;
+  aiChatSend: string;
+  aiChatClear: string;
+  aiChatWelcome: string;
+  aiChatThinking: string;
+  aiReportTitle: string;
+  aiReportDesc: string;
+  aiReportSelectTopic: string;
+  aiReportCustomTopic: string;
+  aiReportCustomPlaceholder: string;
+  aiReportLangLabel: string;
+  aiReportLangAr: string;
+  aiReportLangFr: string;
+  aiReportLangEn: string;
+  aiReportGenerate: string;
+  aiReportGenerating: string;
+  aiReportCopy: string;
+  aiReportCopied: string;
+  aiReportSuggestedTopics: string;
+  aiReportDisclaimer: string;
+  aiErrorTitle: string;
+  aiErrorRetry: string;
   footer: string;
 
   // ─── INDUSTRY KPI TAB ─────────────────────────────────────────────
@@ -1037,7 +1064,7 @@ export interface Dictionary {
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
 const en: Dictionary = {
   headerTitle: "Algeria Economic Dashboard",
-  headerSubtitle: "Office National des Statistiques (ONS) — Data Science Analysis Platform",
+  headerSubtitle: "Data Analysis Platform | By: LAIDOUDI Lyassine \u00a9 2026",
 
   tabMacro: "Macroeconomic",
   tabInflation: "Prices & Inflation",
@@ -1826,6 +1853,33 @@ const en: Dictionary = {
   wilayaDens200: "200-500",
   wilayaDens500: "500+",
   wilayaSource: "Source: ONS — RGPH 2008 + Administrative Division Law 2019",
+  tabAI: "AI Expert",
+  aiChatTab: "Economic Expert",
+  aiReportTab: "Automated Reports",
+  aiChatTitle: "AI Economic Expert",
+  aiChatDesc: "Ask any question about Algeria's economy, indicators, and policies",
+  aiChatPlaceholder: "Ask about GDP, inflation, trade, employment, regional development...",
+  aiChatSend: "Send",
+  aiChatClear: "Clear",
+  aiChatWelcome: "Hello! I am your AI economic expert specializing in Algeria. Ask me about GDP, inflation, trade balance, employment, SDGs, regional development, or any economic topic.",
+  aiChatThinking: "Analyzing...",
+  aiReportTitle: "Automated Expert Reports",
+  aiReportDesc: "Generate comprehensive economic analysis reports automatically",
+  aiReportSelectTopic: "Select a topic",
+  aiReportCustomTopic: "Custom topic",
+  aiReportCustomPlaceholder: "Enter your custom report topic...",
+  aiReportLangLabel: "Report language",
+  aiReportLangAr: "Arabic",
+  aiReportLangFr: "French",
+  aiReportLangEn: "English",
+  aiReportGenerate: "Generate Report",
+  aiReportGenerating: "Generating report...",
+  aiReportCopy: "Copy",
+  aiReportCopied: "Copied!",
+  aiReportSuggestedTopics: "Suggested topics",
+  aiReportDisclaimer: "AI-generated report — Verify key figures with official ONS sources before use.",
+  aiErrorTitle: "An error occurred",
+  aiErrorRetry: "Retry",
   footer: "Source: Office National des Statistiques (ONS) \u2014 www.ons.dz | All data from ONS publications (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes Economiques, ENEM, RGPH)",
   kpiOilProd: "Oil Production",
   kpiGasProd: "Gas Production",
@@ -2049,7 +2103,7 @@ const en: Dictionary = {
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
 const fr: Dictionary = {
   headerTitle: "Tableau de Bord \u00c9conomique de l'Alg\u00e9rie",
-  headerSubtitle: "Office National des Statistiques (ONS) — Plateforme d'Analyse de Donn\u00e9es",
+  headerSubtitle: "Plateforme d'Analyse de Donn\u00e9es | Par : LAIDOUDI Lyassine \u00a9 2026",
 
   tabMacro: "Macro\u00e9conomie",
   tabInflation: "Prix & Inflation",
@@ -2752,6 +2806,33 @@ const fr: Dictionary = {
   wilayaDens50: "50-200",
   wilayaDens200: "200-500",
   wilayaDens500: "500+",
+  tabAI: "Expert IA",
+  aiChatTab: "Expert Économique",
+  aiReportTab: "Rapports Automatisés",
+  aiChatTitle: "Expert Économique IA",
+  aiChatDesc: "Posez toute question sur l'économie algérienne, les indicateurs et les politiques",
+  aiChatPlaceholder: "Posez une question sur le PIB, l'inflation, le commerce, l'emploi...",
+  aiChatSend: "Envoyer",
+  aiChatClear: "Effacer",
+  aiChatWelcome: "Bonjour ! Je suis votre expert économique IA spécialisé dans l'économie algérienne. Interrogez-moi sur le PIB, l'inflation, la balance commerciale, l'emploi, les ODD ou tout sujet économique.",
+  aiChatThinking: "Analyse en cours...",
+  aiReportTitle: "Rapports Experts Automatisés",
+  aiReportDesc: "Générez des rapports d'analyse économique complets automatiquement",
+  aiReportSelectTopic: "Sélectionner un sujet",
+  aiReportCustomTopic: "Sujet personnalisé",
+  aiReportCustomPlaceholder: "Entrez votre sujet de rapport...",
+  aiReportLangLabel: "Langue du rapport",
+  aiReportLangAr: "Arabe",
+  aiReportLangFr: "Français",
+  aiReportLangEn: "Anglais",
+  aiReportGenerate: "Générer le rapport",
+  aiReportGenerating: "Génération en cours...",
+  aiReportCopy: "Copier",
+  aiReportCopied: "Copié !",
+  aiReportSuggestedTopics: "Sujets suggérés",
+  aiReportDisclaimer: "Rapport généré par IA — Vérifiez les chiffres clés auprès des sources officielles ONS.",
+  aiErrorTitle: "Une erreur est survenue",
+  aiErrorRetry: "Réessayer",
   wilayaSource: "Source : ONS — RGPH 2008 + Loi de Découpage Administratif 2019",
   footer: "Source : Office National des Statistiques (ONS) \u2014 www.ons.dz | Toutes les donn\u00e9es issues des publications ONS (IPC, IPI, IPPI, CNT, Commerce Ext\u00e9rieur, Comptes \u00c9conomiques, ENEM, RGPH)",
   kpiOilProd: "Production de Pétrole",
@@ -3127,7 +3208,7 @@ const fr: Dictionary = {
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
 const ar: Dictionary = {
   headerTitle: "\u0644\u0648\u062d\u0629 \u0627\u0644\u0642\u064a\u0627\u062f\u0629 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 \u0644\u0644\u062c\u0632\u0627\u0626\u0631",
-  headerSubtitle: "\u0627\u0644\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0644\u0625\u062d\u0635\u0627\u0621\u0627\u062a (ONS) \u2014 \u0645\u0646\u0635\u0629 \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",
+  headerSubtitle: "\u0645\u0646\u0635\u0629 \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a | \u0625\u0639\u062f\u0627\u062f : LAIDOUDI Lyassine \u00a9 2026",
 
   tabMacro: "\u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0643\u0644\u064a",
   tabInflation: "\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u0648\u0627\u0644\u062a\u0636\u062e\u0645",
@@ -4060,6 +4141,33 @@ const ar: Dictionary = {
   wilayaDens50: "50-200",
   wilayaDens200: "200-500",
   wilayaDens500: "500+",
+  tabAI: "خبير الذكاء الاصطناعي",
+  aiChatTab: "خبير اقتصادي",
+  aiReportTab: "تقارير آلية",
+  aiChatTitle: "خبير اقتصادي بالذكاء الاصطناعي",
+  aiChatDesc: "اسأل أي سؤال عن الاقتصاد الجزائري والمؤشرات والسياسات",
+  aiChatPlaceholder: "اسأل عن الناتج المحلي، التضخم، التجارة، التشغيل...",
+  aiChatSend: "إرسال",
+  aiChatClear: "مسح",
+  aiChatWelcome: "مرحباً! أنا خبيرك الاقتصادي بالذكاء الاصطناعي، متخصص في الاقتصاد الجزائري. اسألني عن الناتج المحلي، التضخم، التجارة الخارجية، التشغيل، أهداف التنمية المستدامة أو أي موضوع اقتصادي.",
+  aiChatThinking: "جارٍ التحليل...",
+  aiReportTitle: "تقارير خبراء آلية",
+  aiReportDesc: "أنشئ تقارير تحليل اقتصادي شاملة تلقائياً",
+  aiReportSelectTopic: "اختر موضوعاً",
+  aiReportCustomTopic: "موضوع مخصص",
+  aiReportCustomPlaceholder: "أدخل موضوع التقرير...",
+  aiReportLangLabel: "لغة التقرير",
+  aiReportLangAr: "العربية",
+  aiReportLangFr: "الفرنسية",
+  aiReportLangEn: "الإنجليزية",
+  aiReportGenerate: "إنشاء التقرير",
+  aiReportGenerating: "جارٍ إنشاء التقرير...",
+  aiReportCopy: "نسخ",
+  aiReportCopied: "تم النسخ!",
+  aiReportSuggestedTopics: "مواضيع مقترحة",
+  aiReportDisclaimer: "تقرير مُنشأ بالذكاء الاصطناعي — تحقق من الأرقام الرئيسية مع مصادر ONS الرسمية.",
+  aiErrorTitle: "حدث خطأ",
+  aiErrorRetry: "إعادة المحاولة",
   wilayaSource: "المصدر: ONS — RGPH 2008 + قانون التقسيم الإداري 2019",
   // PME Bulletin
   tabPmeBulletin: "نشرة المؤسسات الصغيرة والمتوسطة",

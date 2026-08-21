@@ -27,6 +27,7 @@ import { IndustryKpiTab } from "@/components/tabs/IndustryKpiTab";
 import { DecisionSupportTab } from "@/components/tabs/DecisionSupportTab";
 import { BenchmarkingTab } from "@/components/tabs/BenchmarkingTab";
 import PmeBulletinTab from "@/components/tabs/PmeBulletinTab";
+import { AITab } from "@/components/tabs/AITab";
 import { ChartCard } from "@/components/chart-card";
 
 import {
@@ -53,7 +54,7 @@ import {
   MapPin, ArrowRightLeft, Landmark, Wheat, Briefcase,
   Wifi, Car, Pipette, TreePine, BookOpen, UserCheck, Home, Route,
   Target, CheckCircle2, CircleDot, Flame, Sun, Battery, Sunrise, Factory as FactoryIcon,
-  Map as MapIcon, Brain, FileText,
+  Map as MapIcon, Brain, FileText, Bot,
 } from "lucide-react";
 
 // ─── Color palette ──────────────────────────────────────────────────────────
@@ -135,6 +136,7 @@ export default function AlgeriaDashboard() {
     { val: "benchmarking", label: t.tabBenchmarking, icon: BarChart3 },
     { val: "sad", label: t.tabSad, icon: Brain },
     { val: "wilaya", label: t.tabWilaya, icon: MapIcon },
+    { val: "ai", label: t.tabAI, icon: Bot },
   ];
 
   return (
@@ -1933,14 +1935,19 @@ export default function AlgeriaDashboard() {
 
             {/* Chart 2: SDG Radar — deep dive goals */}
             <ChartCard title={t.chartSdgRadar} subtitle={t.chartSdgRadarSub}>
-              <ChartContainer config={{ value: { label: t.labelProgress, color: "#7c3aed" } }} className="h-[400px] w-full">
-                <RadarChart data={sdgDeepDive.map(d => ({ name: `ODD ${d.sdg} – ${d.title}`, progress: Math.round(d.kpis.filter(k => k.status === "achieved").length / d.kpis.length * 100) }))}>
-                  <PolarGrid stroke="#e2e8f0" />
-                  <PolarAngleAxis dataKey="name" tick={{ fontSize: 10, fill: "#475569" }} />
-                  <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
-                  <Radar name={t.labelProgress} dataKey="progress" stroke="#7c3aed" fill="#ede9fe" fillOpacity={0.6} strokeWidth={2} />
+              <ChartContainer config={{ progress: { label: t.labelProgress, color: "#7c3aed" } }} className="h-[400px] w-full">
+                <BarChart layout="vertical" data={sdgDeepDive.map(d => ({ name: `ODD ${d.sdg}`, progress: Math.round(d.kpis.filter(k => k.status === "achieved").length / d.kpis.length * 100) }))} margin={{ top: 5, right: 30, left: 80, bottom: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" horizontal={false} />
+                  <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 10 }} unit="%" />
+                  <YAxis type="category" dataKey="name" tick={{ fontSize: 10 }} width={75} />
                   <ChartTooltip content={<ChartTooltipContent />} />
-                </RadarChart>
+                  <Bar dataKey="progress" radius={[0, 6, 6, 0]} fill="#7c3aed" opacity={0.85}>
+                    {sdgDeepDive.map((d, i) => {
+                      const pct = Math.round(d.kpis.filter(k => k.status === "achieved").length / d.kpis.length * 100);
+                      return <Cell key={i} fill={pct >= 70 ? "#059669" : pct >= 40 ? "#d97706" : "#dc2626"} />;
+                    })}
+                  </Bar>
+                </BarChart>
               </ChartContainer>
             </ChartCard>
 
@@ -2361,6 +2368,9 @@ export default function AlgeriaDashboard() {
           </TabsContent>
           <TabsContent value="wilaya" className="space-y-5">
             <WilayaMapTab t={t} />
+          </TabsContent>
+          <TabsContent value="ai" className="space-y-5">
+            <AITab t={t} isRtl={isRtl} />
           </TabsContent>
         </Tabs>
 
