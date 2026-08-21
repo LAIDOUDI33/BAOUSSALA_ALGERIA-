@@ -1,4 +1,4 @@
-"use server";
+// API Route Handler — no "use server" directive needed
 
 import { NextRequest, NextResponse } from "next/server";
 import ZAI from "z-ai-web-dev-sdk";
@@ -73,6 +73,7 @@ async function getZAI() {
   if (!zaiInstance) zaiInstance = await ZAI.create();
   return zaiInstance;
 }
+function resetZAI() { zaiInstance = null; }
 
 export async function POST(request: NextRequest) {
   try {
@@ -94,6 +95,7 @@ export async function POST(request: NextRequest) {
 
     if (!success || !data) {
       if (error === "RATE_LIMIT") return NextResponse.json({ success: false, error: "RATE_LIMIT" }, { status: 429 });
+      resetZAI();
       return NextResponse.json({ success: false, error: error || "Unknown error" }, { status: 500 });
     }
 
