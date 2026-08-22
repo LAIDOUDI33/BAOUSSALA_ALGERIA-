@@ -23,7 +23,7 @@ export function LanguageSwitcher() {
                 : "text-white/60 hover:text-white/90 hover:bg-white/5"
             } ${isRtl && l !== "ar" ? "font-sans" : ""}`}
             style={{
-              fontFamily: l === "ar" ? "'Noto Sans SC', sans-serif" : undefined,
+              fontFamily: l === "ar" ? "'Noto Sans Arabic', sans-serif" : undefined,
               direction: l === "ar" ? "rtl" : "ltr",
             }}
           >

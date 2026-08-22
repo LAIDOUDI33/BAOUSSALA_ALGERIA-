@@ -12,7 +12,7 @@ import {
 } from "@/lib/executive-data";
 import {
   AlertTriangle, Info, CheckCircle2, Clock, ArrowUpRight,
-  ArrowDownRight, Circle, FileText, Target, ChevronRight,
+  ArrowDownRight, Circle, FileText, Target,
   Shield, Zap, Briefcase, CalendarDays, TrendingUp, Printer,
 } from "lucide-react";
 

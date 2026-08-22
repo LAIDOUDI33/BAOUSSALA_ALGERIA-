@@ -1117,8 +1117,142 @@ export interface Dictionary {
   execBriefStatusInProgress: string;
   execBriefStatusCompleted: string;
   execBriefDisclaimer: string;
+  labelSearch: string;
+  labelSearchPlaceholder: string;
+  labelSearchNoResults: string;
+  labelThemeLight: string;
+  labelThemeDark: string;
+  sadTabAlerts: string;
+  sadTabForecast: string;
+  sadTabWhatIf: string;
+  sadTabAnalytics: string;
+  sadTabCorrelation: string;
+  sadTabBenchmark: string;
+  sadTabReports: string;
+  sadTabCustomDash: string;
+  sadKpiAlerts: string;
+  sadKpiScenarios: string;
+  sadKpiScenariosSub: string;
+  sadKpiParams: string;
+  sadKpiParamsSub: string;
+  sadKpiIndicators: string;
+  sadKpiIndicatorsSub: string;
+  sadAlertBanner: string;
+  sadAlertsTitle: string;
+  sadAlertsSub: string;
+  sadThresholdTitle: string;
+  sadThresholdSub: string;
+  sadCriticalAlert: string;
+  sadRequiresAttention: string;
+  sadCritical: string;
+  sadWarning: string;
+  sadInfo: string;
+  sadNoAlerts: string;
+  sadSelectIndicator: string;
+  sadTypeAnomaly: string;
+  sadTypeThreshold: string;
+  sadTypeTrend: string;
+  sadValue: string;
+  sadExpected: string;
+  sadLastActual: string;
+  sadForecastSub: string;
+  sadForecastGdpGrowth: string;
+  sadForecastInflation: string;
+  sadForecastUnemp: string;
+  sadForecastTrade: string;
+  sadForecastIpi: string;
+  sadForecastDebt: string;
+  sadHistorical: string;
+  sadRef: string;
+  sadOptimistic: string;
+  sadBaseline: string;
+  sadPessimistic: string;
+  sadFInd1: string;
+  sadFInd2: string;
+  sadFInd3: string;
+  sadFInd4: string;
+  sadFInd5: string;
+  sadFInd6: string;
+  sadSimParams: string;
+  sadSimParamsSub: string;
+  sadOilPrice: string;
+  sadOilProd: string;
+  sadGasPrice: string;
+  sadNonHCGrowth: string;
+  sadImportGrowth: string;
+  sadPublicInvest: string;
+  sadReset: string;
+  sadSimImpact: string;
+  sadSimImpactSub: string;
+  sadImpact: string;
+  sadSimGdpGrowth: string;
+  sadSimGdp: string;
+  sadSimTrade: string;
+  sadSimUnemp: string;
+  sadSimHydroRev: string;
+  sadSimExports: string;
+  sadSimFiscal: string;
+  sadSimDebt: string;
+  sadCorrTitle: string;
+  sadCorrSub: string;
+  sadCorrTopPairs: string;
+  sadCorrTopPairsSub: string;
+  sadCorrTableInd: string;
+  sadCorrGDP: string;
+  sadCorrInflation: string;
+  sadCorrTrade: string;
+  sadCorrUnemp: string;
+  sadCorrIPI: string;
+  sadCorrOilPrice: string;
+  sadCorrOilRev: string;
+  sadCorrDebt: string;
+  sadBenchRanking: string;
+  sadBenchRadarTitle: string;
+  sadBenchRadarSub: string;
+  sadBenchSelect: string;
+  sadBenchSub: string;
+  sadBenchGrowth: string;
+  sadBenchInflation: string;
+  sadBenchUnemp: string;
+  sadBenchTrade: string;
+  sadBenchFdi: string;
+  sadBenchGni: string;
+  sadBenchDebt: string;
+  sadBenchEnergy: string;
+  sadRepAutoTitle: string;
+  sadRepAutoSub: string;
+  sadRepMacro: string;
+  sadRepPrices: string;
+  sadRepTrade: string;
+  sadRepLabor: string;
+  sadRepRisks: string;
+  sadRepRisk1: string;
+  sadRepRisk2: string;
+  sadRepRisk3: string;
+  sadRepGdpGrowth: string;
+  sadRepGdpNom: string;
+  sadRepInflationDec: string;
+  sadRepDeflation: string;
+  sadRepUnemp: string;
+  sadRepYouth: string;
+  sadRepExports: string;
+  sadRepImports: string;
+  sadRepBalance: string;
+  sadRepNonHC: string;
+  sadRepActivity: string;
+  sadRepUp: string;
+  sadRepDown: string;
+  sadRepFood: string;
+  sadRepExport: string;
+  sadCustomSelect: string;
+  sadCustomSelected: string;
+  sadCustomChart: string;
+  sadCustomChartLabel: string;
+  sadCustomDir: string;
+  sadCustomEmpty: string;
+  sadCustomUp: string;
+  sadCustomDown: string;
 }
-
 // ─── ENGLISH ──────────────────────────────────────────────────────────────────
 const en: Dictionary = {
   headerTitle: "Algeria Economic Dashboard",
@@ -2214,6 +2348,141 @@ const en: Dictionary = {
   execBriefStatusInProgress: "In Progress",
   execBriefStatusCompleted: "Completed",
   execBriefDisclaimer: "This briefing is generated from ONS data and is intended for internal executive use only.",
+  labelSearch: "Search",
+  labelSearchPlaceholder: "Search tabs, charts, indicators...",
+  labelSearchNoResults: "No results found.",
+  labelThemeLight: "Light",
+  labelThemeDark: "Dark",
+  sadTabAlerts: "Alerts",
+  sadTabForecast: "Forecast",
+  sadTabWhatIf: "What-If",
+  sadTabAnalytics: "Analytics",
+  sadTabCorrelation: "Correlation",
+  sadTabBenchmark: "Benchmark",
+  sadTabReports: "Reports",
+  sadTabCustomDash: "Custom",
+  sadKpiAlerts: "Active Alerts",
+  sadKpiScenarios: "Scenarios",
+  sadKpiScenariosSub: "Simulated outcomes",
+  sadKpiParams: "Parameters",
+  sadKpiParamsSub: "Adjustable variables",
+  sadKpiIndicators: "Indicators",
+  sadKpiIndicatorsSub: "Economic variables tracked",
+  sadAlertBanner: "Strategic Alert Dashboard",
+  sadAlertsTitle: "Alerts & Thresholds",
+  sadAlertsSub: "Automatic detection of anomalies and threshold breaches",
+  sadThresholdTitle: "Threshold Configuration",
+  sadThresholdSub: "Alert trigger levels for key indicators",
+  sadCriticalAlert: "Critical Alert",
+  sadRequiresAttention: "Requires Attention",
+  sadCritical: "Critical",
+  sadWarning: "Warning",
+  sadInfo: "Info",
+  sadNoAlerts: "No active alerts",
+  sadSelectIndicator: "Select indicator",
+  sadTypeAnomaly: "Anomaly",
+  sadTypeThreshold: "Threshold Breach",
+  sadTypeTrend: "Trend Alert",
+  sadValue: "Value",
+  sadExpected: "Expected",
+  sadLastActual: "Last actual",
+  sadForecastSub: "Multi-scenario projections for key economic indicators",
+  sadForecastGdpGrowth: "GDP Growth Forecast",
+  sadForecastInflation: "Inflation Forecast",
+  sadForecastUnemp: "Unemployment Forecast",
+  sadForecastTrade: "Trade Balance Forecast",
+  sadForecastIpi: "Industrial Production Forecast",
+  sadForecastDebt: "Debt Forecast",
+  sadHistorical: "Historical",
+  sadRef: "Reference",
+  sadOptimistic: "Optimistic",
+  sadBaseline: "Baseline",
+  sadPessimistic: "Pessimistic",
+  sadFInd1: "GDP Growth",
+  sadFInd2: "Inflation",
+  sadFInd3: "Unemployment",
+  sadFInd4: "Trade Balance",
+  sadFInd5: "Industrial Production",
+  sadFInd6: "Public Debt",
+  sadSimParams: "Simulation Parameters",
+  sadSimParamsSub: "Adjust variables to simulate economic scenarios",
+  sadOilPrice: "Oil Price (USD/bbl)",
+  sadOilProd: "Oil Production (Mbd)",
+  sadGasPrice: "Gas Price (USD/Mbtu)",
+  sadNonHCGrowth: "Non-HC Growth (%)",
+  sadImportGrowth: "Import Growth (%)",
+  sadPublicInvest: "Public Investment (% GDP)",
+  sadReset: "Reset",
+  sadSimImpact: "Simulation Impact",
+  sadSimImpactSub: "Projected changes from baseline scenario",
+  sadImpact: "Impact",
+  sadSimGdpGrowth: "GDP Growth",
+  sadSimGdp: "GDP (bn USD)",
+  sadSimTrade: "Trade Balance (bn USD)",
+  sadSimUnemp: "Unemployment (%)",
+  sadSimHydroRev: "Hydrocarbon Revenue (bn USD)",
+  sadSimExports: "Exports (bn USD)",
+  sadSimFiscal: "Fiscal Balance (% GDP)",
+  sadSimDebt: "Public Debt (% GDP)",
+  sadCorrTitle: "Correlation Analysis",
+  sadCorrSub: "Statistical relationships between economic indicators",
+  sadCorrTopPairs: "Top Correlated Pairs",
+  sadCorrTopPairsSub: "Indicator pairs with strongest correlations",
+  sadCorrTableInd: "Indicator",
+  sadCorrGDP: "GDP",
+  sadCorrInflation: "Inflation",
+  sadCorrTrade: "Trade Balance",
+  sadCorrUnemp: "Unemployment",
+  sadCorrIPI: "Industrial Production",
+  sadCorrOilPrice: "Oil Price",
+  sadCorrOilRev: "Oil Revenue",
+  sadCorrDebt: "Public Debt",
+  sadBenchRanking: "Country Ranking",
+  sadBenchRadarTitle: "Multi-Indicator Comparison",
+  sadBenchRadarSub: "Radar comparison across key indicators",
+  sadBenchSelect: "Select indicator",
+  sadBenchSub: "Compare Algeria with regional peers",
+  sadBenchGrowth: "GDP Growth",
+  sadBenchInflation: "Inflation",
+  sadBenchUnemp: "Unemployment",
+  sadBenchTrade: "Trade/GDP",
+  sadBenchFdi: "FDI",
+  sadBenchGni: "GNI/capita",
+  sadBenchDebt: "Debt/GDP",
+  sadBenchEnergy: "Energy Access",
+  sadRepAutoTitle: "Auto-Generated Reports",
+  sadRepAutoSub: "AI-generated analytical summaries based on latest data",
+  sadRepMacro: "Macroeconomic Report",
+  sadRepPrices: "Prices Report",
+  sadRepTrade: "Trade Report",
+  sadRepLabor: "Labor Market Report",
+  sadRepRisks: "Risk Assessment",
+  sadRepRisk1: "Hydrocarbon dependence",
+  sadRepRisk2: "Youth unemployment",
+  sadRepRisk3: "Inflation persistence",
+  sadRepGdpGrowth: "GDP Growth",
+  sadRepGdpNom: "Nominal GDP",
+  sadRepInflationDec: "Inflation Deceleration",
+  sadRepDeflation: "Deflation Risk",
+  sadRepUnemp: "Unemployment Rate",
+  sadRepYouth: "Youth Unemployment",
+  sadRepExports: "Exports",
+  sadRepImports: "Imports",
+  sadRepBalance: "Trade Balance",
+  sadRepNonHC: "Non-HC Exports",
+  sadRepActivity: "Activity Rate",
+  sadRepUp: "Up",
+  sadRepDown: "Down",
+  sadRepFood: "Food inflation",
+  sadRepExport: "Export revenues",
+  sadCustomSelect: "Select indicators to display",
+  sadCustomSelected: "Selected indicators",
+  sadCustomChart: "Custom Chart",
+  sadCustomChartLabel: "Indicators",
+  sadCustomDir: "Direction",
+  sadCustomEmpty: "Select at least one indicator to display the chart.",
+  sadCustomUp: "Up",
+  sadCustomDown: "Down"
 };
 
 // ─── FRENCH ───────────────────────────────────────────────────────────────────
@@ -3377,6 +3646,141 @@ const fr: Dictionary = {
   execBriefStatusInProgress: "En cours",
   execBriefStatusCompleted: "Terminé",
   execBriefDisclaimer: "Ce briefing est généré à partir des données de l’ONS et est destiné à un usage interne de la direction uniquement.",
+  labelSearch: "Rechercher",
+  labelSearchPlaceholder: "Rechercher onglets, graphiques, indicateurs...",
+  labelSearchNoResults: "Aucun r\u00e9sultat trouv\u00e9.",
+  labelThemeLight: "Clair",
+  labelThemeDark: "Sombre",
+  sadTabAlerts: "Alertes",
+  sadTabForecast: "Pr\u00e9visions",
+  sadTabWhatIf: "Simulations",
+  sadTabAnalytics: "Analytique",
+  sadTabCorrelation: "Corr\u00e9lation",
+  sadTabBenchmark: "R\u00e9f\u00e9rence",
+  sadTabReports: "Rapports",
+  sadTabCustomDash: "Personnalis\u00e9",
+  sadKpiAlerts: "Alertes actives",
+  sadKpiScenarios: "Sc\u00e9narios",
+  sadKpiScenariosSub: "R\u00e9sultats simul\u00e9s",
+  sadKpiParams: "Param\u00e8tres",
+  sadKpiParamsSub: "Variables ajustables",
+  sadKpiIndicators: "Indicateurs",
+  sadKpiIndicatorsSub: "Variables \u00e9conomiques suivies",
+  sadAlertBanner: "Tableau de bord des alertes strat\u00e9giques",
+  sadAlertsTitle: "Alertes & Seuils",
+  sadAlertsSub: "D\u00e9tection automatique des anomalies et d\u00e9passements de seuils",
+  sadThresholdTitle: "Configuration des seuils",
+  sadThresholdSub: "Niveaux de d\u00e9clenchement des alertes",
+  sadCriticalAlert: "Alerte critique",
+  sadRequiresAttention: "N\u00e9cessite une attention",
+  sadCritical: "Critique",
+  sadWarning: "Attention",
+  sadInfo: "Info",
+  sadNoAlerts: "Aucune alerte active",
+  sadSelectIndicator: "S\u00e9lectionner un indicateur",
+  sadTypeAnomaly: "Anomalie",
+  sadTypeThreshold: "D\u00e9passement de seuil",
+  sadTypeTrend: "Alerte de tendance",
+  sadValue: "Valeur",
+  sadExpected: "Attendu",
+  sadLastActual: "Dernier r\u00e9el",
+  sadForecastSub: "Projections multi-sc\u00e9narios pour les indicateurs cl\u00e9s",
+  sadForecastGdpGrowth: "Pr\u00e9vision croissance du PIB",
+  sadForecastInflation: "Pr\u00e9vision inflation",
+  sadForecastUnemp: "Pr\u00e9vision ch\u00f4mage",
+  sadForecastTrade: "Pr\u00e9vision balance commerciale",
+  sadForecastIpi: "Pr\u00e9vision production industrielle",
+  sadForecastDebt: "Pr\u00e9vision dette",
+  sadHistorical: "Historique",
+  sadRef: "R\u00e9f\u00e9rence",
+  sadOptimistic: "Optimiste",
+  sadBaseline: "R\u00e9f\u00e9rence",
+  sadPessimistic: "Pessimiste",
+  sadFInd1: "Croissance du PIB",
+  sadFInd2: "Inflation",
+  sadFInd3: "Ch\u00f4mage",
+  sadFInd4: "Balance commerciale",
+  sadFInd5: "Production industrielle",
+  sadFInd6: "Dette publique",
+  sadSimParams: "Param\u00e8tres de simulation",
+  sadSimParamsSub: "Ajustez les variables pour simuler des sc\u00e9narios",
+  sadOilPrice: "Prix du p\u00e9trole (USD/bbl)",
+  sadOilProd: "Production de p\u00e9trole (Mbj)",
+  sadGasPrice: "Prix du gaz (USD/Mbtu)",
+  sadNonHCGrowth: "Croissance hors HC (%)",
+  sadImportGrowth: "Croissance des importations (%)",
+  sadPublicInvest: "Investissement public (% PIB)",
+  sadReset: "R\u00e9initialiser",
+  sadSimImpact: "Impact de la simulation",
+  sadSimImpactSub: "Variations projet\u00e9es par rapport au sc\u00e9nario de r\u00e9f\u00e9rence",
+  sadImpact: "Impact",
+  sadSimGdpGrowth: "Croissance du PIB",
+  sadSimGdp: "PIB (Mds USD)",
+  sadSimTrade: "Balance commerciale (Mds USD)",
+  sadSimUnemp: "Ch\u00f4mage (%)",
+  sadSimHydroRev: "Revenus hydrocarbures (Mds USD)",
+  sadSimExports: "Exportations (Mds USD)",
+  sadSimFiscal: "Solde budg\u00e9taire (% PIB)",
+  sadSimDebt: "Dette publique (% PIB)",
+  sadCorrTitle: "Analyse de corr\u00e9lation",
+  sadCorrSub: "Relations statistiques entre indicateurs \u00e9conomiques",
+  sadCorrTopPairs: "Paires les plus corr\u00e9l\u00e9es",
+  sadCorrTopPairsSub: "Paires d'indicateurs les plus fortement corr\u00e9l\u00e9es",
+  sadCorrTableInd: "Indicateur",
+  sadCorrGDP: "PIB",
+  sadCorrInflation: "Inflation",
+  sadCorrTrade: "Balance commerciale",
+  sadCorrUnemp: "Ch\u00f4mage",
+  sadCorrIPI: "Production industrielle",
+  sadCorrOilPrice: "Prix du p\u00e9trole",
+  sadCorrOilRev: "Revenus p\u00e9troliers",
+  sadCorrDebt: "Dette publique",
+  sadBenchRanking: "Classement des pays",
+  sadBenchRadarTitle: "Comparaison multi-indicateurs",
+  sadBenchRadarSub: "Comparaison radar sur les indicateurs cl\u00e9s",
+  sadBenchSelect: "S\u00e9lectionner un indicateur",
+  sadBenchSub: "Comparer l'Alg\u00e9rie avec les pays de la r\u00e9gion",
+  sadBenchGrowth: "Croissance du PIB",
+  sadBenchInflation: "Inflation",
+  sadBenchUnemp: "Ch\u00f4mage",
+  sadBenchTrade: "Commerce/PIB",
+  sadBenchFdi: "IDE",
+  sadBenchGni: "RNB/habitant",
+  sadBenchDebt: "Dette/PIB",
+  sadBenchEnergy: "Acc\u00e8s \u00e0 l'\u00e9nergie",
+  sadRepAutoTitle: "Rapports automatiques",
+  sadRepAutoSub: "R\u00e9sum\u00e9s analytiques g\u00e9n\u00e9r\u00e9s par IA",
+  sadRepMacro: "Rapport macro\u00e9conomique",
+  sadRepPrices: "Rapport des prix",
+  sadRepTrade: "Rapport commercial",
+  sadRepLabor: "Rapport du march\u00e9 du travail",
+  sadRepRisks: "\u00c9valuation des risques",
+  sadRepRisk1: "D\u00e9pendance aux hydrocarbures",
+  sadRepRisk2: "Ch\u00f4mage des jeunes",
+  sadRepRisk3: "Persistance de l'inflation",
+  sadRepGdpGrowth: "Croissance du PIB",
+  sadRepGdpNom: "PIB nominal",
+  sadRepInflationDec: "D\u00e9c\u00e9l\u00e9ration de l'inflation",
+  sadRepDeflation: "Risque de d\u00e9flation",
+  sadRepUnemp: "Taux de ch\u00f4mage",
+  sadRepYouth: "Ch\u00f4mage des jeunes",
+  sadRepExports: "Exportations",
+  sadRepImports: "Importations",
+  sadRepBalance: "Balance commerciale",
+  sadRepNonHC: "Exportations hors HC",
+  sadRepActivity: "Taux d'activit\u00e9",
+  sadRepUp: "Hausse",
+  sadRepDown: "Baisse",
+  sadRepFood: "Inflation alimentaire",
+  sadRepExport: "Revenus d'exportation",
+  sadCustomSelect: "S\u00e9lectionner les indicateurs \u00e0 afficher",
+  sadCustomSelected: "Indicateurs s\u00e9lectionn\u00e9s",
+  sadCustomChart: "Graphique personnalis\u00e9",
+  sadCustomChartLabel: "Indicateurs",
+  sadCustomDir: "Direction",
+  sadCustomEmpty: "S\u00e9lectionnez au moins un indicateur pour afficher le graphique.",
+  sadCustomUp: "Hausse",
+  sadCustomDown: "Baisse"
 };
 
 // ─── ARABIC ───────────────────────────────────────────────────────────────────
@@ -4476,6 +4880,141 @@ const ar: Dictionary = {
   execBriefStatusInProgress: "قيد التنفيذ",
   execBriefStatusCompleted: "متم",
   execBriefDisclaimer: "يتم إنشاء هذا الإحطاط من بيانات المنظمة الوطنية للإحصاء وهو مخصص للاستخدام الداخلي للقيادة فقط.",
+  labelSearch: "\u0628\u062d\u062b",
+  labelSearchPlaceholder: "\u0628\u062d\u062b \u0641\u064a \u0627\u0644\u0623\u0642\u0633\u0627\u0645\u060c \u0627\u0644\u0631\u0633\u0648\u0645 \u0627\u0644\u0628\u064a\u0627\u0646\u064a\u0629\u060c \u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a...",
+  labelSearchNoResults: "\u0644\u0627 \u062a\u0648\u062c\u062f \u0646\u062a\u0627\u0626\u062c.",
+  labelThemeLight: "\u0641\u0627\u062a\u062d",
+  labelThemeDark: "\u062f\u0627\u0643\u0646",
+  sadTabAlerts: "\u0627\u0644\u062a\u0646\u0628\u064a\u0647\u0627\u062a",
+  sadTabForecast: "\u0627\u0644\u062a\u0648\u0642\u0639\u0627\u062a",
+  sadTabWhatIf: "\u0633\u064a\u0646\u0627\u0631\u064a\u0648\u0647\u0627\u062a",
+  sadTabAnalytics: "\u0627\u0644\u062a\u062d\u0644\u064a\u0644\u0627\u062a",
+  sadTabCorrelation: "\u0627\u0644\u0627\u0631\u062a\u0628\u0627\u0637",
+  sadTabBenchmark: "\u0627\u0644\u0645\u0642\u0627\u0631\u0646\u0629",
+  sadTabReports: "\u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631",
+  sadTabCustomDash: "\u0645\u062e\u0635\u0635",
+  sadKpiAlerts: "\u0627\u0644\u062a\u0646\u0628\u064a\u0647\u0627\u062a \u0627\u0644\u0646\u0634\u0637\u0629",
+  sadKpiScenarios: "\u0627\u0644\u0633\u064a\u0646\u0627\u0631\u064a\u0648\u0647\u0627\u062a",
+  sadKpiScenariosSub: "\u0627\u0644\u0646\u062a\u0627\u0626\u062c \u0627\u0644\u0645\u062d\u0627\u0643\u0627\u0629",
+  sadKpiParams: "\u0627\u0644\u0645\u0639\u0644\u0645\u0627\u062a",
+  sadKpiParamsSub: "\u0627\u0644\u0645\u062a\u063a\u064a\u0631\u0627\u062a \u0627\u0644\u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062a\u0639\u062f\u064a\u0644",
+  sadKpiIndicators: "\u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a",
+  sadKpiIndicatorsSub: "\u0627\u0644\u0645\u062a\u063a\u064a\u0631\u0627\u062a \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629 \u0627\u0644\u0645\u062a\u0627\u0628\u0639\u0629",
+  sadAlertBanner: "\u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u0646\u0628\u064a\u0647\u0627\u062a \u0627\u0644\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0629",
+  sadAlertsTitle: "\u0627\u0644\u062a\u0646\u0628\u064a\u0647\u0627\u062a \u0648\u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062a",
+  sadAlertsSub: "\u0627\u0644\u0643\u0634\u0641 \u0627\u0644\u062a\u0644\u0642\u0627\u0626\u064a \u0639\u0646 \u0627\u0644\u0634\u0648\u0627\u0630\u0627\u062a \u0648\u062a\u062c\u0627\u0648\u0632 \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062a",
+  sadThresholdTitle: "\u0625\u0639\u062f\u0627\u062f \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062a",
+  sadThresholdSub: "\u0645\u0633\u062a\u0648\u064a\u0627\u062a \u062a\u0641\u0639\u064a\u0644 \u0627\u0644\u062a\u0646\u0628\u064a\u0647\u0627\u062a \u0644\u0644\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629",
+  sadCriticalAlert: "\u062a\u0646\u0628\u064a\u0647 \u062d\u0631\u062c",
+  sadRequiresAttention: "\u064a\u062a\u0637\u0644\u0628 \u0627\u0647\u062a\u0645\u0627\u0645\u0627",
+  sadCritical: "\u062d\u0631\u062c",
+  sadWarning: "\u062a\u062d\u0630\u064a\u0631",
+  sadInfo: "\u0645\u0639\u0644\u0648\u0645\u0629",
+  sadNoAlerts: "\u0644\u0627 \u062a\u0646\u0628\u064a\u0647\u0627\u062a \u0646\u0634\u0637\u0629",
+  sadSelectIndicator: "\u0627\u062e\u062a\u0631 \u0645\u0624\u0634\u0631\u0627",
+  sadTypeAnomaly: "\u0634\u0630\u0648\u0630",
+  sadTypeThreshold: "\u062a\u062c\u0627\u0648\u0632 \u0627\u0644\u0639\u0644\u0627\u0645\u0629",
+  sadTypeTrend: "\u062a\u0646\u0628\u064a\u0647 \u0627\u062a\u062c\u0627\u0647",
+  sadValue: "\u0627\u0644\u0642\u064a\u0645\u0629",
+  sadExpected: "\u0627\u0644\u0645\u062a\u0648\u0642\u0639",
+  sadLastActual: "\u0622\u062e\u0631 \u0642\u064a\u0645\u0629 \u0641\u0639\u0644\u064a\u0629",
+  sadForecastSub: "\u062a\u0648\u0642\u0639\u0627\u062a \u0645\u062a\u0639\u062f\u062f\u0629 \u0627\u0644\u0633\u064a\u0646\u0627\u0631\u064a\u0648\u0647\u0627\u062a \u0644\u0644\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629",
+  sadForecastGdpGrowth: "\u062a\u0648\u0642\u0639 \u0646\u0645\u0648 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  sadForecastInflation: "\u062a\u0648\u0642\u0639 \u0627\u0644\u062a\u0636\u062e\u0645",
+  sadForecastUnemp: "\u062a\u0648\u0642\u0639 \u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+  sadForecastTrade: "\u062a\u0648\u0642\u0639 \u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u0627\u0644\u062a\u062c\u0627\u0631\u064a",
+  sadForecastIpi: "\u062a\u0648\u0642\u0639 \u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a",
+  sadForecastDebt: "\u062a\u0648\u0642\u0639 \u0627\u0644\u062f\u064a\u0646",
+  sadHistorical: "\u062a\u0627\u0631\u064a\u062e\u064a",
+  sadRef: "\u0645\u0631\u062c\u0639",
+  sadOptimistic: "\u0645\u062a\u0641\u0627\u0626\u0644",
+  sadBaseline: "\u0627\u0644\u0633\u064a\u0646\u0627\u0631\u064a\u0648 \u0627\u0644\u0623\u0633\u0627\u0633\u064a",
+  sadPessimistic: "\u0645\u062a\u0634\u0627\u0626\u0645",
+  sadFInd1: "\u0646\u0645\u0648 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  sadFInd2: "\u0627\u0644\u062a\u0636\u062e\u0645",
+  sadFInd3: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+  sadFInd4: "\u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u0627\u0644\u062a\u062c\u0627\u0631\u064a",
+  sadFInd5: "\u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a",
+  sadFInd6: "\u0627\u0644\u062f\u064a\u0646 \u0627\u0644\u0639\u0627\u0645",
+  sadSimParams: "\u0645\u0639\u0644\u0645\u0627\u062a \u0627\u0644\u0645\u062d\u0627\u0643\u0627\u0629",
+  sadSimParamsSub: "\u0639\u062f\u0644 \u0627\u0644\u0645\u062a\u063a\u064a\u0631\u0627\u062a \u0644\u0645\u062d\u0627\u0643\u0627\u0629 \u0627\u0644\u0633\u064a\u0646\u0627\u0631\u064a\u0648\u0647\u0627\u062a",
+  sadOilPrice: "\u0633\u0639\u0631 \u0627\u0644\u0646\u0641\u0637 (\u062f\u0648\u0644\u0627\u0631/\u0628\u0631\u0645\u0644)",
+  sadOilProd: "\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0646\u0641\u0637 (\u0645\u0644\u064a\u0648\u0646 \u0628\u0631\u0645\u0644/\u064a\u0648\u0645)",
+  sadGasPrice: "\u0633\u0639\u0631 \u0627\u0644\u063a\u0627\u0632 (\u062f\u0648\u0644\u0627\u0631/\u0645\u0644\u064a\u0648\u0646 \u0648\u062d\u062f\u0629 \u062d\u0631\u0627\u0631\u064a\u0629)",
+  sadNonHCGrowth: "\u0627\u0644\u0646\u0645\u0648 \u062e\u0627\u0631\u062c \u0627\u0644\u0645\u062d\u0631\u0643\u0627\u062a (%)",
+  sadImportGrowth: "\u0646\u0645\u0648 \u0627\u0644\u0648\u0627\u0631\u062f\u0627\u062a (%)",
+  sadPublicInvest: "\u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0627\u0644\u0639\u0627\u0645 (% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a)",
+  sadReset: "\u0625\u0639\u0627\u062f\u0629 \u062a\u0639\u064a\u064a\u0646",
+  sadSimImpact: "\u062a\u0623\u062b\u064a\u0631 \u0627\u0644\u0645\u062d\u0627\u0643\u0627\u0629",
+  sadSimImpactSub: "\u0627\u0644\u062a\u063a\u064a\u0631\u0627\u062a \u0627\u0644\u0645\u062a\u0648\u0642\u0639\u0629 \u0645\u0642\u0627\u0631\u0646\u0629 \u0628\u0627\u0644\u0633\u064a\u0646\u0627\u0631\u064a\u0648 \u0627\u0644\u0623\u0633\u0627\u0633\u064a",
+  sadImpact: "\u0627\u0644\u062a\u0623\u062b\u064a\u0631",
+  sadSimGdpGrowth: "\u0646\u0645\u0648 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  sadSimGdp: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a (\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631)",
+  sadSimTrade: "\u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u0627\u0644\u062a\u062c\u0627\u0631\u064a (\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631)",
+  sadSimUnemp: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629 (%)",
+  sadSimHydroRev: "\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u062d\u0631\u0643\u0627\u062a (\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631)",
+  sadSimExports: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a (\u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631)",
+  sadSimFiscal: "\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629 \u0627\u0644\u0645\u0627\u0644\u064a\u0629 (% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a)",
+  sadSimDebt: "\u0627\u0644\u062f\u064a\u0646 \u0627\u0644\u0639\u0627\u0645 (% \u0645\u0646 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a)",
+  sadCorrTitle: "\u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0627\u0631\u062a\u0628\u0627\u0637",
+  sadCorrSub: "\u0627\u0644\u0639\u0644\u0627\u0642\u0627\u062a \u0627\u0644\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u0628\u064a\u0646 \u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629",
+  sadCorrTopPairs: "\u0623\u0643\u062b\u0631 \u0627\u0644\u0623\u0632\u0648\u0627\u062c \u0627\u0631\u062a\u0628\u0627\u0637\u0627\u064b",
+  sadCorrTopPairsSub: "\u0623\u0632\u0648\u0627\u062c \u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0623\u0643\u062b\u0631 \u0627\u0631\u062a\u0628\u0627\u0637\u0627\u064b",
+  sadCorrTableInd: "\u0627\u0644\u0645\u0624\u0634\u0631",
+  sadCorrGDP: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  sadCorrInflation: "\u0627\u0644\u062a\u0636\u062e\u0645",
+  sadCorrTrade: "\u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u0627\u0644\u062a\u062c\u0627\u0631\u064a",
+  sadCorrUnemp: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+  sadCorrIPI: "\u0627\u0644\u0625\u0646\u062a\u0627\u062c \u0627\u0644\u0635\u0646\u0627\u0639\u064a",
+  sadCorrOilPrice: "\u0633\u0639\u0631 \u0627\u0644\u0646\u0641\u0637",
+  sadCorrOilRev: "\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0646\u0641\u0637",
+  sadCorrDebt: "\u0627\u0644\u062f\u064a\u0646 \u0627\u0644\u0639\u0627\u0645",
+  sadBenchRanking: "\u062a\u0631\u062a\u064a\u0628 \u0627\u0644\u062f\u0648\u0644",
+  sadBenchRadarTitle: "\u0645\u0642\u0627\u0631\u0646\u0629 \u0645\u062a\u0639\u062f\u062f\u0629 \u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a",
+  sadBenchRadarSub: "\u0645\u0642\u0627\u0631\u0646\u0629 \u0631\u0627\u062f\u0627\u0631\u064a\u0629 \u0639\u0628\u0631 \u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629",
+  sadBenchSelect: "\u0627\u062e\u062a\u0631 \u0645\u0624\u0634\u0631\u0627",
+  sadBenchSub: "\u0645\u0642\u0627\u0631\u0646\u0629 \u0627\u0644\u062c\u0632\u0627\u0626\u0631 \u0645\u0639 \u0627\u0644\u062f\u0648\u0644 \u0627\u0644\u0625\u0642\u0644\u064a\u0645\u064a\u0629",
+  sadBenchGrowth: "\u0646\u0645\u0648 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  sadBenchInflation: "\u0627\u0644\u062a\u0636\u062e\u0645",
+  sadBenchUnemp: "\u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+  sadBenchTrade: "\u0627\u0644\u062a\u062c\u0627\u0631\u0629/\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  sadBenchFdi: "\u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0627\u0644\u0623\u062c\u0646\u0628\u064a \u0627\u0644\u0645\u0628\u0627\u0634\u0631",
+  sadBenchGni: "\u0627\u0644\u062f\u062e\u0644 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a/\u0641\u0631\u062f",
+  sadBenchDebt: "\u0627\u0644\u062f\u064a\u0646/\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a",
+  sadBenchEnergy: "\u0627\u0644\u0648\u0635\u0648\u0644 \u0644\u0644\u0637\u0627\u0642\u0629",
+  sadRepAutoTitle: "\u062a\u0642\u0627\u0631\u064a\u0631 \u062a\u0644\u0642\u0627\u0626\u064a\u0629",
+  sadRepAutoSub: "\u0645\u0644\u062e\u0635\u0627\u062a \u062a\u062d\u0644\u064a\u0644\u064a\u0629 \u0645\u0646\u062a\u062c\u0629 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+  sadRepMacro: "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f \u0627\u0644\u0643\u0644\u064a",
+  sadRepPrices: "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0623\u0633\u0639\u0627\u0631",
+  sadRepTrade: "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u062a\u062c\u0627\u0631\u0629",
+  sadRepLabor: "\u062a\u0642\u0631\u064a\u0631 \u0633\u0648\u0642 \u0627\u0644\u0639\u0645\u0644",
+  sadRepRisks: "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0645\u062e\u0627\u0637\u0631",
+  sadRepRisk1: "\u0627\u0644\u0627\u0639\u062a\u0645\u0627\u062f \u0639\u0644\u0649 \u0627\u0644\u0645\u062d\u0631\u0643\u0627\u062a",
+  sadRepRisk2: "\u0628\u0637\u0627\u0644\u0629 \u0627\u0644\u0634\u0628\u0627\u0628",
+  sadRepRisk3: "\u0627\u0633\u062a\u0645\u0631\u0627\u0631 \u0627\u0644\u062a\u0636\u062e\u0645",
+  sadRepGdpGrowth: "\u0646\u0645\u0648 \u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u0649",
+  sadRepGdpNom: "\u0627\u0644\u0646\u0627\u062a\u062c \u0627\u0644\u0645\u062d\u0644\u064a \u0627\u0644\u0627\u0633\u0645\u064a",
+  sadRepInflationDec: "\u062a\u0628\u0637\u0624 \u0627\u0644\u062a\u0636\u062e\u0645",
+  sadRepDeflation: "\u062e\u0637\u0631 \u0627\u0644\u0627\u0646\u0643\u0645\u0627\u0634",
+  sadRepUnemp: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0628\u0637\u0627\u0644\u0629",
+  sadRepYouth: "\u0628\u0637\u0627\u0644\u0629 \u0627\u0644\u0634\u0628\u0627\u0628",
+  sadRepExports: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a",
+  sadRepImports: "\u0627\u0644\u0648\u0627\u0631\u062f\u0627\u062a",
+  sadRepBalance: "\u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u0627\u0644\u062a\u062c\u0627\u0631\u064a",
+  sadRepNonHC: "\u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a \u063a\u064a\u0631 \u0627\u0644\u0645\u062d\u0631\u0643\u0627\u062a",
+  sadRepActivity: "\u0645\u0639\u062f\u0644 \u0627\u0644\u0646\u0634\u0627\u0637",
+  sadRepUp: "\u0627\u0631\u062a\u0641\u0627\u0639",
+  sadRepDown: "\u0627\u0646\u062e\u0641\u0627\u0636",
+  sadRepFood: "\u062a\u0636\u062e\u0645 \u0627\u0644\u0645\u0648\u0627\u062f \u0627\u0644\u063a\u0630\u0627\u0626\u064a\u0629",
+  sadRepExport: "\u0625\u064a\u0641\u0627\u062f\u0627\u062a \u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a",
+  sadCustomSelect: "\u0627\u062e\u062a\u0631 \u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a \u0644\u0639\u0631\u0636\u0647\u0627",
+  sadCustomSelected: "\u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0645\u062e\u062a\u0627\u0631\u0629",
+  sadCustomChart: "\u0631\u0633\u0645 \u0628\u064a\u0627\u0646\u064a \u0645\u062e\u0635\u0635",
+  sadCustomChartLabel: "\u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a",
+  sadCustomDir: "\u0627\u0644\u0627\u062a\u062c\u0627\u0647",
+  sadCustomEmpty: "\u0627\u062e\u062a\u0631 \u0645\u0624\u0634\u0631\u0627\u064b \u0648\u0627\u062d\u062f\u0627\u064b \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644 \u0644\u0639\u0631\u0636 \u0627\u0644\u0631\u0633\u0645 \u0627\u0644\u0628\u064a\u0627\u0646\u064a.",
+  sadCustomUp: "\u0627\u0631\u062a\u0641\u0627\u0639",
+  sadCustomDown: "\u0627\u0646\u062e\u0641\u0627\u0636",
 };
 
 // ─── DICTIONARY MAP ───────────────────────────────────────────────────────────
