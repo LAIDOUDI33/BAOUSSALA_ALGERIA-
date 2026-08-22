@@ -392,3 +392,139 @@ export const quickAccessLinks = [
   { key: "benchmarking", icon: "BarChart3" },
   { key: "ai", icon: "Bot" },
 ];
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// EXECUTIVE ENHANCEMENTS — Risk Heatmap, Target Tracker, Period Comparison
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// ─── Risk Matrix (probability × impact) ────────────────────────────────────
+export type RiskLevel = "critical" | "high" | "medium" | "low";
+export interface RiskItem {
+  id: number;
+  category: string;
+  probability: number;      // 0–100
+  impact: number;           // 0–100
+  level: RiskLevel;
+  titleEn: string; titleFr: string; titleAr: string;
+  descEn: string; descFr: string; descAr: string;
+  trend: "up" | "down" | "stable";
+}
+
+export const riskMatrix: RiskItem[] = [
+  { id: 1, category: "economic", probability: 65, impact: 80, level: "critical",
+    titleEn: "Oil price shock (>20% drop)", titleFr: "Choc pétrolier (>20% de baisse)", titleAr: "صدمة نفطية (انخفاض >20%)",
+    descEn: "Sustained Brent below $60/bbl would cut export revenue by $8B+",
+    descFr: "Un Brent soutenu en dessous de 60 $/bbl réduirait les recettes d'exportation de 8 Mds+$",
+    descAr: "انخفاض برنت المستمر عن 60 دولار/برميل سيقلل إيرادات التصدير بأكثر من 8 مليار دولار",
+    trend: "stable" },
+  { id: 2, category: "climate", probability: 75, impact: 70, level: "critical",
+    titleEn: "Southern drought escalation", titleFr: "Escalade de la sécheresse au sud", titleAr: "تصاعد الجفاف في الجنوب",
+    descEn: "Dam levels below 30% in southern basins threatening agriculture and water supply",
+    descFr: "Niveaux de barrages inférieurs à 30% dans les bassins du sud menaçant l'agriculture",
+    descAr: "مستويات السدود أقل من 30% في الأحواض الجنوبية تهدد الزراعة وإمدادات المياه",
+    trend: "up" },
+  { id: 3, category: "social", probability: 55, impact: 75, level: "high",
+    titleEn: "Youth unemployment spike", titleFr: "Hausse du chômage des jeunes", titleAr: "ارتفاع بطالة الشباب",
+    descEn: "Youth unemployment at 29.5% with limited absorption capacity in formal sector",
+    descFr: "Chômage des jeunes à 29,5% avec capacité d'absorption limitée dans le secteur formel",
+    descAr: "بطالة الشباب عند 29.5% مع محدودية القدرة الاستيعابية في القطاع الرسمي",
+    trend: "stable" },
+  { id: 4, category: "fiscal", probability: 40, impact: 85, level: "high",
+    titleEn: "Public debt acceleration", titleFr: "Accélération de la dette publique", titleAr: "تسارع الدين العام",
+    descEn: "Debt-to-GDP approaching 55% threshold; fiscal consolidation needed",
+    descFr: "Dette/PIB approchant le seuil de 55% ; consolidation budgétaire nécessaire",
+    descAr: "الدين/الناتج المحلي يقترب من عتبة 55%؛ 需要 تعزيز الميزانية",
+    trend: "up" },
+  { id: 5, category: "trade", probability: 50, impact: 60, level: "medium",
+    titleEn: "Non-HC export shortfall", titleFr: "Déficit des exportations non-HC", titleAr: "عجز الصادرات غير الهيدروكربونية",
+    descEn: "Non-hydrocarbon exports 8% below H1 target of $7.8B",
+    descFr: "Exportations non-hydrocarbures 8% en dessous de l'objectif S1 de 7,8 Mds$",
+    descAr: "الصادرات غير الهيدروكربونية أقل بـ 8% من مستهدف النصف الأول البالغ 7.8 مليار دولار",
+    trend: "stable" },
+  { id: 6, category: "inflation", probability: 45, impact: 65, level: "medium",
+    titleEn: "Food price volatility", titleFr: "Volatilité des prix alimentaires", titleAr: "تقلب أسعار المواد الغذائية",
+    descEn: "Food inflation at 6.3% with cereals and dairy as main drivers",
+    descFr: "Inflation alimentaire à 6,3% avec les céréales et les produits laitiers comme moteurs principaux",
+    descAr: "التضخم الغذائي عند 6.3% مع الحبوب ومنتجات الألبان كمحركات رئيسية",
+    trend: "down" },
+  { id: 7, category: "energy", probability: 30, impact: 70, level: "medium",
+    titleEn: "Gas supply disruption risk", titleFr: "Risque de rupture d'approvisionnement en gaz", titleAr: "خطر انقطاع إمدادات الغاز",
+    descEn: "Domestic gas demand growing 4% annually against flat production profile",
+    descFr: "Demande intérieure de gaz en croissance de 4% par an face à un profil de production plat",
+    descAr: "الطلب المحلي على الغاز ينمو بنسبة 4% سنوياً مقابل مستوى إنتاج ثابت",
+    trend: "up" },
+  { id: 8, category: "geopolitical", probability: 25, impact: 55, level: "low",
+    titleEn: "Regional instability spillover", titleFr: "Débordement de l'instabilité régionale", titleAr: "تسرب عدم الاستقرار الإقليمي",
+    descEn: "Regional tensions could affect trade routes and investor confidence",
+    descFr: "Les tensions régionales pourraient affecter les routes commerciales et la confiance des investisseurs",
+    descAr: "يمكن أن تؤثر التوترات الإقليمية على طرق التجارة وثقة المستثمرين",
+    trend: "stable" },
+  { id: 9, category: "technology", probability: 20, impact: 40, level: "low",
+    titleEn: "Cybersecurity threat to critical infra", titleFr: "Menace cyber sur les infrastructures critiques", titleAr: "تهديد cyberinfrastructure للبنية التحتية الحرجة",
+    descEn: "Increasing attack surface on financial and energy infrastructure",
+    descFr: "Surface d'attaque croissante sur les infrastructures financières et énergétiques",
+    descAr: "تزايد مساحة الهجوم على البنية التحتية المالية والطاقوية",
+    trend: "up" },
+];
+
+// ─── VNR 2026 Target Tracker ──────────────────────────────────────────────
+export interface TargetItem {
+  id: number;
+  sdgNumber: number;
+  titleEn: string; titleFr: string; titleAr: string;
+  current: number;
+  target: number;
+  unit: string;
+  statusEn: string; statusFr: string; statusAr: string;
+  statusLevel: "onTrack" | "moderate" | "atRisk" | "achieved";
+  year: number;
+}
+
+export const vnrTargets: TargetItem[] = [
+  { id: 1, sdgNumber: 1, titleEn: "Poverty reduction", titleFr: "Réduction de la pauvreté", titleAr: "تخفيض الفقر",
+    current: 4.8, target: 3.0, unit: "%", statusEn: "Moderate progress", statusFr: "Progrès modéré", statusAr: "تقدم معتدل", statusLevel: "moderate", year: 2030 },
+  { id: 2, sdgNumber: 2, titleEn: "Food security", titleFr: "Sécurité alimentaire", titleAr: "الأمن الغذائي",
+    current: 72, target: 85, unit: "%", statusEn: "At risk", statusFr: "À risque", statusAr: "معرض للخطر", statusLevel: "atRisk", year: 2030 },
+  { id: 3, sdgNumber: 3, titleEn: "Health expenditure", titleFr: "Dépenses de santé", titleAr: "الإنفاق الصحي",
+    current: 6.8, target: 8.5, unit: "% GDP", statusEn: "On track", statusFr: "Sur la bonne voie", statusAr: "في المسار الصحيح", statusLevel: "onTrack", year: 2030 },
+  { id: 4, sdgNumber: 4, titleEn: "Upper secondary enrollment", titleFr: "Taux de scolarisation secondaire", titleAr: "الالتحاق بالتعليم الثانوي",
+    current: 68, target: 85, unit: "%", statusEn: "Moderate progress", statusFr: "Progrès modéré", statusAr: "تقدم معتدل", statusLevel: "moderate", year: 2030 },
+  { id: 5, sdgNumber: 6, titleEn: "Water access (rural)", titleFr: "Accès à l'eau (rural)", titleAr: "الوصول للمياه (ريفي)",
+    current: 84, target: 95, unit: "%", statusEn: "On track", statusFr: "Sur la bonne voie", statusAr: "في المسار الصحيح", statusLevel: "onTrack", year: 2030 },
+  { id: 6, sdgNumber: 7, titleEn: "Renewable energy share", titleFr: "Part des énergies renouvelables", titleAr: "حصة الطاقة المتجددة",
+    current: 3.2, target: 22, unit: "%", statusEn: "At risk", statusFr: "À risque", statusAr: "معرض للخطر", statusLevel: "atRisk", year: 2030 },
+  { id: 7, sdgNumber: 8, titleEn: "GDP growth rate", titleFr: "Taux de croissance du PIB", titleAr: "معدل نمو الناتج المحلي",
+    current: 3.6, target: 4.5, unit: "%", statusEn: "On track", statusFr: "Sur la bonne voie", titleAr: "في المسار الصحيح", statusLevel: "onTrack", year: 2026 },
+  { id: 8, sdgNumber: 9, titleEn: "Non-HC exports", titleFr: "Exportations non-HC", titleAr: "الصادرات غير الهيدروكربونية",
+    current: 7.2, target: 16, unit: "Bn$", statusEn: "At risk", statusFr: "À risque", titleAr: "معرض للخطر", statusLevel: "atRisk", year: 2027 },
+  { id: 9, sdgNumber: 10, titleEn: "Gini coefficient reduction", titleFr: "Réduction du coefficient de Gini", titleAr: "تخفيض معامل جيني",
+    current: 27.6, target: 25.0, unit: "", statusEn: "Moderate progress", statusFr: "Progrès modéré", titleAr: "تقدم معتدل", statusLevel: "moderate", year: 2030 },
+  { id: 10, sdgNumber: 13, titleEn: "Climate action (CO2 reduction)", titleFr: "Action climatique (réduction CO2)", titleAr: "العمل المناخي (تخفيض CO2)",
+    current: 3.2, target: 2.5, unit: "t/cap", statusEn: "Moderate progress", titleFr: "Progrès modéré", titleAr: "تقدم معتدل", statusLevel: "moderate", year: 2030 },
+];
+
+// ─── Period Comparison Data ───────────────────────────────────────────────
+export interface ComparisonItem {
+  key: string;
+  labelEn: string; labelFr: string; labelAr: string;
+  current: number;
+  previous: number;
+  unit: string;
+  direction: "up" | "down";
+  positive: boolean; // true = increase is good
+}
+
+export const periodComparison: ComparisonItem[] = [
+  { key: "gdpGrowth", labelEn: "GDP Growth", labelFr: "Croissance du PIB", labelAr: "نمو الناتج المحلي", current: 3.6, previous: 2.8, unit: "%", direction: "up", positive: true },
+  { key: "inflation", labelEn: "Inflation (CPI)", labelFr: "Inflation (IPC)", labelAr: "التضخم", current: 4.2, previous: 5.5, unit: "%", direction: "down", positive: true },
+  { key: "unemployment", labelEn: "Unemployment", labelFr: "Chômage", labelAr: "البطالة", current: 11.8, previous: 12.3, unit: "%", direction: "down", positive: true },
+  { key: "tradeSurplus", labelEn: "Trade Surplus", labelFr: "Excédent commercial", labelAr: "فائض التجارة", current: 12.8, previous: 10.7, unit: "Bn$", direction: "up", positive: true },
+  { key: "forexReserves", labelEn: "FX Reserves", labelFr: "Réserves de change", labelAr: "احتياطيات النقد", current: 68.5, previous: 65.1, unit: "Bn$", direction: "up", positive: true },
+  { key: "fdi", labelEn: "FDI Inflows", labelFr: "IDE", labelAr: "الاستثمار الأجنبي", current: 1.8, previous: 1.6, unit: "Bn$", direction: "up", positive: true },
+  { key: "investmentRate", labelEn: "Investment Rate", labelFr: "Taux d'investissement", labelAr: "معدل الاستثمار", current: 38.2, previous: 36.8, unit: "%", direction: "up", positive: true },
+  { key: "debtToGdp", labelEn: "Debt-to-GDP", labelFr: "Dette/PIB", labelAr: "الدين/الناتج المحلي", current: 52, previous: 49.5, unit: "%", direction: "up", positive: false },
+  { key: "youthUnemp", labelEn: "Youth Unemployment", labelFr: "Chômage des jeunes", labelAr: "بطالة الشباب", current: 29.5, previous: 30.2, unit: "%", direction: "down", positive: true },
+  { key: "budgetDeficit", labelEn: "Budget Deficit", labelFr: "Déficit budgétaire", labelAr: "عجز الميزانية", current: 3.5, previous: 4.2, unit: "%", direction: "down", positive: true },
+  { key: "nonHcExports", labelEn: "Non-HC Exports", labelFr: "Exportations non-HC", labelAr: "الصادرات غير الهيدروكربونية", current: 7.2, previous: 6.8, unit: "Bn$", direction: "up", positive: true },
+  { key: "ipi", labelEn: "Industrial Production", labelFr: "Production industrielle", labelAr: "الإنتاج الصناعي", current: 4.1, previous: 2.3, unit: "%", direction: "up", positive: true },
+];

@@ -1117,6 +1117,37 @@ export interface Dictionary {
   execBriefStatusInProgress: string;
   execBriefStatusCompleted: string;
   execBriefDisclaimer: string;
+  // ── EXECUTIVE ENHANCEMENTS ──────────────────
+  execTabOverview: string;
+  execTabRisks: string;
+  execTabTargets: string;
+  execTabComparison: string;
+  execRiskTitle: string;
+  execRiskSub: string;
+  execRiskCrit: string;
+  execRiskHigh: string;
+  execRiskMed: string;
+  execRiskLow: string;
+  execRiskHighImpact: string;
+  execRiskMedImpact: string;
+  execRiskLowImpact: string;
+  execRiskProbAxis: string;
+  execRiskProb: string;
+  execRiskImpact: string;
+  execRiskList: string;
+  execTargetTitle: string;
+  execTargetSub: string;
+  execTargetOnTrack: string;
+  execTargetModerate: string;
+  execTargetAtRisk: string;
+  execCompTitle: string;
+  execCompSub: string;
+  execCompPrev: string;
+  execCompCurr: string;
+  execCompTable: string;
+  execCompImproved: string;
+  execCompVs: string;
+  execCompPeriod: string;
   labelSearch: string;
   labelSearchPlaceholder: string;
   labelSearchNoResults: string;
@@ -2317,6 +2348,36 @@ const en: Dictionary = {
   execKpiInvestmentRate: "Investment Rate",
   execTrendTitle: "Monthly Economic Trends",
   execTrendSub: "12-month rolling trends for key indicators",
+  execTabOverview: "Overview",
+  execTabRisks: "Risk Matrix",
+  execTabTargets: "VNR Targets",
+  execTabComparison: "Comparison",
+  execRiskTitle: "Risk Assessment Matrix",
+  execRiskSub: "Probability vs Impact assessment for key economic risks",
+  execRiskCrit: "Critical",
+  execRiskHigh: "High",
+  execRiskMed: "Medium",
+  execRiskLow: "Low",
+  execRiskHighImpact: "High Impact",
+  execRiskMedImpact: "Med. Impact",
+  execRiskLowImpact: "Low Impact",
+  execRiskProbAxis: "Probability",
+  execRiskProb: "Probability",
+  execRiskImpact: "Impact",
+  execRiskList: "All Risks",
+  execTargetTitle: "VNR 2026 Target Tracker",
+  execTargetSub: "Progress toward Voluntary National Review targets",
+  execTargetOnTrack: "On Track",
+  execTargetModerate: "Moderate",
+  execTargetAtRisk: "At Risk",
+  execCompTitle: "Executive Period Comparison",
+  execCompSub: "Current vs previous period for key indicators",
+  execCompPrev: "Previous",
+  execCompCurr: "Current",
+  execCompTable: "Detailed Comparison",
+  execCompImproved: "Improved",
+  execCompVs: "vs",
+  execCompPeriod: "Semi-annual comparison",
   execTrendGdp: "GDP Growth %",
   execTrendInfl: "Inflation %",
   execTrendUnemp: "Unemployment %",
@@ -3585,6 +3646,36 @@ const fr: Dictionary = {
   pmeUnitDensity: "PME",
   pmeChartGuaranteeAmount: "Montant des Garanties de Crédit",
   pmeChartGuaranteeAmountSub: "Milliards DA",
+  execTabOverview: "Vue d'ensemble",
+  execTabRisks: "Matrice des risques",
+  execTabTargets: "Objectifs VNR",
+  execTabComparison: "Comparaison",
+  execRiskTitle: "Matrice d'évaluation des risques",
+  execRiskSub: "Évaluation de la probabilité vs l'impact pour les risques économiques clés",
+  execRiskCrit: "Critique",
+  execRiskHigh: "Élevé",
+  execRiskMed: "Moyen",
+  execRiskLow: "Faible",
+  execRiskHighImpact: "Impact élevé",
+  execRiskMedImpact: "Impact moy.",
+  execRiskLowImpact: "Impact faible",
+  execRiskProbAxis: "Probabilité",
+  execRiskProb: "Probabilité",
+  execRiskImpact: "Impact",
+  execRiskList: "Tous les risques",
+  execTargetTitle: "Suivi des objectifs VNR 2026",
+  execTargetSub: "Progrès vers les objectifs de l'Examen National Volontaire",
+  execTargetOnTrack: "Sur la bonne voie",
+  execTargetModerate: "Progrès modéré",
+  execTargetAtRisk: "À risque",
+  execCompTitle: "Comparaison des périodes",
+  execCompSub: "Indicateurs clés : période actuelle vs précédente",
+  execCompPrev: "Précédent",
+  execCompCurr: "Actuel",
+  execCompTable: "Comparaison détaillée",
+  execCompImproved: "Améliorés",
+  execCompVs: "vs",
+  execCompPeriod: "Comparaison semestrielle",
   pmeChartGuaranteed: "Garanti (Mds DA)",
   pmeChartSolicited: "Sollicité (Mds DA)",
   pmeUnitBda: "Mds DA",
@@ -4789,6 +4880,37 @@ const ar: Dictionary = {
   pmeTypePhysiques: "أشخاص طبيعيين",
   pmeTypeArtisanat: "الحرف",
   pmeSectorServices: "الخدمات",
+  execTabOverview: "نظرة عامة",
+  execTabRisks: "مصوف المخاطر",
+  execTabTargets: "أهداف VNR",
+  execTabComparison: "مقارنى",
+  execRiskTitle: "مصوف تقيم المخاطر",
+  execRiskSub: "تقيم الحاملية مآاول التػير",
+  execRiskCrit: "حرج",
+  execRiskHigh: "مرتع",
+  execRiskMed: "متوط",
+  execRiskLow: "منخف",
+  execRiskHighImpact: "تسثير مرتع",
+  execRiskMedImpact: "تسثير متوط",
+  execRiskLowImpact: "تسثير منخف",
+  execRiskProbAxis: "الحامالية",
+  execRiskProb: "الحامهيي",
+  execRiskImpact: "التسثير",
+  execRiskList: "جميع المخاطر",
+  execTargetTitle: "متبع أهداف VNR 2026",
+  execTargetSub: "التقُم نحو أهداف التقير الحاني",
+  execTargetOnTrack: "في المسالصحال",
+  execTargetModerate: "تقُم معتوف",
+  execTargetAtRisk: "معرض للخطر",
+  execCompTitle: "مقارنة الفترات",
+  execCompSub: "المؤشؑات ال؟رئية: ال؟جالة الحنوي",
+  execCompPrev: "السانبق",
+  execCompCurr: "الحالي",
+  execCompTable: "مقارن29 تفصيلية",
+  execCompImproved: "تحسن",
+  execCompVs: "مقاول",
+  execCompPeriod: "مقارنة نصف سنوي",
+  labelSearch: "البح",
   pmeSectorBtph: "الأشغال العمومية",
   pmeSectorMfg: "التصنيع",
   pmeSectorAgri: "الفلاحة",
