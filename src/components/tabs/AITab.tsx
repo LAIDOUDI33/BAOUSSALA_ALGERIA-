@@ -105,6 +105,10 @@ function ChatPanel({ t, isRtl }: AITabProps) {
 
 const ARABIC_TOPICS = ["تقرير شامل عن الوضع الاقتصادي", "تحليل قطاع المحروقات", "تقرير سوق العمل", "تحليل التجارة الخارجية", "تقرير التضخم والأسعار", "تحليل التنمية الإقليمية", "تقرير أهداف التنمية المستدامة", "تحليل القطاع الصناعي", "تقرير المالية العامة", "تحليل القطاع الزراعي"];
 
+const CLIENT_TIMEOUT_MS = 90_000; // 90s client-side timeout (server has 120s)
+const MAX_RETRIES = 2;
+const RETRY_DELAY_MS = 3_000;
+
 function ReportPanel({ t, isRtl }: AITabProps) {
   const [topic, setTopic] = useState("");
   const [customTopic, setCustomTopic] = useState("");
@@ -113,19 +117,99 @@ function ReportPanel({ t, isRtl }: AITabProps) {
   const [generating, setGenerating] = useState(false);
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState("");
+  const [retryCount, setRetryCount] = useState(0);
+  const [elapsedSec, setElapsedSec] = useState(0);
+  const abortRef = useRef<AbortController | null>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const selectedTopic = customTopic || topic;
 
-  const generateReport = async () => {
+  // Elapsed time counter
+  useEffect(() => {
+    if (generating) {
+      setElapsedSec(0);
+      timerRef.current = setInterval(() => setElapsedSec(s => s + 1), 1000);
+    } else {
+      if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
+    }
+    return () => { if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; } };
+  }, [generating]);
+
+  const generateReport = async (attempt = 0) => {
     if (!selectedTopic || generating) return;
-    setGenerating(true); setReport(""); setError("");
+    setGenerating(true); setReport(""); setError(""); setRetryCount(attempt);
+
+    // Abort any previous request
+    if (abortRef.current) abortRef.current.abort();
+    const controller = new AbortController();
+    abortRef.current = controller;
+
+    // Client-side timeout
+    const timeoutId = setTimeout(() => controller.abort(), CLIENT_TIMEOUT_MS);
+
     try {
-      const res = await fetch("/api/ai/report", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ topic: selectedTopic, lang }) });
+      const res = await fetch("/api/ai/report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ topic: selectedTopic, lang }),
+        signal: controller.signal,
+      });
+      clearTimeout(timeoutId);
       const data = await res.json();
-      if (data.success) setReport(data.report);
-      else if (data.error === "RATE_LIMIT") setError(isRtl ? "⏳ تم تجاوز حد الطلبات حالياً. يرجى المحاولة لاحقاً." : "⏳ Limite de requêtes atteinte. Veuillez réessayer plus tard.");
-      else setError(data.error || t.aiErrorTitle);
-    } catch { setError(t.aiErrorTitle); }
-    finally { setGenerating(false); }
+
+      if (data.success) {
+        setReport(data.report);
+      } else if (data.error === "RATE_LIMIT") {
+        setError(isRtl ? "⏳ تم تجاوز حد الطلبات حالياً. يرجى المحاولة لاحقاً." : "⏳ Limite de requêtes atteinte. Veuillez réessayer plus tard.");
+      } else if (data.error === "TIMEOUT" || data.error === "EMPTY_REPORT") {
+        // Auto-retry on timeout or empty report
+        if (attempt < MAX_RETRIES) {
+          setGenerating(false);
+          await new Promise(r => setTimeout(r, RETRY_DELAY_MS));
+          generateReport(attempt + 1);
+          return;
+        }
+        setError(isRtl
+          ? `⏱️ انتهت مهلة التوليد بعد عدة محاولات. يرجى المحاولة لاحقاً.`
+          : `⏱️ Délai d'attente dépassé après plusieurs tentatives. Veuillez réessayer plus tard.`);
+      } else {
+        // Auto-retry on server errors
+        if (attempt < MAX_RETRIES && (!res.ok || !data.success)) {
+          setGenerating(false);
+          await new Promise(r => setTimeout(r, RETRY_DELAY_MS));
+          generateReport(attempt + 1);
+          return;
+        }
+        setError(data.error || t.aiErrorTitle);
+      }
+    } catch (err: unknown) {
+      clearTimeout(timeoutId);
+      if (err instanceof DOMException && err.name === "AbortError") {
+        // Client-side timeout — auto-retry
+        if (attempt < MAX_RETRIES) {
+          setGenerating(false);
+          await new Promise(r => setTimeout(r, RETRY_DELAY_MS));
+          generateReport(attempt + 1);
+          return;
+        }
+        setError(isRtl
+          ? `⏱️ انتهت مهلة الاتصال (${Math.round(CLIENT_TIMEOUT_MS / 1000)}ث). الخادم قد يكون مشغولاً، يرجى المحاولة لاحقاً.`
+          : `⏱️ Délai de connexion dépassé (${Math.round(CLIENT_TIMEOUT_MS / 1000)}s). Le serveur est peut-être occupé, veuillez réessayer plus tard.`);
+      } else {
+        // Network error — auto-retry
+        if (attempt < MAX_RETRIES) {
+          setGenerating(false);
+          await new Promise(r => setTimeout(r, RETRY_DELAY_MS));
+          generateReport(attempt + 1);
+          return;
+        }
+        setError(isRtl
+          ? `❌ خطأ في الاتصال بالخادم بعد عدة محاولات. حاول تحديث الصفحة.`
+          : `❌ Erreur de connexion au serveur après plusieurs tentatives. Essayez de rafraîchir la page.`);
+      }
+    } finally {
+      setGenerating(false);
+      abortRef.current = null;
+    }
   };
   const copyReport = async () => { if (!report) return; await navigator.clipboard.writeText(report); setCopied(true); setTimeout(() => setCopied(false), 2000); };
 
@@ -148,7 +232,7 @@ function ReportPanel({ t, isRtl }: AITabProps) {
           </Button>
         </CardContent>
       </Card>
-      {generating && (<Card className="border-0 shadow-sm"><CardContent className="p-6 space-y-3"><Skeleton className="h-5 w-3/4" /><Skeleton className="h-4 w-full" /><Skeleton className="h-4 w-5/6" /><Skeleton className="h-4 w-full" /><Skeleton className="h-4 w-4/6" /><div className="flex items-center gap-2 text-sm text-muted-foreground pt-2"><Loader2 className="w-4 h-4 animate-spin" />{t.aiReportGenerating}</div></CardContent></Card>)}
+      {generating && (<Card className="border-0 shadow-sm"><CardContent className="p-6 space-y-3"><Skeleton className="h-5 w-3/4" /><Skeleton className="h-4 w-full" /><Skeleton className="h-4 w-5/6" /><Skeleton className="h-4 w-full" /><Skeleton className="h-4 w-4/6" /><div className="flex items-center justify-between pt-2"><div className="flex items-center gap-2 text-sm text-muted-foreground"><Loader2 className="w-4 h-4 animate-spin" />{retryCount > 0 ? `${t.aiReportGenerating} (${isRtl ? 'محاولة' : 'Tentative'} ${retryCount + 1}/${MAX_RETRIES + 1})` : t.aiReportGenerating}</div><span className="text-xs text-muted-foreground tabular-nums">{elapsedSec}s</span></div></CardContent></Card>)}
       {error && (<Card className="border border-red-200 dark:border-red-800/50"><CardContent className="p-4 flex items-center justify-between"><p className="text-sm text-red-600 dark:text-red-400">{error}</p><Button variant="outline" size="sm" onClick={generateReport} className="gap-1.5">{t.aiErrorRetry}</Button></CardContent></Card>)}
       {report && !generating && (<Card className="border-0 shadow-sm"><CardHeader className="pb-2"><div className="flex items-center justify-between"><CardTitle className="text-sm font-medium">{selectedTopic}</CardTitle><Button variant="ghost" size="sm" onClick={copyReport} className="gap-1.5 text-xs">{copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}{copied ? t.aiReportCopied : t.aiReportCopy}</Button></div></CardHeader><CardContent><div className={`prose prose-sm dark:prose-invert max-w-none text-sm leading-relaxed whitespace-pre-wrap ${isRtl ? "font-[\'Noto Sans Arabic\',sans-serif]" : ""}`} style={lang === "ar" ? { direction: "rtl", textAlign: "right" } : {}}>{report}</div><Separator className="my-4" /><p className="text-xs text-muted-foreground italic">{t.aiReportDisclaimer}</p></CardContent></Card>)}
     </div>
