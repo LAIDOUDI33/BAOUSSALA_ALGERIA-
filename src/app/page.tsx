@@ -20,7 +20,9 @@ import {
 } from "@/lib/algeria-data";
 
 import { useI18n } from "@/lib/i18n/context";
+import { useTimeRange } from "@/lib/time-range-context";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { TimeRangeSelector } from "@/components/time-range-selector";
 
 import WilayaMapTab from "@/components/tabs/WilayaMapTab";
 import { IndustryKpiTab } from "@/components/tabs/IndustryKpiTab";
@@ -45,7 +47,7 @@ import {
   Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, ComposedChart,
   Line, LineChart, Pie, PieChart, RadarChart, PolarGrid, PolarAngleAxis,
   PolarRadiusAxis, Radar, XAxis, YAxis, Tooltip as RTooltip, Legend, ResponsiveContainer,
-  ScatterChart, Scatter, ZAxis,
+  ScatterChart, Scatter, ZAxis, Brush,
 } from "recharts";
 import {
   TrendingUp, TrendingDown, ArrowUpRight, ArrowDownRight,
@@ -109,6 +111,7 @@ function KpiCard({ title, value, unit, change, changeDir, icon: Icon, color }: {
 // MAIN PAGE
 export default function AlgeriaDashboard() {
   const { t, isRtl, locale } = useI18n();
+  const { filterByYear } = useTimeRange();
 
   // Arabic font style
   const arabicFontStyle = locale === "ar"
@@ -158,7 +161,10 @@ export default function AlgeriaDashboard() {
                 </p>
               </div>
             </div>
-            <LanguageSwitcher />
+            <div className="flex items-center gap-2">
+              <TimeRangeSelector />
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       </header>
@@ -187,9 +193,9 @@ export default function AlgeriaDashboard() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartGdpGrowth} subtitle={t.chartGdpGrowthSub} unit="%" data={gdpAnnual}>
+              <ChartCard title={t.chartGdpGrowth} subtitle={t.chartGdpGrowthSub} unit="%" data={filterByYear(gdpAnnual)}>
                 <ChartContainer config={{ gdpBillionUsd: { label: t.chartGdpBnUsd, color: COLORS.emerald }, growthPct: { label: t.chartGrowthPct, color: COLORS.blue } }} className="h-[320px] w-full">
-                  <ComposedChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(gdpAnnual)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
@@ -198,18 +204,19 @@ export default function AlgeriaDashboard() {
                     <Legend content={<ChartLegendContent />} />
                     <Bar yAxisId="left" dataKey="gdpBillionUsd" fill={COLORS.emerald} radius={[2, 2, 0, 0]} opacity={0.8} name={t.chartGdpBnUsd} />
                     <Line yAxisId="right" type="monotone" dataKey="growthPct" stroke={COLORS.blue} strokeWidth={2} dot={{ r: 3 }} name={t.chartGrowthPct} />
+                    <Brush dataKey="year" height={24} stroke="#059669" fill="#d1fae5" fillOpacity={0.4} travellerWidth={6} tick={{ fontSize: 9 }} />
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title={t.chartGdpSector} unit="%" data={gdpBySector} subtitle={t.chartGdpSectorSub}>
+              <ChartCard title={t.chartGdpSector} unit="%" data={filterByYear(gdpBySector)} subtitle={t.chartGdpSectorSub}>
                 <ChartContainer config={{
                   agriculture: { label: t.sectorAgriculture, color: COLORS.emerald },
                   industry: { label: t.sectorIndustry, color: COLORS.blue },
                   construction: { label: t.sectorConstruction, color: COLORS.amber },
                   services: { label: t.sectorServices, color: COLORS.purple },
                 }} className="h-[320px] w-full">
-                  <AreaChart data={gdpBySector} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(gdpBySector)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 100]} />
@@ -219,13 +226,14 @@ export default function AlgeriaDashboard() {
                     <Area type="monotone" stackId="1" dataKey="construction" fill={COLORS.amber} stroke={COLORS.amber} fillOpacity={0.7} name={t.sectorConstruction} />
                     <Area type="monotone" stackId="1" dataKey="industry" fill={COLORS.blue} stroke={COLORS.blue} fillOpacity={0.7} name={t.sectorIndustry} />
                     <Area type="monotone" stackId="1" dataKey="agriculture" fill={COLORS.emerald} stroke={COLORS.emerald} fillOpacity={0.7} name={t.sectorAgriculture} />
+                    <Brush dataKey="year" height={24} stroke="#059669" fill="#d1fae5" fillOpacity={0.4} travellerWidth={6} tick={{ fontSize: 9 }} />
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartQuarterlyGdp} unit="%" data={gdpQuarterly} subtitle={t.chartQuarterlyGdpSub}>
+              <ChartCard title={t.chartQuarterlyGdp} unit="%" data={gdpQuarterly} subtitle={t.chartQuarterlyGdpSub} enableTableToggle={false}>
                 <ChartContainer config={{ growthPct: { label: t.chartGrowthPct, color: COLORS.emerald } }} className="h-[280px] w-full">
                   <BarChart data={gdpQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -241,14 +249,15 @@ export default function AlgeriaDashboard() {
                 </ChartContainer>
               </ChartCard>
 
-              <ChartCard title={t.chartGdpPerCapita} unit="$" data={gdpAnnual} subtitle={t.chartGdpPerCapitaSub}>
+              <ChartCard title={t.chartGdpPerCapita} unit="$" data={filterByYear(gdpAnnual)} subtitle={t.chartGdpPerCapitaSub}>
                 <ChartContainer config={{ perCapitaUsd: { label: t.chartGdpCapita, color: COLORS.blue } }} className="h-[280px] w-full">
-                  <AreaChart data={gdpAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(gdpAnnual)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Area type="monotone" dataKey="perCapitaUsd" fill={COLORS.blueLight} stroke={COLORS.blue} strokeWidth={2} fillOpacity={0.4} name={t.chartGdpCapita} />
+                    <Brush dataKey="year" height={24} stroke="#059669" fill="#d1fae5" fillOpacity={0.4} travellerWidth={6} tick={{ fontSize: 9 }} />
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>

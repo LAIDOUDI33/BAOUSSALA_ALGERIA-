@@ -2,7 +2,8 @@
 
 import React, { useRef, useCallback, useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Download, FileSpreadsheet, Image, FileImage } from "lucide-react";
+import { Download, FileSpreadsheet, Image, FileImage, TableProperties } from "lucide-react";
+import { DataTableView } from "@/components/data-table-view";
 
 // ─── CSV Export Helper ─────────────────────────────────────────────────────
 function downloadCsv(data: Record<string, unknown>[], filename: string) {
@@ -124,6 +125,20 @@ function ExportDropdown({ onExport, hasData }: { onExport: (fmt: "png" | "jpg" |
   );
 }
 
+// ─── Table Toggle Button ──────────────────────────────────────────────────
+function TableToggle({ showTable, onToggle, hasData }: { showTable: boolean; onToggle: () => void; hasData: boolean }) {
+  if (!hasData) return null;
+  return (
+    <button
+      onClick={onToggle}
+      className={`p-1.5 rounded-md transition-colors ${showTable ? "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400" : "text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50"}`}
+      title={showTable ? "Show chart" : "Show data table"}
+    >
+      <TableProperties className="w-3.5 h-3.5" />
+    </button>
+  );
+}
+
 // ─── Main Component ────────────────────────────────────────────────────────
 export function ChartCard({
   title,
@@ -133,6 +148,7 @@ export function ChartCard({
   unit,
   data,
   exportId,
+  enableTableToggle = true,
 }: {
   title: string;
   subtitle?: string;
@@ -141,8 +157,11 @@ export function ChartCard({
   unit?: string;
   data?: Record<string, unknown>[];
   exportId?: string;
+  enableTableToggle?: boolean;
 }) {
   const cardRef = useRef<HTMLDivElement>(null);
+  const [showTable, setShowTable] = useState(false);
+  const hasData = !!(data && data.length > 0);
   const safeId = exportId || title.replace(/[^a-zA-Z0-9]/g, "_").slice(0, 40);
 
   const handleExport = useCallback((format: "png" | "jpg" | "svg" | "csv") => {
@@ -161,12 +180,15 @@ export function ChartCard({
             <CardTitle className="text-sm font-semibold">{title}</CardTitle>
             {subtitle && <CardDescription className="text-xs">{subtitle}</CardDescription>}
           </div>
-          <ExportDropdown onExport={handleExport} hasData={!!(data && data.length > 0)} />
+          <div className="flex items-center gap-1">
+            <TableToggle showTable={showTable} onToggle={() => setShowTable(v => !v)} hasData={hasData && enableTableToggle} />
+            <ExportDropdown onExport={handleExport} hasData={hasData} />
+          </div>
         </div>
       </CardHeader>
       <CardContent className="px-4 pb-4 relative">
         {unit && typeof unit === "string" && <UnitLabel unit={unit} />}
-        {children}
+        {showTable && hasData ? <DataTableView data={data} maxHeight="max-h-[320px]" /> : children}
       </CardContent>
     </Card>
   );

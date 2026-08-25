@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { Providers } from "@/components/providers/query-provider";
 import { I18nProvider } from "@/lib/i18n/context";
+import { TimeRangeProvider } from "@/lib/time-range-context";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const geistSans = Geist({
@@ -49,7 +50,9 @@ export default function RootLayout({
         <Providers>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
             <I18nProvider>
-              {children}
+              <TimeRangeProvider>
+                {children}
+              </TimeRangeProvider>
             </I18nProvider>
           </ThemeProvider>
         </Providers>
