@@ -241,7 +241,7 @@ export default function AlgeriaDashboard() {
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[-8, 6]} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Bar dataKey="growthPct" radius={[2, 2, 0, 0]} name={t.chartGrowthPct}>
-                      {gdpQuarterly.map((d, i) => (
+                      {filterByYear(gdpQuarterly).map((d, i) => (
                         <Cell key={i} fill={d.growthPct >= 0 ? COLORS.emerald : COLORS.red} />
                       ))}
                     </Bar>
@@ -464,9 +464,13 @@ export default function AlgeriaDashboard() {
                   ipi: { label: t.chartIpiProd, color: COLORS.emerald },
                   ippi: { label: t.chartIppiPrices, color: COLORS.red },
                 }} className="h-[340px] w-full">
-                  <LineChart data={ipiQuarterly.map((d, i) => ({
-                    period: d.period, ipi: d.ipi, ippi: ippiQuarterly[i]?.ippi || 0
-                  }))} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={(() => {
+                    const fIpi = filterByYear(ipiQuarterly);
+                    const fIppi = filterByYear(ippiQuarterly);
+                    return fIpi.map((d, i) => ({
+                      period: d.period, ipi: d.ipi, ippi: fIppi[i]?.ippi || 0
+                    }));
+                  })()} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
