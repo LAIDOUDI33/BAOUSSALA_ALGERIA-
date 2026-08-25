@@ -233,9 +233,9 @@ export default function AlgeriaDashboard() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartQuarterlyGdp} unit="%" data={gdpQuarterly} subtitle={t.chartQuarterlyGdpSub} enableTableToggle={false}>
+              <ChartCard title={t.chartQuarterlyGdp} unit="%" data={filterByYear(gdpQuarterly)} subtitle={t.chartQuarterlyGdpSub} enableTableToggle={false}>
                 <ChartContainer config={{ growthPct: { label: t.chartGrowthPct, color: COLORS.emerald } }} className="h-[280px] w-full">
-                  <BarChart data={gdpQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <BarChart data={filterByYear(gdpQuarterly)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[-8, 6]} />
@@ -273,9 +273,9 @@ export default function AlgeriaDashboard() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartCpiMonthly} unit="Indice" data={cpiMonthly} subtitle={t.chartCpiMonthlySub}>
+              <ChartCard title={t.chartCpiMonthly} unit="Indice" data={filterByYear(cpiMonthly)} subtitle={t.chartCpiMonthlySub}>
                 <ChartContainer config={{ yoyPct: { label: t.chartInflationYoy, color: COLORS.red }, foodYoy: { label: t.chartFoodYoy, color: COLORS.amber }, coreYoy: { label: t.chartCoreYoy, color: COLORS.blue } }} className="h-[340px] w-full">
-                  <LineChart data={cpiMonthly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(cpiMonthly)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="month" tick={{ fontSize: 9 }} tickLine={false} interval={5} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -290,7 +290,7 @@ export default function AlgeriaDashboard() {
 
               <ChartCard title={t.chartCpiLevel} subtitle={t.chartCpiLevelSub}>
                 <ChartContainer config={{ ipc: { label: t.chartIpcIndex, color: COLORS.rose } }} className="h-[340px] w-full">
-                  <AreaChart data={cpiMonthly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(cpiMonthly)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="month" tick={{ fontSize: 9 }} tickLine={false} interval={5} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[200, 360]} />
@@ -341,7 +341,7 @@ export default function AlgeriaDashboard() {
                 manufacturing: { label: t.sectorManufacturing, color: COLORS.blue },
                 energy: { label: t.sectorEnergy, color: COLORS.red },
               }} className="h-[300px] w-full">
-                <LineChart data={ippiQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                <LineChart data={filterByYear(ippiQuarterly)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                   <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -366,7 +366,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartTradeAnnual} subtitle={t.chartTradeAnnualSub}>
                 <ChartContainer config={{ exportsBn: { label: t.chartExports, color: COLORS.emerald }, importsBn: { label: t.chartImports, color: COLORS.red }, balanceBn: { label: t.chartBalance, color: COLORS.blue } }} className="h-[340px] w-full">
-                  <ComposedChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(tradeAnnual)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -381,7 +381,7 @@ export default function AlgeriaDashboard() {
 
               <ChartCard title={t.chartHydroShare} subtitle={t.chartHydroShareSub}>
                 <ChartContainer config={{ hydroPct: { label: t.chartHydroPct, color: COLORS.amber } }} className="h-[340px] w-full">
-                  <AreaChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(tradeAnnual)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[60, 100]} />
@@ -445,7 +445,7 @@ export default function AlgeriaDashboard() {
                   energy: { label: t.sectorEnergy, color: COLORS.cyan },
                   ipi: { label: t.chartIpiTotal, color: COLORS.emerald },
                 }} className="h-[340px] w-full">
-                  <LineChart data={ipiQuarterly} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(ipiQuarterly)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="period" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[75, 125]} />
@@ -481,7 +481,7 @@ export default function AlgeriaDashboard() {
 
             <ChartCard title={t.chartConstruction} subtitle={t.chartConstructionSub}>
               <ChartContainer config={{ index: { label: t.chartConstructionIdx, color: COLORS.amber } }} className="h-[250px] w-full">
-                <BarChart data={constructionIndex} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                <BarChart data={filterByYear(constructionIndex)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                   <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[100, 170]} />
@@ -516,7 +516,7 @@ export default function AlgeriaDashboard() {
                   unemploymentPct: { label: t.chartTotalPct, color: COLORS.red },
                   youthUnemp: { label: t.chartYouthPct, color: COLORS.amber },
                 }} className="h-[320px] w-full">
-                  <LineChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(laborMarket)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -534,7 +534,7 @@ export default function AlgeriaDashboard() {
                   femalePartic: { label: t.chartFemPartic, color: COLORS.purple },
                   informalPct: { label: t.chartInformalPct, color: COLORS.slate },
                 }} className="h-[320px] w-full">
-                  <LineChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(laborMarket)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[10, 50]} />
@@ -550,7 +550,7 @@ export default function AlgeriaDashboard() {
 
             <ChartCard title={t.chartEmpPop} subtitle={t.chartEmpPopSub}>
               <ChartContainer config={{ employmentPop: { label: t.chartEmpPopPct, color: COLORS.blue } }} className="h-[250px] w-full">
-                <BarChart data={laborMarket} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                <BarChart data={filterByYear(laborMarket)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                   <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[35, 42]} />
@@ -570,9 +570,9 @@ export default function AlgeriaDashboard() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartPopGrowth} unit="M" data={demographics} subtitle={t.chartPopGrowthSub}>
+              <ChartCard title={t.chartPopGrowth} unit="M" data={filterByYear(demographics)} subtitle={t.chartPopGrowthSub}>
                 <ChartContainer config={{ populationM: { label: t.chartPopulationM, color: COLORS.purple } }} className="h-[300px] w-full">
-                  <AreaChart data={demographics} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(demographics)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -604,7 +604,7 @@ export default function AlgeriaDashboard() {
                   deathRate: { label: t.chartDeathRate, color: COLORS.red },
                   fertilityRate: { label: t.chartFertilityRate, color: COLORS.amber },
                 }} className="h-[300px] w-full">
-                  <LineChart data={demographics} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(demographics)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -623,7 +623,7 @@ export default function AlgeriaDashboard() {
                   enrollmentSecondary: { label: t.chartSecondary, color: COLORS.blue },
                   enrollmentHigher: { label: t.chartHigher, color: COLORS.purple },
                 }} className="h-[300px] w-full">
-                  <AreaChart data={education} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(education)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -644,7 +644,7 @@ export default function AlgeriaDashboard() {
                 secondaryNet: { label: t.chartSecondaryNet, color: COLORS.amber },
                 higherGross: { label: t.chartHigherGross, color: COLORS.purple },
               }} className="h-[280px] w-full">
-                <LineChart data={education} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                <LineChart data={filterByYear(education)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                   <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[50, 100]} />
@@ -674,7 +674,7 @@ export default function AlgeriaDashboard() {
                   expenditurePctGdp: { label: t.chartExpenditure, color: COLORS.red },
                   deficitPctGdp: { label: t.chartDeficit, color: COLORS.amber },
                 }} className="h-[340px] w-full">
-                  <ComposedChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(fiscalData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -692,7 +692,7 @@ export default function AlgeriaDashboard() {
                   savingsRate: { label: t.chartSavingsRate, color: COLORS.emerald },
                   investRate: { label: t.chartInvestRate, color: COLORS.blue },
                 }} className="h-[340px] w-full">
-                  <AreaChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(fiscalData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[30, 55]} />
@@ -707,7 +707,7 @@ export default function AlgeriaDashboard() {
 
             <ChartCard title={t.chartDebt} subtitle={t.chartDebtSub}>
               <ChartContainer config={{ debtPctGdp: { label: t.chartDebtGdp, color: COLORS.red } }} className="h-[280px] w-full">
-                <AreaChart data={fiscalData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                <AreaChart data={filterByYear(fiscalData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                   <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 50]} />
@@ -795,7 +795,7 @@ export default function AlgeriaDashboard() {
                   sudUnemp: { label: t.labelSud, color: COLORS.red },
                   hpUnemp: { label: t.labelHautsPlateaux, color: COLORS.purple },
                 }} className="h-[340px] w-full">
-                  <LineChart data={regionalTimeSeries} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(regionalTimeSeries)} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 20]} />
@@ -821,7 +821,7 @@ export default function AlgeriaDashboard() {
                   sudGdpPct: { label: t.labelSud, color: COLORS.red },
                   hpGdpPct: { label: t.labelHautsPlateaux, color: COLORS.purple },
                 }} className="h-[340px] w-full">
-                  <AreaChart data={regionalTimeSeries} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(regionalTimeSeries)} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 45]} />
@@ -913,7 +913,7 @@ export default function AlgeriaDashboard() {
                   sudHDI: { label: t.chartSudHDI, color: COLORS.red },
                   hpHDI: { label: t.chartHPHDI, color: COLORS.purple },
                 }} className="h-[340px] w-full">
-                  <LineChart data={regionalHDI} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(regionalHDI)} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0.64, 0.84]} />
@@ -1090,7 +1090,7 @@ export default function AlgeriaDashboard() {
                   sud: { label: t.labelSud, color: COLORS.red },
                   hp: { label: t.labelHautsPlateaux, color: COLORS.purple },
                 }} className="h-[340px] w-full">
-                  <AreaChart data={regionalUrbanization} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(regionalUrbanization)} margin={{ top: 5, right: 10, left: isRtl ? 10 : -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[40, 75]} />
@@ -1273,7 +1273,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartHydroRevenue} subtitle={t.chartHydroRevenueSub}>
                 <ChartContainer config={{ hydroRevBn: { label: t.chartHydroRevLabel, color: COLORS.amber }, exportsBn: { label: t.chartExportsLabel, color: COLORS.emerald } }} className="h-[320px] w-full">
-                  <ComposedChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(hydrocarbons)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1286,7 +1286,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartHydroVsNonHydro} subtitle={t.chartHydroVsNonHydroSub}>
                 <ChartContainer config={{ hydroExports: { label: t.chartHydroExportLabel, color: COLORS.amber }, nonHydroExports: { label: t.chartNonHydroExportLabel, color: COLORS.blue } }} className="h-[320px] w-full">
-                  <AreaChart data={tradeAnnual} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(tradeAnnual)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1301,7 +1301,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartOilPrice} subtitle={t.chartOilPriceSub}>
                 <ChartContainer config={{ oilPrice: { label: t.chartOilPriceLabel, color: COLORS.red } }} className="h-[280px] w-full">
-                  <AreaChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(hydrocarbons)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1312,7 +1312,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartHydroGdp} subtitle={t.chartHydroGdpSub}>
                 <ChartContainer config={{ gdpContribPct: { label: t.kpiHydroGdpShare, color: COLORS.purple } }} className="h-[280px] w-full">
-                  <AreaChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(hydrocarbons)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[15, 40]} />
@@ -1325,7 +1325,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartOilProduction} subtitle={t.chartOilProductionSub}>
                 <ChartContainer config={{ oilProdMbpd: { label: t.chartOilProdLabel, color: COLORS.amber }, gasProdBcm: { label: t.chartGasProdLabel, color: COLORS.blue } }} className="h-[300px] w-full">
-                  <ComposedChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(hydrocarbons)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} domain={[0.8, 1.7]} />
@@ -1356,7 +1356,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartLNGExports} subtitle={t.chartLNGExportsSub}>
                 <ChartContainer config={{ lngExportsBcm: { label: t.chartLNGLabel, color: COLORS.cyan } }} className="h-[280px] w-full">
-                  <AreaChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(hydrocarbons)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1367,7 +1367,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartRefining} subtitle={t.chartRefiningSub}>
                 <ChartContainer config={{ refiningKbpd: { label: t.chartRefiningLabel, color: COLORS.slate } }} className="h-[280px] w-full">
-                  <BarChart data={hydrocarbons} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <BarChart data={filterByYear(hydrocarbons)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[400, 580]} />
@@ -1399,9 +1399,9 @@ export default function AlgeriaDashboard() {
               <KpiCard title={t.kpiTractorFleet} value="160" unit="K" icon={Truck} color={COLORS.slate} change={3.2} changeDir="up" />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartCerealProd} data={agricultureData} subtitle={t.chartCerealProdSub}>
+              <ChartCard title={t.chartCerealProd} data={filterByYear(agricultureData)} subtitle={t.chartCerealProdSub}>
                 <ChartContainer config={{ cerealProdMt: { label: t.chartCerealLabel, color: COLORS.emerald }, selfSufficCereals: { label: t.chartSelfSufficLabel, color: COLORS.amber } }} className="h-[320px] w-full">
-                  <ComposedChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(agricultureData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
@@ -1415,7 +1415,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartVegFruitProd} subtitle={t.chartVegFruitProdSub}>
                 <ChartContainer config={{ vegProdMt: { label: t.chartVegLabel, color: COLORS.emerald }, fruitProdMt: { label: t.chartFruitLabel, color: COLORS.rose } }} className="h-[320px] w-full">
-                  <AreaChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(agricultureData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1430,7 +1430,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartLivestock} subtitle={t.chartLivestockSub}>
                 <ChartContainer config={{ milkProdMl: { label: t.chartMilkLabel, color: COLORS.blue }, meatProdMt: { label: t.chartMeatLabel, color: COLORS.red } }} className="h-[300px] w-full">
-                  <LineChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(agricultureData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1443,7 +1443,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartLandUse} subtitle={t.chartLandUseSub}>
                 <ChartContainer config={{ irrigatedLandMha: { label: t.chartIrrigatedLabel, color: COLORS.cyan }, totalLandMha: { label: t.chartTotalLandLabel, color: COLORS.slate } }} className="h-[300px] w-full">
-                  <AreaChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(agricultureData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[0, 10]} />
@@ -1458,7 +1458,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartOliveDateProd} subtitle={t.chartOliveDateProdSub}>
                 <ChartContainer config={{ oliveProdMt: { label: t.chartOliveLabel, color: COLORS.emerald }, dateProdMt: { label: t.chartDateLabel, color: COLORS.amber } }} className="h-[300px] w-full">
-                  <LineChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(agricultureData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1471,7 +1471,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartAgriExports} subtitle={t.chartAgriExportsSub}>
                 <ChartContainer config={{ agriExportsBn: { label: t.chartAgriExportsLabel, color: COLORS.blue } }} className="h-[300px] w-full">
-                  <AreaChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(agricultureData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1484,7 +1484,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartPoultryProd} subtitle={t.chartPoultryProdSub}>
                 <ChartContainer config={{ poultryProdMt: { label: t.chartPoultryLabel, color: COLORS.amber } }} className="h-[280px] w-full">
-                  <AreaChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(agricultureData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1495,7 +1495,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartCerealImports} subtitle={t.chartCerealImportsSub}>
                 <ChartContainer config={{ cerealImportsMt: { label: t.chartCerealImportLabel, color: COLORS.red }, cerealProdMt: { label: t.chartCerealLabel, color: COLORS.emerald } }} className="h-[280px] w-full">
-                  <ComposedChart data={agricultureData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(agricultureData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1544,7 +1544,7 @@ export default function AlgeriaDashboard() {
                   electrics: { label: t.chartElectricLabel, color: COLORS.cyan },
                   pharma: { label: t.chartPharmaLabel, color: COLORS.purple },
                 }} className="h-[380px] w-full">
-                  <LineChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(manufacturingData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[70, 135]} />
@@ -1591,7 +1591,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartManufBuildingPaper} subtitle={t.chartManufBuildingPaperSub}>
                 <ChartContainer config={{ buildingMat: { label: t.chartBuildingMatLabel, color: COLORS.orange }, paper: { label: t.chartPaperLabel, color: COLORS.rose } }} className="h-[300px] w-full">
-                  <LineChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(manufacturingData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[80, 120]} />
@@ -1604,7 +1604,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartManufEmployCapacity} subtitle={t.chartManufEmployCapacitySub}>
                 <ChartContainer config={{ manufEmployK: { label: t.chartEmployLabel, color: COLORS.purple }, capacityUtilPct: { label: t.chartCapacityLabel, color: COLORS.blue }, manufExportsBn: { label: t.chartManufExportLabel, color: COLORS.emerald } }} className="h-[300px] w-full">
-                  <ComposedChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(manufacturingData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
@@ -1621,7 +1621,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartManufGDP} subtitle={t.chartManufGDPSub}>
                 <ChartContainer config={{ gdpContribPct: { label: t.chartManufGDPLabel, color: COLORS.teal }, privateSharePct: { label: t.kpiPrivateShare, color: COLORS.amber } }} className="h-[280px] w-full">
-                  <ComposedChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(manufacturingData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} domain={[4, 7]} />
@@ -1635,7 +1635,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartManufFDI} subtitle={t.chartManufFDISub}>
                 <ChartContainer config={{ fdiBn: { label: t.chartManufFDILabel, color: COLORS.cyan }, productivityIndex: { label: t.chartProductivityLabel, color: COLORS.emerald } }} className="h-[280px] w-full">
-                  <ComposedChart data={manufacturingData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(manufacturingData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
@@ -1660,7 +1660,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartHousingUnits} subtitle={t.chartHousingUnitsSub}>
                 <ChartContainer config={{ housingUnitsK: { label: t.chartHousingLabel, color: COLORS.emerald }, buildingPermitsK: { label: t.chartPermitsLabel, color: COLORS.amber } }} className="h-[320px] w-full">
-                  <ComposedChart data={btpData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(btpData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1673,7 +1673,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartCementSteel} subtitle={t.chartCementSteelSub}>
                 <ChartContainer config={{ cementMt: { label: t.chartCementLabel, color: COLORS.blue }, steelMt: { label: t.chartSteelLabel, color: COLORS.slate } }} className="h-[320px] w-full">
-                  <LineChart data={btpData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(btpData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1688,7 +1688,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartBTPCostIndex} subtitle={t.chartBTPCostIndexSub}>
                 <ChartContainer config={{ costIndex: { label: t.chartCostIndexLabel, color: COLORS.amber } }} className="h-[280px] w-full">
-                  <BarChart data={btpData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <BarChart data={filterByYear(btpData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[100, 170]} />
@@ -1699,7 +1699,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartBTPInvest} subtitle={t.chartBTPInvestSub}>
                 <ChartContainer config={{ publicInvestBn: { label: t.chartPublicInvestLabel, color: COLORS.purple } }} className="h-[280px] w-full">
-                  <AreaChart data={btpData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(btpData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1721,7 +1721,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartServicesTrend} subtitle={t.chartServicesTrendSub}>
                 <ChartContainer config={{ gdpContribPct: { label: t.kpiServicesGdp, color: COLORS.purple } }} className="h-[320px] w-full">
-                  <AreaChart data={servicesData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(servicesData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[45, 55]} />
@@ -1739,7 +1739,7 @@ export default function AlgeriaDashboard() {
                   tourism: { label: t.chartTourismLabel, color: COLORS.rose },
                   govtServices: { label: t.chartGovtLabel, color: COLORS.slate },
                 }} className="h-[320px] w-full">
-                  <BarChart data={servicesData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <BarChart data={filterByYear(servicesData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1765,12 +1765,12 @@ export default function AlgeriaDashboard() {
               <KpiCard title={t.kpiPhosphate} value="1.5" unit="Mt" icon={Factory} color={COLORS.emerald} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartMiningProd} data={miningEnergy} subtitle={t.chartMiningProdSub}>
+              <ChartCard title={t.chartMiningProd} data={filterByYear(miningEnergy)} subtitle={t.chartMiningProdSub}>
                 <ChartContainer config={{
                   ironOreMt: { label: t.chartIronOreLabel, color: COLORS.amber },
                   phosphateMt: { label: t.chartPhosphateLabel, color: COLORS.emerald },
                 }} className="h-[320px] w-full">
-                  <LineChart data={miningEnergy} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(miningEnergy)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1783,7 +1783,7 @@ export default function AlgeriaDashboard() {
               </ChartCard>
               <ChartCard title={t.chartElectricity} subtitle={t.chartElectricitySub}>
                 <ChartContainer config={{ electricityTwh: { label: t.chartElectricityLabel, color: COLORS.cyan } }} className="h-[320px] w-full">
-                  <BarChart data={miningEnergy} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <BarChart data={filterByYear(miningEnergy)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} domain={[40, 80]} />
@@ -1795,7 +1795,7 @@ export default function AlgeriaDashboard() {
             </div>
             <ChartCard title={t.chartEnergyConsump} subtitle={t.chartEnergyConsumpSub}>
               <ChartContainer config={{ gasConsumptionBcm: { label: t.chartGasConsumpLabel, color: COLORS.blue }, petrolConsumptionMt: { label: t.chartPetrolConsumpLabel, color: COLORS.red } }} className="h-[280px] w-full">
-                <LineChart data={miningEnergy} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                <LineChart data={filterByYear(miningEnergy)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                   <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                   <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1834,7 +1834,7 @@ export default function AlgeriaDashboard() {
                   numHealthCenters: { label: t.chartHealthCentersLabel, color: COLORS.emerald },
                   numPolyclinics: { label: t.chartPolyclinicsLabel, color: COLORS.purple },
                 }} className="h-[320px] w-full">
-                  <BarChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <BarChart data={filterByYear(healthData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1852,7 +1852,7 @@ export default function AlgeriaDashboard() {
                   nurses10k: { label: t.chartNursesLabel, color: COLORS.purple },
                   hospitalBeds10k: { label: t.chartHospitalsLabel, color: COLORS.blue },
                 }} className="h-[320px] w-full">
-                  <LineChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(healthData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} tickLine={false} />
@@ -1871,7 +1871,7 @@ export default function AlgeriaDashboard() {
                   infantMortality: { label: t.chartInfantMortLabel, color: COLORS.red },
                   maternalMortality95k: { label: t.chartMaternalMortLabel, color: COLORS.orange },
                 }} className="h-[300px] w-full">
-                  <ComposedChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(healthData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} />
@@ -1888,7 +1888,7 @@ export default function AlgeriaDashboard() {
                   healthExpenditurePct: { label: t.chartHealthExpLabel, color: COLORS.amber },
                   lifeExpectancy: { label: t.chartLifeExpLabel, color: COLORS.rose },
                 }} className="h-[300px] w-full">
-                  <ComposedChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(healthData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} domain={[4, 8]} />
@@ -1904,7 +1904,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <ChartCard title={t.chartVaccinationTrend} subtitle={t.chartVaccinationTrendSub}>
                 <ChartContainer config={{ vaccinationRate: { label: t.chartVaccinationLabel, color: COLORS.teal }, primaryCareVisitsM: { label: t.chartPrimaryCareLabel, color: COLORS.amber } }} className="h-[280px] w-full">
-                  <ComposedChart data={healthData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(healthData)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 10 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} tickLine={false} domain={[85, 100]} />
@@ -1994,7 +1994,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <ChartCard title={t.chartSdgDesalination} subtitle={t.chartSdgDesalinationSub}>
                 <ChartContainer config={{ capacity: { label: t.labelCapacity, color: "#0891b2" }, stations: { label: t.labelStations, color: "#2563eb" } }} className="h-[300px] w-full">
-                  <ComposedChart data={sdgDesalination}>
+                  <ComposedChart data={filterByYear(sdgDesalination)}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
@@ -2008,7 +2008,7 @@ export default function AlgeriaDashboard() {
 
               <ChartCard title={t.chartSdgWaterReuse} subtitle={t.chartSdgWaterReuseSub}>
                 <ChartContainer config={{ volume: { label: t.labelVolume, color: "#0d9488" } }} className="h-[300px] w-full">
-                  <AreaChart data={sdgWaterReuse}>
+                  <AreaChart data={filterByYear(sdgWaterReuse)}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
                     <YAxis tick={{ fontSize: 11 }} />
@@ -2037,7 +2037,7 @@ export default function AlgeriaDashboard() {
 
               <ChartCard title={t.chartSdgInnovation} subtitle={t.chartSdgInnovationSub}>
                 <ChartContainer config={{ startups: { label: t.labelStartups, color: "#ea580c" }, incubators: { label: t.labelIncubators, color: "#0891b2" } }} className="h-[320px] w-full">
-                  <ComposedChart data={sdgInnovation}>
+                  <ComposedChart data={filterByYear(sdgInnovation)}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
@@ -2054,7 +2054,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <ChartCard title={t.chartSdgFood} subtitle={t.chartSdgFoodSub}>
                 <ChartContainer config={{ wheatKg: { label: t.labelWheat, color: "#d97706" }, milkCoverage: { label: t.labelMilkCov, color: "#2563eb" }, aquaculture: { label: t.labelAquaculture, color: "#0d9488" } }} className="h-[320px] w-full">
-                  <ComposedChart data={sdgFoodSecurity}>
+                  <ComposedChart data={filterByYear(sdgFoodSecurity)}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
@@ -2069,7 +2069,7 @@ export default function AlgeriaDashboard() {
 
               <ChartCard title={t.chartSdgEducation} subtitle={t.chartSdgEducationSub}>
                 <ChartContainer config={{ primary: { label: t.labelPrimary, color: "#059669" }, secondary: { label: t.labelSecondary, color: "#2563eb" }, literacy: { label: t.labelLiteracy, color: "#d97706" } }} className="h-[320px] w-full">
-                  <ComposedChart data={sdgEducation}>
+                  <ComposedChart data={filterByYear(sdgEducation)}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
                     <YAxis tick={{ fontSize: 11 }} domain={[30, 105]} />
@@ -2087,7 +2087,7 @@ export default function AlgeriaDashboard() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <ChartCard title={t.chartSdgInequality} subtitle={t.chartSdgInequalitySub}>
                 <ChartContainer config={{ socialCoverage: { label: t.labelSocialCov, color: "#059669" }, gini: { label: t.labelGini, color: "#dc2626" }, remittanceCost: { label: t.labelRemittanceCost, color: "#d97706" } }} className="h-[300px] w-full">
-                  <ComposedChart data={sdgInequality}>
+                  <ComposedChart data={filterByYear(sdgInequality)}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
                     <YAxis yAxisId="left" domain={[0, 100]} tick={{ fontSize: 11 }} />
@@ -2102,7 +2102,7 @@ export default function AlgeriaDashboard() {
 
               <ChartCard title={t.chartSdgOceans} subtitle={t.chartSdgOceansSub}>
                 <ChartContainer config={{ marineProtected: { label: t.labelMarineProtected, color: "#0a97d9" }, aquaculture: { label: t.labelAquaculture, color: "#0d9488" }, fisheries: { label: t.labelFisheries, color: "#2563eb" } }} className="h-[300px] w-full">
-                  <ComposedChart data={sdgOceans}>
+                  <ComposedChart data={filterByYear(sdgOceans)}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
@@ -2159,9 +2159,9 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 3: WB vs ONS Comparison — GDP Growth + Inflation ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbVsOnsGdp} unit="%" data={worldBankGdpGrowth} subtitle={t.chartWbVsOnsGdpSub}>
+              <ChartCard title={t.chartWbVsOnsGdp} unit="%" data={filterByYear(worldBankGdpGrowth)} subtitle={t.chartWbVsOnsGdpSub}>
                 <ChartContainer config={{ wb: { label: t.labelWb, color: COLORS.cyan }, ons: { label: t.labelOns, color: COLORS.emerald } }} className="h-[300px] w-full">
-                  <LineChart data={worldBankGdpGrowth} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(worldBankGdpGrowth)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} domain={[-5, 8]} />
@@ -2172,9 +2172,9 @@ export default function AlgeriaDashboard() {
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbVsOnsInflation} unit="%" data={worldBankInflation} subtitle={t.chartWbVsOnsInflationSub}>
+              <ChartCard title={t.chartWbVsOnsInflation} unit="%" data={filterByYear(worldBankInflation)} subtitle={t.chartWbVsOnsInflationSub}>
                 <ChartContainer config={{ wb: { label: t.labelWb, color: COLORS.red }, ons: { label: t.labelOns, color: COLORS.rose } }} className="h-[300px] w-full">
-                  <LineChart data={worldBankInflation} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(worldBankInflation)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} domain={[0, 12]} />
@@ -2189,9 +2189,9 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 4: WB vs ONS — Unemployment + GDP Per Capita ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbVsOnsUnemp} unit="%" data={worldBankUnemployment} subtitle={t.chartWbVsOnsUnempSub}>
+              <ChartCard title={t.chartWbVsOnsUnemp} unit="%" data={filterByYear(worldBankUnemployment)} subtitle={t.chartWbVsOnsUnempSub}>
                 <ChartContainer config={{ wb: { label: t.labelWb, color: COLORS.amber }, ons: { label: t.labelOns, color: COLORS.orange } }} className="h-[300px] w-full">
-                  <LineChart data={worldBankUnemployment} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(worldBankUnemployment)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} domain={[8, 14]} />
@@ -2202,9 +2202,9 @@ export default function AlgeriaDashboard() {
                   </LineChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbGdpCapita} unit="$" data={worldBankGdpPerCapita} subtitle={t.chartWbGdpCapitaSub}>
+              <ChartCard title={t.chartWbGdpCapita} unit="$" data={filterByYear(worldBankGdpPerCapita)} subtitle={t.chartWbGdpCapitaSub}>
                 <ChartContainer config={{ wb: { label: t.labelWb, color: COLORS.cyan }, ons: { label: t.labelOns, color: COLORS.emerald } }} className="h-[300px] w-full">
-                  <LineChart data={worldBankGdpPerCapita} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(worldBankGdpPerCapita)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} />
@@ -2219,9 +2219,9 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 5: WB-only — External Debt + Life Expectancy ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbExtDebt} unit="% RNB" data={worldBankExternalDebt} subtitle={t.chartWbExtDebtSub}>
+              <ChartCard title={t.chartWbExtDebt} unit="% RNB" data={filterByYear(worldBankExternalDebt)} subtitle={t.chartWbExtDebtSub}>
                 <ChartContainer config={{ debt: { label: t.wbKpiDebt, color: COLORS.rose } }} className="h-[300px] w-full">
-                  <AreaChart data={worldBankExternalDebt} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(worldBankExternalDebt)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} />
@@ -2230,9 +2230,9 @@ export default function AlgeriaDashboard() {
                   </AreaChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbLifeExp} unit="Années" data={worldBankLifeExpectancy} subtitle={t.chartWbLifeExpSub}>
+              <ChartCard title={t.chartWbLifeExp} unit="Années" data={filterByYear(worldBankLifeExpectancy)} subtitle={t.chartWbLifeExpSub}>
                 <ChartContainer config={{ male: { label: t.labelMale, color: COLORS.blue }, female: { label: t.labelFemale, color: COLORS.rose } }} className="h-[300px] w-full">
-                  <AreaChart data={worldBankLifeExpectancy} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <AreaChart data={filterByYear(worldBankLifeExpectancy)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} domain={[73, 81]} />
@@ -2247,9 +2247,9 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 6: Social & Environment — Poverty + CO2 ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbPoverty} unit="%" data={worldBankPoverty} subtitle={t.chartWbPovertySub}>
+              <ChartCard title={t.chartWbPoverty} unit="%" data={filterByYear(worldBankPoverty)} subtitle={t.chartWbPovertySub}>
                 <ChartContainer config={{ poverty215: { label: t.labelPoverty215, color: COLORS.red }, poverty365: { label: t.labelPoverty365, color: COLORS.amber }, povertyNational: { label: t.labelPovertyNat, color: COLORS.slate } }} className="h-[300px] w-full">
-                  <BarChart data={worldBankPoverty} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <BarChart data={filterByYear(worldBankPoverty)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} />
@@ -2261,9 +2261,9 @@ export default function AlgeriaDashboard() {
                   </BarChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbCo2} unit="t/hab" data={worldBankCo2Emissions} subtitle={t.chartWbCo2Sub}>
+              <ChartCard title={t.chartWbCo2} unit="t/hab" data={filterByYear(worldBankCo2Emissions)} subtitle={t.chartWbCo2Sub}>
                 <ChartContainer config={{ co2: { label: t.labelCo2, color: COLORS.slate } }} className="h-[300px] w-full">
-                  <BarChart data={worldBankCo2Emissions} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <BarChart data={filterByYear(worldBankCo2Emissions)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} domain={[0, 5]} />
@@ -2280,9 +2280,9 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 7: Digital & Energy — Internet + Energy Access ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbInternetTrend} unit="%" data={worldBankInternetUsers} subtitle={t.chartWbInternetTrendSub}>
+              <ChartCard title={t.chartWbInternetTrend} unit="%" data={filterByYear(worldBankInternetUsers)} subtitle={t.chartWbInternetTrendSub}>
                 <ChartContainer config={{ internet: { label: "Internet %", color: COLORS.blue }, mobile: { label: t.labelMobileSubs, color: COLORS.emerald }, broadband: { label: t.labelBroadband, color: COLORS.purple } }} className="h-[300px] w-full">
-                  <ComposedChart data={worldBankInternetUsers} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(worldBankInternetUsers)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} domain={[0, 105]} />
@@ -2294,9 +2294,9 @@ export default function AlgeriaDashboard() {
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbEnergy} unit="%" data={worldBankEnergyAccess} subtitle={t.chartWbEnergySub}>
+              <ChartCard title={t.chartWbEnergy} unit="%" data={filterByYear(worldBankEnergyAccess)} subtitle={t.chartWbEnergySub}>
                 <ChartContainer config={{ electricity: { label: t.labelElectricity, color: COLORS.amber }, renewable: { label: t.labelRenewable, color: COLORS.emerald } }} className="h-[300px] w-full">
-                  <ComposedChart data={worldBankEnergyAccess} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(worldBankEnergyAccess)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis yAxisId="left" tick={{ fontSize: 11 }} domain={[98, 101]} />
@@ -2312,9 +2312,9 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 8: Trade & Education ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbTradeFdi} unit="% PIB" data={worldBankTradeGdp} subtitle={t.chartWbTradeFdiSub}>
+              <ChartCard title={t.chartWbTradeFdi} unit="% PIB" data={filterByYear(worldBankTradeGdp)} subtitle={t.chartWbTradeFdiSub}>
                 <ChartContainer config={{ exports: { label: t.labelExports, color: COLORS.emerald }, imports: { label: t.labelImports, color: COLORS.red }, trade: { label: t.labelTradeOpenness, color: COLORS.cyan } }} className="h-[300px] w-full">
-                  <ComposedChart data={worldBankTradeGdp} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <ComposedChart data={filterByYear(worldBankTradeGdp)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} />
@@ -2326,9 +2326,9 @@ export default function AlgeriaDashboard() {
                   </ComposedChart>
                 </ChartContainer>
               </ChartCard>
-              <ChartCard title={t.chartWbEduHealthSpend} unit="% PIB" data={worldBankEducationSpend} subtitle={t.chartWbEduHealthSpendSub}>
+              <ChartCard title={t.chartWbEduHealthSpend} unit="% PIB" data={filterByYear(worldBankEducationSpend)} subtitle={t.chartWbEduHealthSpendSub}>
                 <ChartContainer config={{ eduGdp: { label: t.labelEduSpend, color: COLORS.blue }, healthGdp: { label: t.labelHealthSpend, color: COLORS.rose } }} className="h-[300px] w-full">
-                  <LineChart data={worldBankEducationSpend} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(worldBankEducationSpend)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} domain={[4, 8]} />
@@ -2343,9 +2343,9 @@ export default function AlgeriaDashboard() {
 
             {/* ── Row 9: GCF Comparison + Deviation Summary ── */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <ChartCard title={t.chartWbGcfComp} unit="% PIB" data={worldBankGrossCapital} subtitle={t.chartWbGcfCompSub}>
+              <ChartCard title={t.chartWbGcfComp} unit="% PIB" data={filterByYear(worldBankGrossCapital)} subtitle={t.chartWbGcfCompSub}>
                 <ChartContainer config={{ gcf: { label: t.labelWb, color: COLORS.cyan }, ons: { label: t.labelOns, color: COLORS.emerald } }} className="h-[300px] w-full">
-                  <LineChart data={worldBankGrossCapital} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
+                  <LineChart data={filterByYear(worldBankGrossCapital)} margin={{ top: 5, right: 10, left: -15, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                     <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} />
                     <YAxis tick={{ fontSize: 11 }} domain={[30, 45]} />
